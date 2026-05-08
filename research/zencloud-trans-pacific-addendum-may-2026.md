@@ -1,4 +1,4 @@
-# Trans-Pacific Addendum: Canada and New Zealand Comparative Analysis
+# International Comparative Addendum: Canada and New Zealand
 ## Extending the Prevention-Detection-Remediation Framework Beyond Australia
 
 **Document:** 1.1 — Addendum to the ZenCloud IT Governance Working Paper (May 2026)
@@ -21,7 +21,7 @@ This addendum tests that proposition against two peer jurisdictions selected on 
 
 **Finding 1 — Canada produces an almost identical audit signature to Australia.** The 2025 Auditor General of Canada report on Cyber Security of Government Networks and Systems and the 2023 report on Modernising Information Technology Systems document the same pattern: comprehensive strategy and framework design acknowledged as sound; persistent operational gaps in asset visibility, monitoring coverage, and remediation effectiveness. Canada's federal asset inventory project — begun in 2017, still incomplete in 2025, now expected no earlier than 2027 — is the most direct international parallel to Victoria's server inventory finding.
 
-**Finding 2 — New Zealand produces a recognisable variant of the same pattern.** The NZ Office of the Auditor-General's April 2025 report Mind the Gap: Governing Cyber Security Risks found that most examined public organisations had higher levels of residual cyber security risk than their stated risk appetite. Governors were engaged and taking cyber security seriously. The gap between governance intent and operational reality persisted regardless. New Zealand's more centralised governance model did not close the execution gap. It produced a different expression of it.
+**Finding 2 — New Zealand produces a related but distinct governance-execution gap.** The NZ Office of the Auditor-General's April 2025 report Mind the Gap: Governing Cyber Security Risks found that most examined public organisations had higher levels of residual cyber security risk than their stated risk appetite. New Zealand's centralised model produces a gap located in the translation from risk appetite to operational mandate, rather than the attestation substitution seen in Australia. Both, however, reflect structural distance between governance intent and the execution layer.
 
 **Finding 3 — The pattern is not explained by governance model design.** It persists across federated models (Australia, Canada), centralised models (New Zealand), and hybrid models (ACT within Australia). The mechanism producing the gap is structural and consistent. What varies across jurisdictions is how the gap is expressed — not whether it exists.
 
@@ -49,7 +49,9 @@ The operational findings tell a different story.
 
 This is the Victorian flying blind finding applied to a federation with a different governance model, a different constitutional structure, and a different geographic and political context. The structural condition is identical. The tools existed. The mandate existed. The structural conditions that translate mandate into operational truth did not.
 
-**Governance coverage gap.** The OAG found that 58% of federal organisations are not required to use CSE's cyber security defence services. Of those eligible, many did not engage. The Auditor General found that inconsistent deployment of cyber defence sensors across federal organisations created security gaps affecting the government's ability to defend networks, systems, and devices. This represents a governance coverage gap not visible in the Australian evidence — where central protective services exist and adoption is voluntary rather than mandatory, leaving the governance body unable to see the majority of the environment it is meant to protect.
+**Governance coverage gap — a distinct failure mode.** The OAG found that 58% of federal organisations are not required to use CSE's cyber security defence services. Of those eligible, many did not engage. The Auditor General found that inconsistent deployment of cyber defence sensors across federal organisations created security gaps affecting the government's ability to defend networks, systems, and devices.
+
+This represents a specific mechanism of prevention failure — where the governance instrument is available but structurally cannot be applied universally, leaving the majority of the environment outside the protective layer. It is distinct from the attestation substitution seen in Australia and the risk appetite translation failure seen in New Zealand. It speaks to the authority architecture of governance: when adoption is voluntary rather than mandatory, comprehensive visibility is structurally impossible regardless of framework sophistication.
 
 **Incident response failure.** A significant cyber attack in January 2024 saw delayed response due to lack of information sharing between TBS, CSE, and Shared Services Canada. The attacker had prolonged access to personal information. An initiative to set up a cyber security collaboration platform and incident case management tool had not received funding at the time of the audit.
 
@@ -63,7 +65,9 @@ Two thirds of approximately 7,500 federal software applications were in poor hea
 
 The Benefits Delivery Modernisation Programme — responsible for Employment Insurance, Old Age Security, and Canada Pension Plan — was at the audit's midpoint still running entirely on systems between 20 and 60 years old. Cost had been revised from $1.75 billion in 2017 to $2.5 billion in 2022 — a 43% increase — with no benefits yet migrated to the new platform.
 
-The Auditor General noted that the government first identified aging IT systems as a significant issue in 1999. Twenty-four years later, TBS still had no strategy to drive modernisation. TBS monitored only 22 high-risk IT projects out of approximately 2,100 active projects. It did not receive a complete list of all IT projects from departments and agencies.
+The Auditor General noted that the government first identified aging IT systems as a significant issue in 1999. Twenty-four years later, TBS still had no strategy to drive modernisation. TBS monitored only 22 high-risk IT projects out of approximately 2,100 active projects.
+
+The Canadian legacy evidence also illustrates a compounding dynamic: while the asset inventory project remains incomplete, the inventory itself is a moving target as modernisation efforts simultaneously retire and introduce systems. This creates a decade-long timeline not simply because of inaction but because the gap is structurally dynamic — the target changes faster than the visibility mechanism can track it.
 
 It is worth noting that Australia's 2026 Cloud Computing Policy and Queensland's 2025 $1 billion digital investment commitment represent more recent structural responses than the Canadian evidence documents for the equivalent period. Whether those responses produce different outcomes is precisely what future Australian audit cycles will determine. The Canadian evidence gives the clearest available indication of what happens when structural change does not accompany policy addition over an extended period.
 
@@ -87,15 +91,15 @@ The central finding: most of the public organisations examined had higher levels
 
 The Auditor General identified three conditions sustaining the gap. Governors were not always able to set a clear understood risk appetite. The cost of achieving the desired risk level was not always fully understood, making prioritisation difficult. Rapid technological change meant that simply maintaining existing controls — without active investment — could lead to higher residual risk over time.
 
-The report noted that the NZ National Cyber Security Centre was preparing baseline cyber security standards for public service organisations — a signal that even within NZ's more centralised model, minimum standards at the execution layer had not yet been established at the time of publication.
+The report noted that the NZ National Cyber Security Centre was preparing baseline cyber security standards for public service organisations — a signal that minimum operational standards at the execution layer had not yet been established at the time of publication.
 
-**So what.** New Zealand's more centralised governance model does not close the execution gap. It produces a different expression of it. In Australia the dominant pattern is attestation substitution — agencies attesting compliance they have not independently verified. In New Zealand the dominant pattern is risk tolerance drift — governors aware of the gap between stated appetite and actual risk, uncertain whether they can close it, uncertain of the cost of doing so. Both are expressions of the same underlying condition: verification and enforcement are not embedded at the level where execution happens.
+**So what.** New Zealand's centralised model produces a related but distinct governance-execution gap — one located in the translation from risk appetite to operational mandate — rather than the attestation substitution seen in Australia. In Australia, the dominant pattern is agencies declaring compliance they have not independently verified. In New Zealand, the dominant pattern is governors who cannot translate their risk appetite into verifiable operational requirements, and who are uncertain whether the gap can be closed or what it would cost to do so. Both reflect structural distance between governance intent and the execution layer. The remedy for each is different.
 
 ### 2.3 The ACT Parallel
 
 The ACT finding from the main working paper is analytically critical here. The ACT has the most centralised governance structure in Australia. It produced a 65% unresolved deficiency rate — matching Western Australia's and significantly higher than Queensland's. Centralisation of governance design did not produce materially different operational outcomes.
 
-New Zealand's audit result confirms this pattern at the national level. A unitary governance model with consolidated accountability — more centralised than any Australian jurisdiction — produces its own version of the execution gap. The Auditor General's title — Mind the Gap — names the problem directly.
+New Zealand's audit result confirms this pattern at the national level. A unitary governance model with consolidated accountability — more centralised than any Australian jurisdiction — produces its own version of the execution gap. If centralisation changes the expression of the gap rather than eliminating it, the ACT may represent an intermediate case: accountability is less fragmented than the federated states, yet the translation layer between governance intent and operational control remains incomplete.
 
 The gap is not a function of federation. It is a function of structural distance between governance intent and execution reality. That distance exists in federated models and centralised models. What varies is how it is expressed and what conditions sustain it.
 
@@ -103,37 +107,35 @@ The gap is not a function of federation. It is a function of structural distance
 
 ## 3. The Trans-Pacific Pattern
 
-### 3.1 Three Models, One Signature
+### 3.1 Three Models, One Structural Condition
 
-Three governance models. Three distinct constitutional structures. One audit signature.
+Three governance models. Three distinct constitutional structures. One structural condition.
 
 Australia — federated advisory model across six jurisdictions — produces prevention failures at assurance gates, detection failures in asset visibility and compliance assurance, and remediation failures across all jurisdictions with unresolved rates between 43% and 78%.
 
 Canada — federated model with central infrastructure delivery — produces the same asset visibility failure documented in Victoria, a governance coverage gap in protective service adoption not seen in Australia, and a legacy modernisation gap documented over 24 years without resolution.
 
-New Zealand — unitary centralised model — produces a governance layer risk tolerance gap where most organisations carry higher residual risk than their stated appetite and governors cannot confirm whether the gap can be closed.
+New Zealand — unitary centralised model — produces a risk appetite translation gap where most organisations carry higher residual risk than their stated appetite and governors cannot confirm whether the gap can be closed or at what cost.
 
 **Trans-Pacific Mapping Matrix**
 
 | Jurisdiction | Governance Model | Primary Failure Stage | Key Finding | Structural Condition |
 |---|---|---|---|---|
-| Australia — Federal | Federated advisory | Detection and remediation | 45% IT findings; 78% interim findings repeats | Verification above execution layer |
+| Australia — Federal | Federated advisory | Detection and remediation | 178 findings in 2024-25; 78% interim findings repeats | Verification above execution layer |
 | Australia — Queensland | Federated state | Prevention, detection, remediation | 198 deficiencies; 43% unresolved; Unify 1.79/10 | Assurance gate not positioned for operational fitness |
 | Australia — Victoria | Federated state | Detection | No agency maintained complete server inventory | Foundational visibility absent |
 | Australia — WA | Federated state | Remediation | 359 findings; 65% unresolved | Verification not embedded at execution |
 | Australia — ACT | Centralised territory | Remediation | 40 findings; 65% unresolved | Same pattern despite centralisation |
 | Canada — Federal | Federated central infrastructure | Detection and legacy | Asset inventory begun 2017 still incomplete 2025; 58% of organisations outside central security services | Protective layer fragmented; visibility structurally incomplete |
-| New Zealand | Unitary centralised | Risk tolerance drift | Most organisations carry higher residual risk than appetite; governors uncertain whether gap can close | Governance layer aware of gap; execution layer cannot close it |
+| New Zealand | Unitary centralised | Risk appetite translation | Most organisations carry higher residual risk than appetite; governors uncertain whether gap can close | Translation layer between risk intent and operational mandate absent |
 
 ### 3.2 What the Pattern Reveals
 
 The main working paper proposed that the mechanism producing the governance-execution gap is structural and consistent — not a function of framework quality, governance model design, or organisational capability in isolation. The Trans-Pacific evidence confirms this.
 
-The pattern persists across federated governance (Australia, Canada) and unitary governance (New Zealand). It persists across internationally acknowledged framework designs. It persists across different constitutional structures. What the pattern does not persist across is the specific expression of the gap.
+The pattern persists across federated governance (Australia, Canada) and unitary governance (New Zealand). It persists across internationally acknowledged framework designs. It persists across different constitutional structures.
 
-Canada's governance coverage gap — where central protective services exist but adoption is voluntary and fragmented — is distinct from Australia's attestation substitution failure and New Zealand's risk tolerance drift. These are not the same failure mode. They are different expressions of the same structural condition: when verification is not embedded at the level where execution happens, the gap between governance intent and operational reality accumulates in whatever form the specific governance architecture makes most likely.
-
-In Australia's federated advisory model, the most likely form is attestation substitution — agencies declaring compliance they cannot independently verify. In Canada's federated central-infrastructure model, the most likely form is fragmentation — voluntary non-engagement with central services that creates structural blindness. In New Zealand's unitary model, the most likely form is risk tolerance drift — governors aware of the gap but unable to confirm closure or cost.
+What the pattern does not persist across is the specific expression of the gap. Canada's governance coverage gap — where central protective services exist but adoption is voluntary and fragmented — is distinct from Australia's attestation substitution failure and New Zealand's risk appetite translation failure. These are not the same failure mode. They are different expressions of the same structural condition: when verification is not embedded at the level where execution happens, the gap between governance intent and operational reality accumulates in whatever form the specific governance architecture makes most likely.
 
 ### 3.3 The Legacy Timeline
 
@@ -149,7 +151,7 @@ The Trans-Pacific comparison produces three analytical refinements to the main w
 
 **First — the pattern is not specific to Australia's federated design.** The main working paper was careful to avoid overclaiming that Australia's federated advisory model was the primary cause of the gap. The Canada and New Zealand evidence confirms this caution was warranted. The gap appears in federated models, centralised models, and unitary models. Federation is not the explanation.
 
-**Second — governance coverage gaps represent a distinct failure mode.** Canada's finding that 58% of federal organisations are not required to use central cyber security services — and many of those eligible did not engage — identifies a failure mode not visible in the Australian evidence. Future Australian audit cycles should examine whether equivalent non-engagement patterns exist in the take-up of central DTA services and ASD cyber security programs. If central services are available but adoption is voluntary, the governance coverage question is directly relevant to the Australian context.
+**Second — governance coverage gaps represent a distinct prevention failure mechanism.** Canada's finding that 58% of federal organisations are not required to use central cyber security services — and many of those eligible did not engage — identifies a failure mode not visible in the Australian evidence. Future Australian audit cycles should examine whether equivalent non-engagement patterns exist in the take-up of central DTA services and ASD cyber security programs. If central services are available but adoption is voluntary, the governance coverage question is directly relevant to the Australian context.
 
 **Third — the legacy timeline matters.** Canada's 24-year documented legacy problem gives a timeline to what the Australian evidence describes as legacy constraint. The Australian 2026 Cloud Computing Policy and Queensland's 2025 digital investment commitment represent more recent structural responses. Whether those responses produce different outcomes is the empirical question future audit cycles will answer. The Canadian evidence provides a reference point for what persistence of the structural condition looks like over extended periods.
 
@@ -175,7 +177,7 @@ These questions cannot be answered with currently available evidence. They are t
 
 Canada and New Zealand confirm the main working paper's central finding: the governance-execution gap is not a product of Australia's specific governance architecture. It is a structural condition that persists across federated and centralised models, across different constitutional arrangements, and across jurisdictions with internationally acknowledged framework designs.
 
-Canada produces an almost identical asset inventory failure to Victoria's — begun eight years before the audit, still incomplete, with completion deferred to 2027. It adds a governance coverage gap not visible in the Australian evidence. New Zealand's centralised model produces a risk tolerance drift rather than an attestation substitution problem — a different expression of the same underlying condition.
+Canada produces an almost identical asset inventory failure to Victoria's — begun eight years before the audit, still incomplete, with completion deferred to 2027. It adds a governance coverage gap not visible in the Australian evidence. New Zealand's centralised model produces a risk appetite translation failure rather than an attestation substitution problem — a different expression of the same underlying condition.
 
 The most precise statement of what the Trans-Pacific evidence establishes is this: the gap between governance intent and operational reality is a structural condition of modern public sector IT governance. It is not fixed by framework sophistication, governance model design, or policy addition alone. It is addressed by changing the structural positioning of verification — embedding it at the level where execution happens rather than holding it at the committee level above delivery.
 

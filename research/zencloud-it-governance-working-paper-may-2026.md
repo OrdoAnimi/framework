@@ -57,7 +57,7 @@ The paper does not assess individual agency performance. It identifies systemic 
 
 ### 2.1 Federal Framework
 
-The Digital Transformation Agency (DTA) operates the Whole-of-Government Digital and ICT Investment Oversight Framework (IOF) — a six-state end-to-end framework covering strategic planning, prioritisation, contestability, assurance, sourcing, and operations. The Australian Government Architecture (AGA) functions as the meta-framework for interoperability across business, data, and technology layers.
+The Digital Transformation Agency (DTA) operates the Whole-of-Government Digital and ICT Investment Oversight Framework (IOF) — a six-stage end-to-end framework covering strategic planning, prioritisation, contestability, assurance, sourcing, and operations. The Australian Government Architecture (AGA) functions as the meta-framework for interoperability across business, data, and technology layers.
 
 In August 2025, the OECD finalised its review of the IOF as part of its Digital Government in Australia study. The review recognised the IOF as a key strength in Australia's investment approach, commending its comprehensive end-to-end lifecycle management and alignment with whole-of-government digital priorities. The OECD Digital Government Index 2025 subsequently ranked Australia second globally among 42 countries, behind Korea.
 
@@ -99,7 +99,7 @@ This paper employs qualitative documentary analysis and synthesis of official 20
 
 ### 4.1 Federal — Australian National Audit Office
 
-**Evidence.** ANAO Interim Report on Key Financial Controls of Major Entities (Report No. 39, 2024-25, May 2025) and ANAO Auditor-General Report No. 17 2025-26 (March 2026) document IT controls as the single largest risk category across Commonwealth entities. Forty-five per cent of all audit findings relate to the IT control environment. Seventy-eight per cent of interim findings were not new — carried forward unresolved from prior cycles. Across 27 major Commonwealth entities, 118 findings were logged at interim audit. The annual report closed with 214 findings. The ANAO's December 2025 Audit Matters publication stated: "IT controls remain the most significant area of risk across the sector — at a time when cyber threats are increasing, reliance on IT systems for service delivery is growing, and IT environments are becoming more complex."
+**Evidence.** ANAO Interim Report on Key Financial Controls of Major Entities (Report No. 39, 2024-25, May 2025) documented 118 findings across 27 entities at the interim audit phase. Seventy-eight per cent of these interim findings were not new — carried forward unresolved from prior cycles. Sixty-five per cent of all interim findings related to the IT control environment. ANAO Auditor-General Report No. 17 2025-26 (March 2026) documented 178 audit findings for the 2024-25 financial year, down from 214 in 2023-24. IT control weaknesses remained the single largest finding category. The ANAO's December 2025 Audit Matters publication stated: "IT controls remain the most significant area of risk across the sector — at a time when cyber threats are increasing, reliance on IT systems for service delivery is growing, and IT environments are becoming more complex."
 
 **Failure stage.** Primarily detection and remediation failure. The frameworks identify the requirement. They do not surface the gap or ensure closure.
 
@@ -135,7 +135,7 @@ NSW Cyber Security Insights 2025 (July 2025) provides additional granularity. Si
 
 ### 4.4 Victoria — Victorian Auditor-General's Office
 
-**Evidence.** VAGO Cybersecurity of IT Servers (29 October 2025) found that no examined agency maintained a complete and accurate server inventory. Six agencies had automated asset discovery tools. None had configured them to scan their entire network. Agencies were described as "flying blind" on server security controls. Many servers were running outdated or unsupported operating systems.
+**Evidence.** VAGO Cybersecurity of IT Servers (29 October 2025) examined 10 government departments and Cenitex. No examined agency maintained a complete and accurate server inventory. Six agencies had automated asset discovery tools. None had configured them to scan their entire network. All agencies submitted incomplete server inventory information, missing critical details such as operating system versions, host names, or server locations. Twenty-five per cent of server entries reported by agencies had operating systems that are unsupported. A further 11 per cent had unknown operating systems.
 
 **Failure stage.** Detection failure. The foundational visibility required to identify risk was absent. Without a complete inventory, every downstream risk assessment, every patching cycle, every cloud migration decision operates on assumption.
 
@@ -275,10 +275,10 @@ Further research examining the structural conditions that sustain this gap — a
 
 | Jurisdiction | Source | Key Finding | Unresolved Rate | Primary Category |
 |---|---|---|---|---|
-| Federal (ANAO) | Report No. 39 2024-25; Report No. 17 2025-26 | 45% of findings IT controls; 214 total findings | 78% of interim findings repeats | IT security, access management, change management |
+| Federal (ANAO) | Report No. 39 2024-25; Report No. 17 2025-26 | 178 findings in 2024-25 (214 in 2023-24); 65% of interim findings IT controls | 78% of interim findings repeats | IT security, access management, change management |
 | Queensland (QAO) | Report 6: 2025-26 | 198 total IT control deficiencies; 13 significant | 43% | System access, privileged accounts, authentication |
 | New South Wales | Internal Controls 2025; Cyber Security Insights 2025 | 5 high-risk IT findings; 69% of Protect requirements not met | Not separately quantified | IT controls over financial systems; supply chain |
-| Victoria (VAGO) | Cybersecurity of IT Servers 2025 | No agency maintained complete server inventory | Not applicable — foundational visibility absent | Asset identification; server security |
+| Victoria (VAGO) | Cybersecurity of IT Servers 2025 | No agency maintained complete server inventory; 25% unsupported OS | Not applicable — foundational visibility absent | Asset identification; server security |
 | Western Australia (WAAGO) | State Government 2025 Information Systems | 359 GCC findings to 53 entities | 65% | Access management; endpoint security |
 | ACT | Financial Audit Results 2024-25 | 40 IT control weaknesses | 65% | Information security controls (68% of findings) |
 

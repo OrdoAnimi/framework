@@ -18,7 +18,7 @@ That moment is not a failure of rules. It is a failure of where oversight sat re
 
 The research paper established that this moment is not unique to Queensland. It appears in Victoria, where no agency maintained a complete server inventory despite having the tools to do so. It appears in Western Australia, where 65% of IT control findings were unresolved from prior years. It appears in the ACT, where the most centralised governance structure in Australia produced the same unresolved rate as the most federated. It appears in Canada, where a federal asset inventory project began in 2017 and remained incomplete in 2025 with completion now expected no earlier than 2027. It appears in New Zealand, where most examined public organisations carried higher residual cyber security risk than their stated appetite — with governors uncertain whether the gap could be closed.
 
-Six Australian jurisdictions. Two international comparators. Eight governance models of varying design and centralisation. One audit signature.
+Six Australian jurisdictions. Two international comparators. Eight governance models of varying design and centralisation. One structural condition.
 
 The research paper identified the pattern. This paper names the mechanism.
 
@@ -32,6 +32,8 @@ Most governance models operate on attestation. Someone produces a document. Some
 
 Runtime verification is different. It confirms that a control is operating in production — not in a document, but in the live configuration of a platform, a pipeline, or a network. It does not ask whether a standard was approved. It asks whether the standard is enforced the moment someone provisions a resource or deploys a change.
 
+Runtime verification is a positioning principle, not a product category. It does not require any specific tool or methodology. It requires that the structural conditions for confirming operational truth exist at the level where decisions are made — regardless of what technology implements them.
+
 The persistent audit findings documented in the research paper share a common property. They are failures of runtime verification being treated as though periodic attestation were sufficient. That gap — between what is attested and what can be confirmed at the point of execution — is the central thread.
 
 In New South Wales, 59% of agencies had no independent assurance over their own compliance with the NSW Cyber Security Policy. That is attestation without verification at its most direct. In Victoria, six agencies had automated asset discovery tools and none had configured them to scan their entire network. The tool existed. The attestation of intent existed. The verification of operational truth did not. In Canada, the federal government attested to a comprehensive cyber security strategy while 58% of federal organisations operated outside the central protective services that strategy depended on.
@@ -42,7 +44,9 @@ The Velocity Architecture Framework™ calls the space where this gap accumulate
 
 ## What Governance Drag Looks Like at Scale
 
-Governance Drag is not the absence of process. It is not bureaucracy under a different name. Bureaucracy describes volume. Governance Drag describes position — specifically, where in the structural hierarchy verification has detached from execution. It is the accumulation of friction between structural intent and operational execution — friction that compounds quietly, below the level where governance instruments can see it, until it surfaces in an audit finding or a failed go-live.
+Governance Drag is the accumulated friction that arises when verification is structurally positioned above the level where execution occurs, preventing timely detection, closure, and learning from deviation. It is the measurable outcome of that misalignment — not the cause but the symptom that becomes self-sustaining when deviation accumulates without correction.
+
+Governance Drag is not the absence of process. It is not bureaucracy under a different name. Bureaucracy describes volume. Governance Drag describes position — specifically, where in the structural hierarchy verification has detached from execution.
 
 The Queensland experience illustrates the mechanism precisely. Architecture Review Boards functioned. Investment oversight gates were cleared. The governance architecture performed its documented role. What it did not do — what it structurally could not do — was maintain visibility into whether controls were actually operating at the delivery layer. The 43% unresolved rate is not evidence that the remediation framework failed. It is evidence that verification was not embedded where execution happened. The framework sat at one altitude. The work sat at another.
 
@@ -56,17 +60,19 @@ This is what Governance Drag looks like when it compounds not across quarters bu
 
 ## The Altitude Problem
 
-Decision Altitude describes the structural level at which a decision is made. Every decision has an appropriate altitude — the level where it has sufficient context, authority, and consequence visibility to be made well. When decisions sit at the wrong altitude, two failure modes emerge.
+Decision Altitude in VAF describes the structural level at which a decision is made — specifically, the combination of three dimensions: authority to close the item, observability of whether it is done, and enforcement proximity to act when it is not. Every decision has an appropriate altitude where all three dimensions are sufficient. When decisions sit at the wrong altitude, two failure modes emerge.
 
 The first is Altitude Collapse. This occurs when a decision that belongs at the structural layer gets absorbed into the operational layer — when governance weight lands on a delivery team that lacks the structural position to carry it. A remediation cycle managed entirely at the operational layer tracks individual issues without seeing the pattern. It resolves the presenting problem without addressing the mechanism that produced it.
 
-The Unify case is a studied example. Formal governance processes operated correctly at their designed altitude. The system cleared its review. What the assurance gate could not see — because it was not positioned to see it — was whether the system would actually work for frontline staff in the field. The gap between assurance and operational fitness is not a flaw in the Investment Oversight Framework. It is a gap in altitude coverage. The gate was positioned to see documents. It was not positioned to see production.
+The Unify case is a studied example. Formal governance processes operated correctly at their designed altitude. The system cleared its review. What the assurance gate could not see — because it was not positioned to see it — was whether the system would actually work for frontline staff in the field. The gate was positioned to see documents. It was not positioned to see production.
 
-The New Zealand finding names a variant of this failure at the governance layer itself. The Mind the Gap report found that most examined organisations carried higher residual risk than their stated appetite — and that governors were uncertain whether they could close the gap or what it would cost to do so. Governors were engaged and aware. They were not positioned to confirm operational reality. That is Altitude Collapse at the board level — the strategic layer absorbing responsibility it cannot discharge without visibility into execution.
+The New Zealand finding names a related but distinct expression of this failure at the governance layer itself. The Mind the Gap report found that most examined organisations carried higher residual risk than their stated appetite — and that governors were uncertain whether they could close the gap or what it would cost to do so. New Zealand's centralised model produces a gap located in the translation from risk appetite to operational mandate, rather than the attestation substitution seen in Australia. Both reflect structural distance between governance intent and the execution layer. The remedy for each is different.
+
+These represent two distinct expressions of Altitude Collapse. The first occurs when the gate is positioned correctly within its authority but cannot see the execution layer — the signal exists but is invisible from the governance altitude. The second occurs when the strategic layer has authority and visibility but cannot translate risk appetite into verifiable operational requirements — the intent exists but the translation mechanism is absent. Both produce persistent gaps.
 
 The second failure mode is the inverse: decision weight held too high, leaving the delivery layer without the authority or context to manage its own control environment. Canada's governance coverage problem is this failure mode expressed at national scale. Central cyber security services were available. Fifty-eight per cent of federal organisations were not required to use them. Of those eligible, many did not. The governance model held decision authority at the centre without embedding the enforcement mechanism at the level where adoption actually occurs. The result is a fragmented protective landscape where the central authority cannot see — and therefore cannot govern — the majority of the environment it is responsible for.
 
-On accountability: altitude-based thinking clarifies accountability rather than diffusing it. When a control fails, the question is not simply who was responsible — it is at what altitude the responsibility sat and whether that altitude had the visibility and authority to discharge it. Australia's audit findings cannot reliably answer that question. They document outcomes without locating the decision that produced them. That distinction is the difference between finding a problem and being able to fix it.
+On accountability: altitude-based thinking clarifies accountability rather than diffusing it. When a control fails, the question is not simply who was responsible — it is at what altitude the responsibility sat and whether that altitude had the authority, observability, and enforcement proximity to discharge it. Australia's audit findings cannot reliably answer that question. They document outcomes without locating the decision that produced them. That distinction is the difference between finding a problem and being able to fix it.
 
 ---
 
@@ -76,7 +82,7 @@ The research paper identified that the prevention-detection-remediation gap appe
 
 **First, verification operates at a remove from execution.** Most compliance checks — audit committees, periodic reviews, assurance gates, board reporting — see documents and attestations rather than live system states. They can confirm a policy exists but not whether it is enforced when a team makes a configuration change or a third party modifies a network rule.
 
-This is not a question of organisational hierarchy alone. It is a combination of where the observer sits in the chain of decision rights, what the observer can see at runtime, and how close the observer is to the mechanism that can act on a deviation. When these three dimensions are all distant from the execution layer findings become chronic. No one with authority to close them can see them clearly. No one who can see them clearly has the authority to act.
+This is not a question of organisational hierarchy alone. It is a combination of the three altitude dimensions: where the observer sits in the chain of decision rights, what the observer can see at runtime, and how close the observer is to the mechanism that can act on a deviation. When all three dimensions are distant from the execution layer, findings become chronic. No one with authority to close them can see them clearly. No one who can see them clearly has the authority to act.
 
 The 78% repeat rate in ANAO interim findings is the clearest quantitative expression of this condition at the federal level. The findings are seen. They are documented. They are carried forward. They are not closed. The mechanism for closing them is not positioned where closing actually happens.
 
@@ -84,21 +90,25 @@ The 78% repeat rate in ANAO interim findings is the clearest quantitative expres
 
 Victoria's server inventory finding is the case in point. Six agencies had automated discovery tools. Full configuration was harder than partial configuration. Partial became the steady state, six times across six agencies. Canada's non-engagement pattern is the same condition expressed at the governance layer. Using central security services required active engagement. Not using them required nothing. The path of least resistance led away from the compliant state.
 
-The Velocity Architecture Framework calls the route that makes correct behaviour the default The Compliant Path. When it exists, compliance does not require discipline. It requires following the path of least resistance, because that path has been engineered to be the correct one. The audit evidence across eight jurisdictions is, in aggregate, evidence that The Compliant Path was not built into the control environments being governed.
+The Velocity Architecture Framework calls the route that makes correct behaviour the default The Compliant Path. When it exists, compliance does not require discipline. It requires following the path of least resistance, because that path has been engineered to be the correct one. A Compliant Path exists when the action that requires the fewest permissions, the least manual documentation, and the shortest approval chain is also the action that satisfies the relevant control.
 
-This is not DevSecOps or shift-left security repackaged. Those disciplines focus on pipeline speed and integration. The Compliant Path focuses on whether the structural conditions for correct behaviour exist at the altitude where decisions are made. A team can have a fully integrated delivery pipeline and still operate in an environment where the correct governance behaviour is harder than the incorrect one. Pipeline speed does not resolve structural position.
+The Compliant Path is a positioning principle, not a product category. It does not require specific tooling or a DevSecOps methodology. Those disciplines focus on pipeline speed and integration. The Compliant Path focuses on whether the structural conditions for correct behaviour exist at the altitude where decisions are made. A team can have a fully integrated delivery pipeline and still operate in an environment where the correct governance behaviour is harder than the incorrect one. Pipeline speed does not resolve structural position.
+
+The audit evidence across eight jurisdictions is, in aggregate, evidence that The Compliant Path was not built into the control environments being governed.
 
 **Third, deviation does not become intelligence.** When a control is bypassed — through a workaround, a deferred remediation, a non-engaged service — the system rarely logs it in a way that aggregates into a pattern. Each deviation is treated as an isolated event. A single unresolved finding might be defensible. Sixty-five per cent of findings unresolved from prior years across Western Australia and the ACT is a signal. Without aggregated, attributable deviation data reviewed by someone with the authority to adjust the control, the signal never forms. The governance system cannot calibrate itself. It accumulates unresolved findings instead.
 
 Canada's January 2024 cyberattack response failure illustrates this at the incident level. Lack of information sharing between TBS, CSE, and Shared Services Canada delayed response and allowed the attacker prolonged access. The information existed across three bodies. It was not aggregated in a way that enabled coordinated action. The deviation — an active attack — did not become intelligence at the speed and level required to respond.
 
-Underpinning all three conditions is a reality that public sector governance cannot simply wish away. Accountability is distributed by design. Decisions move through committees, partly to guard against concentrated authority and partly to satisfy the architecture of ministerial oversight. That distribution has a structural consequence: when no single person is on the hook for closing a finding, and when being the person who signs off carries career cost while staying verbal carries none, the incentive to keep a finding alive is powerful. This is not dysfunction. It is rational behaviour inside the system as currently constructed. Any attempt to close the gap has to work with that reality, not against it.
+Underpinning all three conditions is a reality that public sector governance cannot simply wish away. Accountability is distributed by design. Decisions move through committees, partly to guard against concentrated authority and partly to satisfy the architecture of ministerial oversight. That distribution has a structural consequence: when no single person is on the hook for closing a finding, and when being the person who signs off carries career cost while staying verbal carries none, the incentive to keep a finding alive is powerful. This is not dysfunction. It is rational behaviour inside the system as currently constructed.
+
+This represents a genuine structural tension. The very mechanisms that prevent autocratic risk-taking also prevent decisive risk closure. Any attempt to close the gap has to work with that reality, not against it.
 
 ---
 
 ## What the Operational Consequence Tells Us
 
-The research paper documented the ASD Annual Cyber Threat Report 2024-25: over 84,700 cybercrime reports, over 1,200 significant cyber security incidents, an 11% increase year on year, and a 111% rise in attacks on critical infrastructure. State and local governments remained among the highest incident-reporting sectors.
+The ASD Annual Cyber Threat Report 2024-25: over 84,700 cybercrime reports, over 1,200 significant cyber security incidents, an 11% increase year on year, and a 111% rise in attacks on critical infrastructure. State and local governments remained among the highest incident-reporting sectors.
 
 These numbers are not separate from the audit findings. They are the same structural failure expressed in two different measurement registers. Unresolved access management deficiencies, incomplete server inventories, fragmented protective service adoption, and absent independent compliance assurance are not administrative imperfections. They are the attack surface. The ASD data quantifies what happens when that surface remains open.
 
@@ -120,7 +130,7 @@ If your third-party providers consistently appear in audit findings, the issue i
 
 ## The Trans-Pacific Pattern and What It Settles
 
-The research paper's most significant analytical finding is that the governance-execution gap is not a product of any specific governance architecture. It persists across federated models, centralised models, and unitary models. It persists across jurisdictions with internationally validated framework designs. The OECD ranked Australia second globally in digital government in 2025. Canada and New Zealand have their own internationally acknowledged governance frameworks. All three produce the same underlying pattern.
+The research paper's most significant analytical finding is that the governance-execution gap is not a product of any specific governance architecture. It persists across federated models, centralised models, and unitary models. It persists across jurisdictions with internationally validated framework designs. The OECD ranked Australia second globally in digital government in 2025. Canada and New Zealand have their own internationally acknowledged governance frameworks. All three produce the same underlying structural condition.
 
 This settles one important question. The gap is not closed by framework sophistication, governance model design, or policy addition alone. The OECD review of Australia's IOF confirms the framework is sound. The audit evidence confirms the gap persists. Both are true simultaneously because they measure different things. The OECD measures design maturity. Audit offices measure operational reality. The space between those two measurements is where the problem lives.
 
@@ -132,7 +142,7 @@ New policies — including Australia's DTA Cloud Computing Policy effective July
 
 The counterargument that culture — not structure — is the real problem is valid up to a point. The pattern the research paper identifies across eight jurisdictions is precisely about the gap between formal structures and actual behaviour. Culture is a genuine contributing factor.
 
-But culture arguments, taken alone, tend to produce awareness campaigns rather than structural change. The audit evidence is not evidence of agencies that do not care about compliance. It is evidence of agencies operating in environments where the correct behaviour is structurally harder than the incorrect one. Changing culture without changing the structural conditions in which behaviour occurs is an intervention that operates against the grain of the system rather than with it.
+But culture is not the root cause. It is the residue of repeated structural incentives. When The Compliant Path is absent, an organisation's culture gradually normalises workarounds — not because people are negligent, but because the structure rewards the workaround over time. Changing culture without changing the structural conditions in which behaviour occurs is an intervention that operates against the grain of the system rather than with it.
 
 ---
 
@@ -152,7 +162,7 @@ These are not rhetorical questions. They are researchable. The audit infrastruct
 
 ## A Note on the Trans-Tasman Context
 
-New Zealand's more centralised all-of-government model offers a genuinely useful contrast to Australia's federated design. The Mind the Gap finding — that most organisations carry higher residual risk than their stated appetite — is a different expression of the governance-execution gap than Australia's attestation substitution problem. It is not a worse outcome or a better one. It is a structurally distinct variant produced by a different governance architecture.
+New Zealand's more centralised all-of-government model offers a genuinely useful contrast to Australia's federated design. The Mind the Gap finding — that most organisations carry higher residual risk than their stated appetite — is a different expression of the governance-execution gap than Australia's attestation substitution problem. New Zealand's centralised model produces a gap located in the translation from risk appetite to operational mandate. Australia's federated model produces a gap in the substitution of attestation for verification. Both reflect structural distance between governance intent and the execution layer.
 
 The empirical question a serious Trans-Tasman comparison must answer is whether New Zealand's centralised model produces measurably lower unresolved deficiency rates than Australian jurisdictions when compared at equivalent scale. The current evidence does not answer that question. The NZ report deliberately does not identify organisations or provide deficiency counts comparable to WAAGO or QAO reporting. That data exists within the NZ audit process. Its public availability would make the Trans-Tasman comparison empirically precise rather than structurally inferential.
 
