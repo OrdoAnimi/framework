@@ -1,158 +1,111 @@
-# Velocity Architecture Framework™
+# Velocity Architecture Framework™ (VAF)
 
-**A decision governance framework for enterprise and solution architecture.**
-
-> *Velocity is not speed. It is the rate at which ambiguity expires.*
+**Architecture at the speed of the decision.**
 
 ---
 
-## What This Is
+## What this is
 
-The Velocity Architecture Framework (VAF) is a formally specified architecture framework conformant with **ISO/IEC/IEEE 42010:2022** — the international standard for architecture description.
+This repository contains everything produced under the Velocity Architecture Framework™ (VAF) and the ZenCloud Global Consultants research programme.
 
-It establishes common practice for creating, interpreting, analysing, and using architecture descriptions within:
+It is free. Use what you need. Cite what you reference. Build on what you find useful.
 
-- **Primary domain:** Enterprise and solution architecture
-- **Extended domain:** Organisational leadership and decision governance
+There are three kinds of people who come to a repository like this:
 
-The VAF's central claim is simple: **architecture exists to create clarity that leads to better decisions.** Every instrument, rule, and artefact in this framework exists in service of that purpose.
+**Researchers** — you want the evidence base, the source citations, the empirical grounding. Start with the [research papers](/research). Everything is sourced. Evidence quality is graded throughout. The gaps and limitations are named explicitly — not buried.
 
----
+**Practitioners** — you want to know how to do something faster and better than the conventional approach tells you. Start with the [VAF Practitioner Operating Manual](/tools). It covers all 18 core EA artefacts. For each one: how to run the conversation that surfaces the content, what to write down, and how to present it to an executive who needs to make a decision.
 
-## Trademark & IP
-
-**Velocity Architecture Framework™** is a trademark filed under Class 42, ZenCloud Consulting.  
-© 2026 Phil Myint / ZenCloud Global Consultants. All rights reserved.
-
-This repository is published for reference and professional use. See [LICENSE](LICENSE) for terms.
+**Organisations without an EA function** — you have work to do, decisions to make, and no-one with an enterprise architecture title to help you do it. This is built for you. Start with the [Plain Language Guide](/guides/plain-language-guide.md). It will tell you what you actually need, in the order you actually need it, without the framework overhead.
 
 ---
 
-## Framework Structure
+## Who built this
 
-The VAF is organised into seven columns and a foundation layer.
+**Phil Myint** — delivery lead, practice lead, TOGAF certified, CBA certified. Extensive cross-sector deployment experience. Background in delivery, mergers, and enterprise transformation. Not a theorist. Someone who has sat with CIOs, SVPs, and executive teams and had to make architecture work at the speed the organisation was moving.
 
-| Column | Name | Purpose |
-|--------|------|---------|
-| 1 | Trademark | The brand, discipline, and umbrella — everything inherits from this |
-| 2 | Operating Model | How the framework runs — Foundation, Operating, Strategic |
-| 3 | Operating Rhythm | The engine — Pulse system and escalation cadence |
-| 4 | Delivery System | Where it lives — Velocity Vault, folder model, handover |
-| 5 | Architectural Control | What stays true — Dashboard, ADL, ADRs, aging rules |
-| 6 | Pattern & Playbook | Execution inside the framework — named patterns and playbooks |
-| 7 | Practitioner | Who operates it — the integrity arc and Auctor Custos role |
+**ZenCloud Global Consultants** — neutral, evidence-based research and consulting. Publications draw from primary audit sources, peer-reviewed research, and practitioner analysis. ZenCloud does not advocate for frameworks. It analyses what the evidence supports.
 
-**Foundation Layer** (beneath all columns): the epistemological premises — Velocity of Truth, Integrity Gap, Decision Latency, Expiry, Control Paradox.
+**Velocity Architecture Framework™ (VAF)** — a proprietary practitioner framework. Forensic. Declarative. Built for organisations and practitioners who need to produce the right artefact at the resolution the decision requires — not the artefact the framework says should exist.
 
 ---
 
-## Six Viewpoints (ISO/IEC/IEEE 42010 Conformant)
+## The governing argument
 
-| ID | Viewpoint | Instrument | Layer |
-|----|-----------|------------|-------|
-| VP1 | Direction | Guardrail Canvas | Enterprise |
-| VP2 | Decision | Trade-off Matrix | Solution |
-| VP3 | Truth | ADRs + Fitness Functions | Technical |
-| VP4 | Velocity | Velocity Dashboard + ADL | Control |
-| VP5 | Rhythm | Pulse System | Operating |
-| VP6 | Practitioner | Integrity Arc (Auctor Custos) | Human |
+Most organisations that fail at enterprise architecture do not fail because they chose the wrong framework. They fail because they confuse producing the artefact with serving the decision the artefact exists to support.
+
+The artefact is the record of the decision. Not the input to it.
+
+Every tool, template, and guide in this repository is built from that position.
 
 ---
 
-## Repository Structure
+## Repository contents
 
 ```
-velocity-architecture/
+velocity-repo/
 │
-├── README.md                          ← This file
-├── LICENSE
+├── README.md                          ← you are here
 │
-├── spec/
-│   └── FRAMEWORK-SPEC.md             ← Full ISO/IEC/IEEE 42010 conformant specification
+├── research/
+│   ├── EA-Artefacts-True-Purpose-Value-Metrics.md     ← full research paper
+│   ├── MVP-MLP-Empirical-Evidence.md                  ← MVP/MLP evidence analysis
+│   ├── EA-Value-Over-Time-Analysis.md                 ← value trajectory research
+│   └── SOURCES.md                                     ← full bibliography
 │
-├── viewpoints/
-│   ├── vp1-direction/
-│   │   ├── README.md                 ← Viewpoint specification
-│   │   └── guardrail-canvas.md       ← Artefact template
-│   ├── vp2-decision/
-│   │   ├── README.md
-│   │   └── trade-off-matrix.md
-│   ├── vp3-truth/
-│   │   ├── README.md
-│   │   ├── adr-template.md
-│   │   └── fitness-function-examples.md
-│   ├── vp4-velocity/
-│   │   ├── README.md
-│   │   ├── adl-template.md           ← Architectural Decision Log
-│   │   └── velocity-dashboard.md
-│   ├── vp5-rhythm/
-│   │   ├── README.md
-│   │   └── pulse-system.md
-│   └── vp6-practitioner/
-│       ├── README.md
-│       └── integrity-arc.md
+├── frameworks/
+│   ├── VAF-Compression-Map.md                         ← all 18 artefacts compressed
+│   ├── EA-Artefact-Type-Classification.md             ← the four-type framework
+│   └── Architecture-at-the-Speed-of-the-Decision.md  ← governing argument
 │
-├── correspondence-rules/
-│   └── RULES.md                      ← All 17 correspondence rules
+├── tools/
+│   ├── templates/
+│   │   ├── VAF-EA-Artefact-Templates.docx             ← all 18 templates (Word)
+│   │   └── VAF-EA-Artefact-Templates.md               ← all 18 templates (Markdown)
+│   └── compression-map/
+│       └── VAF-Artefact-Compression-Map.md            ← time/value/substitution
 │
-├── templates/                         ← Ready-to-use blank artefacts
-│   ├── guardrail-canvas.md
-│   ├── trade-off-matrix.md
-│   ├── adr.md
-│   └── pulse-briefing.md
+├── guides/
+│   ├── plain-language-guide.md                        ← start here if new to EA
+│   ├── VAF-Practitioner-Operating-Manual.docx         ← full 3-layer manual (Word)
+│   └── VAF-Practitioner-Operating-Manual.md           ← full 3-layer manual (Markdown)
 │
-├── diagnostics/
-│   ├── decision-velocity-diagnostic.md
-│   └── organisation-health-check.md
-│
-├── foundation/
-│   └── EPISTEMOLOGY.md               ← Foundation layer — coined concepts
-│
-├── leadership/
-│   └── LEADERSHIP-EXTENSION.md      ← VAF without the architecture lens
-│
-└── examples/
-    ├── guardrail-canvas-example.md
-    ├── trade-off-matrix-example.md
-    └── adr-example.md
+└── assets/
+    └── LICENCE.md                                     ← usage terms
 ```
 
 ---
 
-## Quick Start
+## How to use this repository
 
-**If you are an architect:**
-1. Start with [`/spec/FRAMEWORK-SPEC.md`](spec/FRAMEWORK-SPEC.md) to understand the full framework
-2. Use [`/viewpoints/vp1-direction/guardrail-canvas.md`](viewpoints/vp1-direction/guardrail-canvas.md) to declare enterprise direction
-3. Use [`/viewpoints/vp2-decision/trade-off-matrix.md`](viewpoints/vp2-decision/trade-off-matrix.md) for solution-level decisions
-4. Use [`/viewpoints/vp3-truth/adr-template.md`](viewpoints/vp3-truth/adr-template.md) for technical decisions
-5. Review [`/correspondence-rules/RULES.md`](correspondence-rules/RULES.md) to understand how artefacts relate
+**If you have 10 minutes** — read the [Plain Language Guide](/guides/plain-language-guide.md). It tells you what an EA artefact is, why most organisations produce them wrong, and what one useful artefact looks like.
 
-**If you are a leader (non-architecture context):**
-Start with [`/leadership/LEADERSHIP-EXTENSION.md`](leadership/LEADERSHIP-EXTENSION.md)
+**If you have an hour** — work through the [VAF Compression Map](/frameworks/VAF-Compression-Map.md). Pick the artefact most relevant to a decision you are currently facing. Read the compression logic. Use the template.
 
-**If you want a diagnostic:**
-Start with [`/diagnostics/decision-velocity-diagnostic.md`](diagnostics/decision-velocity-diagnostic.md)
+**If you have a decision to take to an executive** — go directly to the relevant artefact in the [Practitioner Operating Manual](/guides/VAF-Practitioner-Operating-Manual.md). Layer 1 tells you how to run the conversation. Layer 2 gives you the template. Layer 3 tells you how to present the finding.
+
+**If you are writing a paper or doing research** — start with the [research papers](/research). All findings are sourced. Evidence quality is stated. The gaps in the evidence base are named — including the gap where no longitudinal artefact-level study exists.
 
 ---
 
-## Core Test
+## Licence
 
-Every artefact in this framework is judged by a single test:
+Free to use. Free to share. Free to build on. Attribution appreciated — not required.
 
-> **Did this help someone decide?**
+Do not republish the VAF framework under a different name without acknowledgement of origin. The research papers may be cited with standard academic attribution.
 
-If it did not, it is not architecture.
-
----
-
-## Related Publications
-
-- **VAF Book** — 50-chapter manuscript, published serially on Medium [@ZencloudAU](https://medium.com/@ZencloudAU)
-- **VAF LinkedIn Series** — Applied articles on decision governance and architectural leadership
-- **The Living Bible for Enterprise & Solution Architects** — Domain knowledge reference base
+See [LICENCE.md](/assets/LICENCE.md) for full terms.
 
 ---
 
-*Velocity Architecture Framework™ — © 2026 Phil Myint / ZenCloud Global Consultants*  
-*ISO/IEC/IEEE 42010:2022 Conformant | TM Class 42, ZenCloud Consulting*
+## Contact and publication
+
+**LinkedIn:** ZenCloud Global Consultants and Velocity Architecture Framework™ publish independently.
+
+**Series 5** of the VAF practitioner series is open as of May 2026. This repository accompanies that series.
+
+For research enquiries: ZenCloud Global Consultants.
+
+---
+
+*ZenCloud Global Consultants · Velocity Architecture Framework™ · May 2026*
