@@ -1,86 +1,39 @@
-# Velocity Architecture Framework™ — Licence
+# Licence and Usage
 
-**© 2026 Phil Myint / ZenCloud Global Consultants. All rights reserved.**
-
----
-
-## Trademark Notice
-
-**Velocity Architecture Framework™** is a trademark of ZenCloud Consulting, filed under Class 42.
-
-The name "Velocity Architecture Framework", the abbreviation "VAF", and all associated named instruments (including but not limited to Guardrail Canvas, Trade-off Matrix, Velocity Dashboard, Velocity Vault, Pulse System, Auctor Custos, Integrity Arc, and Decision Velocity Metrics) are protected intellectual property of Phil Myint / ZenCloud Global Consultants.
-
-Use of the trademark in any commercial context requires explicit written permission from the owner.
+This repository is licensed under the **MIT Licence** — see the `LICENSE` file for the full legal text.
 
 ---
 
-## Licence Terms
+## In plain language
 
-This work is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence (CC BY-NC-SA 4.0)**, with the additional trademark and commercial restrictions stated below.
+**Free to use.** All tools, templates, guides, and research papers in this repository are free to use for personal, organisational, and commercial purposes.
 
-Full licence text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+**Free to share.** You may share, distribute, and republish any material in this repository.
 
----
+**Free to build on.** You may adapt, extend, and build upon the frameworks, templates, and tools in this repository.
 
-## What You May Do
-
-**You are free to:**
-
-- **Read and use** this framework for your own professional and organisational practice
-- **Share** — copy and redistribute this material in any medium or format for non-commercial purposes
-- **Adapt** — remix, transform, and build upon this material for non-commercial purposes
-
-**Under the following terms:**
-
-- **Attribution** — You must give appropriate credit to Phil Myint / ZenCloud Global Consultants, provide a link to this repository, and indicate if changes were made. Attribution must appear in any publication, presentation, or distribution that draws on this work.
-- **NonCommercial** — You may not use this material for commercial purposes without a separate commercial licence from the owner. This includes but is not limited to: selling consulting services using this framework, incorporating this framework into commercial products or courses, and charging for access to materials derived from this framework.
-- **ShareAlike** — If you remix, transform, or build upon this material, you must distribute your contributions under the same licence as the original.
-- **No trademark use** — This licence does not grant permission to use the Velocity Architecture Framework trademark, the VAF name, or any named instruments in your own publications, products, or services without explicit written permission.
+**Attribution appreciated — not required.** If you use this material in a publication, presentation, or product, a reference to ZenCloud Global Consultants and the Velocity Architecture Framework™ is appreciated. It is not a legal requirement under the MIT licence.
 
 ---
 
-## What Requires a Commercial Licence
+## Trademark
 
-The following uses require a separate written commercial licence from Phil Myint / ZenCloud Global Consultants:
+**Velocity Architecture Framework™** and **Velocity Success Factor™** are trademarks of Phil Myint / ZenCloud Global Consultants, filed under Class 42, ZenCloud Consulting.
 
-- Delivering consulting, advisory, or professional services to clients using this framework as a named methodology
-- Publishing books, courses, or training materials that incorporate this framework
-- Incorporating this framework into commercial software, tools, or platforms
-- Using the trademark name "Velocity Architecture Framework" or "VAF" in commercial marketing or product naming
-- Adapting and selling derivative frameworks under any name
+You may use the framework and its tools freely under the MIT licence. You may not republish the VAF or VSF frameworks under a different name while claiming they are your original work, without acknowledgement of origin.
 
 ---
 
-## Conformance Claim Protection
+## Research paper citations
 
-This framework is formally specified as conformant with ISO/IEC/IEEE 42010:2022. Any derivative work that claims conformance with this specification must not misrepresent its relationship to the original Velocity Architecture Framework. Derivatives must clearly distinguish themselves from the original and may not claim to be the Velocity Architecture Framework or an official version thereof.
+If you cite the research papers in this repository in academic or professional publications, use standard citation format:
 
----
-
-## Citation
-
-When referencing this framework in academic, professional, or published work, use the following citation:
-
-> Myint, P. (2026). *Velocity Architecture Framework™: A Decision Governance Framework for Enterprise Architecture and Organisational Leadership* (Version 1.0). ZenCloud Global Consultants. https://github.com/ZenCloudAU/velocity-architecture
+> ZenCloud Global Consultants. (2026). *[Paper title]*. Velocity Architecture Framework Research Programme. Retrieved from https://github.com/ZenCloudAU/velocity-architecture
 
 ---
 
-## Commercial Licensing Enquiries
+## Contact
 
-For commercial licensing, consulting engagements, or permission requests:
+**zencloud.com.au** | **zencloud.com.au/writing**
 
-**Phil Myint**  
-Principal Architect, ZenCloud Global Consultants  
-phil@myintenterprises.com  
-https://github.com/ZenCloudAU
-
----
-
-## Disclaimer
-
-This framework is provided for professional reference and educational use. The author and ZenCloud Global Consultants make no warranties, express or implied, regarding the fitness of this framework for any particular purpose. Application of this framework is the sole responsibility of the practitioner.
-
----
-
-*Velocity Architecture Framework™ — © 2026 Phil Myint / ZenCloud Global Consultants*  
-*ISO/IEC/IEEE 42010:2022 Conformant | TM Class 42, ZenCloud Consulting*
+*© 2026 Phil Myint / ZenCloud Global Consultants*
