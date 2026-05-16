@@ -69,6 +69,10 @@ jobs:
       contents: read
       packages: read
 
+    env:
+      ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GH_PAT: ${{ secrets.GH_TOKEN }}
+
     steps:
       - name: Log in to Azure
         uses: azure/login@v2
@@ -78,34 +82,34 @@ jobs:
       - name: Create Resource Group
         run: |
           az group create \
-            --name ${{ env.RESOURCE_GROUP }} \
-            --location ${{ env.LOCATION }}
+            --name vaf-rg \
+            --location australiasoutheast
 
       - name: Deploy to Azure Container Instances
         run: |
           az container create \
-            --resource-group ${{ env.RESOURCE_GROUP }} \
-            --name ${{ env.CONTAINER_NAME }} \
-            --image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
-            --registry-server ${{ env.REGISTRY }} \
-            --registry-username ${{ github.actor }} \
-            --registry-password "${{ secrets.GH_TOKEN }}" \
+            --resource-group vaf-rg \
+            --name vaf-agentic-architect \
+            --image ghcr.io/${{ github.repository }}:latest \
             --cpu 1 \
             --memory 1 \
             --ports 3000 \
             --ip-address Public \
-            --location ${{ env.LOCATION }} \
+            --location australiasoutheast \
             --restart-policy Always \
+            --registry-login-server ghcr.io \
+            --registry-username ${{ github.actor }} \
+            --registry-password "$GH_PAT" \
             --environment-variables NODE_ENV=production GITHUB_OWNER=ZenCloudAU GITHUB_REPO=velocity-architecture \
-            --secure-environment-variables ANTHROPIC_API_KEY="${{ secrets.ANTHROPIC_API_KEY }}" GITHUB_TOKEN="${{ secrets.GH_TOKEN }}"
+            --secure-environment-variables "ANTHROPIC_API_KEY=$ANTHROPIC_KEY" "GITHUB_TOKEN=$GH_PAT"
 
       - name: Get container IP and verify
         run: |
-          sleep 15
+          sleep 20
           IP=$(az container show \
-            --resource-group ${{ env.RESOURCE_GROUP }} \
-            --name ${{ env.CONTAINER_NAME }} \
+            --resource-group vaf-rg \
+            --name vaf-agentic-architect \
             --query ipAddress.ip \
             --output tsv)
-          echo "VAF Agent deployed at: http://$IP:3000"
-          curl -f "http://$IP:3000/health"
+          echo "VAF Agent live at: http://$IP:3000"
+          curl -f "http://$IP:3000/health" && echo "Health check passed"
