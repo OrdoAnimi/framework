@@ -2,18 +2,16 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Copy package files and install ALL dependencies (including devDependencies for build)
 COPY package*.json ./
 RUN npm ci
 
-# Copy source
 COPY tsconfig.json ./
 COPY app ./app
 
-# Build TypeScript
 RUN npm run build
 
-# Remove devDependencies after build
+RUN cp app/portal.html dist/app/portal.html
+
 RUN npm prune --production
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \

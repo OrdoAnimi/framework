@@ -1,29 +1,35 @@
-import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
+dotenv.config();
+
+import express, { Express, Request, Response, NextFunction } from 'express';
+import path from 'path';
 import { orchestrator } from './orchestrator';
 import { logger } from './logger';
 import { EARequest } from './types/index';
-
-dotenv.config();
 
 const app: Express = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Request logging middleware
-app.use((req: Request, res: Response, next) => {
+app.use((req: Request, res: Response, next: NextFunction) => {
   logger.info({ method: req.method, path: req.path }, 'Incoming request');
   next();
 });
 
-// Health check (required by Cloud Run)
+// Serve portal at root
+app.get('/', (req: Request, res: Response) => {
+  res.sendFile(path.join(__dirname, 'portal.html'));
+});
+
+// Health check
 app.get('/health', (req: Request, res: Response) => {
-  res.json({
-    status: 'healthy',
-    timestamp: new Date().toISOString(),
-    version: '2.0.0',
-  });
+  res.json({ status: 'healthy', timestamp: new Date().toISOString(), version: '2.0.0' });
+});
+
+// Status
+app.get('/status', (req: Request, res: Response) => {
+  res.json({ status: 'operational', version: '2.0.0', environment: process.env.NODE_ENV || 'development', timestamp: new Date().toISOString() });
 });
 
 // Generate EA artefacts
@@ -37,10 +43,7 @@ app.post('/artefacts/generate', async (req: Request, res: Response) => {
     }
 
     const requestId = `req-${Date.now()}-${Math.random().toString(36).substring(7)}`;
-    logger.info(
-      { requestId, topic, userId: userId || 'anonymous' },
-      'EA generation requested'
-    );
+    logger.info({ requestId, topic, userId: userId || 'anonymous' }, 'EA generation requested');
 
     const eaRequest: EARequest = {
       id: requestId,
@@ -62,7 +65,7 @@ app.post('/artefacts/generate', async (req: Request, res: Response) => {
         id: a.id,
         type: a.type,
         metadata: a.metadata,
-        contentPreview: a.content.slice(0, 500),
+        contentPreview: a.content.slice(0, 1000),
         contentLength: a.content.length,
       })),
       errors: result.errors,
@@ -71,81 +74,25 @@ app.post('/artefacts/generate', async (req: Request, res: Response) => {
     });
   } catch (error) {
     logger.error({ error }, 'Generation request failed');
-    res.status(500).json({
-      error: 'Generation failed',
-      message: error instanceof Error ? error.message : String(error),
-    });
+    res.status(500).json({ error: 'Generation failed', message: error instanceof Error ? error.message : String(error) });
   }
 });
 
-// Retrieve full artefact content
+// Retrieve artefact
 app.get('/artefacts/:id', async (req: Request, res: Response) => {
-  try {
-    const { id } = req.params;
-    logger.info({ id }, 'Artefact retrieval requested');
-
-    // In MVP, we return a placeholder
-    // In production, this would retrieve from GitHub or cache
-    res.status(501).json({
-      error: 'Not implemented',
-      message: 'Full artefact retrieval coming in Phase 2',
-    });
-  } catch (error) {
-    logger.error({ error }, 'Retrieval request failed');
-    res.status(500).json({
-      error: 'Retrieval failed',
-      message: error instanceof Error ? error.message : String(error),
-    });
-  }
+  res.status(501).json({ error: 'Not implemented', message: 'Retrieve from GitHub directly' });
 });
 
-// Status endpoint
-app.get('/status', (req: Request, res: Response) => {
-  res.json({
-    status: 'operational',
-    version: '2.0.0',
-    environment: process.env.NODE_ENV || 'development',
-    timestamp: new Date().toISOString(),
-  });
-});
-
-// 404 handler
+// 404
 app.use((req: Request, res: Response) => {
-  res.status(404).json({
-    error: 'Not found',
-    path: req.path,
-  });
+  res.status(404).json({ error: 'Not found', path: req.path });
 });
 
-// Error handler
-app.use((err: any, req: Request, res: Response) => {
-  logger.error({ error: err }, 'Unhandled error');
-  res.status(500).json({
-    error: 'Internal server error',
-    message: process.env.NODE_ENV === 'development' ? err.message : 'An error occurred',
-  });
-});
-
-// Start server
 const server = app.listen(port, () => {
   logger.info({ port }, 'VAF Agentic Architect v2 listening');
 });
 
-// Graceful shutdown
-process.on('SIGTERM', () => {
-  logger.info('SIGTERM received, shutting down gracefully');
-  server.close(() => {
-    logger.info('Server closed');
-    process.exit(0);
-  });
-});
-
-process.on('SIGINT', () => {
-  logger.info('SIGINT received, shutting down gracefully');
-  server.close(() => {
-    logger.info('Server closed');
-    process.exit(0);
-  });
-});
+process.on('SIGTERM', () => { server.close(() => process.exit(0)); });
+process.on('SIGINT', () => { server.close(() => process.exit(0)); });
 
 export default app;
