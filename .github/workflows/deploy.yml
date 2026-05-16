@@ -89,37 +89,23 @@ jobs:
             --image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
             --registry-server ${{ env.REGISTRY }} \
             --registry-username ${{ github.actor }} \
-            --registry-password ${{ secrets.GH_TOKEN }} \
+            --registry-password "${{ secrets.GH_TOKEN }}" \
             --cpu 1 \
             --memory 1 \
             --ports 3000 \
             --ip-address Public \
             --location ${{ env.LOCATION }} \
             --restart-policy Always \
-            --environment-variables \
-              NODE_ENV=production \
-              GITHUB_OWNER=ZenCloudAU \
-              GITHUB_REPO=velocity-architecture \
-            --secure-environment-variables \
-              ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }} \
-              GITHUB_TOKEN=${{ secrets.GH_TOKEN }}
+            --environment-variables NODE_ENV=production GITHUB_OWNER=ZenCloudAU GITHUB_REPO=velocity-architecture \
+            --secure-environment-variables ANTHROPIC_API_KEY="${{ secrets.ANTHROPIC_API_KEY }}" GITHUB_TOKEN="${{ secrets.GH_TOKEN }}"
 
-      - name: Get container IP
+      - name: Get container IP and verify
         run: |
+          sleep 15
           IP=$(az container show \
             --resource-group ${{ env.RESOURCE_GROUP }} \
             --name ${{ env.CONTAINER_NAME }} \
             --query ipAddress.ip \
             --output tsv)
           echo "VAF Agent deployed at: http://$IP:3000"
-          echo "Health check: http://$IP:3000/health"
-
-      - name: Verify deployment
-        run: |
-          IP=$(az container show \
-            --resource-group ${{ env.RESOURCE_GROUP }} \
-            --name ${{ env.CONTAINER_NAME }} \
-            --query ipAddress.ip \
-            --output tsv)
-          sleep 15
           curl -f "http://$IP:3000/health"
