@@ -1,4 +1,4 @@
-name: VAF Agentic Architect — Build & Deploy
+name: VAF Agentic Architect — Build & Deploy to Azure
 
 on:
   push:
@@ -9,6 +9,9 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  RESOURCE_GROUP: vaf-rg
+  CONTAINER_NAME: vaf-agentic-architect
+  LOCATION: australiasoutheast
 
 jobs:
   build-and-push:
@@ -59,46 +62,64 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
 
   deploy:
-    name: Deploy to Cloud Run
+    name: Deploy to Azure Container Instances
     runs-on: ubuntu-latest
     needs: build-and-push
     permissions:
       contents: read
-      id-token: write
+      packages: read
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v2
+      - name: Log in to Azure
+        uses: azure/login@v2
         with:
-          credentials_json: ${{ secrets.GCP_SA_KEY }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@v2
-
-      - name: Deploy to Cloud Run
+      - name: Create Resource Group
         run: |
-          gcloud run deploy vaf-agentic-architect \
+          az group create \
+            --name ${{ env.RESOURCE_GROUP }} \
+            --location ${{ env.LOCATION }}
+
+      - name: Deploy to Azure Container Instances
+        run: |
+          az container create \
+            --resource-group ${{ env.RESOURCE_GROUP }} \
+            --name ${{ env.CONTAINER_NAME }} \
             --image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
-            --platform managed \
-            --region australia-southeast1 \
-            --allow-unauthenticated \
-            --port 3000 \
-            --memory 1Gi \
+            --registry-server ${{ env.REGISTRY }} \
+            --registry-username ${{ github.actor }} \
+            --registry-password ${{ secrets.GH_TOKEN }} \
             --cpu 1 \
-            --timeout 300 \
-            --set-env-vars "NODE_ENV=production,GITHUB_OWNER=ZenCloudAU,GITHUB_REPO=velocity-architecture" \
-            --set-secrets "ANTHROPIC_API_KEY=vaf-anthropic-key:latest,GITHUB_TOKEN=vaf-github-token:latest" \
-            --project ${{ secrets.GCP_PROJECT_ID }}
+            --memory 1 \
+            --ports 3000 \
+            --ip-address Public \
+            --location ${{ env.LOCATION }} \
+            --restart-policy Always \
+            --environment-variables \
+              NODE_ENV=production \
+              GITHUB_OWNER=ZenCloudAU \
+              GITHUB_REPO=velocity-architecture \
+            --secure-environment-variables \
+              ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }} \
+              GITHUB_TOKEN=${{ secrets.GH_TOKEN }}
+
+      - name: Get container IP
+        run: |
+          IP=$(az container show \
+            --resource-group ${{ env.RESOURCE_GROUP }} \
+            --name ${{ env.CONTAINER_NAME }} \
+            --query ipAddress.ip \
+            --output tsv)
+          echo "VAF Agent deployed at: http://$IP:3000"
+          echo "Health check: http://$IP:3000/health"
 
       - name: Verify deployment
         run: |
-          URL=$(gcloud run services describe vaf-agentic-architect \
-            --platform managed \
-            --region australia-southeast1 \
-            --format 'value(status.url)' \
-            --project ${{ secrets.GCP_PROJECT_ID }})
-          echo "Deployed to: $URL"
-          curl -f "$URL/health"
+          IP=$(az container show \
+            --resource-group ${{ env.RESOURCE_GROUP }} \
+            --name ${{ env.CONTAINER_NAME }} \
+            --query ipAddress.ip \
+            --output tsv)
+          sleep 15
+          curl -f "http://$IP:3000/health"
