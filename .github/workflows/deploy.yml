@@ -6,13 +6,6 @@ on:
       - main
   workflow_dispatch:
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
-  RESOURCE_GROUP: vaf-rg
-  CONTAINER_NAME: vaf-agentic-architect
-  LOCATION: australiasoutheast
-
 jobs:
   build-and-push:
     name: Build & Push Docker Image
@@ -40,35 +33,21 @@ jobs:
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
         with:
-          registry: ${{ env.REGISTRY }}
+          registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Extract metadata
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          tags: |
-            type=sha,prefix=main-
-            type=raw,value=latest
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ghcr.io/${{ github.repository }}:latest
 
   deploy:
     name: Deploy to Azure Container Instances
     runs-on: ubuntu-latest
     needs: build-and-push
-    permissions:
-      contents: read
-      packages: read
-
     env:
       ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       GH_PAT: ${{ secrets.GH_TOKEN }}
@@ -91,6 +70,7 @@ jobs:
             --resource-group vaf-rg \
             --name vaf-agentic-architect \
             --image ghcr.io/${{ github.repository }}:latest \
+            --os-type Linux \
             --cpu 1 \
             --memory 1 \
             --ports 3000 \
