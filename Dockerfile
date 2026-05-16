@@ -10,7 +10,7 @@ COPY app ./app
 
 RUN npm run build
 
-RUN cp app/portal.html dist/app/portal.html
+RUN mkdir -p dist/app && cp app/portal.html dist/app/portal.html
 
 RUN npm prune --production
 
