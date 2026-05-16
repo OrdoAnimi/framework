@@ -3,13 +3,13 @@ import { Artefact } from './types/index';
 import { logger } from './logger';
 
 class ActionEngine {
-  private githubToken = process.env.GITHUB_TOKEN;
+  private githubToken = process.env.VAF_GITHUB_TOKEN;
   private owner = process.env.GITHUB_OWNER || 'ZenCloudAU';
   private repo = process.env.GITHUB_REPO || 'velocity-architecture';
 
   async commitArtefact(requestId: string, artefact: Artefact): Promise<{ sha: string; url: string }> {
     if (!this.githubToken) {
-      throw new Error('GITHUB_TOKEN not configured');
+      throw new Error('VAF_GITHUB_TOKEN not configured');
     }
 
     const fileName = `artefacts/${artefact.type}/${requestId}-${artefact.type}.md`;
@@ -67,7 +67,7 @@ class ActionEngine {
 
   async getArtefact(id: string): Promise<Artefact | null> {
     if (!this.githubToken) {
-      throw new Error('GITHUB_TOKEN not configured');
+      throw new Error('VAF_GITHUB_TOKEN not configured');
     }
 
     try {

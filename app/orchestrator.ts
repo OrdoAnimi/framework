@@ -4,6 +4,7 @@ import { governanceAgent } from './agents/governance-agent';
 import { strategyAgent } from './agents/strategy-agent';
 import { designAgent } from './agents/design-agent';
 import { validationAgent } from './agents/validation-agent';
+import { actionEngine } from './action-engine';
 import { loadVAFFramework } from './kb-loader';
 import { logger } from './logger';
 
@@ -21,13 +22,11 @@ class Orchestrator {
     };
 
     try {
-      // Load VAF framework
       logger.info({ requestId: request.id }, 'Phase: Loading VAF Framework');
       if (!this.framework) {
         this.framework = await loadVAFFramework();
       }
 
-      // Phase 1: Planning
       logger.info({ requestId: request.id }, 'Phase: Planning');
       state.phase = 'planning';
       const plan = await this.createPlan(request);
@@ -38,7 +37,6 @@ class Orchestrator {
         return state;
       }
 
-      // Phase 2: Generation (parallel)
       logger.info({ requestId: request.id, artefactsNeeded: plan.artefactsNeeded }, 'Phase: Generation');
       state.phase = 'generation';
 
@@ -59,7 +57,6 @@ class Orchestrator {
         return state;
       }
 
-      // Phase 3: Validation
       logger.info({ requestId: request.id, artefactCount: state.artefacts.length }, 'Phase: Validation');
       state.phase = 'validation';
 
@@ -74,19 +71,27 @@ class Orchestrator {
         }
       }
 
-      // Phase 4: Publishing (if validation passed or allowed to proceed)
-      // Note: In MVP, we skip publishing to GitHub for now
+      logger.info({ requestId: request.id, artefactCount: state.artefacts.length }, 'Phase: Publishing');
+      state.phase = 'publishing';
+
+      for (const artefact of state.artefacts) {
+        try {
+          const result = await actionEngine.commitArtefact(request.id, artefact);
+          logger.info(
+            { requestId: request.id, type: artefact.type, sha: result.sha, url: result.url },
+            'Artefact committed to GitHub'
+          );
+        } catch (error) {
+          state.errors.push(`Commit failed for ${artefact.type}: ${error instanceof Error ? error.message : String(error)}`);
+        }
+      }
+
       state.phase = 'complete';
       state.endTime = new Date();
       state.duration = state.endTime.getTime() - state.startTime.getTime();
 
       logger.info(
-        {
-          requestId: request.id,
-          artefactCount: state.artefacts.length,
-          durationMs: state.duration,
-          errors: state.errors.length,
-        },
+        { requestId: request.id, artefactCount: state.artefacts.length, durationMs: state.duration, errors: state.errors.length },
         'Request complete'
       );
 
@@ -96,30 +101,20 @@ class Orchestrator {
       state.errors.push(`Orchestration failed: ${error instanceof Error ? error.message : String(error)}`);
       state.endTime = new Date();
       state.duration = state.endTime.getTime() - state.startTime.getTime();
-
-      logger.error(
-        { requestId: request.id, error, duration: state.duration },
-        'Request failed'
-      );
-
+      logger.error({ requestId: request.id, error, duration: state.duration }, 'Request failed');
       return state;
     }
   }
 
   private async createPlan(request: EARequest): Promise<TaskPlan> {
     try {
-      // Determine which artefacts to generate based on request
       const requestedArtefacts = request.requestedArtefacts || ['governance', 'strategy', 'design'];
-
-      // For MVP, we'll use a simple heuristic
-      // In production, this could be a Claude call to plan more intelligently
       const plan: TaskPlan = {
         requestId: request.id,
         artefactsNeeded: requestedArtefacts,
         validationRules: ['structure', 'tone', 'alignment', 'vaf-concepts'],
         sequenceOrder: ['governance', 'strategy', 'design'],
       };
-
       return plan;
     } catch (error) {
       logger.error({ error }, 'Plan creation failed');
@@ -128,21 +123,13 @@ class Orchestrator {
   }
 
   private async generateArtefact(request: EARequest, type: string): Promise<Artefact | null> {
-    if (!this.framework) {
-      throw new Error('VAF framework not loaded');
-    }
+    if (!this.framework) throw new Error('VAF framework not loaded');
 
     let agent;
     switch (type) {
-      case 'governance':
-        agent = governanceAgent;
-        break;
-      case 'strategy':
-        agent = strategyAgent;
-        break;
-      case 'design':
-        agent = designAgent;
-        break;
+      case 'governance': agent = governanceAgent; break;
+      case 'strategy': agent = strategyAgent; break;
+      case 'design': agent = designAgent; break;
       default:
         logger.warn({ type }, 'Unknown artefact type');
         return null;

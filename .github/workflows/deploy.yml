@@ -88,7 +88,7 @@ jobs:
             --registry-username "$ACTOR" \
             --registry-password "$GH_PAT" \
             --environment-variables NODE_ENV=production GITHUB_OWNER=ZenCloudAU GITHUB_REPO=velocity-architecture \
-            --secure-environment-variables "ANTHROPIC_API_KEY=$ANTHROPIC_KEY" "GITHUB_TOKEN=$GH_PAT"
+            --secure-environment-variables "ANTHROPIC_API_KEY=$ANTHROPIC_KEY" "VAF_GITHUB_TOKEN=$GH_PAT"
 
       - name: Get container IP and verify
         run: |
