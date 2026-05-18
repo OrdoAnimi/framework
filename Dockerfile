@@ -9,6 +9,9 @@ RUN npm ci --prefer-offline
 COPY . .
 RUN npm run build
 
+# Copy non-TS assets that tsc doesn't move
+RUN cp app/portal.html dist/app/portal.html
+
 # ── Stage 2: Runtime ─────────────────────────────────────────────────────────
 FROM node:20-alpine
 
@@ -22,18 +25,13 @@ COPY --from=builder /app/dist       ./dist
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./
 
-# nginx config — replaces Alpine default
+# nginx config
 COPY nginx.conf /etc/nginx/http.d/default.conf
-
-# Remove Alpine's default nginx server block if present
-RUN rm -f /etc/nginx/http.d/default.conf.bak 2>/dev/null || true
 
 # Entrypoint
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
-# 80  — nginx (public, Cloudflare-proxied)
-# 3000 — Express (internal only)
 EXPOSE 80 3000
 
 CMD ["/start.sh"]
