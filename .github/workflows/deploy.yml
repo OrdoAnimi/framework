@@ -49,6 +49,9 @@ jobs:
             --yes 2>/dev/null || true
 
       - name: Deploy to Azure Container Instances
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN_VAL: ${{ secrets.GH_TOKEN }}
         run: |
           az container create \
             --resource-group ${{ env.RESOURCE_GROUP }} \
@@ -56,7 +59,7 @@ jobs:
             --image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
             --registry-server ${{ env.REGISTRY }} \
             --registry-username ${{ github.actor }} \
-            --registry-password ${{ secrets.GH_TOKEN }} \
+            --registry-password "$GH_TOKEN_VAL" \
             --ports 80 3000 \
             --ip-address Public \
             --location ${{ env.LOCATION }} \
@@ -64,8 +67,8 @@ jobs:
             --cpu 1 \
             --memory 1.5 \
             --environment-variables \
-                ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }} \
-                GH_TOKEN=${{ secrets.GH_TOKEN }} \
+                ANTHROPIC_API_KEY="$ANTHROPIC_API_KEY" \
+                GH_TOKEN="$GH_TOKEN_VAL" \
                 NODE_ENV=production \
             --restart-policy Always
 
