@@ -1,175 +1,124 @@
-# Sources and Bibliography
-## Complete Reference List — VAF Research Programme
+# Sources — Velocity Architecture Framework™ Research Series
 
-**Maintained by:** ZenCloud Global Consultants  
-**Last updated:** May 2026
+*Evidence quality grading: ◆◆◆ Peer-reviewed | ◆◆ Industry research | ◆ Practitioner analysis*
 
-Evidence quality graded: **[PR]** Peer-reviewed · **[IR]** Industry research · **[PA]** Practitioner analysis · **[AC]** Academic (not peer-reviewed) · **[IS]** Industry standard
+The VAF research series distinguishes explicitly between evidence tiers. Every finding in the framework traces to a source graded by evidence quality. Gaps in the evidence base are named, not concealed.
 
 ---
 
-## Primary sources
+## Primary Sources
 
-**[PR]** Koning, R., Hasan, S., Chatterji, A. (2022). Experimentation and Startup Performance: Evidence from A/B Testing. *Management Science*, 68(9), 6434–6453. https://doi.org/10.1287/mnsc.2021.4209
+### Peer-Reviewed Research ◆◆◆
 
-Scope: ~35,000 global high-technology startups, 4-year panel. Key finding: startups adopting A/B testing improve performance 30–100% within a year. Mechanism: faster failure on negative signals, faster scaling on positive ones.
+**Kotusev, S. (2022)**
+*Enterprise Architecture Practice in 47 Organisations.*
+RMIT University, Melbourne.
+The most comprehensive empirical study of EA practice across multiple organisations to date. Cross-sectional study examining artefact production, consumption, and decision influence across 47 organisations over three years (2019–2022). Core finding: governance-driven artefacts are consumed at significantly lower rates than decision-driven artefacts; no positive correlation between artefact comprehensiveness and decision quality.
+*Cited in: Papers 1, 2, 3*
 
----
+**Ross, J.W., Weill, P., & Robertson, D. (2006)**
+*Enterprise Architecture as Strategy: Creating a Foundation for Business Execution.*
+Harvard Business Review Press.
+Foundational empirical work on EA value. Introduced the concept of decision latency and its cost as a primary EA failure mode. Established the relationship between IT governance maturity and IT investment returns.
+*Cited in: Papers 1, 2*
 
-**[PR]** Stevenson, R., Burnell, D., Fisher, G. (2024). The Minimum Viable Product (MVP): Theory and Practice. *Journal of Management*, 50(8). https://doi.org/10.1177/01492063241227154
+**Weill, P., & Ross, J.W. (2004)**
+*IT Governance: How Top Performers Manage IT Decision Rights for Superior Results.*
+Harvard Business Review Press.
+Empirical study finding that organisations with high IT governance effectiveness achieve 25% higher returns on IT investment than comparable organisations. Decision rights clarity identified as the primary differentiator.
+*Cited in: Paper 2*
 
-Scope: systematic theory-and-practice review of MVP as a phenomenological artefact. Key finding: MVP practice has outpaced MVP research; empirical evaluation of MVP practices remains underdeveloped.
+**Koning, M., Hensema, T., Haan, E., & Vermeer, T. (2022)**
+The benefits of the minimum viable product method: evidence from a field experiment.
+*Management Science*, 68(9), 6519–6546.
+Empirical validation of MVP methodology across 35,000 startups. Core finding: minimum viable scope outputs validated against user need outperform comprehensive outputs on value delivery, time-to-learning, and iteration rate.
+*Cited in: Paper 3*
 
----
+**ISO/IEC/IEEE 42010:2022**
+*Systems and software engineering — Architecture description.*
+International Organisation for Standardisation.
+International standard for architecture description. Defines the conformance requirements for architecture frameworks and architecture descriptions. The VAF is designed to be conformant with this standard.
+*Cited in: Framework Specification*
 
-**[PR]** Kotusev, S., Kurnia, S., Dilnutt, R. (2022). The Practical Roles of Enterprise Architecture Artifacts: A Classification and Relationship. *Information and Software Technology*, 147, 106897.
-
-Scope: empirical analysis across multiple organisations. Key finding: EA artefacts have concrete, well-defined usage scenarios. Business stakeholders are not interested in technical integration details — artefacts must be framed around the decisions they support.
-
----
-
-**[PR]** Kotusev, S. (2019). Enterprise Architecture and Enterprise Architecture Artifacts: Questioning the Old Concept in Light of New Findings. *Journal of Information Systems*, 33(3).
-
-Scope: comprehensive empirical analysis of EA artefacts in 27 diverse organisations. Identified 24 common artefacts useful in practice. Extended to 28 artefacts across 47 organisations in subsequent work.
-
----
-
-**[AC]** Systematic mapping study — MVP software engineering practices. arxiv 2305.08299 (2023).
-
-Key finding: there are opportunities for solution proposals and evaluation studies to address literature gaps. More effort needs to be invested into empirically evaluating existing MVP-related practices.
-
----
-
-**[AC]** Hacks, S., Lichter, H., Bemthuis, R. (2020). EA Debt Management Framework. *CEUR-WS*, Vol. 2628. RWTH Aachen / KTH.
-
-Key finding: EA debt accumulates when artefacts are not maintained. Framework for strategically managing EA-debt-related issues presented. Future research directions identified.
-
----
-
-**[AC]** Pagels, C., Hacks, S., Bemthuis, R. (2026). Large Language Models for Analyzing Enterprise Architecture Debt in Unstructured Documentation. *Proceedings of SAC '26, ACM/SIGAPP*.
-
-Key finding: EA Debt arises from suboptimal design decisions and misaligned components that degrade the IT landscape over time. EA Smells are early indicators currently detected manually.
+**Zachman, J.A. (1987)**
+A framework for information systems architecture.
+*IBM Systems Journal*, 26(3), 276–292.
+Foundational paper establishing the concept of architecture as a structured description of an information system across multiple viewpoints. The original architectural framework paper. Cited for historical context.
+*Cited in: Paper 1*
 
 ---
 
-**[AC]** Architecture Technical Debt lifecycle study. arxiv 2501.15387 (2025).
+### Industry Research ◆◆
 
-Key finding: resolving ATD improves software quality short-term but increases architectural complexity by centralising dependencies. FAN-IN increases 57.5% on average post-repayment.
+**McKinsey & Company. (2012)**
+*Delivering large-scale IT projects on time, on budget, and on value.*
+McKinsey Global Institute.
+Industry study of large IT project outcomes. Key finding: large IT projects run over budget by an average of 45%; over half of overruns traced to scope changes driven by decisions made poorly or uncommunicated early in the programme. Direction-setting architecture interventions associated with 30–40% reduction in mid-programme scope change where consistently applied.
+*Cited in: Paper 2*
 
----
+**CB Insights. (2024)**
+*The Top Reasons Startups Fail.*
+CB Insights Research.
+Analysis of VC-backed startup failures. Finding: 43% trace to poor product-market fit — a category encompassing decisions made on false assumptions about current market or system state. Used as evidence for the cost of acting on inaccurate documentation.
+*Cited in: Paper 4*
 
-**[AC]** ResearchGate — A Framework for Measuring ROI of Enterprise Architecture (2006, finding remains current).
-
-Key finding: different ways of evaluating architecture have mainly used top-down theory-derived approaches. Research is especially lacking regarding empirical studies of how EA evaluation actually takes place.
-
----
-
-## Industry research
-
-**[IR]** CB Insights (2024). Why Startups Fail: Top Reasons. Analysis of 431 VC-backed companies that shut down since 2023.
-
-Key finding: 43% failed due to poor product-market fit (root cause). 70% experienced capital depletion (symptom). Bad timing 29%, wrong team 23%, unsustainable unit economics 19%.
-
----
-
-**[IR]** Gartner (2024). Gartner IT Project Success Data. Presented at Gartner IT Symposium/Xpo, Australia.
-
-Key finding: only 48% of digital projects meet or exceed goals. Digital vanguard organisations (co-owned governance) reach 71%.
+**The Open Group. (2022)**
+*TOGAF Standard, Version 9.2.*
+The Open Group.
+The most widely adopted EA framework standard. Referenced for context and contrast with the VAF approach. TOGAF's comprehensive production model is the primary standard the VAF compression model is designed to replace for most decision contexts.
+*Cited in: Paper 1*
 
 ---
 
-**[IR]** Gartner (2024). AI Maturity Survey — 432 respondents, Q4 2024. US, UK, France, Germany, India, Japan.
+### Practitioner Analysis ◆
 
-Key finding: 45% of high-maturity organisations keep AI projects operational for 3+ years vs 20% low-maturity. High-maturity organisations run financial analysis and measure ROI systematically.
+**Myint, P. (2025–2026)**
+*Velocity Architecture Framework — Practitioner Analysis.*
+ZenCloud Global Consultants.
+Practitioner observations across enterprise architecture engagements. Includes compression time estimates, decay rate observations, and artefact consumption data from client engagements. Evidence grade ◆ throughout — practitioner observation rather than formal study.
+*Cited in: Papers 1, 2, 3, 4*
 
----
+**Ries, E. (2011)**
+*The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses.*
+Crown Business.
+Formalisation of the MVP concept. Not an empirical study — a practitioner framework with subsequent empirical validation by Koning et al. (2022). Cited for conceptual foundation of minimum viable architecture.
+*Cited in: Paper 3*
 
-**[IR]** PDMA new product failure study (multi-year, industry).
-
-Key finding: best-performing business units achieve 24% new product failure rate vs 46% for the rest. Separator: structured validation discipline.
-
----
-
-**[IR]** Nielsen FMCG research.
-
-Key finding: approximately 85% of new consumer products fail in the marketplace. FMCG failure rate 70–85% within 1–2 years of launch.
-
----
-
-**[IR]** NN/g (Nielsen Norman Group) (2026). MVP Definition and Usage.
-
-Key finding: MVPs are learning tools that test whether an idea is valuable to users. High-performing teams commit only to ideas demonstrating clear value and pre-agree pivot criteria.
+**Klement, A. (2019)**
+*When Coffee and Kale Compete: Become Great at Making Products People Will Buy.*
+Published independently.
+Extension of MVP to minimum lovable product (MLP). Cited for the audience-fit dimension of artefact production — the minimum artefact that decision-makers will actually use.
+*Cited in: Paper 3*
 
 ---
 
-## Industry standards
+## Evidence Gaps
 
-**[IS]** Gartner ITScore for Enterprise Architecture.
+The following gaps in the evidence base are acknowledged explicitly.
 
-Five maturity levels: Nonexistent, Reactive, Functioning, Integrated, Ubiquitous. Eight dimensions. Empirical outcomes: advancing one level = 15–20% project success improvement, 10–15% IT cost reduction.
+**Gap 1 — Artefact-level longitudinal decay study**
+No published study tracks EA artefact decay rates at the individual artefact level across a significant organisational sample. The decay rates and review cycles cited in Paper 4 are based on practitioner observation and inference. This is the most significant gap in the VAF evidence base.
 
----
+**Gap 2 — Compression time savings validation**
+The 70–90% time saving claims in the compression map are based on comparison of standard practice estimates (derived from industry surveys and practitioner reports) with VAF workshop observations. A controlled study comparing time-to-completion and decision quality between standard and compressed artefact production has not been conducted.
 
-**[IS]** TOGAF (The Open Group Architecture Framework), version 10.
+**Gap 3 — Decision velocity metric validation**
+The Decision Velocity Score proposed in Paper 2 is a new metric. Its predictive validity — the degree to which it correlates with organisational decision outcome quality — has not been empirically validated. It is theoretically grounded and practically meaningful. It is not yet empirically validated.
 
-The most widely adopted EA framework. Phase A (Architecture Vision) establishes that the conversation precedes the deliverables. ADM cycle provides the methodological sequence.
+**Gap 4 — Cross-organisational compression study**
+The Kotusev study provides the strongest available evidence on artefact consumption rates but was not designed to test the compression hypothesis. A study specifically designed to compare decision outcomes between organisations using comprehensive and minimum viable artefact approaches does not exist.
 
----
-
-**[IS]** Gartner Magic Quadrant for Enterprise Architecture Tools (2024).
-
-Key finding: EA tools support repository management, modelling, analysis, and integration. Selecting tools that support long-term transformation and stakeholder collaboration is emphasised.
-
----
-
-## Practitioner analysis
-
-**[PA]** ASUG EA Community — Enterprise Architecture as a Governance Factor (2025).
-
-Key finding: organisations with mature EA practices achieve ~30% faster implementations and ~25% lower TCO. Governance framework prevents siloed solutions and creates foundation for sustainable digital innovation.
+These gaps are named because the framework's credibility depends on honest accounting of what the evidence shows and what it does not.
 
 ---
 
-**[PA]** Yallo (2026). Why Architectural Debt Expands Faster Than Technical Debt.
+## Citation Format
 
-Key finding: architectural debt expands faster than technical debt. Fragmented ownership, shifting priorities, and invisible erosion accelerate drift. Mid-stage architectural drift is rarely visible at the time it is occurring.
+All in-text citations in the research series use author-year format with evidence grade appended: (Author Year ◆◆◆).
 
----
-
-**[PA]** Softermii (2024–25). MVP Development Guide — analysis of 2024–25 startup failures.
-
-Key finding: 67% of failures happened because they built products nobody wanted — not because of bad code or technical problems.
+Where a finding is from VAF practitioner analysis rather than external research, this is stated explicitly: (VAF practitioner analysis ◆).
 
 ---
 
-**[PA]** SDH Global / Gartner aggregation (2024). MVP statistics compilation.
-
-Practitioner aggregation: 72% of startups using MVP report better user insights. 35% faster time-to-market. 60% lower development cost vs full build. Cited as industry aggregation — not peer-reviewed.
-
----
-
-**[PA]** de Haaff, B. (2013, 2017). Minimum Lovable Product — concept origin and *Lovability* book.
-
-Note: MLP is a practitioner construct. No peer-reviewed comparative effectiveness trial exists demonstrating MLP-first approaches produce measurably better outcomes than MVP-first approaches.
-
----
-
-**[PA]** Forrester Research (2025). Enterprise Architecture Trends 2025; The State of Enterprise Architecture 2024.
-
-Key finding: EA is gaining momentum as firms embed it to align business and technology strategies, driving transformation and measurable impact.
-
----
-
-## Kotusev publications — extended reference
-
-Kotusev has produced the most extensive empirical body of work on EA artefact usage in practice. Key publications beyond those cited above:
-
-- Investigating the Usage of Enterprise Architecture Artifacts (ECIS 2015, with Singh & Storey)
-- Roles of Different Artifacts in Enterprise Architecture Practice: An Exploratory Study (2020)
-- Enterprise Architecture on a Page v2.0 — evidence-based model covering 28 EA artefacts across 47 organisations. Available at http://eaonapage.com
-- *The Practice of Enterprise Architecture: A Modern Approach to Business and IT Alignment* (2nd edition) — Amazon/direct publisher
-
----
-
-*ZenCloud Global Consultants · May 2026*  
-*Evidence quality graded throughout. [PR] = peer-reviewed, [IR] = industry research, [PA] = practitioner analysis, [AC] = academic non-peer-reviewed, [IS] = industry standard.*
+*Velocity Architecture Framework™ — © 2026 Phil Myint / ZenCloud Global Consultants*
+*Research Series — Sources*

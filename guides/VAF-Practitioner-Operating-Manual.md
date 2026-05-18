@@ -1,612 +1,1003 @@
 # VAF Practitioner Operating Manual
-## 18 Artefacts · Three Layers Each
 
-**Framework:** Velocity Architecture Framework™ (VAF)  
-**Author:** ZenCloud Global Consultants  
-**Published:** May 2026
+**For architects who need to move faster.**
 
-**The Word document version of this manual** (`VAF-Practitioner-Operating-Manual.docx`) contains the full formatted three-layer treatment with colour-coded sections and detailed tables. This Markdown version is the reference version for GitHub reading and linking.
+Version 1.0 — Velocity Architecture Framework™
 
 ---
 
 ## How to use this manual
 
-Three layers. Sequential. Each depends on the previous.
+This manual covers all 18 VAF artefacts. Each entry has three layers:
 
-| Layer | Name | Purpose |
-|---|---|---|
-| 1 | Extraction Guide | How to run the conversation that surfaces the content. Questions, facilitation method, red flags. |
-| 2 | VAF Template | Minimum fields to serve the artefact's function. Nothing more. |
-| 3 | Executive Framing | How to present the finding to the decision-maker. Format, structure, what never to do, template sentence. |
+1. **Extraction guide** — how to run the conversation that produces the artefact
+2. **VAF template** — what to write, at what resolution
+3. **Executive framing** — how to present the finding to leadership
 
-**Governing principle:** The artefact is the record of the decision made in the conversation. Not the input to it.
+The artefacts are grouped by type. Use the type that matches the decision context, not the one that matches the governance requirement.
 
 ---
 
-## The artefacts
+## The 18 Artefacts
 
-- [Architecture Vision](#1-architecture-vision)
-- [Business Capability Map](#2-business-capability-map)
-- [Architecture Principles](#3-architecture-principles)
-- [Value Stream Map](#4-value-stream-map)
-- [Business Process Model](#5-business-process-model)
-- [Organisation Map](#6-organisation-map)
-- [Application Portfolio](#7-application-portfolio)
-- [Integration Architecture](#8-integration-architecture)
-- [Solution Architecture Document](#9-solution-architecture-document)
-- [Conceptual Data Model](#10-conceptual-data-model)
-- [Data Flow Diagram](#11-data-flow-diagram)
-- [Master Data Map](#12-master-data-map)
-- [Technology Roadmap](#13-technology-roadmap)
-- [Technology Standards Catalogue](#14-technology-standards-catalogue)
-- [Infrastructure Architecture](#15-infrastructure-architecture)
-- [Architecture Decision Record](#16-architecture-decision-record)
-- [Architecture Compliance Review](#17-architecture-compliance-review)
-- [Architecture Roadmap](#18-architecture-roadmap)
-
----
-
-## 1. Architecture Vision
-
-**Type:** Decision instrument · **Layer:** Strategy · **Standard time:** 4–8 weeks · **VAF time:** 1 session + 2 hrs · **Saving:** ~85%
-
-### Layer 1 — Extraction Guide
-
-**Context:** You are entering a conversation with an executive who has not asked for an Architecture Vision. They have asked for a direction. Your job is to extract the commitment they are already ready to make and record it before it evaporates into the next meeting.
-
-**Questions:**
-- *"What is the one thing that must be true in two years for this to have been the right period of investment?"* — Forces a single direction without using the word 'strategy'. Executives answer this.
-- *"If we do nothing differently from today, what breaks first?"* — Surfaces the burning platform without requiring the executive to admit there is one.
-- *"What would have to change for you to say this was the wrong direction?"* — Extracts the invalidation trigger in the executive's own language.
-- *"Who else needs to agree with this before it becomes real?"* — Identifies hidden veto holders.
-
-**Facilitation:** Run this conversation before the session is formally scheduled. The best Architecture Vision conversations happen in corridors, before boards, and at the end of other meetings. The formal session is where you confirm and record — not where you discover.
-
-**Red flags:**
-- The executive answers with an existing strategy document. That is not a commitment — it is a reference. Ask what they personally believe.
-- Multiple executives give different answers to the first question. Record the divergence — it is the most important output.
-- The executive cannot name what would change their mind. The direction is preferred, not committed. Return when it is a commitment.
-
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Direction committed to | One sentence. If it takes more than one sentence it is not yet a direction. |
-| Decision owner | The person who made the commitment — not who attended. |
-| Date of commitment | Date the commitment was made. Not document creation date. |
-| Assumptions live at the time | 3–5 assumptions this direction depends on. Specific. |
-| First invalidation trigger | The single most likely event that would make this direction wrong. |
-| What was not decided | Items raised and explicitly deferred or rejected. |
-| Hidden veto holders | People not in the session who can block this direction. |
-| Next decision required | The decision that must be made before this moves to funded delivery. |
-
-### Layer 3 — Executive Framing
-
-**Format:** Verbal — 3 minutes. One page maximum if written is required.
-
-| Element | What to say |
-|---|---|
-| The situation | Name the burning platform in one sentence. Do not soften it. |
-| The direction | "In our session on [date], you committed to [direction]." Confirmation, not proposal. |
-| What this requires from you | One specific ask. Funding, stakeholder introduction, or the next decision. |
-| What changes if we do not move | Cost of inaction in business terms — not IT terms. |
-
-**Never do:**
-- Never present the assumptions list. It reads as hedging.
-- Never use the words "architecture vision." Say "what we agreed."
-- Never ask for endorsement of a document. Ask for a decision or an action.
-
-**Template sentence:** *"On [date] you committed to [direction]. That requires [specific next action] by [date]. The cost of delay is [consequence in business terms]. I need [single specific ask] from you before [date]."*
+| # | Artefact | Type | Viewpoint |
+|---|----------|------|-----------|
+| 1 | Guardrail Canvas | Direction | VP1 |
+| 2 | Trade-off Matrix | Decision | VP2 |
+| 3 | Architecture Decision Record | Decision | VP3 |
+| 4 | Fitness Function Register | Control | VP3 |
+| 5 | Velocity Dashboard | Control | VP4 |
+| 6 | Architectural Decision Log | Control | VP4 |
+| 7 | Pulse Briefing | Operating | VP5 |
+| 8 | Escalation Register | Operating | VP5 |
+| 9 | Integrity Arc Assessment | Operating | VP6 |
+| 10 | Capability Map | Direction | VP1 |
+| 11 | Domain Model | Direction | VP1 |
+| 12 | Risk Register | Control | VP4 |
+| 13 | Technology Radar | Control | VP4 |
+| 14 | Dependency Map | Decision | VP2 |
+| 15 | Handover Record | Operating | VP5 |
+| 16 | Pattern Catalogue | Direction | VP6 |
+| 17 | Playbook | Operating | VP6 |
+| 18 | Decision Velocity Diagnostic | Direction | VP1 |
 
 ---
 
-## 2. Business Capability Map
-
-**Type:** Signal generator · **Layer:** Strategy · **Standard time:** 6–12 weeks · **VAF time:** 2–3 days · **Saving:** ~80%
-
-### Layer 1 — Extraction Guide
-
-**Context:** You are not building a capability taxonomy. You are surfacing an investment misalignment that already exists. Run the extraction before anyone commissions the artefact.
-
-**Questions:**
-- *"Which three things does this organisation need to be genuinely excellent at to deliver its strategy?"* — Gets strategic priority without consulting language.
-- *"Where is the most money being spent in IT right now that you are least confident is the right investment?"* — Surfaces suspected misalignment from the executive's own suspicion.
-- *"Where do we have capability on paper that does not actually work in practice?"* — Identifies phantom capabilities.
-- *"Who owns [capability X]? If I need a decision about it, who do I call?"* — Extracts the accountability gap.
-
-**Facilitation:** Use existing budget data and org structure. The strategic priority (H/M/L) must be answered by a business owner — not assigned by the EA. Draw the heat map in real time during the last conversation so the pattern is visible before you leave the building.
-
-**Red flags:**
-- Multiple executives claim ownership of the same capability. Record both — governance finding.
-- An executive rates everything H. Ask: "if you could only fund two next year, which two?"
-- Budget data does not match priority ratings. Do not reconcile — present them side by side.
-
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Capability (L1) | Name only. No definition. One row per capability. |
-| Strategic priority (H/M/L) | Assigned by named business owner. Not the EA. |
-| Current investment (H/M/L/None) | Sourced from budget data. Estimate noted. |
-| Gap signal | Where Priority = H and Investment = L or None. Named. |
-| Accountability gap | Capabilities with no named owner or disputed ownership. |
-| Phantom capabilities | Capabilities rated existing but not functioning in practice. |
-| Data sources | Org structure version, budget source, interview subjects, dates. |
-| Accuracy date | Trigger for revision: strategic priority change or major budget reallocation. |
-
-### Layer 3 — Executive Framing
-
-**Format:** Heat map visual — one slide. Verbal narrative 4 minutes.
-
-| Element | What to say |
-|---|---|
-| The pattern | Show the heat map. Let it land. Then: "The red cells are where we have high strategic need and low or no investment." |
-| The specific gap | Name the most critical misalignment. One capability. Business-terms cost. |
-| The accountability finding | "We have [X] capabilities with no named owner. There is no-one to call when they fail." |
-| The ask | Funding decision on the priority gap, or accountability assignment. One ask. |
-
-**Never do:**
-- Never present the full capability list. Show the heat map only.
-- Never explain the methodology. "We mapped investment against your strategic priorities" is sufficient.
-- Never present a to-be capability map in the same session.
-
-**Template sentence:** *"We mapped investment against your strategic priorities. [X] capabilities are critically underfunded. The most significant is [capability] — we are spending [investment level] on something you told me is your highest priority. The cost is [business consequence]. I need a decision on [specific ask]."*
+## Type 1 — Direction Artefacts
 
 ---
 
-## 3. Architecture Principles
+### 1. Guardrail Canvas
 
-**Type:** Control mechanism · **Layer:** Strategy · **Standard time:** 4–6 weeks · **VAF time:** 1 day · **Saving:** ~90%
+**What it is:** A single-page declaration of enterprise direction for a programme, initiative, or domain. It does not prescribe the solution — it defines the corridor within which solutions must sit.
 
-### Layer 1 — Extraction Guide
-
-**Context:** Principles are extracted from decisions that have already been made badly. Start with the organisation's failure patterns — not a framework template.
-
-**Questions:**
-- *"What is the most expensive architecture decision in the last three years you would make differently today?"* — The answer is the rationale. You do not need to write it down.
-- *"What decision keeps coming back that should not need to come back?"* — The repeated decision a principle would make automatic.
-- *"If a project team makes decision X without asking anyone, what is the worst thing that happens?"* — Tests whether the principle is enforced by consequence or process.
-
-**Facilitation:** Interview the CIO, one delivery lead, and one project manager who has been through a review. Write principles during the interviews — not after. Test each against a recent decision: would this principle have changed what happened?
-
-**Red flags:**
-- A principle has no exception anyone can imagine. Either a law already enforced, or it will be ignored.
-- Requires reading supporting material to understand. Not finished.
-- More than seven principles proposed. Prioritise. Seven enforced > twenty ignored.
-
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Principle (≤10 words) | Sentence case. No jargon. |
-| What this prevents | The specific failure pattern. One sentence. |
-| Exception trigger | The specific condition for legitimate deviation. |
-| Exception approval | Named role. One person. Not a committee. |
-| Exception record pointer | Where approved exceptions are logged. |
-| Principle owner | Named person for edge cases and annual review. |
-
-### Layer 3 — Executive Framing
-
-**Format:** Verbal — 2 minutes per principle. Written: one card per principle.
-
-**Never do:**
-- Never present more than three principles at once.
-- Never call them "architecture principles." Say "decision rules" or "investment guardrails."
-- Never present implication lists.
-
-**Template sentence:** *"In [year], we spent [cost] on [failure]. This principle — [principle] — would have prevented that. The only exception is [exception], approved by [role]. I need your endorsement so I can use this to hold the line on [decision type] without escalating every case to you."*
+**Standard time:** 3–6 weeks (stakeholder workshops, review cycles, sign-off)
+**VAF time:** 2–4 hours (structured workshop with the right people in the room)
+**Time saving:** 85–95%
 
 ---
 
-## 4. Value Stream Map
+#### Extraction Guide
 
-**Type:** Signal generator · **Layer:** Business · **Standard time:** 3–6 weeks · **VAF time:** 1–2 days · **Saving:** ~75%
+Run a 90-minute workshop with: the programme sponsor, the lead architect, and one representative from delivery.
 
-### Layer 1 — Extraction Guide
+Ask in sequence:
 
-**Context:** The value stream map is drawn with the people doing the work — not about them.
+1. *What outcome are we trying to achieve in plain language?* (10 min)
+2. *What constraints are non-negotiable — regulatory, financial, organisational?* (15 min)
+3. *What are we explicitly not doing in this programme?* (10 min)
+4. *What does success look like in 12 months?* (10 min)
+5. *What would cause us to stop?* (10 min)
+6. *What assumptions are we treating as true that we have not yet verified?* (15 min)
 
-**Questions:**
-- *"Walk me through exactly what happens when [trigger event] occurs. Not the policy — what actually happens."* — The word "actually" is doing critical work.
-- *"At this point, what are you waiting for? Who decides when you can move?"* — Surfaces handoff latency and ownership simultaneously.
-- *"When this goes wrong, where does it go wrong first?"* — The failure point is almost always a handoff with no owner.
-- *"What would have to be true for this step to take half the time?"* — Surfaces the constraint the operator already knows about.
-
-**Facilitation:** Book a room. Get the people who do the work — not who manage it. Draw on whiteboard or stickies. Not software. Every step: named role, named system. Every handoff: named owner or named gap.
-
-**Red flags:**
-- A manager describes a step a practitioner then corrects. Record both — governance finding.
-- A step has no system and no named role. Highest risk point.
-- The stream cannot be completed because no-one knows a step. Name the unknown explicitly.
-
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Value stream name | Name and trigger event. |
-| End state | What done looks like. Delivered to whom. |
-| Steps in sequence | Named role. Named system. Observed, not documented. |
-| Handoffs — named owner | Every transition between roles or systems. Owner on each side. |
-| Handoffs — no owner | The signal. The deliverable. |
-| Largest wait time | Single longest delay. Estimated duration. Named cause. |
-| Unknown steps | Steps not described. Each is a risk position. |
-| Action owner | Named person for primary gap. No owner = signal not received. |
-| Observation date | Observed on this date. Not policy. |
-
-### Layer 3 — Executive Framing
-
-**Format:** One visual — stream with gaps highlighted. Verbal 5 minutes.
-
-**Never do:**
-- Never show the full stream map. Show only the section containing the primary gap.
-- Never say "value stream map." Say "we followed the work."
-- Never propose the to-be in this session.
-
-**Template sentence:** *"We traced [process name] from trigger to completion. It takes [total time]. [X] days of that is wait time at a single handoff — between [role A] and [role B] — where no-one is accountable for moving it forward. That costs us [business consequence]. I need [specific person] named as the owner of that handoff."*
+Capture answers in real time on the canvas. Do not leave the room without a completed first draft. Iteration happens asynchronously after.
 
 ---
 
-## 5. Business Process Model
+#### VAF Template
 
-**Type:** Ground truth · **Layer:** Business · **Standard time:** 6–10 weeks · **VAF time:** 3–5 days · **Saving:** ~70%
+```
+GUARDRAIL CANVAS
+Programme / Initiative: _______________
+Date: _______________    Owner: _______________
 
-### Layer 1 — Extraction Guide
+OUTCOME
+[One to two sentences. What are we trying to achieve?]
 
-**Context:** The as-is model documents what actually happens. Shadow the process for at least two full cycles before drawing anything.
+GUARDRAILS (non-negotiable constraints)
+1.
+2.
+3.
 
-**Questions:**
-- *"Show me the last time you completed this process. Walk me through exactly what you did — including workarounds."* — The workarounds are the most important data.
-- *"When does this not follow the normal path? What causes the deviation?"* — Exception paths carry the most risk.
-- *"If [system X] was unavailable, what would you do instead?"* — Reveals informal parallel processes.
-- *"Who do you call when this goes wrong?"* — Names the informal authority structure.
+OUT OF SCOPE
+[What are we explicitly not doing?]
 
-**Red flags:**
-- Documented process matches policy perfectly. You are being shown the formal version. Push for actual.
-- A step is described as "it depends." Name what it depends on.
-- Cannot be completed without a specific named individual. Single point of failure.
+SUCCESS CRITERIA (12 months)
+[What does good look like?]
 
-### Layer 2 — VAF Template
+STOP CONDITIONS
+[What would cause us to halt or pivot?]
 
-| Field | Guidance |
-|---|---|
-| Process name and scope | Start and end events. Boundary conditions. |
-| As-is swim-lane | Drawn. Named roles. Named systems. Observation-based. No BPMN unless a system requires it. |
-| Named roles | Actual role name, not department. Single points of failure flagged. |
-| Named systems | In sequence. Multiple systems for same function = finding. |
-| Workarounds in use | Every informal compensating behaviour observed. |
-| Exception paths | Every deviation, trigger, handler. |
-| Gaps identified | Steps with no system, role, or defined output. |
-| Decision list | The to-be is this list. Not a diagram. Named owner per decision. |
-| Observation date | Observed on this date by this person. Not the policy version. |
+UNVERIFIED ASSUMPTIONS
+[What are we treating as true that we have not yet confirmed?]
 
-### Layer 3 — Executive Framing
-
-**Format:** One slide — gap summary. Full swim-lane is supporting document only.
-
-**Never do:**
-- Never show the swim-lane to an executive.
-- Never present the to-be process in the same session.
-- Never say "workaround." Say "compensating behaviour" or "informal process."
-
-**Template sentence:** *"We observed [process name] across [X] cycles. The formal and actual process diverge at [specific point]. The informal workaround compensating for this gap is [description]. When it fails, [consequence]. The decision required to close this is [decision]. I need [named person] to own that decision by [date]."*
+SIGN-OFF
+Sponsor: _______________ Date: _______________
+Architect: _______________ Date: _______________
+```
 
 ---
 
-## 6. Organisation Map
+#### Executive Framing
 
-**Type:** Signal generator · **Layer:** Business · **Standard time:** 2–4 weeks · **VAF time:** Half day · **Saving:** ~90%
+Present as: *"This is the corridor. Everything inside it is in play. Everything outside it is not."*
 
-### Layer 1 — Extraction Guide
+Do not walk leadership through every field. Present three things:
+1. The outcome in one sentence
+2. The three guardrails
+3. The stop conditions
 
-**Questions:**
-- *"If [capability X] fails completely — who is the first person I call?"* — Names the real owner, not the nominal one.
-- *"Who would be most upset if [capability X] underperformed?"* — Identifies stakeholder with real accountability interest.
-- *"Is there anyone who believes they own [capability X] that we have not named yet?"* — Surfaces disputes before they become conflicts.
+Ask: *"Does this accurately describe what we are trying to do and what we will not compromise on?"*
 
-**Red flags:** Executive names a department rather than a person. Two executives name each other as owner. Executive says "we all own that."
-
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Capability | From BCM. No reproduced definitions. |
-| Named owner (individual) | One person. Name and role. |
-| Disputed ownership | Both claimants named. Nature of dispute. |
-| Unowned capabilities | The map. The deliverable. |
-| Informal owner | Person actually called when capability fails. |
-| Resolution required | Date and named resolution owner. |
-
-**Template sentence:** *"We mapped ownership across your [X] capabilities. [Y] have no named owner. The highest risk unowned capability is [name] — when it fails, there is no-one accountable for the response. I need [X] accountability assignments made."*
+If the answer is yes, proceed. If no, update before leaving the room.
 
 ---
 
-## 7. Application Portfolio
+### 10. Capability Map
 
-**Type:** Decision instrument · **Layer:** Application · **Standard time:** 8–16 weeks · **VAF time:** 1 week · **Saving:** ~85%
+**What it is:** A structured view of what the organisation does — not how it does it, not what systems support it, not what it should do in future. A current-state capability inventory at the right level of abstraction for the decision being made.
 
-### Layer 1 — Extraction Guide
-
-**Questions:**
-- *"Does this application directly support a strategic priority funded for the next 12 months?"* — Force three options: yes, no, partially.
-- *"If unavailable for a week, what breaks?"* — Operational criticality independent of strategic alignment.
-- *"Who would you call right now if you wanted to replace this?"* — Names the decision owner.
-- *"What does this cost annually — including the staff who support it?"* — Forces total cost view.
-
-**Red flags:** No named owner after 30 minutes. "Critical" to business and "legacy" to IT with no resolution plan. Annual cost cannot be determined.
-
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Application name | Canonical name from asset register. |
-| Owner (named individual) | If unknown after 30 minutes — orphaned. Flag. |
-| Annual total cost | Licence + internal support + hosting. Estimate noted. |
-| Strategic alignment (Y/N/Partial) | Business owner's answer. Not the EA's assessment. |
-| Operational criticality | What breaks if unavailable one week. |
-| TIME classification | Tolerate / Invest / Migrate / Eliminate. Applied immediately. |
-| Classification blocker | Specific blocker and owner where TIME cannot be assigned. |
-| Classification date | Review trigger: strategic or ownership change. |
-
-**Template sentence:** *"We have [X] applications. [Y] are candidates for decommission — [total cost] annually, not aligned to any funded priority. Eliminating the top [X] frees [cost] annually. I need authority to begin that process."*
+**Standard time:** 4–8 weeks
+**VAF time:** Half-day workshop + 2-hour review
+**Time saving:** 80–90%
 
 ---
 
-## 8. Integration Architecture
+#### Extraction Guide
 
-**Type:** Ground truth · **Layer:** Application · **Standard time:** 12–20 weeks · **VAF time:** 2–3 weeks · **Saving:** ~80%
+The most common failure mode for capability maps is wrong altitude. Most maps are produced at too low a level (function-by-function) or too high a level (three boxes labelled "Plan, Build, Run").
 
-### Layer 1 — Extraction Guide
+The right altitude is determined by the decision. Ask: *what capability boundaries matter for the decision we are trying to make?* Map at that level only.
 
-**Questions:**
-- *"If we turned off [system X] tomorrow, what breaks in the next 24 hours?"* — Real-time dependencies not in documentation.
-- *"Does anything send data to [system X] that is not in the official documentation?"* — Permission to name undocumented connections.
-- *"Does anything read directly from [system X]'s database rather than through an API?"* — Direct database reads — highest-risk undocumented integrations.
-- *"Who would know if [system X] had been modified to connect to something new in the last 12 months?"* — Names the knowledge holder.
+Run a 3-hour session. Use sticky notes or a whiteboard. Group by: what we do for customers, what we do internally to enable that, what we do to govern and direct.
 
-**Red flags:** Operator describes a connection the system owner does not know about. System has no named operator — only a vendor. Direct database connections confirmed.
-
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Scope — decision served | The specific change or decommission. Full-landscape mapping is not the scope. |
-| Systems in scope | Only systems relevant to the named decision. |
-| Documented integrations | System A → B, protocol, data, owner each end, direction. |
-| Undocumented integrations | Every connection not in existing documentation. Discovery date, how found. |
-| Direct database connections | Named separately. High risk. |
-| Decommission blockers | Integration blocking planned change. System, dependency, resolution path. |
-| Unknown connections | Systems with no named operator. Unquantified risk position. |
-| Accuracy date and maintainer | Operator — not architecture team. |
-
-**Template sentence:** *"We found [X] connections not in any existing documentation. [Y] are blockers to the planned change. The planned timeline needs to extend by [estimate], or we need a decision to accept the risk and proceed."*
+Do not include:
+- Organisational structure (capabilities are not org units)
+- Systems or technology (a different artefact)
+- Future capabilities (a different conversation)
 
 ---
 
-## 9. Solution Architecture Document
+#### VAF Template
 
-**Type:** Control mechanism · **Layer:** Application · **Standard time:** 4–8 weeks · **VAF time:** 2–3 days · **Saving:** ~80%
+```
+CAPABILITY MAP
+Organisation / Domain: _______________
+Date: _______________    Level: L1 / L2 / L3
+Decision context: _______________
 
-### Layer 2 — VAF Template
+CUSTOMER-FACING CAPABILITIES
+[List. One line each.]
 
-| Field | Guidance |
-|---|---|
-| Decision made | The solution chosen. One paragraph. Past tense. |
-| Options rejected | Every option not chosen. For each: what it was, why rejected in one sentence. |
-| Assumptions | What must be true for this decision to remain correct. |
-| Constraints accepted | Acknowledged and accepted. Cannot be raised later as blockers. |
-| Principles compliance | Compliant principles named. Non-compliance: exception and approval. |
-| Invalidation triggers | Conditions under which this decision becomes wrong. |
-| Decision owner and date | Named individual. Date of decision. |
+ENABLING CAPABILITIES
+[List. One line each.]
 
-**Template sentence:** *"We decided on [solution]. We evaluated [alternative] and rejected it because [reason]. This decision depends on [key assumption]. [Decision owner] made this on [date]. I need [ratification / escalation decision]."*
+GOVERNING CAPABILITIES
+[List. One line each.]
 
----
+CAPABILITY GAPS (relative to decision context)
+[What is absent or underdeveloped that matters for this decision?]
 
-## 10. Conceptual Data Model
-
-**Type:** Decision instrument · **Layer:** Data · **Standard time:** 4–8 weeks · **VAF time:** 1 day · **Saving:** ~88%
-
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Entity in dispute | The entity requiring definitional alignment. |
-| Agreed definition | Verbatim. Dated. Signed off by named authority. Business language. |
-| What this explicitly excludes | The boundary condition. As important as the definition. |
-| Definition authority | One named person. Not a committee. |
-| Unresolved disputes | Nature. Owner. Date required. |
-| Downstream dependencies | Systems, reports, decisions depending on resolution. |
-| Session date | Revision trigger: any system change consuming this entity. |
-
-**Template sentence:** *"Finance counts [X] customers. Sales counts [Y]. The board report uses whichever number is convenient. This has caused [consequence]. We have agreed a definition: [definition]. I need you to confirm [named person] as the authority so it holds across the organisation."*
+NOTES
+[Altitude rationale. Scope boundaries. What was excluded and why.]
+```
 
 ---
 
-## 11. Data Flow Diagram
+#### Executive Framing
 
-**Type:** Control mechanism · **Layer:** Data · **Standard time:** 4–6 weeks · **VAF time:** 3–5 days · **Saving:** ~75%
+Present as: *"This is what we do, at the level that matters for this decision."*
 
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Regulatory scope | The specific regulation. Named. |
-| Personal data categories | Required by regulation. No broader. |
-| Collection point | Every entry point. Named. |
-| Flow path | Every system in sequence from collection to deletion. |
-| Shadow copies | Any system retaining copies outside primary record. |
-| Third-party transfers | Every external party. Legal basis for each. |
-| Deletion mechanism | What is deleted, from which systems, on what trigger. Confirmed. |
-| Compliance gaps | Flows without legal basis, retention schedule, or deletion mechanism. Findings. |
-| Accuracy date and owner | Named owner. Not architecture team. |
-
-**Template sentence:** *"We found [X] gaps. [Y] third-party transfers have no documented legal basis. The highest risk is [gap] — if identified in a regulatory audit, the consequence is [consequence]. I need legal review of [specific transfers] before [date]."*
+Do not present the full map to leadership. Present the gaps. Leadership cares about what is missing or at risk, not the complete inventory.
 
 ---
 
-## 12. Master Data Map
+### 11. Domain Model
 
-**Type:** Ground truth · **Layer:** Data · **Standard time:** 6–10 weeks · **VAF time:** 2–3 days · **Saving:** ~75%
+**What it is:** A bounded view of the key concepts in a domain, how they relate, and what they mean. Not a data model. Not a class diagram. A vocabulary alignment tool.
 
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Master entity | One row per entity. |
-| Systems claiming authority | Every system claiming or implying authority. |
-| Nature of the conflict | Different field coverage, update frequency, owner. |
-| Actual authority | If established — name it with the governance decision. If not — say so explicitly. |
-| Historical conflicts | Past instances. What happened. Resolved or not. |
-| Arbitration mechanism | Process for resolving conflicts. If none — primary finding. |
-| Resolution owner | Named executive with authority to establish true source of record. |
-| Resolution deadline | Unresolved = named risk position. |
-
-**Template sentence:** *"We have [X] systems that each believe they are the source of truth for [entity]. They disagree [description]. The operational cost is [consequence]. This cannot be resolved technically until a governance decision is made: which system is authoritative, confirmed by you, effective [date]."*
+**Standard time:** 2–4 weeks
+**VAF time:** 2-hour facilitated session
+**Time saving:** 70–85%
 
 ---
 
-## 13. Technology Roadmap
+#### Extraction Guide
 
-**Type:** Decision instrument · **Layer:** Technology · **Standard time:** 8–12 weeks · **VAF time:** 3–5 days · **Saving:** ~80%
+Domain models fail when they try to be data models. They succeed when they align vocabulary across teams that use the same words to mean different things.
 
-### Layer 2 — VAF Template
+Start with: *"Name the five most important things in this domain."* Write each on a card. Then: *"How do these relate to each other?"* Draw lines. Label them.
 
-| Field | Guidance |
-|---|---|
-| Components in scope | Only relevant to current strategic decisions. |
-| Dependency sequence | What cannot start until what else is done. A list — not a timeline. |
-| Funded initiatives | Each with: what it depends on, what depends on it, approved funding. |
-| Unfunded dependencies | Items required but not funded. Named as risk positions. |
-| Date range estimates | Ranges tied to named dependencies. Not committed dates. |
-| Hidden initiatives | Funded work not previously in roadmap. Dependency impact assessed. |
-| Invalidation triggers | Conditions that would change the sequence. |
-
-**Template sentence:** *"Before [funded initiative] can begin, we need [unfunded prerequisite]. That prerequisite has no budget. Without a funding decision, [initiative] cannot start as planned. I need a funding decision or a revised commitment."*
+The conversation is the artefact. The diagram is the record of the conversation.
 
 ---
 
-## 14. Technology Standards Catalogue
+#### VAF Template
 
-**Type:** Control mechanism · **Layer:** Technology · **Standard time:** 4–8 weeks · **VAF time:** 1 day · **Saving:** ~90%
+```
+DOMAIN MODEL
+Domain: _______________
+Date: _______________    Facilitator: _______________
 
-### Layer 2 — VAF Template
+KEY CONCEPTS
+[List. Name + one-sentence definition for each.]
 
-| Field | Guidance |
-|---|---|
-| Approved technology | Name and category. |
-| What this prevents | Specific sprawl or risk. One sentence. |
-| Exception process | Step by step. Who requests, reviews, approves. Must be achievable in 48 hours. |
-| Exception record | Every approved exception. Technology, requestor, reason, approval date, review date. |
-| Cost of non-standard | Quantified where possible. |
-| Enforcement authority | Named role with authority to block non-standard. One person. |
+RELATIONSHIPS
+[Describe key relationships between concepts in plain language.]
 
-**Template sentence:** *"In [year], [technology] was selected without architecture review. It cost [amount] to remediate and cannot be integrated with our standard stack. For the catalogue to function, [named role] needs explicit authority to block non-standard selections. I need that authority confirmed."*
+CONTESTED DEFINITIONS
+[Where do teams use the same word to mean different things?]
 
----
+AGREED DEFINITIONS
+[What was resolved in this session?]
 
-## 15. Infrastructure Architecture
-
-**Type:** Ground truth · **Layer:** Technology · **Standard time:** 10–16 weeks · **VAF time:** 2–3 weeks · **Saving:** ~80%
-
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Scope — critical path | Not full landscape. Named components only. |
-| Component and owner | Named individual operator. Not team. |
-| Upstream dependencies | What this depends on. Failure consequence. |
-| Downstream dependencies | What depends on this. Named. |
-| Recovery procedure | Actual steps. Validated with operator. Not policy version. |
-| Recovery time (actual) | From last test or incident. Not the target. |
-| Human knowledge dependencies | Any recovery requiring specific named individual. Flag. |
-| Last validation date | When last tested under realistic conditions. |
-| Accuracy date and maintainer | Operator who maintains. Not architecture team. |
-
-**Template sentence:** *"Our infrastructure documentation was [accuracy assessment] before this review. We found [X] components whose recovery depends on named individual knowledge. [Y] recovery procedures have not been tested in 12+ months. I need [DR test schedule / knowledge documentation sessions] approved before [date]."*
+DIAGRAM REFERENCE
+[Link to or embed the concept diagram.]
+```
 
 ---
 
-## 16. Architecture Decision Record
+#### Executive Framing
 
-**Type:** Ground truth · **Layer:** Governance · **Standard time:** 2–4 hours · **VAF time:** 20 minutes · **Saving:** ~80%
+Present as: *"These are the things that matter in this domain and how they connect. This is the vocabulary we are committing to."*
 
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Decision | What was decided. One paragraph. Past tense. Written the same day. |
-| What was rejected | Every alternative considered. For each: what it was, why not chosen. Written while fresh. |
-| What would change this decision | Conditions for revisiting. If none — set a mandatory review date. |
-| Decision owner | One named individual. Not a team. |
-| Date | Date of the decision. Not document date. |
-
-**Note:** No template. No review cycle. No approval chain. The discipline is writing it immediately. Format is irrelevant.
-
-**Referencing language (when challenged):** *"On [date], [owner] decided [decision] after evaluating [alternatives]. The conditions assumed were [assumptions]. Those conditions [have/have not] changed."*
+Value to leadership: prevents the rework that comes from teams building on different definitions of the same concept.
 
 ---
 
-## 17. Architecture Compliance Review
+### 18. Decision Velocity Diagnostic
 
-**Type:** Control mechanism · **Layer:** Governance · **Standard time:** 2–4 weeks · **VAF time:** Half day · **Saving:** ~90%
+**What it is:** A structured assessment of how fast and how well an organisation makes architectural decisions. Produces a baseline score and identifies the specific failure modes present.
 
-### Layer 1 — Extraction Guide
-
-Two questions. Everything else is context.
-
-1. Does this solution compound or reduce technical debt over five years?
-2. Does this solution violate an architecture principle?
-
-If neither produces a clear finding: advisory. If either does: blocking — with a named recommendation, not a committee referral.
-
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Solution reviewed | Name. Reference to SAD. |
-| Q1: Debt trajectory | Compound or reduce? Specific evidence. One paragraph. |
-| Q2: Principle compliance | Violation? Name the principle, describe the violation, name the exception path. |
-| Finding | Advisory or Blocking. Named clearly. |
-| Recommendation | If blocking: specific change required, or exception approval path and who must approve. |
-| Reviewer and date | Named architect. Date. |
-
-**Template sentence:** *"The compliance review of [solution] found [finding]. Specifically, [one sentence]. The recommendation is [specific action]. If we proceed without this change, the consequence is [cost / risk]. I need [decision] from [named person] before [date]."*
+**Standard time:** 4–6 weeks (surveys, interviews, analysis)
+**VAF time:** 2-hour diagnostic session
+**Time saving:** 75–90%
 
 ---
 
-## 18. Architecture Roadmap
+#### Extraction Guide
 
-**Type:** Decision instrument · **Layer:** Governance · **Standard time:** 8–16 weeks · **VAF time:** 1 week · **Saving:** ~85%
+See [`/diagnostics/decision-velocity-diagnostic.md`](/diagnostics/decision-velocity-diagnostic.md) for the full diagnostic instrument.
 
-### Layer 2 — VAF Template
-
-| Field | Guidance |
-|---|---|
-| Funded initiatives (in dependency order) | Named. Dependency they wait on. Dependency they create. Funding confirmed. |
-| Unfunded items | Required but not funded. Named explicitly as risk positions — not omitted. |
-| Dependency sequence | What cannot start until what else is done. The sequence — not the dates. |
-| Date range estimates | "Contingent on X" — not calendar commitments. |
-| Strategic priorities served | Each initiative mapped to a named priority. If no priority named — not on this roadmap. |
-| Sequencing conflicts | Any initiative whose sequence conflicts with discovered dependencies. |
-| Invalidation triggers | Conditions that would change this roadmap. Named. |
-| Owner and review trigger | Named owner. Review triggered by conditions — not annual calendar. |
-
-**Template sentence:** *"We have [X] funded initiatives for [period]. Before [most important initiative] can begin, we need [prerequisite] — which is not funded. Without [prerequisite], [initiative] cannot start as planned. The cost of the delay is [consequence]. I need a funding decision on [prerequisite] or a revised commitment on [initiative]."*
+Run with: the lead architect, one delivery lead, one business sponsor. Ask each to score independently before discussing. The gaps between scores are as informative as the scores themselves.
 
 ---
 
-## Sources
+#### VAF Template
 
-See [SOURCES.md](/research/SOURCES.md) for the complete graded bibliography.
+```
+DECISION VELOCITY DIAGNOSTIC
+Organisation / Domain: _______________
+Date: _______________    Facilitator: _______________
 
-Key anchors for this manual:
+VELOCITY SCORE: ___ / 10
 
-- **Kotusev et al., Information and Software Technology, 2022** — empirical basis for artefact type classification across 47 organisations
-- **Gartner ITScore** — practice maturity level outcomes (15–20% project success, 10–15% IT cost per level)
-- **CB Insights, 2024** — 43% PMF failure as root cause; 70% capital depletion as symptom
-- **Koning, Hasan & Chatterji, Management Science, 2022** — 30–100% performance improvement with validation discipline
+DIMENSION SCORES
+Decision clarity:     ___ / 10
+Decision speed:       ___ / 10
+Decision recording:   ___ / 10
+Decision retention:   ___ / 10
+Decision reuse:       ___ / 10
+
+PRIMARY FAILURE MODES
+[Top 3 identified failure modes with evidence.]
+
+RECOMMENDED INTERVENTIONS
+[Specific, time-bounded actions.]
+
+BASELINE DATE
+[When to re-run the diagnostic to measure improvement.]
+```
 
 ---
 
-*Velocity Architecture Framework™ · ZenCloud Global Consultants · May 2026*  
-*Free to use. Free to share. Attribution appreciated.*
+#### Executive Framing
+
+Present as: *"This is how fast we are currently making good decisions. This is the gap. These are the three things that would close it."*
+
+---
+
+## Type 2 — Decision Artefacts
+
+---
+
+### 2. Trade-off Matrix
+
+**What it is:** A structured comparison of options against weighted criteria, producing a traceable record of why one option was chosen over others.
+
+**Standard time:** 2–3 weeks (options analysis, stakeholder review)
+**VAF time:** 1–2 hours
+**Time saving:** 80–90%
+
+---
+
+#### Extraction Guide
+
+The failure mode for trade-off matrices is false precision — scoring options to three decimal places without agreeing on what the criteria mean or how important they are.
+
+Run in two parts:
+
+**Part 1 (30 min) — agree the criteria:**
+Ask: *"What does a good decision look like here?"* Generate 5–8 criteria. Weight them (must sum to 100). Record any criteria that were rejected and why.
+
+**Part 2 (30 min) — score the options:**
+Score each option against each criterion (1–5). Weight × score = weighted score. Sum for total. The highest score is not automatically the recommendation — it is the input to the recommendation.
+
+---
+
+#### VAF Template
+
+```
+TRADE-OFF MATRIX
+Decision: _______________
+Date: _______________    Owner: _______________
+
+CRITERIA AND WEIGHTS
+| Criterion | Weight |
+|-----------|--------|
+| [criterion 1] | [%] |
+| [criterion 2] | [%] |
+| [criterion 3] | [%] |
+Total: 100%
+
+OPTIONS AND SCORES
+| Option | [C1 w%] | [C2 w%] | [C3 w%] | Total |
+|--------|---------|---------|---------|-------|
+| [A]    |         |         |         |       |
+| [B]    |         |         |         |       |
+| [C]    |         |         |         |       |
+
+RECOMMENDATION
+[Which option, and the deciding factor in plain language.]
+
+REJECTED CRITERIA
+[Criteria considered but excluded, and why.]
+
+REJECTED OPTIONS
+[Options considered but excluded before scoring, and why.]
+```
+
+---
+
+#### Executive Framing
+
+Do not present the matrix to leadership. Present: option chosen, the one deciding factor, and what was traded away.
+
+*"We chose option B. The deciding factor was operational risk. We traded away a lower initial cost for a significantly lower probability of unplanned outage in year one."*
+
+---
+
+### 3. Architecture Decision Record
+
+**What it is:** A single-page record of one significant architectural decision — the context, the options, the reasoning, and the consequences.
+
+**Standard time:** Often never produced, or produced weeks after the decision
+**VAF time:** 20–30 minutes, immediately after the decision is made
+**Time saving:** Infinite (replacing zero with something)
+
+---
+
+#### Extraction Guide
+
+The ADR must be produced immediately. A decision not recorded within 48 hours will lose its reasoning within two weeks and its context within six months.
+
+Ask the decision-maker five questions:
+
+1. *What was the situation that required a decision?*
+2. *What was decided?*
+3. *What else was on the table?*
+4. *Why this option?*
+5. *What is now true because of this decision?*
+
+Write the answers. That is the ADR.
+
+---
+
+#### VAF Template
+
+```
+ADR-[number]: [Title — verb + noun]
+
+Status: Proposed / Accepted / Superseded / Deprecated
+Date: _______________
+Author: _______________
+Deciders: _______________
+
+CONTEXT
+[Two to four sentences. What situation required a decision?]
+
+DECISION
+[One sentence. What was decided?]
+
+OPTIONS CONSIDERED
+- [Option A]
+- [Option B]
+- [Option C]
+
+REASONING
+[Three to five sentences. Why this option?]
+
+CONSEQUENCES
+[What is now binding? What constraints does this create?
+What follow-on decisions does this require?]
+
+RELATED DECISIONS
+[Links to related ADRs.]
+```
+
+---
+
+#### Executive Framing
+
+ADRs are rarely presented to leadership individually. They are referenced when decisions are questioned or reversed. The executive framing is: *"This decision was made on [date] by [deciders]. The reasoning is recorded. Here it is."*
+
+The value of an ADR is highest when someone asks *"why did we do it this way?"* six months after the decision was made.
+
+---
+
+### 4. Fitness Function Register
+
+**What it is:** A set of automated or manual checks that verify architectural decisions are still holding in the running system.
+
+**Standard time:** Typically never produced in most organisations
+**VAF time:** 2-hour definition session + implementation time per function
+**Time saving:** Replaces manual architecture review cycles
+
+---
+
+#### Extraction Guide
+
+For each significant ADR, ask: *"How would we know if this decision stopped being true?"*
+
+The answer is a fitness function. It may be automated (a CI pipeline check, a performance threshold alert, a compliance scan) or manual (a monthly review question).
+
+Focus on the decisions that, if they drifted, would cause the most damage before anyone noticed.
+
+---
+
+#### VAF Template
+
+```
+FITNESS FUNCTION REGISTER
+Domain: _______________
+Date: _______________    Owner: _______________
+
+| ID | ADR | Function description | Automated? | Threshold | Frequency | Owner |
+|----|-----|---------------------|------------|-----------|-----------|-------|
+|    |     |                     | Y/N        |           |           |       |
+
+CURRENT STATUS
+| ID | Last checked | Status | Notes |
+|----|-------------|--------|-------|
+|    |             | Pass/Fail/At risk | |
+```
+
+---
+
+#### Executive Framing
+
+Present as: *"These are the automated guardrails on our most significant decisions. They tell us when drift is occurring before it becomes a problem."*
+
+---
+
+### 14. Dependency Map
+
+**What it is:** A structured view of the dependencies between systems, teams, or capabilities that are relevant to a decision or delivery programme.
+
+**Standard time:** 2–4 weeks
+**VAF time:** 90-minute facilitated session
+**Time saving:** 75–85%
+
+---
+
+#### Extraction Guide
+
+Do not attempt to map all dependencies. Map only the dependencies that matter for the decision or programme at hand.
+
+Ask: *"What does this system/team/capability depend on to function? What depends on it?"*
+
+Mark criticality: which dependencies, if broken, would halt delivery or cause failure?
+
+---
+
+#### VAF Template
+
+```
+DEPENDENCY MAP
+Context: _______________
+Date: _______________
+
+INBOUND DEPENDENCIES (what this depends on)
+| Dependency | Criticality | Owner | Status |
+|------------|-------------|-------|--------|
+
+OUTBOUND DEPENDENCIES (what depends on this)
+| Dependent | Criticality | Owner | Status |
+|-----------|-------------|-------|--------|
+
+CRITICAL PATH
+[Which dependency chain, if broken, causes the most damage?]
+
+RISK FLAGS
+[Dependencies with no clear owner, unknown status, or known fragility.]
+```
+
+---
+
+#### Executive Framing
+
+Present as: *"These are the three dependencies that could stop this programme. Here is what we are doing about each."*
+
+---
+
+## Type 3 — Control Artefacts
+
+---
+
+### 5. Velocity Dashboard
+
+**What it is:** A living view of the current health of architectural commitments across a domain or programme. Not a project status report — a decision integrity report.
+
+**Standard time:** Typically never produced systematically
+**VAF time:** 30-minute weekly update
+**Time saving:** Replaces ad-hoc architecture review meetings
+
+---
+
+#### Extraction Guide
+
+The dashboard is updated, not produced. The first version takes 2 hours to establish. Subsequent updates take 30 minutes.
+
+The three questions it answers:
+1. Which decisions are holding?
+2. Which are drifting?
+3. Which have been superseded but not recorded?
+
+---
+
+#### VAF Template
+
+```
+VELOCITY DASHBOARD
+Domain: _______________
+Last updated: _______________    Owner: _______________
+
+DECISION HEALTH
+| ADR | Status | Last reviewed | Drift detected? | Action required? |
+|-----|--------|---------------|-----------------|------------------|
+
+OPEN DECISIONS (required but not yet made)
+| Decision required | Owner | Target date | Blocker? |
+|-------------------|-------|-------------|----------|
+
+RECENTLY SUPERSEDED
+| ADR | Superseded by | Date | Communicated? |
+|-----|---------------|------|---------------|
+
+VELOCITY SCORE THIS CYCLE: ___ / 10
+TREND: ↑ / → / ↓
+```
+
+---
+
+#### Executive Framing
+
+One page. Three numbers: decisions holding, decisions drifting, decisions overdue.
+
+*"Of the 14 significant decisions in this domain, 11 are holding, 2 are drifting and being addressed, 1 has been superseded and is being updated. Decision velocity this cycle: 7/10, up from 6 last month."*
+
+---
+
+### 6. Architectural Decision Log
+
+**What it is:** A chronological index of all ADRs in a domain, their current status, and their relationships. The ADL is the navigation layer over the individual ADRs.
+
+**Standard time:** Not typically maintained as a separate artefact
+**VAF time:** 15-minute update per cycle
+**Time saving:** Replaces manual trawling through decision history
+
+---
+
+#### Extraction Guide
+
+The ADL is a table. It does not contain the decisions — it indexes them. Every ADR gets a row when it is created. The row is updated when the status changes.
+
+---
+
+#### VAF Template
+
+```
+ARCHITECTURAL DECISION LOG
+Domain: _______________
+Last updated: _______________
+
+| ADR | Title | Date | Status | Supersedes | Superseded by |
+|-----|-------|------|--------|------------|---------------|
+| ADR-001 | | | Accepted | | |
+| ADR-002 | | | Superseded | ADR-001 | ADR-007 |
+```
+
+---
+
+#### Executive Framing
+
+Not presented to leadership directly. Referenced when a decision is questioned: *"The decision log shows this was addressed in ADR-004, accepted in March, reviewed in July, still current."*
+
+---
+
+### 12. Risk Register
+
+**What it is:** A structured log of architectural risks — decisions not yet made, dependencies not yet resolved, assumptions not yet validated — that could cause delivery or operational failure.
+
+**Standard time:** Typically exists as a project risk register, not architecture-specific
+**VAF time:** 1-hour initial session, 30-minute fortnightly update
+
+---
+
+#### Extraction Guide
+
+An architectural risk register is different from a project risk register. It captures:
+- Decisions deferred past their decision latency (the point at which deferral starts causing damage)
+- Dependencies with no clear resolution path
+- Assumptions being carried without a validation plan
+
+Do not copy the project risk register. Build from architectural decisions and their status.
+
+---
+
+#### VAF Template
+
+```
+ARCHITECTURAL RISK REGISTER
+Domain: _______________
+Last updated: _______________    Owner: _______________
+
+| ID | Risk description | Type | Likelihood | Impact | Decision latency | Owner | Mitigation |
+|----|-----------------|------|------------|--------|-----------------|-------|------------|
+| R-001 | | Decision deferred / Dependency / Assumption | H/M/L | H/M/L | [date past which this becomes critical] | | |
+
+OVERDUE ITEMS (past decision latency date)
+| ID | Risk | Days overdue | Escalation status |
+|----|------|-------------|-------------------|
+```
+
+---
+
+#### Executive Framing
+
+Present the overdue items only. *"Three architectural decisions have passed their latency date. Here they are, here is what is blocking them, and here is what we need to proceed."*
+
+---
+
+### 13. Technology Radar
+
+**What it is:** A structured view of the technologies in use, under evaluation, on hold, and deprecated across a domain. Used to manage technology proliferation and guide adoption decisions.
+
+**Standard time:** Quarterly cycle, 2–4 weeks per update
+**VAF time:** 2-hour quarterly session
+**Time saving:** 70–80%
+
+---
+
+#### Extraction Guide
+
+Use four rings: Adopt (use now), Trial (use with caution, learning), Assess (worth exploring), Hold (do not start new work with this). Four quadrants: Languages & Frameworks, Tools, Platforms, Techniques.
+
+Do not attempt to be comprehensive. Cover only the technologies that are decision-relevant for the current quarter.
+
+---
+
+#### VAF Template
+
+```
+TECHNOLOGY RADAR
+Domain: _______________
+Quarter: _______________    Owner: _______________
+
+ADOPT (use now)
+[List with one-line rationale each]
+
+TRIAL (use with caution)
+[List with one-line rationale and conditions]
+
+ASSESS (worth exploring)
+[List with one-line rationale]
+
+HOLD (do not start new work)
+[List with one-line rationale and migration path if applicable]
+
+CHANGES FROM LAST QUARTER
+[What moved and why]
+```
+
+---
+
+#### Executive Framing
+
+Present only movements: what entered Adopt, what entered Hold, and why. *"This quarter we moved Kubernetes to Adopt and placed our legacy ESB on Hold. Here is what that means for the programme."*
+
+---
+
+## Type 4 — Operating Artefacts
+
+---
+
+### 7. Pulse Briefing
+
+**What it is:** A fortnightly or monthly one-page briefing covering the architectural state of a programme — decisions made, decisions pending, risks surfaced, and the single most important action required.
+
+**Standard time:** Not typically produced; ad-hoc status updates used instead
+**VAF time:** 30–45 minutes per cycle
+
+---
+
+#### Extraction Guide
+
+Produced by the architect from the Velocity Dashboard and Risk Register. Not a meeting — a document. Distributed before the governance meeting, not during it.
+
+Five sections, maximum one page.
+
+---
+
+#### VAF Template
+
+```
+PULSE BRIEFING — [Month/Fortnight]
+Programme: _______________    Author: _______________
+
+DECISIONS MADE THIS CYCLE
+[List. ADR reference + one-line summary.]
+
+DECISIONS PENDING
+[List. What is outstanding, owner, target date.]
+
+RISKS SURFACED
+[New items added to the risk register this cycle.]
+
+DRIFT DETECTED
+[Any decisions showing signs of not holding.]
+
+ACTION REQUIRED
+[Single most important action. Owner. Deadline.]
+```
+
+---
+
+#### Executive Framing
+
+The Pulse Briefing is the executive framing. Send it. Do not present it — send it 24 hours before the governance meeting and reference it in the room: *"You have the pulse briefing. The one action required this cycle is on the last line."*
+
+---
+
+### 8. Escalation Register
+
+**What it is:** A log of architectural issues that have been escalated beyond the architecture function — decisions that require executive sponsorship, funding, or cross-domain authority to resolve.
+
+**Standard time:** Not typically maintained as a distinct artefact
+**VAF time:** 15-minute update per cycle
+
+---
+
+#### Extraction Guide
+
+An item enters the Escalation Register when the architect has identified the required decision, has been unable to get it made within normal operating rhythm, and the decision latency date is approaching or has passed.
+
+The register is not a complaint log. It is an accountability tool.
+
+---
+
+#### VAF Template
+
+```
+ESCALATION REGISTER
+Domain: _______________
+Last updated: _______________
+
+| ID | Issue | Date raised | Escalated to | Response received | Resolution | Days open |
+|----|-------|-------------|-------------|-------------------|------------|-----------|
+```
+
+---
+
+#### Executive Framing
+
+Present at governance meetings. *"Two items have been in the escalation register for more than 30 days. Here they are. Here is what we need. Here is the cost of continued delay."*
+
+---
+
+### 9. Integrity Arc Assessment
+
+**What it is:** A structured self-assessment of the architect's own operating integrity — the degree to which their decisions and recommendations are driven by architecture reasoning rather than political, social, or organisational pressure.
+
+**Standard time:** Not typically formalised
+**VAF time:** 30-minute quarterly reflection
+
+---
+
+#### Extraction Guide
+
+This is a solo instrument. It is not reviewed by leadership. It is a practitioner discipline tool.
+
+Ask:
+1. Which recommendations did I make this quarter that I would stand behind without qualification?
+2. Which recommendations did I soften, delay, or change because of pressure that was not architectural?
+3. What is the cost of the gap between those two lists?
+
+---
+
+#### VAF Template
+
+```
+INTEGRITY ARC ASSESSMENT
+Architect: _______________    Period: _______________
+
+DECISIONS MADE WITH FULL ARCHITECTURAL INTEGRITY
+[List]
+
+DECISIONS WHERE INTEGRITY WAS COMPROMISED
+[List — be specific about the nature of the compromise]
+
+THE GAP
+[What is the cost of the decisions in column 2?]
+
+CORRECTIVE INTENT
+[What will I do differently next quarter?]
+```
+
+---
+
+#### Executive Framing
+
+Not presented to leadership. The Integrity Arc is a practitioner instrument. Its value is in the honesty of the private assessment.
+
+---
+
+### 15. Handover Record
+
+**What it is:** A structured record produced when an architect transitions off a programme — capturing the state of all decisions, open items, risks, and the reasoning behind choices made.
+
+**Standard time:** Rarely produced; institutional knowledge walks out the door
+**VAF time:** Half-day to produce
+
+---
+
+#### Extraction Guide
+
+Produce the Handover Record two weeks before transition, not on the last day. Use the ADL as the input — walk through every ADR and record what the incoming architect needs to know that is not in the document.
+
+The ADL + Handover Record together must enable a competent architect to pick up the work without a handover meeting.
+
+---
+
+#### VAF Template
+
+```
+HANDOVER RECORD
+Programme / Domain: _______________
+Outgoing architect: _______________    Incoming architect: _______________
+Transition date: _______________
+
+DECISION INVENTORY
+[Reference to ADL. Note any ADRs with significant undocumented context.]
+
+OPEN ITEMS
+[List. What is in flight, what is blocked, what is urgent.]
+
+CRITICAL RELATIONSHIPS
+[Who are the key stakeholders, what do they care about, what is the history?]
+
+RISKS NOT YET IN THE REGISTER
+[What are you worried about that is not yet formally captured?]
+
+THINGS I WOULD DO DIFFERENTLY
+[Honest retrospective for the benefit of the incoming architect.]
+```
+
+---
+
+#### Executive Framing
+
+Not presented to leadership. Referenced if the incoming architect surfaces issues within 90 days of transition: *"This was documented in the handover record."*
+
+---
+
+### 16. Pattern Catalogue
+
+**What it is:** A curated library of architectural patterns in use or approved for use in a domain — with rationale, constraints, and examples for each.
+
+**Standard time:** Years to build organically; often never formalised
+**VAF time:** Initial catalogue in one 3-hour session; updated as patterns are identified
+
+---
+
+#### Extraction Guide
+
+Do not attempt to catalogue everything. Start with: *"What are the five patterns we use most often? What are the two we keep arguing about?"*
+
+Document those seven. Add to the catalogue as decisions create new patterns worth recording.
+
+---
+
+#### VAF Template
+
+```
+PATTERN CATALOGUE
+Domain: _______________
+Last updated: _______________    Owner: _______________
+
+PATTERN: [Name]
+Problem: [What situation does this pattern address?]
+Solution: [What does this pattern prescribe?]
+Constraints: [When should this pattern NOT be used?]
+Examples: [Where is this pattern in use in this domain?]
+ADR reference: [Which decision established or validated this pattern?]
+Status: Approved / Experimental / Deprecated
+```
+
+---
+
+#### Executive Framing
+
+Not presented to leadership. Referenced by delivery teams. Value is in reducing the time spent relitigating solved problems.
+
+---
+
+### 17. Playbook
+
+**What it is:** A step-by-step operating guide for a specific architectural scenario — how to onboard a new system, how to deprecate a legacy component, how to conduct an architecture review under time pressure.
+
+**Standard time:** Rarely formalised; each event reinvented from scratch
+**VAF time:** 2 hours to produce per playbook
+
+---
+
+#### Extraction Guide
+
+A playbook is produced after the first time an event is handled well. Immediately after: *"We just did this well. Write down how we did it."*
+
+The person who ran the event writes the first draft. The architect reviews and formalises. Done.
+
+---
+
+#### VAF Template
+
+```
+PLAYBOOK: [Scenario name]
+Version: _______________    Owner: _______________
+Last used: _______________
+
+WHEN TO USE THIS PLAYBOOK
+[Describe the triggering scenario precisely.]
+
+PRE-CONDITIONS
+[What must be true before starting?]
+
+STEPS
+1.
+2.
+3.
+
+DECISION POINTS
+[Where in the process does a judgement call occur? What are the options?]
+
+COMMON FAILURE MODES
+[What goes wrong, and how to avoid it.]
+
+OUTPUT
+[What does done look like?]
+```
+
+---
+
+#### Executive Framing
+
+Not presented to leadership. Operational instrument. Value is in consistency and speed of execution across events.
+
+---
+
+## Compression Map Summary
+
+| Artefact | Standard time | VAF time | Saving |
+|----------|--------------|----------|--------|
+| Guardrail Canvas | 3–6 weeks | 2–4 hours | 90%+ |
+| Trade-off Matrix | 2–3 weeks | 1–2 hours | 85%+ |
+| ADR | Often never | 20–30 min | ∞ |
+| Fitness Function Register | Often never | 2 hours | ∞ |
+| Velocity Dashboard | Often never | 30 min/week | ∞ |
+| Capability Map | 4–8 weeks | Half day | 85%+ |
+| Domain Model | 2–4 weeks | 2 hours | 80%+ |
+| Technology Radar | 2–4 weeks/quarter | 2 hours | 80%+ |
+| Pulse Briefing | Ad-hoc | 30–45 min | ∞ |
+| Decision Velocity Diagnostic | 4–6 weeks | 2 hours | 85%+ |
+
+*Velocity Architecture Framework™ — © 2026 Phil Myint / ZenCloud Global Consultants*
