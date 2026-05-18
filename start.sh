@@ -5,8 +5,8 @@ set -e
 nginx -g "daemon off;" &
 NGINX_PID=$!
 
-# Start Node application
-node dist/index.js &
+# Start Node application via npm start
+npm start &
 NODE_PID=$!
 
 # Forward signals to both processes
