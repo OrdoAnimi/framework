@@ -1,22 +1,39 @@
-FROM node:20-alpine
+# ── Stage 1: Build ──────────────────────────────────────────────────────────
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci
+RUN npm ci --prefer-offline
 
-COPY tsconfig.json ./
-COPY app ./app
-
+COPY . .
 RUN npm run build
 
-RUN mkdir -p dist/app && cp app/portal.html dist/app/portal.html
+# ── Stage 2: Runtime ─────────────────────────────────────────────────────────
+FROM node:20-alpine
 
-RUN npm prune --production
+# Install nginx
+RUN apk add --no-cache nginx
 
-HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:3000/health', (r) => { if (r.statusCode !== 200) throw new Error(r.statusCode) })"
+WORKDIR /app
 
-EXPOSE 3000
+# Copy compiled app and production deps
+COPY --from=builder /app/dist       ./dist
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./
 
-CMD ["node", "dist/app/app.js"]
+# nginx config — replaces Alpine default
+COPY nginx.conf /etc/nginx/http.d/default.conf
+
+# Remove Alpine's default nginx server block if present
+RUN rm -f /etc/nginx/http.d/default.conf.bak 2>/dev/null || true
+
+# Entrypoint
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
+# 80  — nginx (public, Cloudflare-proxied)
+# 3000 — Express (internal only)
+EXPOSE 80 3000
+
+CMD ["/start.sh"]
