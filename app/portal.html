@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VAF Agentic Architect — ZenCloud</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
 <style>
 :root {
   --bg: #090909;
@@ -370,14 +371,28 @@ textarea { resize: vertical; min-height: 80px; }
 }
 .modal-close:hover { color: var(--text); }
 .modal-body { padding: 24px; overflow-y: auto; flex: 1; }
-.modal-body pre {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
-  line-height: 1.7;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  color: var(--text-2);
-}
+.modal-body .md { font-size: 13px; line-height: 1.75; color: var(--text-2); }
+.modal-body .md h1 { font-size: 18px; font-weight: 700; color: var(--text); margin: 0 0 16px; letter-spacing: -0.02em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+.modal-body .md h2 { font-size: 14px; font-weight: 600; color: var(--text); margin: 24px 0 10px; letter-spacing: -0.01em; }
+.modal-body .md h3 { font-size: 13px; font-weight: 600; color: var(--orange); margin: 18px 0 8px; }
+.modal-body .md h4 { font-size: 12px; font-weight: 600; color: var(--text-2); margin: 14px 0 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+.modal-body .md p { margin: 0 0 12px; }
+.modal-body .md ul, .modal-body .md ol { padding-left: 20px; margin: 0 0 12px; }
+.modal-body .md li { margin-bottom: 4px; }
+.modal-body .md strong { color: var(--text); font-weight: 600; }
+.modal-body .md em { color: var(--text-2); font-style: italic; }
+.modal-body .md code { font-family: 'JetBrains Mono', monospace; font-size: 11px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; color: var(--orange); }
+.modal-body .md pre { background: var(--surface-2); border: 1px solid var(--border); border-radius: 7px; padding: 14px 16px; margin: 0 0 14px; overflow-x: auto; }
+.modal-body .md pre code { background: none; border: none; padding: 0; color: var(--text-2); font-size: 12px; line-height: 1.7; }
+.modal-body .md blockquote { border-left: 3px solid var(--orange-border); margin: 0 0 12px; padding: 6px 14px; color: var(--text-3); font-style: italic; }
+.modal-body .md table { width: 100%; border-collapse: collapse; margin: 0 0 16px; font-size: 12px; }
+.modal-body .md th { background: var(--surface-2); color: var(--text); font-weight: 600; padding: 8px 12px; text-align: left; border: 1px solid var(--border); }
+.modal-body .md td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
+.modal-body .md tr:nth-child(even) td { background: rgba(255,255,255,0.01); }
+.modal-body .md hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+.modal-body .md a { color: var(--orange); text-decoration: none; }
+.modal-body .md a:hover { text-decoration: underline; }
+.modal-truncated { font-size: 11px; color: var(--text-3); font-family: 'JetBrains Mono', monospace; margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border); }
 
 /* SCROLLBAR */
 ::-webkit-scrollbar { width: 5px; height: 5px; }
@@ -485,7 +500,7 @@ textarea { resize: vertical; min-height: 80px; }
       <button class="modal-close" onclick="document.getElementById('modal').classList.remove('show')">✕</button>
     </div>
     <div class="modal-body">
-      <pre id="modal-content"></pre>
+      <div id="modal-content" class="md"></div>
     </div>
   </div>
 </div>
@@ -624,8 +639,17 @@ function renderArtefacts(latestRequestId) {
 function viewArtefact(i) {
   const a = artefacts[i];
   const labels = { governance: 'VP1 Guardrail Canvas', strategy: 'VP2 Trade-off Matrix', design: 'VP3 ADR' };
+  const raw = a.contentPreview || a.content || '';
+  const truncated = a.contentLength && raw.length < a.contentLength;
+  const el = document.getElementById('modal-content');
+  el.innerHTML = marked.parse(raw || '_No content available. View full artefact on GitHub._');
+  if (truncated) {
+    const note = document.createElement('div');
+    note.className = 'modal-truncated';
+    note.textContent = `Showing first ${raw.length.toLocaleString()} of ${a.contentLength.toLocaleString()} chars — full artefact committed to GitHub.`;
+    el.appendChild(note);
+  }
   document.getElementById('modal-title').textContent = labels[a.type];
-  document.getElementById('modal-content').textContent = a.contentPreview || a.content || 'Full content in GitHub';
   document.getElementById('modal').classList.add('show');
 }
 
