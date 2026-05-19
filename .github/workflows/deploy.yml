@@ -62,6 +62,7 @@ jobs:
             --registry-password "$GH_TOKEN_VAL" \
             --ports 80 3000 \
             --ip-address Public \
+            --dns-name-label vaf-architect \
             --location ${{ env.LOCATION }} \
             --os-type Linux \
             --cpu 1 \
@@ -72,10 +73,10 @@ jobs:
                 NODE_ENV=production \
             --restart-policy Always
 
-      - name: Show container IP
+      - name: Show container FQDN
         run: |
           az container show \
             --resource-group ${{ env.RESOURCE_GROUP }} \
             --name ${{ env.CONTAINER_NAME }} \
-            --query ipAddress.ip \
+            --query ipAddress.fqdn \
             --output tsv
