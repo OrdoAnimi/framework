@@ -3,6 +3,9 @@ import { EARequest, TaskPlan, OrchestratorState, Artefact, VAFFramework } from '
 import { governanceAgent } from './agents/governance-agent';
 import { strategyAgent } from './agents/strategy-agent';
 import { designAgent } from './agents/design-agent';
+import { velocityAgent } from './agents/velocity-agent';
+import { rhythmAgent } from './agents/rhythm-agent';
+import { practitionerAgent } from './agents/practitioner-agent';
 import { validationAgent } from './agents/validation-agent';
 import { actionEngine } from './action-engine';
 import { loadVAFFramework } from './kb-loader';
@@ -108,12 +111,12 @@ class Orchestrator {
 
   private async createPlan(request: EARequest): Promise<TaskPlan> {
     try {
-      const requestedArtefacts = request.requestedArtefacts || ['governance', 'strategy', 'design'];
+      const requestedArtefacts = request.requestedArtefacts || ['governance', 'strategy', 'design', 'velocity', 'rhythm', 'practitioner'];
       const plan: TaskPlan = {
         requestId: request.id,
         artefactsNeeded: requestedArtefacts,
         validationRules: ['structure', 'tone', 'alignment', 'vaf-concepts'],
-        sequenceOrder: ['governance', 'strategy', 'design'],
+        sequenceOrder: ['governance', 'strategy', 'design', 'velocity', 'rhythm', 'practitioner'],
       };
       return plan;
     } catch (error) {
@@ -125,17 +128,17 @@ class Orchestrator {
   private async generateArtefact(request: EARequest, type: string): Promise<Artefact | null> {
     if (!this.framework) throw new Error('VAF framework not loaded');
 
-    let agent;
     switch (type) {
-      case 'governance': agent = governanceAgent; break;
-      case 'strategy': agent = strategyAgent; break;
-      case 'design': agent = designAgent; break;
+      case 'governance':   return governanceAgent.generate(request, this.framework);
+      case 'strategy':     return strategyAgent.generate(request, this.framework);
+      case 'design':       return designAgent.generate(request, this.framework);
+      case 'velocity':     return velocityAgent.generate(request, this.framework);
+      case 'rhythm':       return rhythmAgent.generate(request, this.framework);
+      case 'practitioner': return practitionerAgent.generate(request, this.framework);
       default:
         logger.warn({ type }, 'Unknown artefact type');
         return null;
     }
-
-    return agent.generate(request, this.framework);
   }
 }
 

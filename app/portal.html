@@ -268,6 +268,9 @@ textarea { resize: vertical; min-height: 80px; }
 .icon-gov { background: rgba(99,102,241,0.08); border-color: rgba(99,102,241,0.15); }
 .icon-str { background: rgba(34,197,94,0.08); border-color: rgba(34,197,94,0.15); }
 .icon-des { background: rgba(249,115,22,0.08); border-color: rgba(249,115,22,0.15); }
+.icon-vel { background: rgba(234,179,8,0.08); border-color: rgba(234,179,8,0.15); }
+.icon-rhy { background: rgba(168,85,247,0.08); border-color: rgba(168,85,247,0.15); }
+.icon-pra { background: rgba(20,184,166,0.08); border-color: rgba(20,184,166,0.15); }
 .artefact-name {
   font-size: 13px;
   font-weight: 600;
@@ -429,8 +432,8 @@ textarea { resize: vertical; min-height: 80px; }
     </div>
     <div class="stat">
       <div class="stat-label">Viewpoints</div>
-      <div class="stat-value orange">3</div>
-      <div class="stat-sub">VP1 · VP2 · VP3</div>
+      <div class="stat-value orange">6</div>
+      <div class="stat-sub">VP1 · VP2 · VP3 · VP4 · VP5 · VP6</div>
     </div>
     <div class="stat">
       <div class="stat-label">Model</div>
@@ -468,6 +471,9 @@ textarea { resize: vertical; min-height: 80px; }
         <div class="toggle on" data-type="governance" onclick="toggleArtefact(this)">📋 VP1 Guardrail Canvas</div>
         <div class="toggle on" data-type="strategy" onclick="toggleArtefact(this)">⚖️ VP2 Trade-off Matrix</div>
         <div class="toggle on" data-type="design" onclick="toggleArtefact(this)">🏗️ VP3 ADR</div>
+        <div class="toggle on" data-type="velocity" onclick="toggleArtefact(this)">⚡ VP4 Velocity Dashboard</div>
+        <div class="toggle on" data-type="rhythm" onclick="toggleArtefact(this)">🔄 VP5 Pulse System</div>
+        <div class="toggle on" data-type="practitioner" onclick="toggleArtefact(this)">🧭 VP6 Integrity Arc</div>
       </div>
     </div>
 
@@ -530,6 +536,9 @@ function startProgress() {
     'Running VP1 Guardrail Canvas...',
     'Running VP2 Trade-off Matrix...',
     'Running VP3 ADR...',
+    'Running VP4 Velocity Dashboard...',
+    'Running VP5 Pulse System...',
+    'Running VP6 Integrity Arc...',
     'Validating against correspondence rules...',
     'Committing artefacts to GitHub...'
   ];
@@ -610,8 +619,8 @@ function renderArtefacts(latestRequestId) {
     return;
   }
 
-  const icons = { governance: ['icon-gov', '📋'], strategy: ['icon-str', '⚖️'], design: ['icon-des', '🏗️'] };
-  const labels = { governance: 'VP1 Guardrail Canvas', strategy: 'VP2 Trade-off Matrix', design: 'VP3 ADR' };
+  const icons = { governance: ['icon-gov', '📋'], strategy: ['icon-str', '⚖️'], design: ['icon-des', '🏗️'], velocity: ['icon-vel', '⚡'], rhythm: ['icon-rhy', '🔄'], practitioner: ['icon-pra', '🧭'] };
+  const labels = { governance: 'VP1 Guardrail Canvas', strategy: 'VP2 Trade-off Matrix', design: 'VP3 ADR', velocity: 'VP4 Velocity Dashboard', rhythm: 'VP5 Pulse System', practitioner: 'VP6 Integrity Arc' };
 
   list.innerHTML = artefacts.map((a, i) => {
     const [iconClass, emoji] = icons[a.type] || ['icon-gov', '📄'];
@@ -638,7 +647,7 @@ function renderArtefacts(latestRequestId) {
 
 function viewArtefact(i) {
   const a = artefacts[i];
-  const labels = { governance: 'VP1 Guardrail Canvas', strategy: 'VP2 Trade-off Matrix', design: 'VP3 ADR' };
+  const labels = { governance: 'VP1 Guardrail Canvas', strategy: 'VP2 Trade-off Matrix', design: 'VP3 ADR', velocity: 'VP4 Velocity Dashboard', rhythm: 'VP5 Pulse System', practitioner: 'VP6 Integrity Arc' };
   const raw = a.contentPreview || a.content || '';
   const truncated = a.contentLength && raw.length < a.contentLength;
   const el = document.getElementById('modal-content');

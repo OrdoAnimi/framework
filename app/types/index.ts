@@ -3,14 +3,14 @@ export interface EARequest {
   topic: string;
   context?: string;
   constraints?: string[];
-  requestedArtefacts?: ('governance' | 'strategy' | 'design')[];
+  requestedArtefacts?: ('governance' | 'strategy' | 'design' | 'velocity' | 'rhythm' | 'practitioner')[];
   userId?: string;
   timestamp: Date;
 }
 
 export interface Artefact {
   id: string;
-  type: 'governance' | 'strategy' | 'design';
+  type: 'governance' | 'strategy' | 'design' | 'velocity' | 'rhythm' | 'practitioner';
   content: string;
   metadata: {
     requestId: string;
@@ -45,12 +45,18 @@ export interface VAFFramework {
     vp1?: string;
     vp2?: string;
     vp3?: string;
+    vp4?: string;
+    vp5?: string;
+    vp6?: string;
   };
   correspondenceRules: string;
   examples: {
     governance?: string;
     strategy?: string;
     design?: string;
+    velocity?: string;
+    rhythm?: string;
+    practitioner?: string;
   };
   foundation: string;
   lastLoaded: Date;

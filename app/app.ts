@@ -50,7 +50,7 @@ app.post('/artefacts/generate', async (req: Request, res: Response) => {
       topic,
       context,
       constraints,
-      requestedArtefacts: requestedArtefacts || ['governance', 'strategy', 'design'],
+      requestedArtefacts: requestedArtefacts || ['governance', 'strategy', 'design', 'velocity', 'rhythm', 'practitioner'],
       userId: userId || 'anonymous',
       timestamp: new Date(),
     };
