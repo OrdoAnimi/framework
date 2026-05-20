@@ -583,9 +583,165 @@
   @media (max-width: 600px) {
     .nav-links { display: none; }
   }
+
+  /* ── SKIP LINK ── */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    z-index: 999;
+    padding: 0.5rem 1rem;
+    background: var(--gold);
+    color: var(--dark);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: top 0.2s;
+  }
+  .skip-link:focus { top: 0.5rem; }
+
+  /* ── NAV SCROLL STATE ── */
+  nav.scrolled {
+    background: rgba(13,24,32,0.96);
+    box-shadow: 0 1px 16px rgba(0,0,0,0.3);
+  }
+
+  /* ── ACTIVE NAV LINKS ── */
+  .nav-links a.active,
+  .mobile-menu a.active {
+    color: var(--gold);
+    position: relative;
+  }
+  .nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  /* ── FOCUS STYLES ── */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ── HAMBURGER ── */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 2px;
+    transition: opacity 0.2s;
+  }
+  .nav-hamburger:hover { opacity: 0.75; }
+  .nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--off-white);
+    border-radius: 1px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  @media (max-width: 600px) {
+    .nav-hamburger { display: flex; }
+  }
+
+  /* ── MOBILE MENU ── */
+  .mobile-menu {
+    position: fixed;
+    top: 58px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: rgba(13,24,32,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+    flex-direction: column;
+    padding: 0.5rem 2rem 1rem;
+    display: none;
+    gap: 0;
+  }
+  .mobile-menu.open {
+    display: flex;
+    animation: slideDown 0.2s ease forwards;
+  }
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .mobile-menu a {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(245,242,236,0.7);
+    text-decoration: none;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+    transition: color 0.2s;
+  }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu a:hover { color: var(--gold); }
+
+  /* ── BACK TO TOP ── */
+  .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(13,24,32,0.9);
+    border: 1px solid rgba(201,168,76,0.3);
+    color: var(--gold);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease, border-color 0.2s;
+    z-index: 90;
+  }
+  .back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+  .back-to-top:hover { border-color: var(--gold); }
+
+  /* ── CONTENT ITEMS AS LINKS ── */
+  a.content-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  a.content-item:hover .content-path { color: var(--gold-light); }
 </style>
 </head>
 <body>
+
+<a href="#for-you" class="skip-link">Skip to content</a>
 
 <nav>
   <a href="#" class="nav-brand">VAF<sup>™</sup></a>
@@ -595,6 +751,16 @@
     <li><a href="#evidence">Evidence</a></li>
     <li><a href="https://github.com/ZenCloudAU/velocity-architecture">GitHub</a></li>
   </ul>
+  <button class="nav-hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="#for-you">Start here</a>
+  <a href="#contents">Contents</a>
+  <a href="#evidence">Evidence</a>
+  <a href="https://github.com/ZenCloudAU/velocity-architecture">GitHub</a>
 </nav>
 
 <!-- HERO -->
@@ -685,46 +851,46 @@
     <h2 class="section-title reveal">Everything. Free. Citable.</h2>
     <p class="section-desc reveal">All tools, templates, research papers, and guides are open source. Use any of it without permission.</p>
     <div class="contents-grid">
-      <div class="content-item reveal">
+      <a href="https://github.com/ZenCloudAU/velocity-architecture/tree/main/research" class="content-item reveal" target="_blank" rel="noopener">
         <p class="content-path">/research/</p>
         <p class="content-name">Research Papers</p>
         <p class="content-desc">Four papers covering EA artefact true purpose, value metrics, MVP/MLP empirical evidence, and value-over-time analysis. Full bibliography graded by evidence quality.</p>
-      </div>
-      <div class="content-item reveal">
+      </a>
+      <a href="https://github.com/ZenCloudAU/velocity-architecture/tree/main/frameworks" class="content-item reveal" target="_blank" rel="noopener">
         <p class="content-path">/frameworks/</p>
         <p class="content-name">Framework Documents</p>
         <p class="content-desc">The governing argument, four-type artefact classification, and the full VAF compression map — all 18 artefacts with standard vs VAF time and substitution logic.</p>
-      </div>
-      <div class="content-item reveal">
+      </a>
+      <a href="https://github.com/ZenCloudAU/velocity-architecture/tree/main/guides" class="content-item reveal" target="_blank" rel="noopener">
         <p class="content-path">/guides/</p>
         <p class="content-name">Practitioner Operating Manual</p>
         <p class="content-desc">18 artefacts × 3 layers each: extraction guide (how to run the conversation), VAF template (what to write), and executive framing (how to present the finding).</p>
-      </div>
-      <div class="content-item reveal">
+      </a>
+      <a href="https://github.com/ZenCloudAU/velocity-architecture/tree/main/tools/templates" class="content-item reveal" target="_blank" rel="noopener">
         <p class="content-path">/tools/templates/</p>
         <p class="content-name">Fill-in Templates</p>
         <p class="content-desc">All 18 VAF compressed templates in Markdown and Word format. Minimum fields only. Guidance on what to write and at what resolution. Usable today.</p>
-      </div>
-      <div class="content-item reveal">
+      </a>
+      <a href="https://github.com/ZenCloudAU/velocity-architecture/tree/main/diagnostics" class="content-item reveal" target="_blank" rel="noopener">
         <p class="content-path">/diagnostics/</p>
         <p class="content-name">Plain Language Guide</p>
         <p class="content-desc">Start here if you have never heard of enterprise architecture. What an artefact is, why most organisations produce them wrong, and what one useful artefact looks like.</p>
-      </div>
-      <div class="content-item reveal">
+      </a>
+      <a href="https://github.com/ZenCloudAU/velocity-architecture/tree/main/viewpoints" class="content-item reveal" target="_blank" rel="noopener">
         <p class="content-path">/viewpoints/</p>
         <p class="content-name">Six Viewpoints</p>
         <p class="content-desc">ISO/IEC/IEEE 42010:2022 conformant viewpoints. VP1 Direction through VP6 Practitioner — the formal framework specification with instruments and templates.</p>
-      </div>
-      <div class="content-item reveal">
+      </a>
+      <a href="https://github.com/ZenCloudAU/velocity-architecture/tree/main/spec" class="content-item reveal" target="_blank" rel="noopener">
         <p class="content-path">/spec/</p>
         <p class="content-name">Framework Specification</p>
         <p class="content-desc">Full ISO conformant specification document. Seven columns, six viewpoints, foundation layer. The complete formal description of the Velocity Architecture Framework.</p>
-      </div>
-      <div class="content-item reveal">
+      </a>
+      <a href="https://github.com/ZenCloudAU/velocity-architecture/tree/main/examples" class="content-item reveal" target="_blank" rel="noopener">
         <p class="content-path">/examples/</p>
         <p class="content-name">Worked Examples</p>
         <p class="content-desc">Completed artefact examples — Guardrail Canvas, Trade-off Matrix, and Architecture Decision Record — showing what done looks like in practice.</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -782,18 +948,82 @@
   <p class="footer-copy">Free to use · Free to share · Free to build on · Attribution appreciated</p>
 </footer>
 
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
 <script>
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
+  const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
         setTimeout(() => entry.target.classList.add('visible'), i * 80);
-        observer.unobserve(entry.target);
+        revealObserver.unobserve(entry.target);
       }
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-  reveals.forEach(el => observer.observe(el));
+  reveals.forEach(el => revealObserver.observe(el));
+
+  // Nav scroll state, active links, back-to-top
+  const nav = document.querySelector('nav');
+  const backToTop = document.getElementById('back-to-top');
+  const sections = [
+    { id: 'for-you' },
+    { id: 'contents' },
+    { id: 'evidence' }
+  ];
+
+  function updateNav() {
+    const scrollY = window.scrollY;
+
+    nav.classList.toggle('scrolled', scrollY > 50);
+    backToTop.classList.toggle('visible', scrollY > 400);
+
+    const allNavLinks = document.querySelectorAll('.nav-links a, .mobile-menu a');
+    allNavLinks.forEach(a => a.classList.remove('active'));
+
+    for (let i = sections.length - 1; i >= 0; i--) {
+      const el = document.getElementById(sections[i].id);
+      if (el && scrollY >= el.offsetTop - 120) {
+        document.querySelectorAll(`a[href="#${sections[i].id}"]`).forEach(a => a.classList.add('active'));
+        return;
+      }
+    }
+  }
+
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Hamburger menu
+  const hamburger = document.querySelector('.nav-hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    hamburger.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open navigation');
+    });
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open navigation');
+      hamburger.focus();
+    }
+  });
 </script>
 
 </body>
