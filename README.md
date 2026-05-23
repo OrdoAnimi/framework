@@ -1,181 +1,197 @@
-# VAF Agentic Architect v2
+# Velocity Architecture Framework
+
+Velocity Architecture Framework(TM) is a practical architecture framework and tooling ecosystem for enterprise architecture, solution architecture, decision governance, and AI-assisted delivery.
 
 **Live:** [velocityarchitectureframework.com](https://velocityarchitectureframework.com)
 
-An agentic TypeScript/Node.js application that generates enterprise architecture artefacts using Claude. Submit a topic and context. Three specialised agents run — governance, strategy, design — each producing a VAF-compliant artefact. Results are rendered in the browser and committed back to this repository.
+## Purpose
 
----
+Velocity Architecture Framework exists to reduce architecture drag: unclear decision ownership, governance theatre, disconnected artefacts, and slow movement from architecture intent to delivery action.
 
-## What it does
+This repository combines the framework material, practitioner guidance, templates, generated artefacts, and an agentic architecture application that can generate VAF-aligned outputs from a structured request.
 
-1. Accepts an EA request via a web portal (topic, context, constraints, artefact selection)
-2. Loads the VAF framework from this repository as the knowledge base
-3. Runs three Claude-powered agents in parallel — Governance (VP1), Strategy (VP2), Design (VP3)
-4. Validates artefact quality and cross-alignment
-5. Commits the generated artefacts to `/artefacts/` in this repository
-6. Renders full Markdown output in the browser
+The goal is not to create more documentation volume. The goal is to make architecture decisions explicit, traceable, and usable.
 
----
+## Who It Is For
 
-## Tech stack
+- Enterprise architects responsible for decision governance, strategic alignment, and architecture operating models.
+- Solution architects working in complex delivery environments with unclear ownership, vendor pressure, or incomplete documentation.
+- Architecture governance teams that need clearer artefacts, viewpoints, and cross-artefact alignment rules.
+- Consultants and delivery leads using StudioSix or ZenCloudAU methods to turn architecture thinking into working assets.
+- Practitioners exploring AI-assisted architecture delivery without removing professional accountability.
 
-| Component | Detail |
-|-----------|--------|
-| Language | TypeScript 5.3 |
-| Runtime | Node.js 20 |
-| Framework | Express 4.18 |
-| AI | Anthropic SDK — `claude-sonnet-4-6` |
-| Proxy | nginx (port 80 → Node port 3000) |
-| Container | Docker — `ghcr.io/zencloudau/velocity-architecture:latest` |
-| Hosting | Azure Container Instances — `vaf-rg` / `australiasoutheast` |
-| CI/CD | GitHub Actions — `.github/workflows/deploy.yml` |
+## What It Does
 
----
+The repository currently contains two related bodies of work:
 
-## The three viewpoints
+1. **The framework:** VAF specifications, viewpoints, correspondence rules, examples, templates, guides, research, and supporting documents.
+2. **The tooling:** A TypeScript/Node.js application that accepts an architecture request, loads VAF knowledge, runs specialised generation agents, validates output alignment, and can commit generated artefacts back to the repository.
 
-Each request generates one artefact per selected viewpoint.
+The application supports these artefact types in the current code:
 
-**VP1 — Direction: Guardrail Canvas**
-Declares organisational non-negotiables, trade-off positions, and what the system optimises for. Sets constraints that all downstream decisions must operate within.
+- Governance
+- Strategy
+- Design
+- Velocity
+- Rhythm
+- Practitioner
 
-**VP2 — Decision: Trade-off Matrix**
-Produces a binding solution-level decision with explicit options, decision drivers, chosen direction, and accepted costs. Actionable the day it is agreed.
+The Express app exposes:
 
-**VP3 — Truth: Architecture Decision Record (ADR)**
-Records a technical architectural decision in full: context, decision, rationale, consequences, and fitness functions. Stored in version control, immutable once accepted.
+- `GET /` - portal UI
+- `GET /health` - health check
+- `GET /status` - operational status
+- `POST /artefacts/generate` - generate EA artefacts
 
----
+## What Is Inside This Repo
 
-## Run locally
+Key areas in the current repository:
 
-**Prerequisites:** Node.js 20+, an Anthropic API key, a GitHub token with write access to this repo.
+| Path | Purpose |
+|---|---|
+| `app/` | TypeScript application source, Express routes, orchestrator, agents, knowledge loader, GitHub action engine, logging, and shared types |
+| `app/agents/` | Specialised generation agents for governance, strategy, design, velocity, rhythm, practitioner, and validation |
+| `artefacts/` | Generated architecture artefacts organised by type |
+| `viewpoints/` | VAF viewpoint specifications and instruments |
+| `correspondence-rules/` | Cross-viewpoint alignment rules used by the validation layer |
+| `examples/` | Reference examples for framework-aligned artefacts |
+| `foundation/` | Foundational principles used by the framework and tooling |
+| `frameworks/` | Supporting framework documents |
+| `guides/` | Practitioner guides and operating material |
+| `research/` | ZenCloud research papers and supporting analysis |
+| `templates/` | Blank artefact templates |
+| `tools/` | Supporting tools and reference material |
+| `website/` | Website material for the framework presence |
+| `vsf-scorer/` | Standalone Vite-based scoring tool inside the broader repository |
+
+Operational files currently present include:
+
+- `Dockerfile`
+- `nginx.conf`
+- `start.sh`
+- `deploy.yml`
+- `.github/workflows/deploy.yml`
+- `tsconfig.json`
+- `package.json`
+- `vaf-architecture-v2.json`
+
+## Live Demo
+
+[velocityarchitectureframework.com](https://velocityarchitectureframework.com)
+
+The previous README also identified an Azure Container Instances endpoint for the generated application. Treat that as deployment detail rather than the primary public entry point unless it is confirmed current.
+
+## Screenshots
+
+![Velocity Architecture Framework home](docs/screenshots/vaf-home.png)
+
+![Velocity Architecture Framework overview](docs/screenshots/vaf-framework-overview.png)
+
+![VAF Agentic Architect](docs/screenshots/vaf-agentic-architect.png)
+
+## How It Fits the Ecosystem
+
+Velocity Architecture Framework is the centre of the architecture ecosystem.
+
+- **VAF-SA** is the solution architecture delivery module. It translates VAF thinking into field practice for solution architects working in stalled, unclear, or politically difficult engagements.
+- **EA Artefact Generator** is a practical workspace for generating structured EA outputs and export-ready repository content.
+- **StudioSix** is the commercial delivery wrapper for architecture-led AI delivery, using VAF methods and tools as part of client-facing work.
+- **Certification repositories** such as SAP EA, Azure SA, CISSP, and agentic AI certification support the learning and credibility layer around enterprise architecture, cloud architecture, security architecture, and AI-assisted delivery.
+- **ZenCloudAU** is the public GitHub organisation and consulting context for the ecosystem.
+
+This repo should remain the source of truth for the core framework and the agentic architecture platform. Adjacent tools should link back here rather than duplicate the framework.
+
+## Tech Stack
+
+Confirmed from the current files:
+
+- TypeScript
+- Node.js 20+
+- Express
+- Anthropic SDK
+- Axios
+- dotenv
+- Pino logging
+- Jest / ts-jest
+- ESLint
+- Prettier
+- Docker
+- nginx
+- GitHub Actions
+- Azure deployment configuration
+
+The repo also contains static HTML and website/framework assets.
+
+## How to Run Locally
+
+Commands confirmed from `package.json`:
 
 ```bash
-git clone https://github.com/ZenCloudAU/velocity-architecture
-cd velocity-architecture
 npm install
-cp .env.example .env
+npm run dev
 ```
 
-Edit `.env` — set `ANTHROPIC_API_KEY` and `VAF_GITHUB_TOKEN`.
+Build and run compiled output:
 
-```bash
-npm run dev        # ts-node, port 3000 — open http://localhost:3000
-```
-
-**Build and run compiled:**
 ```bash
 npm run build
 npm start
 ```
 
-**Run with Docker (matches production):**
+Other available scripts:
+
 ```bash
-docker build -t vaf-agentic-architect .
-docker run -p 80:80 \
-  -e ANTHROPIC_API_KEY=sk-ant-... \
-  -e VAF_GITHUB_TOKEN=ghp_... \
-  -e NODE_ENV=production \
-  vaf-agentic-architect
+npm test
+npm run lint
+npm run format
 ```
 
----
+`npm run dev` runs `ts-node app/app.ts`. The app uses port `3000` by default unless configured otherwise.
 
-## API
+## Environment Configuration
 
-| Method | Path | Description |
-|--------|------|-------------|
-| `GET` | `/` | Portal UI |
-| `GET` | `/health` | Health check |
-| `GET` | `/status` | Operational status |
-| `POST` | `/artefacts/generate` | Generate EA artefacts |
+The app uses environment configuration for runtime behavior. Current code references environment variables for:
 
-**Generate request body:**
-```json
-{
-  "topic": "Cloud governance model for financial services",
-  "context": "Mid-size bank, Azure-first, Basel III compliance required",
-  "constraints": ["Basel III compliance", "reduce governance drag"],
-  "requestedArtefacts": ["governance", "strategy", "design"]
-}
-```
+- server port
+- runtime environment
+- log level
+- VAF knowledge-base URL and cache TTL
+- GitHub owner/repo targeting
+- GitHub token used by the action engine
 
----
+The previous README also documented an Anthropic API key requirement for generation.
 
-## Repository structure
+Do not commit real environment files or secrets. Use example configuration only for documentation.
 
-```
-velocity-architecture/
-│
-├── .github/workflows/
-│   └── deploy.yml              ← CI/CD: build image, deploy to Azure
-│
-├── app/                        ← Application source (TypeScript)
-│   ├── agents/
-│   │   ├── governance-agent.ts ← VP1 Guardrail Canvas generation
-│   │   ├── strategy-agent.ts   ← VP2 Trade-off Matrix generation
-│   │   ├── design-agent.ts     ← VP3 ADR generation
-│   │   └── validation-agent.ts ← cross-artefact quality validation
-│   ├── types/
-│   │   └── index.ts            ← shared TypeScript interfaces
-│   ├── action-engine.ts        ← commits artefacts to GitHub
-│   ├── app.ts                  ← Express server and route definitions
-│   ├── kb-loader.ts            ← loads VAF framework from GitHub at runtime
-│   ├── logger.ts               ← pino structured logging
-│   ├── orchestrator.ts         ← planning → generation → validation → publishing
-│   └── portal.html             ← web UI served at /
-│
-├── artefacts/                  ← generated artefacts committed by the agent
-│   ├── design/
-│   ├── governance/
-│   └── strategy/
-│
-├── viewpoints/                 ← VAF framework specification (read by kb-loader)
-│   ├── vp1-direction/          ← VP1 spec + Guardrail Canvas template
-│   ├── vp2-decision/           ← VP2 spec + Trade-off Matrix template
-│   ├── vp3-truth/              ← VP3 spec + ADR template + fitness function examples
-│   ├── vp4-velocity/           ← VP4 spec + ADL template + Velocity Dashboard
-│   ├── vp5-rhythm/             ← VP5 spec + Pulse System
-│   └── vp6-practitioner/       ← VP6 spec + Integrity Arc
-│
-├── correspondence-rules/
-│   └── RULES.md                ← cross-viewpoint alignment rules (used by validation agent)
-│
-├── examples/                   ← reference artefacts (used as generation examples)
-│   ├── guardrail-canvas-example.md
-│   ├── trade-off-matrix-example.md
-│   └── adr-example.md
-│
-├── spec/
-│   └── FRAMEWORK-SPEC.md       ← master VAF specification document
-│
-├── foundation/
-│   └── EPISTEMOLOGY.md         ← foundational principles loaded by agents
-│
-├── frameworks/                 ← supporting framework documents
-├── guides/                     ← practitioner guides and operating manuals
-├── research/                   ← ZenCloud research papers
-├── templates/                  ← blank artefact templates
-├── tools/                      ← compression maps and reference tools
-│
-├── vsf-scorer/                 ← standalone React tool (Vite) — VSF career scorer
-│
-├── Dockerfile                  ← multi-stage: builder + nginx/node runtime
-├── nginx.conf                  ← proxies port 80 → Node port 3000
-├── start.sh                    ← entrypoint: starts nginx + node
-├── package.json
-└── tsconfig.json
-```
+## Project Status
 
----
+Usable.
 
-## Deployment
+The repository contains substantial framework material and a working TypeScript application structure. It is not yet product-ready because the public packaging still needs clearer demo boundaries, stronger onboarding, and cleaner separation between framework source, generated artefacts, and operational deployment material.
 
-Push to `main`. GitHub Actions builds the Docker image, pushes to GHCR, deletes the existing Azure container, and creates a new one. The container is live at `vaf-architect.australiasoutheast.azurecontainer.io`.
+## Roadmap
 
-Secrets required in the repository: `AZURE_CREDENTIALS`, `ANTHROPIC_API_KEY`, `GH_TOKEN`.
+Near-term improvements:
 
----
+- Add a concise architecture diagram showing request intake, knowledge loading, agent generation, validation, and artefact publishing.
+- Clarify which deployment endpoint is the primary public demo.
+- Separate "framework user" onboarding from "developer/operator" onboarding.
+- Add a short relationship map linking VAF, VAF-SA, EA Artefact Generator, StudioSix, and certification repositories.
+- Review whether generated artefacts should remain in the main repository or move to examples/output storage.
+- Add a contributor-safe environment setup section using placeholders only.
 
-*ZenCloud Global Consultants · VAF Agentic Architect v2 · May 2026*
+## Security and Data Notes
+
+This project can use external AI and GitHub integrations. Architecture requests may be processed by an AI provider and generated artefacts may be committed back to GitHub depending on configuration.
+
+Do not submit confidential client data, credentials, regulated information, or private environment values unless the deployment, storage, and provider controls are explicitly approved for that use.
+
+Environment files such as `.env` should remain local and must not be committed.
+
+## License
+
+The repository includes a `LICENSE` file with the MIT License.
+
+Additional framework and research usage terms are present in repository licence materials. Review `LICENCE-TERMS.md` and `assets/LICENCE.md` before reusing the Velocity Architecture Framework name, research material, or methodology in a public or commercial context.
+
+Velocity Architecture Framework(TM) is identified in the repository materials as a ZenCloud Global Consultants framework/trademark.
