@@ -492,6 +492,101 @@ textarea { resize: vertical; min-height: 120px; }
 /* FOCUS ACCESSIBILITY */
 :focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
 
+/* ── ARCHITECTURE BOARD PACK ─────────────────────────────────────────────── */
+.board-pack-feature {
+  background: linear-gradient(135deg, #EEF2FF 0%, #E8EDFF 100%);
+  border: 1.5px solid #C7D2FE;
+  border-radius: var(--r);
+  padding: 18px 20px;
+}
+.board-pack-eyebrow {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #6366F1;
+  font-family: 'JetBrains Mono', monospace; margin-bottom: 6px;
+}
+.board-pack-title {
+  font-size: 13px; font-weight: 700; color: #312E81;
+  margin-bottom: 5px; letter-spacing: -0.01em;
+}
+.board-pack-desc {
+  font-size: 12px; color: #4338CA; line-height: 1.55; margin-bottom: 12px;
+}
+.board-pack-tags {
+  display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 14px;
+}
+.board-pack-tag {
+  font-size: 10px; font-weight: 600; font-family: 'JetBrains Mono', monospace;
+  color: #4338CA; background: rgba(99,102,241,0.12);
+  border: 1px solid #C7D2FE; border-radius: 10px; padding: 2px 8px;
+}
+.board-pack-btn {
+  width: 100%; padding: 10px;
+  background: #4F46E5; color: #fff; border: none; border-radius: 7px;
+  font-size: 12px; font-weight: 700; cursor: pointer;
+  font-family: 'Inter', sans-serif; transition: background 0.15s;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  letter-spacing: -0.01em;
+}
+.board-pack-btn:hover { background: #4338CA; }
+.board-pack-btn.selected { background: #059669; }
+
+/* ── BRIEF QUALITY PANEL ─────────────────────────────────────────────────── */
+.quality-panel {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;
+}
+.quality-header {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;
+}
+.quality-label {
+  font-size: 10px; font-weight: 700; color: var(--text-3);
+  text-transform: uppercase; letter-spacing: 0.08em; font-family: 'JetBrains Mono', monospace;
+}
+.quality-badge {
+  font-size: 11px; font-weight: 700; padding: 2px 10px; border-radius: 10px;
+}
+.quality-badge.needs-detail { background: #FEF3C7; color: #92400E; border: 1px solid #FDE68A; }
+.quality-badge.good { background: var(--orange-subtle); color: var(--orange); border: 1px solid var(--orange-border); }
+.quality-badge.strong { background: var(--success-subtle); color: var(--success); border: 1px solid var(--success-border); }
+.quality-section { margin-top: 6px; }
+.quality-section-label {
+  font-size: 9px; font-weight: 700; color: var(--text-3);
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.quality-chips { display: flex; gap: 4px; flex-wrap: wrap; }
+.quality-chip {
+  font-size: 10px; font-weight: 500; padding: 2px 9px; border-radius: 10px;
+}
+.quality-chip.detected { background: var(--success-subtle); color: var(--success); border: 1px solid var(--success-border); }
+.quality-chip.missing { background: var(--surface); color: var(--text-3); border: 1px solid var(--border); }
+.quality-hint {
+  font-size: 11px; color: var(--text-3); margin-top: 8px; line-height: 1.5; font-style: italic;
+}
+
+/* ── BOARD PACK OUTPUT BANNER ────────────────────────────────────────────── */
+.board-pack-banner {
+  background: linear-gradient(135deg, #EEF2FF 0%, #E8EDFF 100%);
+  border: 1px solid #C7D2FE; border-radius: 8px;
+  padding: 13px 16px; margin-bottom: 12px;
+  display: flex; align-items: center; gap: 12px;
+}
+.board-pack-banner-icon { font-size: 20px; flex-shrink: 0; }
+.board-pack-banner-title { font-size: 13px; font-weight: 700; color: #312E81; letter-spacing: -0.01em; }
+.board-pack-banner-sub { font-size: 11px; color: #4338CA; margin-top: 2px; }
+
+/* ── EXPORT BUTTON ───────────────────────────────────────────────────────── */
+.output-actions { display: flex; gap: 8px; align-items: center; }
+.export-btn {
+  padding: 6px 14px; font-size: 12px; font-weight: 500;
+  color: var(--text-2); background: var(--surface-2);
+  border: 1.5px solid var(--border); border-radius: 6px;
+  cursor: pointer; font-family: 'Inter', sans-serif;
+  transition: all 0.15s; display: none; align-items: center; gap: 5px;
+}
+.export-btn.show { display: inline-flex; }
+.export-btn:hover { background: var(--border); color: var(--text); }
+
 /* RESPONSIVE */
 @media (min-width: 768px) { .header-meta { display: block; } }
 @media (max-width: 960px) {
@@ -612,6 +707,23 @@ textarea { resize: vertical; min-height: 120px; }
           <input id="constraints-custom" type="text" placeholder="Other constraints (comma separated)" />
         </div>
 
+        <!-- Brief Quality Score -->
+        <div id="quality-panel" class="quality-panel" style="display:none">
+          <div class="quality-header">
+            <span class="quality-label">Brief Quality</span>
+            <span class="quality-badge needs-detail" id="quality-badge">Needs detail</span>
+          </div>
+          <div class="quality-section">
+            <div class="quality-section-label">Detected</div>
+            <div class="quality-chips" id="quality-detected"></div>
+          </div>
+          <div class="quality-section" id="quality-missing-section">
+            <div class="quality-section-label">Missing</div>
+            <div class="quality-chips" id="quality-missing"></div>
+          </div>
+          <div class="quality-hint" id="quality-hint"></div>
+        </div>
+
         <button class="generate-btn" id="generate-btn" onclick="generate()">
           ⚡ Generate artefacts
         </button>
@@ -625,6 +737,24 @@ textarea { resize: vertical; min-height: 120px; }
 
     <!-- RIGHT: Sidebar -->
     <div class="workspace-side">
+
+      <!-- Architecture Board Pack -->
+      <div class="board-pack-feature">
+        <div class="board-pack-eyebrow">Featured</div>
+        <div class="board-pack-title">Architecture Board Pack</div>
+        <div class="board-pack-desc">Governance-ready pack for steering committees and architecture review boards. Includes all six viewpoints — guardrails, trade-offs, ADR, velocity, confidence, and integrity.</div>
+        <div class="board-pack-tags">
+          <span class="board-pack-tag">VP1 Guardrail</span>
+          <span class="board-pack-tag">VP2 Trade-off</span>
+          <span class="board-pack-tag">VP3 ADR</span>
+          <span class="board-pack-tag">VP4 Velocity</span>
+          <span class="board-pack-tag">VP5 Pulse</span>
+          <span class="board-pack-tag">VP6 Integrity</span>
+        </div>
+        <button class="board-pack-btn" id="board-pack-btn" onclick="selectBoardPack()">
+          🎯 Select board pack
+        </button>
+      </div>
 
       <!-- Example briefs -->
       <div class="card">
@@ -697,7 +827,10 @@ textarea { resize: vertical; min-height: 120px; }
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
         Generated artefacts
       </div>
-      <button class="copy-all-btn" id="copy-all-btn" onclick="copyAllArtefacts()">⎘ Copy all</button>
+      <div class="output-actions">
+        <button class="export-btn" id="export-btn" onclick="exportReport()">↓ Export report</button>
+        <button class="copy-all-btn" id="copy-all-btn" onclick="copyAllArtefacts()">⎘ Copy all</button>
+      </div>
     </div>
     <div id="artefact-list">
       <div class="empty">
@@ -771,6 +904,7 @@ textarea { resize: vertical; min-height: 120px; }
 const API = window.location.origin;
 let artefacts = [];
 let progressInterval;
+let boardPackMode = false;
 
 // ── EXAMPLE BRIEFS ────────────────────────────────────────────────────────────
 const EXAMPLES = [
@@ -822,11 +956,12 @@ const PACKS = {
 };
 
 // ── FORM HELPERS ──────────────────────────────────────────────────────────────
-function toggleArtefact(el) { el.classList.toggle('on'); clearPackHighlight(); }
-function toggleChip(el) { el.classList.toggle('on'); }
+function toggleArtefact(el) { el.classList.toggle('on'); clearPackHighlight(); clearBoardPackState(); }
+function toggleChip(el) { el.classList.toggle('on'); scoreBrief(); }
 function clearChips() {
   document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
   document.getElementById('constraints-custom').value = '';
+  scoreBrief();
 }
 function clearPackHighlight() { document.querySelectorAll('.pack-btn').forEach(b => b.classList.remove('active')); }
 
@@ -838,6 +973,7 @@ function getConstraints() {
 }
 
 function selectPack(packKey) {
+  clearBoardPackState();
   const pack = PACKS[packKey];
   document.querySelectorAll('.toggle').forEach(t => t.classList.remove('on'));
   pack.artefacts.forEach(type => {
@@ -861,7 +997,26 @@ function useExample(idx) {
     t.classList.toggle('on', ex.artefacts.includes(t.dataset.type))
   );
   clearPackHighlight();
+  clearBoardPackState();
+  scoreBrief();
   document.querySelector('.card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ── BOARD PACK ────────────────────────────────────────────────────────────────
+function selectBoardPack() {
+  boardPackMode = true;
+  document.querySelectorAll('.toggle').forEach(t => t.classList.add('on'));
+  clearPackHighlight();
+  const btn = document.getElementById('board-pack-btn');
+  if (btn) { btn.classList.add('selected'); btn.innerHTML = '✓ Board pack selected'; }
+  document.querySelector('.card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function clearBoardPackState() {
+  if (!boardPackMode) return;
+  boardPackMode = false;
+  const btn = document.getElementById('board-pack-btn');
+  if (btn) { btn.classList.remove('selected'); btn.innerHTML = '🎯 Select board pack'; }
 }
 
 function useSampleBrief() { useExample(0); }
@@ -878,6 +1033,73 @@ function generateADROnly() {
   if (adr) adr.classList.add('on');
   clearPackHighlight();
   generate();
+}
+
+// ── BRIEF QUALITY SCORE ───────────────────────────────────────────────────────
+const QUALITY_SIGNALS = [
+  { key: 'driver',       label: 'Business driver',       patterns: [/business/i, /strategic/i, /\bdriver\b/i, /require/i, /objective/i, /mandate/i, /\bgoal\b/i] },
+  { key: 'current',      label: 'Current state',         patterns: [/current/i, /existing/i, /legacy/i, /as.is/i, /\btoday\b/i, /aging/i, /fragmented/i, /incumbent/i] },
+  { key: 'target',       label: 'Target state',          patterns: [/target/i, /future/i, /to.be/i, /modernise/i, /modernize/i, /migrate to/i, /move to/i, /transform/i, /by 20\d\d/, /cloud.native/i] },
+  { key: 'stakeholders', label: 'Stakeholders',          patterns: [/\bcto\b/i, /\bciso\b/i, /\bceo\b/i, /stakeholder/i, /committee/i, /head of/i, /audience/i, /executive/i, /\bboard\b/i] },
+  { key: 'risks',        label: 'Risks',                 patterns: [/\brisk/i, /threat/i, /exposure/i, /vulnerability/i, /\bgap\b/i, /failure/i, /breach/i, /concern/i] },
+  { key: 'timeline',     label: 'Timeline',              patterns: [/20\d\d/, /month/i, /quarter/i, /deadline/i, /program/i, /\bphase\b/i, /\bweek\b/i, /sprint/i] },
+  { key: 'security',     label: 'Security / compliance', patterns: [/security/i, /regulatory/i, /\bapra\b/i, /\birap\b/i, /\bgdpr\b/i, /privacy/i, /compliance/i, /\bzero trust/i, /\bsoc\b/i] },
+  { key: 'integration',  label: 'Integration',           patterns: [/integrat/i, /\bapi\b/i, /downstream/i, /upstream/i, /interface/i, /touchpoint/i] },
+  { key: 'nfr',          label: 'Non-functional req.',   patterns: [/performance/i, /availability/i, /scalab/i, /uptime/i, /\bsla\b/i, /resilience/i, /non.functional/i, /zero downtime/i, /latency/i] },
+  { key: 'constraints',  label: 'Constraints',           patterns: [] }
+];
+
+function scoreBrief() {
+  const topic = document.getElementById('topic').value;
+  const context = document.getElementById('context').value;
+  const combined = topic + ' ' + context;
+  const hasChips = document.querySelectorAll('.chip.on').length > 0;
+  const hasCustom = document.getElementById('constraints-custom').value.trim().length > 0;
+  const panel = document.getElementById('quality-panel');
+  if (!panel) return;
+
+  if (!topic.trim() && !context.trim()) { panel.style.display = 'none'; return; }
+  panel.style.display = 'block';
+
+  const detected = [], missing = [];
+  for (const sig of QUALITY_SIGNALS) {
+    const found = sig.key === 'constraints'
+      ? (hasChips || hasCustom)
+      : sig.patterns.some(p => p.test(combined));
+    (found ? detected : missing).push(sig.label);
+  }
+
+  const n = detected.length;
+  let level, cls;
+  if (n < 3)      { level = 'Needs detail'; cls = 'needs-detail'; }
+  else if (n < 7) { level = 'Good';         cls = 'good'; }
+  else            { level = 'Strong';       cls = 'strong'; }
+
+  const badge = document.getElementById('quality-badge');
+  badge.textContent = level;
+  badge.className = 'quality-badge ' + cls;
+
+  document.getElementById('quality-detected').innerHTML = detected.length
+    ? detected.map(d => `<span class="quality-chip detected">${d}</span>`).join('')
+    : '<span class="quality-chip missing">None yet</span>';
+
+  const missingSec = document.getElementById('quality-missing-section');
+  const topMissing = missing.slice(0, 4);
+  if (topMissing.length) {
+    document.getElementById('quality-missing').innerHTML = topMissing.map(m => `<span class="quality-chip missing">${m}</span>`).join('');
+    missingSec.style.display = 'block';
+  } else {
+    missingSec.style.display = 'none';
+  }
+
+  const hint = document.getElementById('quality-hint');
+  if (cls === 'needs-detail') {
+    hint.textContent = 'Add current state, target state, risks, and stakeholders for better results.';
+  } else if (cls === 'good') {
+    hint.textContent = 'Add non-functional requirements, integration details, or a timeline to strengthen output quality.';
+  } else {
+    hint.textContent = '';
+  }
 }
 
 // ── ALERTS ────────────────────────────────────────────────────────────────────
@@ -979,9 +1201,11 @@ const ARTEFACT_LABELS = { governance: 'VP1 Guardrail Canvas', strategy: 'VP2 Tra
 function renderArtefacts(latestRequestId) {
   const list = document.getElementById('artefact-list');
   const copyAllBtn = document.getElementById('copy-all-btn');
+  const exportBtn = document.getElementById('export-btn');
 
   if (artefacts.length === 0) {
     copyAllBtn.classList.remove('show');
+    if (exportBtn) exportBtn.classList.remove('show');
     list.innerHTML = `<div class="empty">
       <div class="empty-icon">📂</div>
       <div class="empty-title">No artefacts generated yet.</div>
@@ -996,8 +1220,19 @@ function renderArtefacts(latestRequestId) {
   }
 
   copyAllBtn.classList.add('show');
+  if (exportBtn) exportBtn.classList.add('show');
 
-  list.innerHTML = artefacts.map((a, i) => {
+  const banner = boardPackMode
+    ? `<div class="board-pack-banner">
+        <div class="board-pack-banner-icon">🎯</div>
+        <div>
+          <div class="board-pack-banner-title">Architecture Board Pack</div>
+          <div class="board-pack-banner-sub">VP1–VP6 · Decision-ready · Architecture Review Board</div>
+        </div>
+      </div>`
+    : '';
+
+  list.innerHTML = banner + artefacts.map((a, i) => {
     const [iconClass, emoji] = ARTEFACT_ICONS[a.type] || ['icon-gov', '📄'];
     const isNew = a.metadata && latestRequestId && a.metadata.requestId === latestRequestId;
     const ghUrl = `https://github.com/ZenCloudAU/velocity-architecture/tree/main/artefacts/${a.type}`;
@@ -1084,6 +1319,63 @@ async function copyModalContent() {
 function closeModal(e) {
   if (e.target.id === 'modal') document.getElementById('modal').classList.remove('show');
 }
+
+// ── EXPORT REPORT ─────────────────────────────────────────────────────────────
+function exportReport() {
+  if (artefacts.length === 0) { showAlert('Generate artefacts first.', 'error'); return; }
+
+  const topic = document.getElementById('topic').value.trim();
+  const context = document.getElementById('context').value.trim();
+  const constraints = getConstraints();
+  const ts = new Date();
+  const dateStr = ts.toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+  const timeStr = ts.toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
+  const badge = document.getElementById('quality-badge');
+  const quality = badge ? badge.textContent : null;
+
+  let md = boardPackMode
+    ? `# Architecture Board Pack\n\n> Prepared for architecture review board / steering committee governance review\n\n`
+    : `# VAF Architecture Report\n\n`;
+
+  md += `**Date:** ${dateStr} · ${timeStr}  \n`;
+  md += `**Framework:** VAF v2 · ISO/IEC/IEEE 42010:2022  \n`;
+  md += `**Generated by:** VAF Agentic Architect — ZenCloud Global Consultants  \n`;
+  if (boardPackMode) md += `**Pack:** Architecture Board Pack (VP1–VP6)  \n`;
+  md += `\n---\n\n`;
+
+  md += `## Architecture Brief\n\n`;
+  if (topic) md += `**Challenge:** ${topic}\n\n`;
+  if (context) md += `**Context:**\n\n${context}\n\n`;
+  if (constraints.length > 0) md += `**Constraints:** ${constraints.join(', ')}\n\n`;
+  if (quality) md += `**Brief quality:** ${quality}\n\n`;
+
+  md += `---\n\n## Generated Artefacts\n\n`;
+
+  const ORDER = ['governance', 'strategy', 'design', 'velocity', 'rhythm', 'practitioner'];
+  const sorted = [...artefacts].sort((a, b) => ORDER.indexOf(a.type) - ORDER.indexOf(b.type));
+
+  sorted.forEach(a => {
+    md += `---\n\n### ${ARTEFACT_LABELS[a.type]}\n\n`;
+    const content = a.content || a.contentPreview || '';
+    md += content ? content + '\n\n' : '_Full content committed to GitHub repository._\n\n';
+  });
+
+  md += `---\n\n*Generated by VAF Agentic Architect · velocityarchitectureframework.com*\n`;
+
+  const blob = new Blob([md], { type: 'text/markdown' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  const slug = topic ? topic.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 40) : 'report';
+  link.href = url;
+  link.download = boardPackMode ? `vaf-board-pack-${slug}.md` : `vaf-report-${slug}.md`;
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+// ── INIT ──────────────────────────────────────────────────────────────────────
+document.getElementById('topic').addEventListener('input', scoreBrief);
+document.getElementById('context').addEventListener('input', scoreBrief);
+document.getElementById('constraints-custom').addEventListener('input', scoreBrief);
 </script>
 </body>
 </html>
