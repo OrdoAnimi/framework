@@ -3,30 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VAF Agentic Architect — ZenCloud</title>
+<title>VAF Agentic Architect — Velocity Architecture Framework</title>
+<meta name="description" content="Generate decision-ready enterprise architecture artefacts from a single brief. VAF v2, aligned to ISO/IEC/IEEE 42010:2022.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
 <style>
 :root {
-  --bg: #090909;
-  --surface: #111111;
-  --surface-2: #161616;
-  --border: #1E1E1E;
-  --border-2: #2A2A2A;
-  --text: #F0F0F0;
-  --text-2: #A8A8A8;
-  --text-3: #545454;
-  --orange: #F97316;
-  --orange-hover: #EA6A0A;
-  --orange-subtle: rgba(249,115,22,0.1);
-  --orange-border: rgba(249,115,22,0.25);
-  --success: #22C55E;
-  --success-subtle: rgba(34,197,94,0.1);
-  --success-border: rgba(34,197,94,0.25);
-  --error: #EF4444;
-  --error-subtle: rgba(239,68,68,0.1);
-  --error-border: rgba(239,68,68,0.25);
+  --bg: #F1F5F9;
+  --surface: #FFFFFF;
+  --surface-2: #F8FAFC;
+  --border: #E2E8F0;
+  --border-2: #CBD5E1;
+  --text: #0F172A;
+  --text-2: #475569;
+  --text-3: #94A3B8;
+  --orange: #E8630A;
+  --orange-hover: #CC5508;
+  --orange-subtle: #FFF7ED;
+  --orange-border: #FED7AA;
+  --success: #16A34A;
+  --success-subtle: #F0FDF4;
+  --success-border: #BBF7D0;
+  --error: #DC2626;
+  --error-subtle: #FEF2F2;
+  --error-border: #FECACA;
   --r: 10px;
+  --shadow: 0 1px 3px rgba(15,23,42,0.06), 0 1px 2px rgba(15,23,42,0.04);
+  --shadow-md: 0 4px 12px rgba(15,23,42,0.08), 0 2px 4px rgba(15,23,42,0.04);
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { background: var(--bg); }
@@ -45,363 +48,473 @@ body {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
   padding: 0 32px;
-  height: 56px;
+  height: 58px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 40;
+  box-shadow: var(--shadow);
 }
 .logo { display: flex; align-items: center; gap: 12px; }
 .logo-mark {
-  width: 34px;
-  height: 34px;
+  width: 34px; height: 34px;
   background: var(--orange);
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
-.logo-mark svg { width: 18px; height: 18px; fill: #000; }
-.logo-text { font-size: 14px; font-weight: 600; color: var(--text); letter-spacing: -0.01em; }
+.logo-mark svg { width: 18px; height: 18px; fill: #fff; }
+.logo-text { font-size: 14px; font-weight: 700; color: var(--text); letter-spacing: -0.02em; }
 .logo-sub { font-size: 11px; color: var(--text-3); margin-top: 1px; font-family: 'JetBrains Mono', monospace; }
+.header-right { display: flex; align-items: center; gap: 16px; }
+.header-meta { font-size: 11px; color: var(--text-3); font-family: 'JetBrains Mono', monospace; display: none; }
 .status {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  color: var(--success);
-  font-size: 12px;
-  font-family: 'JetBrains Mono', monospace;
+  display: flex; align-items: center; gap: 7px;
+  color: var(--success); font-size: 12px; font-weight: 500;
 }
 .status-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
+  width: 7px; height: 7px; border-radius: 50%;
   background: var(--success);
-  box-shadow: 0 0 8px var(--success);
-  animation: pulse 2s infinite;
+  animation: pulse 2.5s infinite;
 }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
 
 /* CONTAINER */
-.container { max-width: 900px; margin: 0 auto; padding: 32px 16px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px 80px; }
 
-/* STATS */
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
-.stat {
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 52px 0 36px;
+}
+.hero-kicker {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 600;
+  color: var(--orange);
+  text-transform: uppercase; letter-spacing: 0.10em;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 18px;
+  background: var(--orange-subtle);
+  border: 1px solid var(--orange-border);
+  border-radius: 20px; padding: 5px 16px;
+}
+.hero-headline {
+  font-size: 34px; font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.03em; line-height: 1.2;
+  max-width: 680px; margin: 0 auto 16px;
+}
+.hero-sub {
+  font-size: 15px; color: var(--text-2);
+  max-width: 580px; margin: 0 auto 28px;
+  line-height: 1.7;
+}
+.value-badges {
+  display: flex; justify-content: center;
+  gap: 8px; flex-wrap: wrap;
+}
+.value-badge {
+  padding: 6px 14px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--r);
-  padding: 18px 20px;
-  transition: border-color 0.2s;
+  border-radius: 20px;
+  font-size: 12px; font-weight: 500;
+  color: var(--text-2);
+  display: flex; align-items: center; gap: 7px;
+  box-shadow: var(--shadow);
 }
-.stat:hover { border-color: var(--border-2); }
+.value-badge-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--orange); flex-shrink: 0;
+}
+
+/* STATS */
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px; }
+.stat {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 16px 20px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s;
+}
+.stat:hover { box-shadow: var(--shadow-md); }
 .stat-label {
-  font-size: 10px;
-  font-weight: 500;
-  color: var(--text-3);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-family: 'JetBrains Mono', monospace;
-  margin-bottom: 8px;
+  font-size: 10px; font-weight: 600; color: var(--text-3);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  font-family: 'JetBrains Mono', monospace; margin-bottom: 6px;
 }
-.stat-value {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--text);
-  letter-spacing: -0.02em;
-}
+.stat-value { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.02em; }
 .stat-value.orange { color: var(--orange); }
-.stat-sub {
-  font-size: 11px;
-  color: var(--text-3);
-  margin-top: 3px;
-  font-family: 'JetBrains Mono', monospace;
+.stat-sub { font-size: 10px; color: var(--text-3); margin-top: 3px; font-family: 'JetBrains Mono', monospace; }
+
+/* WORKSPACE */
+.workspace {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: start;
+}
+.workspace-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* CARD */
 .card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r);
-  padding: 24px;
-  margin-bottom: 16px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 24px;
+  box-shadow: var(--shadow);
 }
 .card-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 13px; font-weight: 700; color: var(--text);
+  margin-bottom: 18px;
+  display: flex; align-items: center; gap: 8px;
   letter-spacing: -0.01em;
 }
 .card-title svg { width: 15px; height: 15px; color: var(--text-3); flex-shrink: 0; }
 
+/* EXAMPLES */
+.examples-label {
+  font-size: 11px; font-weight: 600; color: var(--text-3);
+  margin-bottom: 10px;
+}
+.examples-grid { display: flex; gap: 6px; flex-wrap: wrap; }
+.example-btn {
+  padding: 6px 12px; font-size: 12px; font-weight: 500;
+  color: var(--text-2); background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 6px;
+  cursor: pointer; font-family: 'Inter', sans-serif;
+  transition: all 0.15s;
+}
+.example-btn:hover { border-color: var(--orange-border); color: var(--orange); background: var(--orange-subtle); }
+
 /* FORM */
 label {
-  display: block;
-  font-size: 10px;
-  font-weight: 500;
-  color: var(--text-3);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 7px;
-  font-family: 'JetBrains Mono', monospace;
+  display: block; font-size: 13px; font-weight: 600;
+  color: var(--text-2);
+  margin-bottom: 7px; letter-spacing: -0.01em;
 }
 input, textarea, select {
-  width: 100%;
-  padding: 10px 14px;
-  border: 1px solid var(--border-2);
-  border-radius: 7px;
-  font-size: 13px;
-  color: var(--text);
-  background: var(--bg);
-  font-family: 'Inter', sans-serif;
-  transition: border-color 0.15s, box-shadow 0.15s;
-  outline: none;
+  width: 100%; padding: 11px 14px;
+  border: 1.5px solid var(--border-2); border-radius: 7px;
+  font-size: 14px; color: var(--text);
+  background: var(--surface); font-family: 'Inter', sans-serif;
+  transition: border-color 0.15s, box-shadow 0.15s; outline: none;
+  line-height: 1.5;
 }
-input::placeholder, textarea::placeholder { color: var(--text-3); }
-input:focus, textarea:focus {
+input::placeholder, textarea::placeholder { color: var(--text-3); font-size: 13px; }
+input:focus, textarea:focus, select:focus {
   border-color: var(--orange);
   box-shadow: 0 0 0 3px var(--orange-subtle);
 }
-textarea { resize: vertical; min-height: 80px; }
-.form-row { margin-bottom: 16px; }
+textarea { resize: vertical; min-height: 120px; }
+.form-row { margin-bottom: 20px; }
+
+/* CHIPS */
+.chips-label { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.chips-label label { margin-bottom: 0; }
+.chips-clear {
+  font-size: 11px; color: var(--text-3); cursor: pointer;
+  font-family: 'Inter', sans-serif; font-weight: 500;
+  background: none; border: none; padding: 0;
+  transition: color 0.15s;
+}
+.chips-clear:hover { color: var(--text-2); }
+.chips-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+.chip {
+  padding: 5px 13px; border: 1.5px solid var(--border);
+  border-radius: 14px; font-size: 12px; font-weight: 500;
+  color: var(--text-3); background: var(--surface-2);
+  cursor: pointer; transition: all 0.15s; user-select: none;
+}
+.chip:hover { border-color: var(--orange-border); color: var(--text-2); background: var(--orange-subtle); }
+.chip.on { background: var(--orange-subtle); border-color: var(--orange); color: var(--orange); }
 
 /* TOGGLES */
-.toggles { display: flex; gap: 8px; flex-wrap: wrap; }
+.toggles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
 .toggle {
-  padding: 7px 14px;
-  border: 1px solid var(--border-2);
-  border-radius: 7px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text-3);
-  background: var(--surface-2);
-  cursor: pointer;
+  padding: 11px 13px;
+  border: 1.5px solid var(--border); border-radius: 8px;
+  background: var(--surface-2); cursor: pointer;
+  transition: all 0.15s; user-select: none;
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.toggle:hover { border-color: var(--orange-border); background: var(--orange-subtle); }
+.toggle.on { background: var(--orange-subtle); border-color: var(--orange); }
+.toggle-label { font-size: 12px; font-weight: 600; color: var(--text-2); line-height: 1.3; }
+.toggle.on .toggle-label { color: var(--orange); }
+.toggle-desc {
+  font-size: 10px; color: var(--text-3); margin-top: 4px;
+  line-height: 1.4; font-weight: 400;
+}
+.toggle.on .toggle-desc { color: #C55E08; opacity: 0.75; }
+
+/* PACKS */
+.packs-section { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+.packs-label {
+  font-size: 11px; font-weight: 600; color: var(--text-3);
+  margin-bottom: 9px;
+}
+.packs-grid { display: flex; gap: 6px; flex-wrap: wrap; }
+.pack-btn {
+  padding: 5px 11px; font-size: 11px; font-weight: 500;
+  color: var(--text-2); background: var(--surface);
+  border: 1.5px solid var(--border); border-radius: 6px;
+  cursor: pointer; font-family: 'Inter', sans-serif;
   transition: all 0.15s;
-  user-select: none;
 }
-.toggle:hover { border-color: var(--orange-border); color: var(--text-2); }
-.toggle.on {
-  background: var(--orange-subtle);
-  border-color: var(--orange-border);
-  color: var(--orange);
-}
+.pack-btn:hover { border-color: var(--border-2); color: var(--text); background: var(--surface-2); }
+.pack-btn.active { background: var(--orange-subtle); border-color: var(--orange); color: var(--orange); }
 
 /* GENERATE BUTTON */
 .generate-btn {
-  width: 100%;
-  padding: 12px;
-  background: var(--orange);
-  color: #000;
-  border: none;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 20px;
-  font-family: 'Inter', sans-serif;
+  width: 100%; padding: 14px;
+  background: var(--orange); color: #fff;
+  border: none; border-radius: 8px;
+  font-size: 14px; font-weight: 700; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  margin-top: 8px; font-family: 'Inter', sans-serif;
   transition: background 0.15s, transform 0.1s;
   letter-spacing: -0.01em;
+  box-shadow: 0 2px 4px rgba(232,99,10,0.25), 0 6px 16px rgba(232,99,10,0.12);
 }
 .generate-btn:hover { background: var(--orange-hover); }
 .generate-btn:active { transform: scale(0.99); }
-.generate-btn:disabled { background: var(--border-2); color: var(--text-3); cursor: not-allowed; transform: none; }
+.generate-btn:disabled { background: var(--border-2); color: var(--text-3); cursor: not-allowed; transform: none; box-shadow: none; }
 
 /* PROGRESS */
 .progress { display: none; margin-top: 16px; }
 .progress.show { display: block; }
-.progress-bar-bg {
-  background: var(--border);
-  border-radius: 4px;
-  height: 3px;
-  overflow: hidden;
-}
+.progress-bar-bg { background: var(--border); border-radius: 4px; height: 4px; overflow: hidden; }
 .progress-bar {
-  background: var(--orange);
-  height: 3px;
-  border-radius: 4px;
-  width: 0%;
-  transition: width 0.5s;
-  box-shadow: 0 0 8px rgba(249,115,22,0.5);
+  background: var(--orange); height: 4px; border-radius: 4px;
+  width: 0%; transition: width 0.5s;
 }
 .progress-text {
-  font-size: 11px;
-  color: var(--text-3);
-  margin-top: 8px;
-  text-align: center;
-  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--text-3); margin-top: 8px;
+  text-align: center; font-family: 'JetBrains Mono', monospace;
 }
 
+/* ARTEFACTS OUTPUT */
+.artefacts-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.artefacts-header .card-title { margin-bottom: 0; }
+.copy-all-btn {
+  padding: 6px 14px; font-size: 12px; font-weight: 500;
+  color: var(--text-2); background: var(--surface-2);
+  border: 1.5px solid var(--border); border-radius: 6px;
+  cursor: pointer; font-family: 'Inter', sans-serif;
+  transition: all 0.15s;
+  display: none; align-items: center; gap: 5px;
+}
+.copy-all-btn.show { display: inline-flex; }
+.copy-all-btn:hover { background: var(--border); color: var(--text); }
+
 /* ARTEFACT LIST */
-.artefact-list { }
 .artefact-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--border);
-  gap: 12px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px; border-radius: 8px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  margin-bottom: 8px; gap: 12px;
 }
-.artefact-item:last-child { border-bottom: none; }
-.artefact-left { display: flex; align-items: flex-start; gap: 12px; flex: 1; min-width: 0; }
+.artefact-item:last-child { margin-bottom: 0; }
+.artefact-left { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; }
 .artefact-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 16px;
-  border: 1px solid var(--border);
+  width: 38px; height: 38px; border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 16px; border: 1px solid var(--border);
 }
-.icon-gov { background: rgba(99,102,241,0.08); border-color: rgba(99,102,241,0.15); }
-.icon-str { background: rgba(34,197,94,0.08); border-color: rgba(34,197,94,0.15); }
-.icon-des { background: rgba(249,115,22,0.08); border-color: rgba(249,115,22,0.15); }
-.icon-vel { background: rgba(234,179,8,0.08); border-color: rgba(234,179,8,0.15); }
-.icon-rhy { background: rgba(168,85,247,0.08); border-color: rgba(168,85,247,0.15); }
-.icon-pra { background: rgba(20,184,166,0.08); border-color: rgba(20,184,166,0.15); }
+.icon-gov { background: rgba(99,102,241,0.08); border-color: rgba(99,102,241,0.2); }
+.icon-str { background: rgba(34,197,94,0.08); border-color: rgba(34,197,94,0.2); }
+.icon-des { background: rgba(232,99,10,0.08); border-color: rgba(232,99,10,0.2); }
+.icon-vel { background: rgba(202,138,4,0.10); border-color: rgba(202,138,4,0.2); }
+.icon-rhy { background: rgba(147,51,234,0.08); border-color: rgba(147,51,234,0.2); }
+.icon-pra { background: rgba(13,148,136,0.08); border-color: rgba(13,148,136,0.2); }
 .artefact-name {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 13px; font-weight: 600; color: var(--text);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   letter-spacing: -0.01em;
 }
-.artefact-meta {
-  font-size: 11px;
-  color: var(--text-3);
-  margin-top: 3px;
-  font-family: 'JetBrains Mono', monospace;
-}
-.artefact-actions { display: flex; gap: 6px; flex-shrink: 0; }
+.artefact-meta { font-size: 11px; color: var(--text-3); margin-top: 2px; font-family: 'JetBrains Mono', monospace; }
+.artefact-actions { display: flex; gap: 5px; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
 
 /* BUTTONS SM */
 .btn-sm {
-  padding: 5px 12px;
-  font-size: 11px;
-  font-weight: 500;
-  border: 1px solid var(--border-2);
-  border-radius: 6px;
-  color: var(--text-2);
-  background: var(--surface-2);
-  cursor: pointer;
-  font-family: 'Inter', sans-serif;
-  transition: all 0.15s;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
+  padding: 6px 12px; font-size: 11px; font-weight: 500;
+  border: 1.5px solid var(--border); border-radius: 6px;
+  color: var(--text-2); background: var(--surface);
+  cursor: pointer; font-family: 'Inter', sans-serif;
+  transition: all 0.15s; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 4px;
 }
-.btn-sm:hover { background: var(--border); color: var(--text); }
-.btn-sm.github {
-  color: var(--orange);
-  border-color: var(--orange-border);
-  background: var(--orange-subtle);
-}
-.btn-sm.github:hover { background: rgba(249,115,22,0.18); }
+.btn-sm:hover { background: var(--surface-2); color: var(--text); border-color: var(--border-2); }
+.btn-sm.github { color: var(--orange); border-color: var(--orange-border); background: var(--orange-subtle); }
+.btn-sm.github:hover { background: #FEE4C4; border-color: var(--orange); }
 
-/* EMPTY */
-.empty { text-align: center; padding: 40px; color: var(--text-3); font-size: 13px; }
+/* EMPTY STATE */
+.empty { text-align: center; padding: 52px 24px; }
+.empty-icon { font-size: 32px; margin-bottom: 14px; }
+.empty-title { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; letter-spacing: -0.01em; }
+.empty-desc { font-size: 13px; color: var(--text-2); line-height: 1.65; max-width: 440px; margin: 0 auto 20px; }
+.empty-actions { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.empty-action {
+  padding: 8px 16px; font-size: 12px; font-weight: 500;
+  border: 1.5px solid var(--border); border-radius: 7px;
+  color: var(--text-2); background: var(--surface);
+  cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.15s;
+}
+.empty-action:hover { border-color: var(--orange-border); color: var(--orange); background: var(--orange-subtle); }
+.empty-action.primary { background: var(--orange); border-color: var(--orange); color: #fff; font-weight: 600; }
+.empty-action.primary:hover { background: var(--orange-hover); }
 
 /* ALERTS */
 .alert {
-  padding: 12px 16px;
-  border-radius: 7px;
-  font-size: 12px;
-  margin-bottom: 16px;
-  display: none;
-  font-family: 'JetBrains Mono', monospace;
+  padding: 12px 16px; border-radius: 7px; font-size: 13px;
+  margin-bottom: 16px; display: none; line-height: 1.5;
 }
 .alert.show { display: block; }
 .alert.error { background: var(--error-subtle); border: 1px solid var(--error-border); color: var(--error); }
 .alert.success { background: var(--success-subtle); border: 1px solid var(--success-border); color: var(--success); }
 
+/* TRUST SECTION */
+.trust-section {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 28px; margin-bottom: 12px;
+  box-shadow: var(--shadow);
+}
+.trust-title { font-size: 17px; font-weight: 700; color: var(--text); letter-spacing: -0.02em; margin-bottom: 8px; }
+.trust-sub { font-size: 14px; color: var(--text-2); margin-bottom: 22px; line-height: 1.65; max-width: 640px; }
+.trust-points { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.trust-point {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 16px; background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 9px;
+}
+.trust-point-icon {
+  width: 30px; height: 30px; border-radius: 7px;
+  background: var(--orange-subtle); border: 1.5px solid var(--orange-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; flex-shrink: 0; color: var(--orange);
+  font-weight: 700;
+}
+.trust-point-text { font-size: 13px; color: var(--text-2); line-height: 1.6; }
+.trust-point-text strong { color: var(--text); font-weight: 600; }
+
+/* USE CASES */
+.use-cases-section {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 24px 28px; margin-bottom: 12px;
+  box-shadow: var(--shadow);
+}
+.use-cases-title {
+  font-size: 13px; font-weight: 700; color: var(--text);
+  margin-bottom: 14px; letter-spacing: -0.01em;
+}
+.use-cases-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.use-case {
+  padding: 10px 13px; background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 7px;
+  font-size: 12px; color: var(--text-2); font-weight: 500;
+  display: flex; align-items: center; gap: 8px;
+}
+.use-case-arrow { color: var(--orange); font-size: 12px; flex-shrink: 0; }
+
 /* MODAL */
 .modal-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.78);
-  backdrop-filter: blur(4px);
-  z-index: 50;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 40px 16px;
-  overflow-y: auto;
+  display: none; position: fixed; inset: 0;
+  background: rgba(15,23,42,0.5); backdrop-filter: blur(4px);
+  z-index: 50; align-items: flex-start; justify-content: center;
+  padding: 40px 16px; overflow-y: auto;
 }
 .modal-overlay.show { display: flex; }
 .modal {
-  background: var(--surface);
-  border: 1px solid var(--border-2);
-  border-radius: var(--r);
-  width: 100%;
-  max-width: 800px;
-  max-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 24px 80px rgba(0,0,0,0.7);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; width: 100%; max-width: 840px;
+  max-height: 82vh; display: flex; flex-direction: column;
+  box-shadow: 0 20px 60px rgba(15,23,42,0.18), 0 4px 12px rgba(15,23,42,0.06);
 }
 .modal-header {
-  padding: 18px 24px 16px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 18px 24px 16px; border-bottom: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--surface-2); border-radius: 12px 12px 0 0;
 }
-.modal-title { font-size: 14px; font-weight: 600; color: var(--text); letter-spacing: -0.01em; }
+.modal-title { font-size: 14px; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
+.modal-actions { display: flex; align-items: center; gap: 8px; }
+.modal-copy-btn {
+  padding: 6px 14px; font-size: 12px; font-weight: 500;
+  border: 1.5px solid var(--border-2); border-radius: 6px;
+  color: var(--text-2); background: var(--surface);
+  cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.15s;
+}
+.modal-copy-btn:hover { background: var(--border); color: var(--text); }
 .modal-close {
-  background: none;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  color: var(--text-3);
-  padding: 0 4px;
-  line-height: 1;
-  transition: color 0.15s;
+  background: none; border: 1.5px solid var(--border); border-radius: 6px;
+  font-size: 16px; cursor: pointer; color: var(--text-3);
+  padding: 4px 8px; line-height: 1; transition: all 0.15s;
 }
-.modal-close:hover { color: var(--text); }
-.modal-body { padding: 24px; overflow-y: auto; flex: 1; }
-.modal-body .md { font-size: 13px; line-height: 1.75; color: var(--text-2); }
-.modal-body .md h1 { font-size: 18px; font-weight: 700; color: var(--text); margin: 0 0 16px; letter-spacing: -0.02em; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
-.modal-body .md h2 { font-size: 14px; font-weight: 600; color: var(--text); margin: 24px 0 10px; letter-spacing: -0.01em; }
-.modal-body .md h3 { font-size: 13px; font-weight: 600; color: var(--orange); margin: 18px 0 8px; }
-.modal-body .md h4 { font-size: 12px; font-weight: 600; color: var(--text-2); margin: 14px 0 6px; text-transform: uppercase; letter-spacing: 0.06em; }
-.modal-body .md p { margin: 0 0 12px; }
-.modal-body .md ul, .modal-body .md ol { padding-left: 20px; margin: 0 0 12px; }
-.modal-body .md li { margin-bottom: 4px; }
+.modal-close:hover { color: var(--text); border-color: var(--border-2); background: var(--surface); }
+.modal-body { padding: 28px; overflow-y: auto; flex: 1; }
+.modal-body .md { font-size: 14px; line-height: 1.8; color: var(--text-2); }
+.modal-body .md h1 { font-size: 20px; font-weight: 700; color: var(--text); margin: 0 0 16px; letter-spacing: -0.02em; border-bottom: 2px solid var(--border); padding-bottom: 12px; }
+.modal-body .md h2 { font-size: 15px; font-weight: 700; color: var(--text); margin: 28px 0 10px; letter-spacing: -0.01em; }
+.modal-body .md h3 { font-size: 13px; font-weight: 700; color: var(--orange); margin: 20px 0 8px; }
+.modal-body .md h4 { font-size: 12px; font-weight: 600; color: var(--text-3); margin: 16px 0 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+.modal-body .md p { margin: 0 0 14px; }
+.modal-body .md ul, .modal-body .md ol { padding-left: 22px; margin: 0 0 14px; }
+.modal-body .md li { margin-bottom: 5px; }
 .modal-body .md strong { color: var(--text); font-weight: 600; }
 .modal-body .md em { color: var(--text-2); font-style: italic; }
 .modal-body .md code { font-family: 'JetBrains Mono', monospace; font-size: 11px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; color: var(--orange); }
-.modal-body .md pre { background: var(--surface-2); border: 1px solid var(--border); border-radius: 7px; padding: 14px 16px; margin: 0 0 14px; overflow-x: auto; }
-.modal-body .md pre code { background: none; border: none; padding: 0; color: var(--text-2); font-size: 12px; line-height: 1.7; }
-.modal-body .md blockquote { border-left: 3px solid var(--orange-border); margin: 0 0 12px; padding: 6px 14px; color: var(--text-3); font-style: italic; }
-.modal-body .md table { width: 100%; border-collapse: collapse; margin: 0 0 16px; font-size: 12px; }
-.modal-body .md th { background: var(--surface-2); color: var(--text); font-weight: 600; padding: 8px 12px; text-align: left; border: 1px solid var(--border); }
-.modal-body .md td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
-.modal-body .md tr:nth-child(even) td { background: rgba(255,255,255,0.01); }
-.modal-body .md hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+.modal-body .md pre { background: #F8FAFC; border: 1px solid var(--border); border-radius: 7px; padding: 16px 18px; margin: 0 0 16px; overflow-x: auto; }
+.modal-body .md pre code { background: none; border: none; padding: 0; color: var(--text); font-size: 12px; line-height: 1.7; }
+.modal-body .md blockquote { border-left: 3px solid var(--orange-border); background: var(--orange-subtle); margin: 0 0 14px; padding: 10px 16px; color: var(--text-2); border-radius: 0 6px 6px 0; }
+.modal-body .md table { width: 100%; border-collapse: collapse; margin: 0 0 16px; font-size: 13px; }
+.modal-body .md th { background: var(--surface-2); color: var(--text); font-weight: 600; padding: 9px 14px; text-align: left; border: 1px solid var(--border); }
+.modal-body .md td { padding: 8px 14px; border: 1px solid var(--border); vertical-align: top; color: var(--text-2); }
+.modal-body .md tr:nth-child(even) td { background: var(--surface-2); }
+.modal-body .md hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
 .modal-body .md a { color: var(--orange); text-decoration: none; }
 .modal-body .md a:hover { text-decoration: underline; }
 .modal-truncated { font-size: 11px; color: var(--text-3); font-family: 'JetBrains Mono', monospace; margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border); }
 
 /* SCROLLBAR */
-::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
+
+/* FOCUS ACCESSIBILITY */
+:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+
+/* RESPONSIVE */
+@media (min-width: 768px) { .header-meta { display: block; } }
+@media (max-width: 960px) {
+  .workspace { grid-template-columns: 1fr; }
+  .use-cases-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 720px) {
+  .toggles { grid-template-columns: repeat(2, 1fr); }
+  .trust-points { grid-template-columns: 1fr; }
+}
+@media (max-width: 540px) {
+  .hero-headline { font-size: 24px; }
+  .hero { padding: 36px 0 28px; }
+  .stats { grid-template-columns: 1fr; }
+  .toggles { grid-template-columns: 1fr; }
+  .use-cases-grid { grid-template-columns: 1fr; }
+  .container { padding: 0 14px 56px; }
+  .artefact-actions { gap: 4px; }
+  .btn-sm { padding: 5px 10px; font-size: 10px; }
+  .modal { max-height: 90vh; }
+  .modal-overlay { padding: 16px; }
+  .modal-body { padding: 18px; }
+}
 </style>
 </head>
 <body>
@@ -416,13 +529,27 @@ textarea { resize: vertical; min-height: 80px; }
       <div class="logo-sub">ZenCloud Global Consultants</div>
     </div>
   </div>
-  <div class="status">
-    <div class="status-dot"></div>
-    Agent live · v2.0.0
+  <div class="header-right">
+    <div class="header-meta">VAF v2 · ISO 42010 · claude-sonnet-4-6</div>
+    <div class="status">
+      <div class="status-dot"></div>
+      Agent live
+    </div>
   </div>
 </div>
 
 <div class="container">
+
+  <div class="hero">
+    <div class="hero-kicker">Velocity Architecture Framework v2</div>
+    <h1 class="hero-headline">Generate architecture decision artefacts from a single enterprise brief.</h1>
+    <p class="hero-sub">VAF structures business context, constraints, risks, and architecture drivers into decision-ready EA artefacts — aligned to VAF v2 and ISO/IEC/IEEE 42010:2022.</p>
+    <div class="value-badges">
+      <div class="value-badge"><span class="value-badge-dot"></span>Six architecture viewpoints</div>
+      <div class="value-badge"><span class="value-badge-dot"></span>Decision-ready artefacts</div>
+      <div class="value-badge"><span class="value-badge-dot"></span>Built for architecture governance</div>
+    </div>
+  </div>
 
   <div class="stats">
     <div class="stat">
@@ -436,64 +563,190 @@ textarea { resize: vertical; min-height: 80px; }
       <div class="stat-sub">VP1 · VP2 · VP3 · VP4 · VP5 · VP6</div>
     </div>
     <div class="stat">
-      <div class="stat-label">Model</div>
-      <div class="stat-value" style="font-size:14px;font-family:'JetBrains Mono',monospace">claude-sonnet-4-6</div>
-      <div class="stat-sub">Parallel generation</div>
+      <div class="stat-label">Generation</div>
+      <div class="stat-value" style="font-size:14px;font-family:'JetBrains Mono',monospace;letter-spacing:-0.01em">Parallel</div>
+      <div class="stat-sub">claude-sonnet-4-6 · v2.0.0</div>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
-      New EA request
-    </div>
+  <!-- WORKSPACE: two-column on desktop -->
+  <div class="workspace">
 
-    <div id="alert" class="alert"></div>
+    <!-- LEFT: Architecture Brief -->
+    <div class="workspace-main">
+      <div class="card">
+        <div class="card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+          Architecture brief
+        </div>
 
-    <div class="form-row">
-      <label>Topic *</label>
-      <input id="topic" type="text" placeholder="e.g. Cloud governance model for financial services" />
-    </div>
+        <div id="alert" class="alert"></div>
 
-    <div class="form-row">
-      <label>Context</label>
-      <textarea id="context" placeholder="Organisation type, size, existing platforms, regulatory requirements..."></textarea>
-    </div>
+        <div class="form-row">
+          <label for="topic">Architecture challenge or decision <span style="color:var(--orange)">*</span></label>
+          <input id="topic" type="text" placeholder="e.g. Modernise the customer identity platform across cloud and on-premise systems." />
+        </div>
 
-    <div class="form-row">
-      <label>Constraints (comma separated)</label>
-      <input id="constraints" type="text" placeholder="e.g. Basel III compliance, reduce governance drag" />
-    </div>
+        <div class="form-row">
+          <label for="context">Business context, current state, target state, and risks</label>
+          <textarea id="context" placeholder="Include business drivers, current systems, stakeholders, deadlines, regulatory constraints, integrations, risks, and non-functional requirements." style="min-height:130px"></textarea>
+        </div>
 
-    <div class="form-row">
-      <label>Artefacts to generate</label>
-      <div class="toggles">
-        <div class="toggle on" data-type="governance" onclick="toggleArtefact(this)">📋 VP1 Guardrail Canvas</div>
-        <div class="toggle on" data-type="strategy" onclick="toggleArtefact(this)">⚖️ VP2 Trade-off Matrix</div>
-        <div class="toggle on" data-type="design" onclick="toggleArtefact(this)">🏗️ VP3 ADR</div>
-        <div class="toggle on" data-type="velocity" onclick="toggleArtefact(this)">⚡ VP4 Velocity Dashboard</div>
-        <div class="toggle on" data-type="rhythm" onclick="toggleArtefact(this)">🔄 VP5 Pulse System</div>
-        <div class="toggle on" data-type="practitioner" onclick="toggleArtefact(this)">🧭 VP6 Integrity Arc</div>
+        <div class="form-row">
+          <div class="chips-label">
+            <label>Constraints and priorities</label>
+            <button class="chips-clear" onclick="clearChips()">Clear all</button>
+          </div>
+          <div class="chips-row">
+            <div class="chip" data-label="Security" onclick="toggleChip(this)">Security</div>
+            <div class="chip" data-label="Cost" onclick="toggleChip(this)">Cost</div>
+            <div class="chip" data-label="Time" onclick="toggleChip(this)">Time</div>
+            <div class="chip" data-label="Legacy systems" onclick="toggleChip(this)">Legacy systems</div>
+            <div class="chip" data-label="Regulatory" onclick="toggleChip(this)">Regulatory</div>
+            <div class="chip" data-label="Data sovereignty" onclick="toggleChip(this)">Data sovereignty</div>
+            <div class="chip" data-label="Integration complexity" onclick="toggleChip(this)">Integration complexity</div>
+            <div class="chip" data-label="Operational resilience" onclick="toggleChip(this)">Operational resilience</div>
+            <div class="chip" data-label="Vendor lock-in" onclick="toggleChip(this)">Vendor lock-in</div>
+            <div class="chip" data-label="Skills gap" onclick="toggleChip(this)">Skills gap</div>
+          </div>
+          <input id="constraints-custom" type="text" placeholder="Other constraints (comma separated)" />
+        </div>
+
+        <button class="generate-btn" id="generate-btn" onclick="generate()">
+          ⚡ Generate artefacts
+        </button>
+
+        <div class="progress" id="progress">
+          <div class="progress-bar-bg"><div class="progress-bar" id="progress-bar"></div></div>
+          <div class="progress-text" id="progress-text">Initialising agent...</div>
+        </div>
       </div>
     </div>
 
-    <button class="generate-btn" id="generate-btn" onclick="generate()">
-      ⚡ Generate artefacts
-    </button>
+    <!-- RIGHT: Sidebar -->
+    <div class="workspace-side">
 
-    <div class="progress" id="progress">
-      <div class="progress-bar-bg"><div class="progress-bar" id="progress-bar"></div></div>
-      <div class="progress-text" id="progress-text">Initialising agent...</div>
+      <!-- Example briefs -->
+      <div class="card">
+        <div class="card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Try an example brief
+        </div>
+        <div class="examples-grid">
+          <button class="example-btn" onclick="useExample(0)">☁ Cloud migration</button>
+          <button class="example-btn" onclick="useExample(1)">🏦 Core banking modernisation</button>
+          <button class="example-btn" onclick="useExample(2)">🤖 AI governance platform</button>
+          <button class="example-btn" onclick="useExample(3)">⚙ SAP integration strategy</button>
+          <button class="example-btn" onclick="useExample(4)">🔒 Cyber resilience uplift</button>
+          <button class="example-btn" onclick="useExample(5)">👤 Customer identity modernisation</button>
+        </div>
+      </div>
+
+      <!-- Artefacts to generate -->
+      <div class="card">
+        <div class="card-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Artefacts to generate
+        </div>
+        <div class="toggles">
+          <div class="toggle on" data-type="governance" onclick="toggleArtefact(this)">
+            <span class="toggle-label">📋 VP1 Guardrail Canvas</span>
+            <span class="toggle-desc">Principles, rules, constraints, and non-negotiables</span>
+          </div>
+          <div class="toggle on" data-type="strategy" onclick="toggleArtefact(this)">
+            <span class="toggle-label">⚖️ VP2 Trade-off Matrix</span>
+            <span class="toggle-desc">Options across cost, risk, speed, quality, and strategic fit</span>
+          </div>
+          <div class="toggle on" data-type="design" onclick="toggleArtefact(this)">
+            <span class="toggle-label">🏗️ VP3 ADR</span>
+            <span class="toggle-desc">Context, decision, options, consequences, and rationale</span>
+          </div>
+          <div class="toggle on" data-type="velocity" onclick="toggleArtefact(this)">
+            <span class="toggle-label">⚡ VP4 Velocity Dashboard</span>
+            <span class="toggle-desc">Execution signals, risks, blockers, and delivery indicators</span>
+          </div>
+          <div class="toggle on" data-type="rhythm" onclick="toggleArtefact(this)">
+            <span class="toggle-label">🔄 VP5 Pulse System</span>
+            <span class="toggle-desc">Decision health, governance signals, architecture confidence</span>
+          </div>
+          <div class="toggle on" data-type="practitioner" onclick="toggleArtefact(this)">
+            <span class="toggle-label">🧭 VP6 Integrity Arc</span>
+            <span class="toggle-desc">Coherence across strategy, delivery, risk, and operations</span>
+          </div>
+        </div>
+
+        <div class="packs-section">
+          <div class="packs-label">Recommended packs</div>
+          <div class="packs-grid">
+            <button class="pack-btn" data-pack="executive" onclick="selectPack('executive')">Executive decision — VP2+VP3+VP6</button>
+            <button class="pack-btn" data-pack="governance" onclick="selectPack('governance')">Governance guardrails — VP1+VP5</button>
+            <button class="pack-btn" data-pack="delivery" onclick="selectPack('delivery')">Delivery execution — VP4+VP5</button>
+            <button class="pack-btn" data-pack="highrisk" onclick="selectPack('highrisk')">High-risk decision — VP2+VP3+VP6</button>
+            <button class="pack-btn" data-pack="full" onclick="selectPack('full')">Full architecture pack — VP1–VP6</button>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-      Generated artefacts
+  <!-- ARTEFACTS OUTPUT -->
+  <div class="card" style="margin-bottom:16px">
+    <div class="artefacts-header">
+      <div class="card-title" style="margin-bottom:0">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        Generated artefacts
+      </div>
+      <button class="copy-all-btn" id="copy-all-btn" onclick="copyAllArtefacts()">⎘ Copy all</button>
     </div>
     <div id="artefact-list">
-      <div class="empty">No artefacts yet. Submit a request above.</div>
+      <div class="empty">
+        <div class="empty-icon">📂</div>
+        <div class="empty-title">No artefacts generated yet.</div>
+        <div class="empty-desc">Start with a short architecture challenge. Describe a system, transformation, risk, decision, or delivery problem. VAF will generate your selected artefacts from the brief.</div>
+        <div class="empty-actions">
+          <button class="empty-action primary" onclick="useSampleBrief()">Use sample brief</button>
+          <button class="empty-action" onclick="selectAndGenerateAll()">Generate all viewpoints</button>
+          <button class="empty-action" onclick="generateADROnly()">Start with ADR only</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust-section">
+    <div class="trust-title">Architecture-aligned, not just AI-generated.</div>
+    <div class="trust-sub">VAF structures outputs around architecture viewpoints, decisions, trade-offs, governance controls, and execution signals. Designed to support architecture thinking, not produce generic AI text.</div>
+    <div class="trust-points">
+      <div class="trust-point">
+        <div class="trust-point-icon">◈</div>
+        <div class="trust-point-text"><strong>Based on VAF v2</strong> — framework designed for enterprise decision governance, not general-purpose AI output</div>
+      </div>
+      <div class="trust-point">
+        <div class="trust-point-icon">⊞</div>
+        <div class="trust-point-text"><strong>ISO/IEC/IEEE 42010:2022</strong> — viewpoint structure aligned to the international standard for architecture description</div>
+      </div>
+      <div class="trust-point">
+        <div class="trust-point-icon">△</div>
+        <div class="trust-point-text"><strong>Decision traceability</strong> — artefacts are linked, not isolated; each viewpoint reinforces the others</div>
+      </div>
+      <div class="trust-point">
+        <div class="trust-point-icon">◇</div>
+        <div class="trust-point-text"><strong>Governance-ready</strong> — outputs structured for Architecture Review Boards, CTO/CISO stakeholders, and governance bodies</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="use-cases-section">
+    <div class="use-cases-title">Use VAF for</div>
+    <div class="use-cases-grid">
+      <div class="use-case"><span class="use-case-arrow">→</span>Cloud migration decisions</div>
+      <div class="use-case"><span class="use-case-arrow">→</span>Platform modernisation</div>
+      <div class="use-case"><span class="use-case-arrow">→</span>Vendor / product selection</div>
+      <div class="use-case"><span class="use-case-arrow">→</span>AI governance</div>
+      <div class="use-case"><span class="use-case-arrow">→</span>Cyber resilience uplift</div>
+      <div class="use-case"><span class="use-case-arrow">→</span>Integration strategy</div>
+      <div class="use-case"><span class="use-case-arrow">→</span>Operating model change</div>
+      <div class="use-case"><span class="use-case-arrow">→</span>Architecture review preparation</div>
     </div>
   </div>
 
@@ -503,7 +756,10 @@ textarea { resize: vertical; min-height: 80px; }
   <div class="modal">
     <div class="modal-header">
       <div class="modal-title" id="modal-title">Artefact</div>
-      <button class="modal-close" onclick="document.getElementById('modal').classList.remove('show')">✕</button>
+      <div class="modal-actions">
+        <button class="modal-copy-btn" id="modal-copy-btn" onclick="copyModalContent()">⎘ Copy</button>
+        <button class="modal-close" onclick="document.getElementById('modal').classList.remove('show')">✕</button>
+      </div>
     </div>
     <div class="modal-body">
       <div id="modal-content" class="md"></div>
@@ -516,10 +772,115 @@ const API = window.location.origin;
 let artefacts = [];
 let progressInterval;
 
-function toggleArtefact(el) {
-  el.classList.toggle('on');
+// ── EXAMPLE BRIEFS ────────────────────────────────────────────────────────────
+const EXAMPLES = [
+  {
+    topic: 'Cloud migration strategy for enterprise workloads',
+    context: 'Mid-size financial services firm. 200+ applications across on-premises data centres. Moving to Azure. Legacy core systems must remain on-prem. Regulatory constraints under APRA CPS 231 and CPS 234. Key stakeholders: CTO, CISO, Head of Infrastructure. Target state: hybrid cloud with cloud-native applications by 2027.',
+    constraints: ['Security', 'Regulatory', 'Cost', 'Data sovereignty'],
+    artefacts: ['governance', 'strategy', 'design', 'velocity']
+  },
+  {
+    topic: 'Core banking platform modernisation and API strategy',
+    context: 'Regional bank. Aging Temenos T24 core banking system. Customer-facing digital channels growing 40% YoY. Need to expose core banking capabilities via modern API layer. Integration with 12 downstream systems. Regulatory compliance with APRA. Zero downtime requirement.',
+    constraints: ['Legacy systems', 'Integration complexity', 'Operational resilience', 'Regulatory'],
+    artefacts: ['governance', 'strategy', 'design', 'practitioner']
+  },
+  {
+    topic: 'AI governance and risk management framework',
+    context: 'Large professional services firm deploying AI models across audit, advisory, and legal services. Regulatory and ethical obligations. Need governance controls for model selection, data quality, explainability, and bias detection. Audience: Risk Committee, Board.',
+    constraints: ['Regulatory', 'Data sovereignty', 'Security', 'Vendor lock-in'],
+    artefacts: ['governance', 'strategy', 'practitioner', 'rhythm']
+  },
+  {
+    topic: 'SAP S/4HANA integration strategy and enterprise data architecture',
+    context: 'Manufacturing conglomerate. SAP S/4HANA as system of record. 30+ integration touchpoints including MES, WMS, CRM, and e-commerce. Moving from point-to-point to an integration platform. Key risks: data consistency, operational continuity, skills gap.',
+    constraints: ['Integration complexity', 'Legacy systems', 'Skills gap', 'Cost'],
+    artefacts: ['strategy', 'design', 'velocity', 'practitioner']
+  },
+  {
+    topic: 'Cyber resilience and zero trust architecture uplift',
+    context: 'Government agency. IRAP assessment identified material gaps. Uplift required for zero trust network access, identity and access management, privileged access management, and security operations centre capability. Budget constrained. 18-month program.',
+    constraints: ['Security', 'Regulatory', 'Time', 'Cost'],
+    artefacts: ['governance', 'strategy', 'design', 'rhythm']
+  },
+  {
+    topic: 'Customer identity and access management platform modernisation',
+    context: 'Retail bank. Fragmented identity estate: 3 legacy IAM systems, 4 million customer identities. Move to unified CIAM platform. Requirements: omnichannel SSO, MFA, fraud detection, consent management under CDR and Privacy Act. Integration with digital banking platform.',
+    constraints: ['Security', 'Regulatory', 'Data sovereignty', 'Integration complexity'],
+    artefacts: ['governance', 'strategy', 'design', 'velocity']
+  }
+];
+
+// ── PACK DEFINITIONS ──────────────────────────────────────────────────────────
+const PACKS = {
+  executive:  { artefacts: ['strategy', 'design', 'practitioner'] },
+  governance: { artefacts: ['governance', 'rhythm'] },
+  delivery:   { artefacts: ['velocity', 'rhythm'] },
+  highrisk:   { artefacts: ['strategy', 'design', 'practitioner'] },
+  full:       { artefacts: ['governance', 'strategy', 'design', 'velocity', 'rhythm', 'practitioner'] }
+};
+
+// ── FORM HELPERS ──────────────────────────────────────────────────────────────
+function toggleArtefact(el) { el.classList.toggle('on'); clearPackHighlight(); }
+function toggleChip(el) { el.classList.toggle('on'); }
+function clearChips() {
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
+  document.getElementById('constraints-custom').value = '';
+}
+function clearPackHighlight() { document.querySelectorAll('.pack-btn').forEach(b => b.classList.remove('active')); }
+
+function getConstraints() {
+  const chips = [...document.querySelectorAll('.chip.on')].map(c => c.dataset.label);
+  const custom = document.getElementById('constraints-custom').value
+    .split(',').map(s => s.trim()).filter(Boolean);
+  return [...chips, ...custom];
 }
 
+function selectPack(packKey) {
+  const pack = PACKS[packKey];
+  document.querySelectorAll('.toggle').forEach(t => t.classList.remove('on'));
+  pack.artefacts.forEach(type => {
+    const el = document.querySelector(`.toggle[data-type="${type}"]`);
+    if (el) el.classList.add('on');
+  });
+  document.querySelectorAll('.pack-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.pack === packKey)
+  );
+}
+
+function useExample(idx) {
+  const ex = EXAMPLES[idx];
+  document.getElementById('topic').value = ex.topic;
+  document.getElementById('context').value = ex.context;
+  document.querySelectorAll('.chip').forEach(chip =>
+    chip.classList.toggle('on', ex.constraints.includes(chip.dataset.label))
+  );
+  document.getElementById('constraints-custom').value = '';
+  document.querySelectorAll('.toggle').forEach(t =>
+    t.classList.toggle('on', ex.artefacts.includes(t.dataset.type))
+  );
+  clearPackHighlight();
+  document.querySelector('.card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function useSampleBrief() { useExample(0); }
+
+function selectAndGenerateAll() {
+  document.querySelectorAll('.toggle').forEach(t => t.classList.add('on'));
+  clearPackHighlight();
+  generate();
+}
+
+function generateADROnly() {
+  document.querySelectorAll('.toggle').forEach(t => t.classList.remove('on'));
+  const adr = document.querySelector('.toggle[data-type="design"]');
+  if (adr) adr.classList.add('on');
+  clearPackHighlight();
+  generate();
+}
+
+// ── ALERTS ────────────────────────────────────────────────────────────────────
 function showAlert(msg, type) {
   const el = document.getElementById('alert');
   el.textContent = msg;
@@ -527,6 +888,7 @@ function showAlert(msg, type) {
   setTimeout(() => el.classList.remove('show'), 5000);
 }
 
+// ── PROGRESS ──────────────────────────────────────────────────────────────────
 function startProgress() {
   let pct = 0;
   const messages = [
@@ -545,7 +907,6 @@ function startProgress() {
   let msgIdx = 0;
   document.getElementById('progress').classList.add('show');
   document.getElementById('progress-text').textContent = messages[0];
-
   progressInterval = setInterval(() => {
     pct = Math.min(pct + 1.2, 90);
     document.getElementById('progress-bar').style.width = pct + '%';
@@ -566,16 +927,15 @@ function stopProgress() {
   }, 1500);
 }
 
+// ── GENERATE ──────────────────────────────────────────────────────────────────
 async function generate() {
   const topic = document.getElementById('topic').value.trim();
-  if (!topic) { showAlert('Topic is required.', 'error'); return; }
+  if (!topic) { showAlert('Architecture challenge is required.', 'error'); return; }
 
   const selected = [...document.querySelectorAll('.toggle.on')].map(t => t.dataset.type);
   if (selected.length === 0) { showAlert('Select at least one artefact type.', 'error'); return; }
 
-  const constraints = document.getElementById('constraints').value
-    .split(',').map(s => s.trim()).filter(Boolean);
-
+  const constraints = getConstraints();
   const btn = document.getElementById('generate-btn');
   btn.disabled = true;
   btn.textContent = '⏳ Generating...';
@@ -599,7 +959,7 @@ async function generate() {
     if (data.artefacts && data.artefacts.length > 0) {
       artefacts = [...data.artefacts, ...artefacts];
       renderArtefacts(data.requestId);
-      showAlert(`Generated ${data.artefacts.length} artefacts and committed to GitHub.`, 'success');
+      showAlert(`Generated ${data.artefacts.length} artefact${data.artefacts.length !== 1 ? 's' : ''} and committed to GitHub.`, 'success');
     } else {
       showAlert('Generation failed: ' + (data.errors || []).join(', '), 'error');
     }
@@ -612,42 +972,91 @@ async function generate() {
   btn.textContent = '⚡ Generate artefacts';
 }
 
+// ── RENDER ────────────────────────────────────────────────────────────────────
+const ARTEFACT_ICONS  = { governance: ['icon-gov','📋'], strategy: ['icon-str','⚖️'], design: ['icon-des','🏗️'], velocity: ['icon-vel','⚡'], rhythm: ['icon-rhy','🔄'], practitioner: ['icon-pra','🧭'] };
+const ARTEFACT_LABELS = { governance: 'VP1 Guardrail Canvas', strategy: 'VP2 Trade-off Matrix', design: 'VP3 ADR', velocity: 'VP4 Velocity Dashboard', rhythm: 'VP5 Pulse System', practitioner: 'VP6 Integrity Arc' };
+
 function renderArtefacts(latestRequestId) {
   const list = document.getElementById('artefact-list');
+  const copyAllBtn = document.getElementById('copy-all-btn');
+
   if (artefacts.length === 0) {
-    list.innerHTML = '<div class="empty">No artefacts yet. Submit a request above.</div>';
+    copyAllBtn.classList.remove('show');
+    list.innerHTML = `<div class="empty">
+      <div class="empty-icon">📂</div>
+      <div class="empty-title">No artefacts generated yet.</div>
+      <div class="empty-desc">Start with a short architecture challenge. Describe a system, transformation, risk, decision, or delivery problem. VAF will generate selected architecture artefacts from your brief.</div>
+      <div class="empty-actions">
+        <button class="empty-action primary" onclick="useSampleBrief()">Use sample brief</button>
+        <button class="empty-action" onclick="selectAndGenerateAll()">Generate all viewpoints</button>
+        <button class="empty-action" onclick="generateADROnly()">Start with ADR only</button>
+      </div>
+    </div>`;
     return;
   }
 
-  const icons = { governance: ['icon-gov', '📋'], strategy: ['icon-str', '⚖️'], design: ['icon-des', '🏗️'], velocity: ['icon-vel', '⚡'], rhythm: ['icon-rhy', '🔄'], practitioner: ['icon-pra', '🧭'] };
-  const labels = { governance: 'VP1 Guardrail Canvas', strategy: 'VP2 Trade-off Matrix', design: 'VP3 ADR', velocity: 'VP4 Velocity Dashboard', rhythm: 'VP5 Pulse System', practitioner: 'VP6 Integrity Arc' };
+  copyAllBtn.classList.add('show');
 
   list.innerHTML = artefacts.map((a, i) => {
-    const [iconClass, emoji] = icons[a.type] || ['icon-gov', '📄'];
+    const [iconClass, emoji] = ARTEFACT_ICONS[a.type] || ['icon-gov', '📄'];
     const isNew = a.metadata && latestRequestId && a.metadata.requestId === latestRequestId;
     const ghUrl = `https://github.com/ZenCloudAU/velocity-architecture/tree/main/artefacts/${a.type}`;
     const chars = a.contentLength || (a.content ? a.content.length : 0);
     const tokens = a.metadata ? a.metadata.tokensUsed : 0;
-    return `
-      <div class="artefact-item">
+    const newBadge = isNew ? '<span style="font-size:10px;color:#16A34A;font-weight:600;font-family:\'JetBrains Mono\',monospace;margin-left:4px">● new</span>' : '';
+    return `<div class="artefact-item">
         <div class="artefact-left">
           <div class="artefact-icon ${iconClass}">${emoji}</div>
           <div style="min-width:0">
-            <div class="artefact-name">${labels[a.type]} ${isNew ? '<span style="font-size:10px;color:#22C55E;font-weight:600;font-family:\'JetBrains Mono\',monospace">● new</span>' : ''}</div>
+            <div class="artefact-name">${ARTEFACT_LABELS[a.type]}${newBadge}</div>
             <div class="artefact-meta">${chars.toLocaleString()} chars · ${tokens.toLocaleString()} tokens · ${a.metadata ? new Date(a.metadata.timestamp).toLocaleTimeString() : ''}</div>
           </div>
         </div>
         <div class="artefact-actions">
           <button class="btn-sm" onclick="viewArtefact(${i})">👁 View</button>
+          <button class="btn-sm" data-copy-idx="${i}" onclick="copyArtefact(${i})">⎘ Copy</button>
+          <button class="btn-sm" onclick="downloadArtefact(${i})">↓ .md</button>
           <a class="btn-sm github" href="${ghUrl}" target="_blank">⌥ GitHub</a>
         </div>
       </div>`;
   }).join('');
 }
 
+// ── COPY / DOWNLOAD ───────────────────────────────────────────────────────────
+async function copyArtefact(i) {
+  const a = artefacts[i];
+  try {
+    await navigator.clipboard.writeText(a.content || a.contentPreview || '');
+    const btn = document.querySelector(`[data-copy-idx="${i}"]`);
+    if (btn) { const orig = btn.textContent; btn.textContent = '✓ Copied'; setTimeout(() => { btn.textContent = orig; }, 1500); }
+  } catch (e) { showAlert('Copy failed. Try viewing the artefact and copying manually.', 'error'); }
+}
+
+async function copyAllArtefacts() {
+  const text = artefacts.map(a =>
+    `# ${ARTEFACT_LABELS[a.type]}\n\n${a.content || a.contentPreview || ''}`
+  ).join('\n\n---\n\n');
+  try {
+    await navigator.clipboard.writeText(text);
+    const btn = document.getElementById('copy-all-btn');
+    btn.innerHTML = '✓ Copied all';
+    setTimeout(() => { btn.innerHTML = '⎘ Copy all'; }, 2000);
+  } catch (e) { showAlert('Copy failed.', 'error'); }
+}
+
+function downloadArtefact(i) {
+  const a = artefacts[i];
+  const slugs = { governance: 'vp1-guardrail-canvas', strategy: 'vp2-tradeoff-matrix', design: 'vp3-adr', velocity: 'vp4-velocity-dashboard', rhythm: 'vp5-pulse-system', practitioner: 'vp6-integrity-arc' };
+  const blob = new Blob([a.content || a.contentPreview || ''], { type: 'text/markdown' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url; link.download = `${slugs[a.type] || a.type}.md`; link.click();
+  URL.revokeObjectURL(url);
+}
+
+// ── MODAL ─────────────────────────────────────────────────────────────────────
 function viewArtefact(i) {
   const a = artefacts[i];
-  const labels = { governance: 'VP1 Guardrail Canvas', strategy: 'VP2 Trade-off Matrix', design: 'VP3 ADR', velocity: 'VP4 Velocity Dashboard', rhythm: 'VP5 Pulse System', practitioner: 'VP6 Integrity Arc' };
   const raw = a.contentPreview || a.content || '';
   const truncated = a.contentLength && raw.length < a.contentLength;
   const el = document.getElementById('modal-content');
@@ -658,8 +1067,18 @@ function viewArtefact(i) {
     note.textContent = `Showing first ${raw.length.toLocaleString()} of ${a.contentLength.toLocaleString()} chars — full artefact committed to GitHub.`;
     el.appendChild(note);
   }
-  document.getElementById('modal-title').textContent = labels[a.type];
+  document.getElementById('modal-title').textContent = ARTEFACT_LABELS[a.type];
   document.getElementById('modal').classList.add('show');
+}
+
+async function copyModalContent() {
+  const el = document.getElementById('modal-content');
+  const btn = document.getElementById('modal-copy-btn');
+  try {
+    await navigator.clipboard.writeText(el.innerText);
+    btn.textContent = '✓ Copied';
+    setTimeout(() => { btn.textContent = '⎘ Copy'; }, 1500);
+  } catch (e) { btn.textContent = 'Failed'; setTimeout(() => { btn.textContent = '⎘ Copy'; }, 1500); }
 }
 
 function closeModal(e) {
