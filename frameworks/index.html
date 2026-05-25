@@ -86,7 +86,7 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
   <a href="../" class="nav-brand">VAF<sup>™</sup><span class="nav-brand-badge">Open Source</span></a>
   <ul class="nav-links">
     <li><a href="../#why-vaf">Framework</a></li>
-    <li><a href="../#viewpoints">Viewpoints</a></li>
+    <li><a href="../viewpoints/">Viewpoints</a></li>
     <li><a href="../#repository">Repository</a></li>
     <li><a href="https://github.com/ZenCloudAU/velocity-architecture" target="_blank" rel="noopener">GitHub</a></li>
   </ul>
@@ -107,9 +107,9 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
     <aside class="doc-sidebar">
       <div class="sidebar-section">
         <span class="sidebar-label">Documents</span>
-        <button class="file-btn" data-p="frameworks/Architecture-at-the-Speed-of-the-Decision.md" onclick="open(this.dataset.p)">Architecture at the Speed of the Decision</button>
-        <button class="file-btn" data-p="frameworks/EA-Artefact-Type-Classification.md" onclick="open(this.dataset.p)">EA Artefact Type Classification</button>
-        <button class="file-btn" data-p="frameworks/VAF-Compression-Map.md" onclick="open(this.dataset.p)">VAF Compression Map</button>
+        <button class="file-btn" data-p="frameworks/Architecture-at-the-Speed-of-the-Decision.md" onclick="loadDoc(this.dataset.p)">Architecture at the Speed of the Decision</button>
+        <button class="file-btn" data-p="frameworks/EA-Artefact-Type-Classification.md" onclick="loadDoc(this.dataset.p)">EA Artefact Type Classification</button>
+        <button class="file-btn" data-p="frameworks/VAF-Compression-Map.md" onclick="loadDoc(this.dataset.p)">VAF Compression Map</button>
       </div>
     </aside>
     <div class="doc-reader" id="reader">
@@ -139,7 +139,7 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
 <script>
 const RAW='https://raw.githubusercontent.com/ZenCloudAU/velocity-architecture/main/';
 let current=null;
-async function open(path){
+async function loadDoc(path){
   if(path===current)return;current=path;
   document.querySelectorAll('.file-btn').forEach(b=>b.classList.toggle('active',b.dataset.p===path));
   const el=document.getElementById('reader');
@@ -151,8 +151,8 @@ async function open(path){
 }
 function init(){
   const h=location.hash.slice(1);
-  if(h){const b=document.querySelector('.file-btn[data-p$="/'+h+'"]')||document.querySelector('.file-btn[data-p="'+h+'"]');if(b){open(b.dataset.p);return;}}
-  const first=document.querySelector('.file-btn[data-p]');if(first)open(first.dataset.p);
+  if(h){const b=document.querySelector('.file-btn[data-p$="/'+h+'"]')||document.querySelector('.file-btn[data-p="'+h+'"]');if(b){loadDoc(b.dataset.p);return;}}
+  const first=document.querySelector('.file-btn[data-p]');if(first)loadDoc(first.dataset.p);
 }
 window.addEventListener('popstate',init);document.addEventListener('DOMContentLoaded',init);
 </script>

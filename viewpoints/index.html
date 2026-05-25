@@ -81,7 +81,7 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
   <a href="../" class="nav-brand">VAF<sup>™</sup><span class="nav-brand-badge">Open Source</span></a>
   <ul class="nav-links">
     <li><a href="../#why-vaf">Framework</a></li>
-    <li><a href="../#viewpoints">Viewpoints</a></li>
+    <li><a href="./">Viewpoints</a></li>
     <li><a href="../#repository">Repository</a></li>
     <li><a href="https://github.com/ZenCloudAU/velocity-architecture" target="_blank" rel="noopener">GitHub</a></li>
   </ul>
@@ -104,8 +104,8 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
           <div class="vp-dot" style="background:var(--vp1)"></div>
           <span class="vp-group-label" style="color:var(--vp1)">VP1 · Direction</span>
         </div>
-        <button class="file-btn" data-p="viewpoints/vp1-direction/README.md" onclick="open(this.dataset.p)">Viewpoint Overview</button>
-        <button class="file-btn" data-p="viewpoints/vp1-direction/guardrail-canvas.md" onclick="open(this.dataset.p)">Guardrail Canvas</button>
+        <button class="file-btn" data-p="viewpoints/vp1-direction/README.md" onclick="loadDoc(this.dataset.p)">Viewpoint Overview</button>
+        <button class="file-btn" data-p="viewpoints/vp1-direction/guardrail-canvas.md" onclick="loadDoc(this.dataset.p)">Guardrail Canvas</button>
       </div>
 
       <div class="vp-group">
@@ -113,8 +113,8 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
           <div class="vp-dot" style="background:var(--vp2)"></div>
           <span class="vp-group-label" style="color:var(--vp2)">VP2 · Decision</span>
         </div>
-        <button class="file-btn" data-p="viewpoints/vp2-decision/README.md" onclick="open(this.dataset.p)">Viewpoint Overview</button>
-        <button class="file-btn" data-p="viewpoints/vp2-decision/trade-off-matrix.md" onclick="open(this.dataset.p)">Trade-off Matrix</button>
+        <button class="file-btn" data-p="viewpoints/vp2-decision/README.md" onclick="loadDoc(this.dataset.p)">Viewpoint Overview</button>
+        <button class="file-btn" data-p="viewpoints/vp2-decision/trade-off-matrix.md" onclick="loadDoc(this.dataset.p)">Trade-off Matrix</button>
       </div>
 
       <div class="vp-group">
@@ -122,9 +122,9 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
           <div class="vp-dot" style="background:var(--vp3)"></div>
           <span class="vp-group-label" style="color:var(--vp3)">VP3 · Truth</span>
         </div>
-        <button class="file-btn" data-p="viewpoints/vp3-truth/README.md" onclick="open(this.dataset.p)">Viewpoint Overview</button>
-        <button class="file-btn" data-p="viewpoints/vp3-truth/adr-template.md" onclick="open(this.dataset.p)">ADR Template</button>
-        <button class="file-btn" data-p="viewpoints/vp3-truth/fitness-function-examples.md" onclick="open(this.dataset.p)">Fitness Function Examples</button>
+        <button class="file-btn" data-p="viewpoints/vp3-truth/README.md" onclick="loadDoc(this.dataset.p)">Viewpoint Overview</button>
+        <button class="file-btn" data-p="viewpoints/vp3-truth/adr-template.md" onclick="loadDoc(this.dataset.p)">ADR Template</button>
+        <button class="file-btn" data-p="viewpoints/vp3-truth/fitness-function-examples.md" onclick="loadDoc(this.dataset.p)">Fitness Function Examples</button>
       </div>
 
       <div class="vp-group">
@@ -132,9 +132,9 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
           <div class="vp-dot" style="background:var(--vp4)"></div>
           <span class="vp-group-label" style="color:var(--vp4)">VP4 · Velocity</span>
         </div>
-        <button class="file-btn" data-p="viewpoints/vp4-velocity/README.md" onclick="open(this.dataset.p)">Viewpoint Overview</button>
-        <button class="file-btn" data-p="viewpoints/vp4-velocity/adl-template.md" onclick="open(this.dataset.p)">ADL Template</button>
-        <button class="file-btn" data-p="viewpoints/vp4-velocity/velocity-dashboard.md" onclick="open(this.dataset.p)">Velocity Dashboard</button>
+        <button class="file-btn" data-p="viewpoints/vp4-velocity/README.md" onclick="loadDoc(this.dataset.p)">Viewpoint Overview</button>
+        <button class="file-btn" data-p="viewpoints/vp4-velocity/adl-template.md" onclick="loadDoc(this.dataset.p)">ADL Template</button>
+        <button class="file-btn" data-p="viewpoints/vp4-velocity/velocity-dashboard.md" onclick="loadDoc(this.dataset.p)">Velocity Dashboard</button>
       </div>
 
       <div class="vp-group">
@@ -142,8 +142,8 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
           <div class="vp-dot" style="background:var(--vp5)"></div>
           <span class="vp-group-label" style="color:var(--vp5)">VP5 · Rhythm</span>
         </div>
-        <button class="file-btn" data-p="viewpoints/vp5-rhythm/README.md" onclick="open(this.dataset.p)">Viewpoint Overview</button>
-        <button class="file-btn" data-p="viewpoints/vp5-rhythm/pulse-system.md" onclick="open(this.dataset.p)">Pulse System</button>
+        <button class="file-btn" data-p="viewpoints/vp5-rhythm/README.md" onclick="loadDoc(this.dataset.p)">Viewpoint Overview</button>
+        <button class="file-btn" data-p="viewpoints/vp5-rhythm/pulse-system.md" onclick="loadDoc(this.dataset.p)">Pulse System</button>
       </div>
 
       <div class="vp-group">
@@ -151,8 +151,8 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
           <div class="vp-dot" style="background:var(--vp6)"></div>
           <span class="vp-group-label" style="color:var(--vp6)">VP6 · Practitioner</span>
         </div>
-        <button class="file-btn" data-p="viewpoints/vp6-practitioner/README.md" onclick="open(this.dataset.p)">Viewpoint Overview</button>
-        <button class="file-btn" data-p="viewpoints/vp6-practitioner/integrity-arc.md" onclick="open(this.dataset.p)">Integrity Arc</button>
+        <button class="file-btn" data-p="viewpoints/vp6-practitioner/README.md" onclick="loadDoc(this.dataset.p)">Viewpoint Overview</button>
+        <button class="file-btn" data-p="viewpoints/vp6-practitioner/integrity-arc.md" onclick="loadDoc(this.dataset.p)">Integrity Arc</button>
       </div>
 
     </aside>
@@ -177,7 +177,7 @@ footer{background:var(--navy-2);color:rgba(226,232,240,0.7);padding:2.5rem 2rem;
 <script>
 const RAW='https://raw.githubusercontent.com/ZenCloudAU/velocity-architecture/main/';
 let current=null;
-async function open(path){
+async function loadDoc(path){
   if(path===current)return;current=path;
   document.querySelectorAll('.file-btn').forEach(b=>b.classList.toggle('active',b.dataset.p===path));
   const el=document.getElementById('reader');el.innerHTML='<p class="loading-msg">Loading…</p>';
@@ -190,8 +190,8 @@ async function open(path){
 }
 function init(){
   const h=decodeURIComponent(location.hash.slice(1));
-  if(h){const b=document.querySelector('.file-btn[data-p="viewpoints/'+h+'"]');if(b){open(b.dataset.p);return;}}
-  const first=document.querySelector('.file-btn[data-p]');if(first)open(first.dataset.p);
+  if(h){const b=document.querySelector('.file-btn[data-p="viewpoints/'+h+'"]');if(b){loadDoc(b.dataset.p);return;}}
+  const first=document.querySelector('.file-btn[data-p]');if(first)loadDoc(first.dataset.p);
 }
 window.addEventListener('popstate',init);document.addEventListener('DOMContentLoaded',init);
 </script>

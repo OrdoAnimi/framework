@@ -5,7 +5,7 @@
 **Organisation:** ZenCloud Global Consultants
 **Classification:** Independent Industry Working Paper
 **Date:** May 2026
-**Repository:** github.com/[your-handle]/velocity-architecture-framework
+**Repository:** github.com/ZenCloudAU/velocity-architecture
 
 **Keywords:** Public sector IT governance, institutional decoupling, Australian Government Architecture, QGEA, DTA Investment Oversight Framework, COBIT, TOGAF, NIST Cybersecurity Framework, audit findings, Unify child safety system, runtime verification, attestation gap.
 
@@ -324,4 +324,4 @@ Further research examining the structural conditions that sustain this gap — a
 
 *A Trans-Pacific addendum extending this analysis to Canada and New Zealand is published separately as Document 1.1 in this series.*
 
-*This working paper is maintained in the ZenCloud research repository at github.com/[your-handle]/velocity-architecture-framework*
+*This working paper is maintained in the ZenCloud research repository at github.com/ZenCloudAU/velocity-architecture*
