@@ -6,27 +6,27 @@
   <title>VAF Agentic Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0a0c10;
-      --surface: #111318;
-      --surface2: #181c24;
-      --border: #1e2330;
-      --border2: #252c3a;
-      --text: #e8ecf4;
-      --muted: #6b7385;
-      --subtle: #3a4152;
-      --accent: #4f8ef7;
-      --accent2: #7c5cfc;
-      --cat1: #4f8ef7;
-      --cat2: #2ec4a0;
-      --cat3: #f59e42;
-      --cat4: #a855f7;
-      --danger: #f05454;
-      --success: #3ecf8e;
+      --bg: #0A1628;
+      --surface: #0D1F3C;
+      --surface2: #112347;
+      --border: #1A2F4E;
+      --border2: #1E3A5F;
+      --text: #F0F4FA;
+      --muted: #6B7280;
+      --subtle: #2D4A6A;
+      --accent: #1E6FD9;
+      --accent2: #6366f1;
+      --cat1: #1E6FD9;
+      --cat2: #10B981;
+      --cat3: #F59E0B;
+      --cat4: #6366f1;
+      --danger: #EF4444;
+      --success: #10B981;
       --mono: 'JetBrains Mono', monospace;
-      --sans: 'Syne', sans-serif;
+      --sans: 'Inter', sans-serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -168,7 +168,7 @@
     .form-textarea:focus {
       outline: none;
       border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(79,142,247,0.1);
+      box-shadow: 0 0 0 3px rgba(30,111,217,0.1);
     }
 
     .form-input::placeholder,
@@ -203,8 +203,8 @@
       font-family: var(--mono);
       padding: 2px 8px;
       border-radius: 3px;
-      background: rgba(79,142,247,0.12);
-      border: 1px solid rgba(79,142,247,0.25);
+      background: rgba(30,111,217,0.12);
+      border: 1px solid rgba(30,111,217,0.25);
       color: var(--accent);
     }
 
@@ -1121,7 +1121,7 @@
     const a = artefacts[i];
     if (!a) return;
     const win = window.open('', '_blank');
-    win.document.write(`<pre style="font-family:monospace;white-space:pre-wrap;padding:20px;background:#0a0c10;color:#e8ecf4;">${(a.contentPreview || '').replace(/</g,'&lt;')}</pre>`);
+    win.document.write(`<pre style="font-family:monospace;white-space:pre-wrap;padding:20px;background:#0A1628;color:#F0F4FA;">${(a.contentPreview || '').replace(/</g,'&lt;')}</pre>`);
   }
 
   function showAgents() {
