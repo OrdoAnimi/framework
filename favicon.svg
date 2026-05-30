@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Velocity Architecture">
+  <rect width="64" height="64" rx="14" fill="#162D4A"/>
+  <path d="M15 18h34L35 47h-7l7-16H22z" fill="#E8630A"/>
+  <circle cx="47" cy="18" r="4" fill="#F8FAFC"/>
+  <text x="32" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#F8FAFC">VAF</text>
+</svg>

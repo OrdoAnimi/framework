@@ -2,13 +2,30 @@
 
 Velocity Architecture Framework(TM) is a practical architecture framework and tooling ecosystem for enterprise architecture, solution architecture, decision governance, and AI-assisted delivery.
 
-**Live:** [velocityarchitectureframework.com](https://velocityarchitectureframework.com)
+**Framework site:** [velocityarchitectureframework.com](https://velocityarchitectureframework.com)
+
+**Reader-facing GitHub Pages site:** [zencloudau.github.io/velocity-architecture](https://zencloudau.github.io/velocity-architecture/)
+
+## Start Here
+
+If you landed in this repository from LinkedIn, Medium, Substack, ZenCloud, or a search result, use the rendered pages first rather than raw GitHub files.
+
+| Need | Use this |
+|---|---|
+| Understand the framework | [Framework home](https://zencloudau.github.io/velocity-architecture/) |
+| Navigate the whole public site | [Public site map](https://zencloudau.github.io/velocity-architecture/site-map.html) |
+| Read research papers | [Research reader](https://zencloudau.github.io/velocity-architecture/research/) |
+| Read the IT governance working paper | [A Comparative Analysis of IT Governance Frameworks](https://zencloudau.github.io/velocity-architecture/research/it-governance-frameworks-australian-public-sector-2025-2026/) |
+| Use the VAF agent | [VAF Agentic Architect](https://velocityarchitectureframework.com) |
+| Browse source files | Continue in this GitHub repository |
+
+GitHub is the source of truth. GitHub Pages is the reader-facing publication layer.
 
 ## Purpose
 
 Velocity Architecture Framework exists to reduce architecture drag: unclear decision ownership, governance theatre, disconnected artefacts, and slow movement from architecture intent to delivery action.
 
-This repository combines the framework material, practitioner guidance, templates, generated artefacts, and an agentic architecture application that can generate VAF-aligned outputs from a structured request.
+This repository combines the framework material, practitioner guidance, templates, generated artefacts, research, and an agentic architecture application that can generate VAF-aligned outputs from a structured request.
 
 The goal is not to create more documentation volume. The goal is to make architecture decisions explicit, traceable, and usable.
 
@@ -77,7 +94,7 @@ Operational files currently present include:
 
 ## Live Demo
 
-[velocityarchitectureframework.com](https://velocityarchitectureframework.com)
+[VAF Agentic Architect](https://velocityarchitectureframework.com)
 
 The previous README also identified an Azure Container Instances endpoint for the generated application. Treat that as deployment detail rather than the primary public entry point unless it is confirmed current.
 
@@ -175,7 +192,7 @@ Near-term improvements:
 
 - Add a concise architecture diagram showing request intake, knowledge loading, agent generation, validation, and artefact publishing.
 - Clarify which deployment endpoint is the primary public demo.
-- Separate "framework user" onboarding from "developer/operator" onboarding.
+- Separate framework user onboarding from developer/operator onboarding.
 - Add a short relationship map linking VAF, VAF-SA, EA Artefact Generator, StudioSix, and certification repositories.
 - Review whether generated artefacts should remain in the main repository or move to examples/output storage.
 - Add a contributor-safe environment setup section using placeholders only.
