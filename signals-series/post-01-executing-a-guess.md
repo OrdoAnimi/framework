@@ -31,3 +31,5 @@ Before we ask where we are going, we need to honestly answer where we are.
 Until then, execution will keep failing. Quietly. Repeatedly. And expensively.
 
 *— Signal / unfiltered observations from the field. Fortnightly.*
+
+#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #DigitalTransformation #CloudStrategy #TechnologyStrategy #ArtificialIntelligence #AIStrategy #DigitalStrategy
