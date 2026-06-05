@@ -770,6 +770,111 @@
   .back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
   .back-to-top:hover { border-color: var(--orange); color: var(--orange); }
 
+  /* ── 18 ARTEFACTS ── */
+  .artefact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 900px) { .artefact-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 580px) { .artefact-grid { grid-template-columns: 1fr; } }
+  .artefact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .artefact-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--orange);
+  }
+  .artefact-vp {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .artefact-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.975rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+  }
+  .artefact-desc {
+    font-size: 0.795rem;
+    color: var(--text-2);
+    line-height: 1.6;
+  }
+
+  /* ── ECOSYSTEM CALLOUT ── */
+  .ecosystem-callout {
+    background: var(--navy);
+    padding: 4rem 2rem;
+  }
+  .ecosystem-callout-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .ecosystem-callout .section-label { color: rgba(232,99,10,0.9); }
+  .ecosystem-callout .section-title { color: #E2E8F0; margin-bottom: 1rem; }
+  .ecosystem-callout .section-desc { color: rgba(226,232,240,0.65); margin-bottom: 2.5rem; }
+  .ecosystem-triangle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  @media (max-width: 768px) { .ecosystem-triangle { grid-template-columns: 1fr; } }
+  .ecosystem-node {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--r);
+    padding: 1.75rem;
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+    display: block;
+  }
+  .ecosystem-node:hover {
+    background: rgba(232,99,10,0.08);
+    border-color: rgba(232,99,10,0.4);
+  }
+  .ecosystem-node-role {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(232,99,10,0.9);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  .ecosystem-node-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #F1F5F9;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .ecosystem-node-desc {
+    font-size: 0.82rem;
+    color: rgba(226,232,240,0.65);
+    line-height: 1.6;
+    margin: 0;
+  }
+
   /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
@@ -804,14 +909,12 @@
   </a>
   <ul class="nav-links">
     <li><a href="#why-vaf">Framework</a></li>
-    <li><a href="#viewpoints">Viewpoints</a></li>
-    <li><a href="#tools">Tools</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#engagement">Engagement</a></li>
+    <li><a href="#artefacts">Artefacts</a></li>
     <li><a href="#repository">Repository</a></li>
+    <li><a href="#publications">Publications</a></li>
     <li><a href="https://github.com/ZenCloudAU/velocity-architecture" target="_blank" rel="noopener">GitHub</a></li>
   </ul>
-  <a href="https://app.velocityarchitectureframework.com" class="nav-cta" target="_blank" rel="noopener">Open agent ↗</a>
+  <a href="https://www.zencloud.com.au/" class="nav-cta" target="_blank" rel="noopener">ZenCloud Advisory →</a>
   <button class="nav-hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
     <span></span><span></span><span></span>
   </button>
@@ -819,13 +922,11 @@
 
 <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
   <a href="#why-vaf">Framework</a>
-  <a href="#viewpoints">Viewpoints</a>
-  <a href="#tools">Tools</a>
-  <a href="#publications">Publications</a>
-  <a href="#engagement">Engagement</a>
+  <a href="#artefacts">Artefacts</a>
   <a href="#repository">Repository</a>
+  <a href="#publications">Publications</a>
   <a href="https://github.com/ZenCloudAU/velocity-architecture" target="_blank" rel="noopener">GitHub</a>
-  <a href="https://app.velocityarchitectureframework.com" class="mobile-cta" target="_blank" rel="noopener">Open agent ↗</a>
+  <a href="https://www.zencloud.com.au/" class="mobile-cta" target="_blank" rel="noopener">ZenCloud Advisory →</a>
 </div>
 
 <main id="main">
@@ -835,16 +936,16 @@
   <div class="hero-inner">
     <span class="hero-eyebrow">Velocity Architecture Framework™ — Open Source</span>
     <h1>Architecture at the <em>speed of the decision.</em></h1>
-    <p class="hero-sub">A free, open-source practitioner framework for enterprise architecture — six viewpoints, 18 artefacts, and an AI-powered agent that generates board-ready architecture in minutes, not months.</p>
+    <p class="hero-sub">A free, open-source practitioner framework for enterprise architecture — six viewpoints, 18 artefacts, decision-first sequence, and full governance traceability. The method behind the practice.</p>
     <div class="hero-badges">
       <span class="hero-badge">18 Artefacts</span>
       <span class="hero-badge">6 Viewpoints</span>
       <span class="hero-badge">Free &amp; Open Source</span>
-      <span class="hero-badge">AI-Powered Agent</span>
+      <span class="hero-badge">Decision-First</span>
       <span class="hero-badge">Aligned to ISO/IEC/IEEE 42010:2022</span>
     </div>
     <div class="hero-ctas">
-      <a href="https://app.velocityarchitectureframework.com" class="btn-primary" target="_blank" rel="noopener">Open VAF Agent ↗</a>
+      <a href="#viewpoints" class="btn-primary">Explore the framework →</a>
       <a href="https://github.com/ZenCloudAU/velocity-architecture" class="btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
     </div>
   </div>
@@ -877,47 +978,6 @@
         <div class="why-num">03</div>
         <p class="why-title">No traceability</p>
         <p class="why-desc">Decisions get made in conversations and never recorded. The same debate recurs three times. VAF enforces decision-to-artefact traceability from day one. Every commitment has a record.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHO IT'S FOR -->
-<section id="for-you" class="alt-bg">
-  <div class="section-inner">
-    <span class="section-label reveal">Who it's for</span>
-    <h2 class="section-title reveal">Built for the people in the room when architecture decisions get made.</h2>
-    <p class="section-desc reveal">Whether you have an EA function or not, VAF meets you where the decision is.</p>
-    <div class="roles-grid">
-      <div class="role-card reveal">
-        <div class="role-icon">🏛️</div>
-        <p class="role-title">Enterprise Architects</p>
-        <p class="role-desc">Move from twelve-week programmes to decision-pace delivery. Six viewpoints, one brief, done.</p>
-      </div>
-      <div class="role-card reveal">
-        <div class="role-icon">🔧</div>
-        <p class="role-title">Solution Architects</p>
-        <p class="role-desc">Frame decisions at the right altitude, first time. Trade-off Matrix. ADR. Guardrail Canvas. All in one pass.</p>
-      </div>
-      <div class="role-card reveal">
-        <div class="role-icon">☁️</div>
-        <p class="role-title">Cloud Architects</p>
-        <p class="role-desc">Translate cloud options into governance-ready recommendations. Six viewpoints give you the structure; the agent gives you the output.</p>
-      </div>
-      <div class="role-card reveal">
-        <div class="role-icon">🚀</div>
-        <p class="role-title">Transformation Leads</p>
-        <p class="role-desc">Align programme delivery to architecture decisions. VAF's Velocity and Rhythm viewpoints were built for this.</p>
-      </div>
-      <div class="role-card reveal">
-        <div class="role-icon">⚖️</div>
-        <p class="role-title">Architecture Review Boards</p>
-        <p class="role-desc">Receive structured, traceable architecture submissions every time. Board Pack format is review-ready from generation.</p>
-      </div>
-      <div class="role-card reveal">
-        <div class="role-icon">👔</div>
-        <p class="role-title">CTO / CIO / CISO</p>
-        <p class="role-desc">Architecture that speaks to the board, not the whiteboard. Decision framing in plain language. Governance evidence attached.</p>
       </div>
     </div>
   </div>
@@ -1001,12 +1061,116 @@
   </div>
 </section>
 
+<!-- 18 ARTEFACTS -->
+<section id="artefacts" class="alt-bg">
+  <div class="section-inner">
+    <span class="section-label reveal">18 Artefacts</span>
+    <h2 class="section-title reveal">Every artefact exists to record a decision.</h2>
+    <p class="section-desc reveal">Eighteen compressed artefacts across six viewpoints. Each one targets the exact decision it exists to support — and nothing else. All templates are open source in the repository.</p>
+    <div class="artefact-grid">
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP1 · Direction</span>
+        <p class="artefact-name">Guardrail Canvas</p>
+        <p class="artefact-desc">Non-negotiable constraints and governing principles established before design begins.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP1 · Direction</span>
+        <p class="artefact-name">Architecture Vision</p>
+        <p class="artefact-desc">Strategic architectural intent, target state, and the decisions required to get there.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP1 · Direction</span>
+        <p class="artefact-name">Principle Register</p>
+        <p class="artefact-desc">Governing architecture principles with rationale, implications, and decision authority.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP2 · Solution Strategy</span>
+        <p class="artefact-name">Trade-off Matrix</p>
+        <p class="artefact-desc">Options surfaced, rejections recorded, and the chosen direction framed with rationale.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP2 · Solution Strategy</span>
+        <p class="artefact-name">Options Analysis</p>
+        <p class="artefact-desc">Structured comparison of solution candidates against constraints and objectives.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP2 · Solution Strategy</span>
+        <p class="artefact-name">Capability Map</p>
+        <p class="artefact-desc">Current and target capability state aligned to the decisions driving the programme.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP3 · Solution Design</span>
+        <p class="artefact-name">Architecture Decision Record</p>
+        <p class="artefact-desc">One decision, one record — drivers, options considered, rationale, and consequences.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP3 · Solution Design</span>
+        <p class="artefact-name">Solution Overview</p>
+        <p class="artefact-desc">Minimum design decision record needed to unblock the next phase of delivery.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP3 · Solution Design</span>
+        <p class="artefact-name">Interface Register</p>
+        <p class="artefact-desc">Integration points, protocols, owners, and the decisions made about each boundary.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP4 · Delivery Velocity</span>
+        <p class="artefact-name">Delivery Sequencer</p>
+        <p class="artefact-desc">Architecture decisions mapped to delivery milestones — sequence, dependencies, gates.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP4 · Delivery Velocity</span>
+        <p class="artefact-name">Dependency Map</p>
+        <p class="artefact-desc">Cross-stream dependencies surfaced as architecture decisions, not project tasks.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP4 · Delivery Velocity</span>
+        <p class="artefact-name">Risk Register</p>
+        <p class="artefact-desc">Architecture risks tied to decisions — owner, trigger, mitigation, and residual exposure.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP5 · Operating Rhythm</span>
+        <p class="artefact-name">Operating Model Canvas</p>
+        <p class="artefact-desc">How architecture practice runs — forums, cadence, authority, and governance integration.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP5 · Operating Rhythm</span>
+        <p class="artefact-name">Governance Cadence</p>
+        <p class="artefact-desc">Review checkpoints and the rhythm that keeps architecture connected to delivery.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP5 · Operating Rhythm</span>
+        <p class="artefact-name">Review Checklist</p>
+        <p class="artefact-desc">Structured review criteria — completeness, traceability, and decision coverage.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP6 · Practitioner Capability</span>
+        <p class="artefact-name">Extraction Guide</p>
+        <p class="artefact-desc">How to run the conversation that surfaces the architecture — questions, signals, compression triggers.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP6 · Practitioner Capability</span>
+        <p class="artefact-name">Compression Map</p>
+        <p class="artefact-desc">Standard vs Velocity time for all 18 artefacts — 70–90% reduction per output.</p>
+      </div>
+      <div class="artefact-card reveal">
+        <span class="artefact-vp">VP6 · Practitioner Capability</span>
+        <p class="artefact-name">Executive Framing</p>
+        <p class="artefact-desc">How to present architecture decisions at board and executive level — plain language, traceable, governance-complete.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="tools/templates/" class="btn-secondary">Download all 18 templates →</a>
+    </div>
+  </div>
+</section>
+
 <!-- HOW IT WORKS -->
 <section id="how-it-works" class="alt-bg">
   <div class="section-inner">
     <span class="section-label reveal">How it works</span>
     <h2 class="section-title reveal">Brief in. Board-ready architecture out.</h2>
-    <p class="section-desc reveal">The VAF sequence inverts standard EA practice. Start with the decision. The agent produces the artefacts that record it.</p>
+    <p class="section-desc reveal">Velocity inverts standard EA practice. Start with the decision. Produce only the artefacts that record it. Nothing else.</p>
     <div class="steps-flow reveal">
       <div class="step">
         <div class="step-num">01</div>
@@ -1016,7 +1180,7 @@
       <div class="step">
         <div class="step-num">02</div>
         <p class="step-name">Viewpoints</p>
-        <p class="step-detail">Agent selects which of the six viewpoints apply to this decision</p>
+        <p class="step-detail">Select which of the six viewpoints apply to this decision</p>
       </div>
       <div class="step">
         <div class="step-num">03</div>
@@ -1042,85 +1206,6 @@
         <div class="step-num">07</div>
         <p class="step-name">Delivery</p>
         <p class="step-detail">Artefacts committed to version control — immutable audit trail</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AGENTIC ARCHITECT -->
-<section id="agent" class="agent-section">
-  <div class="agent-inner">
-    <span class="section-label reveal">VAF Agentic Architect</span>
-    <h2 class="section-title reveal">The framework runs as an AI agent.</h2>
-    <p class="section-desc reveal">Enter a brief. Select your viewpoints. The agent generates a complete, board-ready architecture pack — governance, strategy, design, velocity, rhythm, and practitioner artefacts — in minutes.</p>
-    <div class="agent-features reveal">
-      <div class="agent-feature">
-        <p class="agent-feature-title">Six-viewpoint generation</p>
-        <p class="agent-feature-desc">Every artefact generated across all six viewpoints in a single pass</p>
-      </div>
-      <div class="agent-feature">
-        <p class="agent-feature-title">Board Pack mode</p>
-        <p class="agent-feature-desc">All viewpoints packaged into a single executive-ready governance narrative</p>
-      </div>
-      <div class="agent-feature">
-        <p class="agent-feature-title">Brief quality scoring</p>
-        <p class="agent-feature-desc">Live signals before you generate — stronger brief, stronger artefacts</p>
-      </div>
-      <div class="agent-feature">
-        <p class="agent-feature-title">Markdown export</p>
-        <p class="agent-feature-desc">Download the full architecture pack as structured Markdown — commit-ready</p>
-      </div>
-    </div>
-    <a href="https://app.velocityarchitectureframework.com" class="btn-agent reveal" target="_blank" rel="noopener">Open VAF Agent ↗</a>
-  </div>
-</section>
-
-<!-- USE CASES -->
-<section id="use-cases">
-  <div class="section-inner">
-    <span class="section-label reveal">Use cases</span>
-    <h2 class="section-title reveal">Built for real decisions, not framework demonstrations.</h2>
-    <p class="section-desc reveal">VAF has been applied across cloud, transformation, security, and board-level architecture decisions.</p>
-    <div class="use-grid">
-      <div class="use-card reveal">
-        <div class="use-check">✓</div>
-        <p class="use-title">Cloud migration decisions</p>
-        <p class="use-desc">Lift-and-shift vs re-platform vs re-architect — trade-off analysis and governance record in one pass.</p>
-      </div>
-      <div class="use-card reveal">
-        <div class="use-check">✓</div>
-        <p class="use-title">Platform selection</p>
-        <p class="use-desc">Structured options analysis with rejection rationale, ready for ARB submission.</p>
-      </div>
-      <div class="use-card reveal">
-        <div class="use-check">✓</div>
-        <p class="use-title">Security architecture</p>
-        <p class="use-desc">Zero trust, APRA CPS 234, IRAP — security and compliance framing across the governance viewpoint.</p>
-      </div>
-      <div class="use-card reveal">
-        <div class="use-check">✓</div>
-        <p class="use-title">Digital transformation</p>
-        <p class="use-desc">Programme architecture aligned to delivery milestones — velocity and rhythm viewpoints in sequence.</p>
-      </div>
-      <div class="use-card reveal">
-        <div class="use-check">✓</div>
-        <p class="use-title">M&amp;A integration</p>
-        <p class="use-desc">Current-state assessment, target architecture, and integration sequencing for mergers and acquisitions.</p>
-      </div>
-      <div class="use-card reveal">
-        <div class="use-check">✓</div>
-        <p class="use-title">Legacy modernisation</p>
-        <p class="use-desc">Migration strategy, dependency mapping, and decommission sequencing framed as architecture decisions.</p>
-      </div>
-      <div class="use-card reveal">
-        <div class="use-check">✓</div>
-        <p class="use-title">Multi-cloud strategy</p>
-        <p class="use-desc">Workload placement, cost model, and vendor lock-in analysis with governance evidence.</p>
-      </div>
-      <div class="use-card reveal">
-        <div class="use-check">✓</div>
-        <p class="use-title">Board reporting</p>
-        <p class="use-desc">Technology decisions presented at board level — plain language, traceable, governance-complete.</p>
       </div>
     </div>
   </div>
@@ -1165,57 +1250,6 @@
   </div>
 </section>
 
-<!-- TOOLS -->
-<section id="tools">
-  <div class="section-inner">
-    <span class="section-label reveal">Tools &amp; Learning</span>
-    <h2 class="section-title reveal">Operational tools and learning paths.</h2>
-    <p class="section-desc reveal">Use Velocity through the Academy, framework site, artefact tools, practitioner methods, advisory channels, and production studio.</p>
-    <div class="repo-grid">
-      <a href="https://velocityarchitecture.com.au/" class="repo-card reveal" target="_blank" rel="noopener">
-        <p class="repo-path">velocityarchitecture.com.au</p>
-        <p class="repo-name">Velocity Architecture Academy</p>
-        <p class="repo-desc">Learning, certification, books, lexicon, and practitioner pathways.</p>
-      </a>
-      <a href="https://velocityarchitectureframework.com/" class="repo-card reveal" target="_blank" rel="noopener">
-        <p class="repo-path">velocityarchitectureframework.com</p>
-        <p class="repo-name">VAF Agentic Architect</p>
-        <p class="repo-desc">Decision-first architecture agent and framework interface.</p>
-      </a>
-      <a href="https://ea.velocityarchitecture.com.au/" class="repo-card reveal" target="_blank" rel="noopener">
-        <p class="repo-path">ea.velocityarchitecture.com.au</p>
-        <p class="repo-name">EA Artefact Generator</p>
-        <p class="repo-desc">Practical EA artefact workspace for engagement outputs and repository-ready architecture content.</p>
-      </a>
-      <a href="https://zencloudau.github.io/vaf-sa/" class="repo-card reveal" target="_blank" rel="noopener">
-        <p class="repo-path">zencloudau.github.io/vaf-sa</p>
-        <p class="repo-name">VAF-SA</p>
-        <p class="repo-desc">Solution architecture practitioner method for complex delivery environments.</p>
-      </a>
-      <a href="https://www.zencloud.com.au/" class="repo-card reveal" target="_blank" rel="noopener">
-        <p class="repo-path">zencloud.com.au</p>
-        <p class="repo-name">ZenCloud</p>
-        <p class="repo-desc">Advisory, consulting, architecture, cloud, governance, and client delivery.</p>
-      </a>
-      <a href="https://studiosix.com.au/" class="repo-card reveal" target="_blank" rel="noopener">
-        <p class="repo-path">studiosix.com.au</p>
-        <p class="repo-name">StudioSix</p>
-        <p class="repo-desc">The AI delivery engine behind ZenCloud Advisory. StudioSix agents draft. The architect reviews. Clients receive governed artefacts.</p>
-      </a>
-      <a href="https://github.com/ZenCloudAU" class="repo-card reveal" target="_blank" rel="noopener">
-        <p class="repo-path">github.com/ZenCloudAU</p>
-        <p class="repo-name">GitHub Organisation</p>
-        <p class="repo-desc">Public repositories for Velocity, StudioSix, certification, tools, and research assets.</p>
-      </a>
-      <a href="#tools" class="repo-card reveal" aria-label="PMO Portal coming soon internal pilot">
-        <p class="repo-path">Internal pilot</p>
-        <p class="repo-name">PMO Portal</p>
-        <p class="repo-desc">Delivery mobilisation and governance workspace. Listed as an internal pilot until a stable public Velocity link is confirmed in this site.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- PUBLICATIONS -->
 <section id="publications">
   <div class="section-inner">
@@ -1237,6 +1271,32 @@
         <p class="repo-path">/publications/book/</p>
         <p class="repo-name">Book</p>
         <p class="repo-desc">Where Architecture Truly Creates Value — the complete Velocity Architecture book. Foreword, Preface, and 33 chapters on decision systems, authority design, and the structures that make velocity possible.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ECOSYSTEM -->
+<section id="ecosystem" class="ecosystem-callout">
+  <div class="ecosystem-callout-inner">
+    <span class="section-label reveal">The practice</span>
+    <h2 class="section-title reveal">Velocity in practice.</h2>
+    <p class="section-desc reveal">Velocity is the method. ZenCloud is the advisory practice that applies it. StudioSix is the AI delivery engine that runs it.</p>
+    <div class="ecosystem-triangle">
+      <a href="https://www.zencloud.com.au/" class="ecosystem-node reveal" target="_blank" rel="noopener">
+        <span class="ecosystem-node-role">Advisory practice</span>
+        <span class="ecosystem-node-name">ZenCloud</span>
+        <p class="ecosystem-node-desc">Enterprise architecture advisory. The front door for engagements that apply the Velocity method.</p>
+      </a>
+      <a href="https://studiosix.com.au/" class="ecosystem-node reveal" target="_blank" rel="noopener">
+        <span class="ecosystem-node-role">AI delivery engine</span>
+        <span class="ecosystem-node-name">StudioSix</span>
+        <p class="ecosystem-node-desc">The engine behind ZenCloud engagements. Agents draft. Architect reviews. Clients receive governed artefacts.</p>
+      </a>
+      <a href="https://github.com/ZenCloudAU/velocity-architecture" class="ecosystem-node reveal" target="_blank" rel="noopener">
+        <span class="ecosystem-node-role">Open source</span>
+        <span class="ecosystem-node-name">GitHub</span>
+        <p class="ecosystem-node-desc">All framework documents, templates, research papers, and worked examples. Free to use, fork, and build on.</p>
       </a>
     </div>
   </div>
@@ -1360,9 +1420,8 @@
       <p class="about-bio">The Velocity Architecture Framework was built from practice, not theory. Phil Myint is a Principal Architect at ZenCloud Global Consultants in Brisbane, working with organisations across government, financial services, and enterprise technology. VAF emerged from the consistent failure of standard frameworks to deliver useful architecture at the pace real decisions require. Every element of the framework — the compression map, the six viewpoints, the Board Pack format — was tested in live engagements before it was documented.</p>
       <div class="about-links">
         <a href="https://www.zencloud.com.au/" class="about-link" target="_blank" rel="noopener">ZenCloud</a>
-        <a href="https://medium.com/@ZencloudAU" class="about-link" target="_blank" rel="noopener">Medium</a>
+        <a href="https://studiosix.com.au/" class="about-link" target="_blank" rel="noopener">StudioSix</a>
         <a href="https://github.com/ZenCloudAU" class="about-link" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/philmyint" class="about-link" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </div>
@@ -1382,19 +1441,18 @@
       <div class="footer-col">
         <span class="footer-col-title">Framework</span>
         <ul>
-          <li><a href="#why-vaf">Why VAF</a></li>
+          <li><a href="#why-vaf">Why Velocity</a></li>
           <li><a href="#viewpoints">Six Viewpoints</a></li>
-          <li><a href="#tools">Tools</a></li>
-          <li><a href="#publications">Publications</a></li>
+          <li><a href="#artefacts">18 Artefacts</a></li>
           <li><a href="#how-it-works">How it works</a></li>
           <li><a href="#governance">Governance</a></li>
+          <li><a href="#publications">Publications</a></li>
           <li><a href="#engagement">Engagement Assets</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <span class="footer-col-title">Product</span>
+        <span class="footer-col-title">Resources</span>
         <ul>
-          <li><a href="https://app.velocityarchitectureframework.com" target="_blank" rel="noopener">VAF Agent</a></li>
           <li><a href="https://velocityarchitecture.com.au/" target="_blank" rel="noopener">Academy</a></li>
           <li><a href="https://ea.velocityarchitecture.com.au/" target="_blank" rel="noopener">EA Artefact Generator</a></li>
           <li><a href="https://zencloudau.github.io/vaf-sa/" target="_blank" rel="noopener">VAF-SA</a></li>
@@ -1440,11 +1498,9 @@
   const backToTop = document.getElementById('back-to-top');
   const navSections = [
     { id: 'why-vaf', href: '#why-vaf' },
-    { id: 'viewpoints', href: '#viewpoints' },
-    { id: 'tools', href: '#tools' },
-    { id: 'publications', href: '#publications' },
-    { id: 'engagement', href: '#engagement' },
+    { id: 'artefacts', href: '#artefacts' },
     { id: 'repository', href: '#repository' },
+    { id: 'publications', href: '#publications' },
   ];
 
   function updateNav() {
