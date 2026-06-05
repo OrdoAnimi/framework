@@ -10,7 +10,10 @@
       "Bash(Test-Path \"C:\\\\Users\\\\phill\\\\Documents\\\\GitHub\\\\velocity-architecture\\\\publications.html\")",
       "Bash(Test-Path \"C:\\\\Users\\\\phill\\\\Documents\\\\GitHub\\\\velocity-architecture\\\\docs\\\\publications.html\")",
       "Bash(grep -E \"^publications\\\\.html$\")",
-      "Bash(grep -E \"^series$|^signals-series$\")"
+      "Bash(grep -E \"^series$|^signals-series$\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(bash *)"
     ]
   }
 }
