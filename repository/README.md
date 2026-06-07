@@ -88,6 +88,26 @@ velocity-repo/
 
 ---
 
+## AI and Enterprise Delivery
+
+The Velocity Architecture Framework™ underpins architecture-led AI delivery at ZenCloud Advisory.
+
+As organisations move beyond cloud into AI, the same architectural discipline applies — decision-first engagement, governed artefact production, and traceability from mandate to output.
+
+**What this means for practitioners:**
+
+- AI-assisted artefact production operates under the same 18-artefact model — prompts replace the blank page, not the architect's judgement
+- Every AI-generated output is a draft. Practitioner review and sign-off are mandatory before delivery
+- Decision traceability, data classification, and client data governance apply — see the [AI and Client Data Usage Policy](/AI_AND_CLIENT_DATA_USAGE_POLICY.md)
+
+**For enterprise AI programs:**
+
+ZenCloud Advisory supports enterprise AI architecture, governance, and delivery engagements powered by Velocity™. The same rigour applied to cloud transformation, applied to AI programs that need to hold up in production, in regulated environments, and under board-level scrutiny.
+
+→ [Engage ZenCloud for AI Advisory](https://www.zencloud.com.au/#ai-delivery)
+
+---
+
 ## Licence
 
 Free to use. Free to share. Free to build on. Attribution appreciated — not required.
