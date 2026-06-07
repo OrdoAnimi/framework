@@ -1,32 +1,59 @@
-name: Link Integrity (reusable)
+name: Public Site Route Check
 
 on:
-  workflow_call:
-    inputs:
-      site_url:
-        required: true
-        type: string
-        description: 'Canonical URL to verify returns a successful HTTP response'
-      repo_name:
-        required: false
-        type: string
-        description: 'Human-readable repo name for log output'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1'
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.html'
+      - '**/*.md'
+      - 'CNAME'
+      - '_config.yml'
+      - 'robots.txt'
+      - 'sitemap.xml'
 
 jobs:
-  check-url:
-    name: Verify ${{ inputs.repo_name || inputs.site_url }}
+  check-public-routes:
     runs-on: ubuntu-latest
     steps:
-      - name: Check canonical URL
+      - name: Verify public knowledge-base routes
+        shell: bash
         run: |
-          URL="${{ inputs.site_url }}"
-          LABEL="${{ inputs.repo_name || inputs.site_url }}"
-          echo "Checking: $URL"
-          STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 -L "$URL")
-          echo "HTTP status: $STATUS"
-          if [[ "$STATUS" -ge 200 && "$STATUS" -lt 400 ]]; then
-            echo "OK [$STATUS]: $LABEL"
-          else
-            echo "::error::FAIL [$STATUS]: $LABEL — $URL"
-            exit 1
-          fi
+          set -euo pipefail
+          base='https://velocityarchitectureframework.com'
+          routes=(
+            '/'
+            '/site-map.html'
+            '/foundation/'
+            '/spec/'
+            '/viewpoints/'
+            '/correspondence-rules/'
+            '/frameworks/'
+            '/guides/'
+            '/diagnostics/'
+            '/templates/'
+            '/examples/'
+            '/policies/'
+            '/research/'
+            '/publications/'
+            '/publications/thought-series/'
+            '/publications/signal/'
+            '/publications/book/'
+          )
+
+          failed=0
+          for route in "${routes[@]}"; do
+            url="${base}${route}"
+            status=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 30 -L "$url" || true)
+            if [[ "$status" -ge 200 && "$status" -lt 400 ]]; then
+              echo "OK [$status] $url"
+            else
+              echo "::error::FAIL [$status] $url"
+              failed=1
+            fi
+          done
+
+          exit "$failed"
