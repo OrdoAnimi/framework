@@ -169,7 +169,7 @@ Primary palette applies to all ecosystem sites.
 |------|-------|---------------|
 | **Midnight Navy** | Primary background, hero sections | `#0A1628` |
 | **Enterprise White** | Body background, cards | `#FFFFFF` |
-| **Signal Blue** | Primary accent, links, CTAs | `#1E6FD9` |
+| **Signal Orange** | Primary accent, links, CTAs, hover bars | `#E8630A` (hover: `#CC5508`) |
 | **Slate** | Secondary text, borders, dividers | `#6B7280` |
 | **Carbon** | Body text on white | `#1A1A2E` |
 | **Amber** | Warning / risk indicators | `#F59E0B` |
@@ -183,14 +183,15 @@ Sub-brand accent colours are allowed (StudioSix may use a distinct creative acce
 
 | Element | Font | Weight | Size |
 |---------|------|--------|------|
-| Heading 1 | Inter or equivalent | 700 | 2.5rem |
-| Heading 2 | Inter | 600 | 1.75rem |
-| Heading 3 | Inter | 600 | 1.25rem |
-| Body | Inter | 400 | 1rem |
-| Caption / label | Inter | 500 | 0.875rem |
-| Code / technical | JetBrains Mono or equivalent | 400 | 0.875rem |
+| Heading 1 / Display | Playfair Display (serif) | 700 | 2.5rem |
+| Heading 2 | Playfair Display (serif) | 700 | 1.75rem |
+| Heading 3 | DM Sans | 600 | 1.25rem |
+| Body | DM Sans | 400 | 1rem |
+| Caption / label | DM Mono (uppercase) | 500 | 0.875rem |
+| CTA / button | DM Mono (uppercase) | 400 | 0.875rem |
+| Code / technical | DM Mono | 400 | 0.875rem |
 
-Sans-serif stack only. No serif faces in the ecosystem shell.
+Three-font system: **Playfair Display** (h1/h2/display), **DM Sans** (body/h3), **DM Mono** (labels, CTAs, code). Playfair Display is intentional as the ecosystem display face.
 
 ---
 
@@ -237,7 +238,7 @@ Every site uses the same structural shell:
 - No dropdown mega-menus
 - Maximum depth: two levels
 - Mobile: hamburger menu, same items
-- Active state: Signal Blue underline or highlight
+- Active state: Signal Orange underline or highlight
 
 ---
 
