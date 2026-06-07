@@ -1,59 +1,42 @@
-node_modules/
-dist/
-.env
-.env.local
-.env.*.local
-
-# IDE
+# Local and agent workspaces
+.claude/
+.superpowers/
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
-.DS_Store
 
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# OS
-Thumbs.db
-
-# Temporary
-.temp/
-tmp/
-# Operating-system files
-Desktop.ini
-# Editor files
-# Local environment files
-!.env.example
-# Credentials and keys
+# Environment and credentials
+.env
+.env.*
 *.pem
 *.key
 *.p12
 *.pfx
-*.crt
-*.cer
 *.token
 *secret*
-*secrets*
 *credential*
-*credentials*
-# Local caches and temporary work
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
 .cache/
 .tmp/
-__pycache__/
-*.pyc
-# Generated archives and exports
+tmp/
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Archives and unpublished exports
 *.zip
 *.tar
 *.tar.gz
 *.tgz
 *.7z
 *.rar
-*.pdf
-# Common dependency folders and build outputs
-build/
-coverage/

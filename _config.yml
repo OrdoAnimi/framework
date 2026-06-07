@@ -1,14 +1,18 @@
-# GitHub Pages configuration
-# Tells Jekyll to pass through the index.html without processing
-
 theme: null
 plugins: []
 include:
   - "_tokens.css"
 exclude:
-  - "*.docx"
+  - ".github"
+  - ".gitignore"
+  - "README.md"
+  - "CONTRIBUTING.md"
+  - "SECURITY.md"
+  - "LICENSE.md"
+  - "LICENCE-TERMS.md"
+  - "CITATION.cff"
   - "*.zip"
 
 title: "Velocity Architecture Framework™"
-description: "Architecture at the speed of the decision. Free, open-source EA practitioner toolkit."
+description: "Public knowledge base for the Velocity Architecture Framework, research, policies, guides and publications."
 url: "https://velocityarchitectureframework.com"
