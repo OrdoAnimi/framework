@@ -92,20 +92,6 @@ Operational files currently present include:
 - `package.json`
 - `vaf-architecture-v2.json`
 
-## Live Demo
-
-[VAF Agentic Architect](https://velocityarchitectureframework.com)
-
-The previous README also identified an Azure Container Instances endpoint for the generated application. Treat that as deployment detail rather than the primary public entry point unless it is confirmed current.
-
-## Screenshots
-
-![Velocity Architecture Framework home](docs/screenshots/vaf-home.png)
-
-![Velocity Architecture Framework overview](docs/screenshots/vaf-framework-overview.png)
-
-![VAF Agentic Architect](docs/screenshots/vaf-agentic-architect.png)
-
 ## How It Fits the Ecosystem
 
 Velocity Architecture Framework is the centre of the architecture ecosystem.
@@ -269,4 +255,3 @@ The v0.1 constitutional package is established when the files below exist, valid
 - [Releases](docs/releases/README.md)
 - [Schemas](schemas/README.md)
 - [Examples](examples/README.md)
-
