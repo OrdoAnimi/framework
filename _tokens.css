@@ -18,9 +18,18 @@
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
+  /* remap site orange vars to ecosystem accent */
+  --orange: var(--color-accent);
+  --orange-hover: #0096B4;
+  --orange-subtle: rgba(0,180,216,0.08);
+  --orange-border: rgba(0,180,216,0.3);
 }
 
 .ecosystem-strip {
+  position: static;
+  top: auto;
+  height: auto;
+  z-index: auto;
   background: var(--color-primary);
   color: var(--color-text-light);
   display: flex;
