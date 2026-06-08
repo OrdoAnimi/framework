@@ -75,10 +75,10 @@ def derive_eyebrow(slug: str, date_str: str) -> str:
     elif re.match(r'^[A-Z]', slug):
         label = 'Extended Paper'
     elif 'addendum' in slug:
-        label = 'Working Paper &middot; Addendum'
+        label = 'Working Paper · Addendum'
     else:
         label = 'Working Paper'
-    return (f'{label} &middot; {date_part}' if date_part else label)
+    return (f'{label} · {date_part}' if date_part else label)
 
 
 def _reader_script(section: str, filename: str) -> str:
