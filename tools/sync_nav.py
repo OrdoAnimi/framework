@@ -237,8 +237,9 @@ def sync(html: str, kind: str, path: Path) -> tuple[str, bool]:
     elif kind == 'lean':
         html, c = _replace(html, _NAV_MARKER_RE, _LEAN_NAV_RE, LEAN_NAV, _wrap_nav)
         changed |= c
-        ftr_re = _LEAN_FTR_STYLED_RE if 'max-width' in (html or '') else _LEAN_FTR_SIMPLE_RE
-        html, c = _replace(html, _FTR_MARKER_RE, ftr_re, LEAN_FOOTER, _wrap_ftr)
+        html, c = _replace(html, _FTR_MARKER_RE, _LEAN_FTR_STYLED_RE, LEAN_FOOTER, _wrap_ftr)
+        if not c:
+            html, c = _replace(html, _FTR_MARKER_RE, _LEAN_FTR_SIMPLE_RE, LEAN_FOOTER, _wrap_ftr)
         changed |= c
 
     elif kind == 'reader':
