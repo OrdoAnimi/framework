@@ -60,11 +60,11 @@ class TestRenderPages(unittest.TestCase):
 
     def test_research_page_back_link(self):
         html = render_research_page(self._meta())
-        self.assertIn('../../research/', html)
+        self.assertIn('/research/', html)
 
     def test_publications_page_back_link(self):
         html = render_publications_page(self._meta())
-        self.assertIn('../../publications/', html)
+        self.assertIn('/publications/', html)
 
     def test_publications_page_contains_title(self):
         html = render_publications_page(self._meta())

@@ -29,6 +29,18 @@ Only material approved for public readers belongs in this repository. Commercial
 
 Repository paths that support public URLs must be changed with corresponding navigation and compatibility updates.
 
+## Tooling
+
+| Script | Purpose |
+|---|---|
+| `tools/generate_pages.py` | Auto-generates reader HTML pages from MD files in `research/` and `publications/` |
+| `tools/sync_nav.py` | Syncs canonical nav and footer across all site HTML pages. Run locally or via CI. |
+| `tools/sync_nav.py --check` | CI mode — exits 1 if any page is out of sync |
+
+The GitHub Actions workflow (`.github/workflows/publish-articles.yml`) runs on every push to `main` that touches `.md` files. It syncs nav/footer, lints for stale anchor links, then generates reader pages for any new articles.
+
+Adding a new article: drop a `.md` file into `research/` or `publications/` and push — the workflow handles the rest.
+
 ## Start reading
 
 - [Framework home](https://velocityarchitectureframework.com/)

@@ -33,7 +33,7 @@ This is a formally specified, trademarked framework. Contributions are welcome b
 
 - Changes to the framework specification (`spec/FRAMEWORK-SPEC.md`) without prior discussion with the owner
 - Changes to the correspondence rules register that add, remove, or modify rules
-- Additions of new viewpoints or instruments presented as official VAF components
+- Additions of new viewpoints or instruments presented as official Velocity™ components
 - Anything that would alter the ISO/IEC/IEEE 42010:2022 conformance claim
 - Commercial derivative works submitted as contributions
 
