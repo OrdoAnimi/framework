@@ -3,8 +3,11 @@
 Generate reader pages for new .md files in research/ and publications/.
 Run from repo root: python tools/generate_pages.py
 """
+import html as _html
+import json
 import os
 import re
+import re as _re
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent
@@ -81,8 +84,10 @@ def derive_eyebrow(slug: str, date_str: str) -> str:
 def _reader_script(section: str, filename: str) -> str:
     src = f'{RAW_BASE}/{section}/{filename}'
     gh = f'{GITHUB_BASE}/{section}/{filename}'
+    src_js = json.dumps(src)   # produces "..." with proper escaping
+    gh_js = json.dumps(gh)
     return (
-        f"const SRC='{src}';\n"
+        f"const SRC={src_js};\n"
         "async function load(){\n"
         "  const el=document.getElementById('article');\n"
         "  try{\n"
@@ -90,8 +95,8 @@ def _reader_script(section: str, filename: str) -> str:
         "    if(!r.ok)throw 0;\n"
         "    el.innerHTML='<div class=\"md\">'+marked.parse(await r.text())+'</div>';\n"
         "  }catch{\n"
-        f"    el.innerHTML='<p class=\"error\">Could not load document. "
-        f'<a href="{gh}" target="_blank" rel="noopener">View on GitHub &#x2197;</a></p>\';\n'
+        f"    el.innerHTML='<p class=\"error\">Could not load document. '\n"
+        f"      +'<a href='+{gh_js}+' target=\"_blank\" rel=\"noopener\">View on GitHub ↗</a></p>';\n"
         "  }\n"
         "}\n"
         "load();"
@@ -99,9 +104,9 @@ def _reader_script(section: str, filename: str) -> str:
 
 
 def render_research_page(meta: dict) -> str:
-    title = meta['title']
-    description = meta['description']
-    eyebrow = meta['eyebrow']
+    title = _html.escape(meta['title'])
+    description = _html.escape(meta['description'])
+    eyebrow = _html.escape(meta['eyebrow'])
     filename = meta['filename']
 
     return f"""<!DOCTYPE html>
@@ -166,9 +171,9 @@ def render_research_page(meta: dict) -> str:
 
 
 def render_publications_page(meta: dict) -> str:
-    title = meta['title']
-    description = meta['description']
-    eyebrow = meta['eyebrow']
+    title = _html.escape(meta['title'])
+    description = _html.escape(meta['description'])
+    eyebrow = _html.escape(meta['eyebrow'])
     filename = meta['filename']
 
     return f"""<!DOCTYPE html>
@@ -234,7 +239,9 @@ def render_publications_page(meta: dict) -> str:
 def update_sidebar(html: str, marker: str, new_button: str) -> str:
     if marker not in html:
         return html
-    if new_button in html:
+    # Extract data-p value to check for existing entry
+    m = _re.search(r'data-p="([^"]+)"', new_button)
+    if m and f'data-p="{m.group(1)}"' in html:
         return html
     return html.replace(marker, new_button + marker)
 
@@ -269,7 +276,7 @@ def process_directory(section_dir: str, section: str, repo_root: str) -> list:
         if target.exists():
             continue
 
-        content = md_path.read_text(encoding='utf-8')
+        content = md_path.read_text(encoding='utf-8', errors='replace')
         meta = extract_meta(content, md_path.name)
 
         if section == 'research':
