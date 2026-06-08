@@ -29,6 +29,17 @@ jobs:
       - name: Run tests
         run: python -m pytest tools/tests/ -v
 
+      - name: Sync nav and footer
+        run: python tools/sync_nav.py
+
+      - name: Nav lint (no stale anchors)
+        run: |
+          if grep -r '#why-vaf\|#repository' --include="*.html" . 2>/dev/null | grep -v "SHARED-NAV"; then
+            echo "FAIL: stale anchor links found"
+            exit 1
+          fi
+          echo "Nav lint: OK"
+
       - name: Generate reader pages
         run: |
           echo "=== MD files in research/ ==="

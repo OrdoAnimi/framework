@@ -127,19 +127,19 @@ def render_research_page(meta: dict) -> str:
 <body>
 {ECOSYSTEM_STRIP}
 <nav>
-  <a class="brand" href="../../index.html">Velocity<sup>&#x2122;</sup></a>
+  <a class="brand" href="/">Velocity<sup>&#x2122;</sup></a>
   <div class="nav-links">
-    <a href="../../index.html">Framework</a>
-    <a href="../../research/">Research</a>
-    <a href="../../publications/">Publications</a>
-    <a href="../../guides/">Guides</a>
+    <a href="/frameworks/">Framework</a>
+    <a href="/research/">Research</a>
+    <a href="/publications/">Publications</a>
+    <a href="/guides/">Guides</a>
   </div>
   <a href="https://velocityarchitectureframework.com/app/portal.html" class="nav-cta" target="_blank" rel="noopener">Open agent &#x2197;</a>
 </nav>
 <main>
   <div class="breadcrumb">
-    <a href="../../index.html">Velocity&#x2122;</a> &#x203A;
-    <a href="../../research/">Research</a> &#x203A;
+    <a href="/">Velocity&#x2122;</a> &#x203A;
+    <a href="/research/">Research</a> &#x203A;
     {title}
   </div>
   <section class="hero">
@@ -148,16 +148,16 @@ def render_research_page(meta: dict) -> str:
     <p class="lead">{description}</p>
   </section>
   <div class="reader-actions">
-    <a class="primary" href="../">&#x2190; Research library</a>
-    <a href="../../index.html">Velocity Framework</a>
+    <a class="primary" href="/research/">&#x2190; Research library</a>
+    <a href="/">Velocity Framework</a>
     <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>
   </div>
   <article class="article" id="article"><p class="loading">Loading document&#x2026;</p></article>
   <footer>
     <strong>ZenCloud advises. StudioSix produces. Velocity decides.</strong>
     <div class="footer-links">
-      <a href="../../research/">Research</a>
-      <a href="../../index.html">Velocity Framework</a>
+      <a href="/research/">Research</a>
+      <a href="/">Velocity Framework</a>
       <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>
       <a href="https://studiosix.com.au/" target="_blank" rel="noopener">StudioSix</a>
     </div>
@@ -194,18 +194,19 @@ def render_publications_page(meta: dict) -> str:
 <body>
 {ECOSYSTEM_STRIP}
 <nav>
-  <a class="brand" href="../../index.html">Velocity<sup>&#x2122;</sup></a>
+  <a class="brand" href="/">Velocity<sup>&#x2122;</sup></a>
   <div class="nav-links">
-    <a href="../../index.html">Framework</a>
-    <a href="../../publications/">Publications</a>
-    <a href="../../guides/">Guides</a>
+    <a href="/frameworks/">Framework</a>
+    <a href="/publications/">Publications</a>
+    <a href="/research/">Research</a>
+    <a href="/guides/">Guides</a>
   </div>
   <a href="https://velocityarchitectureframework.com/app/portal.html" class="nav-cta" target="_blank" rel="noopener">Open agent &#x2197;</a>
 </nav>
 <main>
   <div class="breadcrumb">
-    <a href="../../index.html">Velocity&#x2122;</a> &#x203A;
-    <a href="../../publications/">Publications</a> &#x203A;
+    <a href="/">Velocity&#x2122;</a> &#x203A;
+    <a href="/publications/">Publications</a> &#x203A;
     {title}
   </div>
   <section class="hero">
@@ -214,16 +215,16 @@ def render_publications_page(meta: dict) -> str:
     <p class="lead">{description}</p>
   </section>
   <div class="reader-actions">
-    <a class="primary" href="../">&#x2190; Publication library</a>
-    <a href="../../index.html">Velocity Framework</a>
+    <a class="primary" href="/publications/">&#x2190; Publication library</a>
+    <a href="/">Velocity Framework</a>
     <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>
   </div>
   <article class="article" id="article"><p class="loading">Loading document&#x2026;</p></article>
   <footer>
     <strong>ZenCloud advises. StudioSix produces. Velocity decides.</strong>
     <div class="footer-links">
-      <a href="../../publications/">Publications</a>
-      <a href="../../index.html">Velocity Framework</a>
+      <a href="/publications/">Publications</a>
+      <a href="/">Velocity Framework</a>
       <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>
       <a href="https://studiosix.com.au/" target="_blank" rel="noopener">StudioSix</a>
     </div>
