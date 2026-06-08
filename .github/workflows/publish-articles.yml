@@ -23,11 +23,19 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install dependencies
+        run: pip install pytest
+
       - name: Run tests
         run: python -m pytest tools/tests/ -v
 
       - name: Generate reader pages
-        run: python tools/generate_pages.py
+        run: |
+          echo "=== MD files in research/ ==="
+          ls research/*.md 2>/dev/null || echo "(none)"
+          echo "=== MD files in publications/ ==="
+          ls publications/*.md 2>/dev/null || echo "(none)"
+          python tools/generate_pages.py
 
       - name: Commit generated pages
         run: |
