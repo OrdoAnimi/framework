@@ -1,5 +1,7 @@
 # Chapter 2 — What Enterprise Architecture Is Actually For
 
+*Part 1 · What Is Enterprise Architecture*
+
 The history is useful context. But it does not answer the question most people actually have when they encounter enterprise architecture for the first time.
 
 The question is simpler than the history suggests: what does this discipline actually do, and why does my organisation need it?
@@ -63,3 +65,31 @@ Enterprise architecture is not a project governance function. EA provides archit
 Enterprise architecture is not a documentation function. The frameworks produce artefacts — capability maps, application portfolios, architecture roadmaps, decision records. Those artefacts are tools for enabling decisions and maintaining shared understanding. They are not ends in themselves. An EA function that measures its output in documents produced rather than decisions enabled has confused the artefact for the purpose.
 
 Enterprise architecture is not only for architects. This matters more than it might seem. The picture of the whole that EA provides is only useful if the people who need it can read it. An architecture that lives in the heads of a small group of specialists and nowhere else is not an architecture. It is a dependency on those specialists. Making the architecture legible to everyone who needs it — developers, project managers, infrastructure engineers, business leaders, executives — is part of the discipline.
+
+---
+
+## Translator Panel
+
+> **Executives say:** "What does the architecture team actually deliver?"
+>
+> **What that means:** A fair question, and the honest answer is not "documents" but "better decisions about integration, alignment, and accumulated complexity." EA earns its place when it can point to a decision it improved, not a diagram it produced.
+
+> **Architects say:** "We're here to manage complexity."
+>
+> **What that means:** Complexity is not managed by modelling it; it is managed by making the connections, the alignment, and the accumulated debt visible enough to decide about. The three problems in this chapter are what "managing complexity" actually means in practice.
+
+---
+
+## The Key Idea
+
+Enterprise architecture is justified by a small number of real problems, not by the existence of frameworks. The integration problem (systems that must work together but were never designed to), the alignment problem (technology that drifts away from what the business actually needs), and the accumulation problem (the cost and risk of decisions nobody coordinated) are the recurring reasons an organisation needs someone holding the picture of the whole. Good EA is measured by progress on those problems; everything else — the models, the methods, the certifications — is instrumental. When EA forgets the problems and serves the instruments instead, it becomes the overhead its critics complain about.
+
+**Next:** Chapter 3 maps the landscape of frameworks the profession has produced — and how to tell which one is for which kind of problem.
+
+---
+
+## Further Reading
+
+- **Jeanne Ross, Peter Weill & David Robertson — Enterprise Architecture as Strategy** (Harvard Business Review Press, 2006): The clearest treatment of the alignment problem and why EA is a strategic capability rather than an IT documentation exercise.
+- **Gregor Hohpe — The Software Architect Elevator** (O'Reilly, 2020): On what architects actually contribute in organisations — decisions and connections, not artefacts.
+- **Martin Fowler — "Who Needs an Architect?"** (martinfowler.com): A short, sharp essay on what the role is genuinely for, and the difference between architecture that helps and architecture that performs.

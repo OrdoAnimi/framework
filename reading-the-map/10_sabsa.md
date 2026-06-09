@@ -1,5 +1,7 @@
 # SABSA — Security Architecture
 
+*Part 2 · The Frameworks Explained*
+
 Security is not an add-on to enterprise architecture. It is a dimension of every architecture decision.
 
 Most organisations treat security as something that happens after the architecture is designed. The systems are built, the data flows are established, the integrations are wired up, and then the security team is asked to review it. This approach produces expensive rework, compliance failures, and systems that are structurally difficult to secure regardless of the controls placed on top of them.
@@ -35,3 +37,31 @@ SABSA does one thing exceptionally well. It provides a rigorous method for traci
 Its limits are real. SABSA is comprehensive and the full framework is dense. Most organisations do not apply the complete matrix. They apply the contextual and conceptual layers — the business risk and principles layers — and use the lower layers as a reference rather than a procedure.
 
 SABSA also requires security architecture expertise to apply well. An enterprise architect without a security background can use SABSA principles to ask the right questions. Actually populating the SABSA matrix for a complex programme requires a security architect with specific domain knowledge.
+
+---
+
+## Translator Panel
+
+> **Security architects say:** "We trace this control back to a business risk."
+>
+> **What that means:** The core SABSA move — every control justified by a risk it manages and a business requirement, not by a checklist. The traceability is the value, even if you never populate the full matrix.
+
+> **People say:** "Isn't that just the security team's job?"
+>
+> **What that means:** SABSA's point is that security is an architecture domain, not a bolt-on. An enterprise architect without deep security expertise can still ask the SABSA question — what business risk does this control manage? — and that question alone improves most decisions.
+
+---
+
+## The Key Idea
+
+SABSA is the domain framework for security architecture, and its defining contribution is traceability: every security control connected backward to a business risk and forward to a specific implementation, so security is justified by what it protects rather than by a compliance checklist. Like Zachman it is a layered model that few organisations populate in full; its everyday value is the habit of mind it instils — start from business risk, not from controls. That single discipline is usable by any architect, security specialist or not, and it is what keeps security architecture connected to the business rather than bolted on after the fact.
+
+**Next:** Chapter 11 moves to the business layer and BIZBOK — what business architecture actually tells you.
+
+---
+
+## Further Reading
+
+- **The SABSA Institute** (sabsa.org): The framework, the layered matrix, and the certification pathway from its source.
+- **John Sherwood, Andrew Clark & David Lynas — Enterprise Security Architecture: A Business-Driven Approach**: The foundational SABSA text, and the clearest statement of the risk-to-control traceability idea.
+- **(ISC)² — CISSP**: The broad security credential to set alongside SABSA's architecture-specific one, for understanding the wider security certification landscape.

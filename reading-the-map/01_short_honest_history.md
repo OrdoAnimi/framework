@@ -1,5 +1,7 @@
 # Chapter 1 — A Short Honest History
 
+*Part 1 · What Is Enterprise Architecture*
+
 Every discipline has an origin story. Enterprise Architecture has several, depending on who is telling it. The official version tends to start with a framework. The honest version starts with a problem.
 
 The problem was scale.
@@ -81,3 +83,31 @@ The profession is still working through these challenges. The frameworks are mor
 - **The 2020s — acceleration and disruption.** Cloud, agile, and AI compress the cycles EA was built around. TOGAF 10 arrives in 2022, and Davis argues that AI is a first-class element the People-Process-Technology model can no longer treat as just another tool.
 
 The pattern across four decades is consistent. Each milestone added a way of *describing* or *governing* the enterprise, and each proved most valuable when it stayed close to real decisions and least valuable when it hardened into ceremony. That tension — between the map and the territory — is the thread the rest of this book follows.
+
+---
+
+## Translator Panel
+
+> **The official history says:** "Enterprise architecture began with Zachman in 1987 and matured through TOGAF into a rigorous profession."
+>
+> **What that means:** That is the framework-first telling. The honest version starts with a problem — scale outrunning anyone's picture of the whole — that each framework was invented to address. Knowing the problem a framework answered tells you when it helps and when it is ceremony.
+
+> **People say:** "We're a TOGAF shop" (or a Zachman shop, or an ArchiMate shop).
+>
+> **What that means:** Usually it signals which vocabulary the organisation has borrowed, not that it runs the framework in full. The history explains why: each framework was layered onto the last, so most organisations carry a mix — named or not — rather than a single pure method.
+
+---
+
+## The Key Idea
+
+The history of enterprise architecture is best read not as a parade of frameworks but as a sequence of responses to one recurring problem: technological scale outrunning any single person's picture of the whole. Zachman gave the profession a way to classify descriptions; TOGAF gave it a method; the 2000s gave it domain frameworks, a notation, and a commercial industry; the 2010s gave it an honest reckoning with its own failure modes; and the 2020s are testing all of it against cloud, agile, and AI. The through-line is that every advance was valuable when it stayed close to real decisions and became ceremony when it drifted away from them — which is exactly the tension, between the map and the territory, that the rest of this book is about.
+
+**Next:** Chapter 2 turns from where EA came from to what it is actually *for* — the small number of real problems that justify the whole discipline.
+
+---
+
+## Further Reading
+
+- **John Zachman — "A Framework for Information Systems Architecture"** (IBM Systems Journal, 1987): The founding paper, and still the clearest statement of why multiple kinds of description are necessary. Short and readable.
+- **The Open Group — TOGAF Standard, introduction and history** (opengroup.org): The official account of TOGAF's lineage from TAFIM — useful for seeing how the method was meant to be used before it accreted ceremony.
+- **Svyatoslav Kotusev — The Practice of Enterprise Architecture** (SK Publishing, 2018): A critical, research-based history that is honest about the gap between the official story and what organisations actually did — the scholarly companion to this chapter's "honest version".

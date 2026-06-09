@@ -1,5 +1,7 @@
 # TOGAF — What It Is and Where It Came From
 
+*Part 2 · The Frameworks Explained*
+
 TOGAF is the most widely used enterprise architecture framework in the world. Most people in IT will encounter it at some point. Many will be asked about it in interviews. Some will be certified in it. Very few will use the full framework as written.
 
 That last sentence is not a criticism. It is a fact the framework itself acknowledges. TOGAF is designed to be applied selectively, adapted to context, and used as a thinking structure rather than a procedure manual. Understanding what it is and where it came from makes that approach easier.
@@ -53,3 +55,31 @@ The ADM gets its own chapter because it deserves that attention. But here is eno
 Phase A is called Architecture Vision. At Meridian it looks like this. The new EA sits down with the CIO and asks one question: what does success actually mean for this programme? Not the technical success. The business success. The answer becomes the Architecture Vision — a single page that says Meridian will enable safe connected care across 180 sites by exiting its VMware estate and unifying its clinical systems. Every decision made in the programme from that moment is tested against that statement. If a proposed decision moves Meridian toward the vision it proceeds. If it does not it requires a formal justification. That is Phase A. One page. One test. Every subsequent decision measured against it.
 
 Chapter 7 shows how to build it.
+
+---
+
+## Translator Panel
+
+> **People say:** "We're TOGAF certified" or "we're a TOGAF shop."
+>
+> **What that means:** It signals a shared vocabulary and that someone passed the exam — not that the ADM is run in full. Most TOGAF shops borrow the structure selectively, which is the healthy way to use it.
+
+> **Sceptics say:** "TOGAF is too heavy for us."
+>
+> **What that means:** Often true if it is run ceremonially, and false if it is used as a thinking structure. The weight is optional; the sequence of questions the method asks is the part worth keeping.
+
+---
+
+## The Key Idea
+
+TOGAF is the profession's dominant method — not a statement of what your architecture should be, but a disciplined way of developing it, anchored by the Architecture Development Method. Its strength is a shared vocabulary and a defensible sequence; its risk is ceremony, because a framework built for large government and defence enterprises turns into pure overhead when every phase is performed regardless of need. The way to get value from TOGAF is to treat it as a structure for thinking rather than a procedure to perform — borrowing its sequence where it improves a decision and leaving the rest. Used that way it remains the most useful common language the field has.
+
+**Next:** Chapter 7 goes inside the method itself — the ADM, and how to use it without being used by it.
+
+---
+
+## Further Reading
+
+- **The Open Group — TOGAF Standard, 10th Edition** (opengroup.org): The method itself. Read the overview and the ADM summaries; apply the rest selectively.
+- **Gregor Hohpe — The Software Architect Elevator** (O'Reilly, 2020): The best antidote to ceremonial TOGAF — architecture as decisions and connection rather than process for its own sake.
+- **Svyatoslav Kotusev — The Practice of Enterprise Architecture** (SK Publishing, 2018): Research-based and candid about the gap between TOGAF as written and TOGAF as practised.

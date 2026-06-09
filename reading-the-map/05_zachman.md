@@ -75,3 +75,31 @@ It is not a methodology. The Zachman Framework tells you where descriptions belo
 It is also not a practical tool for most daily architecture work. Populating all thirty-six cells for a large organisation is a significant undertaking that takes years. Most organisations use a subset of the cells relevant to their current problem rather than attempting completeness.
 
 And it does not address how architectures are developed, governed, or changed over time. For that you need TOGAF. For visual notation you need ArchiMate. Zachman provides the intellectual foundation. The other frameworks provide the working method.
+
+---
+
+## Translator Panel
+
+> **Architects say:** "Let's check it against the Zachman grid."
+>
+> **What that means:** They are using it as a completeness check — does every kind of description have a home? — not as a method to follow. That is the right use; trying to populate all thirty-six cells is almost never the right use.
+
+> **People say:** "We use the Zachman Framework."
+>
+> **What that means:** Almost always they mean they use its *idea* — that different perspectives need different descriptions — as a reference, not that they maintain a full thirty-six-cell model. The idea is the valuable part; the exhaustive model rarely is.
+
+---
+
+## The Key Idea
+
+Zachman gave enterprise architecture its first taxonomy: a six-by-six grid that says a complete description of an enterprise needs six perspectives (from the executive's scope to the running enterprise) crossed with six interrogatives (what, how, where, who, when, why). Its enduring value is not as a method — it tells you nothing about how to do the work — but as a completeness check and a shared vocabulary that stops people confusing one kind of description for another. Used as a reference lens it is rigorous and clarifying; used as a thirty-six-cell modelling exercise it becomes the kind of ceremony that takes years and helps no one. Recognise the idea, borrow the discipline, and leave the full matrix on the shelf.
+
+**Next:** Chapter 6 turns to TOGAF — the framework that gave the profession not a classification but a method.
+
+---
+
+## Further Reading
+
+- **John Zachman — the framework from its author** (zachman.com): The grid and the rationale for the rows and columns, stated more clearly than most secondary summaries.
+- **Roger Sessions — writing on Zachman as a taxonomy** (objectwatch.com): Helpful for understanding Zachman specifically as a classification scheme rather than a method — the distinction that makes it usable.
+- **Len Silverston & Paul Agnew — The Data Model Resource Book**: For the "What" column specifically — how the same data concept is expressed differently from the conceptual through logical to physical perspectives.

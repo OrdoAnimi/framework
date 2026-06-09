@@ -1,5 +1,7 @@
 # Government and Defence Frameworks
 
+*Part 2 · The Frameworks Explained*
+
 Not every organisation uses TOGAF. Government and defence organisations often have their own frameworks, mandated by regulation, procurement rules, or interoperability requirements.
 
 If you work in or with government or defence you will encounter these frameworks by name and sometimes by requirement. If you do not, this chapter gives you enough to recognise them, understand why they exist, and navigate a conversation where they come up.
@@ -37,3 +39,31 @@ MODAF — the UK Ministry of Defence Architecture Framework — was developed as
 NAF — the NATO Architecture Framework — was developed to support NATO’s multinational interoperability requirements. Where DODAF governs US systems and MODAF governs UK systems, NAF governs systems that must work together across NATO member nations. NAF has been progressively aligned with ArchiMate notation to improve readability and tool support.
 
 Meridian is an NHS organisation, not a defence contractor. The EA will never directly use FEAF, DODAF, MODAF, or NAF. But she will encounter colleagues who have come from government or defence backgrounds who use vocabulary from these frameworks without realising not everyone shares it. Knowing what the frameworks are — and why they exist — makes those conversations easier and prevents the false assumption that everyone in the room is using the same mental model.
+
+---
+
+## Translator Panel
+
+> **Colleagues say:** "We need an OV-1" (or a specific viewpoint).
+>
+> **What that means:** Vocabulary from DODAF, MODAF, or NAF — they are asking for a particular operational view. Recognising the term lets you give them what they need without adopting the whole defence framework.
+
+> **People say:** "Shouldn't we be using FEAF or DODAF?"
+>
+> **What that means:** Right in government and defence, where they are mandated; usually disproportionate elsewhere. Outside those sectors, borrow the discipline — viewpoints tailored to specific stakeholders — without the mandated volume of detail.
+
+---
+
+## The Key Idea
+
+The government and defence frameworks — FEAF in the US federal government, DODAF for US defence, MODAF for the UK, NAF for NATO — exist because public-sector and multinational programmes need a common, mandated way to describe and compare architectures across contractors and nations. Their organising idea, the viewpoint (a description tailored to a specific stakeholder's concern), is genuinely useful everywhere. Their mandated comprehensiveness is not: outside the sectors that require it, populating every prescribed view is disproportionate. The transferable lesson is the viewpoint discipline; the frameworks themselves you adopt only when the sector demands them.
+
+**Next:** Chapter 10 turns to SABSA — the framework that treats security as an architecture domain in its own right.
+
+---
+
+## Further Reading
+
+- **US OMB — Federal Enterprise Architecture Framework (FEAF) and the Common Approach** (whitehouse.gov / cio.gov): The reference for US federal EA and the source of much government architecture vocabulary.
+- **US DoD — DODAF; UK MoD — MODAF; NATO — NAF**: The defence frameworks in their own words, including the viewpoint definitions you are most likely to encounter by name.
+- **Practitioner introductions to defence architecture viewpoints**: For decoding the OV / SV / TV vocabulary without working through the full mandated model.

@@ -1,5 +1,7 @@
 # The ADM — How to Use It
 
+*Part 2 · The Frameworks Explained*
+
 The ADM is not a checklist. It is a thinking structure.
 
 That distinction matters more than almost anything else in this book. Every architect who has applied TOGAF badly has done so by treating the ADM as a procedure to follow. Every architect who has applied it well has done so by treating it as a way of organising their thinking about a complex problem. Same framework. Completely different results.
@@ -67,3 +69,31 @@ Governance that produces documents but not decisions is Architecture Theatre. Th
 Phase H is often ignored entirely. Architecture programmes that stop at the end of Phase F treat the roadmap as permanent. But organisations change. Business priorities shift. New technology appears. Regulations arrive. An architecture that cannot evolve in response to these changes becomes irrelevant. Phase H is the mechanism that keeps it relevant.
 
 Meridian’s Architecture Board meets fortnightly. Before each session the EA distributes a one-page briefing: decisions pending, decisions made since last session, deviations from the architecture principles, and one item for the board to resolve. The board resolves the item. The EA updates the decision log. That is Phases G and H working. Not a governance process performing itself. A governance process producing decisions.
+
+---
+
+## Translator Panel
+
+> **TOGAF says:** "Move through the ADM phases, A to H."
+>
+> **What that means:** A sound sequence of questions, not a mandatory waterfall. Run the phases that improve the decision in front of you; lighten or skip the rest. The "minimum viable ADM" is usually the right starting point.
+
+> **Delivery teams say:** "The ADM will slow us down."
+>
+> **What that means:** It will if it is performed as ceremony. Used selectively — a one-page vision, the baseline you genuinely cannot skip, a real roadmap — it speeds delivery by preventing the rework that comes from skipping the thinking.
+
+---
+
+## The Key Idea
+
+The ADM is the engine of TOGAF: a cycle of phases that moves an organisation from vision through baseline and target, gap analysis, roadmap, and governance. Read as a checklist to be completed in full, it produces shelfware; read as a sequence of questions to be answered to the depth each decision requires, it is one of the most useful thinking structures in the field. The discipline is selective application — run Phase A almost always, scope the domain phases to the decision, and stop when the question is answered — keeping the method an instrument rather than a ritual.
+
+**Next:** Chapter 8 turns from method to notation — ArchiMate, the visual language for drawing what the ADM produces.
+
+---
+
+## Further Reading
+
+- **The Open Group — TOGAF Standard: the ADM** (opengroup.org): The canonical phase-by-phase description. Read for the questions each phase answers, not the artefact lists.
+- **Appendix C — ADM Phase Reference** (this book): A one-page version of every phase with when to apply it and when to skip it.
+- **Michael Watkins — The First 90 Days** (Harvard Business Review Press, 2013): The listen-before-acting discipline that makes the early ADM phases work in a real organisation.
