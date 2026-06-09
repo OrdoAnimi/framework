@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading the Map &#x2014; Velocity&#x2122; Publications</title>
+<meta name="description" content="Reading the Map — a navigation guide to Enterprise Architecture for everyone in IT. 54 chapters and 6 appendices, grounded in the Meridian Health Partnership worked example.">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+<style>
+:root{--bg:#F8FAFC;--surface:#FFFFFF;--surface-2:#F1F5F9;--border:#E2E8F0;--text:#0F172A;--text-2:#475569;--text-3:#94A3B8;--orange:#E8630A;--orange-subtle:#FFF7ED;--navy:#1E3A5F;--navy-2:#0f172a;--r:10px;--shadow-md:0 4px 12px rgba(15,23,42,.08),0 2px 4px rgba(15,23,42,.04)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.65}
+a{color:var(--orange);text-decoration:none}a:hover{text-decoration:underline}
+nav.site{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{font-family:'Playfair Display',serif;font-weight:700;color:var(--text)}.brand sup{font-size:.5rem;color:var(--orange);vertical-align:super}
+.nav-links{display:flex;gap:1.25rem;flex-wrap:wrap}.nav-links a{font-size:.85rem;color:var(--text-2)}
+.nav-cta{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;background:var(--orange);color:#fff;font-family:'DM Mono',monospace;font-size:.65rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:4px}.nav-cta:hover{background:#CC5508}
+.ecosystem-strip{background:#0f172a;color:#F8FAFC;display:flex;align-items:center;gap:2rem;padding:.5rem 2rem;font-size:.75rem;font-family:'DM Sans',sans-serif;border-bottom:1px solid #1e293b;flex-wrap:wrap}
+.ecosystem-strip .eco-label{color:#64748B;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;margin-right:auto}
+.ecosystem-strip a{color:#F8FAFC;text-decoration:none;opacity:.8}
+.book{display:grid;grid-template-columns:320px minmax(0,1fr);gap:0;max-width:1320px;margin:0 auto;align-items:start}
+.toc{position:sticky;top:64px;height:calc(100vh - 64px);overflow-y:auto;border-right:1px solid var(--border);background:var(--surface);padding:1.5rem 1.25rem 4rem}
+.toc-head{font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;margin-bottom:.25rem}
+.toc-sub{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:1.25rem}
+.toc-search{width:100%;padding:.5rem .65rem;border:1px solid var(--border);border-radius:6px;font-family:'DM Sans',sans-serif;font-size:.82rem;margin-bottom:1rem;background:var(--bg)}
+.toc-part{font-family:'DM Mono',monospace;font-size:.6rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin:1.25rem 0 .4rem;padding-top:.5rem}
+.toc-part:first-of-type{margin-top:0}
+.toc a.ch{display:flex;gap:.55rem;align-items:baseline;padding:.32rem .5rem;border-radius:6px;font-size:.82rem;color:var(--text-2);line-height:1.35}
+.toc a.ch:hover{background:var(--surface-2);text-decoration:none;color:var(--text)}
+.toc a.ch.active{background:var(--orange-subtle);color:var(--orange);font-weight:500}
+.toc a.ch .num{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--text-3);min-width:1.6rem;flex-shrink:0}
+.toc a.ch.active .num{color:var(--orange)}
+.reader{padding:2.5rem 3rem 4rem;min-width:0}
+.breadcrumb{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.08em;color:var(--text-3);margin-bottom:1.5rem}
+.breadcrumb a{color:var(--text-3)}.breadcrumb a:hover{color:var(--orange)}
+.progress-wrap{height:3px;background:var(--border);border-radius:3px;margin-bottom:2rem;overflow:hidden}
+.progress-bar{height:100%;width:0;background:var(--orange);transition:width .25s}
+.article{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:2.5rem 2.75rem;box-shadow:var(--shadow-md)}
+.loading,.error{font-family:'DM Mono',monospace;font-size:.85rem;color:var(--text-3)}
+.md{font-size:.98rem;color:var(--text-2);line-height:1.8;max-width:74ch}
+.md h1{font-family:'Playfair Display',serif;font-size:2.2rem;line-height:1.15;color:var(--text);margin-bottom:1rem}
+.md h2{font-family:'Playfair Display',serif;font-size:1.45rem;color:var(--text);margin:2.4rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.md h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:1.7rem 0 .5rem}
+.md h4{font-family:'DM Mono',monospace;font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin:1.25rem 0 .35rem}
+.md p{margin-bottom:1rem}
+.md em{color:var(--text);font-style:italic}
+.md strong{color:var(--text);font-weight:700}
+.md ul,.md ol{margin:0 0 1rem 1.4rem}.md li{margin-bottom:.4rem}
+.md blockquote{border-left:3px solid var(--orange);background:var(--orange-subtle);border-radius:0 6px 6px 0;margin:1.5rem 0;padding:.9rem 1.3rem;color:var(--text)}
+.md blockquote p{margin:0 0 .5rem}.md blockquote p:last-child{margin:0}
+.md hr{border:none;border-top:1px solid var(--border);margin:2.2rem 0}
+.md table{width:100%;border-collapse:collapse;margin:1.4rem 0;display:block;overflow-x:auto}
+.md th,.md td{border:1px solid var(--border);padding:.55rem .8rem;text-align:left;font-size:.88rem}
+.md th{background:var(--surface-2);font-family:'DM Mono',monospace;font-size:.66rem;color:var(--text-2);text-transform:uppercase;letter-spacing:.04em}
+.md code{font-family:'DM Mono',monospace;font-size:.82em;background:var(--surface-2);border:1px solid var(--border);padding:.1em .4em;border-radius:3px}
+.pager{display:flex;justify-content:space-between;gap:1rem;margin-top:2rem}
+.pager a{flex:1;display:flex;flex-direction:column;gap:.2rem;padding:.9rem 1.1rem;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text-2);font-size:.9rem;min-height:44px;justify-content:center}
+.pager a:hover{border-color:var(--orange);color:var(--orange);text-decoration:none}
+.pager a.next{text-align:right}
+.pager .dir{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3)}
+.pager a:hover .dir{color:var(--orange)}
+.pager .ghost{visibility:hidden}
+footer.site{margin:0;background:var(--navy-2);color:rgba(226,232,240,.65);padding:2rem 3rem;border-radius:0}
+footer.site .footer-links{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem}
+footer.site .footer-links a{color:#cbd5e1;font-size:.8rem}
+.toc-toggle{display:none;align-items:center;gap:.5rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.55rem .9rem;font-size:.82rem;color:var(--text-2);font-family:'DM Mono',monospace;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;margin:1rem 1.5rem 0}
+@media(max-width:1024px){
+  .book{grid-template-columns:1fr}
+  .toc-toggle{display:inline-flex}
+  .toc{position:fixed;top:0;left:0;bottom:0;height:100vh;width:300px;z-index:50;transform:translateX(-100%);transition:transform .25s;box-shadow:var(--shadow-md)}
+  .toc.open{transform:translateX(0)}
+  .toc-backdrop{display:none;position:fixed;inset:0;background:rgba(15,23,42,.4);z-index:45}
+  .toc-backdrop.open{display:block}
+  .reader{padding:1.5rem}
+  .article{padding:1.5rem 1.4rem}
+}
+</style>
+</head>
+<body>
+<nav class="ecosystem-strip" aria-label="Ecosystem navigation">
+  <span class="eco-label">ZenCloud Ecosystem</span>
+  <a href="https://www.zencloud.com.au">ZenCloud&#x2122;</a>
+  <a href="https://studiosix.com.au">StudioSix&#x2122;</a>
+  <a href="https://velocityarchitectureframework.com">Velocity&#x2122;</a>
+</nav>
+<nav class="site">
+  <a class="brand" href="/">Velocity<sup>&#x2122;</sup></a>
+  <div class="nav-links">
+    <a href="/frameworks/">Framework</a>
+    <a href="/publications/">Publications</a>
+    <a href="/research/">Research</a>
+    <a href="/guides/">Guides</a>
+  </div>
+  <a href="https://velocityarchitectureframework.com/app/portal.html" class="nav-cta" target="_blank" rel="noopener">Open agent &#x2197;</a>
+</nav>
+<button class="toc-toggle" id="tocToggle" aria-label="Toggle contents">&#9776; Contents</button>
+<div class="toc-backdrop" id="tocBackdrop"></div>
+<div class="book">
+  <aside class="toc" id="toc">
+    <div class="toc-head">Reading the Map</div>
+    <div class="toc-sub">54 Chapters &middot; 6 Appendices</div>
+    <input type="text" class="toc-search" id="tocSearch" placeholder="Filter chapters&hellip;" aria-label="Filter chapters">
+    <nav id="tocList" aria-label="Table of contents"></nav>
+  </aside>
+  <main class="reader">
+    <div class="breadcrumb">
+      <a href="/">Velocity&#x2122;</a> &#x203A;
+      <a href="/publications/">Publications</a> &#x203A;
+      Reading the Map
+    </div>
+    <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+    <article class="article md" id="article"><p class="loading">Loading&#x2026;</p></article>
+    <nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
+    <footer class="site" style="margin-top:3rem;border-radius:10px;">
+      <strong>ZenCloud advises. StudioSix produces. Velocity decides.</strong>
+      <div class="footer-links">
+        <a href="/publications/">Publications</a>
+        <a href="/">Velocity Framework</a>
+        <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>
+        <a href="https://studiosix.com.au/" target="_blank" rel="noopener">StudioSix</a>
+      </div>
+    </footer>
+  </main>
+</div>
+<script>
+const EXIST = '/reading-the-map/';
+const HERE  = '';
+const PARTS = {
+  intro:'Introduction',
+  p1:'Part 1 — What Is Enterprise Architecture',
+  p2:'Part 2 — The Frameworks Explained',
+  p3:'Part 3 — The Core Concepts',
+  p4:'Part 4 — Reading the Diagrams',
+  p5:'Part 5 — The Language Map',
+  p6:'Part 6 — Navigating the Territory',
+  p7:'Part 7 — The Practitioner’s Compass',
+  app:'Appendices'
+};
+const CH = [
+  ['00','Introduction',EXIST+'00_introduction.md','intro'],
+  ['01','A Short Honest History',EXIST+'01_short_honest_history.md','p1'],
+  ['02','What Enterprise Architecture Is Actually For',EXIST+'02_what_ea_is_actually_for.md','p1'],
+  ['03','The Landscape of Frameworks',EXIST+'03_landscape_of_frameworks.md','p1'],
+  ['04','The Landscape at a Glance',EXIST+'04_landscape_at_a_glance.md','p2'],
+  ['05','Zachman: The Classification System',EXIST+'05_zachman.md','p2'],
+  ['06','TOGAF: What It Is and Where It Came From',EXIST+'06_togaf_what_it_is.md','p2'],
+  ['07','The ADM: How to Use It',EXIST+'07_adm_how_to_use_it.md','p2'],
+  ['08','ArchiMate: The Visual Language',EXIST+'08_archimate.md','p2'],
+  ['09','Government and Defence Frameworks',EXIST+'09_government_defence_frameworks.md','p2'],
+  ['10','SABSA: Security Architecture',EXIST+'10_sabsa.md','p2'],
+  ['11','BIZBOK and Business Architecture',EXIST+'11_bizbok_business_architecture.md','p2'],
+  ['12','SAP EA: Architecture Inside the Machine',EXIST+'12_sap_ea.md','p2'],
+  ['13','Wardley Mapping: Seeing What Moves',EXIST+'13_wardley_mapping.md','p2'],
+  ['14','ITIL: Running What Architecture Builds',EXIST+'14_itil.md','p2'],
+  ['15','COBIT: Governing What IT Does',EXIST+'15_cobit.md','p2'],
+  ['16','BDAT: The Four Domains',EXIST+'16_bdat_four_domains.md','p3'],
+  ['17','Architecture Principles',EXIST+'17_architecture_principles.md','p3'],
+  ['18','Capability Maps in Practice',EXIST+'18_capability_maps.md','p3'],
+  ['19','Data Architecture',EXIST+'19_data_architecture.md','p3'],
+  ['20','Application Architecture',EXIST+'20_application_architecture.md','p3'],
+  ['21','How the Frameworks Work Together',HERE+'21_how_frameworks_work_together.md','p3'],
+  ['22','The Architecture Vision',HERE+'22_architecture_vision.md','p3'],
+  ['23','Current State and Target State',HERE+'23_current_and_target_state.md','p3'],
+  ['24','Gap Analysis',HERE+'24_gap_analysis.md','p3'],
+  ['25','Architecture Roadmap',HERE+'25_architecture_roadmap.md','p3'],
+  ['26','Architecture Debt',HERE+'26_architecture_debt.md','p3'],
+  ['27','Application Portfolio and the 6Rs',HERE+'27_application_portfolio.md','p3'],
+  ['28','Architecture Governance in Practice',HERE+'28_architecture_governance_in_practice.md','p3'],
+  ['29','Building Blocks — ABB and SBB',HERE+'29_building_blocks_abb_sbb.md','p3'],
+  ['30','Transition Architecture',HERE+'30_transition_architecture.md','p3'],
+  ['31','Architecture Patterns',HERE+'31_architecture_patterns.md','p3'],
+  ['32','Reading the Room',HERE+'32_reading_the_room.md','p3'],
+  ['33','The Architecture Function',HERE+'33_the_architecture_function.md','p3'],
+  ['34','How to Read a Capability Map',HERE+'34_read_capability_map.md','p4'],
+  ['35','How to Read a Component Diagram',HERE+'35_read_component_diagram.md','p4'],
+  ['36','How to Read a Sequence Diagram',HERE+'36_read_sequence_diagram.md','p4'],
+  ['37','How to Read an Activity Diagram',HERE+'37_read_activity_diagram.md','p4'],
+  ['38','How to Read an ArchiMate View',HERE+'38_read_archimate_view.md','p4'],
+  ['39','How to Read a Zachman Cell',HERE+'39_read_zachman_cell.md','p4'],
+  ['40','How to Read a Wardley Map',HERE+'40_read_wardley_map.md','p4'],
+  ['41','How to Read an Architecture Roadmap',HERE+'41_read_architecture_roadmap.md','p4'],
+  ['42','Why Language Matters',HERE+'42_why_language_matters.md','p5'],
+  ['43','The Full Translation Table',HERE+'43_full_translation_table.md','p5'],
+  ['44','The Words That Unlock Budget',HERE+'44_words_that_unlock_budget.md','p5'],
+  ['45','The Words That Earn Trust',HERE+'45_words_that_earn_trust.md','p5'],
+  ['46','From Any Role into EA Thinking',HERE+'46_from_any_role_into_ea_thinking.md','p6'],
+  ['47','How to Read an Architecture Conversation',HERE+'47_read_architecture_conversation.md','p6'],
+  ['48','How to Ask Better Questions',HERE+'48_ask_better_questions.md','p6'],
+  ['49','How to Contribute Without the Title',HERE+'49_contribute_without_the_title.md','p6'],
+  ['50','The 90-Day Plan',HERE+'50_ninety_day_plan.md','p6'],
+  ['51','Connection Over Control — de Visscher',HERE+'51_connection_over_control_de_visscher.md','p7'],
+  ['52','The Architect as Educator — Dooher',HERE+'52_architect_as_educator_dooher.md','p7'],
+  ['53','AI and the Capability Model — Davis',HERE+'53_ai_and_capability_model_davis.md','p7'],
+  ['54','Staying Grounded',HERE+'54_staying_grounded.md','p7'],
+  ['A','Appendix A — Full Glossary',HERE+'appendix_a_glossary.md','app'],
+  ['B','Appendix B — Framework Comparison Table',HERE+'appendix_b_framework_comparison.md','app'],
+  ['C','Appendix C — ADM Phase Reference',HERE+'appendix_c_adm_phase_reference.md','app'],
+  ['D','Appendix D — Diagram Reading Guide',HERE+'appendix_d_diagram_reading_guide.md','app'],
+  ['E','Appendix E — The Professional Landscape',HERE+'appendix_e_professional_landscape.md','app'],
+  ['F','Appendix F — Further Reading',HERE+'appendix_f_further_reading.md','app']
+];
+const idx = {};
+CH.forEach((c,i)=>idx[c[0]]=i);
+const tocList = document.getElementById('tocList');
+let lastPart = null;
+CH.forEach((c)=>{
+  if(c[3]!==lastPart){
+    const h = document.createElement('div');
+    h.className='toc-part';
+    h.textContent=PARTS[c[3]];
+    tocList.appendChild(h);
+    lastPart=c[3];
+  }
+  const a=document.createElement('a');
+  a.className='ch';
+  a.href='#'+c[0];
+  a.dataset.id=c[0];
+  a.innerHTML='<span class="num">'+c[0]+'</span><span class="t">'+c[1]+'</span>';
+  tocList.appendChild(a);
+});
+const articleEl=document.getElementById('article');
+const pagerEl=document.getElementById('pager');
+const progressEl=document.getElementById('progressBar');
+function setActive(id){
+  document.querySelectorAll('.toc a.ch').forEach(a=>{a.classList.toggle('active',a.dataset.id===id);});
+  const pos=(idx[id]+1)/CH.length*100;
+  progressEl.style.width=pos+'%';
+}
+function buildPager(id){
+  const i=idx[id];
+  const prev=i>0?CH[i-1]:null;
+  const next=i<CH.length-1?CH[i+1]:null;
+  let h='';
+  if(prev){h+='<a class="prev" href="#'+prev[0]+'"><span class="dir">&#x2190; Previous</span><span>'+prev[0]+' &middot; '+prev[1]+'</span></a>';}
+  else{h+='<a class="prev ghost" href="#">.</a>';}
+  if(next){h+='<a class="next" href="#'+next[0]+'"><span class="dir">Next &#x2192;</span><span>'+next[0]+' &middot; '+next[1]+'</span></a>';}
+  else{h+='<a class="next ghost" href="#">.</a>';}
+  pagerEl.innerHTML=h;
+}
+async function load(id){
+  if(!(id in idx)) id=CH[0][0];
+  const c=CH[idx[id]];
+  setActive(id);
+  buildPager(id);
+  articleEl.innerHTML='<p class="loading">Loading&#x2026;</p>';
+  window.scrollTo({top:0,behavior:'auto'});
+  try{
+    const r=await fetch(c[2]);
+    if(!r.ok) throw 0;
+    const txt=await r.text();
+    articleEl.innerHTML=marked.parse(txt);
+    document.title=c[1]+' — Reading the Map — Velocity™';
+  }catch(e){
+    const gh='https://github.com/ZenCloudAU/velocity-architecture/blob/main/'+
+      (c[2].indexOf('/reading-the-map/')===0?'reading-the-map/'+c[2].split('/').pop():'publications/reading-the-map/'+c[2]);
+    articleEl.innerHTML='<p class="error">This chapter is not published yet, or could not be loaded. '+
+      '<a href="'+gh+'" target="_blank" rel="noopener">View source on GitHub &#x2197;</a></p>';
+  }
+  closeToc();
+}
+function go(){ load((location.hash||'#00').slice(1)); }
+window.addEventListener('hashchange',go);
+document.getElementById('tocSearch').addEventListener('input',function(){
+  const q=this.value.toLowerCase();
+  document.querySelectorAll('#tocList a.ch').forEach(a=>{
+    const t=a.querySelector('.t').textContent.toLowerCase()+' '+a.dataset.id.toLowerCase();
+    a.style.display=t.indexOf(q)>=0?'':'none';
+  });
+});
+const toc=document.getElementById('toc');
+const backdrop=document.getElementById('tocBackdrop');
+function openToc(){toc.classList.add('open');backdrop.classList.add('open');}
+function closeToc(){toc.classList.remove('open');backdrop.classList.remove('open');}
+document.getElementById('tocToggle').addEventListener('click',openToc);
+backdrop.addEventListener('click',closeToc);
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT') return;
+  const id=(location.hash||'#00').slice(1);
+  const i=idx[id];
+  if(e.key==='ArrowRight'&&i<CH.length-1){location.hash='#'+CH[i+1][0];}
+  if(e.key==='ArrowLeft'&&i>0){location.hash='#'+CH[i-1][0];}
+});
+go();
+</script>
+</body>
+</html>
