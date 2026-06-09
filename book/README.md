@@ -41,6 +41,23 @@
 - [Chapter 31: The Repository as Decision Infrastructure](chapter-31-the-repository-as-decision-infrastructure.md)
 - [Chapter 32: Authority Design](chapter-32-authority-design.md)
 - [Chapter 33: The Velocity Operating Model](chapter-33-the-velocity-operating-model.md)
+- [Chapter 34: The Pulse System](chapter-34-the-pulse-system.md)
+- [Chapter 35: The Clarity Stack in Operation](chapter-35-the-clarity-stack-in-operation.md)
+- [Chapter 36: The Decision Architecture Method](chapter-36-the-decision-architecture-method.md)
+- [Chapter 37: Ownership Velocity](chapter-37-ownership-velocity.md)
+- [Chapter 38: The Control Paradox](chapter-38-the-control-paradox.md)
+- [Chapter 39: The Workshop Trap](chapter-39-the-workshop-trap.md)
+- [Chapter 40: Architecture Theatre](chapter-40-architecture-theatre.md)
+- [Chapter 41: What the Decisive Organisation Looks Like](chapter-41-what-the-decisive-organisation-looks-like.md)
+- [Chapter 42: The Transition Problem](chapter-42-the-transition-problem.md)
+- [Chapter 43: The First Ninety Days](chapter-43-the-first-ninety-days.md)
+- [Chapter 44: The Stakeholder Problem](chapter-44-the-stakeholder-problem.md)
+- [Chapter 45: Measuring the Decisive Organisation](chapter-45-measuring-the-decisive-organisation.md)
+- [Chapter 46: The Architecture Function Redesigned](chapter-46-the-architecture-function-redesigned.md)
+- [Chapter 47: Scaling the Decisive Organisation](chapter-47-scaling-the-decisive-organisation.md)
+- [Chapter 48: The Human Cost of Indecision Revisited](chapter-48-the-human-cost-of-indecision-revisited.md)
+- [Chapter 49: The Unfinished Organisation](chapter-49-the-unfinished-organisation.md)
+- [Chapter 50: The Closing Argument](chapter-50-the-closing-argument.md)
 
 ---
 
