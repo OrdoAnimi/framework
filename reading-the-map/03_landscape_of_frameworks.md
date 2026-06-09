@@ -24,6 +24,23 @@ Knowing which type of framework you are dealing with helps you understand what t
 
 ## The frameworks at a glance
 
+The landscape sorts into a handful of categories. The table below places each framework by the kind of problem it was built to solve. It is a quick orientation, not the full picture — Appendix B carries the fuller version with origins, best uses, and known limits.
+
+| Framework | Type | What it is for |
+|---|---|---|
+| Zachman | Classification | Organising the kinds of description an enterprise needs |
+| TOGAF (and the ADM) | Development methodology | A repeatable process for developing architecture |
+| ArchiMate | Notation | A visual language for drawing architecture others can read |
+| SABSA | Domain — security | Tracing security controls to business risk |
+| BIZBOK | Domain — business | Business architecture: capabilities and value streams |
+| SAP EA | Domain — vendor | Architecture aligned to the SAP landscape |
+| FEAF / DODAF / MODAF / NAF | Domain — government & defence | Architecture for public-sector and defence estates |
+| Wardley Mapping | Adjacent — strategy | Reasoning about evolution and what to build versus buy |
+| ITIL | Adjacent — service management | Running the services that architecture builds |
+| COBIT | Adjacent — governance | Governing the enterprise's use of IT |
+
+Read down the "type" column rather than the list of names: it is the category, not the brand, that tells you what a framework will and will not do for you.
+
 ## A note on the relationship between frameworks
 
 The frameworks in this table are not competitors. They address different aspects of the same broader challenge. An organisation can use TOGAF as its development methodology, ArchiMate as its notation standard, SABSA for security architecture, COBIT for IT governance, and ITIL for service management. These are not contradictory choices. They are complementary instruments, each operating at a different layer of the enterprise.
