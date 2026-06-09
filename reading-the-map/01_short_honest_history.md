@@ -73,3 +73,11 @@ Graham Davis articulated what many practitioners were experiencing: AI was not j
 The profession is still working through these challenges. The frameworks are more mature than they have ever been. The conversations about what EA is for are more honest than they have ever been. And the territory — the actual enterprise landscapes that architects are asked to navigate — is more complex and more rapidly changing than it has ever been.
 
 ## The timeline in brief
+
+- **1987 — Zachman.** John Zachman publishes the first enterprise architecture framework: a classification system, not a method. The profession gets its taxonomy.
+- **1995 — TOGAF.** The Open Group adapts the US Department of Defense's TAFIM into a general-purpose method. The ADM gives the profession a repeatable process for developing architecture.
+- **The 2000s — the consulting boom.** EA becomes a commercial discipline. FEAF, DODAF, MODAF, SABSA, BIZBOK, and SAP's framework are published, and The Open Group releases the ArchiMate notation. Shared language arrives — and so do the jargon, the credentialism, and governance designed to look rigorous rather than to decide.
+- **The 2010s — the maturity question.** Research shows mixed results. Practitioners name the failure modes — Architecture Theatre, decision latency — and thinkers like de Visscher (connection over control) and Dooher (the intent gap) call for a more honest, decision-focused practice.
+- **The 2020s — acceleration and disruption.** Cloud, agile, and AI compress the cycles EA was built around. TOGAF 10 arrives in 2022, and Davis argues that AI is a first-class element the People-Process-Technology model can no longer treat as just another tool.
+
+The pattern across four decades is consistent. Each milestone added a way of *describing* or *governing* the enterprise, and each proved most valuable when it stayed close to real decisions and least valuable when it hardened into ceremony. That tension — between the map and the territory — is the thread the rest of this book follows.
