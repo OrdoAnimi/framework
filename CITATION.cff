@@ -18,7 +18,7 @@ version: "1.0"
 date-released: "2026-01-01"
 url: "https://github.com/ZenCloudAU/velocity-architecture"
 repository-code: "https://github.com/ZenCloudAU/velocity-architecture"
-license: "CC-BY-NC-SA-4.0"
+license-url: "https://github.com/ZenCloudAU/velocity-architecture/blob/main/LICENSE"
 keywords:
   - architecture framework
   - enterprise architecture
