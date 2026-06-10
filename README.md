@@ -54,6 +54,7 @@ Adding a new article: drop a `.md` file into `research/` or `publications/` and 
 
 ## Contribution and reuse
 
-See `CONTRIBUTING.md`, `LICENSE.md`, `LICENCE-TERMS.md` and `SECURITY.md` for the applicable contribution, licensing, trademark and security terms.
+This repository is proprietary. All rights are reserved. See [LICENSE](LICENSE) for the binding licensing terms, and `CONTRIBUTING.md`, `LICENCE-TERMS.md` and `SECURITY.md` for additional contribution, trademark and security terms.
 
-© 2026 Phil Myint / ZenCloud Global Consultants.
+---
+© 2026 ZenCloud Global Consultants. All rights reserved. Proprietary and confidential.

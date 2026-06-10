@@ -8,6 +8,7 @@ exclude:
   - "README.md"
   - "CONTRIBUTING.md"
   - "SECURITY.md"
+  - "LICENSE"
   - "LICENSE.md"
   - "LICENCE-TERMS.md"
   - "CITATION.cff"
