@@ -1,6 +1,6 @@
 # Correspondence Rules Register
 
-**VAF — All Viewpoints | ISO/IEC/IEEE 42010:2022 Conformant**
+**Velocity™ — All Viewpoints | ISO/IEC/IEEE 42010:2022 Conformant**
 
 > Correspondence rules govern the relationships between viewpoints, artefacts, and decisions.  
 > They enforce consistency, traceability, and obligation across architecture descriptions.  

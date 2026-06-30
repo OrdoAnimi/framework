@@ -1,11 +1,11 @@
-# VAF EA Artefact Templates
+# Velocity™ EA Artefact Templates
 ## All 18 Artefacts — Fill-in Format
 
-**Framework:** Velocity Architecture Framework™ (VAF)  
+**Framework:** Velocity Architecture Framework™  
 **Author:** ZenCloud Global Consultants  
 **Published:** May 2026
 
-These are the VAF compressed templates — minimum fields only. Each field includes guidance on what to write and at what resolution. The Word document version (`VAF-EA-Artefact-Templates.docx`) shows the side-by-side comparison with standard framework structure.
+These are the Velocity™ compressed templates — minimum fields only. Each field includes guidance on what to write and at what resolution. The Word document version (`VAF-EA-Artefact-Templates.docx`) shows the side-by-side comparison with standard framework structure.
 
 **Governing principle:** Build to the resolution the decision requires. Stop.
 
@@ -14,7 +14,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 ## How to use these templates
 
 1. Identify the decision the artefact serves
-2. Run the extraction conversation (see [VAF Practitioner Operating Manual](../guides/VAF-Practitioner-Operating-Manual.md))
+2. Run the extraction conversation (see [Velocity™ Practitioner Operating Manual](../guides/VAF-Practitioner-Operating-Manual.md))
 3. Complete only the fields below — immediately after the conversation
 4. Present using the executive framing from the Operating Manual
 
@@ -22,7 +22,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 1. Architecture Vision Template
 
-**Type:** Decision instrument | **VAF time:** 1 session + 2 hrs
+**Type:** Decision instrument | **Velocity™ time:** 1 session + 2 hrs
 
 ---
 
@@ -86,7 +86,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 2. Business Capability Map Template
 
-**Type:** Signal generator | **VAF time:** 2–3 days
+**Type:** Signal generator | **Velocity™ time:** 2–3 days
 
 | Capability (L1) | Strategic priority (H/M/L) | Current investment (H/M/L/None) | Gap signal | Owner |
 |---|---|---|---|---|
@@ -140,7 +140,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 3. Architecture Principles Template
 
-**Type:** Control mechanism | **VAF time:** 1 day | **Maximum: 7 principles**
+**Type:** Control mechanism | **Velocity™ time:** 1 day | **Maximum: 7 principles**
 
 ---
 
@@ -184,7 +184,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 4. Value Stream Map Template
 
-**Type:** Signal generator | **VAF time:** 1–2 days
+**Type:** Signal generator | **Velocity™ time:** 1–2 days
 
 ---
 
@@ -257,7 +257,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 5. Business Process Model Template
 
-**Type:** Ground truth | **VAF time:** 3–5 days
+**Type:** Ground truth | **Velocity™ time:** 3–5 days
 
 ---
 
@@ -328,7 +328,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 6. Organisation Map Template
 
-**Type:** Signal generator | **VAF time:** Half day
+**Type:** Signal generator | **Velocity™ time:** Half day
 
 | Capability | Named owner | Disputed (Y/N) | Informal owner | Status |
 |---|---|---|---|---|
@@ -359,7 +359,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 7. Application Portfolio Template
 
-**Type:** Decision instrument | **VAF time:** 1 week
+**Type:** Decision instrument | **Velocity™ time:** 1 week
 
 | Application | Owner (named) | Annual total cost | Strategic alignment | Operational criticality | TIME | Blocker |
 |---|---|---|---|---|---|---|
@@ -383,7 +383,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 8. Integration Architecture Template
 
-**Type:** Ground truth | **VAF time:** 2–3 weeks
+**Type:** Ground truth | **Velocity™ time:** 2–3 weeks
 
 ---
 
@@ -440,7 +440,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 9. Solution Architecture Document Template
 
-**Type:** Control mechanism | **VAF time:** 2–3 days
+**Type:** Control mechanism | **Velocity™ time:** 2–3 days
 
 ---
 
@@ -498,7 +498,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 10. Conceptual Data Model Template
 
-**Type:** Decision instrument | **VAF time:** 1 day
+**Type:** Decision instrument | **Velocity™ time:** 1 day
 
 ---
 
@@ -553,7 +553,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 11. Data Flow Diagram Template
 
-**Type:** Control mechanism | **VAF time:** 3–5 days
+**Type:** Control mechanism | **Velocity™ time:** 3–5 days
 
 ---
 
@@ -604,7 +604,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 12. Master Data Map Template
 
-**Type:** Ground truth | **VAF time:** 2–3 days
+**Type:** Ground truth | **Velocity™ time:** 2–3 days
 
 | Master entity | Systems claiming authority | Nature of conflict | Actual authority | Arbitration mechanism |
 |---|---|---|---|---|
@@ -628,7 +628,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 13. Technology Roadmap Template
 
-**Type:** Decision instrument | **VAF time:** 3–5 days
+**Type:** Decision instrument | **Velocity™ time:** 3–5 days
 
 ---
 
@@ -670,7 +670,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 14. Technology Standards Catalogue Template
 
-**Type:** Control mechanism | **VAF time:** 1 day
+**Type:** Control mechanism | **Velocity™ time:** 1 day
 
 | Category | Approved technology | What this prevents | Exception process | Cost of non-standard |
 |---|---|---|---|---|
@@ -702,7 +702,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 15. Infrastructure Architecture Template
 
-**Type:** Ground truth | **VAF time:** 2–3 weeks
+**Type:** Ground truth | **Velocity™ time:** 2–3 weeks
 
 ---
 
@@ -739,7 +739,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 16. Architecture Decision Record Template
 
-**Type:** Ground truth | **VAF time:** 20 minutes | **Write immediately after the decision**
+**Type:** Ground truth | **Velocity™ time:** 20 minutes | **Write immediately after the decision**
 
 ---
 
@@ -781,7 +781,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 17. Architecture Compliance Review Template
 
-**Type:** Control mechanism | **VAF time:** Half day
+**Type:** Control mechanism | **Velocity™ time:** Half day
 
 ---
 
@@ -829,7 +829,7 @@ These are the VAF compressed templates — minimum fields only. Each field inclu
 
 ## 18. Architecture Roadmap Template
 
-**Type:** Decision instrument | **VAF time:** 1 week
+**Type:** Decision instrument | **Velocity™ time:** 1 week
 
 ---
 

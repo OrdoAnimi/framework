@@ -110,5 +110,5 @@ This decision should be revisited if:
 
 ---
 
-*Example ADR — VAF VP3 | Velocity Architecture Framework™*  
+*Example ADR — Velocity™ VP3 | Velocity Architecture Framework™*  
 *© 2026 Phil Myint / ZenCloud Global Consultants*

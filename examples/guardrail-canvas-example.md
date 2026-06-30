@@ -63,5 +63,5 @@ This canvas does not specify which cloud provider to use, which deployment platf
 
 ---
 
-*Example Guardrail Canvas — VAF VP1 | Velocity Architecture Framework™*  
+*Example Guardrail Canvas — Velocity™ VP1 | Velocity Architecture Framework™*  
 *© 2026 Phil Myint / ZenCloud Global Consultants*

@@ -10,7 +10,7 @@
 
 The Rhythm Viewpoint enforces architectural cadence. Governance that does not operate at a defined frequency is not governance — it is event-driven reaction.
 
-The Pulse is the VAF operating heartbeat. It is a structured cadence of review, decision, and escalation events designed to ensure that ambiguity has a lifespan, not a permanent residency.
+The Pulse is the Velocity™ operating heartbeat. It is a structured cadence of review, decision, and escalation events designed to ensure that ambiguity has a lifespan, not a permanent residency.
 
 ---
 

@@ -376,4 +376,4 @@ Industry standard figures (maturity level progression outcomes) are Gartner/ASUG
 ---
 
 *ZenCloud Global Consultants · Evidence-Based Research and Consulting*  
-*For practitioner application, see the Velocity Architecture Framework™ (VAF) Series 5*
+*For practitioner application, see the Velocity Architecture Framework™ Series 5*

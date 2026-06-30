@@ -1,6 +1,6 @@
 # Architecture Decision Record (ADR)
 
-**VAF VP3 | Technical Architecture Layer**
+**Velocity™ VP3 | Technical Architecture Layer**
 
 | Field | Value |
 |-------|-------|
@@ -80,4 +80,4 @@ assert [condition]
 > **Rule:** If reversing this decision requires a sprint or more of rework, it is architectural.  
 > When in doubt, write it down.
 
-*VAF VP3 | © 2026 Phil Myint / ZenCloud Global Consultants | github.com/ZenCloudAU/velocity-architecture*
+*Velocity™ VP3 | © 2026 Phil Myint / ZenCloud Global Consultants | github.com/ZenCloudAU/velocity-architecture*

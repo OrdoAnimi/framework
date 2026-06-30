@@ -12,7 +12,7 @@ The Practitioner Viewpoint governs the conduct of the architectural practitioner
 
 It distinguishes **authorship** from document production. It defines the conditions under which an architect sets boundaries, refuses to convert indecision into output, and — when necessary — exits with integrity intact.
 
-The practitioner role in the VAF is named **Auctor Custos** — author-custodian. The architect who guards the integrity of the work rather than absorbing the organisation's unresolved conflict.
+The practitioner role in the Velocity™ is named **Auctor Custos** — author-custodian. The architect who guards the integrity of the work rather than absorbing the organisation's unresolved conflict.
 
 > *You cannot practice architecture with integrity in every system. Some environments are structurally opposed to clarity. In those systems, the architect has three options: become a document producer, become a buffer, or become an author and accept the consequences.*
 

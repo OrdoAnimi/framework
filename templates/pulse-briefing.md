@@ -1,6 +1,6 @@
 # Pulse Briefing
 
-**VAF VP5 | Operating Rhythm Layer**
+**Velocity™ VP5 | Operating Rhythm Layer**
 
 > Distribute 48 hours before the session.  
 > No surprises in the room.
@@ -68,4 +68,4 @@
 > **Test:** Does each Pulse session produce at least one binding decision?  
 > If not, the Pulse is performing ceremony rather than governance.
 
-*VAF VP5 | © 2026 Phil Myint / ZenCloud Global Consultants | github.com/ZenCloudAU/velocity-architecture*
+*Velocity™ VP5 | © 2026 Phil Myint / ZenCloud Global Consultants | github.com/ZenCloudAU/velocity-architecture*

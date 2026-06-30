@@ -1,6 +1,6 @@
 # Trade-off Matrix
 
-**VAF VP2 | Solution Architecture Layer**
+**Velocity™ VP2 | Solution Architecture Layer**
 
 | Field | Value |
 |-------|-------|
@@ -86,4 +86,4 @@ This decision should be revisited if:
 > **Test:** Could a delivery team begin work the same day this was agreed?  
 > If not, the decision has not been made.
 
-*VAF VP2 | © 2026 Phil Myint / ZenCloud Global Consultants | github.com/ZenCloudAU/velocity-architecture*
+*Velocity™ VP2 | © 2026 Phil Myint / ZenCloud Global Consultants | github.com/ZenCloudAU/velocity-architecture*

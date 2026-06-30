@@ -19,7 +19,7 @@
 
 ## What requires acknowledgement
 
-**The VAF framework name.** If you republish the Velocity Architecture Framework™ methodology under a different name without acknowledgement of origin, please note the source. This is a professional courtesy request, not a legal restriction.
+**The Velocity™ framework name.** If you republish the Velocity Architecture Framework™ methodology under a different name without acknowledgement of origin, please note the source. This is a professional courtesy request, not a legal restriction.
 
 **Research paper citations.** If you cite the research papers in this repository in academic or professional publications, use standard citation format:
 

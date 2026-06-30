@@ -57,11 +57,11 @@ This adds two constraints to the MVP definition:
 
 ## 4. Compression Evidence
 
-The VAF compression map claims 70–90% time saving per artefact compared to standard practice. The evidence base for this range is:
+The Velocity™ compression map claims 70–90% time saving per artefact compared to standard practice. The evidence base for this range is:
 
 **Guardrail Canvas vs standard strategy engagement**
 Standard: 3–6 weeks for stakeholder workshops, options analysis, review cycles, sign-off.
-VAF: 2–4 hours for a structured workshop producing a completed first draft.
+Velocity™: 2–4 hours for a structured workshop producing a completed first draft.
 Claimed saving: 85–95%.
 
 The time saving comes from three compressions:
@@ -72,7 +72,7 @@ The time saving comes from three compressions:
 The saving is real. The question is whether the compressed output is as useful as the comprehensive output. In the Kotusev data, direction artefacts produced in workshop formats showed no statistically significant difference in decision influence compared to comprehensively produced equivalents. ◆◆◆ The decision outcome was the same. The time cost was dramatically different.
 
 **ADR vs post-hoc documentation**
-The most significant compression is not a percentage saving — it is the difference between producing a decision record immediately after a decision is made and not producing one at all. Most architectural decisions in most organisations are not documented. The VAF ADR practice replaces an absence with a 20-minute production process.
+The most significant compression is not a percentage saving — it is the difference between producing a decision record immediately after a decision is made and not producing one at all. Most architectural decisions in most organisations are not documented. The Velocity™ ADR practice replaces an absence with a 20-minute production process.
 
 ---
 
@@ -81,7 +81,7 @@ The most significant compression is not a percentage saving — it is the differ
 The evidence supports compression but does not support unlimited compression. Three contexts where standard-form artefacts are justified:
 
 **Context 1 — Regulatory compliance**
-Where a specific artefact format is required by a regulatory or contractual obligation, the obligation cannot be compressed. The VAF compressed artefact may be produced for internal use; the regulatory artefact must be produced separately to specification.
+Where a specific artefact format is required by a regulatory or contractual obligation, the obligation cannot be compressed. The Velocity™ compressed artefact may be produced for internal use; the regulatory artefact must be produced separately to specification.
 
 **Context 2 — High-irreversibility decisions**
 Decisions that are expensive or impossible to reverse warrant more comprehensive analysis. The definition of comprehensive is still relative to the decision context, not absolute — but the minimum viable scope is higher for irreversible decisions.
@@ -91,9 +91,9 @@ When a pattern is being established for the first time in an organisation, the i
 
 ---
 
-## 6. Implications for the VAF
+## 6. Implications for the Velocity™
 
-The compression principle is not a feature of the VAF — it is the central operating premise.
+The compression principle is not a feature of the Velocity™ — it is the central operating premise.
 
 Every artefact in the framework is defined at minimum viable scope for its purpose. The time savings in the compression map are not aspirational — they are the expected outcome of applying purpose-first artefact selection at minimum viable scope.
 
@@ -110,7 +110,7 @@ Produce that. Nothing more.
 | No positive correlation between artefact comprehensiveness and decision quality | Kotusev 2022 | ◆◆◆ |
 | MVP principle: minimum validated output outperforms comprehensive unvalidated output | Koning et al. 2022 (Management Science) | ◆◆◆ |
 | Workshop-produced direction artefacts match comprehensive equivalents in decision influence | Kotusev 2022 | ◆◆◆ |
-| 70–90% time saving achievable through scope and process compression | VAF practitioner analysis | ◆ |
+| 70–90% time saving achievable through scope and process compression | Velocity™ practitioner analysis | ◆ |
 
 ---
 

@@ -13,7 +13,7 @@ Large organisations hire enterprise architects. Small organisations do not. But 
 
 When those decisions happen without structure, they get made on gut feel, seniority, or whoever is loudest in the room. Sometimes that works. More often it produces the thing you are probably already experiencing: technology investments that do not connect to strategic priorities, systems that cannot talk to each other, no-one who can say with confidence what the organisation actually has and what it costs.
 
-Enterprise architecture exists to make those decisions deliberately. The Velocity Architecture Framework (VAF) exists to make that possible without the overhead that makes conventional EA inaccessible to most organisations.
+Enterprise architecture exists to make those decisions deliberately. The Velocity Architecture Framework™ exists to make that possible without the overhead that makes conventional EA inaccessible to most organisations.
 
 ---
 
@@ -39,7 +39,7 @@ They produce artefacts that are complete, rigorous, and — in most organisation
 
 A business capability map that takes twelve weeks to produce in an organisation that needs to make an investment decision in two weeks is not a useful instrument. It is overhead.
 
-The VAF approach compresses the artefact to the resolution the decision requires. Not less. Not more.
+The Velocity™ approach compresses the artefact to the resolution the decision requires. Not less. Not more.
 
 ---
 
@@ -57,7 +57,7 @@ Every EA artefact resolves to one of four functions. Understanding which functio
 
 ---
 
-## How to use the VAF toolkit — in plain steps
+## How to use the Velocity™ toolkit — in plain steps
 
 **Step 1: Identify the decision in front of you.**
 
@@ -74,7 +74,7 @@ Not the artefact. The decision. What are you trying to get agreed, funded, or st
 
 Every artefact in this toolkit comes with an extraction guide — the questions to ask, the facilitation method, and the red flags that tell you when you are getting the policy version instead of the real version. The content of the artefact comes from the conversation. You cannot produce a useful artefact from a desk.
 
-**Step 4: Complete the VAF template.**
+**Step 4: Complete the Velocity™ template.**
 
 Minimum fields only. The guidance tells you what to write and at what resolution. If you are adding sections not in the template, ask whether they serve the decision or serve the appearance of rigour.
 
@@ -109,8 +109,8 @@ Have the conversation. Write what happened. That is architecture.
 | If you want to... | Go to... |
 |---|---|
 | Understand the full evidence base for this approach | [Research papers](/research/) |
-| See all 18 artefacts compressed against standard practice | [VAF Compression Map](/frameworks/VAF-Compression-Map.md) |
-| Get a template you can fill in today | [VAF Templates](/tools/templates/) |
+| See all 18 artefacts compressed against standard practice | [Velocity™ Compression Map](/frameworks/VAF-Compression-Map.md) |
+| Get a template you can fill in today | [Velocity™ Templates](/tools/templates/) |
 | Understand how to run the conversation and frame the finding | [Practitioner Operating Manual](/guides/VAF-Practitioner-Operating-Manual.md) |
 | Understand the classification of artefact types | [EA Artefact Type Classification](/frameworks/EA-Artefact-Type-Classification.md) |
 

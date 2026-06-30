@@ -1,4 +1,4 @@
-# VAF Leadership Extension
+# Velocity™ Leadership Extension
 
 **Velocity Architecture Framework™ — Without the Architecture Lens**
 
@@ -40,7 +40,7 @@ The architecture domain is the entry point — the specific, credible context wh
 
 ## The Pathology Model in Organisations
 
-The VAF's organisational pathology model applies without modification to leadership contexts.
+The Velocity™'s organisational pathology model applies without modification to leadership contexts.
 
 **Responsibility diffusion** is not an architecture problem — it is a leadership problem. Alignment mutates from a clarity mechanism to a defence mechanism. Infrastructure of diffusion embeds itself: governance forums multiply, decision rights migrate to run-time negotiation. Incentive geometry makes decisiveness reputationally expensive. Collaboration without convergence gives the system a moral vocabulary that justifies indefinite delay.
 
@@ -50,7 +50,7 @@ The measurable symptom is **decision latency** — the interval between when a c
 
 ## The Convergence Design System for Leaders
 
-The prescriptive half of the VAF applies directly:
+The prescriptive half of the Velocity™ applies directly:
 
 **Authority** is the mechanism that converges ambiguity. Consultation expands the field; authority closes it. When those functions are misaligned, latency becomes endemic.
 

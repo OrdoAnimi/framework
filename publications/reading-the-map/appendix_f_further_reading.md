@@ -114,7 +114,7 @@ The honest reading list, organised by chapter. For each area: the primary offici
 
 ## The Companion Framework
 
-**The Velocity Architecture Framework (VAF)** — velocityarchitectureframework.com. *Where this book teaches you to read the territory, the VAF is one considered argument about how to do architecture well within it. It is the intended sequel for readers ready to go deeper — the framework that becomes relevant once you can read the map.*
+**The Velocity Architecture Framework™** — velocityarchitectureframework.com. *Where this book teaches you to read the territory, the Velocity™ is one considered argument about how to do architecture well within it. It is the intended sequel for readers ready to go deeper — the framework that becomes relevant once you can read the map.*
 
 ---
 

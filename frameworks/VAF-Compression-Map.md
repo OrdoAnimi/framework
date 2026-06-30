@@ -1,7 +1,7 @@
-# VAF Artefact Compression Map
+# Velocity™ Artefact Compression Map
 ## Architecture at the Speed of the Decision
 
-**Framework:** Velocity Architecture Framework™ (VAF)  
+**Framework:** Velocity Architecture Framework™  
 **Evidence base:** Kotusev et al. — 47 organisations, RMIT University (2019–2022)  
 **Governing principle:** The artefact is the record of the decision. Not the input to it.
 
@@ -19,7 +19,7 @@
 
 ## The Compression Map
 
-| Artefact | Type | Standard time | VAF time | Saving | VAF substitution |
+| Artefact | Type | Standard time | Velocity™ time | Saving | Velocity™ substitution |
 |---|---|---|---|---|---|
 | Architecture Vision | Decision | 4–8 wks | 1 session | ~85% | One structured executive conversation. Three outputs written immediately after: direction committed to, assumptions live at the time, first decision that would invalidate it. One page. Dated. |
 | Business Capability Map | Signal | 6–12 wks | 2–3 days | ~80% | Existing org structure + budget allocation data + 3–5 executive interviews. Heat map produced directly from investment vs strategic priority gap. No taxonomy workshop. No consensus sessions. The gaps are named, not negotiated. |
@@ -42,7 +42,7 @@
 
 ---
 
-## What VAF Eliminates Entirely
+## What Velocity™ Eliminates Entirely
 
 **Taxonomy workshops**  
 Consensus sessions that negotiate entity definitions before anyone has named the decision the definition serves. If there is no decision requiring the definition, there is no workshop.
@@ -51,10 +51,10 @@ Consensus sessions that negotiate entity definitions before anyone has named the
 Future-state artefacts produced before the current-state gap is documented. The to-be is a decision list derived from as-is analysis — not a standalone artefact.
 
 **Full-landscape documentation**  
-Completeness as a goal. VAF scopes every ground truth artefact to the decision it serves: critical path coverage, decommission risk, compliance scope. Not the full landscape.
+Completeness as a goal. Velocity™ scopes every ground truth artefact to the decision it serves: critical path coverage, decommission risk, compliance scope. Not the full landscape.
 
 **Review cycles before decisions**  
-Artefacts reviewed by committees before they serve a decision. In VAF, the artefact is the record of the decision already made — not the input to a future approval process.
+Artefacts reviewed by committees before they serve a decision. In Velocity™, the artefact is the record of the decision already made — not the input to a future approval process.
 
 **Rationale sections in principles**  
 Principles with rationale, implications, and examples are policies. A principle that requires explanation to be followed is not enforced — it is negotiated.
@@ -63,7 +63,7 @@ Principles with rationale, implications, and examples are policies. A principle 
 
 ## The Kotusev Evidence Base
 
-Svyatoslav Kotusev (RMIT University) conducted empirical analysis of EA artefacts across 47 diverse organisations (predominantly Australian) from 2019–2022. Key findings directly supporting VAF compression:
+Svyatoslav Kotusev (RMIT University) conducted empirical analysis of EA artefacts across 47 diverse organisations (predominantly Australian) from 2019–2022. Key findings directly supporting Velocity™ compression:
 
 > *"Most organisations do not follow EA methodologies and frameworks strictly but adapt them to their own needs or use them only as idea contributors."*
 
@@ -74,11 +74,11 @@ Svyatoslav Kotusev (RMIT University) conducted empirical analysis of EA artefact
 > *"We never show business stakeholders all the connections and stuff like that — they are not interested in understanding what the interfaces are. The roadmap is a document that helps the business make decisions about their IT investment, so it has to be framed that way."*  
 > — Enterprise Architect, Organisation 5 (Kotusev et al., Information and Software Technology, 2022)
 
-VAF is the compression of that empirical finding into an operating model. Every artefact produced at the resolution the decision requires. No more. Every artefact produced after the conversation that surfaces the decision. Not before.
+Velocity™ is the compression of that empirical finding into an operating model. Every artefact produced at the resolution the decision requires. No more. Every artefact produced after the conversation that surfaces the decision. Not before.
 
 ---
 
-## The VAF Operating Model — In One Statement
+## The Velocity™ Operating Model — In One Statement
 
 > The decision conversation happens first. The artefact records the commitment made in that conversation, at the resolution required to protect the decision over time. Everything not serving that function is production overhead, not architecture.
 

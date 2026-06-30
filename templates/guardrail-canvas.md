@@ -1,6 +1,6 @@
 # Guardrail Canvas
 
-**VAF VP1 | Enterprise Architecture Layer**
+**Velocity™ VP1 | Enterprise Architecture Layer**
 
 | Field | Value |
 |-------|-------|
@@ -51,4 +51,4 @@
 > **Test:** Did this remove a debate from a portfolio or funding discussion?  
 > If not, the canvas is incomplete — not ignored.
 
-*VAF VP1 | © 2026 Phil Myint / ZenCloud Global Consultants | github.com/ZenCloudAU/velocity-architecture*
+*Velocity™ VP1 | © 2026 Phil Myint / ZenCloud Global Consultants | github.com/ZenCloudAU/velocity-architecture*

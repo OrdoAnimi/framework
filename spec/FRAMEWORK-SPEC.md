@@ -12,7 +12,7 @@ TM Class 42, ZenCloud Consulting
 | Field                  | Value |
 |------------------------|-------|
 | Full name              | Velocity Architecture Framework™ |
-| Abbreviation           | VAF |
+| Abbreviation           | Velocity™ |
 | Version                | 1.0 |
 | Status                 | Published Specification |
 | Owner                  | Phil Myint, Principal Architect, ZenCloud Global Consultants |
@@ -36,10 +36,10 @@ TM Class 42, ZenCloud Consulting
 ### 1.1 Entity of Interest (EoI)
 The primary **Entity of Interest** is an **Enterprise Programme, Organisational Capability, or Solution under transformation**.  
 Secondary EoIs include systems, platforms, and governance operating models.  
-VAF explicitly supports multi-scale and nested EoIs.
+Velocity™ explicitly supports multi-scale and nested EoIs.
 
 ### Primary Domain
-VAF applies where architectural decisions must be made, owned, and acted upon across multiple layers with competing stakeholder concerns.
+Velocity™ applies where architectural decisions must be made, owned, and acted upon across multiple layers with competing stakeholder concerns.
 
 ### Extended Domain
 Applies to organisational leadership and governance where decision records replace traditional architecture descriptions.
@@ -70,7 +70,7 @@ Applies to organisational leadership and governance where decision records repla
 
 ## 5. Architecture Description Life Cycle (New)
 
-VAF defines four explicit states for every architecture artefact:
+Velocity™ defines four explicit states for every architecture artefact:
 
 - **Proposed** → **Decided** → **Active** → **Superseded / Archived**
 
@@ -92,15 +92,15 @@ Full rules: [`/correspondence-rules/RULES.md`](../correspondence-rules/RULES.md)
 
 ## 7. ISO/IEC/IEEE 42010 Ontology Mapping
 
-| 42010 Term                  | VAF Equivalent |
+| 42010 Term                  | Velocity™ Equivalent |
 |-----------------------------|----------------|
 | Entity of interest          | Enterprise Programme / Organisational Capability / Solution |
 | Architecture                | Accumulated body of binding decisions |
-| Architecture description    | Complete VAF artefact set |
+| Architecture description    | Complete Velocity™ artefact set |
 | Stakeholder                 | Section 2 Stakeholder Register |
 | Concern                     | Section 3 Concern Register |
 | Architecture viewpoint      | VP1–VP6 |
-| Architecture view           | Instantiated VAF artefact |
+| Architecture view           | Instantiated Velocity™ artefact |
 | Model kind                  | Specific instruments (Guardrail Canvas, Trade-off Matrix, ADR, etc.) |
 | Architecture decision       | Trade-off Matrix + ADR |
 | Architecture rationale      | Rationale fields + Context/Consequences |

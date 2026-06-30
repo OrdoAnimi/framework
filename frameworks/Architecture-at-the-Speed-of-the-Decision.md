@@ -2,7 +2,7 @@
 ## The Governing Argument of the Velocity Architecture Framework™
 
 **Author:** ZenCloud Global Consultants  
-**Framework:** Velocity Architecture Framework™ (VAF)  
+**Framework:** Velocity Architecture Framework™  
 **Published:** May 2026
 
 ---
@@ -39,7 +39,7 @@ The organisations that succeed are the ones that have understood, implicitly or 
 
 CB Insights' analysis of 431 failed VC-backed companies (2024) found that 43% failed due to poor product-market fit — the problem of building without validating. The same failure mode operates at the organisational architecture level: organisations invest without capability validation, decommission without integration mapping, transform without process baseline. The artefact set exists to prevent exactly those failures. But only if the artefact is produced at the moment the decision requires it — not after the decision has already been made by default.
 
-Koning, Hasan & Chatterji (Management Science, 2022) demonstrated across 35,000 startups that iterative validation discipline — producing the minimum evidence required to make a decision before committing — improves performance 30–100% within a year. The mechanism is not the specific validation instrument. It is the discipline of validating before committing. That is the mechanism VAF applies to architectural decision-making.
+Koning, Hasan & Chatterji (Management Science, 2022) demonstrated across 35,000 startups that iterative validation discipline — producing the minimum evidence required to make a decision before committing — improves performance 30–100% within a year. The mechanism is not the specific validation instrument. It is the discipline of validating before committing. That is the mechanism Velocity™ applies to architectural decision-making.
 
 ---
 
@@ -59,9 +59,9 @@ Koning, Hasan & Chatterji (Management Science, 2022) demonstrated across 35,000 
 
 The rigour of the underlying analysis does not change. The discipline of the extraction conversation — asking the right questions, recording what was actually said, naming the things that were not agreed as explicitly as the things that were — is as demanding as any workshop-based methodology. More demanding, in some respects, because there is no volume of documentation to hide behind.
 
-The accountability does not change. Every artefact produced under the VAF framework has a named decision owner, a named date, and a named invalidation trigger. The compression removes overhead — not accountability.
+The accountability does not change. Every artefact produced under the Velocity™ framework has a named decision owner, a named date, and a named invalidation trigger. The compression removes overhead — not accountability.
 
-The evidence base does not change. The research papers in this repository are sourced, graded, and honest about their limitations. The VAF framework is not asserted to be empirically validated at the artefact level — because that study does not exist. What is asserted is that the compression logic is derived from what the research supports, applied to what practitioners know works in the room.
+The evidence base does not change. The research papers in this repository are sourced, graded, and honest about their limitations. The Velocity™ framework is not asserted to be empirically validated at the artefact level — because that study does not exist. What is asserted is that the compression logic is derived from what the research supports, applied to what practitioners know works in the room.
 
 ---
 

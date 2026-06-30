@@ -1,8 +1,8 @@
 # Decision Velocity Diagnostic
 
-**VAF — Organisational Health Check**
+**Velocity™ — Organisational Health Check**
 
-> Use this diagnostic to assess your organisation's decision health before engaging the full VAF.  
+> Use this diagnostic to assess your organisation's decision health before engaging the full Velocity™.  
 > It takes 15 minutes. The results will tell you which viewpoints to engage first.
 
 ---
@@ -105,7 +105,7 @@ Score each question 0–3:
 
 | Total Score | Interpretation |
 |-------------|----------------|
-| 75–90 | **High velocity** — Framework is largely in place. Use VAF to formalise and strengthen. |
+| 75–90 | **High velocity** — Framework is largely in place. Use Velocity™ to formalise and strengthen. |
 | 55–74 | **Moderate velocity** — Meaningful gaps exist. Prioritise the lowest-scoring sections. |
 | 35–54 | **Low velocity** — Decision latency is structural. Begin with VP1 (direction) and VP4 (control). |
 | 0–34 | **Stalled** — Responsibility diffusion is embedded. Begin with the Foundation Layer and VP6 (practitioner). |
@@ -133,5 +133,5 @@ If no one can answer this, the diagnostic has already told you what you need to 
 
 ---
 
-*Decision Velocity Diagnostic — VAF | Velocity Architecture Framework™*  
+*Decision Velocity Diagnostic — Velocity™ | Velocity Architecture Framework™*  
 *© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*

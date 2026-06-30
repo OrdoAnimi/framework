@@ -8,7 +8,7 @@
 
 ## Abstract
 
-Enterprise architecture is routinely justified on the basis of value claims that are difficult to measure and rarely validated. This paper reviews the empirical evidence on EA value metrics, identifies the measurement approaches that have demonstrated validity, and proposes a minimal viable measurement model for the VAF practitioner. The central finding is that EA value is most reliably measured at the decision level, not the programme or organisational level.
+Enterprise architecture is routinely justified on the basis of value claims that are difficult to measure and rarely validated. This paper reviews the empirical evidence on EA value metrics, identifies the measurement approaches that have demonstrated validity, and proposes a minimal viable measurement model for the Velocity™ practitioner. The central finding is that EA value is most reliably measured at the decision level, not the programme or organisational level.
 
 ---
 
@@ -56,9 +56,9 @@ The implication for measurement: the most direct measure of EA value is not what
 
 ---
 
-## 3. The VAF Measurement Model
+## 3. The Velocity™ Measurement Model
 
-The VAF proposes measurement at three levels.
+The Velocity™ proposes measurement at three levels.
 
 ### Level 1 — Decision velocity (primary metric)
 
@@ -121,7 +121,7 @@ Trend lines matter more than point-in-time scores. An organisation moving from 5
 | Large IT projects average 45% over budget; majority traced to early decision failures | McKinsey 2012 | ◆◆ |
 | Direction-setting artefacts associated with 30–40% reduction in mid-programme scope change | Industry research | ◆◆ |
 | Deferred architectural decisions double in cost every 90 days | Ross, Weill & Robertson 2006 | ◆◆◆ |
-| Artefact count and standards compliance are not valid EA value metrics | VAF practitioner analysis | ◆ |
+| Artefact count and standards compliance are not valid EA value metrics | Velocity™ practitioner analysis | ◆ |
 
 ---
 

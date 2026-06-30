@@ -131,9 +131,9 @@ That structure, completed honestly, is more valuable than a forty-page architect
 
 ## The compression principle
 
-The VAF is built on a compression principle: the right artefact at the right resolution, produced in the time actually available, is more valuable than the comprehensive artefact produced after the moment for decision has passed.
+The Velocity™ is built on a compression principle: the right artefact at the right resolution, produced in the time actually available, is more valuable than the comprehensive artefact produced after the moment for decision has passed.
 
-Most architecture processes are calibrated for the comprehensive artefact. The VAF is calibrated for the minimum artefact that captures the commitment.
+Most architecture processes are calibrated for the comprehensive artefact. The Velocity™ is calibrated for the minimum artefact that captures the commitment.
 
 The savings are significant. A Guardrail Canvas produced in a two-hour workshop replaces a six-week strategy engagement. A Trade-off Matrix produced in a one-hour session replaces a three-week options analysis. An ADR produced immediately after a decision is made replaces a month of archaeology later when no-one can remember why the choice was made.
 

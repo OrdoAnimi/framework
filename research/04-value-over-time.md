@@ -8,7 +8,7 @@
 
 ## Abstract
 
-Architecture artefacts decay. A decision record that was accurate when produced becomes misleading when the system it describes has changed and the record has not been updated. This paper examines the decay problem in EA documentation, reviews evidence on decay rates and their costs, and proposes the VAF aging and expiry model as a systematic response. The central argument is that an outdated artefact is not merely useless — it is actively harmful, because it creates false confidence in a state that no longer exists.
+Architecture artefacts decay. A decision record that was accurate when produced becomes misleading when the system it describes has changed and the record has not been updated. This paper examines the decay problem in EA documentation, reviews evidence on decay rates and their costs, and proposes the Velocity™ aging and expiry model as a systematic response. The central argument is that an outdated artefact is not merely useless — it is actively harmful, because it creates false confidence in a state that no longer exists.
 
 ---
 
@@ -49,7 +49,7 @@ The cost is not theoretical. Most practitioners have experienced a project that 
 
 ## 3. Decay Rates by Artefact Type
 
-Not all artefacts decay at the same rate. The VAF aging model is built on empirical observation of decay rates across artefact types. ◆
+Not all artefacts decay at the same rate. The Velocity™ aging model is built on empirical observation of decay rates across artefact types. ◆
 
 **High decay rate (review cycle: monthly or shorter)**
 - Velocity Dashboard
@@ -85,7 +85,7 @@ These artefacts are historical records. They are accurate descriptions of past s
 
 ## 4. The Expiry Model
 
-The VAF introduces explicit expiry for architecture artefacts — a defined date after which an artefact is treated as expired and requires review before being relied upon.
+The Velocity™ introduces explicit expiry for architecture artefacts — a defined date after which an artefact is treated as expired and requires review before being relied upon.
 
 Expiry is not the same as deletion. An expired artefact remains in the repository, marked as expired. It may still be accurate. Expiry is a signal that the artefact has not been reviewed within its defined cycle and cannot be relied upon without verification.
 
@@ -104,7 +104,7 @@ The percentage of active artefacts that are current vs aged vs expired is a dire
 
 ## 5. The Velocity of Truth
 
-The VAF's governing principle — *velocity is the rate at which ambiguity expires* — has a corollary: **an artefact that does not expire is not architecture. It is decoration.**
+The Velocity™'s governing principle — *velocity is the rate at which ambiguity expires* — has a corollary: **an artefact that does not expire is not architecture. It is decoration.**
 
 An architecture artefact that is treated as permanent, never reviewed, never updated, and never expired has abandoned its function. It is no longer a record of the current state of architectural commitments. It is a historical document being used as a current document — the most dangerous possible condition for organisational decision-making.
 
@@ -143,9 +143,9 @@ The absence of this study is itself a finding. EA research has focused heavily o
 
 | Finding | Source | Evidence grade |
 |---------|--------|---------------|
-| Outdated documentation creates negative value through false confidence | VAF practitioner analysis | ◆ |
+| Outdated documentation creates negative value through false confidence | Velocity™ practitioner analysis | ◆ |
 | 43% of VC-backed failures traced to decisions on false assumptions | CB Insights 2024 | ◆◆ |
-| Repository trust loss compounds once practitioners learn not to rely on it | VAF practitioner analysis | ◆ |
+| Repository trust loss compounds once practitioners learn not to rely on it | Velocity™ practitioner analysis | ◆ |
 | Artefact-level longitudinal decay study does not exist | Literature review | ◆ (gap noted) |
 
 ---

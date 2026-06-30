@@ -1,6 +1,6 @@
 # Fitness Functions
 
-**VAF VP3 — Truth Viewpoint | Technical Architecture Layer**
+**Velocity™ VP3 — Truth Viewpoint | Technical Architecture Layer**
 
 > Fitness functions are executable assertions encoding architectural intent.  
 > They are not documentation. They are enforcement.  
@@ -107,9 +107,9 @@ def test_example():
     assert p95_latency("api/orders") < 50
 ```
 
-Without this reference, the fitness function cannot be traced to its intent and is not compliant with VAF correspondence rule CR-T4.
+Without this reference, the fitness function cannot be traced to its intent and is not compliant with Velocity™ correspondence rule CR-T4.
 
 ---
 
-*Fitness Functions — VAF VP3 | Velocity Architecture Framework™*  
+*Fitness Functions — Velocity™ VP3 | Velocity Architecture Framework™*  
 *© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*

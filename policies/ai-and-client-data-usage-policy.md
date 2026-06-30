@@ -41,7 +41,7 @@ Before any data enters a tool or system, classify it:
 
 | Tool | Classification | Approved for |
 |------|---------------|-------------|
-| **VAF Agentic AI** | ZenCloud-operated | Internal + Confidential (per deployment configuration) |
+| **Velocity™ Agentic AI** | ZenCloud-operated | Internal + Confidential (per deployment configuration) |
 | **Claude.ai (personal/web)** | Third-party public tool | Public data only |
 | **GitHub Copilot / IDE AI** | Third-party tool | Public and Internal (no Confidential or Restricted) |
 | **Microsoft Copilot (M365)** | Enterprise-configured | Per client's own M365 AI policy |
@@ -61,7 +61,7 @@ When in doubt: use Public or Internal data only, and use ZenCloud-operated tooli
 - Publicly available reference material
 - Generic architecture patterns and principles
 
-**Allowed only in approved tools (VAF Agentic AI, enterprise-configured environments):**
+**Allowed only in approved tools (Velocity™ Agentic AI, enterprise-configured environments):**
 - Internal client context (program names, operating model descriptions, general capability gaps)
 - Client-supplied architecture documentation (non-confidential)
 
@@ -131,7 +131,7 @@ ZenCloud retains:
 | Client data provided to ZenCloud | Client |
 | Engagement deliverables (upon delivery) | Client |
 | Velocity Framework methods and templates | ZenCloud / Velocity |
-| VAF Agentic AI configuration and prompts | ZenCloud |
+| Velocity™ Agentic AI configuration and prompts | ZenCloud |
 | Anonymised patterns derived from engagement | ZenCloud (Velocity IP) |
 | Partner-contributed methods and templates | Consultancy partner |
 
@@ -182,7 +182,7 @@ ZenCloud engagement outputs:
 
 For clients seeking to deploy the Velocity tool layer within their own environment:
 
-- VAF Agentic AI can be configured to operate within the client's Azure tenancy
+- Velocity™ Agentic AI can be configured to operate within the client's Azure tenancy
 - Data processing remains within the client's environment
 - The AI model API calls are governed by the applicable API provider's terms (Anthropic)
 - Client data does not train or improve any AI model under current Anthropic enterprise terms (verify current terms at engagement commencement)

@@ -60,7 +60,7 @@ This is what Governance Drag looks like when it compounds not across quarters bu
 
 ## The Altitude Problem
 
-Decision Altitude in VAF describes the structural level at which a decision is made — specifically, the combination of three dimensions: authority to close the item, observability of whether it is done, and enforcement proximity to act when it is not. Every decision has an appropriate altitude where all three dimensions are sufficient. When decisions sit at the wrong altitude, two failure modes emerge.
+Decision Altitude in Velocity™ describes the structural level at which a decision is made — specifically, the combination of three dimensions: authority to close the item, observability of whether it is done, and enforcement proximity to act when it is not. Every decision has an appropriate altitude where all three dimensions are sufficient. When decisions sit at the wrong altitude, two failure modes emerge.
 
 The first is Altitude Collapse. This occurs when a decision that belongs at the structural layer gets absorbed into the operational layer — when governance weight lands on a delivery team that lacks the structural position to carry it. A remediation cycle managed entirely at the operational layer tracks individual issues without seeing the pattern. It resolves the presenting problem without addressing the mechanism that produced it.
 
@@ -170,4 +170,4 @@ The empirical question a serious Trans-Tasman comparison must answer is whether 
 
 *The neutral comparative analysis this position paper draws from is published separately under the ZenCloud Global Consultants brand, with full source citations from the 2024-2026 ANAO, QAO, NSW Auditor-General, VAGO, WAAGO, ACT Audit Office, ASD, OECD, Office of the Auditor General of Canada, and NZ Office of the Auditor-General reports.*
 
-*VAF concepts referenced — Governance Drag, Decision Altitude, Altitude Collapse, The Compliant Path — are components of the Velocity Architecture Framework™.*
+*Velocity™ concepts referenced — Governance Drag, Decision Altitude, Altitude Collapse, The Compliant Path — are components of the Velocity Architecture Framework™.*

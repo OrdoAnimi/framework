@@ -1,8 +1,8 @@
 # Pulse System
 
-**VAF VP5 — Rhythm Viewpoint | Operating Layer**
+**Velocity™ VP5 — Rhythm Viewpoint | Operating Layer**
 
-> The Pulse is the VAF operating heartbeat.  
+> The Pulse is the Velocity™ operating heartbeat.  
 > It is a structured cadence of review, decision, and escalation events.  
 > Governance that does not operate at a defined frequency is not governance — it is event-driven reaction.
 
@@ -176,5 +176,5 @@ These patterns indicate the Pulse has become ceremony rather than governance:
 
 ---
 
-*Pulse System — VAF VP5 | Velocity Architecture Framework™*  
+*Pulse System — Velocity™ VP5 | Velocity Architecture Framework™*  
 *© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*

@@ -105,5 +105,5 @@ This decision should be revisited if:
 
 ---
 
-*Example Trade-off Matrix — VAF VP2 | Velocity Architecture Framework™*  
+*Example Trade-off Matrix — Velocity™ VP2 | Velocity Architecture Framework™*  
 *© 2026 Phil Myint / ZenCloud Global Consultants*
