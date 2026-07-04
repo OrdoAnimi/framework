@@ -1,6 +1,6 @@
 # Chapter 15: Authority and the Burden of Convergence
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -96,4 +96,4 @@ And movement — genuine movement, the kind that compounds over time into or
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

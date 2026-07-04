@@ -265,16 +265,7 @@ GITHUB_BASE = 'https://github.com/ZenCloudAU/velocity-architecture/blob/main'
 SKIP_FILES = {'SOURCES.md', 'PUBLISHING.md', 'README.md', 'CITATION.cff', 'CONTRIBUTING.md'}
 
 ECOSYSTEM_STRIP = (
-    '<nav class="ecosystem-strip" aria-label="Ecosystem navigation" '
-    'style="background:#0f172a;color:#F8FAFC;display:flex;align-items:center;gap:2rem;'
-    'padding:0.5rem 2rem;font-size:0.75rem;font-family:\'DM Sans\',sans-serif;'
-    'border-bottom:1px solid #1e293b;flex-wrap:wrap;">'
-    '<span style="color:#64748B;font-size:0.7rem;text-transform:uppercase;'
-    'letter-spacing:0.08em;margin-right:auto;">ZenCloud Ecosystem</span>'
-    '<a href="https://www.zencloud.com.au" style="color:#F8FAFC;text-decoration:none;opacity:0.8;">ZenCloud™</a>'
-    '<a href="https://studiosix.com.au" style="color:#F8FAFC;text-decoration:none;opacity:0.8;">StudioSix™</a>'
-    '<a href="https://velocityarchitectureframework.com" style="color:#F8FAFC;text-decoration:none;opacity:0.8;">Velocity™</a>'
-    '</nav>'
+    ''
 )
 
 SHARED_CSS = ''':root{--bg:#F1F5F9;--surface:#FFFFFF;--surface-2:#F8FAFC;--border:#E2E8F0;--text:#0F172A;--text-2:#475569;--text-3:#94A3B8;--orange:#E8630A;--orange-subtle:#FFF7ED;--navy:#1E3A5F;--navy-2:#162D4A;--r:10px;--shadow-md:0 4px 12px rgba(15,23,42,.08),0 2px 4px rgba(15,23,42,.04)}
@@ -365,7 +356,7 @@ def render_research_page(meta: dict) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title} — Velocity™</title>
+<title>{title} — OrdoAnimi</title>
 <meta name="description" content="{description}">
 <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -378,7 +369,7 @@ def render_research_page(meta: dict) -> str:
 <body>
 {ECOSYSTEM_STRIP}
 <nav>
-  <a class="brand" href="../../index.html">Velocity<sup>™</sup></a>
+  <a class="brand" href="../../index.html">OrdoAnimi</a>
   <div class="nav-links">
     <a href="../../index.html">Framework</a>
     <a href="../../research/">Research</a>
@@ -389,7 +380,7 @@ def render_research_page(meta: dict) -> str:
 </nav>
 <main>
   <div class="breadcrumb">
-    <a href="../../index.html">Velocity™</a> ›
+    <a href="../../index.html">OrdoAnimi</a> ›
     <a href="../../research/">Research</a> ›
     {title}
   </div>
@@ -400,17 +391,17 @@ def render_research_page(meta: dict) -> str:
   </section>
   <div class="reader-actions">
     <a class="primary" href="../">← Research library</a>
-    <a href="../../index.html">Velocity Framework</a>
-    <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>
+    <a href="../../index.html">The OrdoAnimi Framework</a>
+    OrdoAnimi
   </div>
   <article class="article" id="article"><p class="loading">Loading document…</p></article>
   <footer>
-    <strong>ZenCloud advises. StudioSix produces. Velocity decides.</strong>
+    <strong>OrdoAnimi advises, builds, and decides.</strong>
     <div class="footer-links">
       <a href="../../research/">Research</a>
-      <a href="../../index.html">Velocity Framework</a>
-      <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>
-      <a href="https://studiosix.com.au/" target="_blank" rel="noopener">StudioSix</a>
+      <a href="../../index.html">The OrdoAnimi Framework</a>
+      OrdoAnimi
+      
     </div>
   </footer>
 </main>
@@ -433,7 +424,7 @@ def render_publications_page(meta: dict) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title} — Velocity™ Publications</title>
+<title>{title} — OrdoAnimi Publications</title>
 <meta name="description" content="{description}">
 <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -446,7 +437,7 @@ def render_publications_page(meta: dict) -> str:
 <body>
 {ECOSYSTEM_STRIP}
 <nav>
-  <a class="brand" href="../../index.html">Velocity<sup>™</sup></a>
+  <a class="brand" href="../../index.html">OrdoAnimi</a>
   <div class="nav-links">
     <a href="../../index.html">Framework</a>
     <a href="../../publications/">Publications</a>
@@ -456,7 +447,7 @@ def render_publications_page(meta: dict) -> str:
 </nav>
 <main>
   <div class="breadcrumb">
-    <a href="../../index.html">Velocity™</a> ›
+    <a href="../../index.html">OrdoAnimi</a> ›
     <a href="../../publications/">Publications</a> ›
     {title}
   </div>
@@ -467,17 +458,17 @@ def render_publications_page(meta: dict) -> str:
   </section>
   <div class="reader-actions">
     <a class="primary" href="../">← Publication library</a>
-    <a href="../../index.html">Velocity Framework</a>
-    <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>
+    <a href="../../index.html">The OrdoAnimi Framework</a>
+    OrdoAnimi
   </div>
   <article class="article" id="article"><p class="loading">Loading document…</p></article>
   <footer>
-    <strong>ZenCloud advises. StudioSix produces. Velocity decides.</strong>
+    <strong>OrdoAnimi advises, builds, and decides.</strong>
     <div class="footer-links">
       <a href="../../publications/">Publications</a>
-      <a href="../../index.html">Velocity Framework</a>
-      <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>
-      <a href="https://studiosix.com.au/" target="_blank" rel="noopener">StudioSix</a>
+      <a href="../../index.html">The OrdoAnimi Framework</a>
+      OrdoAnimi
+      
     </div>
   </footer>
 </main>

@@ -1,6 +1,6 @@
-# Velocity Architecture Framework™
+# The OrdoAnimi Framework
 
-This repository is the public knowledge base for Velocity Architecture. It contains the framework, formal specification, research, published policies, practitioner guidance, diagnostics, templates, examples and authored publications.
+This repository is the public knowledge base for OrdoAnimi. It contains the framework, formal specification, research, published policies, practitioner guidance, diagnostics, templates, examples and authored publications.
 
 **Public site:** https://velocityarchitectureframework.com/
 
@@ -8,7 +8,7 @@ This repository is the public knowledge base for Velocity Architecture. It conta
 
 ## Framework Structure
 
-Velocity™ operates through two complementary structures. Understanding both is required before working with any artefact.
+OrdoAnimi operates through two complementary structures. Understanding both is required before working with any artefact.
 
 ### Six Viewpoints — the operational structure
 
@@ -51,7 +51,7 @@ VP1, VP2, and VP3 operate across Columns 2-5 in execution — they are not assig
 |---|---|
 | `foundation/` | Foundational concepts and principles |
 | `spec/` | Formal specification and conformance material |
-| `viewpoints/` | Velocity™ viewpoint definitions |
+| `viewpoints/` | OrdoAnimi viewpoint definitions |
 | `correspondence-rules/` | Cross-viewpoint consistency rules |
 | `vault/` | Velocity Vault — the permanent decision archive |
 | `patterns/` | Architecture patterns and practitioner playbooks |
@@ -92,7 +92,7 @@ Adding a new article: drop a `.md` file into `research/` or `publications/` and 
 
 ## Publishing Platform
 
-The primary publishing platform for all Velocity™ content is **velocityarchitectureframework.com**, not Medium.
+The primary publishing platform for all OrdoAnimi content is **velocityarchitectureframework.com**, not Medium.
 
 | Channel | Status | Notes |
 |---------|--------|-------|
@@ -104,17 +104,17 @@ The primary publishing platform for all Velocity™ content is **velocityarchite
 
 ## Ecosystem
 
-Velocity Architecture is published alongside the **Velocity™ SA** practitioner framework — a field-level framework for solution architects.
+OrdoAnimi is published alongside the **OrdoAnimi SA** practitioner framework — a field-level framework for solution architects.
 
 - **velocityarchitectureframework.com** — this repository, the governing framework
-- **[Velocity™ SA](https://zencloudau.github.io/vaf-sa/)** — practitioner tools, field lexicon, engagement archetypes, workshop playbook
+- **[OrdoAnimi SA](https://zencloudau.github.io/vaf-sa/)** — practitioner tools, field lexicon, engagement archetypes, workshop playbook
 
 ---
 
 ## Start reading
 
 - [Framework home](https://velocityarchitectureframework.com/)
-- [Velocity™ SA practitioner site](https://zencloudau.github.io/vaf-sa/)
+- [OrdoAnimi SA practitioner site](https://zencloudau.github.io/vaf-sa/)
 - [Research](https://velocityarchitectureframework.com/research/)
 - [Publications](https://velocityarchitectureframework.com/publications/)
 - [Framework documents](https://velocityarchitectureframework.com/frameworks/)
@@ -129,4 +129,4 @@ Velocity Architecture is published alongside the **Velocity™ SA** practitioner
 
 See `CONTRIBUTING.md`, `LICENSE.md`, `LICENCE-TERMS.md` and `SECURITY.md` for the applicable contribution, licensing, trademark and security terms.
 
-(c) 2026 Phil Myint / ZenCloud Advisory.
+(c) 2026 Phil Myint / OrdoAnimi.

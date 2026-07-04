@@ -1,6 +1,6 @@
 # Chapter 47: Scaling the Decisive Organisation
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -30,4 +30,4 @@ The scaling logic, fully understood, is the recognition that the decisive organi
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

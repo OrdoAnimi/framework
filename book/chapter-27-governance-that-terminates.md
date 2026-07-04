@@ -1,6 +1,6 @@
 # Chapter 27: Governance That Terminates
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -110,4 +110,4 @@ That is the operating mode that velocity requires.
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

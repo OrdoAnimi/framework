@@ -1,6 +1,6 @@
 # AI and Client Data Usage Policy
 
-**ZenCloud Global Consultants**  
+**OrdoAnimi**  
 Classification: Governance — All Engagements  
 Version: 1.0 — May 2026
 
@@ -8,7 +8,7 @@ Version: 1.0 — May 2026
 
 ## Purpose
 
-This policy governs how AI tools and client data are used in ZenCloud advisory engagements. It applies to all practitioners operating under the Velocity Architecture Framework, including subcontractors and partner-embedded delivery resources.
+This policy governs how AI tools and client data are used in OrdoAnimi advisory engagements. It applies to all practitioners operating under the The OrdoAnimi Framework, including subcontractors and partner-embedded delivery resources.
 
 All practitioners must understand and apply this policy before using AI tools in any client engagement.
 
@@ -20,7 +20,7 @@ All practitioners must understand and apply this policy before using AI tools in
 2. **AI generates drafts — practitioners review and own the output**
 3. **No automatic decisions without human validation**
 4. **Client data remains client property**
-5. **Velocity Framework IP is separate from client IP**
+5. **The OrdoAnimi Framework IP is separate from client IP**
 
 ---
 
@@ -41,13 +41,13 @@ Before any data enters a tool or system, classify it:
 
 | Tool | Classification | Approved for |
 |------|---------------|-------------|
-| **Velocity™ Agentic AI** | ZenCloud-operated | Internal + Confidential (per deployment configuration) |
+| **OrdoAnimi Agentic AI** | OrdoAnimi-operated | Internal + Confidential (per deployment configuration) |
 | **Claude.ai (personal/web)** | Third-party public tool | Public data only |
 | **GitHub Copilot / IDE AI** | Third-party tool | Public and Internal (no Confidential or Restricted) |
 | **Microsoft Copilot (M365)** | Enterprise-configured | Per client's own M365 AI policy |
 | **Generic LLM chat tools** | Third-party public tool | Public data only |
 
-When in doubt: use Public or Internal data only, and use ZenCloud-operated tooling.
+When in doubt: use Public or Internal data only, and use OrdoAnimi-operated tooling.
 
 ---
 
@@ -61,7 +61,7 @@ When in doubt: use Public or Internal data only, and use ZenCloud-operated tooli
 - Publicly available reference material
 - Generic architecture patterns and principles
 
-**Allowed only in approved tools (Velocity™ Agentic AI, enterprise-configured environments):**
+**Allowed only in approved tools (OrdoAnimi Agentic AI, enterprise-configured environments):**
 - Internal client context (program names, operating model descriptions, general capability gaps)
 - Client-supplied architecture documentation (non-confidential)
 
@@ -117,10 +117,10 @@ This includes:
 - Trade-off Matrices
 - Program-specific framework adaptations
 
-ZenCloud retains:
+OrdoAnimi retains:
 - Generalised, anonymised patterns derived from engagement experience
-- Velocity Framework methods and templates (pre-dating or independent of the client engagement)
-- Tool configuration and prompt engineering developed by ZenCloud
+- The OrdoAnimi Framework methods and templates (pre-dating or independent of the client engagement)
+- Tool configuration and prompt engineering developed by OrdoAnimi
 
 ---
 
@@ -128,11 +128,11 @@ ZenCloud retains:
 
 | Asset | Owner |
 |-------|-------|
-| Client data provided to ZenCloud | Client |
+| Client data provided to OrdoAnimi | Client |
 | Engagement deliverables (upon delivery) | Client |
-| Velocity Framework methods and templates | ZenCloud / Velocity |
-| Velocity™ Agentic AI configuration and prompts | ZenCloud |
-| Anonymised patterns derived from engagement | ZenCloud (Velocity IP) |
+| The OrdoAnimi Framework methods and templates | OrdoAnimi / Velocity |
+| OrdoAnimi Agentic AI configuration and prompts | OrdoAnimi |
+| Anonymised patterns derived from engagement | OrdoAnimi (Velocity IP) |
 | Partner-contributed methods and templates | Consultancy partner |
 
 AI-generated content produced during an engagement does not create any IP claim for the AI provider. The AI system is a tool. The practitioner and client own the output.
@@ -171,7 +171,7 @@ AI tools used in Velocity engagements:
 - Are not certified for use in safety-critical decisions
 - Do not carry professional indemnity — the practitioner's professional accountability applies
 
-ZenCloud engagement outputs:
+OrdoAnimi engagement outputs:
 - Are architecture advisory, not legal, financial, or regulatory advice
 - Are based on information provided by the client — accuracy of that information is the client's responsibility
 - Should be reviewed by the client's own subject matter experts before implementation
@@ -182,23 +182,23 @@ ZenCloud engagement outputs:
 
 For clients seeking to deploy the Velocity tool layer within their own environment:
 
-- Velocity™ Agentic AI can be configured to operate within the client's Azure tenancy
+- OrdoAnimi Agentic AI can be configured to operate within the client's Azure tenancy
 - Data processing remains within the client's environment
 - The AI model API calls are governed by the applicable API provider's terms (Anthropic)
 - Client data does not train or improve any AI model under current Anthropic enterprise terms (verify current terms at engagement commencement)
 - The client's internal AI governance policy applies alongside this policy
 
-Enterprise deployment requires a separate technical configuration discussion with ZenCloud.
+Enterprise deployment requires a separate technical configuration discussion with OrdoAnimi.
 
 ---
 
 ## Acknowledgement
 
-All practitioners operating under ZenCloud engagements must confirm they have read and understood this policy before beginning client delivery.
+All practitioners operating under OrdoAnimi engagements must confirm they have read and understood this policy before beginning client delivery.
 
-This policy is reviewed and updated at each major Velocity Framework version release.
+This policy is reviewed and updated at each major The OrdoAnimi Framework version release.
 
 ---
 
-*ZenCloud Global Consultants — Brisbane*  
+*OrdoAnimi — Brisbane*  
 *AI and Client Data Usage Policy Version 1.0 — May 2026*

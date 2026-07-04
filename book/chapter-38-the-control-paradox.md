@@ -1,6 +1,6 @@
 # Chapter 38: The Control Paradox
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -34,4 +34,4 @@ The Control Paradox is the anti-pattern of adding the wrong thing. The anti-patt
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

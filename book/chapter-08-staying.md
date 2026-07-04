@@ -1,6 +1,6 @@
 # Chapter 8: Staying
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -96,4 +96,4 @@ Staying, in this sense, is not passive survival. It is an active contribution to
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

@@ -1,6 +1,6 @@
 # Series 5 — The Implementation Arc
 
-Series 5 operationalises the Velocity Architecture model inside a real organisation.
+Series 5 operationalises the OrdoAnimi model inside a real organisation.
 
 The series follows the implementation of a functioning architectural decision system across twelve months:
 

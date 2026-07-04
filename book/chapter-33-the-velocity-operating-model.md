@@ -1,6 +1,6 @@
 # Chapter 33: The Velocity Operating Model
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -46,4 +46,4 @@ The chapters that follow describe the instruments through which the Velocity Ope
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

@@ -1,6 +1,6 @@
 # Enterprise Architecture Artefacts — True Purpose, Value Metrics, and Empirical Evidence
 
-**Author:** ZenCloud Global Consultants  
+**Author:** OrdoAnimi  
 **Published:** May 2026  
 **Classification:** Research Synthesis  
 **Scope:** EA artefact effectiveness · MVP/MLP empirical evidence · Value-over-time analysis
@@ -375,5 +375,5 @@ Industry standard figures (maturity level progression outcomes) are Gartner/ASUG
 
 ---
 
-*ZenCloud Global Consultants · Evidence-Based Research and Consulting*  
-*For practitioner application, see the Velocity Architecture Framework™ Series 5*
+*OrdoAnimi · Evidence-Based Research and Consulting*  
+*For practitioner application, see the The OrdoAnimi Framework Series 5*

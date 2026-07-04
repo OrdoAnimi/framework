@@ -1,6 +1,6 @@
-# Velocity™ Unified Kanban — MVP & MLP
-*Velocity Architecture Framework™ | Owner: Phil Myint*
-*Covers: velocityarchitectureframework.com · zencloudau.github.io/vaf-sa · Velocity™ Agent*
+# OrdoAnimi Unified Kanban — MVP & MLP
+*The OrdoAnimi Framework | Owner: Phil Myint*
+*Covers: velocityarchitectureframework.com · zencloudau.github.io/vaf-sa · OrdoAnimi Agent*
 *Created: 2026-06-28 | Updated as work progresses*
 
 ---
@@ -29,21 +29,21 @@
 | M8 | Define Velocity Vault | New: `vault/README.md` | REVIEW P2.1 |
 | M9 | Create Column 6 — `patterns/` directory with README + first pattern | New: `patterns/README.md` + `patterns/stalled-decision-pattern.md` | REVIEW P1.3 |
 | M10 | Fix homepage book card — "thirty-three chapters" is stale; book is complete at 50 | velocityarchitectureframework.com homepage HTML | Site audit |
-| M11 | Resolve version discrepancy — repo/spec says v1.0; Velocity™ Agent says "Velocity™ v2". Decide canonical version and align everywhere. | `spec/FRAMEWORK-SPEC.md`, `app/portal.html` | Agent audit |
+| M11 | Resolve version discrepancy — repo/spec says v1.0; OrdoAnimi Agent says "OrdoAnimi v2". Decide canonical version and align everywhere. | `spec/FRAMEWORK-SPEC.md`, `app/portal.html` | Agent audit |
 
-### 🟠 Velocity™-SA Site — zencloudau.github.io/vaf-sa/
+### 🟠 OrdoAnimi-SA Site — zencloudau.github.io/vaf-sa/
 
 | # | Item | File(s) | Source |
 |---|------|---------|--------|
 | M12 | Fix GitHub Pages — site returns 404. Enable Pages in repo settings pointing to `master` branch (or rename `master` → `main`) | GitHub repo settings | Site audit |
-| M13 | Fix OG meta URLs — all pages reference `zencloudau.github.io/Velocity™-sa/` (trademark symbol in URL); should be `zencloudau.github.io/vaf-sa/` | All HTML files (`og:url` meta tags) | Site audit |
+| M13 | Fix OG meta URLs — all pages reference `zencloudau.github.io/OrdoAnimi-sa/` (trademark symbol in URL); should be `zencloudau.github.io/vaf-sa/` | All HTML files (`og:url` meta tags) | Site audit |
 | M14 | Verify `workshop-playbook.html` exists and is complete (nav links to it but not confirmed) | `workshop-playbook.html` | Site audit |
 | M15 | Verify `escalation-protocol.html` exists and is complete (nav links to it but not confirmed) | `escalation-protocol.html` | Site audit |
 | M16 | Verify `cloud-reference/` exists and is complete (nav links to it but not confirmed) | `cloud-reference/index.html` | Site audit |
 | M17 | Verify all 6 module pages exist and are complete | `modules/module-01` through `module-06` | Site audit |
 | M18 | Verify all 4 engagement archetype pages exist | `engagement-archetypes/obfuscation.html`, `negligent-void.html`, `institutional-paralysis.html`, `silo.html` | Site audit |
 | M19 | Verify all toolkit files exist (10 diagrams, 8 templates referenced in toolkit.html) | `diagrams/`, `templates/`, `toolkit/` | Site audit |
-| M13 | Fix OG meta URLs — all pages reference `zencloudau.github.io/Velocity™-sa/` (trademark symbol in URL) | All HTML files | Site audit |
+| M13 | Fix OG meta URLs — all pages reference `zencloudau.github.io/OrdoAnimi-sa/` (trademark symbol in URL) | All HTML files | Site audit |
 
 ### In Progress
 
@@ -71,7 +71,7 @@
 | M17 | Verify all 6 module pages — confirmed live and complete | 2026-06-28 |
 | M18 | Verify all 4 engagement archetype pages — confirmed live and complete | 2026-06-28 |
 | M19 | Verify all toolkit files — 7 Mermaid + 3 PlantUML + 8 templates confirmed | 2026-06-28 |
-| M13 | Fix OG meta URLs + GitHub footer link — `Velocity™-sa` → `vaf-sa` across all HTML files | 2026-06-28 |
+| M13 | Fix OG meta URLs + GitHub footer link — `OrdoAnimi-sa` → `vaf-sa` across all HTML files | 2026-06-28 |
 
 ---
 
@@ -96,22 +96,22 @@
 | L13 | State publishing hierarchy explicitly in README | `README.md` | Ecosystem |
 | L14 | Medium backlog — cross-post Chapters 31–50 | Medium @ZencloudAU | Ecosystem |
 
-### 🟠 Velocity™-SA Site
+### 🟠 OrdoAnimi-SA Site
 
 | # | Item | File(s) | Source |
 |---|------|---------|--------|
 | L15 | Add cross-link from vaf-sa homepage → velocityarchitectureframework.com framework library | `index.html` | Ecosystem |
 | L16 | Add cross-link from framework site → vaf-sa | velocityarchitectureframework.com | Ecosystem |
-| L17 | Align lexicon terms with EPISTEMOLOGY.md coined concepts — Decision Altitude, Governance Drag, Pattern Locking map to Velocity™ coined concepts; ensure no contradictions | `lexicon.html` vs `foundation/EPISTEMOLOGY.md` | Content integrity |
+| L17 | Align lexicon terms with EPISTEMOLOGY.md coined concepts — Decision Altitude, Governance Drag, Pattern Locking map to OrdoAnimi coined concepts; ensure no contradictions | `lexicon.html` vs `foundation/EPISTEMOLOGY.md` | Content integrity |
 | L18 | Add vaf-sa to site map at velocityarchitectureframework.com | velocityarchitectureframework.com/site-map.html | Ecosystem |
 
-### 🤖 Velocity™ Agent
+### 🤖 OrdoAnimi Agent
 
 | # | Item | File(s) | Source |
 |---|------|---------|--------|
-| L19 | Document the Velocity™ Agent in CLAUDE.md and ECOSYSTEM-AUDIT.md | `CLAUDE.md`, `ECOSYSTEM-AUDIT.md` | Session audit |
-| L20 | Align Agent "Velocity™ v2" branding once version decision is made (M11) | `app/portal.html` | Agent audit |
-| L21 | Add link to Velocity™ Agent from framework site nav or guides | velocityarchitectureframework.com nav | Discoverability |
+| L19 | Document the OrdoAnimi Agent in CLAUDE.md and ECOSYSTEM-AUDIT.md | `CLAUDE.md`, `ECOSYSTEM-AUDIT.md` | Session audit |
+| L20 | Align Agent "OrdoAnimi v2" branding once version decision is made (M11) | `app/portal.html` | Agent audit |
+| L21 | Add link to OrdoAnimi Agent from framework site nav or guides | velocityarchitectureframework.com nav | Discoverability |
 
 ### In Progress
 
@@ -145,18 +145,18 @@
 
 ---
 
-## 🟩 Ecosystem (Parked — Pending Trademark/Naming Resolution)
+## 🟩 Ecosystem (Naming resolved 2026-07-05 — transfers still pending)
 
-| # | Item | Blocked by |
+| # | Item | Status |
 |---|------|-----------|
-| E1 | Resolve Velocity trademark — confirm or rename framework | Phil decision |
-| E2 | Transfer velocity-architecture repo to OrdoAnimi | E1 |
-| E3 | Transfer ea-artefact-generator → OrdoAnimi/Fabrica | E1 |
-| E4 | Transfer velocity-academy → OrdoAnimi/Arcadium | Phil decision |
-| E5 | Archive/remove unused ZenCloudAU repos after audit | Repo audit |
-| E6 | DNS fix: velocityarchitecture.com.au → Academy | E4 |
-| E7 | StudioSix brand decision (separate brand vs OrdoAnimi/Mercatus) | Phil decision |
-| E8 | vaf-sa → transfer to OrdoAnimi once trademark resolved | E1, E2 |
+| E1 | ~~Resolve Velocity trademark~~ | ✅ Resolved — framework renamed **The OrdoAnimi Framework** |
+| E7 | ~~brand decision~~ | ✅ Resolved — **OrdoAnimi** is the single umbrella brand for the framework, the company, and the product line (Valour, Executive Fast Track). No separate framework brand. |
+| E2 | Transfer velocity-architecture repo under the OrdoAnimi banner | Pending — destination org/repo location not yet finalised |
+| E3 | Transfer ea-artefact-generator → OrdoAnimi/Fabrica | Pending Phil decision (unrelated to naming resolution) |
+| E4 | Transfer velocity-academy → OrdoAnimi/Arcadium | Pending Phil decision (unrelated to naming resolution) |
+| E5 | Archive/remove unused ZenCloudAU repos after audit | Repo audit (see the OrdoAnimi consolidation plan) |
+| E6 | DNS fix: velocityarchitecture.com.au → Academy | Blocked on E4 |
+| E8 | vaf-sa → transfer under the OrdoAnimi banner once E2 lands | Blocked on E2 |
 
 ---
 
@@ -182,5 +182,5 @@ L3/L4/L5 (worked examples) → L2 (onboarding playbook) → L1 (more patterns) �
 
 ---
 
-*Velocity™ Unified Kanban — Velocity Architecture Framework™*
-*© 2026 Phil Myint / ZenCloud Advisory*
+*OrdoAnimi Unified Kanban — The OrdoAnimi Framework*
+*© 2026 Phil Myint / OrdoAnimi*

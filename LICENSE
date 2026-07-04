@@ -1,29 +1,29 @@
-SPDX-FileCopyrightText: 2026 Phil Myint / ZenCloud Advisory
-SPDX-License-Identifier: LicenseRef-ZenCloudAdvisory-Proprietary
+SPDX-FileCopyrightText: 2026 Phil Myint / The OrdoAnimi Group
+SPDX-License-Identifier: CC-BY-4.0
 
-Velocity Architecture Framework™
-Copyright © 2026 Phil Myint / ZenCloud Advisory
-All rights reserved.
+The OrdoAnimi Framework
+Copyright © 2026 Phil Myint / The OrdoAnimi Group
 
 This work — including all text, structure, instruments, coined concepts, correspondence
-rules, templates, examples, and associated publications — is the proprietary intellectual
-property of Phil Myint / ZenCloud Advisory.
+rules, templates, examples, and associated publications — is licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
 
-Permission is NOT granted to copy, reproduce, distribute, publish, sublicense, sell,
-or create derivative works from this material in whole or in part, whether in original
-or modified form, without the prior written permission of the copyright holder.
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material for any purpose,
+    even commercially
 
-Permitted uses (without prior written permission):
-  - Reading and referencing this material for personal or professional learning
-  - Linking to this repository from public or private content
-  - Citing this work with full attribution in academic or professional publications
+Under the following terms:
+  - Attribution — You must give appropriate credit to Phil Myint and The
+    OrdoAnimi Group, provide a link to this license, and indicate if changes
+    were made. You may do so in any reasonable manner, but not in any way
+    that suggests The OrdoAnimi Group endorses you or your use.
 
-Trademark notice:
-  Velocity Architecture Framework™ is a trademark of ZenCloud Advisory filed in
-  Class 42. Use of the trademark or coined concepts defined in this framework
-  in any commercial product, service, or publication requires prior written
-  permission.
+No additional restrictions — You may not apply legal terms or technological
+measures that legally restrict others from doing anything the license permits.
 
-For licensing enquiries: phil@myintenterprises.com
+Full license text: https://creativecommons.org/licenses/by/4.0/
+
+For enquiries: phil@myintenterprises.com
 
 This licence does not affect any statutory rights that cannot be excluded by agreement.

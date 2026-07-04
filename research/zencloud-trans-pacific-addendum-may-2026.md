@@ -1,9 +1,9 @@
 # International Comparative Addendum: Canada and New Zealand
 ## Extending the Prevention-Detection-Remediation Framework Beyond Australia
 
-**Document:** 1.1 — Addendum to the ZenCloud IT Governance Working Paper (May 2026)
+**Document:** 1.1 — Addendum to the OrdoAnimi IT Governance Working Paper (May 2026)
 **Author:** Phil Myint
-**Organisation:** ZenCloud Global Consultants
+**Organisation:** OrdoAnimi
 **Classification:** Independent Industry Working Paper — Addendum
 **Date:** May 2026
 **Primary Paper:** A Comparative Analysis of IT Governance Frameworks — Australian Public Sector (2025-2026)
@@ -194,6 +194,6 @@ That is the argument the main working paper makes. Canada and New Zealand confir
 
 ---
 
-*This addendum is published by Phil Myint under the ZenCloud Global Consultants brand as an independent contribution to public sector IT governance research. No commercial engagement is implied or intended. It extends the comparative analysis published in the main working paper: A Comparative Analysis of IT Governance Frameworks — Investigating the Relationship Between Documented Intent and Reported Outcomes in the Australian Public Sector (2025–2026), Document 1 in this series.*
+*This addendum is published by Phil Myint under the OrdoAnimi brand as an independent contribution to public sector IT governance research. No commercial engagement is implied or intended. It extends the comparative analysis published in the main working paper: A Comparative Analysis of IT Governance Frameworks — Investigating the Relationship Between Documented Intent and Reported Outcomes in the Australian Public Sector (2025–2026), Document 1 in this series.*
 
-*This addendum is maintained in the ZenCloud research repository at github.com/[your-handle]/velocity-architecture-framework*
+*This addendum is maintained in the OrdoAnimi research repository at github.com/[your-handle]/velocity-architecture-framework*

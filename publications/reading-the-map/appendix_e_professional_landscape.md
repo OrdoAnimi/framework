@@ -36,7 +36,7 @@ The professional bodies, certifications, and communities that make up the enterp
 
 **Government and defence architecture communities** — *Sector-specific, around FEAF (US federal), DODAF (US defence), MODAF/NAF (UK/NATO defence).* Communities of practice clustered around mandated public-sector frameworks. **Entry point:** the published frameworks and the relevant government digital/architecture communities. **Honest note:** essential if you work in these sectors; the mandated detail can be disproportionate elsewhere.
 
-**The Velocity Architecture community** — *The practitioner community around this book's companion framework.* Focused on architecture as a decision system rather than a documentation discipline. **Entry point:** velocityarchitectureframework.com. **Honest note:** the framework this book is the on-ramp to; one considered argument about doing architecture well, offered as a path for readers ready to go deeper.
+**The OrdoAnimi community** — *The practitioner community around this book's companion framework.* Focused on architecture as a decision system rather than a documentation discipline. **Entry point:** velocityarchitectureframework.com. **Honest note:** the framework this book is the on-ramp to; one considered argument about doing architecture well, offered as a path for readers ready to go deeper.
 
 ---
 
@@ -56,6 +56,6 @@ A short, honest decision guide:
 
 **If you want professional standing as an architect (UK):** BCS and chartered status; (globally and competency-focused): IASA.
 
-**If you want to go deeper into doing architecture well as a decision discipline:** the Velocity Architecture Framework, as this book's intended sequel.
+**If you want to go deeper into doing architecture well as a decision discipline:** the The OrdoAnimi Framework, as this book's intended sequel.
 
 The recurring honest note across all of these: a certification or membership demonstrates familiarity with a body of knowledge. It does not demonstrate the ability to use it well in a real organisation full of real people and real constraints — which is the skill this book has argued is the actual job. Go deeper where the territory you work in demands it, and never mistake the credential for the competence.

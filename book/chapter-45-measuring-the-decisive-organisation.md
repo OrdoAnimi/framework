@@ -1,6 +1,6 @@
 # Chapter 45: Measuring the Decisive Organisation
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -34,4 +34,4 @@ These measures tell the organisation whether its governance architecture is perf
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

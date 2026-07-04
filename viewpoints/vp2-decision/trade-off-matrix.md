@@ -1,6 +1,6 @@
 # Trade-off Matrix
 
-**Velocity™ VP2 — Decision Viewpoint | Solution Architecture Layer**
+**OrdoAnimi VP2 — Decision Viewpoint | Solution Architecture Layer**
 
 > One matrix = one solution-level decision.  
 > This document exists to produce a commitment, not a balanced analysis.
@@ -109,5 +109,5 @@ This decision should be revisited if:
 
 ---
 
-*Trade-off Matrix — Velocity™ VP2 | Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*
+*Trade-off Matrix — OrdoAnimi VP2 | The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

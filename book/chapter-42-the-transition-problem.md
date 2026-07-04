@@ -1,6 +1,6 @@
 # Chapter 42: The Transition Problem
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -34,4 +34,4 @@ What the transition logic does not yet supply is the concrete starting point —
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

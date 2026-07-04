@@ -1,8 +1,8 @@
 # ZAF Correspondence Matrix
 ## ISO/IEC/IEEE 42010:2022 — Inter-View Relationships and Consistency Rules
 
-**Framework:** ZenCloud Architecture Framework™ (ZAF)  
-**Author:** Phil Myint / ZenCloud Global Consultants  
+**Framework:** OrdoAnimi Architecture Framework™ (ZAF)  
+**Author:** Phil Myint / OrdoAnimi  
 **Date:** May 2026
 
 ---
@@ -96,4 +96,4 @@ The 17 correspondence rules in `/correspondence-rules/RULES.md` provide the deta
 
 ---
 
-*ZenCloud Global Consultants · ZenCloud Architecture Framework™ · May 2026*
+*OrdoAnimi · OrdoAnimi Architecture Framework™ · May 2026*

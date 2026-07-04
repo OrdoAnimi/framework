@@ -1,7 +1,7 @@
 # Signal
 
 *Unfiltered observations from the field. Fortnightly.*
-*Phil Myint · ZenCloud Global Consultants · Brisbane*
+*Phil Myint · OrdoAnimi · Brisbane*
 
 ---
 
@@ -44,6 +44,6 @@ Organisations are failing to connect reality to decision-making at every layer. 
 
 ---
 
-*© Phil Myint · ZenCloud Global Consultants · All rights reserved*
+*© Phil Myint · OrdoAnimi · CC BY 4.0*
 *Published fortnightly on LinkedIn*
 *Series archive: github.com/ZenCloudAU/velocity-architecture*

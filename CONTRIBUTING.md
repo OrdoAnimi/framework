@@ -1,6 +1,6 @@
-# Contributing to the Velocity Architecture Framework™
+# Contributing to the The OrdoAnimi Framework
 
-**© 2026 Phil Myint / ZenCloud Global Consultants**
+**© 2026 Phil Myint / OrdoAnimi**
 
 ---
 
@@ -33,7 +33,7 @@ This is a formally specified, trademarked framework. Contributions are welcome b
 
 - Changes to the framework specification (`spec/FRAMEWORK-SPEC.md`) without prior discussion with the owner
 - Changes to the correspondence rules register that add, remove, or modify rules
-- Additions of new viewpoints or instruments presented as official Velocity™ components
+- Additions of new viewpoints or instruments presented as official OrdoAnimi components
 - Anything that would alter the ISO/IEC/IEEE 42010:2022 conformance claim
 - Commercial derivative works submitted as contributions
 
@@ -44,7 +44,7 @@ This is a formally specified, trademarked framework. Contributions are welcome b
 1. **Open an issue first** — describe what you want to change and why before submitting a pull request
 2. **One change per pull request** — keep PRs focused and reviewable
 3. **Follow the existing format** — templates use consistent structure; maintain it
-4. **Attribution** — contributions will be acknowledged but copyright remains with Phil Myint / ZenCloud Global Consultants
+4. **Attribution** — contributions will be acknowledged but copyright remains with Phil Myint / OrdoAnimi
 
 ---
 
@@ -62,4 +62,4 @@ Contributions are professional exchanges. Keep feedback precise and constructive
 
 ---
 
-*Velocity Architecture Framework™ — © 2026 Phil Myint / ZenCloud Global Consultants*
+*The OrdoAnimi Framework — © 2026 Phil Myint / OrdoAnimi*

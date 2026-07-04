@@ -1,6 +1,6 @@
 # Chapter 30: The Operational Truth Model
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -66,4 +66,4 @@ Part Four describes how this architecture runs.
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

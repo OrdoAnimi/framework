@@ -1,6 +1,6 @@
 # Guardrail Canvas
 
-**Velocity™ VP1 — Direction Viewpoint | Enterprise Architecture Layer**
+**OrdoAnimi VP1 — Direction Viewpoint | Enterprise Architecture Layer**
 
 > One canvas = one organisational domain or strategic period.  
 > This is a declaration of intent, not a design document.
@@ -78,5 +78,5 @@ Those decisions belong to VP2 (Trade-off Matrix) and below.
 
 ---
 
-*Guardrail Canvas — Velocity™ VP1 | Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*
+*Guardrail Canvas — OrdoAnimi VP1 | The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

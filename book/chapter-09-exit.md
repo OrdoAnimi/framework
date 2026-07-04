@@ -1,6 +1,6 @@
 # Chapter 9: Exit
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -94,4 +94,4 @@ And in doing so, it completes the arc that began with clarity — not by win
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Sync canonical nav and footer across all Velocity Architecture HTML pages.
+Sync canonical nav and footer across all OrdoAnimi HTML pages.
 
 Run: python tools/sync_nav.py
 CI: python tools/sync_nav.py --check (exits 1 if any file would change)
@@ -24,23 +24,14 @@ SKIP_DIR_PREFIXES = ('publications/', '.git/', 'app/')
 
 # ── Ecosystem strip (shared across all families) ──────────────────────────────
 _ECO = (
-'<nav class="ecosystem-strip" aria-label="Ecosystem navigation" '
-'style="background:#0f172a;color:#F8FAFC;display:flex;align-items:center;'
-"gap:2rem;padding:0.5rem 2rem;font-size:0.75rem;font-family:'DM Sans',sans-serif;"
-'border-bottom:1px solid #1e293b;flex-wrap:wrap;">'
-'<span style="color:#64748B;font-size:0.7rem;text-transform:uppercase;'
-'letter-spacing:0.08em;margin-right:auto;">ZenCloud Ecosystem</span>'
-'<a href="https://www.zencloud.com.au" style="color:#F8FAFC;text-decoration:none;opacity:0.8;">ZenCloud™</a>'
-'<a href="https://studiosix.com.au" style="color:#F8FAFC;text-decoration:none;opacity:0.8;">StudioSix™</a>'
-'<a href="https://velocityarchitectureframework.com" style="color:#F8FAFC;text-decoration:none;opacity:0.8;">Velocity™</a>'
-'</nav>'
+''
 )
 
 # ── KB family ─────────────────────────────────────────────────────────────────
 KB_NAV = (
 _ECO + '\n'
 '<nav>\n'
-' <a href="/" class="nav-brand">Velocity<sup>™</sup>'
+' <a href="/" class="nav-brand">OrdoAnimi'
 '<span class="nav-brand-badge">Open Source</span></a>\n'
 ' <ul class="nav-links">\n'
 ' <li><a href="/frameworks/">Framework</a></li>\n'
@@ -68,8 +59,8 @@ KB_FOOTER = (
 '<footer>\n'
 ' <div class="footer-inner">\n'
 ' <div>\n'
-' <p class="footer-brand">Velocity<sup>™</sup></p>\n'
-' <p class="footer-copy">© 2026 ZenCloud Global Consultants · '
+' <p class="footer-brand">OrdoAnimi</p>\n'
+' <p class="footer-copy">© 2026 OrdoAnimi · '
 'Free to use · Attribution appreciated</p>\n'
 ' </div>\n'
 ' <div class="footer-links">\n'
@@ -91,7 +82,7 @@ KB_FOOTER = (
 LEAN_NAV = (
 _ECO + '\n'
 '<nav>'
-'<a href="/" style="font-weight:bold;margin-right:1.5rem;">Velocity™</a>'
+'<a href="/" style="font-weight:bold;margin-right:1.5rem;">OrdoAnimi</a>'
 '<a href="/frameworks/">Framework</a> · '
 '<a href="/research/">Research</a> · '
 '<a href="/publications/">Publications</a> · '
@@ -103,7 +94,7 @@ _ECO + '\n'
 )
 
 LEAN_FOOTER = (
-'<footer>© 2026 ZenCloud Global Consultants · '
+'<footer>© 2026 OrdoAnimi · '
 '<a href="/">Home</a> · '
 '<a href="/frameworks/">Framework</a> · '
 '<a href="/research/">Research</a> · '
@@ -120,7 +111,7 @@ LEAN_FOOTER = (
 READER_NAV = (
 _ECO + '\n'
 '<nav>\n'
-' <a class="brand" href="/">Velocity<sup>™</sup></a>\n'
+' <a class="brand" href="/">OrdoAnimi</a>\n'
 ' <div class="nav-links">\n'
 ' <a href="/frameworks/">Framework</a>\n'
 ' <a href="/research/">Research</a>\n'
@@ -143,12 +134,10 @@ _ECO + '\n'
 
 READER_FOOTER = (
 '<footer>\n'
-' <strong>ZenCloud advises. StudioSix produces. Velocity decides.</strong>\n'
+' <strong>OrdoAnimi advises, builds, and decides.</strong>\n'
 ' <div class="footer-links">\n'
 ' <a href="/research/">Research</a>\n'
-' <a href="/">Velocity Framework</a>\n'
-' <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>\n'
-' <a href="https://studiosix.com.au/" target="_blank" rel="noopener">StudioSix</a>\n'
+' <a href="/">The OrdoAnimi Framework</a>\n'
 ' </div>\n'
 ' </footer>'
 )

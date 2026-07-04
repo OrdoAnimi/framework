@@ -1,6 +1,6 @@
 # Chapter 7: Refusal
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -108,4 +108,4 @@ The threshold of refusal makes that practice possible. Not by changing the syste
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

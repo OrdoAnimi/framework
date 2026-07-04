@@ -1,6 +1,6 @@
 # Chapter 28: The Truth Velocity Index
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -80,4 +80,4 @@ The decisive organisation measures both. The index is not an occasional audit. I
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

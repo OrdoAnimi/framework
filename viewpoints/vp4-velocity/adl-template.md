@@ -1,6 +1,6 @@
 # Architectural Decision Log (ADL) — Index
 
-**Velocity™ VP4 — Velocity Viewpoint | Architectural Control Layer**
+**OrdoAnimi VP4 — Velocity Viewpoint | Architectural Control Layer**
 
 > This is the master index of all architectural decisions for this engagement or programme.  
 > Every decision is logged here. Nothing is deleted — superseded records are retained.
@@ -79,5 +79,5 @@
 
 ---
 
-*ADL Index — Velocity™ VP4 | Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*
+*ADL Index — OrdoAnimi VP4 | The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

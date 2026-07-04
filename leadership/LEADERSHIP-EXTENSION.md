@@ -1,12 +1,12 @@
-# Velocity™ Leadership Extension
+# OrdoAnimi Leadership Extension
 
-**Velocity Architecture Framework™ — Without the Architecture Lens**
+**The OrdoAnimi Framework — Without the Architecture Lens**
 
 ---
 
 ## The Core Claim
 
-The Velocity Architecture Framework was developed within the architecture domain. Its underlying structure is a **decision governance framework**.
+The OrdoAnimi Framework was developed within the architecture domain. Its underlying structure is a **decision governance framework**.
 
 When the architecture-specific vocabulary is removed, the framework applies without modification to any organisational context where decisions must be made, owned, and acted upon under conditions of ambiguity and competing authority.
 
@@ -40,7 +40,7 @@ The architecture domain is the entry point — the specific, credible context wh
 
 ## The Pathology Model in Organisations
 
-The Velocity™'s organisational pathology model applies without modification to leadership contexts.
+The OrdoAnimi's organisational pathology model applies without modification to leadership contexts.
 
 **Responsibility diffusion** is not an architecture problem — it is a leadership problem. Alignment mutates from a clarity mechanism to a defence mechanism. Infrastructure of diffusion embeds itself: governance forums multiply, decision rights migrate to run-time negotiation. Incentive geometry makes decisiveness reputationally expensive. Collaboration without convergence gives the system a moral vocabulary that justifies indefinite delay.
 
@@ -50,7 +50,7 @@ The measurable symptom is **decision latency** — the interval between when a c
 
 ## The Convergence Design System for Leaders
 
-The prescriptive half of the Velocity™ applies directly:
+The prescriptive half of the OrdoAnimi applies directly:
 
 **Authority** is the mechanism that converges ambiguity. Consultation expands the field; authority closes it. When those functions are misaligned, latency becomes endemic.
 
@@ -105,5 +105,5 @@ The same progression applies:
 
 ---
 
-*Leadership Extension — Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*
+*Leadership Extension — The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

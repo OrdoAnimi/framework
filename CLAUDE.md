@@ -1,29 +1,29 @@
-# CLAUDE.md — Velocity Architecture Framework™
+# CLAUDE.md — The OrdoAnimi Framework
 *Project memory for Claude. Read this at the start of every session before doing any work on this project.*
 
 ---
 
 ## What This Project Is
 
-The **Velocity Architecture Framework™ (Velocity™)** is Phil Myint's primary intellectual property — a decision governance framework for enterprise and solution architecture, conformant with ISO/IEC/IEEE 42010:2022. It is also the underlying framework for a leadership extension that applies the same ideas to any organisational authority responsible for making decisions move.
+**The OrdoAnimi Framework** is Phil Myint's primary intellectual property — a decision governance framework for enterprise and solution architecture, conformant with ISO/IEC/IEEE 42010:2022. It is also the underlying framework for a leadership extension that applies the same ideas to any organisational authority responsible for making decisions move.
 
-This is not a side project. It is the primary framework, IP, and publishing platform for ZenCloud Advisory. Every change must maintain the integrity of the whole.
+This is not a side project. It is the primary framework, IP, and publishing platform for OrdoAnimi. Every change must maintain the integrity of the whole.
 
 **Core thesis:**
 > *Architecture exists to create clarity that leads to better decisions.*
 > *Velocity is not speed. It is the rate at which ambiguity expires.*
 
-**Owner:** Phil Myint, Principal Architect, ZenCloud Advisory
-**Trademark:** Velocity Architecture Framework™ — TM filed, Class 42, ZenCloud Consulting
-**Copyright:** © 2026 Phil Myint / ZenCloud Advisory
+**Owner:** Phil Myint, Principal Architect, The OrdoAnimi Group
+**License:** CC BY 4.0 — free to use, attribution appreciated
+**Copyright:** © 2026 Phil Myint / The OrdoAnimi Group
 
 ---
 
 ## Strategic Context (Background — Not Blocking Current Work)
 
-**OrdoAnimi** (`github.com/OrdoAnimi`) is a new institutional brand/org — a 16-component governed AI estate. Velocity Architecture is referenced within OrdoAnimi as "the professional method." ZenCloudAU repos will migrate to OrdoAnimi eventually, but this is future work. Fix the framework first, then migrate.
+**OrdoAnimi** (`github.com/OrdoAnimi`) is the single umbrella brand for everything Phil Myint publishes and builds — this framework, the Valour product console, and Executive Fast Track all sit under it. There is no longer a separate framework brand distinct from the company: this repository's public identity, the company's identity, and the product house's identity are all "OrdoAnimi." ZenCloudAU repos will migrate under this banner as each is ready; this is future work.
 
-**Trademark note:** There are issues with the "Velocity" trademark. The framework name is stable for current work. A rename decision will be made separately; CLAUDE.md will be updated at that point.
+**Trademark note — resolved:** The "Velocity" trademark issue is settled. The framework is renamed **The OrdoAnimi Framework**. ZenCloud and StudioSix are retired entirely, not carried forward as sub-brands. The book's use of "velocity" as a philosophical concept (the rate at which ambiguity expires) is untouched — that's the framework's own vocabulary, not the retired brand name.
 
 ---
 
@@ -41,19 +41,19 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 - **velocityarchitectureframework.com/publications** — ALL 50 book chapters published + Thought Series + Signal. **This is the primary publishing platform, not Medium.**
 - **Medium @ZencloudAU** — Book chapters serialised; at Chapter 30 of 50 (secondary discovery channel — 20 chapters behind)
 - **LinkedIn in/pmyint** — Professional presence; active
-- **zencloud.com.au** — ZenCloud Advisory client entry point
+- **zencloud.com.au** — OrdoAnimi client entry point
 
 ### Related Artefacts (Off-Repo)
-- **Velocity™ Book** — 50 chapters complete, published on velocityarchitectureframework.com (Book 1 — Architecture domain)
-- **Leadership Book** — Book 2; same Velocity™ framework, leadership language. Seed: `leadership/LEADERSHIP-EXTENSION.md`
+- **OrdoAnimi Book** — 50 chapters complete, published on velocityarchitectureframework.com (Book 1 — Architecture domain)
+- **Leadership Book** — Book 2; same OrdoAnimi framework, leadership language. Seed: `leadership/LEADERSHIP-EXTENSION.md`
 - **The Living Bible for Enterprise & Solution Architects** — domain knowledge reference base (location TBC — confirm with Phil)
 - **Presentation materials / slide decks** — exist for client and conference use (location TBC)
 
-### Velocity™ Agent (Deprecated)
-- The Velocity™ Agent ("VAF v2" in the old UI) was a separate product hosted at `velocityarchitectureframework.com/app/portal.html`
+### The Legacy Agent (Deprecated, internally "VAF v2")
+- A separate product, internally called "VAF v2" in the old UI, hosted at `velocityarchitectureframework.com/app/portal.html`
 - It has been **deprecated** — the portal.html page now redirects to the framework site
-- Nav links to the Agent have been removed from vaf-sa (all HTML files cleaned in Session 2)
-- The agent is NOT part of the current framework or publishing stack
+- Nav links to it have been removed from vaf-sa (all HTML files cleaned in Session 2)
+- It is NOT part of the current framework or publishing stack, and not part of the OrdoAnimi brand
 - Do not add links to `app/portal.html` anywhere in either repo
 
 ### Working Folders
@@ -93,7 +93,7 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 ### Foundation Layer
 `foundation/EPISTEMOLOGY.md` — sits beneath all viewpoints. Not a viewpoint itself. Contains the philosophical warrant for the entire framework.
 
-**Eight coined concepts** (all trademarked IP):
+**Eight coined concepts** (the framework's core vocabulary — precise terms, use carefully):
 1. Velocity of Truth
 2. Integrity Gap
 3. Decision Latency
@@ -233,7 +233,7 @@ Full detail in `REVIEW.md`. Summary for session awareness:
 D:\VelocityArchitecture\ (github.com/ZenCloudAU/velocity-architecture)
 │
 ├── CLAUDE.md                          ← This file
-├── SKILL.md                           ← Velocity™ working skill for Claude
+├── SKILL.md                           ← OrdoAnimi working skill for Claude
 ├── REVIEW.md                          ← Full review (2026-06-28)
 ├── ECOSYSTEM-AUDIT.md                 ← Full ecosystem audit (2026-06-28, updated Session 2)
 ├── README.md                          ← Public-facing framework overview
@@ -370,6 +370,6 @@ At the start of any working session on this project:
 
 ---
 
-*CLAUDE.md — Velocity Architecture Framework™*
-*Created: 2026-06-28 | Updated: 2026-06-28 (Session 2) | Owner: Phil Myint / ZenCloud Advisory*
+*CLAUDE.md — The OrdoAnimi Framework*
+*Created: 2026-06-28 | Updated: 2026-06-28 (Session 2) | Owner: Phil Myint / OrdoAnimi*
 *Update this file whenever the project structure, ecosystem, or working conventions change.*

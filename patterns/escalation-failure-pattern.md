@@ -1,6 +1,6 @@
 # PAT-02: Escalation Failure
 
-**Velocity Architecture Framework™ — Pattern & Playbook | Column 6**
+**The OrdoAnimi Framework — Pattern & Playbook | Column 6**
 
 | Field | Value |
 |-------|-------|
@@ -92,7 +92,7 @@ After this pattern is applied:
 - The governance failure is documented as a structural event, not a personal failure
 - The decision is either resolved at the next tier, or the risk is formally owned with a named individual
 - The practitioner's professional position is protected by the boundary statement
-- The escalation chain is closed — no decision loops indefinitely in the Velocity™ governance model
+- The escalation chain is closed — no decision loops indefinitely in the OrdoAnimi governance model
 
 ---
 
@@ -103,5 +103,5 @@ After this pattern is applied:
 
 ---
 
-*PAT-02: Escalation Failure — Velocity Architecture Framework™*
-*© 2026 Phil Myint / ZenCloud Advisory | ISO/IEC/IEEE 42010:2022 Conformant*
+*PAT-02: Escalation Failure — The OrdoAnimi Framework*
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

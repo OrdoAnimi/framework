@@ -7,7 +7,7 @@ series: "Coffee and Curiosity"
 category: "Field Notes"
 tags:
   - Decision Governance
-  - Velocity Architecture
+  - OrdoAnimi
   - AI Assisted Delivery
   - Decision Latency
   - Human Authority

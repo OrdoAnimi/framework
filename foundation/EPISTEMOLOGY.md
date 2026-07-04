@@ -1,14 +1,14 @@
 # Foundation Layer: Epistemology of Architecture
 
-**Velocity Architecture Framework™ — Beneath All Viewpoints**
+**The OrdoAnimi Framework — Beneath All Viewpoints**
 
 ---
 
 ## What This Layer Is
 
-The Foundation Layer is not a viewpoint. It does not produce artefacts. It is the set of premises that explain why the Velocity™ framework is designed the way it is — the philosophical warrant for every instrument, rule, and structure above it.
+The Foundation Layer is not a viewpoint. It does not produce artefacts. It is the set of premises that explain why the OrdoAnimi framework is designed the way it is — the philosophical warrant for every instrument, rule, and structure above it.
 
-Most architecture frameworks skip epistemology and jump straight to method. Velocity™ does not, because the reason architecture so frequently fails is epistemological: organisations mistake the appearance of knowing for actual knowing.
+Most architecture frameworks skip epistemology and jump straight to method. OrdoAnimi does not, because the reason architecture so frequently fails is epistemological: organisations mistake the appearance of knowing for actual knowing.
 
 ---
 
@@ -33,7 +33,7 @@ When organisations cannot close ambiguity, it is often because they have not res
 
 ## Eight Coined Concepts
 
-The following eight concepts are the proprietary IP of the Velocity Architecture Framework™. They are precisely defined and must not be altered, diluted, or used carelessly. They are the vocabulary through which the framework reasons.
+The following eight concepts are the core vocabulary of The OrdoAnimi Framework. They are precisely defined; please don't alter, dilute, or use them carelessly. They are the vocabulary through which the framework reasons.
 
 ---
 
@@ -97,7 +97,7 @@ Responsibility diffusion is not caused by malice or incompetence. It is a ration
 
 ## The Warrant for the Framework
 
-These premises explain why the Velocity™ framework is structured the way it is:
+These premises explain why the OrdoAnimi framework is structured the way it is:
 
 - **Six viewpoints** rather than one monolithic framework — because different epistemological problems require different instruments
 - **Correspondence rules** — because knowledge in complex systems is interdependent; relationships between descriptions must be enforced
@@ -107,5 +107,5 @@ These premises explain why the Velocity™ framework is structured the way it is
 
 ---
 
-*Foundation Layer — Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Advisory | ISO/IEC/IEEE 42010:2022 Conformant*
+*Foundation Layer — The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

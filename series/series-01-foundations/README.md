@@ -1,6 +1,6 @@
 # Series 1 — Foundations
 
-The foundational Velocity Architecture articles. Published on LinkedIn, 2024.
+The foundational OrdoAnimi articles. Published on LinkedIn, 2024.
 
 The series begins with architecture's real value — clarity that leads to better decisions — and works through the systemic failures that prevent organisations from achieving it: monolithic documentation, governance theatre, absent principles, and the absence of decision traceability.
 

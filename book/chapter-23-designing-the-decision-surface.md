@@ -1,6 +1,6 @@
 # Chapter 23: Designing the Decision Surface
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -104,4 +104,4 @@ This is the design that makes velocity possible at scale. Not the absence of gov
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

@@ -7,9 +7,8 @@ series: "Coffee and Curiosity"
 category: "Field Notes"
 tags:
   - Architecture Governance
-  - Velocity Architecture
-  - StudioSix
-  - Controlled Artefacts
+  - OrdoAnimi
+  - - Controlled Artefacts
   - AI Assisted Delivery
 ---
 
@@ -29,7 +28,7 @@ The shift I keep testing is simple to state and demanding to build. Governance s
 
 A checkpoint asks: did you follow the rules? A runtime constraint makes certain rule-breaking structurally difficult and makes the rest visible the moment it happens. The difference is the difference between a speed camera that posts you a fine three weeks later and a road that is physically designed so the safe speed is the natural speed.
 
-This is what I mean when I call StudioSix a governed worksite rather than a workspace. The distinction is not branding. A workspace is where work happens. A worksite, in the construction sense, is a place you cannot enter without induction, where the hazardous zones are barricaded rather than merely signposted, where the permit to work is checked before the tools come out, and where an incident stops the line rather than feeding a lessons-learned register nobody reads.
+This is what I mean when I call a governed worksite rather than a workspace. The distinction is not branding. A workspace is where work happens. A worksite, in the construction sense, is a place you cannot enter without induction, where the hazardous zones are barricaded rather than merely signposted, where the permit to work is checked before the tools come out, and where an incident stops the line rather than feeding a lessons-learned register nobody reads.
 
 Construction learned this the hard way, through fatalities. Software has mostly been spared that teacher, which is why our governance still leans on signage.
 

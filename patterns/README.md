@@ -1,6 +1,6 @@
 # Patterns & Playbooks
 
-**Velocity Architecture Framework™ — Column 6 | Applied Practice**
+**The OrdoAnimi Framework — Column 6 | Applied Practice**
 
 > Patterns document recurring problems and their proven solutions within the framework.
 > Playbooks document the sequence of moves for specific engagement types.
@@ -10,9 +10,9 @@
 
 ## What This Directory Contains
 
-Column 6 of the Velocity™ framework — Pattern & Playbook — is the applied practice layer. It sits between the formal viewpoint definitions (Columns 2–5) and the practitioner integrity layer (Column 7).
+Column 6 of the OrdoAnimi framework — Pattern & Playbook — is the applied practice layer. It sits between the formal viewpoint definitions (Columns 2–5) and the practitioner integrity layer (Column 7).
 
-**Patterns** describe problems that appear repeatedly across engagements, why they appear, and how Velocity™ instruments are applied to resolve them.
+**Patterns** describe problems that appear repeatedly across engagements, why they appear, and how OrdoAnimi instruments are applied to resolve them.
 
 **Playbooks** describe the sequence of moves for a specific engagement type or scenario — who does what, in what order, with which instruments.
 
@@ -43,7 +43,7 @@ Each pattern uses the following structure:
 - **Name** — the recurring problem
 - **Context** — when this pattern appears
 - **Forces** — why the problem is hard to resolve
-- **Solution** — how Velocity™ instruments address it
+- **Solution** — how OrdoAnimi instruments address it
 - **Correspondence rules engaged** — which rules apply
 - **Consequences** — what changes after the solution is applied
 - **Related patterns** — other patterns commonly appearing alongside
@@ -58,5 +58,5 @@ The pattern or playbook is the viewpoints in motion.
 
 ---
 
-*Patterns & Playbooks — Velocity Architecture Framework™*
-*© 2026 Phil Myint / ZenCloud Advisory | ISO/IEC/IEEE 42010:2022 Conformant*
+*Patterns & Playbooks — The OrdoAnimi Framework*
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

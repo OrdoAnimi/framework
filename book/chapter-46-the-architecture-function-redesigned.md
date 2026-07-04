@@ -1,6 +1,6 @@
 # Chapter 46: The Architecture Function Redesigned
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -32,4 +32,4 @@ The redesigned function, correctly understood, is the architecture function the 
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

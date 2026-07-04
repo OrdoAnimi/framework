@@ -1,12 +1,12 @@
 # Where the Frameworks Stop
 ## A Position on the Governance-Execution Gap in Australian, Canadian, and New Zealand Public Sector IT
 
-**Published under the Velocity Architecture Framework™**
-**By Phil Myint · Principal Architect · ZenCloud Global Consultants**
+**Published under the The OrdoAnimi Framework**
+**By Phil Myint · Principal Architect · OrdoAnimi**
 **Date:** May 2026
 **Reading time:** approximately 20 minutes
 
-*This position paper builds directly on the comparative analysis of 2024-2026 public sector audit findings published separately under the ZenCloud Global Consultants brand. That paper established the pattern across six Australian jurisdictions, Canada, and New Zealand. This paper examines the structural conditions that sustain it — and names the mechanisms through which it persists.*
+*This position paper builds directly on the comparative analysis of 2024-2026 public sector audit findings published separately under the OrdoAnimi brand. That paper established the pattern across six Australian jurisdictions, Canada, and New Zealand. This paper examines the structural conditions that sustain it — and names the mechanisms through which it persists.*
 
 ---
 
@@ -38,7 +38,7 @@ The persistent audit findings documented in the research paper share a common pr
 
 In New South Wales, 59% of agencies had no independent assurance over their own compliance with the NSW Cyber Security Policy. That is attestation without verification at its most direct. In Victoria, six agencies had automated asset discovery tools and none had configured them to scan their entire network. The tool existed. The attestation of intent existed. The verification of operational truth did not. In Canada, the federal government attested to a comprehensive cyber security strategy while 58% of federal organisations operated outside the central protective services that strategy depended on.
 
-The Velocity Architecture Framework™ calls the space where this gap accumulates Governance Drag.
+The OrdoAnimi Framework calls the space where this gap accumulates Governance Drag.
 
 ---
 
@@ -60,7 +60,7 @@ This is what Governance Drag looks like when it compounds not across quarters bu
 
 ## The Altitude Problem
 
-Decision Altitude in Velocity™ describes the structural level at which a decision is made — specifically, the combination of three dimensions: authority to close the item, observability of whether it is done, and enforcement proximity to act when it is not. Every decision has an appropriate altitude where all three dimensions are sufficient. When decisions sit at the wrong altitude, two failure modes emerge.
+Decision Altitude in OrdoAnimi describes the structural level at which a decision is made — specifically, the combination of three dimensions: authority to close the item, observability of whether it is done, and enforcement proximity to act when it is not. Every decision has an appropriate altitude where all three dimensions are sufficient. When decisions sit at the wrong altitude, two failure modes emerge.
 
 The first is Altitude Collapse. This occurs when a decision that belongs at the structural layer gets absorbed into the operational layer — when governance weight lands on a delivery team that lacks the structural position to carry it. A remediation cycle managed entirely at the operational layer tracks individual issues without seeing the pattern. It resolves the presenting problem without addressing the mechanism that produced it.
 
@@ -90,7 +90,7 @@ The 78% repeat rate in ANAO interim findings is the clearest quantitative expres
 
 Victoria's server inventory finding is the case in point. Six agencies had automated discovery tools. Full configuration was harder than partial configuration. Partial became the steady state, six times across six agencies. Canada's non-engagement pattern is the same condition expressed at the governance layer. Using central security services required active engagement. Not using them required nothing. The path of least resistance led away from the compliant state.
 
-The Velocity Architecture Framework calls the route that makes correct behaviour the default The Compliant Path. When it exists, compliance does not require discipline. It requires following the path of least resistance, because that path has been engineered to be the correct one. A Compliant Path exists when the action that requires the fewest permissions, the least manual documentation, and the shortest approval chain is also the action that satisfies the relevant control.
+The OrdoAnimi Framework calls the route that makes correct behaviour the default The Compliant Path. When it exists, compliance does not require discipline. It requires following the path of least resistance, because that path has been engineered to be the correct one. A Compliant Path exists when the action that requires the fewest permissions, the least manual documentation, and the shortest approval chain is also the action that satisfies the relevant control.
 
 The Compliant Path is a positioning principle, not a product category. It does not require specific tooling or a DevSecOps methodology. Those disciplines focus on pipeline speed and integration. The Compliant Path focuses on whether the structural conditions for correct behaviour exist at the altitude where decisions are made. A team can have a fully integrated delivery pipeline and still operate in an environment where the correct governance behaviour is harder than the incorrect one. Pipeline speed does not resolve structural position.
 
@@ -168,6 +168,6 @@ The empirical question a serious Trans-Tasman comparison must answer is whether 
 
 ---
 
-*The neutral comparative analysis this position paper draws from is published separately under the ZenCloud Global Consultants brand, with full source citations from the 2024-2026 ANAO, QAO, NSW Auditor-General, VAGO, WAAGO, ACT Audit Office, ASD, OECD, Office of the Auditor General of Canada, and NZ Office of the Auditor-General reports.*
+*The neutral comparative analysis this position paper draws from is published separately under the OrdoAnimi brand, with full source citations from the 2024-2026 ANAO, QAO, NSW Auditor-General, VAGO, WAAGO, ACT Audit Office, ASD, OECD, Office of the Auditor General of Canada, and NZ Office of the Auditor-General reports.*
 
-*Velocity™ concepts referenced — Governance Drag, Decision Altitude, Altitude Collapse, The Compliant Path — are components of the Velocity Architecture Framework™.*
+*OrdoAnimi concepts referenced — Governance Drag, Decision Altitude, Altitude Collapse, The Compliant Path — are components of the The OrdoAnimi Framework.*

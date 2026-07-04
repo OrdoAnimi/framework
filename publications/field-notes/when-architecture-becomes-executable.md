@@ -6,7 +6,7 @@ date: "2026-06-04"
 series: "Coffee and Curiosity"
 category: "Field Notes"
 tags:
-  - Velocity Architecture
+  - OrdoAnimi
   - Executable Architecture
   - AI Assisted Delivery
   - Decision Governance
@@ -15,7 +15,7 @@ tags:
 
 # When Architecture Becomes Executable
 
-ZenCloud helps leaders make cloud, security, AI, governance, and transformation decisions clear, governed, and ready to execute.
+OrdoAnimi helps leaders make cloud, security, AI, governance, and transformation decisions clear, governed, and ready to execute.
 
 I am an architect who has found a way to build. That does not mean I am trying to become a software developer, and it does not mean I am pretending that AI-generated code is the same thing as engineering mastery. It means something more precise, and for the kind of work I do, probably more important: the distance between architectural intent and working execution has started to collapse.
 
@@ -39,7 +39,7 @@ For most of my career, the work has lived in the seam between enterprise archite
 
 I have always been interested in that seam because it is where a lot of architecture succeeds or fails. Too high, and architecture becomes abstract language floating above delivery. Too low, and solution design becomes local optimisation without enough regard for the wider system. The useful work is in the translation: taking executive intent and making it implementable, taking delivery pressure and making sure it does not quietly destroy the architecture, and taking governance seriously enough to make it usable before the real decision has already been made.
 
-To bridge that seam between strategy and execution, I have been building a series of interconnected systems. ZenCloud is the advisory and judgement layer. Velocity Architecture is the method. StudioSix is the governed worksite. Ordo Animi is the personal leadership and decision-governance layer. I do not think of those names as a product catalogue; they are becoming different expressions of the same argument.
+To bridge that seam between strategy and execution, I have been building a series of interconnected systems. OrdoAnimi is the advisory and judgement layer. OrdoAnimi is the method. is the governed worksite. Ordo Animi is the personal leadership and decision-governance layer. I do not think of those names as a product catalogue; they are becoming different expressions of the same argument.
 
 That argument is simple enough, but it has taken me years to make it practical. Architecture should not remain trapped in static documents. Governance should not arrive after the decision has already been made. Delivery should not be reduced to status reporting, and leadership should not outsource judgement to automation simply because the tools are impressive.
 
@@ -59,9 +59,9 @@ A small example is the architecture decision record. For years, an ADR was a doc
 
 This is why I am careful with the phrase vibe coding. If the only method is enthusiasm, the result will usually be fragile. A generated screen is not a product, and a working demo is not a governed system. The version I am interested in starts with intent rather than code and asks what capability is being created, why it matters, what decisions it touches, what data it handles, what should remain private, how human review works, and what should never be automated simply because it can be.
 
-That is not AI as a shortcut around architecture. It is AI as a way of making architecture more executable. Velocity Architecture is informed by standards and ISO principles, but I will not call it certified or compliant without formal evidence. That distinction matters. I am not trying to claim a badge. I am trying to build tools and methods that behave as though they understand why the badge exists: traceability, decision quality, controlled artefacts, human review, risk visibility, and accountable handover.
+That is not AI as a shortcut around architecture. It is AI as a way of making architecture more executable. OrdoAnimi is informed by standards and ISO principles, but I will not call it certified or compliant without formal evidence. That distinction matters. I am not trying to claim a badge. I am trying to build tools and methods that behave as though they understand why the badge exists: traceability, decision quality, controlled artefacts, human review, risk visibility, and accountable handover.
 
-The writing came before some of the tooling. Coffee and Curiosity gave me a reflective surface, somewhere to think in public without turning every thought into a formal framework. LinkedIn became the signal layer. Substack became a longer-form channel. Medium became closer to a book, now nearly forty chapters into an argument about enterprise architecture as a functional decision system. The Velocity Architecture sites became the research and method layer, and then GitHub became the workshop.
+The writing came before some of the tooling. Coffee and Curiosity gave me a reflective surface, somewhere to think in public without turning every thought into a formal framework. LinkedIn became the signal layer. Substack became a longer-form channel. Medium became closer to a book, now nearly forty chapters into an argument about enterprise architecture as a functional decision system. The OrdoAnimi sites became the research and method layer, and then GitHub became the workshop.
 
 At some point, the work stopped living in one place. The generators, workspaces, learning hubs, and personal experiments all emerged from the same instinct: take a messy domain, understand its structure, and build a working surface around it. That is where the showcase sits, not as a claim but as a trail. I have not been trying to assemble a traditional product portfolio. I have been following the questions.
 

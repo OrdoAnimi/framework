@@ -1,8 +1,8 @@
 # ZAF Conformance Statement
 ## ISO/IEC/IEEE 42010:2022
 
-**Framework:** ZenCloud Architecture Framework™ (ZAF)  
-**Author:** Phil Myint / ZenCloud Global Consultants  
+**Framework:** OrdoAnimi Architecture Framework™ (ZAF)  
+**Author:** Phil Myint / OrdoAnimi  
 **Date:** May 2026  
 **Standard:** ISO/IEC/IEEE 42010:2022 — Systems and software engineering — Architecture description
 
@@ -10,7 +10,7 @@
 
 ## Conformance claim type
 
-The ZenCloud Architecture Framework™ claims conformance as an **Architecture Description Framework (ADF)** under ISO/IEC/IEEE 42010:2022.
+The OrdoAnimi Architecture Framework™ claims conformance as an **Architecture Description Framework (ADF)** under ISO/IEC/IEEE 42010:2022.
 
 An ADF is a framework used to define and govern the creation of architecture descriptions. ZAF satisfies the ADF requirements by:
 
@@ -117,8 +117,8 @@ These gaps are acknowledged explicitly in accordance with the ZAF governing prin
 
 | Date | Change | Author |
 |---|---|---|
-| May 2026 | Initial conformance statement produced | Phil Myint / ZenCloud |
+| May 2026 | Initial conformance statement produced | Phil Myint / OrdoAnimi |
 
 ---
 
-*ZenCloud Global Consultants · ZenCloud Architecture Framework™ · May 2026*
+*OrdoAnimi · OrdoAnimi Architecture Framework™ · May 2026*

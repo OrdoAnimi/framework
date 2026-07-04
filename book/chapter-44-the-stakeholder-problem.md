@@ -1,6 +1,6 @@
 # Chapter 44: The Stakeholder Problem
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -32,4 +32,4 @@ The transition that survives its stakeholders is a transition that has held its 
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

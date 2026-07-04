@@ -81,14 +81,9 @@ footer.site .footer-links a{color:#cbd5e1;font-size:.8rem}
 </style>
 </head>
 <body>
-<nav class="ecosystem-strip" aria-label="Ecosystem navigation">
-  <span class="eco-label">ZenCloud Ecosystem</span>
-  <a href="https://www.zencloud.com.au">ZenCloud&#x2122;</a>
-  <a href="https://studiosix.com.au">StudioSix&#x2122;</a>
-  <a href="https://velocityarchitectureframework.com">Velocity&#x2122;</a>
-</nav>
+
 <nav class="site">
-  <a class="brand" href="/">Velocity<sup>&#x2122;</sup></a>
+  <a class="brand" href="/">OrdoAnimi</a>
   <div class="nav-links">
     <a href="/frameworks/">Framework</a>
     <a href="/publications/">Publications</a>
@@ -116,12 +111,12 @@ footer.site .footer-links a{color:#cbd5e1;font-size:.8rem}
     <article class="article md" id="article"><p class="loading">Loading&#x2026;</p></article>
     <nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
     <footer class="site" style="margin-top:3rem;border-radius:10px;">
-      <strong>ZenCloud advises. StudioSix produces. Velocity decides.</strong>
+      <strong>OrdoAnimi advises, builds, and decides.</strong>
       <div class="footer-links">
         <a href="/publications/">Publications</a>
-        <a href="/">Velocity Framework</a>
-        <a href="https://www.zencloud.com.au/" target="_blank" rel="noopener">ZenCloud Advisory</a>
-        <a href="https://studiosix.com.au/" target="_blank" rel="noopener">StudioSix</a>
+        <a href="/">The OrdoAnimi Framework</a>
+        OrdoAnimi
+        
       </div>
     </footer>
   </main>
@@ -253,7 +248,7 @@ async function load(id){
     if(!r.ok) throw 0;
     const txt=await r.text();
     articleEl.innerHTML=marked.parse(txt);
-    document.title=c[1]+' — Reading the Map — Velocity™';
+    document.title=c[1]+' — Reading the Map — OrdoAnimi';
   }catch(e){
     const gh='https://github.com/ZenCloudAU/velocity-architecture/blob/main/'+
       (c[2].indexOf('/reading-the-map/')===0?'reading-the-map/'+c[2].split('/').pop():'publications/reading-the-map/'+c[2]);

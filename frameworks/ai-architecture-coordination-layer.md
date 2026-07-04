@@ -68,7 +68,7 @@ Hermes supports the coordination layer by:
 - recommending artefacts
 - selecting branding mode
 - flagging data/AI risks
-- routing to PMO Portal, VAF-SA, Academy, StudioSix, or partner workflow
+- routing to PMO Portal, VAF-SA, Academy, or partner workflow
 
 Hermes does not make final decisions.
 
@@ -77,8 +77,8 @@ Hermes does not make final decisions.
 Velocity can operate invisibly behind a partner:
 
 - partner owns account and commercial relationship
-- Phil / ZenCloud provides specialist architecture execution
-- StudioSix supports production
+- Phil / OrdoAnimi provides specialist architecture execution
+- supports production
 - Velocity structures the decisions
 - deliverables can use partner templates and naming
 

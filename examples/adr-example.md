@@ -110,5 +110,5 @@ This decision should be revisited if:
 
 ---
 
-*Example ADR — Velocity™ VP3 | Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants*
+*Example ADR — OrdoAnimi VP3 | The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi*

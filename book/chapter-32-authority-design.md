@@ -1,6 +1,6 @@
 # Chapter 32: Authority Design
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -42,4 +42,4 @@ The governance structures of Part Three made decisions traceable and time-bounde
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

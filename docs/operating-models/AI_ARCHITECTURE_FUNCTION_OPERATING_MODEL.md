@@ -3,12 +3,10 @@
 **Status:** Active estate operating doctrine  
 **Authority:** Founder / Chief AI Architect  
 **Estate governor:** Magister Automatorum  
-**Professional method:** Velocity Architecture  
-**Delivery and productisation:** StudioSix
+**Professional method:** OrdoAnimi  
+**Delivery and productisation:** ## 1. Purpose
 
-## 1. Purpose
-
-This operating model applies the duties of a senior enterprise AI Architect across the ZenCloud, Velocity, StudioSix, and Ordo Animi estate.
+This operating model applies the duties of a senior enterprise AI Architect across the OrdoAnimi, Velocity, and Ordo Animi estate.
 
 It is not a personal job-description exercise. It defines the organisational function required to turn the estate from a founder-led collection of AI-assisted products, frameworks, tools, and experiments into a coherent AI company with clear technical authority, specialist responsibilities, production standards, and evidence.
 
@@ -54,13 +52,13 @@ The Chief AI Architect owns the coherence of this chain. Specialist functions ow
 
 ### 4.1 Chief AI Architecture and Design Authority
 
-**Authority:** Founder / Velocity Architecture
+**Authority:** Founder / OrdoAnimi
 
 Owns the enterprise AI reference architecture, architecture principles, decision records, technical standards, design reviews, exception decisions, and cross-estate architecture roadmap.
 
 ### 4.2 Product, customer, and value architecture
 
-**Authorities:** StudioSix, Imperium, Mercatus, Forma
+**Authorities:** Imperium, Mercatus, Forma
 
 Owns user problems, product outcomes, portfolio choices, service design, customer journeys, commercial hypotheses, product lifecycle, and release value.
 
@@ -136,16 +134,16 @@ Owns design tokens, shared interaction patterns, accessibility, public/private p
 | Evaluate and standardise AI technologies | Maintain approved model, platform, framework, search, observability, and integration catalogue | Velocity with Praesidium and Probatio | Technology radar and selection records |
 | Create reference architectures and design patterns | Publish reusable patterns for agentic workflows, RAG, artefact generation, human review, client isolation, and AI operations | Velocity | Versioned reference architecture library |
 | Lead architecture reviews | Establish recurring design-authority gates before pilot, deployment, and material change | Magister / Velocity | Review decision, conditions, and exception record |
-| Translate business needs into scalable designs | Require qualified product brief before engineering work starts | StudioSix / Velocity | Product brief, use-case classification, architecture brief |
+| Translate business needs into scalable designs | Require qualified product brief before engineering work starts | / Velocity | Product brief, use-case classification, architecture brief |
 | Design AI data architecture | Standardise source, ingestion, classification, retrieval, retention, tenancy, and deletion patterns | Memoria / Fabrica / Nexus | Data architecture and data contract |
 | Establish AI quality and evaluation standards | Build repeatable evaluation systems for every material AI capability | Probatio | Evaluation specification, baseline, regression report |
 | Establish AI security standards | Convert policy into runtime identities, permissions, isolation, validation, and incident controls | Lex / Praesidium | Threat model, control mapping, security evidence |
 | Establish AI observability | Trace model, prompt, retrieval, tools, actions, quality, cost, and incidents | Specula | Telemetry contract and operational dashboard |
 | Govern build-versus-buy and vendors | Compare providers and frameworks against value, control, portability, cost, and support | Velocity / Imperium / Mercatus | Option assessment and supplier decision |
-| Guide engineering teams | Convert architecture decisions into bounded work orders and acceptance criteria | Chief AI Architect / StudioSix | Engineering work order and review outcome |
+| Guide engineering teams | Convert architecture decisions into bounded work orders and acceptance criteria | Chief AI Architect / | Engineering work order and review outcome |
 | Mentor and uplift teams | Maintain role-based capability pathways and evidence requirements | Velocity Academy | Skills matrix, learning plan, practical assessment |
 | Maintain actionable market intelligence | Review model, platform, regulatory, and architecture developments quarterly | Velocity / Lex / Academy | AI technology radar and change advisory |
-| Present technical strategy | Maintain board, customer, partner, and engineering views of the same architecture | Velocity / ZenCloud / StudioSix | Audience-specific architecture pack |
+| Present technical strategy | Maintain board, customer, partner, and engineering views of the same architecture | Velocity / OrdoAnimi / | Audience-specific architecture pack |
 
 ## 6. Architecture review gates
 
@@ -157,7 +155,7 @@ No new repository is created merely because an idea can be implemented.
 
 ### Gate 1 — Product and use-case qualification
 
-StudioSix defines the user, problem, value hypothesis, non-goals, success measures, and operating context.
+defines the user, problem, value hypothesis, non-goals, success measures, and operating context.
 
 ### Gate 2 — AI and risk classification
 
@@ -282,7 +280,7 @@ Required actions:
 - use contractors or specialist partners where depth is required before permanent hiring;
 - route all work through architecture-approved engineering work orders;
 - require independent Probatio and Praesidium review for material releases;
-- publish a StudioSix reference case demonstrating strategy-to-production delivery;
+- publish a reference case demonstrating strategy-to-production delivery;
 - promote shared patterns into Velocity Academy for team onboarding and customer capability transfer.
 
 ## 9. Founder skill boundary and development priorities
@@ -343,7 +341,7 @@ AI tools may perform multiple functions, but the artefacts, prompts, and review 
 4. Establish Probatio, Praesidium, and Specula as operating review functions rather than constitutional placeholders.
 5. Freeze unnecessary repository creation and move learning into bounded work packages.
 6. Require architecture, evaluation, security, operational, and cost evidence before any AI product is described as production-ready.
-7. Use StudioSix as the product and delivery surface through which the completed operating model becomes a client-facing capability.
+7. Use as the product and delivery surface through which the completed operating model becomes a client-facing capability.
 
 ## 12. Success condition
 

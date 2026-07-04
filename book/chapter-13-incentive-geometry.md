@@ -1,6 +1,6 @@
 # Chapter 13: Incentive Geometry
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -94,4 +94,4 @@ The reform that would be required to change it would require them to acknowledge
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

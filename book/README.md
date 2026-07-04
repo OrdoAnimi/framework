@@ -1,6 +1,6 @@
 # Where Architecture Truly Creates Value
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*
 
 ---
 

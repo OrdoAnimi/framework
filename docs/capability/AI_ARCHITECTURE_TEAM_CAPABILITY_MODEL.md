@@ -1,8 +1,8 @@
 # AI Architecture Team Capability Model
 
 **Status:** Internal operating standard  
-**Authority:** Chief AI Architect / Velocity Architecture  
-**Purpose:** Define the specialist capabilities required to design, build, assure, and operate enterprise AI systems across the ZenCloud and StudioSix estate.
+**Authority:** Chief AI Architect / OrdoAnimi  
+**Purpose:** Define the specialist capabilities required to design, build, assure, and operate enterprise AI systems across the OrdoAnimi and estate.
 
 ## Core principle
 
@@ -15,7 +15,7 @@ The Chief AI Architect owns the technical vision, architecture coherence, cross-
 | Function | Primary accountability | Estate authority | Current coverage | Principal gap |
 |---|---|---|---|---|
 | Chief AI Architecture | End-to-end technical vision, reference architectures, ADRs, design authority, cross-domain trade-offs | Velocity / Founder | Strong | Formal review cadence and evidence-based release authority |
-| Product and Value | User problem, product outcome, roadmap, value, customer fit, lifecycle | StudioSix / Imperium / Mercatus | Moderate to strong | Customer validation, pricing, case studies, support boundaries |
+| Product and Value | User problem, product outcome, roadmap, value, customer fit, lifecycle | / Imperium / Mercatus | Moderate to strong | Customer validation, pricing, case studies, support boundaries |
 | AI Application and Agent Engineering | Services, agents, tools, prompts, state, APIs, code, deterministic controls | Ordo Animi / product repos | Working prototype coverage | Production testing, state management, failure engineering, independent code ownership |
 | AI Data and Retrieval Engineering | Ingestion, transformation, RAG, embeddings, indexes, lineage, tenancy, retention | Memoria / Fabrica / Nexus | Strong doctrine, limited implementation | Working shared RAG platform and retrieval evaluation |
 | Cloud and Platform Engineering | Managed AI services, networking, identity, secrets, containers, serverless, IaC, CI/CD, resilience | Praesidium | Partial | Reproducible Terraform environments, GitOps, production rollback, platform SRE |
@@ -188,7 +188,7 @@ Until human teams are established, use controlled AI-assisted role simulation:
 | Function | Interim mechanism | Required separation |
 |---|---|---|
 | Strategy and architecture | Founder with ChatGPT analysis support | Architecture decisions approved by Founder |
-| Product planning | Founder / StudioSix with ChatGPT | Product brief completed before build |
+| Product planning | Founder / with ChatGPT | Product brief completed before build |
 | Implementation | Claude coding work orders | Claude cannot redefine architecture or product intent |
 | Evaluation review | Separate Probatio review session or agent | Must not rely solely on the generating agent's self-assessment |
 | Security review | Separate Praesidium review session or specialist | Must challenge implementation independently |
@@ -213,7 +213,7 @@ The estate should directly build capability in:
 - prompt and agent security;
 - product and client governance.
 
-These capabilities are central to the StudioSix and Velocity proposition.
+These capabilities are central to the and Velocity proposition.
 
 ### Use fractional specialists or partners first
 

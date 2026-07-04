@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use or reference this framework, please cite it as below."
 type: software
-title: "Velocity Architecture Framework™"
+title: "The OrdoAnimi Framework"
 abstract: >
   A formally specified architecture description framework conformant with
   ISO/IEC/IEEE 42010:2022. A decision governance framework for enterprise
@@ -11,8 +11,8 @@ abstract: >
 authors:
   - family-names: Myint
     given-names: Phil
-    affiliation: "Zencloud Advisory"
-    email: info@zencloud.com.au
+    affiliation: "OrdoAnimi"
+    email: phil@myintenterprises.com
     orcid: ""
 version: "1.0"
 date-released: "2026-01-01"

@@ -1,6 +1,6 @@
 # Chapter 36: The Decision Architecture Method
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -40,4 +40,4 @@ There is a precondition the method assumes and does not itself supply. Every sta
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

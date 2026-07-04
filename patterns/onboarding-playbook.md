@@ -1,6 +1,6 @@
 # PBK-01: Onboarding a New Engagement
 
-**Velocity Architecture Framework™ — Pattern & Playbook | Column 6**
+**The OrdoAnimi Framework — Pattern & Playbook | Column 6**
 
 | Field | Value |
 |-------|-------|
@@ -16,7 +16,7 @@
 
 ## Purpose
 
-This playbook defines the mandatory sequence for establishing a Velocity™ governance structure at the start of a new engagement. It applies to any engagement where the Velocity™ framework is the governing method — regardless of scale.
+This playbook defines the mandatory sequence for establishing a OrdoAnimi governance structure at the start of a new engagement. It applies to any engagement where the OrdoAnimi framework is the governing method — regardless of scale.
 
 The purpose of onboarding is not to produce artefacts. It is to establish the conditions under which decisions can be made. The first 21 days either produce those conditions or they produce documents that document the absence of conditions.
 
@@ -142,5 +142,5 @@ At the close of the onboarding period, the following must exist. If any item is 
 
 ---
 
-*PBK-01: Onboarding a New Engagement — Velocity Architecture Framework™*
-*© 2026 Phil Myint / ZenCloud Advisory | ISO/IEC/IEEE 42010:2022 Conformant*
+*PBK-01: Onboarding a New Engagement — The OrdoAnimi Framework*
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

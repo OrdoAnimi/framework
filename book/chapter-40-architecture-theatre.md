@@ -1,6 +1,6 @@
 # Chapter 40: Architecture Theatre
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -34,4 +34,4 @@ Every chapter to this point has described a failure — the corruption of the ro
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

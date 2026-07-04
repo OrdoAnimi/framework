@@ -1,6 +1,6 @@
 # Chapter 43: The First Ninety Days
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -32,4 +32,4 @@ The first ninety days, founded correctly, produce the proof. They do not produce
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

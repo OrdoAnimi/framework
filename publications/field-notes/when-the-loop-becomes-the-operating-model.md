@@ -7,7 +7,7 @@ series: "Coffee and Curiosity"
 category: "Field Notes"
 tags:
   - FinRevDevOps
-  - Velocity Architecture
+  - OrdoAnimi
   - Operating Model
   - AI Assisted Delivery
   - Decision Governance
@@ -19,7 +19,7 @@ Naming a problem is the easy part. The last field note named FinRevDevOps: the d
 
 Because a name without an operating loop is just another acronym waiting to be laminated.
 
-I have been testing this in my own ecosystem, which is small enough to see end to end and honest enough to embarrass me. ZenCloud is the judgement layer. Velocity Architecture is the method. StudioSix is the governed worksite. The delivery surfaces run on GitHub, Cloudflare, and Vercel, with AI as the build partner. Every part of that system now spends money while I sleep, and some of it spends money precisely because I asked it to think on my behalf.
+I have been testing this in my own ecosystem, which is small enough to see end to end and honest enough to embarrass me. OrdoAnimi is the judgement layer. OrdoAnimi is the method. is the governed worksite. The delivery surfaces run on GitHub, Cloudflare, and Vercel, with AI as the build partner. Every part of that system now spends money while I sleep, and some of it spends money precisely because I asked it to think on my behalf.
 
 That makes the question very practical. If execution is continuous, what does the loop actually need to carry?
 

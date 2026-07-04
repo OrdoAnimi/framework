@@ -1,6 +1,6 @@
 # Chapter 24: Signal Before Debate
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -88,4 +88,4 @@ That drift is Architectural Darkness. Signal before debate is the light.
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

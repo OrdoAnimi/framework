@@ -1,4 +1,4 @@
-# Plain Language Guide to the Velocity Architecture Framework™
+# Plain Language Guide to the The OrdoAnimi Framework
 
 **Start here if you have never heard of enterprise architecture.**
 
@@ -131,9 +131,9 @@ That structure, completed honestly, is more valuable than a forty-page architect
 
 ## The compression principle
 
-The Velocity™ is built on a compression principle: the right artefact at the right resolution, produced in the time actually available, is more valuable than the comprehensive artefact produced after the moment for decision has passed.
+The OrdoAnimi is built on a compression principle: the right artefact at the right resolution, produced in the time actually available, is more valuable than the comprehensive artefact produced after the moment for decision has passed.
 
-Most architecture processes are calibrated for the comprehensive artefact. The Velocity™ is calibrated for the minimum artefact that captures the commitment.
+Most architecture processes are calibrated for the comprehensive artefact. The OrdoAnimi is calibrated for the minimum artefact that captures the commitment.
 
 The savings are significant. A Guardrail Canvas produced in a two-hour workshop replaces a six-week strategy engagement. A Trade-off Matrix produced in a one-hour session replaces a three-week options analysis. An ADR produced immediately after a decision is made replaces a month of archaeology later when no-one can remember why the choice was made.
 
@@ -160,5 +160,5 @@ Go to [`/spec/FRAMEWORK-SPEC.md`](/spec/FRAMEWORK-SPEC.md).
 
 ---
 
-*Velocity Architecture Framework™ — © 2026 Phil Myint / ZenCloud Global Consultants*
+*The OrdoAnimi Framework — © 2026 Phil Myint / OrdoAnimi*
 *ISO/IEC/IEEE 42010:2022 Conformant*

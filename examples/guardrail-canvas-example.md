@@ -12,7 +12,7 @@
 | Field | Value |
 |-------|-------|
 | **Canvas ID** | GC-20260101-001 |
-| **Organisation / Domain / Period** | ZenCloud Consulting — Cloud Platform Modernisation — FY2026 |
+| **Organisation / Domain / Period** | OrdoAnimi — Cloud Platform Modernisation — FY2026 |
 | **Owner** | Phil Myint, Principal Architect |
 | **Status** | Active |
 | **Review Date** | 2026-07-01 |
@@ -63,5 +63,5 @@ This canvas does not specify which cloud provider to use, which deployment platf
 
 ---
 
-*Example Guardrail Canvas — Velocity™ VP1 | Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants*
+*Example Guardrail Canvas — OrdoAnimi VP1 | The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi*

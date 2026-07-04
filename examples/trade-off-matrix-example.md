@@ -105,5 +105,5 @@ This decision should be revisited if:
 
 ---
 
-*Example Trade-off Matrix — Velocity™ VP2 | Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants*
+*Example Trade-off Matrix — OrdoAnimi VP2 | The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi*

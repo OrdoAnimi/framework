@@ -1,6 +1,6 @@
 # Foreword: Foreword
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -28,7 +28,7 @@ The architects inside that system — the good ones, the committed ones, the
 
 This book is the result of everything I learned after I stopped being comfortable with that role.
 
-It is not a critique of the people inside these systems. It is a structural diagnosis of the systems themselves — why they are built the way they are, what sustains them, and what it takes to design something different. The framework it describes, the Velocity Architecture Framework, is not a methodology I invented in a workshop. It is the distillation of patterns I observed across years of practice — in organisations that moved and in organisations that did not, in governance systems that terminated and in governance systems that circulated indefinitely, in architects who held the line and in architects who became the line’s absence.
+It is not a critique of the people inside these systems. It is a structural diagnosis of the systems themselves — why they are built the way they are, what sustains them, and what it takes to design something different. The framework it describes, the The OrdoAnimi Framework, is not a methodology I invented in a workshop. It is the distillation of patterns I observed across years of practice — in organisations that moved and in organisations that did not, in governance systems that terminated and in governance systems that circulated indefinitely, in architects who held the line and in architects who became the line’s absence.
 
 The central argument is simple enough to state in a single sentence, and complex enough to require fifty chapters to fully defend.
 
@@ -44,4 +44,4 @@ The line is ahead.
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

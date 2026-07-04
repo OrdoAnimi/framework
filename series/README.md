@@ -1,6 +1,6 @@
-# Velocity Architecture Thought Series
+# OrdoAnimi Thought Series
 
-This repository contains the evolving Velocity Architecture thought series and framework manuscripts.
+This repository contains the evolving OrdoAnimi thought series and framework manuscripts.
 
 ## Series Structure
 

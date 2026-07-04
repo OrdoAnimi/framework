@@ -1,8 +1,8 @@
 # EA Artefact Type Classification
 ## The Four-Type Framework
 
-**Author:** ZenCloud Global Consultants  
-**Framework:** Velocity Architecture Framework™  
+**Author:** OrdoAnimi  
+**Framework:** The OrdoAnimi Framework  
 **Published:** May 2026
 
 ---
@@ -13,7 +13,7 @@ Every core EA artefact resolves to one of four functional types. The type determ
 
 This classification is not a theoretical construct. It is derived from Kotusev's empirical analysis of EA artefact usage across 47 diverse organisations (RMIT University, 2019–2022), which found that all artefacts classify as either facts artefacts or decisions artefacts — and that the real purpose of any artefact is always manifested in its usage, not its documentation.
 
-The Velocity™ four-type classification extends that binary into a functional framework that maps directly to how each artefact type is produced, maintained, and presented.
+The OrdoAnimi four-type classification extends that binary into a functional framework that maps directly to how each artefact type is produced, maintained, and presented.
 
 ---
 
@@ -132,4 +132,4 @@ Gartner — ITScore for Enterprise Architecture. Five maturity levels across eig
 
 ---
 
-*Velocity Architecture Framework™ · ZenCloud Global Consultants · May 2026*
+*The OrdoAnimi Framework · OrdoAnimi · May 2026*

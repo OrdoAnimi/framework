@@ -1,6 +1,6 @@
 # Worked Example: Architecture Decision Log (ADL)
 
-**Velocity Architecture Framework™ — Examples**
+**The OrdoAnimi Framework — Examples**
 
 > **Scenario:** CloudFirst Banking — Core Platform Modernisation
 > **Snapshot date:** 2026-02-11 (end of Week 7)
@@ -129,5 +129,5 @@ Full definitions in `decisions/fitness-functions/`. This table shows current sta
 ---
 
 *ADL/INDEX.md — CloudFirst Banking Core Platform Modernisation*
-*Velocity Architecture Framework™ | © 2026 Phil Myint / ZenCloud Advisory*
+*The OrdoAnimi Framework | © 2026 Phil Myint / OrdoAnimi*
 *For ADL template, see: `viewpoints/vp4-velocity/adl-template.md`*

@@ -1,6 +1,6 @@
 # Chapter 49: The Unfinished Organisation
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -30,4 +30,4 @@ What remains is to state, at the full weight the book has earned, what all of th
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

@@ -8,7 +8,7 @@ category: "Field Notes"
 tags:
   - Ordo Animi
   - Decision Governance
-  - Velocity Architecture
+  - OrdoAnimi
   - Personal Operating Model
   - Human Authority
 ---
@@ -19,7 +19,7 @@ Every system I have written about in this series ends at the same component. The
 
 So this note does what the architecture eventually forced me to do. It turns the discipline inward.
 
-Ordo Animi means order of the mind. I have described it before as the personal counterpart to the delivery ecosystem, and the symmetry is deliberate. If ZenCloud asks how organisations make governed decisions, Ordo Animi asks how an individual does. Same instincts, different estate: guardrails, commitments, constraints, traceability, review, and a clear answer to the question of who holds authority over the system.
+Ordo Animi means order of the mind. I have described it before as the personal counterpart to the delivery ecosystem, and the symmetry is deliberate. If OrdoAnimi asks how organisations make governed decisions, Ordo Animi asks how an individual does. Same instincts, different estate: guardrails, commitments, constraints, traceability, review, and a clear answer to the question of who holds authority over the system.
 
 That can sound like productivity culture wearing a toga. It is not, and the difference matters to me. Productivity systems optimise output. What I am describing governs decisions. Nobody audits their task list and asks which commitments should never have been accepted, what risk a yes carried, who actually owned the outcome, or what the decision cost in attention that something more important needed. Those are governance questions. We ask them of organisations as a matter of professional routine and almost never of ourselves.
 

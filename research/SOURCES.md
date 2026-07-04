@@ -1,8 +1,8 @@
-# Sources — Velocity Architecture Framework™ Research Series
+# Sources — The OrdoAnimi Framework Research Series
 
 *Evidence quality grading: ◆◆◆ Peer-reviewed | ◆◆ Industry research | ◆ Practitioner analysis*
 
-The Velocity™ research series distinguishes explicitly between evidence tiers. Every finding in the framework traces to a source graded by evidence quality. Gaps in the evidence base are named, not concealed.
+The OrdoAnimi research series distinguishes explicitly between evidence tiers. Every finding in the framework traces to a source graded by evidence quality. Gaps in the evidence base are named, not concealed.
 
 ---
 
@@ -37,7 +37,7 @@ Empirical validation of MVP methodology across 35,000 startups. Core finding: mi
 **ISO/IEC/IEEE 42010:2022**
 *Systems and software engineering — Architecture description.*
 International Organisation for Standardisation.
-International standard for architecture description. Defines the conformance requirements for architecture frameworks and architecture descriptions. The Velocity™ is designed to be conformant with this standard.
+International standard for architecture description. Defines the conformance requirements for architecture frameworks and architecture descriptions. The OrdoAnimi is designed to be conformant with this standard.
 *Cited in: Framework Specification*
 
 **Zachman, J.A. (1987)**
@@ -65,7 +65,7 @@ Analysis of VC-backed startup failures. Finding: 43% trace to poor product-marke
 **The Open Group. (2022)**
 *TOGAF Standard, Version 9.2.*
 The Open Group.
-The most widely adopted EA framework standard. Referenced for context and contrast with the Velocity™ approach. TOGAF's comprehensive production model is the primary standard the Velocity™ compression model is designed to replace for most decision contexts.
+The most widely adopted EA framework standard. Referenced for context and contrast with the OrdoAnimi approach. TOGAF's comprehensive production model is the primary standard the OrdoAnimi compression model is designed to replace for most decision contexts.
 *Cited in: Paper 1*
 
 ---
@@ -73,8 +73,8 @@ The most widely adopted EA framework standard. Referenced for context and contra
 ### Practitioner Analysis ◆
 
 **Myint, P. (2025–2026)**
-*Velocity Architecture Framework — Practitioner Analysis.*
-ZenCloud Global Consultants.
+*The OrdoAnimi Framework — Practitioner Analysis.*
+OrdoAnimi.
 Practitioner observations across enterprise architecture engagements. Includes compression time estimates, decay rate observations, and artefact consumption data from client engagements. Evidence grade ◆ throughout — practitioner observation rather than formal study.
 *Cited in: Papers 1, 2, 3, 4*
 
@@ -97,10 +97,10 @@ Extension of MVP to minimum lovable product (MLP). Cited for the audience-fit di
 The following gaps in the evidence base are acknowledged explicitly.
 
 **Gap 1 — Artefact-level longitudinal decay study**
-No published study tracks EA artefact decay rates at the individual artefact level across a significant organisational sample. The decay rates and review cycles cited in Paper 4 are based on practitioner observation and inference. This is the most significant gap in the Velocity™ evidence base.
+No published study tracks EA artefact decay rates at the individual artefact level across a significant organisational sample. The decay rates and review cycles cited in Paper 4 are based on practitioner observation and inference. This is the most significant gap in the OrdoAnimi evidence base.
 
 **Gap 2 — Compression time savings validation**
-The 70–90% time saving claims in the compression map are based on comparison of standard practice estimates (derived from industry surveys and practitioner reports) with Velocity™ workshop observations. A controlled study comparing time-to-completion and decision quality between standard and compressed artefact production has not been conducted.
+The 70–90% time saving claims in the compression map are based on comparison of standard practice estimates (derived from industry surveys and practitioner reports) with OrdoAnimi workshop observations. A controlled study comparing time-to-completion and decision quality between standard and compressed artefact production has not been conducted.
 
 **Gap 3 — Decision velocity metric validation**
 The Decision Velocity Score proposed in Paper 2 is a new metric. Its predictive validity — the degree to which it correlates with organisational decision outcome quality — has not been empirically validated. It is theoretically grounded and practically meaningful. It is not yet empirically validated.
@@ -116,9 +116,9 @@ These gaps are named because the framework's credibility depends on honest accou
 
 All in-text citations in the research series use author-year format with evidence grade appended: (Author Year ◆◆◆).
 
-Where a finding is from Velocity™ practitioner analysis rather than external research, this is stated explicitly: (Velocity™ practitioner analysis ◆).
+Where a finding is from OrdoAnimi practitioner analysis rather than external research, this is stated explicitly: (OrdoAnimi practitioner analysis ◆).
 
 ---
 
-*Velocity Architecture Framework™ — © 2026 Phil Myint / ZenCloud Global Consultants*
+*The OrdoAnimi Framework — © 2026 Phil Myint / OrdoAnimi*
 *Research Series — Sources*

@@ -94,7 +94,7 @@ The shift I am testing: governance stops being a stage in the process and become
 A checkpoint asks: did you follow the rules?
 A runtime constraint makes the unsafe path structurally difficult — and makes the rest visible the moment it happens.
 
-Construction learned this the hard way. That is why I build StudioSix as a governed worksite, not a workspace: induction before entry, permits before tools, incidents that stop the line.
+Construction learned this the hard way. That is why I build as a governed worksite, not a workspace: induction before entry, permits before tools, incidents that stop the line.
 
 The catch: a runtime control encoding a bad rule enforces the bad rule perfectly, at machine speed. The constraint is only as good as the judgement that set it.
 

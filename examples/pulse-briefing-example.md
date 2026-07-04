@@ -1,6 +1,6 @@
 # Worked Example: Pulse Briefing
 
-**Velocity Architecture Framework™ — Examples**
+**The OrdoAnimi Framework — Examples**
 
 > **Scenario:** CloudFirst Banking — Core Platform Modernisation
 > **Engagement:** Migrating core banking infrastructure to AWS. Current focus: integration layer architecture.
@@ -118,5 +118,5 @@
 ---
 
 *Pulse Briefing — CloudFirst Banking Core Platform Modernisation*
-*Velocity Architecture Framework™ | © 2026 Phil Myint / ZenCloud Advisory*
+*The OrdoAnimi Framework | © 2026 Phil Myint / OrdoAnimi*
 *Canonical template: see `templates/pulse-briefing.md`*

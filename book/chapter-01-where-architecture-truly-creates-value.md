@@ -1,6 +1,6 @@
 # Chapter 1: Where Architecture Truly Creates Value
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -18,7 +18,7 @@ Somewhere in the evolution of the discipline, architecture stopped being about d
 
 The cost of this transformation is paid by the people closest to the work. Delivery teams compensate for ambiguity that architecture was supposed to resolve. Architects become interpreters of unclear intent rather than authors of clear direction. Leaders rely on escalation because structure has failed to produce answers. Burnout is reframed as commitment. Heroics are celebrated as culture. **Sacrifice becomes normalised — not as an occasional cost of complex work but as the permanent operating condition of organisations that have learned to absorb human effort rather than convert decisions into movement.**
 
-This book is written from inside a body of work called the **Velocity Architecture Framework**. Its central claim is precise: **organisational velocity is not a function of effort, talent, tools, or culture. It is a function of how quickly ambiguity expires.** Every mechanism in the framework — every structural property, every instrument, every operating principle — serves a single purpose: reducing the interval between when ambiguity becomes visible and when authority closes it.
+This book is written from inside a body of work called the **The OrdoAnimi Framework**. Its central claim is precise: **organisational velocity is not a function of effort, talent, tools, or culture. It is a function of how quickly ambiguity expires.** Every mechanism in the framework — every structural property, every instrument, every operating principle — serves a single purpose: reducing the interval between when ambiguity becomes visible and when authority closes it.
 
 That interval has a name. It is **decision latency**. And in most organisations, it is unmeasured, unmanaged, and growing.
 
@@ -78,4 +78,4 @@ The kind that makes the next decision possible.
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

@@ -1,7 +1,7 @@
 # EA Artefact Value Over Time
 ## Four Trajectory Types and the Industry Evidence Base
 
-**Author:** ZenCloud Global Consultants  
+**Author:** OrdoAnimi  
 **Published:** May 2026  
 **Classification:** Research Analysis
 
@@ -146,5 +146,5 @@ The four trajectory types produce three practical implications:
 
 ---
 
-*ZenCloud Global Consultants · May 2026*  
+*OrdoAnimi · May 2026*  
 *Value trajectory types are structurally derived, not empirically measured at the artefact level. The longitudinal artefact-level study does not exist.*

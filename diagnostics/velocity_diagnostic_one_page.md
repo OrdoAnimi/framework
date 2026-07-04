@@ -1,4 +1,4 @@
-# Velocity Architecture — One-Page Diagnostic
+# OrdoAnimi — One-Page Diagnostic
 
 A practical diagnostic for identifying why delivery slows down even when decisions appear clear.
 

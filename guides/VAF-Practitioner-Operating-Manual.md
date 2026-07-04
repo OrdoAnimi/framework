@@ -1,17 +1,17 @@
-# Velocity™ Practitioner Operating Manual
+# OrdoAnimi Practitioner Operating Manual
 
 **For architects who need to move faster.**
 
-Version 1.0 — Velocity Architecture Framework™
+Version 1.0 — The OrdoAnimi Framework
 
 ---
 
 ## How to use this manual
 
-This manual covers all 18 Velocity™ artefacts. Each entry has three layers:
+This manual covers all 18 OrdoAnimi artefacts. Each entry has three layers:
 
 1. **Extraction guide** — how to run the conversation that produces the artefact
-2. **Velocity™ template** — what to write, at what resolution
+2. **OrdoAnimi template** — what to write, at what resolution
 3. **Executive framing** — how to present the finding to leadership
 
 The artefacts are grouped by type. Use the type that matches the decision context, not the one that matches the governance requirement.
@@ -52,7 +52,7 @@ The artefacts are grouped by type. Use the type that matches the decision contex
 **What it is:** A single-page declaration of enterprise direction for a programme, initiative, or domain. It does not prescribe the solution — it defines the corridor within which solutions must sit.
 
 **Standard time:** 3–6 weeks (stakeholder workshops, review cycles, sign-off)
-**Velocity™ time:** 2–4 hours (structured workshop with the right people in the room)
+**OrdoAnimi time:** 2–4 hours (structured workshop with the right people in the room)
 **Time saving:** 85–95%
 
 ---
@@ -74,7 +74,7 @@ Capture answers in real time on the canvas. Do not leave the room without a comp
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 GUARDRAIL CANVAS
@@ -128,7 +128,7 @@ If the answer is yes, proceed. If no, update before leaving the room.
 **What it is:** A structured view of what the organisation does — not how it does it, not what systems support it, not what it should do in future. A current-state capability inventory at the right level of abstraction for the decision being made.
 
 **Standard time:** 4–8 weeks
-**Velocity™ time:** Half-day workshop + 2-hour review
+**OrdoAnimi time:** Half-day workshop + 2-hour review
 **Time saving:** 80–90%
 
 ---
@@ -148,7 +148,7 @@ Do not include:
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 CAPABILITY MAP
@@ -187,7 +187,7 @@ Do not present the full map to leadership. Present the gaps. Leadership cares ab
 **What it is:** A bounded view of the key concepts in a domain, how they relate, and what they mean. Not a data model. Not a class diagram. A vocabulary alignment tool.
 
 **Standard time:** 2–4 weeks
-**Velocity™ time:** 2-hour facilitated session
+**OrdoAnimi time:** 2-hour facilitated session
 **Time saving:** 70–85%
 
 ---
@@ -202,7 +202,7 @@ The conversation is the artefact. The diagram is the record of the conversation.
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 DOMAIN MODEL
@@ -240,7 +240,7 @@ Value to leadership: prevents the rework that comes from teams building on diffe
 **What it is:** A structured assessment of how fast and how well an organisation makes architectural decisions. Produces a baseline score and identifies the specific failure modes present.
 
 **Standard time:** 4–6 weeks (surveys, interviews, analysis)
-**Velocity™ time:** 2-hour diagnostic session
+**OrdoAnimi time:** 2-hour diagnostic session
 **Time saving:** 75–90%
 
 ---
@@ -253,7 +253,7 @@ Run with: the lead architect, one delivery lead, one business sponsor. Ask each 
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 DECISION VELOCITY DIAGNOSTIC
@@ -296,7 +296,7 @@ Present as: *"This is how fast we are currently making good decisions. This is t
 **What it is:** A structured comparison of options against weighted criteria, producing a traceable record of why one option was chosen over others.
 
 **Standard time:** 2–3 weeks (options analysis, stakeholder review)
-**Velocity™ time:** 1–2 hours
+**OrdoAnimi time:** 1–2 hours
 **Time saving:** 80–90%
 
 ---
@@ -315,7 +315,7 @@ Score each option against each criterion (1–5). Weight × score = weighted sco
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 TRADE-OFF MATRIX
@@ -362,7 +362,7 @@ Do not present the matrix to leadership. Present: option chosen, the one decidin
 **What it is:** A single-page record of one significant architectural decision — the context, the options, the reasoning, and the consequences.
 
 **Standard time:** Often never produced, or produced weeks after the decision
-**Velocity™ time:** 20–30 minutes, immediately after the decision is made
+**OrdoAnimi time:** 20–30 minutes, immediately after the decision is made
 **Time saving:** Infinite (replacing zero with something)
 
 ---
@@ -383,7 +383,7 @@ Write the answers. That is the ADR.
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 ADR-[number]: [Title — verb + noun]
@@ -430,7 +430,7 @@ The value of an ADR is highest when someone asks *"why did we do it this way?"* 
 **What it is:** A set of automated or manual checks that verify architectural decisions are still holding in the running system.
 
 **Standard time:** Typically never produced in most organisations
-**Velocity™ time:** 2-hour definition session + implementation time per function
+**OrdoAnimi time:** 2-hour definition session + implementation time per function
 **Time saving:** Replaces manual architecture review cycles
 
 ---
@@ -445,7 +445,7 @@ Focus on the decisions that, if they drifted, would cause the most damage before
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 FITNESS FUNCTION REGISTER
@@ -475,7 +475,7 @@ Present as: *"These are the automated guardrails on our most significant decisio
 **What it is:** A structured view of the dependencies between systems, teams, or capabilities that are relevant to a decision or delivery programme.
 
 **Standard time:** 2–4 weeks
-**Velocity™ time:** 90-minute facilitated session
+**OrdoAnimi time:** 90-minute facilitated session
 **Time saving:** 75–85%
 
 ---
@@ -490,7 +490,7 @@ Mark criticality: which dependencies, if broken, would halt delivery or cause fa
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 DEPENDENCY MAP
@@ -529,7 +529,7 @@ Present as: *"These are the three dependencies that could stop this programme. H
 **What it is:** A living view of the current health of architectural commitments across a domain or programme. Not a project status report — a decision integrity report.
 
 **Standard time:** Typically never produced systematically
-**Velocity™ time:** 30-minute weekly update
+**OrdoAnimi time:** 30-minute weekly update
 **Time saving:** Replaces ad-hoc architecture review meetings
 
 ---
@@ -545,7 +545,7 @@ The three questions it answers:
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 VELOCITY DASHBOARD
@@ -583,7 +583,7 @@ One page. Three numbers: decisions holding, decisions drifting, decisions overdu
 **What it is:** A chronological index of all ADRs in a domain, their current status, and their relationships. The ADL is the navigation layer over the individual ADRs.
 
 **Standard time:** Not typically maintained as a separate artefact
-**Velocity™ time:** 15-minute update per cycle
+**OrdoAnimi time:** 15-minute update per cycle
 **Time saving:** Replaces manual trawling through decision history
 
 ---
@@ -594,7 +594,7 @@ The ADL is a table. It does not contain the decisions — it indexes them. Every
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 ARCHITECTURAL DECISION LOG
@@ -620,7 +620,7 @@ Not presented to leadership directly. Referenced when a decision is questioned: 
 **What it is:** A structured log of architectural risks — decisions not yet made, dependencies not yet resolved, assumptions not yet validated — that could cause delivery or operational failure.
 
 **Standard time:** Typically exists as a project risk register, not architecture-specific
-**Velocity™ time:** 1-hour initial session, 30-minute fortnightly update
+**OrdoAnimi time:** 1-hour initial session, 30-minute fortnightly update
 
 ---
 
@@ -635,7 +635,7 @@ Do not copy the project risk register. Build from architectural decisions and th
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 ARCHITECTURAL RISK REGISTER
@@ -664,7 +664,7 @@ Present the overdue items only. *"Three architectural decisions have passed thei
 **What it is:** A structured view of the technologies in use, under evaluation, on hold, and deprecated across a domain. Used to manage technology proliferation and guide adoption decisions.
 
 **Standard time:** Quarterly cycle, 2–4 weeks per update
-**Velocity™ time:** 2-hour quarterly session
+**OrdoAnimi time:** 2-hour quarterly session
 **Time saving:** 70–80%
 
 ---
@@ -677,7 +677,7 @@ Do not attempt to be comprehensive. Cover only the technologies that are decisio
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 TECHNOLOGY RADAR
@@ -717,7 +717,7 @@ Present only movements: what entered Adopt, what entered Hold, and why. *"This q
 **What it is:** A fortnightly or monthly one-page briefing covering the architectural state of a programme — decisions made, decisions pending, risks surfaced, and the single most important action required.
 
 **Standard time:** Not typically produced; ad-hoc status updates used instead
-**Velocity™ time:** 30–45 minutes per cycle
+**OrdoAnimi time:** 30–45 minutes per cycle
 
 ---
 
@@ -729,7 +729,7 @@ Five sections, maximum one page.
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 PULSE BRIEFING — [Month/Fortnight]
@@ -764,7 +764,7 @@ The Pulse Briefing is the executive framing. Send it. Do not present it — send
 **What it is:** A log of architectural issues that have been escalated beyond the architecture function — decisions that require executive sponsorship, funding, or cross-domain authority to resolve.
 
 **Standard time:** Not typically maintained as a distinct artefact
-**Velocity™ time:** 15-minute update per cycle
+**OrdoAnimi time:** 15-minute update per cycle
 
 ---
 
@@ -776,7 +776,7 @@ The register is not a complaint log. It is an accountability tool.
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 ESCALATION REGISTER
@@ -800,7 +800,7 @@ Present at governance meetings. *"Two items have been in the escalation register
 **What it is:** A structured self-assessment of the architect's own operating integrity — the degree to which their decisions and recommendations are driven by architecture reasoning rather than political, social, or organisational pressure.
 
 **Standard time:** Not typically formalised
-**Velocity™ time:** 30-minute quarterly reflection
+**OrdoAnimi time:** 30-minute quarterly reflection
 
 ---
 
@@ -815,7 +815,7 @@ Ask:
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 INTEGRITY ARC ASSESSMENT
@@ -847,7 +847,7 @@ Not presented to leadership. The Integrity Arc is a practitioner instrument. Its
 **What it is:** A structured record produced when an architect transitions off a programme — capturing the state of all decisions, open items, risks, and the reasoning behind choices made.
 
 **Standard time:** Rarely produced; institutional knowledge walks out the door
-**Velocity™ time:** Half-day to produce
+**OrdoAnimi time:** Half-day to produce
 
 ---
 
@@ -859,7 +859,7 @@ The ADL + Handover Record together must enable a competent architect to pick up 
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 HANDOVER RECORD
@@ -896,7 +896,7 @@ Not presented to leadership. Referenced if the incoming architect surfaces issue
 **What it is:** A curated library of architectural patterns in use or approved for use in a domain — with rationale, constraints, and examples for each.
 
 **Standard time:** Years to build organically; often never formalised
-**Velocity™ time:** Initial catalogue in one 3-hour session; updated as patterns are identified
+**OrdoAnimi time:** Initial catalogue in one 3-hour session; updated as patterns are identified
 
 ---
 
@@ -908,7 +908,7 @@ Document those seven. Add to the catalogue as decisions create new patterns wort
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 PATTERN CATALOGUE
@@ -937,7 +937,7 @@ Not presented to leadership. Referenced by delivery teams. Value is in reducing 
 **What it is:** A step-by-step operating guide for a specific architectural scenario — how to onboard a new system, how to deprecate a legacy component, how to conduct an architecture review under time pressure.
 
 **Standard time:** Rarely formalised; each event reinvented from scratch
-**Velocity™ time:** 2 hours to produce per playbook
+**OrdoAnimi time:** 2 hours to produce per playbook
 
 ---
 
@@ -949,7 +949,7 @@ The person who ran the event writes the first draft. The architect reviews and f
 
 ---
 
-#### Velocity™ Template
+#### OrdoAnimi Template
 
 ```
 PLAYBOOK: [Scenario name]
@@ -987,7 +987,7 @@ Not presented to leadership. Operational instrument. Value is in consistency and
 
 ## Compression Map Summary
 
-| Artefact | Standard time | Velocity™ time | Saving |
+| Artefact | Standard time | OrdoAnimi time | Saving |
 |----------|--------------|----------|--------|
 | Guardrail Canvas | 3–6 weeks | 2–4 hours | 90%+ |
 | Trade-off Matrix | 2–3 weeks | 1–2 hours | 85%+ |
@@ -1000,4 +1000,4 @@ Not presented to leadership. Operational instrument. Value is in consistency and
 | Pulse Briefing | Ad-hoc | 30–45 min | ∞ |
 | Decision Velocity Diagnostic | 4–6 weeks | 2 hours | 85%+ |
 
-*Velocity Architecture Framework™ — © 2026 Phil Myint / ZenCloud Global Consultants*
+*The OrdoAnimi Framework — © 2026 Phil Myint / OrdoAnimi*

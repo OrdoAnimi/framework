@@ -1,6 +1,6 @@
 # Correspondence Rules Register
 
-**Velocity™ — All Viewpoints | ISO/IEC/IEEE 42010:2022 Conformant**
+**OrdoAnimi — All Viewpoints | ISO/IEC/IEEE 42010:2022 Conformant**
 
 > Correspondence rules govern the relationships between viewpoints, artefacts, and decisions.  
 > They enforce consistency, traceability, and obligation across architecture descriptions.  
@@ -202,5 +202,5 @@ Every Guardrail Canvas carries a mandatory Review Date field. On that date, the 
 
 ---
 
-*Correspondence Rules Register — Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*
+*Correspondence Rules Register — The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

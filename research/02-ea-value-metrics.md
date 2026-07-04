@@ -1,6 +1,6 @@
 # Research Paper 2: Measuring EA Value — What the Evidence Actually Says
 
-**Velocity Architecture Framework™ — Research Series**
+**The OrdoAnimi Framework — Research Series**
 
 *Evidence quality grading: ◆◆◆ Peer-reviewed | ◆◆ Industry research | ◆ Practitioner analysis*
 
@@ -8,7 +8,7 @@
 
 ## Abstract
 
-Enterprise architecture is routinely justified on the basis of value claims that are difficult to measure and rarely validated. This paper reviews the empirical evidence on EA value metrics, identifies the measurement approaches that have demonstrated validity, and proposes a minimal viable measurement model for the Velocity™ practitioner. The central finding is that EA value is most reliably measured at the decision level, not the programme or organisational level.
+Enterprise architecture is routinely justified on the basis of value claims that are difficult to measure and rarely validated. This paper reviews the empirical evidence on EA value metrics, identifies the measurement approaches that have demonstrated validity, and proposes a minimal viable measurement model for the OrdoAnimi practitioner. The central finding is that EA value is most reliably measured at the decision level, not the programme or organisational level.
 
 ---
 
@@ -56,9 +56,9 @@ The implication for measurement: the most direct measure of EA value is not what
 
 ---
 
-## 3. The Velocity™ Measurement Model
+## 3. The OrdoAnimi Measurement Model
 
-The Velocity™ proposes measurement at three levels.
+The OrdoAnimi proposes measurement at three levels.
 
 ### Level 1 — Decision velocity (primary metric)
 
@@ -121,7 +121,7 @@ Trend lines matter more than point-in-time scores. An organisation moving from 5
 | Large IT projects average 45% over budget; majority traced to early decision failures | McKinsey 2012 | ◆◆ |
 | Direction-setting artefacts associated with 30–40% reduction in mid-programme scope change | Industry research | ◆◆ |
 | Deferred architectural decisions double in cost every 90 days | Ross, Weill & Robertson 2006 | ◆◆◆ |
-| Artefact count and standards compliance are not valid EA value metrics | Velocity™ practitioner analysis | ◆ |
+| Artefact count and standards compliance are not valid EA value metrics | OrdoAnimi practitioner analysis | ◆ |
 
 ---
 
@@ -136,5 +136,5 @@ Full bibliography in [`/research/SOURCES.md`](/research/SOURCES.md).
 
 ---
 
-*Velocity Architecture Framework™ — © 2026 Phil Myint / ZenCloud Global Consultants*
+*The OrdoAnimi Framework — © 2026 Phil Myint / OrdoAnimi*
 *Research Series — Paper 2 of 4*

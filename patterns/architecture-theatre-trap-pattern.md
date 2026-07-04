@@ -1,6 +1,6 @@
 # PAT-03: Architecture Theatre Trap
 
-**Velocity Architecture Framework™ — Pattern & Playbook | Column 6**
+**The OrdoAnimi Framework — Pattern & Playbook | Column 6**
 
 | Field | Value |
 |-------|-------|
@@ -23,7 +23,7 @@ This is Architecture Theatre: governance ceremony substituting for governance ou
 
 ## Context
 
-Architecture Theatre is one of the eight coined concepts in the Velocity™ framework (EPISTEMOLOGY.md). It is distinct from a stalled decision (PAT-01) or a failed escalation (PAT-02) — those are process failures. Architecture Theatre is a cultural and structural failure: the architecture function has been misconfigured to produce output rather than decisions.
+Architecture Theatre is one of the eight coined concepts in the OrdoAnimi framework (EPISTEMOLOGY.md). It is distinct from a stalled decision (PAT-01) or a failed escalation (PAT-02) — those are process failures. Architecture Theatre is a cultural and structural failure: the architecture function has been misconfigured to produce output rather than decisions.
 
 The trap is hard to name because it looks like progress. Reviews are conducted. Stakeholders attend. Documents are approved. The artefact count grows. But delivery cannot proceed because no architectural decision has produced a binding commitment sufficient for delivery to begin (CR-L2).
 
@@ -107,7 +107,7 @@ After this pattern is applied:
 - The Canvas-first constraint (CR-T1) is in effect, preventing Theatre from re-emerging at the solution layer
 - The practitioner's position is protected — the Integrity Arc (VP6) requires the practitioner to name governance failure, not participate in it
 
-**What this does not fix:** the cultural disposition toward Theatre. That requires sustained application of the Velocity™ operating rhythm (VP5) over multiple Pulse cycles. The pattern breaks the immediate trap; the Pulse system prevents the pattern from recurring.
+**What this does not fix:** the cultural disposition toward Theatre. That requires sustained application of the OrdoAnimi operating rhythm (VP5) over multiple Pulse cycles. The pattern breaks the immediate trap; the Pulse system prevents the pattern from recurring.
 
 ---
 
@@ -118,5 +118,5 @@ After this pattern is applied:
 
 ---
 
-*PAT-03: Architecture Theatre Trap — Velocity Architecture Framework™*
-*© 2026 Phil Myint / ZenCloud Advisory | ISO/IEC/IEEE 42010:2022 Conformant*
+*PAT-03: Architecture Theatre Trap — The OrdoAnimi Framework*
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

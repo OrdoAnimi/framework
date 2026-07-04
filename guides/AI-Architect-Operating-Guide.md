@@ -1,7 +1,7 @@
 # AI Architect Operating Guide
 
 **Status:** Internal practitioner doctrine  
-**Owner:** Velocity Architecture / Founder  
+**Owner:** OrdoAnimi / Founder  
 **Purpose:** Define the operating boundary, delivery method, evidence obligations, and engineering expectations for an enterprise AI architect.
 
 ## Role thesis

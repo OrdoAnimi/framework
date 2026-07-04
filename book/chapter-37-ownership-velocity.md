@@ -1,6 +1,6 @@
 # Chapter 37: Ownership Velocity
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -36,4 +36,4 @@ When the answer is no, the organisation faces a choice, and the choice it most c
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

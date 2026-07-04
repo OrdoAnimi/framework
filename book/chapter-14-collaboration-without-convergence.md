@@ -1,6 +1,6 @@
 # Chapter 14: Collaboration Without Convergence
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -102,4 +102,4 @@ That design clarity is what the chapters that follow describe. Not as a cultural
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

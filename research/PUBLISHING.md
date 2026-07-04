@@ -32,7 +32,7 @@ https://zencloudau.github.io/velocity-architecture/research/it-governance-framew
 Every research paper must provide:
 
 - Readable HTML rendering.
-- Top navigation back to the framework, research library, ZenCloud, StudioSix, Academy, and GitHub.
+- Top navigation back to the framework, research library, OrdoAnimi, Academy, and GitHub.
 - Footer links back into the ecosystem.
 - A GitHub source link for audit/source-of-truth purposes.
 - No dead-end article pages.

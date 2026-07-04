@@ -1,6 +1,6 @@
 # Chapter 20: Decision Latency
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -126,4 +126,4 @@ And in an organisation that has been redesigned, through the conditions of Part 
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

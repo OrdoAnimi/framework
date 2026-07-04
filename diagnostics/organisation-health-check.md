@@ -1,8 +1,8 @@
 # Organisation Health Check
 
-**Velocity™ — Structural Pathology Diagnostic**
+**OrdoAnimi — Structural Pathology Diagnostic**
 
-> Use this diagnostic to identify which Velocity™ pathologies are present in your organisation.  
+> Use this diagnostic to identify which OrdoAnimi pathologies are present in your organisation.  
 > It is distinct from the Decision Velocity Diagnostic (which measures capability).  
 > This one measures structural dysfunction.
 
@@ -128,7 +128,7 @@ Score > 9: Sacred cows are actively protecting dysfunction.
 
 | Total | Interpretation |
 |-------|---------------|
-| 0–20 | **Healthy** — Isolated issues. Use Velocity™ to formalise and strengthen what is working. |
+| 0–20 | **Healthy** — Isolated issues. Use OrdoAnimi to formalise and strengthen what is working. |
 | 21–40 | **Emerging dysfunction** — Patterns are forming. Intervene before they embed. |
 | 41–60 | **Embedded dysfunction** — Multiple pathologies reinforcing each other. Structural intervention required. |
 | 61–90 | **Systemic** — The organisation has been redesigned for inaction. Begin with the Foundation Layer and VP6. |
@@ -158,5 +158,5 @@ That answer is the sacred cow worth naming first.
 
 ---
 
-*Organisation Health Check — Velocity™ | Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*
+*Organisation Health Check — OrdoAnimi | The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

@@ -1,7 +1,7 @@
 # MVP and MLP — The Empirical Evidence
 ## What the Research Actually Supports
 
-**Author:** ZenCloud Global Consultants  
+**Author:** OrdoAnimi  
 **Published:** May 2026  
 **Classification:** Research Analysis  
 **Evidence standard:** Peer-reviewed sources distinguished from practitioner aggregations throughout
@@ -124,7 +124,7 @@ The same core problem — measuring value before the investment is made, and res
 
 Organisations invest in capabilities without validation (the BCM signal ignored). They decommission systems without integration mapping (the Integration Architecture not produced before the commitment is made). They transform processes without an as-is baseline (the BPM gap that produces failed to-be implementations).
 
-MVP discipline applied to architectural decision-making is the mechanism Velocity™ operationalises: validate the assumption the decision depends on before committing the investment. The Management Science finding — that validation culture improves performance 30–100% — applies to architectural decision-making as directly as to product development.
+MVP discipline applied to architectural decision-making is the mechanism OrdoAnimi operationalises: validate the assumption the decision depends on before committing the investment. The Management Science finding — that validation culture improves performance 30–100% — applies to architectural decision-making as directly as to product development.
 
 MLP discipline applied to EA is the argument that the artefact should not just function — it should be usable, readable, and designed for the person consuming it. A Business Capability Map heat map that communicates the investment gap clearly in 30 seconds is an MLP-equivalent EA output. A 40-page capability taxonomy is the MVP-equivalent that no-one reads.
 
@@ -148,5 +148,5 @@ Both arguments have value. Neither has a comparative effectiveness trial at the 
 
 ---
 
-*ZenCloud Global Consultants · May 2026*  
+*OrdoAnimi · May 2026*  
 *Evidence quality graded throughout. Peer-reviewed findings distinguished from practitioner aggregations.*

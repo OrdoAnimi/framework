@@ -1,9 +1,9 @@
-# Velocity Architecture Framework™ — Formal Specification
+# The OrdoAnimi Framework — Formal Specification
 
 **ISO/IEC/IEEE 42010:2022 Conformant Architecture Description Framework**  
 
-Version 1.0 | © 2026 Phil Myint / ZenCloud Global Consultants  
-TM Class 42, ZenCloud Consulting
+Version 1.0 | © 2026 Phil Myint / The OrdoAnimi Group  
+CC BY 4.0
 
 ---
 
@@ -11,12 +11,12 @@ TM Class 42, ZenCloud Consulting
 
 | Field                  | Value |
 |------------------------|-------|
-| Full name              | Velocity Architecture Framework™ |
-| Abbreviation           | Velocity™ |
+| Full name              | The OrdoAnimi Framework |
+| Abbreviation           | OrdoAnimi |
 | Version                | 1.0 |
 | Status                 | Published Specification |
-| Owner                  | Phil Myint, Principal Architect, ZenCloud Global Consultants |
-| Trademark              | TM filed — Class 42, ZenCloud Consulting |
+| Owner                  | Phil Myint, Principal Architect, OrdoAnimi |
+| License                | CC BY 4.0 |
 | Primary domain         | Enterprise and solution architecture |
 | Extended application   | Organisational leadership and decision governance |
 | Conformance standard   | ISO/IEC/IEEE 42010:2022 |
@@ -36,10 +36,10 @@ TM Class 42, ZenCloud Consulting
 ### 1.1 Entity of Interest (EoI)
 The primary **Entity of Interest** is an **Enterprise Programme, Organisational Capability, or Solution under transformation**.  
 Secondary EoIs include systems, platforms, and governance operating models.  
-Velocity™ explicitly supports multi-scale and nested EoIs.
+OrdoAnimi explicitly supports multi-scale and nested EoIs.
 
 ### Primary Domain
-Velocity™ applies where architectural decisions must be made, owned, and acted upon across multiple layers with competing stakeholder concerns.
+OrdoAnimi applies where architectural decisions must be made, owned, and acted upon across multiple layers with competing stakeholder concerns.
 
 ### Extended Domain
 Applies to organisational leadership and governance where decision records replace traditional architecture descriptions.
@@ -70,7 +70,7 @@ Applies to organisational leadership and governance where decision records repla
 
 ## 5. Architecture Description Life Cycle (New)
 
-Velocity™ defines four explicit states for every architecture artefact:
+OrdoAnimi defines four explicit states for every architecture artefact:
 
 - **Proposed** → **Decided** → **Active** → **Superseded / Archived**
 
@@ -92,26 +92,26 @@ Full rules: [`/correspondence-rules/RULES.md`](../correspondence-rules/RULES.md)
 
 ## 7. ISO/IEC/IEEE 42010 Ontology Mapping
 
-| 42010 Term                  | Velocity™ Equivalent |
+| 42010 Term                  | OrdoAnimi Equivalent |
 |-----------------------------|----------------|
 | Entity of interest          | Enterprise Programme / Organisational Capability / Solution |
 | Architecture                | Accumulated body of binding decisions |
-| Architecture description    | Complete Velocity™ artefact set |
+| Architecture description    | Complete OrdoAnimi artefact set |
 | Stakeholder                 | Section 2 Stakeholder Register |
 | Concern                     | Section 3 Concern Register |
 | Architecture viewpoint      | VP1–VP6 |
-| Architecture view           | Instantiated Velocity™ artefact |
+| Architecture view           | Instantiated OrdoAnimi artefact |
 | Model kind                  | Specific instruments (Guardrail Canvas, Trade-off Matrix, ADR, etc.) |
 | Architecture decision       | Trade-off Matrix + ADR |
 | Architecture rationale      | Rationale fields + Context/Consequences |
 | Correspondence rule         | Section 6 Correspondence Rules |
-| Architecture framework      | Velocity Architecture Framework™ |
+| Architecture framework      | The OrdoAnimi Framework |
 
 ---
 
 ## 8. Conformance Declaration
 
-The Velocity Architecture Framework, Version 1.0, claims **full conformance** with ISO/IEC/IEEE 42010:2022 as an **Architecture Description Framework (ADF)**.
+The OrdoAnimi Framework, Version 1.0, claims **full conformance** with ISO/IEC/IEEE 42010:2022 as an **Architecture Description Framework (ADF)**.
 
 | Requirement                          | Status     | Reference |
 |--------------------------------------|------------|---------|
@@ -126,7 +126,7 @@ The Velocity Architecture Framework, Version 1.0, claims **full conformance** wi
 
 ---
 
-*Velocity Architecture Framework™ — Formal Specification v1.0*  
-*© 2026 Phil Myint / ZenCloud Global Consultants. All rights reserved.*  
-*ISO/IEC/IEEE 42010:2022 Conformant | TM Class 42, ZenCloud Consulting*  
+*The OrdoAnimi Framework — Formal Specification v1.0*  
+*© 2026 Phil Myint / The OrdoAnimi Group · CC BY 4.0.*  
+*ISO/IEC/IEEE 42010:2022 Conformant*  
 *github.com/ZenCloudAU/velocity-architecture*

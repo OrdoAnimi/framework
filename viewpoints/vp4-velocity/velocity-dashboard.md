@@ -1,6 +1,6 @@
 # Velocity Dashboard
 
-**Velocity™ VP4 — Velocity Viewpoint | Architectural Control Layer**
+**OrdoAnimi VP4 — Velocity Viewpoint | Architectural Control Layer**
 
 > The Velocity Dashboard is a control surface, not a reporting tool.  
 > It answers one question at all times: where is ambiguity accumulating?
@@ -166,5 +166,5 @@ Run these monthly. They reveal patterns that weekly metrics miss.
 
 ---
 
-*Velocity Dashboard — Velocity™ VP4 | Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*
+*Velocity Dashboard — OrdoAnimi VP4 | The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

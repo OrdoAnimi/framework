@@ -1,6 +1,6 @@
 # Chapter 5: Authorship Under Constraint
 
-*Where Architecture Truly Creates Value 路 Phil Myint 路 ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value 路 Phil Myint 路 OrdoAnimi*
 
 ---
 
@@ -102,4 +102,4 @@ The chapters that follow examine what happens when that standard is held鈥娾�斺�
 
 ---
 
-*Phil Myint 路 ZenCloud Global Consultants*
+*Phil Myint 路 OrdoAnimi*

@@ -1,8 +1,8 @@
 # Architecture at the Speed of the Decision
-## The Governing Argument of the Velocity Architecture Framework™
+## The Governing Argument of the The OrdoAnimi Framework
 
-**Author:** ZenCloud Global Consultants  
-**Framework:** Velocity Architecture Framework™  
+**Author:** OrdoAnimi  
+**Framework:** The OrdoAnimi Framework  
 **Published:** May 2026
 
 ---
@@ -27,7 +27,7 @@ Decisions happen at the speed the organisation is moving. In a large, stable gov
 
 The practitioner who cannot produce architectural thinking at the speed decisions are being made is not present when decisions are made. They arrive after the fact with a comprehensive document that ratifies something already decided, or challenges something already committed. Neither position is architecture. Both are overhead.
 
-The question the Velocity Architecture Framework™ is built to answer is: what is the minimum coherent architectural output that serves this decision, at the resolution this decision requires, in the time this decision is being made?
+The question the The OrdoAnimi Framework is built to answer is: what is the minimum coherent architectural output that serves this decision, at the resolution this decision requires, in the time this decision is being made?
 
 ---
 
@@ -39,7 +39,7 @@ The organisations that succeed are the ones that have understood, implicitly or 
 
 CB Insights' analysis of 431 failed VC-backed companies (2024) found that 43% failed due to poor product-market fit — the problem of building without validating. The same failure mode operates at the organisational architecture level: organisations invest without capability validation, decommission without integration mapping, transform without process baseline. The artefact set exists to prevent exactly those failures. But only if the artefact is produced at the moment the decision requires it — not after the decision has already been made by default.
 
-Koning, Hasan & Chatterji (Management Science, 2022) demonstrated across 35,000 startups that iterative validation discipline — producing the minimum evidence required to make a decision before committing — improves performance 30–100% within a year. The mechanism is not the specific validation instrument. It is the discipline of validating before committing. That is the mechanism Velocity™ applies to architectural decision-making.
+Koning, Hasan & Chatterji (Management Science, 2022) demonstrated across 35,000 startups that iterative validation discipline — producing the minimum evidence required to make a decision before committing — improves performance 30–100% within a year. The mechanism is not the specific validation instrument. It is the discipline of validating before committing. That is the mechanism OrdoAnimi applies to architectural decision-making.
 
 ---
 
@@ -59,9 +59,9 @@ Koning, Hasan & Chatterji (Management Science, 2022) demonstrated across 35,000 
 
 The rigour of the underlying analysis does not change. The discipline of the extraction conversation — asking the right questions, recording what was actually said, naming the things that were not agreed as explicitly as the things that were — is as demanding as any workshop-based methodology. More demanding, in some respects, because there is no volume of documentation to hide behind.
 
-The accountability does not change. Every artefact produced under the Velocity™ framework has a named decision owner, a named date, and a named invalidation trigger. The compression removes overhead — not accountability.
+The accountability does not change. Every artefact produced under the OrdoAnimi framework has a named decision owner, a named date, and a named invalidation trigger. The compression removes overhead — not accountability.
 
-The evidence base does not change. The research papers in this repository are sourced, graded, and honest about their limitations. The Velocity™ framework is not asserted to be empirically validated at the artefact level — because that study does not exist. What is asserted is that the compression logic is derived from what the research supports, applied to what practitioners know works in the room.
+The evidence base does not change. The research papers in this repository are sourced, graded, and honest about their limitations. The OrdoAnimi framework is not asserted to be empirically validated at the artefact level — because that study does not exist. What is asserted is that the compression logic is derived from what the research supports, applied to what practitioners know works in the room.
 
 ---
 
@@ -87,5 +87,5 @@ That is architecture. It has always been architecture. The frameworks and the ar
 
 ---
 
-*Velocity Architecture Framework™ · ZenCloud Global Consultants · May 2026*  
+*The OrdoAnimi Framework · OrdoAnimi · May 2026*  
 *Free to use. Free to share. Attribution appreciated.*

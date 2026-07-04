@@ -1,6 +1,6 @@
 # Chapter 2: Layers Without Overlap
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -100,4 +100,4 @@ The Clarity Stack is the foundation of everything that follows in this book. Eve
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

@@ -1,6 +1,6 @@
 # Integrity Arc
 
-**Velocity™ VP6 — Practitioner Viewpoint | Human Layer**  
+**OrdoAnimi VP6 — Practitioner Viewpoint | Human Layer**  
 **Instrument: Auctor Custos — Custodian of Architectural Integrity**
 
 > This is not a checklist. It is a set of positions.  
@@ -194,5 +194,5 @@ Current velocity reading for this engagement:
 
 ---
 
-*Integrity Arc — Velocity™ VP6 | Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*
+*Integrity Arc — OrdoAnimi VP6 | The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

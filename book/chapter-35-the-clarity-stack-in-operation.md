@@ -1,6 +1,6 @@
 # Chapter 35: The Clarity Stack in Operation
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -52,4 +52,4 @@ The discussion that follows examines the method through which the governance arc
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

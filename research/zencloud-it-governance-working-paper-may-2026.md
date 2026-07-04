@@ -2,7 +2,7 @@
 ## Investigating the Relationship Between Documented Intent and Reported Outcomes in the Australian Public Sector (2025–2026)
 
 **Author:** Phil Myint
-**Organisation:** ZenCloud Global Consultants
+**Organisation:** OrdoAnimi
 **Classification:** Independent Industry Working Paper
 **Date:** May 2026
 **Repository:** github.com/ZenCloudAU/velocity-architecture
@@ -320,8 +320,8 @@ Further research examining the structural conditions that sustain this gap — a
 
 ---
 
-*This analysis is published by Phil Myint under the ZenCloud Global Consultants brand as an independent contribution to public sector IT governance research. No commercial engagement is implied or intended. Full source citations from the 2024-2026 ANAO, QAO, NSW Auditor-General, VAGO, WAAGO, ACT Audit Office, ASD, OECD, and Deloitte Unify Review reports.*
+*This analysis is published by Phil Myint under the OrdoAnimi brand as an independent contribution to public sector IT governance research. No commercial engagement is implied or intended. Full source citations from the 2024-2026 ANAO, QAO, NSW Auditor-General, VAGO, WAAGO, ACT Audit Office, ASD, OECD, and Deloitte Unify Review reports.*
 
 *A Trans-Pacific addendum extending this analysis to Canada and New Zealand is published separately as Document 1.1 in this series.*
 
-*This working paper is maintained in the ZenCloud research repository at github.com/ZenCloudAU/velocity-architecture*
+*This working paper is maintained in the OrdoAnimi research repository at github.com/ZenCloudAU/velocity-architecture*

@@ -1,6 +1,6 @@
 # Templates
 
-**Velocity Architecture Framework™ — Standalone Template Library**
+**The OrdoAnimi Framework — Standalone Template Library**
 
 ---
 
@@ -49,5 +49,5 @@ The `examples/` directory contains completed templates with realistic content:
 
 ---
 
-*Templates — Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Advisory | ISO/IEC/IEEE 42010:2022 Conformant*
+*Templates — The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

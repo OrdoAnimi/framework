@@ -1,6 +1,6 @@
 # Chapter 41: What the Decisive Organisation Looks Like
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -32,4 +32,4 @@ This is what the decisive organisation looks like. The difficulty is that almost
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

@@ -1,6 +1,6 @@
 # Worked Example: Pulse Report
 
-**Velocity Architecture Framework™ — Examples**
+**The OrdoAnimi Framework — Examples**
 
 > **Scenario:** CloudFirst Banking — Core Platform Modernisation (continued from pulse-briefing-example.md)
 > **Pulse Tier:** Tier 1 (Weekly) — Post-session report
@@ -91,5 +91,5 @@ One decision confirmed. One escalation risk active. One fitness function failure
 ---
 
 *Pulse Report — CloudFirst Banking Core Platform Modernisation*
-*Velocity Architecture Framework™ | © 2026 Phil Myint / ZenCloud Advisory*
+*The OrdoAnimi Framework | © 2026 Phil Myint / OrdoAnimi*
 *See also: `examples/pulse-briefing-example.md` (pre-session), `examples/adl-example.md` (full register)*

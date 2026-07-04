@@ -1,6 +1,6 @@
 # Architecture Decision Record (ADR)
 
-**Velocity™ VP3 — Truth Viewpoint | Technical Architecture Layer**
+**OrdoAnimi VP3 — Truth Viewpoint | Technical Architecture Layer**
 
 > One ADR = one technical architectural decision.  
 > Once accepted: immutable. To change: supersede with a new ADR.  
@@ -93,5 +93,5 @@ assert p95_latency() < 50ms  # enforces ADR-NNN
 
 ---
 
-*ADR — Velocity™ VP3 | Velocity Architecture Framework™*  
-*© 2026 Phil Myint / ZenCloud Global Consultants | ISO/IEC/IEEE 42010:2022 Conformant*
+*ADR — OrdoAnimi VP3 | The OrdoAnimi Framework*  
+*© 2026 Phil Myint / OrdoAnimi | ISO/IEC/IEEE 42010:2022 Conformant*

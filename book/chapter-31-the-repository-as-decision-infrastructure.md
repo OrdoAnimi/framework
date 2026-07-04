@@ -1,6 +1,6 @@
 # Chapter 31: The Repository as Decision Infrastructure
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -78,4 +78,4 @@ Part Four continues with the question of who holds authority inside that system�
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

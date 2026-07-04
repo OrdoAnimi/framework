@@ -1,6 +1,6 @@
 # Chapter 19: Guardrails and Executable Constraint
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -98,4 +98,4 @@ Without executable constraint, convergence remains fragile regardless of how cle
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*

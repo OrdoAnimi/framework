@@ -1,6 +1,6 @@
 # Research Paper 1: The True Purpose of EA Artefacts
 
-**Velocity Architecture Framework™ — Research Series**
+**The OrdoAnimi Framework — Research Series**
 
 *Evidence quality grading: ◆◆◆ Peer-reviewed | ◆◆ Industry research | ◆ Practitioner analysis*
 
@@ -8,7 +8,7 @@
 
 ## Abstract
 
-Enterprise architecture artefacts are widely produced and widely ignored. This paper examines the empirical evidence on why artefacts fail to influence decisions, proposes a purpose-first classification of artefact types, and argues that the primary failure mode in EA practice is not poor artefact quality but misalignment between artefact type and decision context. The paper introduces the Velocity™ four-type classification as a corrective framework.
+Enterprise architecture artefacts are widely produced and widely ignored. This paper examines the empirical evidence on why artefacts fail to influence decisions, proposes a purpose-first classification of artefact types, and argues that the primary failure mode in EA practice is not poor artefact quality but misalignment between artefact type and decision context. The paper introduces the OrdoAnimi four-type classification as a corrective framework.
 
 ---
 
@@ -62,7 +62,7 @@ If neither: it is a documentation artefact. It may be useful for reference, comp
 
 ## 4. The Four-Type Classification
 
-The Velocity™ classifies artefacts into four types based on their purpose in the decision cycle, not their content or format.
+The OrdoAnimi classifies artefacts into four types based on their purpose in the decision cycle, not their content or format.
 
 **Type 1 — Direction artefacts**
 Purpose: establish the corridor within which decisions must sit.
@@ -110,7 +110,7 @@ The right artefact is the simplest artefact that captures the commitment or enab
 | Governance-driven artefacts consumed at lower rates than decision-driven artefacts | Kotusev 2019–2022 | ◆◆◆ |
 | Decision latency is primary cost driver in EA failure | Ross, Weill & Robertson 2006 | ◆◆◆ |
 | Wrong altitude is most common artefact failure mode | Multiple practitioner studies | ◆◆ |
-| Post-decision artefacts produce no change in behaviour | Velocity™ practitioner analysis | ◆ |
+| Post-decision artefacts produce no change in behaviour | OrdoAnimi practitioner analysis | ◆ |
 
 ---
 
@@ -126,5 +126,5 @@ Full bibliography in [`/research/SOURCES.md`](/research/SOURCES.md).
 
 ---
 
-*Velocity Architecture Framework™ — © 2026 Phil Myint / ZenCloud Global Consultants*
+*The OrdoAnimi Framework — © 2026 Phil Myint / OrdoAnimi*
 *Research Series — Paper 1 of 4*

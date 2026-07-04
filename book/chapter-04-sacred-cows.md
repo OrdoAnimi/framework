@@ -1,6 +1,6 @@
 # Chapter 4: Sacred Cows
 
-*Where Architecture Truly Creates Value · Phil Myint · ZenCloud Global Consultants*
+*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
 
 ---
 
@@ -110,4 +110,4 @@ The beliefs do not change first. The design changes first. And when the design c
 
 ---
 
-*Phil Myint · ZenCloud Global Consultants*
+*Phil Myint · OrdoAnimi*
