@@ -8,7 +8,7 @@ Version: 1.0 — May 2026
 
 ## Purpose
 
-This policy governs how AI tools and client data are used in OrdoAnimi advisory engagements. It applies to all practitioners operating under the The OrdoAnimi Framework, including subcontractors and partner-embedded delivery resources.
+This policy governs how AI tools and client data are used in OrdoAnimi advisory engagements. It applies to all practitioners operating under the OrdoAnimi Framework, including subcontractors and partner-embedded delivery resources.
 
 All practitioners must understand and apply this policy before using AI tools in any client engagement.
 
@@ -196,7 +196,7 @@ Enterprise deployment requires a separate technical configuration discussion wit
 
 All practitioners operating under OrdoAnimi engagements must confirm they have read and understood this policy before beginning client delivery.
 
-This policy is reviewed and updated at each major The OrdoAnimi Framework version release.
+This policy is reviewed and updated at each major OrdoAnimi Framework version release.
 
 ---
 

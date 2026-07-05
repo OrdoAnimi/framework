@@ -1,4 +1,4 @@
-# Plain Language Guide to the The OrdoAnimi Framework
+# Plain Language Guide to the OrdoAnimi Framework
 
 **Start here if you have never heard of enterprise architecture.**
 

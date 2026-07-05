@@ -1,7 +1,7 @@
 # Where the Frameworks Stop
 ## A Position on the Governance-Execution Gap in Australian, Canadian, and New Zealand Public Sector IT
 
-**Published under the The OrdoAnimi Framework**
+**Published under the OrdoAnimi Framework**
 **By Phil Myint · Principal Architect · OrdoAnimi**
 **Date:** May 2026
 **Reading time:** approximately 20 minutes
@@ -170,4 +170,4 @@ The empirical question a serious Trans-Tasman comparison must answer is whether 
 
 *The neutral comparative analysis this position paper draws from is published separately under the OrdoAnimi brand, with full source citations from the 2024-2026 ANAO, QAO, NSW Auditor-General, VAGO, WAAGO, ACT Audit Office, ASD, OECD, Office of the Auditor General of Canada, and NZ Office of the Auditor-General reports.*
 
-*OrdoAnimi concepts referenced — Governance Drag, Decision Altitude, Altitude Collapse, The Compliant Path — are components of the The OrdoAnimi Framework.*
+*OrdoAnimi concepts referenced — Governance Drag, Decision Altitude, Altitude Collapse, The Compliant Path — are components of the OrdoAnimi Framework.*

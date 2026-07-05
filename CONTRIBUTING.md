@@ -1,4 +1,4 @@
-# Contributing to the The OrdoAnimi Framework
+# Contributing to the OrdoAnimi Framework
 
 **© 2026 Phil Myint / OrdoAnimi**
 

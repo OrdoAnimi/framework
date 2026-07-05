@@ -376,4 +376,4 @@ Industry standard figures (maturity level progression outcomes) are Gartner/ASUG
 ---
 
 *OrdoAnimi · Evidence-Based Research and Consulting*  
-*For practitioner application, see the The OrdoAnimi Framework Series 5*
+*For practitioner application, see the OrdoAnimi Framework Series 5*

@@ -41,3 +41,7 @@ Desktop.ini
 *.tgz
 *.7z
 *.rar
+
+# Python bytecode
+__pycache__/
+*.pyc

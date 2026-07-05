@@ -1,5 +1,5 @@
 # Architecture at the Speed of the Decision
-## The Governing Argument of the The OrdoAnimi Framework
+## The Governing Argument of the OrdoAnimi Framework
 
 **Author:** OrdoAnimi  
 **Framework:** The OrdoAnimi Framework  
@@ -27,7 +27,7 @@ Decisions happen at the speed the organisation is moving. In a large, stable gov
 
 The practitioner who cannot produce architectural thinking at the speed decisions are being made is not present when decisions are made. They arrive after the fact with a comprehensive document that ratifies something already decided, or challenges something already committed. Neither position is architecture. Both are overhead.
 
-The question the The OrdoAnimi Framework is built to answer is: what is the minimum coherent architectural output that serves this decision, at the resolution this decision requires, in the time this decision is being made?
+The question the OrdoAnimi Framework is built to answer is: what is the minimum coherent architectural output that serves this decision, at the resolution this decision requires, in the time this decision is being made?
 
 ---
 
