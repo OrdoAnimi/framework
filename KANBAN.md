@@ -31,7 +31,7 @@
 | M10 | Fix homepage book card — "thirty-three chapters" is stale; book is complete at 50 | velocityarchitectureframework.com homepage HTML | Site audit |
 | M11 | Resolve version discrepancy — repo/spec says v1.0; OrdoAnimi Agent says "OrdoAnimi v2". Decide canonical version and align everywhere. | `spec/FRAMEWORK-SPEC.md`, `app/portal.html` | Agent audit |
 
-### 🟠 OrdoAnimi-SA Site — zencloudau.github.io/vaf-sa/
+### 🟠 OrdoAnimi Architecture Site — zencloudau.github.io/vaf-sa/
 
 | # | Item | File(s) | Source |
 |---|------|---------|--------|
@@ -96,7 +96,7 @@
 | L13 | State publishing hierarchy explicitly in README | `README.md` | Ecosystem |
 | L14 | Medium backlog — cross-post Chapters 31–50 | Medium @ZencloudAU | Ecosystem |
 
-### 🟠 OrdoAnimi-SA Site
+### 🟠 OrdoAnimi Architecture Site
 
 | # | Item | File(s) | Source |
 |---|------|---------|--------|

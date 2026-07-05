@@ -104,17 +104,17 @@ The primary publishing platform for all OrdoAnimi content is **velocityarchitect
 
 ## Ecosystem
 
-OrdoAnimi is published alongside the **OrdoAnimi SA** practitioner framework — a field-level framework for solution architects.
+OrdoAnimi is published alongside the **OrdoAnimi Architecture** practitioner framework — a field-level framework for solution architects.
 
 - **velocityarchitectureframework.com** — this repository, the governing framework
-- **[OrdoAnimi SA](https://zencloudau.github.io/vaf-sa/)** — practitioner tools, field lexicon, engagement archetypes, workshop playbook
+- **[OrdoAnimi Architecture](https://zencloudau.github.io/vaf-sa/)** — practitioner tools, field lexicon, engagement archetypes, workshop playbook
 
 ---
 
 ## Start reading
 
 - [Framework home](https://velocityarchitectureframework.com/)
-- [OrdoAnimi SA practitioner site](https://zencloudau.github.io/vaf-sa/)
+- [OrdoAnimi Architecture practitioner site](https://zencloudau.github.io/vaf-sa/)
 - [Research](https://velocityarchitectureframework.com/research/)
 - [Publications](https://velocityarchitectureframework.com/publications/)
 - [Framework documents](https://velocityarchitectureframework.com/frameworks/)
