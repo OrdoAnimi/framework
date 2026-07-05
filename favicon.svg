@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="OrdoAnimi">
-  <rect width="64" height="64" rx="14" fill="#0F172A"/>
-  <path d="M14 18h36L33 48h-7l9-17H22z" fill="#E8630A"/>
-  <text x="32" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#F8FAFC">OA</text>
+  <rect width="64" height="64" rx="14" fill="#16231C"/>
+  <path d="M14 18h36L33 48h-7l9-17H22z" fill="#B58A34"/>
+  <text x="32" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#F2EDE0">OA</text>
 </svg>

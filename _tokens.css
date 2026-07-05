@@ -1,13 +1,13 @@
 /* The OrdoAnimi Framework - Design Tokens */
 :root {
-  --color-primary: #0f172a;
-  --color-accent: #E8630A;
-  --color-surface: #F8FAFC;
-  --color-panel: #1e293b;
-  --color-text-primary: #0f172a;
-  --color-text-light: #F8FAFC;
-  --color-text-muted: #64748B;
-  --color-border: #E2E8F0;
+  --color-primary: #16231c;
+  --color-accent: #b58a34;
+  --color-surface: #f2ede0;
+  --color-panel: #16231c;
+  --color-text-primary: #16231c;
+  --color-text-light: #f2ede0;
+  --color-text-muted: #6e7460;
+  --color-border: #ded7c4;
   --font-heading: 'Playfair Display', serif;
   --font-body: 'DM Sans', sans-serif;
   --font-mono: 'DM Mono', monospace;
@@ -20,9 +20,9 @@
   --radius-md: 8px;
   --radius-lg: 12px;
   --orange: var(--color-accent);
-  --orange-hover: #CC5508;
-  --orange-subtle: #FFF7ED;
-  --orange-border: #FED7AA;
+  --orange-hover: #8c6a26;
+  --orange-subtle: #f7f0dc;
+  --orange-border: #e8dcc0;
 }
 
 .ecosystem-strip {
@@ -38,7 +38,7 @@
   padding: 0.5rem 2rem;
   font-size: 0.75rem;
   font-family: var(--font-body);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(250,247,239,0.08);
   flex-wrap: wrap;
 }
 .ecosystem-strip__label {
