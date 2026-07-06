@@ -13,7 +13,49 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="stylesheet" href="/_tokens.css">
 <style>
-:root{--bg:#faf7ef;--surface:#f2ede0;--text:#16231c;--muted:#6e7460;--border:#ded7c4;--orange:#b58a34;--navy:#16231c}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif;line-height:1.65}a{color:inherit}nav{position:sticky;top:0;z-index:10;background:rgba(250,247,239,0.96);backdrop-filter:blur(10px);border-bottom:1px solid #ded7c4;box-shadow:0 1px 4px rgba(22,35,28,0.06)}.nav{max-width:1180px;margin:auto;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}.brand{font-family:Georgia,serif;font-weight:700;text-decoration:none;color:#16231c}.links{display:flex;gap:1rem;flex-wrap:wrap}.links a{font-size:.9rem;text-decoration:none;color:#6e7460}.links a:hover{color:var(--orange)}header{background:#16231c;color:#faf7ef;border-bottom:3px solid var(--orange);position:relative;overflow:hidden}.brand-watermark{position:absolute;right:-4%;top:50%;transform:translateY(-50%);width:38%;max-width:460px;opacity:0.05;pointer-events:none;z-index:0}.hero{max-width:1180px;margin:auto;padding:6rem 1.5rem;position:relative;z-index:1}.eyebrow{color:#ddb35c;letter-spacing:.15em;font-size:.72rem}.hero h1{font-family:Georgia,serif;font-size:clamp(2.5rem,7vw,5.5rem);line-height:1;margin:.7rem 0 1.25rem}.hero p{max-width:760px;color:#c9bfa6;font-size:1.15rem}.actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem}.button{display:inline-block;padding:.75rem 1rem;border-radius:6px;text-decoration:none;border:1px solid rgba(250,247,239,0.25);color:rgba(235,228,210,0.9)}.button.primary{background:var(--orange);border-color:var(--orange);color:#faf7ef}main{max-width:1180px;margin:auto;padding:4rem 1.5rem}.section{margin-bottom:4rem}.section h2{font-family:Georgia,serif;font-size:2rem;margin-bottom:.5rem;color:#16231c}.section>p{color:#3d4536;max-width:760px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1.5rem}.card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1.4rem;text-decoration:none;min-height:160px;box-shadow:0 2px 8px rgba(22,35,28,0.06);transition:border-color .18s,transform .18s,box-shadow .18s}.card:hover{border-color:var(--orange);transform:translateY(-2px);box-shadow:0 8px 24px rgba(22,35,28,0.12)}.card small{color:var(--orange);letter-spacing:.12em}.card h3{margin:.6rem 0;font-family:Georgia,serif;color:#16231c}.card p{color:#6e7460;font-size:.92rem}@media(max-width:760px){.links{display:none}.hero{padding:4rem 1.25rem}main{padding:3rem 1.25rem}}
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+:root{--ink:#16231c;--paper:#faf7ef;--page:#f2ede0;--surface2:#ebe4d2;--border:#ded7c4;--border2:#c9bfa6;--body:#3d4536;--muted:#5a6354;--muted2:#6e7460;--gilt:#b58a34;--gilt-deep:#8c6a26;--gilt-light:#ddb35c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--body);font-family:'DM Sans',system-ui,sans-serif;font-size:16px;line-height:1.65}
+a{color:var(--gilt-deep)}
+a:focus-visible{outline:3px solid var(--gilt);outline-offset:2px}
+nav{position:sticky;top:0;z-index:50;background:rgba(22,35,28,0.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(250,247,239,0.12)}
+.nav{max-width:1180px;margin:auto;padding:0 1.5rem;height:56px;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.brand{font-family:'Archivo Black',sans-serif;font-size:1.15rem;letter-spacing:.04em;text-decoration:none;color:var(--paper)}
+.links{display:flex;gap:1.4rem;flex-wrap:wrap}
+.links a{font-size:.86rem;text-decoration:none;color:var(--surface2)}
+.links a:hover{color:var(--gilt-light)}
+header{background:var(--ink);color:var(--paper);border-bottom:3px solid var(--gilt);position:relative;overflow:hidden}
+.brand-watermark{position:absolute;right:-4%;top:50%;transform:translateY(-50%);width:38%;max-width:460px;opacity:0.05;pointer-events:none;z-index:0}
+.hero{max-width:1180px;margin:auto;padding:6rem 1.5rem 5rem;position:relative;z-index:1}
+.eyebrow{font-family:'DM Mono',monospace;color:var(--gilt-light);letter-spacing:.14em;font-size:.8rem}
+.hero h1{font-family:'Archivo Black',sans-serif;font-size:clamp(2.4rem,6vw,4.6rem);letter-spacing:.01em;line-height:1.03;margin:1rem 0 1.4rem;max-width:900px;color:var(--paper)}
+.hero p{max-width:680px;color:var(--surface2);font-size:1.15rem;line-height:1.7}
+.actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2.2rem}
+.button{display:inline-block;padding:.8rem 1.4rem;border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid rgba(250,247,239,0.35);color:var(--paper);transition:background .18s,border-color .18s,color .18s}
+.button:hover{border-color:var(--gilt-light);color:var(--gilt-light)}
+.button.primary{background:var(--gilt);border-color:var(--gilt);color:var(--ink)}
+.button.primary:hover{background:var(--gilt-light);border-color:var(--gilt-light);color:var(--ink)}
+main{max-width:1180px;margin:auto;padding:4.5rem 1.5rem}
+.section{margin-bottom:4.5rem}
+.section h2{font-family:'Archivo Black',sans-serif;font-size:clamp(1.6rem,3.2vw,2.2rem);letter-spacing:.01em;line-height:1.1;margin:0 0 .7rem;color:var(--ink)}
+.section>p{color:var(--body);max-width:700px;font-size:1.05rem;margin:0 0 .5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.1rem;margin-top:1.8rem}
+.card{background:var(--paper);border:1px solid var(--border);border-radius:8px;padding:1.6rem 1.5rem;text-decoration:none;min-height:170px;display:flex;flex-direction:column;gap:.45rem;box-shadow:0 2px 8px rgba(22,35,28,0.05);transition:border-color .18s,transform .18s,box-shadow .18s}
+.card:hover{border-color:var(--gilt);transform:translateY(-2px);box-shadow:0 8px 24px rgba(22,35,28,0.10)}
+.card small{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--gilt-deep);letter-spacing:.12em}
+.card h3{margin:.15rem 0 .2rem;font-family:'Archivo Black',sans-serif;font-size:1.08rem;letter-spacing:.02em;line-height:1.25;color:var(--ink)}
+.card p{color:var(--muted);font-size:.92rem;margin:0}
+.estate-footer{background:var(--ink);border-top:3px solid var(--gilt);color:var(--paper)}
+.ef-in{max-width:1180px;margin:auto;padding:2.8rem 1.5rem 2.2rem;display:flex;flex-direction:column;gap:1.2rem}
+.ef-mark{font-family:'Archivo Black',sans-serif;font-size:1.15rem;letter-spacing:.04em}
+.ef-brand p{margin:.4rem 0 0;color:var(--surface2);font-size:.92rem}
+.ef-links{display:flex;gap:1.4rem;flex-wrap:wrap}
+.ef-links a{font-family:'DM Mono',monospace;font-size:.8rem;letter-spacing:.06em;color:var(--gilt-light);text-decoration:none}
+.ef-links a:hover{color:var(--paper)}
+.ef-copy{margin:0;font-size:.8rem;color:rgba(250,247,239,0.55)}
+@media(max-width:760px){.links{display:none}.hero{padding:4rem 1.25rem}main{padding:3rem 1.25rem}}
+@media(prefers-reduced-motion:reduce){.card,.card:hover{transition:none;transform:none}}
 </style>
 </head>
 <body>
@@ -43,6 +85,22 @@
 <a class="card" href="https://architecture.ordoanimi.com/" target="_blank" rel="noopener"><small>OrdoAnimi Architecture</small><h3>Architecture Field Framework ↗</h3><p>Practitioner tools for solution architects — lexicon, engagement archetypes, workshop playbook, cloud reference.</p></a>
 </div></section>
 </main>
-<footer class="ecosystem-footer"><div class="ecosystem-footer__brand"><p class="ecosystem-footer__tagline">OrdoAnimi &mdash; writing on architecture, technology, and the profession.</p></div><p class="ecosystem-footer__copy">&copy; 2026 OrdoAnimi &middot; The OrdoAnimi Framework is free to use, attribution appreciated (CC BY 4.0)</p></footer>
+<footer class="estate-footer">
+  <div class="ef-in">
+    <div class="ef-brand">
+      <span class="ef-mark">OrdoAnimi</span>
+      <p>Writing on architecture, technology, and the profession.</p>
+    </div>
+    <nav class="ef-links" aria-label="OrdoAnimi properties">
+      <a href="https://www.ordoanimi.com/">Home</a>
+      <a href="https://framework.ordoanimi.com/">Framework</a>
+      <a href="https://architecture.ordoanimi.com/">Architecture</a>
+      <a href="https://academy.ordoanimi.com/">Academy</a>
+      <a href="https://valour.ordoanimi.com/">Valour&trade;</a>
+      <a href="https://executive.ordoanimi.com/">Executive</a>
+    </nav>
+    <p class="ef-copy">&copy; 2026 OrdoAnimi &middot; Phil Myint &middot; Brisbane, Australia &middot; The OrdoAnimi Framework is free to use, attribution appreciated (CC BY 4.0)</p>
+  </div>
+</footer>
 </body>
 </html>
