@@ -36,7 +36,7 @@ The professional bodies, certifications, and communities that make up the enterp
 
 **Government and defence architecture communities** — *Sector-specific, around FEAF (US federal), DODAF (US defence), MODAF/NAF (UK/NATO defence).* Communities of practice clustered around mandated public-sector frameworks. **Entry point:** the published frameworks and the relevant government digital/architecture communities. **Honest note:** essential if you work in these sectors; the mandated detail can be disproportionate elsewhere.
 
-**The OrdoAnimi community** — *The practitioner community around this book's companion framework.* Focused on architecture as a decision system rather than a documentation discipline. **Entry point:** velocityarchitectureframework.com. **Honest note:** the framework this book is the on-ramp to; one considered argument about doing architecture well, offered as a path for readers ready to go deeper.
+**The OrdoAnimi community** — *The practitioner community around this book's companion framework.* Focused on architecture as a decision system rather than a documentation discipline. **Entry point:** framework.ordoanimi.com. **Honest note:** the framework this book is the on-ramp to; one considered argument about doing architecture well, offered as a path for readers ready to go deeper.
 
 ---
 

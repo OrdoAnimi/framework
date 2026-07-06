@@ -3,7 +3,7 @@
 Series: Coffee and Curiosity · Field Notes
 Cadence: one post per article, published the morning the article goes live.
 Format: hook → tension → one core idea → link. No hashtags walls; 3–4 max.
-Article links point to: https://velocityarchitectureframework.com/publications/field-notes/
+Article links point to: https://framework.ordoanimi.com/publications/field-notes/
 
 ---
 

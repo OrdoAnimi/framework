@@ -376,7 +376,7 @@ def render_research_page(meta: dict) -> str:
     <a href="../../publications/">Publications</a>
     <a href="../../guides/">Guides</a>
   </div>
-  <a href="https://velocityarchitectureframework.com/app/portal.html" class="nav-cta" target="_blank" rel="noopener">Open agent ↗</a>
+  <a href="https://framework.ordoanimi.com/app/portal.html" class="nav-cta" target="_blank" rel="noopener">Open agent ↗</a>
 </nav>
 <main>
   <div class="breadcrumb">
@@ -443,7 +443,7 @@ def render_publications_page(meta: dict) -> str:
     <a href="../../publications/">Publications</a>
     <a href="../../guides/">Guides</a>
   </div>
-  <a href="https://velocityarchitectureframework.com/app/portal.html" class="nav-cta" target="_blank" rel="noopener">Open agent ↗</a>
+  <a href="https://framework.ordoanimi.com/app/portal.html" class="nav-cta" target="_blank" rel="noopener">Open agent ↗</a>
 </nav>
 <main>
   <div class="breadcrumb">
@@ -710,7 +710,7 @@ Watch `https://github.com/ZenCloudAU/velocity-architecture/actions` — "Publish
 
 After GitHub Pages deploys (~1 min), verify:
 ```
-https://velocityarchitectureframework.com/research/test-e2e-june-2026/
+https://framework.ordoanimi.com/research/test-e2e-june-2026/
 ```
 Should render the article with title "End-to-End Test Article".
 

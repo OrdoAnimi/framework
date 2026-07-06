@@ -1,6 +1,6 @@
 # OrdoAnimi Unified Kanban — MVP & MLP
 *The OrdoAnimi Framework | Owner: Phil Myint*
-*Covers: velocityarchitectureframework.com · zencloudau.github.io/vaf-sa · OrdoAnimi Agent*
+*Covers: framework.ordoanimi.com · architecture.ordoanimi.com · OrdoAnimi Agent*
 *Created: 2026-06-28 | Updated as work progresses*
 
 ---
@@ -15,7 +15,7 @@
 
 ## 🟥 MVP
 
-### 🔵 Framework Site — velocityarchitectureframework.com (velocity-architecture repo)
+### 🔵 Framework Site — framework.ordoanimi.com (velocity-architecture repo)
 
 | # | Item | File(s) | Source |
 |---|------|---------|--------|
@@ -28,15 +28,15 @@
 | M7 | Reconcile 7-column model and 6-viewpoint model in README — add bridging explanation | `README.md` | REVIEW P1.2 |
 | M8 | Define Velocity Vault | New: `vault/README.md` | REVIEW P2.1 |
 | M9 | Create Column 6 — `patterns/` directory with README + first pattern | New: `patterns/README.md` + `patterns/stalled-decision-pattern.md` | REVIEW P1.3 |
-| M10 | Fix homepage book card — "thirty-three chapters" is stale; book is complete at 50 | velocityarchitectureframework.com homepage HTML | Site audit |
+| M10 | Fix homepage book card — "thirty-three chapters" is stale; book is complete at 50 | framework.ordoanimi.com homepage HTML | Site audit |
 | M11 | Resolve version discrepancy — repo/spec says v1.0; OrdoAnimi Agent says "OrdoAnimi v2". Decide canonical version and align everywhere. | `spec/FRAMEWORK-SPEC.md`, `app/portal.html` | Agent audit |
 
-### 🟠 OrdoAnimi Architecture Site — zencloudau.github.io/vaf-sa/
+### 🟠 OrdoAnimi Architecture Site — architecture.ordoanimi.com/
 
 | # | Item | File(s) | Source |
 |---|------|---------|--------|
 | M12 | Fix GitHub Pages — site returns 404. Enable Pages in repo settings pointing to `master` branch (or rename `master` → `main`) | GitHub repo settings | Site audit |
-| M13 | Fix OG meta URLs — all pages reference `zencloudau.github.io/OrdoAnimi-sa/` (trademark symbol in URL); should be `zencloudau.github.io/vaf-sa/` | All HTML files (`og:url` meta tags) | Site audit |
+| M13 | Fix OG meta URLs — all pages reference `zencloudau.github.io/OrdoAnimi-sa/` (trademark symbol in URL); should be `architecture.ordoanimi.com/` | All HTML files (`og:url` meta tags) | Site audit |
 | M14 | Verify `workshop-playbook.html` exists and is complete (nav links to it but not confirmed) | `workshop-playbook.html` | Site audit |
 | M15 | Verify `escalation-protocol.html` exists and is complete (nav links to it but not confirmed) | `escalation-protocol.html` | Site audit |
 | M16 | Verify `cloud-reference/` exists and is complete (nav links to it but not confirmed) | `cloud-reference/index.html` | Site audit |
@@ -100,10 +100,10 @@
 
 | # | Item | File(s) | Source |
 |---|------|---------|--------|
-| L15 | Add cross-link from vaf-sa homepage → velocityarchitectureframework.com framework library | `index.html` | Ecosystem |
-| L16 | Add cross-link from framework site → vaf-sa | velocityarchitectureframework.com | Ecosystem |
+| L15 | Add cross-link from vaf-sa homepage → framework.ordoanimi.com framework library | `index.html` | Ecosystem |
+| L16 | Add cross-link from framework site → vaf-sa | framework.ordoanimi.com | Ecosystem |
 | L17 | Align lexicon terms with EPISTEMOLOGY.md coined concepts — Decision Altitude, Governance Drag, Pattern Locking map to OrdoAnimi coined concepts; ensure no contradictions | `lexicon.html` vs `foundation/EPISTEMOLOGY.md` | Content integrity |
-| L18 | Add vaf-sa to site map at velocityarchitectureframework.com | velocityarchitectureframework.com/site-map.html | Ecosystem |
+| L18 | Add vaf-sa to site map at framework.ordoanimi.com | framework.ordoanimi.com/site-map.html | Ecosystem |
 
 ### 🤖 OrdoAnimi Agent
 
@@ -111,7 +111,7 @@
 |---|------|---------|--------|
 | L19 | Document the OrdoAnimi Agent in CLAUDE.md and ECOSYSTEM-AUDIT.md | `CLAUDE.md`, `ECOSYSTEM-AUDIT.md` | Session audit |
 | L20 | Align Agent "OrdoAnimi v2" branding once version decision is made (M11) | `app/portal.html` | Agent audit |
-| L21 | Add link to OrdoAnimi Agent from framework site nav or guides | velocityarchitectureframework.com nav | Discoverability |
+| L21 | Add link to OrdoAnimi Agent from framework site nav or guides | framework.ordoanimi.com nav | Discoverability |
 
 ### In Progress
 

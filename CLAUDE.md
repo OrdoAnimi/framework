@@ -32,25 +32,25 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 ### Primary Repository
 - **GitHub:** https://github.com/ZenCloudAU/velocity-architecture
 - **Local mirror:** `D:\VelocityArchitecture\`
-- **Public site:** https://velocityarchitectureframework.com/
+- **Public site:** https://framework.ordoanimi.com/
 - **Status:** Public, v1.0
 
 **Critical:** The repo IS the website backend. A GitHub Actions workflow (`.github/workflows/publish-articles.yml`) runs on every push to `main` that touches `.md` files — it syncs nav/footer, lints stale anchors, and auto-generates HTML reader pages from MD files in `research/` and `publications/`. Do not push broken Markdown.
 
 ### Publishing Channels
-- **velocityarchitectureframework.com/publications** — ALL 50 book chapters published + Thought Series + Signal. **This is the primary publishing platform, not Medium.**
+- **framework.ordoanimi.com/publications** — ALL 50 book chapters published + Thought Series + Signal. **This is the primary publishing platform, not Medium.**
 - **Medium @ZencloudAU** — Book chapters serialised; at Chapter 30 of 50 (secondary discovery channel — 20 chapters behind)
 - **LinkedIn in/pmyint** — Professional presence; active
-- **zencloud.com.au** — OrdoAnimi client entry point
+- **www.ordoanimi.com** — OrdoAnimi client entry point (was zencloud.com.au)
 
 ### Related Artefacts (Off-Repo)
-- **OrdoAnimi Book** — 50 chapters complete, published on velocityarchitectureframework.com (Book 1 — Architecture domain)
+- **OrdoAnimi Book** — 50 chapters complete, published on framework.ordoanimi.com (Book 1 — Architecture domain)
 - **Leadership Book** — Book 2; same OrdoAnimi framework, leadership language. Seed: `leadership/LEADERSHIP-EXTENSION.md`
 - **The Living Bible for Enterprise & Solution Architects** — domain knowledge reference base (location TBC — confirm with Phil)
 - **Presentation materials / slide decks** — exist for client and conference use (location TBC)
 
 ### The Legacy Agent (Deprecated, internally "VAF v2")
-- A separate product, internally called "VAF v2" in the old UI, hosted at `velocityarchitectureframework.com/app/portal.html`
+- A separate product, internally called "VAF v2" in the old UI, hosted at `framework.ordoanimi.com/app/portal.html`
 - It has been **deprecated** — the portal.html page now redirects to the framework site
 - Nav links to it have been removed from vaf-sa (all HTML files cleaned in Session 2)
 - It is NOT part of the current framework or publishing stack, and not part of the OrdoAnimi brand
@@ -349,7 +349,7 @@ D:\VelocityArchitecture\ (github.com/ZenCloudAU/velocity-architecture)
 
 ### Publishing Synchronisation
 When content is updated in the repo, consider whether it needs to be reflected in:
-- velocityarchitectureframework.com (automated for `research/` and `publications/` via GitHub Actions — manual for all other directories)
+- framework.ordoanimi.com (automated for `research/` and `publications/` via GitHub Actions — manual for all other directories)
 - Medium articles (especially if a coined concept definition changes)
 - LinkedIn series
 - The book (in `book/`)

@@ -1,7 +1,7 @@
 # Reading the Map — Publications Edition
 
 This folder is the reader-facing, full-navigation edition of **Reading the Map** for
-`https://velocityarchitectureframework.com/publications/reading-the-map/`.
+`https://framework.ordoanimi.com/publications/reading-the-map/`.
 
 It contains the complete book — Chapters 21–54 and Appendices A–F as Markdown — plus a
 self-contained HTML book reader (`index.html`) with a table-of-contents sidebar,

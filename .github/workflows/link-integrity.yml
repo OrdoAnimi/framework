@@ -23,7 +23,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          base='https://velocityarchitectureframework.com'
+          base='https://framework.ordoanimi.com'
           routes=(
             '/'
             '/site-map.html'

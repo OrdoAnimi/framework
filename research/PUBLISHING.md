@@ -21,10 +21,10 @@ Source file:
 research/zencloud-it-governance-working-paper-may-2026.md
 
 Reader page:
-https://zencloudau.github.io/velocity-architecture/research/
+https://framework.ordoanimi.com/research/
 
 Featured article page:
-https://zencloudau.github.io/velocity-architecture/research/it-governance-frameworks-australian-public-sector-2025-2026/
+https://framework.ordoanimi.com/research/it-governance-frameworks-australian-public-sector-2025-2026/
 ```
 
 ## Reader experience standard
@@ -52,13 +52,13 @@ For hundreds of policy papers, cloud patterns, architecture patterns, and resear
 The preferred target URL shape is:
 
 ```text
-https://zencloudau.github.io/velocity-architecture/research/reader/?file=research/example-paper.md
+https://framework.ordoanimi.com/research/reader/?file=research/example-paper.md
 ```
 
 or, after registry support:
 
 ```text
-https://zencloudau.github.io/velocity-architecture/research/paper/example-paper/
+https://framework.ordoanimi.com/research/paper/example-paper/
 ```
 
 ## Recommended metadata fields

@@ -114,7 +114,7 @@ The honest reading list, organised by chapter. For each area: the primary offici
 
 ## The Companion Framework
 
-**The OrdoAnimi Framework** — velocityarchitectureframework.com. *Where this book teaches you to read the territory, the OrdoAnimi is one considered argument about how to do architecture well within it. It is the intended sequel for readers ready to go deeper — the framework that becomes relevant once you can read the map.*
+**The OrdoAnimi Framework** — framework.ordoanimi.com. *Where this book teaches you to read the territory, the OrdoAnimi is one considered argument about how to do architecture well within it. It is the intended sequel for readers ready to go deeper — the framework that becomes relevant once you can read the map.*
 
 ---
 

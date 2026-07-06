@@ -2,7 +2,7 @@
 
 This repository is the public knowledge base for OrdoAnimi. It contains the framework, formal specification, research, published policies, practitioner guidance, diagnostics, templates, examples and authored publications.
 
-**Public site:** https://velocityarchitectureframework.com/
+**Public site:** https://framework.ordoanimi.com/
 
 ---
 
@@ -92,11 +92,11 @@ Adding a new article: drop a `.md` file into `research/` or `publications/` and 
 
 ## Publishing Platform
 
-The primary publishing platform for all OrdoAnimi content is **velocityarchitectureframework.com**, not Medium.
+The primary publishing platform for all OrdoAnimi content is **framework.ordoanimi.com**, not Medium.
 
 | Channel | Status | Notes |
 |---------|--------|-------|
-| [velocityarchitectureframework.com/publications](https://velocityarchitectureframework.com/publications/) | **Primary** | All 50 book chapters + Thought Series + Signal |
+| [framework.ordoanimi.com/publications](https://framework.ordoanimi.com/publications/) | **Primary** | All 50 book chapters + Thought Series + Signal |
 | [Medium @ZencloudAU](https://medium.com/@ZencloudAU) | Secondary | Book chapters serialised — Chapter 30 of 50 |
 | [LinkedIn in/pmyint](https://www.linkedin.com/in/pmyint) | Professional | Active presence |
 
@@ -106,22 +106,22 @@ The primary publishing platform for all OrdoAnimi content is **velocityarchitect
 
 OrdoAnimi is published alongside the **OrdoAnimi Architecture** practitioner framework — a field-level framework for solution architects.
 
-- **velocityarchitectureframework.com** — this repository, the governing framework
-- **[OrdoAnimi Architecture](https://zencloudau.github.io/vaf-sa/)** — practitioner tools, field lexicon, engagement archetypes, workshop playbook
+- **framework.ordoanimi.com** — this repository, the governing framework
+- **[OrdoAnimi Architecture](https://architecture.ordoanimi.com/)** — practitioner tools, field lexicon, engagement archetypes, workshop playbook
 
 ---
 
 ## Start reading
 
-- [Framework home](https://velocityarchitectureframework.com/)
-- [OrdoAnimi Architecture practitioner site](https://zencloudau.github.io/vaf-sa/)
-- [Research](https://velocityarchitectureframework.com/research/)
-- [Publications](https://velocityarchitectureframework.com/publications/)
-- [Framework documents](https://velocityarchitectureframework.com/frameworks/)
-- [Guides](https://velocityarchitectureframework.com/guides/)
-- [Diagnostics](https://velocityarchitectureframework.com/diagnostics/)
-- [Policies](https://velocityarchitectureframework.com/policies/)
-- [Site map](https://velocityarchitectureframework.com/site-map.html)
+- [Framework home](https://framework.ordoanimi.com/)
+- [OrdoAnimi Architecture practitioner site](https://architecture.ordoanimi.com/)
+- [Research](https://framework.ordoanimi.com/research/)
+- [Publications](https://framework.ordoanimi.com/publications/)
+- [Framework documents](https://framework.ordoanimi.com/frameworks/)
+- [Guides](https://framework.ordoanimi.com/guides/)
+- [Diagnostics](https://framework.ordoanimi.com/diagnostics/)
+- [Policies](https://framework.ordoanimi.com/policies/)
+- [Site map](https://framework.ordoanimi.com/site-map.html)
 
 ---
 
