@@ -10,18 +10,19 @@
 <meta property="og:title" content="OrdoAnimi">
 <meta property="og:description" content="A public knowledge base for decision-first architecture, research and practitioner publications.">
 <meta property="og:url" content="https://framework.ordoanimi.com/">
+<meta property="og:image" content="https://framework.ordoanimi.com/og-card.png">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="stylesheet" href="/_tokens.css">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
-:root{--ink:#16231c;--paper:#faf7ef;--page:#f2ede0;--surface2:#ebe4d2;--border:#ded7c4;--border2:#c9bfa6;--body:#3d4536;--muted:#5a6354;--muted2:#6e7460;--gilt:#b58a34;--gilt-deep:#8c6a26;--gilt-light:#ddb35c}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+:root{--ink:#0b0e11;--paper:#faf7ef;--page:#f2ede0;--surface2:#ebe4d2;--border:#ded7c4;--border2:#c9bfa6;--body:#3d4536;--muted:#5a6354;--muted2:#6e7460;--gilt:#b8924e;--gilt-deep:#96753a;--gilt-light:#d4b36a}
 *{box-sizing:border-box}
 body{margin:0;background:var(--page);color:var(--body);font-family:'DM Sans',system-ui,sans-serif;font-size:16px;line-height:1.65}
 a{color:var(--gilt-deep)}
 a:focus-visible{outline:3px solid var(--gilt);outline-offset:2px}
-nav{position:sticky;top:0;z-index:50;background:rgba(22,35,28,0.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(250,247,239,0.12)}
+nav{position:sticky;top:0;z-index:50;background:rgba(11,14,17,0.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(250,247,239,0.12)}
 .nav{max-width:1180px;margin:auto;padding:0 1.5rem;height:56px;display:flex;justify-content:space-between;align-items:center;gap:1rem}
-.brand{font-family:'Archivo Black',sans-serif;font-size:1.15rem;letter-spacing:.04em;text-decoration:none;color:var(--paper)}
+.brand{font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;letter-spacing:.04em;text-decoration:none;color:var(--paper)}
 .links{display:flex;gap:1.4rem;flex-wrap:wrap}
 .links a{font-size:.86rem;text-decoration:none;color:var(--surface2)}
 .links a:hover{color:var(--gilt-light)}
@@ -29,7 +30,7 @@ header{background:var(--ink);color:var(--paper);border-bottom:3px solid var(--gi
 .brand-watermark{position:absolute;right:-4%;top:50%;transform:translateY(-50%);width:38%;max-width:460px;opacity:0.05;pointer-events:none;z-index:0}
 .hero{max-width:1180px;margin:auto;padding:6rem 1.5rem 5rem;position:relative;z-index:1}
 .eyebrow{font-family:'DM Mono',monospace;color:var(--gilt-light);letter-spacing:.14em;font-size:.8rem}
-.hero h1{font-family:'Archivo Black',sans-serif;font-size:clamp(2.4rem,6vw,4.6rem);letter-spacing:.01em;line-height:1.03;margin:1rem 0 1.4rem;max-width:900px;color:var(--paper)}
+.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.4rem,6vw,4.6rem);letter-spacing:.01em;line-height:1.03;margin:1rem 0 1.4rem;max-width:900px;color:var(--paper)}
 .hero p{max-width:680px;color:var(--surface2);font-size:1.15rem;line-height:1.7}
 .actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2.2rem}
 .button{display:inline-block;padding:.8rem 1.4rem;border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid rgba(250,247,239,0.35);color:var(--paper);transition:background .18s,border-color .18s,color .18s}
@@ -38,17 +39,17 @@ header{background:var(--ink);color:var(--paper);border-bottom:3px solid var(--gi
 .button.primary:hover{background:var(--gilt-light);border-color:var(--gilt-light);color:var(--ink)}
 main{max-width:1180px;margin:auto;padding:4.5rem 1.5rem}
 .section{margin-bottom:4.5rem}
-.section h2{font-family:'Archivo Black',sans-serif;font-size:clamp(1.6rem,3.2vw,2.2rem);letter-spacing:.01em;line-height:1.1;margin:0 0 .7rem;color:var(--ink)}
+.section h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.6rem,3.2vw,2.2rem);letter-spacing:.01em;line-height:1.1;margin:0 0 .7rem;color:var(--ink)}
 .section>p{color:var(--body);max-width:700px;font-size:1.05rem;margin:0 0 .5rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.1rem;margin-top:1.8rem}
-.card{background:var(--paper);border:1px solid var(--border);border-radius:8px;padding:1.6rem 1.5rem;text-decoration:none;min-height:170px;display:flex;flex-direction:column;gap:.45rem;box-shadow:0 2px 8px rgba(22,35,28,0.05);transition:border-color .18s,transform .18s,box-shadow .18s}
-.card:hover{border-color:var(--gilt);transform:translateY(-2px);box-shadow:0 8px 24px rgba(22,35,28,0.10)}
+.card{background:var(--paper);border:1px solid var(--border);border-radius:8px;padding:1.6rem 1.5rem;text-decoration:none;min-height:170px;display:flex;flex-direction:column;gap:.45rem;box-shadow:0 2px 8px rgba(11,14,17,0.05);transition:border-color .18s,transform .18s,box-shadow .18s}
+.card:hover{border-color:var(--gilt);transform:translateY(-2px);box-shadow:0 8px 24px rgba(11,14,17,0.10)}
 .card small{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--gilt-deep);letter-spacing:.12em}
-.card h3{margin:.15rem 0 .2rem;font-family:'Archivo Black',sans-serif;font-size:1.08rem;letter-spacing:.02em;line-height:1.25;color:var(--ink)}
+.card h3{margin:.15rem 0 .2rem;font-family:'Playfair Display',Georgia,serif;font-size:1.08rem;letter-spacing:.02em;line-height:1.25;color:var(--ink)}
 .card p{color:var(--muted);font-size:.92rem;margin:0}
 .estate-footer{background:var(--ink);border-top:3px solid var(--gilt);color:var(--paper)}
 .ef-in{max-width:1180px;margin:auto;padding:2.8rem 1.5rem 2.2rem;display:flex;flex-direction:column;gap:1.2rem}
-.ef-mark{font-family:'Archivo Black',sans-serif;font-size:1.15rem;letter-spacing:.04em}
+.ef-mark{font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;letter-spacing:.04em}
 .ef-brand p{margin:.4rem 0 0;color:var(--surface2);font-size:.92rem}
 .ef-links{display:flex;gap:1.4rem;flex-wrap:wrap}
 .ef-links a{font-family:'DM Mono',monospace;font-size:.8rem;letter-spacing:.06em;color:var(--gilt-light);text-decoration:none}
@@ -61,7 +62,7 @@ main{max-width:1180px;margin:auto;padding:4.5rem 1.5rem}
 <body>
 
 <nav><div class="nav"><a class="brand" href="/">OrdoAnimi</a><div class="links"><a href="/frameworks/">Framework</a><a href="/research/">Research</a><a href="/publications/">Publications</a><a href="/guides/">Guides</a><a href="/policies/">Policies</a><a href="/site-map.html">Site map</a></div></div></nav>
-<header><svg class="brand-watermark" viewBox="0 0 64 64" aria-hidden="true"><text x="32" y="47" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#f2ede0">OA</text></svg><div class="hero"><span class="eyebrow">Public knowledge base</span><h1>Architecture at the speed of the decision.</h1><p>Read the OrdoAnimi framework, the evidence behind it, the practitioner methods that apply it, and the publications that develop its argument.</p><div class="actions"><a class="button primary" href="/frameworks/">Explore the framework</a><a class="button" href="/publications/">Read publications</a><a class="button" href="/research/">Read research</a></div></div></header>
+<header><img class="brand-watermark" src="/oa-mark.png" alt="" aria-hidden="true"><div class="hero"><span class="eyebrow">Public knowledge base</span><h1>Architecture at the speed of the decision.</h1><p>Read the OrdoAnimi framework, the evidence behind it, the practitioner methods that apply it, and the publications that develop its argument.</p><div class="actions"><a class="button primary" href="/frameworks/">Explore the framework</a><a class="button" href="/publications/">Read publications</a><a class="button" href="/research/">Read research</a></div></div></header>
 <main>
 <section class="section"><h2>Framework library</h2><p>The formal and practitioner-facing material that defines OrdoAnimi.</p><div class="grid">
 <a class="card" href="/foundation/"><small>Foundation</small><h3>Core concepts</h3><p>The principles and epistemology behind decision-first architecture.</p></a>

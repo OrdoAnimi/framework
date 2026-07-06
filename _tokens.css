@@ -1,14 +1,14 @@
 /* The OrdoAnimi Framework - Design Tokens */
 :root {
-  --color-primary: #16231c;
-  --color-accent: #b58a34;
+  --color-primary: #0b0e11;
+  --color-accent: #b8924e;
   --color-surface: #f2ede0;
-  --color-panel: #16231c;
-  --color-text-primary: #16231c;
+  --color-panel: #0b0e11;
+  --color-text-primary: #0b0e11;
   --color-text-light: #f2ede0;
   --color-text-muted: #6e7460;
   --color-border: #ded7c4;
-  --font-heading: 'Archivo Black', sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'DM Sans', sans-serif;
   --font-mono: 'DM Mono', monospace;
   --space-xs: 0.5rem;
@@ -20,7 +20,7 @@
   --radius-md: 8px;
   --radius-lg: 12px;
   --orange: var(--color-accent);
-  --orange-hover: #8c6a26;
+  --orange-hover: #96753a;
   --orange-subtle: #f7f0dc;
   --orange-border: #e8dcc0;
 }
