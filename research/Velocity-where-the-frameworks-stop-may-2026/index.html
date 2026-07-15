@@ -58,7 +58,7 @@
 <!-- SHARED-FOOTER-END -->
 </main>
 <script>
-const SRC="https://raw.githubusercontent.com/ZenCloudAU/velocity-architecture/main/research/Velocity-where-the-frameworks-stop-may-2026.md";
+const SRC="https://raw.githubusercontent.com/OrdoAnimi/velocity-architecture/main/research/Velocity-where-the-frameworks-stop-may-2026.md";
 async function load(){
   const el=document.getElementById('article');
   try{
@@ -67,7 +67,7 @@ async function load(){
     el.innerHTML='<div class="md">'+marked.parse(await r.text())+'</div>';
   }catch{
     el.innerHTML='<p class="error">Could not load document. '
-      +'<a href='+"https://github.com/ZenCloudAU/velocity-architecture/blob/main/research/Velocity-where-the-frameworks-stop-may-2026.md"+' target="_blank" rel="noopener">View on GitHub ↗</a></p>';
+      +'<a href='+"https://github.com/OrdoAnimi/velocity-architecture/blob/main/research/Velocity-where-the-frameworks-stop-may-2026.md"+' target="_blank" rel="noopener">View on GitHub ↗</a></p>';
   }
 }
 load();

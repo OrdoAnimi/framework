@@ -235,7 +235,7 @@ footer{background:var(--navy-2);color:rgba(222,215,196,0.7);padding:2.5rem 2rem;
 
 <script>
 
-const RAW='https://raw.githubusercontent.com/ZenCloudAU/velocity-architecture/main/';
+const RAW='https://raw.githubusercontent.com/OrdoAnimi/velocity-architecture/main/';
 
 let current=null;
 
@@ -251,7 +251,7 @@ async function loadDoc(path){
 
   try{const r=await fetch(RAW+path);if(!r.ok)throw 0;el.innerHTML='<div class="md">'+marked.parse(await r.text())+'</div>';}
 
-  catch{el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/ZenCloudAU/velocity-architecture/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';}
+  catch{el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/velocity-architecture/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';}
 
   el.scrollTop=0;
 

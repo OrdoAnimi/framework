@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'research/*.md'
-      - 'publications/*.md'
+      - 'research/**/*.md'
+      - 'publications/**/*.md'
 
 jobs:
   generate:
