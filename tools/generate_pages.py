@@ -295,5 +295,13 @@ def main() -> None:
         str(REPO_ROOT / 'publications'), 'publications', str(REPO_ROOT)
     )
 
+    # Field notes embed their rendered content (self-contained pages), so unlike
+    # the runtime-fetch shells above they are regenerated from .md every run.
+    try:
+        import generate_field_notes
+    except ImportError:
+        from tools import generate_field_notes  # when run as a package
+    generate_field_notes.main()
+
 if __name__ == '__main__':
     main()

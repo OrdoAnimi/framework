@@ -4,6 +4,7 @@ subtitle: "A field note on moving governance from checkpoint to constraint, and 
 author: "Phil Myint"
 date: "2026-06-18"
 series: "Coffee and Curiosity"
+number: 5
 category: "Field Notes"
 tags:
   - Architecture Governance

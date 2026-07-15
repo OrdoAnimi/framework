@@ -5,7 +5,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>When the Loop Becomes the Operating Model — OrdoAnimi</title>
+<title>When the Loop Becomes the Operating Model &mdash; OrdoAnimi</title>
 <meta name="description" content="A field note on making FinRevDevOps operational: signals, tempo, and who actually owns the loop."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -27,10 +27,10 @@
 
 <header class="article-header">
 <div class="article-header-inner">
-<span class="article-series-label">Coffee and Curiosity · Field Note 04</span>
+<span class="article-series-label">Coffee and Curiosity &middot; Field Note 04</span>
 <h1 class="article-title">When the Loop Becomes the Operating Model</h1>
 <p class="article-tagline">A field note on making FinRevDevOps operational: signals, tempo, and who actually owns the loop.</p>
-<p class="article-byline">Phil Myint · OrdoAnimi · 11 June 2026</p>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 11 June 2026</p>
 </div>
 </header>
 
@@ -39,56 +39,32 @@
 <div class="article-body-inner">
 
 <p>Naming a problem is the easy part. The last field note named FinRevDevOps: the discipline of keeping cost, revenue, and delivery inside the same conversation while execution accelerates. This one is about what happens when you try to make that name do actual work.</p>
-
 <p>Because a name without an operating loop is just another acronym waiting to be laminated.</p>
-
 <p>I have been testing this in my own ecosystem, which is small enough to see end to end and honest enough to embarrass me. OrdoAnimi is the judgement layer. OrdoAnimi is the method. is the governed worksite. The delivery surfaces run on GitHub, Cloudflare, and Vercel, with AI as the build partner. Every part of that system now spends money while I sleep, and some of it spends money precisely because I asked it to think on my behalf.</p>
-
 <p>That makes the question very practical. If execution is continuous, what does the loop actually need to carry?</p>
-
 <p>I keep arriving at three signals and one tempo.</p>
-
 <h2>Three signals, one tempo</h2>
-
 <p>The first signal is cost, but not the FinOps dashboard version that arrives at month end with the emotional impact of a parking fine. I mean cost attached to the thing that caused it. A workflow, an agent, a generator, a deployment surface. When I can see that a particular automation cost four dollars to run and produced an artefact nobody used, I have learned something architectural, not just financial. The unit of cost accountability is the capability, not the invoice.</p>
-
 <p>The second signal is value, and this is where RevOps thinking earns its seat. Not revenue in the abstract, but a defensible line between the thing that ran and the commercial or decision outcome it served. Did the artefact move a client conversation? Did the generator shorten a governance cycle? Did the experiment retire a question? Most organisations cannot answer this because nobody is asked to connect the two ends. The data exists. The conversation does not.</p>
-
 <p>The third signal is integrity. Delivery telemetry tells you whether the system moved. It does not tell you whether the system drifted. Drift is architectural: duplicated services, orphaned automations, controls that exist in the document but not in the pipeline, agents whose behaviour has quietly diverged from the intent that created them. Integrity is the signal architects are supposed to own, and it is the one most often missing from the operational picture.</p>
-
 <p>Then there is tempo, which is where most operating models quietly fail.</p>
-
 <p>The old assumption was that review could be periodic because change was periodic. Quarterly architecture review made sense when the estate changed quarterly. But an AI-assisted delivery system changes daily, and an agentic one changes hourly. The loop has to run at the tempo of the thing it governs, or it is not governance. It is archaeology.</p>
-
 <p>That does not mean every decision needs a daily forum. It means the signals need to be continuous even when the judgement is periodic. The human can review weekly. The telemetry cannot.</p>
-
 <h2>Who owns the loop</h2>
-
 <p>Here is the uncomfortable part. In most organisations, nobody owns this loop, because each fragment already has an owner. Finance owns cost. Sales operations owns revenue motion. Engineering owns delivery. Architecture owns standards. Each function optimises its fragment, reports its fragment, and defends its fragment. The loop itself is an orphan.</p>
-
 <p>I do not think the answer is a new department. I have watched enough operating model redesigns to know that drawing a FinRevDevOps box on a chart would simply create a fourth fragment with its own reporting pack. The loop is not a team. It is a property of how decisions are made.</p>
-
 <p>My working answer is that the loop needs a steward, and the steward looks a lot like the stronger version of the architect I keep writing about. Not the documentation authority. The governed execution authority: the person who can read cost, value, and integrity in the same sitting and turn the reading into a decision that someone is accountable for.</p>
-
 <p>In my own small system, that is me, which is convenient for the experiment and useless as a general answer. The general answer is that the decision objects have to carry the loop even when no single person does. This is where the architecture decision record earns a second life. An ADR that records only the technical choice is half an artefact. The version I now build carries the economics: what this decision costs to run, what value it is expected to serve, what telemetry will tell us whether it is drifting, and when it will be reviewed. The decision becomes a small contract with the loop.</p>
-
 <p>AI drafts. Architect reviews. Clients receive controlled artefacts. The principle holds here too, but the artefact has changed shape. It is no longer just the document. It is the decision plus its financial pulse plus its review trigger, moving together.</p>
-
 <h2>A small honest example</h2>
-
 <p>One of my generators produces governance artefacts on demand. Early on, I treated its running cost as noise, because individually it was. Then I connected the telemetry and noticed that the pattern of use was telling me something the cost alone never would: the artefacts being generated most often were the ones my method said should be rare. People reach for the heavyweight template because it feels safe, and AI had made the heavyweight template free to produce.</p>
-
 <p>The loop caught a method problem disguised as a usage pattern, dressed up in a trivially small invoice. Without cost-per-capability, I would never have looked. Without the value question, I would have celebrated the usage. Without the integrity lens, I would have missed that my own tooling was quietly amplifying the behaviour my method exists to prevent.</p>
-
 <p>That is the loop working, at miniature scale. The same mechanics apply at enterprise scale, with more zeros and more politics.</p>
-
 <p>The tool does not fix the operating model. It exposes it. The loop is how you make the exposure useful instead of merely embarrassing.</p>
-
 <p>But the loop has a dependency I have been circling without naming. Signals and tempo only matter if the constraints they inform actually bind at runtime, not just in a review pack three weeks later. A loop that feeds a checkpoint is still archaeology with better instrumentation.</p>
-
 <p>Which raises the next question this series has to face: what happens when governance itself has to become runtime?</p>
 
-<p class="article-byline-end">Phil Myint · OrdoAnimi · Coffee and Curiosity — Field Notes</p>
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Coffee and Curiosity &mdash; Field Notes</p>
 </div>
 </div>
 
@@ -96,15 +72,15 @@
 
 <nav class="article-nav">
 <a href="when-execution-needs-a-financial-pulse.html" class="article-nav-prev">
-<span class="nav-direction">← Previous</span>
+<span class="nav-direction">&larr; Previous</span>
 <span class="nav-title">When Execution Needs a Financial Pulse</span>
 </a>
 <a href="/publications/field-notes/" class="article-nav-index">
-<span class="nav-direction">↑</span>
+<span class="nav-direction">&uarr;</span>
 <span class="nav-title">Field Notes Index</span>
 </a>
 <a href="when-governance-becomes-runtime.html" class="article-nav-next">
-<span class="nav-direction">Next →</span>
+<span class="nav-direction">Next &rarr;</span>
 <span class="nav-title">When Governance Becomes Runtime</span>
 </a>
 </nav>
@@ -112,7 +88,7 @@
 
 <footer class="pub-footer">
 <div class="pub-footer-inner">
-<span class="pub-footer-copy">© Phil Myint · OrdoAnimi · CC BY 4.0</span>
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
 <div class="pub-footer-links">
 <a href="/publications/field-notes/">Field Notes</a>
 <a href="/publications/">Publications</a>

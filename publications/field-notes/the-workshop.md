@@ -4,6 +4,7 @@ subtitle: "A field note on joining the GitHub Developer Program, two thousand co
 author: "Phil Myint"
 date: "2026-06-15"
 series: "Coffee and Curiosity"
+number: 2
 category: "Field Notes"
 tags:
 - GitHub

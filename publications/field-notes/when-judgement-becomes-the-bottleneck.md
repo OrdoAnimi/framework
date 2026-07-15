@@ -4,6 +4,7 @@ subtitle: "A field note on decision latency, review bandwidth, and what to prote
 author: "Phil Myint"
 date: "2026-06-25"
 series: "Coffee and Curiosity"
+number: 6
 category: "Field Notes"
 tags:
   - Decision Governance

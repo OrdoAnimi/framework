@@ -4,6 +4,7 @@ subtitle: "A field note on AI, judgement, and turning architectural intent into 
 author: "Phil Myint"
 date: "2026-06-04"
 series: "Coffee and Curiosity"
+number: 1
 category: "Field Notes"
 tags:
   - OrdoAnimi

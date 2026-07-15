@@ -4,6 +4,7 @@ subtitle: "A field note on FinRevDevOps, AI-assisted delivery, and the operating
 author: "Phil Myint"
 date: "2026-06-05"
 series: "Coffee and Curiosity"
+number: 3
 category: "Field Notes"
 tags:
   - FinRevDevOps

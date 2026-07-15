@@ -4,6 +4,7 @@ subtitle: "A field note on Ordo Animi, personal decision governance, and the arc
 author: "Phil Myint"
 date: "2026-07-02"
 series: "Coffee and Curiosity"
+number: 7
 category: "Field Notes"
 tags:
   - Ordo Animi

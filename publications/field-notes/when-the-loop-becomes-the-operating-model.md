@@ -4,6 +4,7 @@ subtitle: "A field note on making FinRevDevOps operational: signals, tempo, and 
 author: "Phil Myint"
 date: "2026-06-11"
 series: "Coffee and Curiosity"
+number: 4
 category: "Field Notes"
 tags:
   - FinRevDevOps
