@@ -1,471 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Book — Where Architecture Truly Creates Value · OrdoAnimi</title>
-  <meta name="description" content="Where Architecture Truly Creates Value — the complete OrdoAnimi book. Foreword, Preface, 50 Chapters. Phil Myint · OrdoAnimi."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="../pub.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Where Architecture Truly Creates Value - Book . OrdoAnimi</title>
+<meta name="description" content="Where Architecture Truly Creates Value - the complete OrdoAnimi book. Foreword, Preface, 50 Chapters. Phil Myint . OrdoAnimi.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+<style>
+:root{--bg:#f2ede0;--surface:#faf7ef;--surface-2:#ebe4d2;--border:#ded7c4;--text:#0b0e11;--text-2:#5a6354;--text-3:#8c9184;--accent:#0b0e11;--accent-light:#EFF6FF;--navy:#0b0e11;--navy-2:#0b0e11;--r:10px;--shadow-md:0 4px 12px rgba(11,14,17,.08),0 2px 4px rgba(11,14,17,.04)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.65}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+nav.site{position:sticky;top:0;z-index:30;background:rgba(250,247,239,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{font-family:'Playfair Display', Georgia, serif;font-weight:700;color:var(--text)}.brand sup{font-size:.5rem;color:var(--accent);vertical-align:super}
+.nav-links{display:flex;gap:1.25rem;flex-wrap:wrap}.nav-links a{font-size:.85rem;color:var(--text-2)}
+.book{display:grid;grid-template-columns:320px minmax(0,1fr);gap:0;max-width:1320px;margin:0 auto;align-items:start}
+.toc{position:sticky;top:64px;height:calc(100vh - 64px);overflow-y:auto;border-right:1px solid var(--border);background:var(--surface);padding:1.5rem 1.25rem 4rem}
+.toc-head{font-family:'Playfair Display', Georgia, serif;font-weight:700;font-size:1.05rem;margin-bottom:.2rem}
+.toc-subtitle{font-family:'DM Sans',sans-serif;font-size:.78rem;color:var(--text-2);margin-bottom:.15rem;font-style:italic}
+.toc-sub{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:var(--text-3);margin-bottom:1.25rem}
+.toc-search{width:100%;padding:.5rem .65rem;border:1px solid var(--border);border-radius:6px;font-family:'DM Sans',sans-serif;font-size:.82rem;margin-bottom:1rem;background:var(--bg)}
+.toc-part{font-family:'DM Mono',monospace;font-size:.6rem;font-weight:500;letter-spacing:.14em;color:var(--accent);margin:1.25rem 0 .4rem;padding-top:.5rem}
+.toc-part:first-of-type{margin-top:0}
+.toc a.ch{display:flex;gap:.55rem;align-items:baseline;padding:.32rem .5rem;border-radius:6px;font-size:.82rem;color:var(--text-2);line-height:1.35}
+.toc a.ch:hover{background:var(--surface-2);text-decoration:none;color:var(--text)}
+.toc a.ch.active{background:var(--accent-light);color:var(--accent);font-weight:500}
+.toc a.ch .num{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--text-3);min-width:1.6rem;flex-shrink:0}
+.toc a.ch.active .num{color:var(--accent)}
+.toc-other-books{border-top:1px solid var(--border);margin-top:1.5rem;padding-top:1rem}
+.toc-other-label{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.14em;color:var(--text-3);margin-bottom:.5rem}
+.toc-other-books a{display:block;font-size:.78rem;color:var(--text-2);padding:.25rem 0;border-radius:4px}
+.toc-other-books a:hover{color:var(--accent)}
+.reader{padding:2.5rem 3rem 4rem;min-width:0}
+.breadcrumb{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.08em;color:var(--text-3);margin-bottom:1.5rem}
+.breadcrumb a{color:var(--text-3)}.breadcrumb a:hover{color:var(--accent)}
+.progress-wrap{height:3px;background:var(--border);border-radius:3px;margin-bottom:2rem;overflow:hidden}
+.progress-bar{height:100%;width:0;background:var(--accent);transition:width .25s}
+.article{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:2.5rem 2.75rem;box-shadow:var(--shadow-md)}
+.loading,.error{font-family:'DM Mono',monospace;font-size:.85rem;color:var(--text-3)}
+.md{font-size:.98rem;color:var(--text-2);line-height:1.8;max-width:74ch}
+.md h1{font-family:'Playfair Display', Georgia, serif;font-size:2.2rem;line-height:1.15;color:var(--text);margin-bottom:1rem}
+.md h2{font-family:'Playfair Display', Georgia, serif;font-size:1.45rem;color:var(--text);margin:2.4rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.md h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:1.7rem 0 .5rem}
+.md h4{font-family:'DM Mono',monospace;font-size:.75rem;font-weight:500;letter-spacing:.12em;color:var(--accent);margin:1.25rem 0 .35rem}
+.md p{margin-bottom:1rem}
+.md em{color:var(--text);font-style:italic}
+.md strong{color:var(--text);font-weight:700}
+.md ul,.md ol{margin:0 0 1rem 1.4rem}.md li{margin-bottom:.4rem}
+.md blockquote{border-left:3px solid var(--accent);background:var(--accent-light);border-radius:0 6px 6px 0;margin:1.5rem 0;padding:.9rem 1.3rem;color:var(--text)}
+.md blockquote p{margin:0 0 .5rem}.md blockquote p:last-child{margin:0}
+.md hr{border:none;border-top:1px solid var(--border);margin:2.2rem 0}
+.md table{width:100%;border-collapse:collapse;margin:1.4rem 0;display:block;overflow-x:auto}
+.md th,.md td{border:1px solid var(--border);padding:.55rem .8rem;text-align:left;font-size:.88rem}
+.md th{background:var(--surface-2);font-family:'DM Mono',monospace;font-size:.66rem;color:var(--text-2);letter-spacing:.04em}
+.md code{font-family:'DM Mono',monospace;font-size:.82em;background:var(--surface-2);border:1px solid var(--border);padding:.1em .4em;border-radius:3px}
+.pager{display:flex;justify-content:space-between;gap:1rem;margin-top:2rem}
+.pager a{flex:1;display:flex;flex-direction:column;gap:.2rem;padding:.9rem 1.1rem;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text-2);font-size:.9rem;min-height:44px;justify-content:center}
+.pager a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.pager a.next{text-align:right}
+.pager .dir{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.1em;color:var(--text-3)}
+.pager a:hover .dir{color:var(--accent)}
+.pager .ghost{visibility:hidden}
+footer.site{margin:0;background:var(--navy-2);color:rgba(222,215,196,.65);padding:2rem 3rem;border-radius:0}
+footer.site .footer-links{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem}
+footer.site .footer-links a{color:#c9bfa6;font-size:.8rem}
+.toc-toggle{display:none;align-items:center;gap:.5rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.55rem .9rem;font-size:.82rem;color:var(--text-2);font-family:'DM Mono',monospace;letter-spacing:.06em;cursor:pointer;margin:1rem 1.5rem 0}
+@media(max-width:1024px){
+.book{grid-template-columns:1fr}
+.toc-toggle{display:inline-flex}
+.toc{position:fixed;top:0;left:0;bottom:0;height:100vh;width:300px;z-index:50;transform:translateX(-100%);transition:transform .25s;box-shadow:var(--shadow-md)}
+.toc.open{transform:translateX(0)}
+.toc-backdrop{display:none;position:fixed;inset:0;background:rgba(11,14,17,.4);z-index:45}
+.toc-backdrop.open{display:block}
+.reader{padding:1.5rem}
+.article{padding:1.5rem 1.4rem}
+}
+</style>
 </head>
 <body>
 
-
-
-<nav class="pub-nav">
-  <a href="/" class="pub-nav-brand">OrdoAnimi</a>
-  <ul class="pub-nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/publications/">Publications</a></li>
-    <li><a href="/publications/thought-series/">Thought Series</a></li>
-    <li><a href="/publications/signal/">Signal</a></li>
-    <li><a href="/publications/book/" class="active">Book</a></li>
-  </ul>
+<nav class="site">
+<a class="brand" href="/">OrdoAnimi</a>
+<div class="nav-links">
+<a href="/frameworks/">Framework</a>
+<a href="/publications/">Publications</a>
+<a href="/publications/book/" style="font-weight:500;color:#0b0e11">Where Architecture Creates Value</a>
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/holding-the-line/">Holding the Line</a>
+</div>
 </nav>
-
-<header class="pub-header">
-  <div class="pub-header-inner">
-    <span class="pub-eyebrow">Book · Complete Edition</span>
-    <h1 class="pub-title">Where Architecture Truly Creates Value</h1>
-    <p class="pub-desc">Foreword · Preface · 50 Chapters. The complete OrdoAnimi book — a structural diagnosis of why architecture as a discipline has built a caste system instead of a decision system, and what it takes to design something different.</p>
-    <p class="pub-desc" style="margin-top:1rem;font-style:italic;font-size:0.9rem;">Velocity is not speed. It is the rate at which ambiguity expires.</p>
-  </div>
-</header>
-
-<main>
-  <div class="signal-list">
-
-    <a href="foreword.html" class="signal-item">
-      <span class="signal-num">FW</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Foreword</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="preface.html" class="signal-item">
-      <span class="signal-num">PR</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Preface</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-01-where-architecture-truly-creates-value.html" class="signal-item">
-      <span class="signal-num">01</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 1: Where Architecture Truly Creates Value</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-02-layers-without-overlap.html" class="signal-item">
-      <span class="signal-num">02</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 2: Layers Without Overlap</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-03-the-decision-record.html" class="signal-item">
-      <span class="signal-num">03</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 3: The Decision Record</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-04-sacred-cows.html" class="signal-item">
-      <span class="signal-num">04</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 4: Sacred Cows</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-05-authorship-under-constraint.html" class="signal-item">
-      <span class="signal-num">05</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 5: Authorship Under Constraint</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-06-boundaries.html" class="signal-item">
-      <span class="signal-num">06</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 6: Boundaries</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-07-refusal.html" class="signal-item">
-      <span class="signal-num">07</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 7: Refusal</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-08-staying.html" class="signal-item">
-      <span class="signal-num">08</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 8: Staying</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-09-exit.html" class="signal-item">
-      <span class="signal-num">09</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 9: Exit</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-10-the-line.html" class="signal-item">
-      <span class="signal-num">10</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 10: The Line</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-11-alignment-as-a-defensive-system.html" class="signal-item">
-      <span class="signal-num">11</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 11: Alignment as a Defensive System</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-12-the-infrastructure-of-indecision.html" class="signal-item">
-      <span class="signal-num">12</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 12: The Infrastructure of Indecision</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-13-incentive-geometry.html" class="signal-item">
-      <span class="signal-num">13</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 13: Incentive Geometry</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-14-collaboration-without-convergence.html" class="signal-item">
-      <span class="signal-num">14</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 14: Collaboration Without Convergence</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-15-authority-and-the-burden-of-convergence.html" class="signal-item">
-      <span class="signal-num">15</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 15: Authority and the Burden of Convergence</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-16-designing-convergence.html" class="signal-item">
-      <span class="signal-num">16</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 16: Designing Convergence</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-17-time-as-constraint.html" class="signal-item">
-      <span class="signal-num">17</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 17: Time as Constraint</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-18-escalation-as-resolution.html" class="signal-item">
-      <span class="signal-num">18</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 18: Escalation as Resolution</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-19-guardrails-and-executable-constraint.html" class="signal-item">
-      <span class="signal-num">19</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 19: Guardrails and Executable Constraint</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-20-decision-latency.html" class="signal-item">
-      <span class="signal-num">20</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 20: Decision Latency</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-21-expiry-as-design-principle.html" class="signal-item">
-      <span class="signal-num">21</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 21: Expiry as Design Principle</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-22-ownership-as-load-bearing-structure.html" class="signal-item">
-      <span class="signal-num">22</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 22: Ownership as Load-Bearing Structure</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-23-designing-the-decision-surface.html" class="signal-item">
-      <span class="signal-num">23</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 23: Designing the Decision Surface</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-24-signal-before-debate.html" class="signal-item">
-      <span class="signal-num">24</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 24: Signal Before Debate</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-25-deviation-as-information.html" class="signal-item">
-      <span class="signal-num">25</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 25: Deviation as Information</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-26-escalation-scarcity.html" class="signal-item">
-      <span class="signal-num">26</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 26: Escalation Scarcity</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-27-governance-that-terminates.html" class="signal-item">
-      <span class="signal-num">27</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 27: Governance That Terminates</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-28-the-truth-velocity-index.html" class="signal-item">
-      <span class="signal-num">28</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 28: The Truth Velocity Index</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-29-the-living-blueprint.html" class="signal-item">
-      <span class="signal-num">29</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 29: The Living Blueprint</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-30-the-operational-truth-model.html" class="signal-item">
-      <span class="signal-num">30</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 30: The Operational Truth Model</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-31-the-repository-as-decision-infrastructure.html" class="signal-item">
-      <span class="signal-num">31</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 31: The Repository as Decision Infrastructure</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-32-authority-design.html" class="signal-item">
-      <span class="signal-num">32</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 32: Authority Design</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-33-the-velocity-operating-model.html" class="signal-item">
-      <span class="signal-num">33</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 33: The Velocity Operating Model</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-    <a href="chapter-34-the-pulse-system.html" class="signal-item">
-      <span class="signal-num">34</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 34: The Pulse System</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-35-the-clarity-stack-in-operation.html" class="signal-item">
-      <span class="signal-num">35</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 35: The Clarity Stack in Operation</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-36-the-decision-architecture-method.html" class="signal-item">
-      <span class="signal-num">36</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 36: The Decision Architecture Method</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-37-ownership-velocity.html" class="signal-item">
-      <span class="signal-num">37</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 37: Ownership Velocity</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-38-the-control-paradox.html" class="signal-item">
-      <span class="signal-num">38</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 38: The Control Paradox</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-39-the-workshop-trap.html" class="signal-item">
-      <span class="signal-num">39</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 39: The Workshop Trap</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-40-architecture-theatre.html" class="signal-item">
-      <span class="signal-num">40</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 40: Architecture Theatre</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-41-what-the-decisive-organisation-looks-like.html" class="signal-item">
-      <span class="signal-num">41</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 41: What the Decisive Organisation Looks Like</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-42-the-transition-problem.html" class="signal-item">
-      <span class="signal-num">42</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 42: The Transition Problem</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-43-the-first-ninety-days.html" class="signal-item">
-      <span class="signal-num">43</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 43: The First Ninety Days</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-44-the-stakeholder-problem.html" class="signal-item">
-      <span class="signal-num">44</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 44: The Stakeholder Problem</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-45-measuring-the-decisive-organisation.html" class="signal-item">
-      <span class="signal-num">45</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 45: Measuring the Decisive Organisation</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-46-the-architecture-function-redesigned.html" class="signal-item">
-      <span class="signal-num">46</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 46: The Architecture Function Redesigned</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-47-scaling-the-decisive-organisation.html" class="signal-item">
-      <span class="signal-num">47</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 47: Scaling the Decisive Organisation</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-48-the-human-cost-of-indecision-revisited.html" class="signal-item">
-      <span class="signal-num">48</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 48: The Human Cost of Indecision Revisited</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-49-the-unfinished-organisation.html" class="signal-item">
-      <span class="signal-num">49</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 49: The Unfinished Organisation</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-    <a href="chapter-50-the-closing-argument.html" class="signal-item">
-      <span class="signal-num">50</span>
-      <div class="signal-item-body">
-        <p class="signal-item-title">Chapter 50: The Closing Argument</p>
-        <span class="signal-item-status published">Published</span>
-      </div>
-    </a>
-
-  </div>
-</main>
-
-<footer class="pub-footer">
-  <div class="pub-footer-inner">
-    <span class="pub-footer-copy">© Phil Myint · OrdoAnimi · CC BY 4.0</span>
-    <div class="pub-footer-links">
-      <a href="/publications/">Publications</a>
-      <a href="/">Framework</a>
-      <a href="https://www.linkedin.com/in/philmyint" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
+<button class="toc-toggle" id="tocToggle" aria-label="Toggle contents">&#9776; Contents</button>
+<div class="toc-backdrop" id="tocBackdrop"></div>
+<div class="book">
+<aside class="toc" id="toc">
+<div class="toc-head">Where Architecture Truly Creates Value</div>
+<div class="toc-subtitle">Phil Myint</div>
+<div class="toc-sub">Foreword . Preface . 50 Chapters</div>
+<input type="text" class="toc-search" id="tocSearch" placeholder="Filter&#x2026;" aria-label="Filter">
+<nav id="tocList" aria-label="Table of contents"></nav>
+<div class="toc-other-books">
+<div class="toc-other-label">Also by Phil Myint</div>
+<a href="/publications/reading-the-map/">Reading the Map &#x2197;</a>
+<a href="/publications/holding-the-line/">Holding the Line &#x2197;</a>
+</div>
+</aside>
+<main class="reader">
+<div class="breadcrumb">
+<a href="/">OrdoAnimi</a> &#x203A;
+<a href="/publications/">Publications</a> &#x203A;
+Book
+</div>
+<div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+<article class="article md" id="article"><p class="loading">Loading&#x2026;</p></article>
+<nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
+<footer class="site" style="margin-top:3rem;border-radius:10px;">
+<strong>OrdoAnimi advises, builds, and decides.</strong>
+<div class="footer-links">
+<a href="/publications/">Publications</a>
+<a href="/">The OrdoAnimi Framework</a>
+</div>
 </footer>
-
+</main>
+</div>
+<script>
+const CH = [
+['fw',"Foreword","foreword.md"],
+['pf',"Preface","preface.md"],
+['01',"Chapter 1: Where Architecture Truly Creates Value","chapter-01-where-architecture-truly-creates-value.md"],
+['02',"Chapter 2: Layers Without Overlap","chapter-02-layers-without-overlap.md"],
+['03',"Chapter 3: The Decision Record","chapter-03-the-decision-record.md"],
+['04',"Chapter 4: Sacred Cows","chapter-04-sacred-cows.md"],
+['05',"Chapter 5: Authorship Under Constraint","chapter-05-authorship-under-constraint.md"],
+['06',"Chapter 6: Boundaries","chapter-06-boundaries.md"],
+['07',"Chapter 7: Refusal","chapter-07-refusal.md"],
+['08',"Chapter 8: Staying","chapter-08-staying.md"],
+['09',"Chapter 9: Exit","chapter-09-exit.md"],
+['10',"Chapter 10: The Line","chapter-10-the-line.md"],
+['11',"Chapter 11: Alignment as a Defensive System","chapter-11-alignment-as-a-defensive-system.md"],
+['12',"Chapter 12: The Infrastructure of Indecision","chapter-12-the-infrastructure-of-indecision.md"],
+['13',"Chapter 13: Incentive Geometry","chapter-13-incentive-geometry.md"],
+['14',"Chapter 14: Collaboration Without Convergence","chapter-14-collaboration-without-convergence.md"],
+['15',"Chapter 15: Authority and the Burden of Convergence","chapter-15-authority-and-the-burden-of-convergence.md"],
+['16',"Chapter 16: Designing Convergence","chapter-16-designing-convergence.md"],
+['17',"Chapter 17: Time as Constraint","chapter-17-time-as-constraint.md"],
+['18',"Chapter 18: Escalation as Resolution","chapter-18-escalation-as-resolution.md"],
+['19',"Chapter 19: Guardrails and Executable Constraint","chapter-19-guardrails-and-executable-constraint.md"],
+['20',"Chapter 20: Decision Latency","chapter-20-decision-latency.md"],
+['21',"Chapter 21: Expiry as Design Principle","chapter-21-expiry-as-design-principle.md"],
+['22',"Chapter 22: Ownership as Load-Bearing Structure","chapter-22-ownership-as-load-bearing-structure.md"],
+['23',"Chapter 23: Designing the Decision Surface","chapter-23-designing-the-decision-surface.md"],
+['24',"Chapter 24: Signal Before Debate","chapter-24-signal-before-debate.md"],
+['25',"Chapter 25: Deviation as Information","chapter-25-deviation-as-information.md"],
+['26',"Chapter 26: Escalation Scarcity","chapter-26-escalation-scarcity.md"],
+['27',"Chapter 27: Governance That Terminates","chapter-27-governance-that-terminates.md"],
+['28',"Chapter 28: The Truth Velocity Index","chapter-28-the-truth-velocity-index.md"],
+['29',"Chapter 29: The Living Blueprint","chapter-29-the-living-blueprint.md"],
+['30',"Chapter 30: The Operational Truth Model","chapter-30-the-operational-truth-model.md"],
+['31',"Chapter 31: The Repository as Decision Infrastructure","chapter-31-the-repository-as-decision-infrastructure.md"],
+['32',"Chapter 32: Authority Design","chapter-32-authority-design.md"],
+['33',"Chapter 33: The Velocity Operating Model","chapter-33-the-velocity-operating-model.md"],
+['34',"Chapter 34: The Pulse System","chapter-34-the-pulse-system.md"],
+['35',"Chapter 35: The Clarity Stack in Operation","chapter-35-the-clarity-stack-in-operation.md"],
+['36',"Chapter 36: The Decision Architecture Method","chapter-36-the-decision-architecture-method.md"],
+['37',"Chapter 37: Ownership Velocity","chapter-37-ownership-velocity.md"],
+['38',"Chapter 38: The Control Paradox","chapter-38-the-control-paradox.md"],
+['39',"Chapter 39: The Workshop Trap","chapter-39-the-workshop-trap.md"],
+['40',"Chapter 40: Architecture Theatre","chapter-40-architecture-theatre.md"],
+['41',"Chapter 41: What the Decisive Organisation Looks Like","chapter-41-what-the-decisive-organisation-looks-like.md"],
+['42',"Chapter 42: The Transition Problem","chapter-42-the-transition-problem.md"],
+['43',"Chapter 43: The First Ninety Days","chapter-43-the-first-ninety-days.md"],
+['44',"Chapter 44: The Stakeholder Problem","chapter-44-the-stakeholder-problem.md"],
+['45',"Chapter 45: Measuring the Decisive Organisation","chapter-45-measuring-the-decisive-organisation.md"],
+['46',"Chapter 46: The Architecture Function Redesigned","chapter-46-the-architecture-function-redesigned.md"],
+['47',"Chapter 47: Scaling the Decisive Organisation","chapter-47-scaling-the-decisive-organisation.md"],
+['48',"Chapter 48: The Human Cost of Indecision Revisited","chapter-48-the-human-cost-of-indecision-revisited.md"],
+['49',"Chapter 49: The Unfinished Organisation","chapter-49-the-unfinished-organisation.md"],
+['50',"Chapter 50: The Closing Argument","chapter-50-the-closing-argument.md"]
+];
+const idx = {};
+CH.forEach((c,i) => idx[c[0]] = i);
+const _entityDecoder = document.createElement('textarea');
+function decodeEntities(s) { _entityDecoder.innerHTML = s; return _entityDecoder.value; }
+const tocList = document.getElementById('tocList');
+CH.forEach((c) => {
+  const a = document.createElement('a');
+  a.className = 'ch';
+  a.href = '#' + c[0];
+  a.dataset.id = c[0];
+  a.innerHTML = '<span class="num">' + c[0] + '</span><span class="t">' + c[1] + '</span>';
+  tocList.appendChild(a);
+});
+const articleEl = document.getElementById('article');
+const pagerEl = document.getElementById('pager');
+const progressEl = document.getElementById('progressBar');
+const FETCH_BASE = "/book/";
+const GH_PATH = "book";
+function setActive(id) {
+  document.querySelectorAll('.toc a.ch').forEach(a => { a.classList.toggle('active', a.dataset.id === id); });
+  const pos = (idx[id] + 1) / CH.length * 100;
+  progressEl.style.width = pos + '%';
+}
+function buildPager(id) {
+  const i = idx[id];
+  const prev = i > 0 ? CH[i - 1] : null;
+  const next = i < CH.length - 1 ? CH[i + 1] : null;
+  let h = '';
+  if (prev) { h += '<a class="prev" href="#' + prev[0] + '"><span class="dir">&#x2190; Previous</span><span>' + prev[1] + '</span></a>'; }
+  else { h += '<a class="prev ghost" href="#">.</a>'; }
+  if (next) { h += '<a class="next" href="#' + next[0] + '"><span class="dir">Next &#x2192;</span><span>' + next[1] + '</span></a>'; }
+  else { h += '<a class="next ghost" href="#">.</a>'; }
+  pagerEl.innerHTML = h;
+}
+async function load(id) {
+  if (!(id in idx)) id = CH[0][0];
+  const c = CH[idx[id]];
+  setActive(id);
+  buildPager(id);
+  articleEl.innerHTML = '<p class="loading">Loading&#x2026;</p>';
+  window.scrollTo({ top: 0, behavior: 'auto' });
+  try {
+    const r = await fetch(FETCH_BASE + c[2]);
+    if (!r.ok) throw 0;
+    const txt = await r.text();
+    articleEl.innerHTML = marked.parse(txt);
+    document.title = decodeEntities(c[1]) + ' \u2014 Where Architecture Truly Creates Value';
+  } catch (e) {
+    articleEl.innerHTML = '<p class="error">This could not be loaded. <a href="https://github.com/OrdoAnimi/framework/tree/main/' + GH_PATH + '/" target="_blank" rel="noopener">View source on GitHub &#x2197;</a></p>';
+  }
+  closeToc();
+}
+function go() { load((location.hash || '#' + CH[0][0]).slice(1)); }
+window.addEventListener('hashchange', go);
+document.getElementById('tocSearch').addEventListener('input', function() {
+  const q = this.value.toLowerCase();
+  document.querySelectorAll('#tocList a.ch').forEach(a => {
+    const t = a.querySelector('.t').textContent.toLowerCase() + ' ' + a.dataset.id.toLowerCase();
+    a.style.display = t.indexOf(q) >= 0 ? '' : 'none';
+  });
+});
+const toc = document.getElementById('toc');
+const backdrop = document.getElementById('tocBackdrop');
+function openToc() { toc.classList.add('open'); backdrop.classList.add('open'); }
+function closeToc() { toc.classList.remove('open'); backdrop.classList.remove('open'); }
+document.getElementById('tocToggle').addEventListener('click', openToc);
+backdrop.addEventListener('click', closeToc);
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT') return;
+  const id = (location.hash || '#' + CH[0][0]).slice(1);
+  const i = idx[id];
+  if (i === undefined) return;
+  if (e.key === 'ArrowRight' && i < CH.length - 1) { location.hash = '#' + CH[i + 1][0]; }
+  if (e.key === 'ArrowLeft' && i > 0) { location.hash = '#' + CH[i - 1][0]; }
+});
+go();
+</script>
 </body>
 </html>

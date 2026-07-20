@@ -251,7 +251,7 @@ async function load(id){
     articleEl.innerHTML=marked.parse(txt);
     document.title=c[1]+' — Reading the Map — OrdoAnimi';
   }catch(e){
-    const gh='https://github.com/OrdoAnimi/velocity-architecture/blob/main/'+
+    const gh='https://github.com/OrdoAnimi/framework/blob/main/'+
       (c[2].indexOf('/reading-the-map/')===0?'reading-the-map/'+c[2].split('/').pop():'publications/reading-the-map/'+c[2]);
     articleEl.innerHTML='<p class="error">This chapter is not published yet, or could not be loaded. '+
       '<a href="'+gh+'" target="_blank" rel="noopener">View source on GitHub &#x2197;</a></p>';

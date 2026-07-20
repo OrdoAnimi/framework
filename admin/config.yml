@@ -82,3 +82,125 @@ collections:
       - name: body
         label: Body
         widget: markdown
+
+  # --- Live-fetch publications ---------------------------------------------
+  # These files carry NO frontmatter - each reader (publications/<name>/
+  # index.html, or per-series index.html for Thought Series) fetches the raw
+  # .md straight from GitHub at page load and renders it client-side, so a
+  # CMS save publishes immediately with no generator step. format: raw is the
+  # correct choice for a frontmatter-less file (extension is set separately
+  # since raw defaults to .txt); the single "body" field is the whole file.
+  # create: false - adding a brand-new chapter/post also needs one line added
+  # to the reader's CH manifest array, which the CMS can't do, so new entries
+  # are wired in by hand rather than left half-published. Note: each folder's
+  # README.md will also appear in the list (Sveltia has no filename-exclude
+  # filter for folder collections) - harmless, just don't edit it.
+  - name: holding-the-line
+    label: "Holding the Line (book)"
+    folder: publications/holding-the-line
+    create: false
+    extension: md
+    format: raw
+    fields:
+      - name: body
+        label: Body
+        widget: markdown
+
+  - name: reading-the-map
+    label: "Reading the Map (book)"
+    folder: publications/reading-the-map
+    create: false
+    extension: md
+    format: raw
+    fields:
+      - name: body
+        label: Body
+        widget: markdown
+
+  - name: book
+    label: "Where Architecture Truly Creates Value (book)"
+    folder: book
+    create: false
+    extension: md
+    format: raw
+    fields:
+      - name: body
+        label: Body
+        widget: markdown
+
+  - name: signal
+    label: Signal
+    folder: signals-series
+    create: false
+    extension: md
+    format: raw
+    fields:
+      - name: body
+        label: Body
+        widget: markdown
+
+  - name: thought-series-01
+    label: "Thought Series - 01 Foundations"
+    folder: series/series-01-foundations
+    create: false
+    extension: md
+    format: raw
+    fields:
+      - name: body
+        label: Body
+        widget: markdown
+
+  - name: thought-series-02
+    label: "Thought Series - 02 Decision Velocity"
+    folder: series/series-02-decision-velocity
+    create: false
+    extension: md
+    format: raw
+    fields:
+      - name: body
+        label: Body
+        widget: markdown
+
+  - name: thought-series-03
+    label: "Thought Series - 03 The Architecture Operating System"
+    folder: series/series-03-the-architecture-operating-system
+    create: false
+    extension: md
+    format: raw
+    fields:
+      - name: body
+        label: Body
+        widget: markdown
+
+  - name: thought-series-04
+    label: "Thought Series - 04 Architecture as a Decision System"
+    folder: series/series-04-architecture-as-a-decision-system
+    create: false
+    extension: md
+    format: raw
+    fields:
+      - name: body
+        label: Body
+        widget: markdown
+
+  - name: thought-series-05
+    label: "Thought Series - 05 The Implementation Arc"
+    folder: series/series-05-the-implementation-arc
+    create: false
+    extension: md
+    format: raw
+    fields:
+      - name: body
+        label: Body
+        widget: markdown
+
+  - name: thought-series-06
+    label: "Thought Series - 06 Before the Decision"
+    folder: series/series-06-before-the-decision
+    create: false
+    extension: md
+    format: raw
+    fields:
+      - name: body
+        label: Body
+        widget: markdown

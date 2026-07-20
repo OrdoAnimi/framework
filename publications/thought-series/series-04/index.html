@@ -1,108 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Series 4: Architecture as a Decision System — OrdoAnimi</title>
-  <meta name="description" content="Six articles building a unified model of architecture as a decision system — constraint clarity, authority design, deviation visibility, and the organisational conditions required to sustain them."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="../../pub.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series 04: Architecture as a Decision System - OrdoAnimi</title>
+<meta name="description" content="Series 4: Architecture as a Decision System - the OrdoAnimi thought series.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+<style>
+:root{--bg:#f2ede0;--surface:#faf7ef;--surface-2:#ebe4d2;--border:#ded7c4;--text:#0b0e11;--text-2:#5a6354;--text-3:#8c9184;--accent:#0b0e11;--accent-light:#EFF6FF;--navy:#0b0e11;--navy-2:#0b0e11;--r:10px;--shadow-md:0 4px 12px rgba(11,14,17,.08),0 2px 4px rgba(11,14,17,.04)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.65}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+nav.site{position:sticky;top:0;z-index:30;background:rgba(250,247,239,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{font-family:'Playfair Display', Georgia, serif;font-weight:700;color:var(--text)}.brand sup{font-size:.5rem;color:var(--accent);vertical-align:super}
+.nav-links{display:flex;gap:1.25rem;flex-wrap:wrap}.nav-links a{font-size:.85rem;color:var(--text-2)}
+.book{display:grid;grid-template-columns:320px minmax(0,1fr);gap:0;max-width:1320px;margin:0 auto;align-items:start}
+.toc{position:sticky;top:64px;height:calc(100vh - 64px);overflow-y:auto;border-right:1px solid var(--border);background:var(--surface);padding:1.5rem 1.25rem 4rem}
+.toc-head{font-family:'Playfair Display', Georgia, serif;font-weight:700;font-size:1.05rem;margin-bottom:.2rem}
+.toc-subtitle{font-family:'DM Sans',sans-serif;font-size:.78rem;color:var(--text-2);margin-bottom:.15rem;font-style:italic}
+.toc-sub{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:var(--text-3);margin-bottom:1.25rem}
+.toc-search{width:100%;padding:.5rem .65rem;border:1px solid var(--border);border-radius:6px;font-family:'DM Sans',sans-serif;font-size:.82rem;margin-bottom:1rem;background:var(--bg)}
+.toc-part{font-family:'DM Mono',monospace;font-size:.6rem;font-weight:500;letter-spacing:.14em;color:var(--accent);margin:1.25rem 0 .4rem;padding-top:.5rem}
+.toc-part:first-of-type{margin-top:0}
+.toc a.ch{display:flex;gap:.55rem;align-items:baseline;padding:.32rem .5rem;border-radius:6px;font-size:.82rem;color:var(--text-2);line-height:1.35}
+.toc a.ch:hover{background:var(--surface-2);text-decoration:none;color:var(--text)}
+.toc a.ch.active{background:var(--accent-light);color:var(--accent);font-weight:500}
+.toc a.ch .num{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--text-3);min-width:1.6rem;flex-shrink:0}
+.toc a.ch.active .num{color:var(--accent)}
+.toc-other-books{border-top:1px solid var(--border);margin-top:1.5rem;padding-top:1rem}
+.toc-other-label{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.14em;color:var(--text-3);margin-bottom:.5rem}
+.toc-other-books a{display:block;font-size:.78rem;color:var(--text-2);padding:.25rem 0;border-radius:4px}
+.toc-other-books a:hover{color:var(--accent)}
+.reader{padding:2.5rem 3rem 4rem;min-width:0}
+.breadcrumb{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.08em;color:var(--text-3);margin-bottom:1.5rem}
+.breadcrumb a{color:var(--text-3)}.breadcrumb a:hover{color:var(--accent)}
+.progress-wrap{height:3px;background:var(--border);border-radius:3px;margin-bottom:2rem;overflow:hidden}
+.progress-bar{height:100%;width:0;background:var(--accent);transition:width .25s}
+.article{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:2.5rem 2.75rem;box-shadow:var(--shadow-md)}
+.loading,.error{font-family:'DM Mono',monospace;font-size:.85rem;color:var(--text-3)}
+.md{font-size:.98rem;color:var(--text-2);line-height:1.8;max-width:74ch}
+.md h1{font-family:'Playfair Display', Georgia, serif;font-size:2.2rem;line-height:1.15;color:var(--text);margin-bottom:1rem}
+.md h2{font-family:'Playfair Display', Georgia, serif;font-size:1.45rem;color:var(--text);margin:2.4rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.md h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:1.7rem 0 .5rem}
+.md h4{font-family:'DM Mono',monospace;font-size:.75rem;font-weight:500;letter-spacing:.12em;color:var(--accent);margin:1.25rem 0 .35rem}
+.md p{margin-bottom:1rem}
+.md em{color:var(--text);font-style:italic}
+.md strong{color:var(--text);font-weight:700}
+.md ul,.md ol{margin:0 0 1rem 1.4rem}.md li{margin-bottom:.4rem}
+.md blockquote{border-left:3px solid var(--accent);background:var(--accent-light);border-radius:0 6px 6px 0;margin:1.5rem 0;padding:.9rem 1.3rem;color:var(--text)}
+.md blockquote p{margin:0 0 .5rem}.md blockquote p:last-child{margin:0}
+.md hr{border:none;border-top:1px solid var(--border);margin:2.2rem 0}
+.md table{width:100%;border-collapse:collapse;margin:1.4rem 0;display:block;overflow-x:auto}
+.md th,.md td{border:1px solid var(--border);padding:.55rem .8rem;text-align:left;font-size:.88rem}
+.md th{background:var(--surface-2);font-family:'DM Mono',monospace;font-size:.66rem;color:var(--text-2);letter-spacing:.04em}
+.md code{font-family:'DM Mono',monospace;font-size:.82em;background:var(--surface-2);border:1px solid var(--border);padding:.1em .4em;border-radius:3px}
+.pager{display:flex;justify-content:space-between;gap:1rem;margin-top:2rem}
+.pager a{flex:1;display:flex;flex-direction:column;gap:.2rem;padding:.9rem 1.1rem;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text-2);font-size:.9rem;min-height:44px;justify-content:center}
+.pager a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.pager a.next{text-align:right}
+.pager .dir{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.1em;color:var(--text-3)}
+.pager a:hover .dir{color:var(--accent)}
+.pager .ghost{visibility:hidden}
+footer.site{margin:0;background:var(--navy-2);color:rgba(222,215,196,.65);padding:2rem 3rem;border-radius:0}
+footer.site .footer-links{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem}
+footer.site .footer-links a{color:#c9bfa6;font-size:.8rem}
+.toc-toggle{display:none;align-items:center;gap:.5rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.55rem .9rem;font-size:.82rem;color:var(--text-2);font-family:'DM Mono',monospace;letter-spacing:.06em;cursor:pointer;margin:1rem 1.5rem 0}
+@media(max-width:1024px){
+.book{grid-template-columns:1fr}
+.toc-toggle{display:inline-flex}
+.toc{position:fixed;top:0;left:0;bottom:0;height:100vh;width:300px;z-index:50;transform:translateX(-100%);transition:transform .25s;box-shadow:var(--shadow-md)}
+.toc.open{transform:translateX(0)}
+.toc-backdrop{display:none;position:fixed;inset:0;background:rgba(11,14,17,.4);z-index:45}
+.toc-backdrop.open{display:block}
+.reader{padding:1.5rem}
+.article{padding:1.5rem 1.4rem}
+}
+</style>
 </head>
 <body>
 
-
-
-<nav class="pub-nav">
-  <a href="/" class="pub-nav-brand">OrdoAnimi</a>
-  <ul class="pub-nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/publications/">Publications</a></li>
-    <li><a href="/publications/thought-series/">Thought Series</a></li>
-    <li><a href="/publications/signal/">Signal</a></li>
-  </ul>
+<nav class="site">
+<a class="brand" href="/">OrdoAnimi</a>
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/publications/">Publications</a>
+<a href="/publications/thought-series/">Thought Series</a>
+<a href="/publications/thought-series/series-04/" style="font-weight:500;color:#0b0e11">Architecture as a Decision System</a>
+</div>
 </nav>
+<button class="toc-toggle" id="tocToggle" aria-label="Toggle contents">&#9776; Contents</button>
+<div class="toc-backdrop" id="tocBackdrop"></div>
+<div class="book">
+<aside class="toc" id="toc">
+<div class="toc-head">Series 04</div>
+<div class="toc-subtitle">Architecture as a Decision System</div>
+<div class="toc-sub">6 Posts</div>
 
-<header class="pub-header">
-  <div class="pub-header-inner">
-    <span class="pub-eyebrow">Thought Series · Series 4</span>
-    <h1 class="pub-title">Architecture as a Decision System</h1>
-    <p class="pub-desc">Six articles building a unified model of architecture as a decision system. The fundamental failure of enterprise architecture is not poor documentation, weak governance, or inadequate tooling. It is the absence of a decision system — the structural conditions under which architectural intent governs behaviour, authority is exercised and recorded, and the organisation learns from the gap between intent and execution.</p>
-  </div>
-</header>
+<nav id="tocList" aria-label="Table of contents"></nav>
 
-<main>
-  <div class="article-list">
-
-    <a href="4.1-architecture-as-a-decision-system.html" class="article-list-item">
-      <span class="article-num">4.1</span>
-      <div class="article-list-meta">
-        <p class="article-list-title">Architecture as a Decision System</p>
-        <p class="article-list-tagline">Why coherence at scale requires more than governance — and what to build instead.</p>
-      </div>
-      <span class="article-list-status published">Published</span>
-    </a>
-
-    <a href="4.2-the-repository-trap.html" class="article-list-item">
-      <span class="article-num">4.2</span>
-      <div class="article-list-meta">
-        <p class="article-list-title">The Repository Trap</p>
-        <p class="article-list-tagline">Why EA repositories and meta-models cannot answer real delivery questions — and what has to change.</p>
-      </div>
-      <span class="article-list-status published">Published</span>
-    </a>
-
-    <a href="4.3-authority-design.html" class="article-list-item">
-      <span class="article-num">4.3</span>
-      <div class="article-list-meta">
-        <p class="article-list-title">Authority Design</p>
-        <p class="article-list-tagline">Who actually decides — and how to build the structures that make authority legible, bounded, and exercisable under pressure.</p>
-      </div>
-      <span class="article-list-status published">Published</span>
-    </a>
-
-    <a href="4.4-constraint-infrastructure.html" class="article-list-item">
-      <span class="article-num">4.4</span>
-      <div class="article-list-meta">
-        <p class="article-list-title">Constraint Infrastructure</p>
-        <p class="article-list-tagline">How architectural intent becomes executable — embedded in platforms, pipelines, and delivery environments rather than documents.</p>
-      </div>
-      <span class="article-list-status published">Published</span>
-    </a>
-
-    <a href="4.5-deviation-visibility.html" class="article-list-item">
-      <span class="article-num">4.5</span>
-      <div class="article-list-meta">
-        <p class="article-list-title">Deviation Visibility</p>
-        <p class="article-list-tagline">How systems learn — turning override patterns into architectural intelligence and governance into adaptation.</p>
-      </div>
-      <span class="article-list-status published">Published</span>
-    </a>
-
-    <a href="4.6-organisational-architecture.html" class="article-list-item">
-      <span class="article-num">4.6</span>
-      <div class="article-list-meta">
-        <p class="article-list-title">Organisational Architecture</p>
-        <p class="article-list-tagline">Designing enterprises for decision velocity — the structural conditions that make a decision system function and sustain.</p>
-      </div>
-      <span class="article-list-status published">Published</span>
-    </a>
-
-  </div>
-</main>
-
-<footer class="pub-footer">
-  <div class="pub-footer-inner">
-    <span class="pub-footer-copy">© Phil Myint · OrdoAnimi · CC BY 4.0</span>
-    <div class="pub-footer-links">
-      <a href="/publications/thought-series/">Thought Series</a>
-      <a href="/publications/">Publications</a>
-      <a href="/">Framework</a>
-    </div>
-  </div>
+</aside>
+<main class="reader">
+<div class="breadcrumb">
+<a href="/">OrdoAnimi</a> &#x203A;
+<a href="/publications/">Publications</a> &#x203A;
+Thought Series &#x203A; Series 04
+</div>
+<div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+<article class="article md" id="article"><p class="loading">Loading&#x2026;</p></article>
+<nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
+<footer class="site" style="margin-top:3rem;border-radius:10px;">
+<strong>OrdoAnimi advises, builds, and decides.</strong>
+<div class="footer-links">
+<a href="/publications/">Publications</a>
+<a href="/">The OrdoAnimi Framework</a>
+</div>
 </footer>
+</main>
+</div>
+<script>
+const CH = [
+['4.1',"Architecture as a Decision System","4.1-architecture-as-a-decision-system.md"],
+['4.2',"The Repository Trap","4.2-the-repository-trap.md"],
+['4.3',"Authority Design","4.3-authority-design.md"],
+['4.4',"Constraint Infrastructure","4.4-constraint-infrastructure.md"],
+['4.5',"Deviation Visibility","4.5-deviation-visibility.md"],
+['4.6',"Organisational Architecture","4.6-organisational-architecture.md"]
+];
+const idx = {};
+CH.forEach((c,i) => idx[c[0]] = i);
+const _entityDecoder = document.createElement('textarea');
+function decodeEntities(s) { _entityDecoder.innerHTML = s; return _entityDecoder.value; }
+const tocList = document.getElementById('tocList');
+CH.forEach((c) => {
+  const a = document.createElement('a');
+  a.className = 'ch';
+  a.href = '#' + c[0];
+  a.dataset.id = c[0];
+  a.innerHTML = '<span class="num">' + c[0] + '</span><span class="t">' + c[1] + '</span>';
+  tocList.appendChild(a);
+});
+const articleEl = document.getElementById('article');
+const pagerEl = document.getElementById('pager');
+const progressEl = document.getElementById('progressBar');
+const FETCH_BASE = "/series/series-04-architecture-as-a-decision-system/";
+const GH_PATH = "series/series-04-architecture-as-a-decision-system";
+function setActive(id) {
+  document.querySelectorAll('.toc a.ch').forEach(a => { a.classList.toggle('active', a.dataset.id === id); });
+  const pos = (idx[id] + 1) / CH.length * 100;
+  progressEl.style.width = pos + '%';
+}
+function buildPager(id) {
+  const i = idx[id];
+  const prev = i > 0 ? CH[i - 1] : null;
+  const next = i < CH.length - 1 ? CH[i + 1] : null;
+  let h = '';
+  if (prev) { h += '<a class="prev" href="#' + prev[0] + '"><span class="dir">&#x2190; Previous</span><span>' + prev[1] + '</span></a>'; }
+  else { h += '<a class="prev ghost" href="#">.</a>'; }
+  if (next) { h += '<a class="next" href="#' + next[0] + '"><span class="dir">Next &#x2192;</span><span>' + next[1] + '</span></a>'; }
+  else { h += '<a class="next ghost" href="#">.</a>'; }
+  pagerEl.innerHTML = h;
+}
+async function load(id) {
+  if (!(id in idx)) id = CH[0][0];
+  const c = CH[idx[id]];
+  setActive(id);
+  buildPager(id);
+  articleEl.innerHTML = '<p class="loading">Loading&#x2026;</p>';
+  window.scrollTo({ top: 0, behavior: 'auto' });
+  try {
+    const r = await fetch(FETCH_BASE + c[2]);
+    if (!r.ok) throw 0;
+    const txt = await r.text();
+    articleEl.innerHTML = marked.parse(txt);
+    document.title = decodeEntities(c[1]) + ' \u2014 Series 04: Architecture as a Decision System';
+  } catch (e) {
+    articleEl.innerHTML = '<p class="error">This could not be loaded. <a href="https://github.com/OrdoAnimi/framework/tree/main/' + GH_PATH + '/" target="_blank" rel="noopener">View source on GitHub &#x2197;</a></p>';
+  }
+  closeToc();
+}
+function go() { load((location.hash || '#' + CH[0][0]).slice(1)); }
+window.addEventListener('hashchange', go);
 
+const toc = document.getElementById('toc');
+const backdrop = document.getElementById('tocBackdrop');
+function openToc() { toc.classList.add('open'); backdrop.classList.add('open'); }
+function closeToc() { toc.classList.remove('open'); backdrop.classList.remove('open'); }
+document.getElementById('tocToggle').addEventListener('click', openToc);
+backdrop.addEventListener('click', closeToc);
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT') return;
+  const id = (location.hash || '#' + CH[0][0]).slice(1);
+  const i = idx[id];
+  if (i === undefined) return;
+  if (e.key === 'ArrowRight' && i < CH.length - 1) { location.hash = '#' + CH[i + 1][0]; }
+  if (e.key === 'ArrowLeft' && i > 0) { location.hash = '#' + CH[i - 1][0]; }
+});
+go();
+</script>
 </body>
 </html>

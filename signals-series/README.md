@@ -22,8 +22,8 @@ Organisations are failing to connect reality to decision-making at every layer. 
 | [post-04-the-map-and-the-territory.md](post-04-the-map-and-the-territory.md) | The Map and the Territory | Published |
 | [post-05-the-decaying-map.md](post-05-the-decaying-map.md) | The Decaying Map | Published |
 | [post-06-the-gap-between-the-map-and-the-ground.md](post-06-the-gap-between-the-map-and-the-ground.md) | The Gap Between the Map and the Ground | Published |
-| [post-07-the-exemption-door.md](post-07-the-exemption-door.md) | The Exemption Door | Ready to publish |
-| post-08-who-called-the-ea.md | Who Called the EA? | Written — held |
+| [post-07-the-exemption-door.md](post-07-the-exemption-door.md) | The Exemption Door | Published |
+| [post-08-who-called-the-ea.md](post-08-who-called-the-ea.md) | Who Called the EA? | Published |
 | post-09-the-convenient-unknown.md | The Convenient Unknown | Written — held |
 | post-10-the-person-who-knew.md | The Person Who Knew | Written — held |
 | post-11-the-navigator-who-never-left-the-tent.md | The Navigator Who Never Left the Tent | In development |
