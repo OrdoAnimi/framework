@@ -32,7 +32,8 @@ def parse_frontmatter(text):
         if m:
             val = m.group(2).strip()
             if len(val) >= 2 and val[0] == '"' and val[-1] == '"':
-                val = val[1:-1]
+                # strip outer quotes, then unescape YAML double-quote escapes
+                val = val[1:-1].replace('\\"', '"')
             meta[m.group(1)] = val
     return meta, body
 
@@ -54,6 +55,8 @@ def _inline(text):
     # 4. apostrophes / single quotes -> right single quote
     text = text.replace("’", "&rsquo;").replace("'", "&rsquo;")
     # 5. markdown inline LAST, so the ASCII quotes in generated tags survive
+    #    (images before links: the link regex would otherwise eat ![alt](src))
+    text = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', r'<img src="\2" alt="\1" loading="lazy"/>', text)
     text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', text)
     text = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', text)
     text = re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)', r'<em>\1</em>', text)
@@ -233,15 +236,29 @@ def load_notes():
         meta, body = parse_frontmatter(md.read_text(encoding="utf-8"))
         if "number" not in meta or "title" not in meta:
             continue  # not a numbered field note (e.g. linkedin-posts.md)
+        try:
+            number = int(meta["number"])
+        except ValueError:
+            # a malformed number must not take down generation for every note
+            print(f"  field-notes: WARNING skipping {md.name} (number is not an integer: {meta['number']!r})")
+            continue
         notes.append({
             "slug": md.stem,
-            "number": int(meta["number"]),
+            "number": number,
             "title": meta["title"],
             "subtitle": meta.get("subtitle", ""),
             "date": meta.get("date", ""),
             "body_html": md_to_html(body),
         })
     notes.sort(key=lambda n: n["number"])
+    seen = {}
+    for n in notes:
+        if n["number"] in seen:
+            raise SystemExit(
+                f"field-notes: duplicate number {n['number']} "
+                f"({seen[n['number']]} and {n['slug']}) - renumber before publishing"
+            )
+        seen[n["number"]] = n["slug"]
     return notes
 
 def main():

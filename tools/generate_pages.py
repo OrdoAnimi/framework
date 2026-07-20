@@ -11,8 +11,8 @@ import re as _re
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent
-RAW_BASE = 'https://raw.githubusercontent.com/OrdoAnimi/velocity-architecture/main'
-GITHUB_BASE = 'https://github.com/OrdoAnimi/velocity-architecture/blob/main'
+RAW_BASE = 'https://raw.githubusercontent.com/OrdoAnimi/framework/main'
+GITHUB_BASE = 'https://github.com/OrdoAnimi/framework/blob/main'
 SKIP_FILES = {'SOURCES.md', 'PUBLISHING.md', 'README.md', 'CITATION.cff', 'CONTRIBUTING.md'}
 
 ECOSYSTEM_STRIP = (

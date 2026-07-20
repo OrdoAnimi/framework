@@ -30,7 +30,7 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 ## The Ecosystem — All Working Sites and Artefacts
 
 ### Primary Repository
-- **GitHub:** https://github.com/ZenCloudAU/velocity-architecture
+- **GitHub:** https://github.com/OrdoAnimi/framework
 - **Local mirror:** `D:\VelocityArchitecture\`
 - **Public site:** https://framework.ordoanimi.com/
 - **Status:** Public, v1.0
@@ -230,7 +230,7 @@ Full detail in `REVIEW.md`. Summary for session awareness:
 ## File Map — Full Repository
 
 ```
-D:\VelocityArchitecture\ (github.com/ZenCloudAU/velocity-architecture)
+D:\VelocityArchitecture\ (github.com/OrdoAnimi/framework)
 │
 ├── CLAUDE.md                          ← This file
 ├── SKILL.md                           ← OrdoAnimi working skill for Claude

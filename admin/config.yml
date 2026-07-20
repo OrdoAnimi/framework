@@ -1,0 +1,84 @@
+# Sveltia CMS configuration - framework.ordoanimi.com/admin
+#
+# Sign-in: use the "Sign In with Token" button with a GitHub personal access
+# token scoped to this repository (no OAuth relay is deployed).
+#
+# Saving here commits the .md straight to main; the publish-articles Action
+# then regenerates the reader pages (tools/generate_field_notes.py). Do not
+# add skip_ci / automatic_deployments - CMS commits MUST trigger that Action.
+#
+# Every frontmatter key used by the field notes is declared below, in the same
+# order as the existing files, so a CMS save round-trips without reordering or
+# dropping anything. output.yaml.quote: double matches the hand-authored
+# `key: "value"` style (the generator's parser expects double quotes or none;
+# never switch this to single). The filter on series hides linkedin-posts.md,
+# which is planning material, not a numbered note.
+
+backend:
+  name: github
+  repo: OrdoAnimi/framework
+  branch: main
+
+media_folder: assets/images
+public_folder: /assets/images
+
+output:
+  yaml:
+    quote: double
+    indent_size: 2
+
+collections:
+  - name: field-notes
+    label: Field Notes
+    label_singular: Field Note
+    folder: publications/field-notes
+    filter:
+      field: series
+      value: "Coffee and Curiosity"
+    create: true
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{number}}. {{title}}"
+    sortable_fields:
+      fields: [number, date, title]
+      default:
+        field: number
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: subtitle
+        label: Subtitle
+        widget: text
+      - name: author
+        label: Author
+        widget: string
+        default: "Phil Myint"
+      - name: date
+        label: Date
+        widget: datetime
+        format: YYYY-MM-DD
+        time_format: false
+        picker_utc: true
+      - name: series
+        label: Series
+        widget: string
+        default: "Coffee and Curiosity"
+      - name: number
+        label: Number
+        widget: number
+        value_type: int
+        min: 1
+      - name: category
+        label: Category
+        widget: string
+        default: "Field Notes"
+      - name: tags
+        label: Tags
+        widget: list
+        required: false
+      - name: body
+        label: Body
+        widget: markdown

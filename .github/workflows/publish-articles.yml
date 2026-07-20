@@ -7,11 +7,18 @@ on:
       - 'research/**/*.md'
       - 'publications/**/*.md'
 
+# Rapid CMS saves queue multiple runs; only the newest matters because the
+# generator rebuilds every page from the newest SHA each run.
+concurrency:
+  group: publish-articles
+  cancel-in-progress: true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
 
     steps:
       - uses: actions/checkout@v4
@@ -57,5 +64,19 @@ jobs:
             echo "No new pages generated."
           else
             git commit -m "chore: auto-generate reader pages for new articles"
-            git push
+            # a CMS save can land on main mid-run; rebase (md-only user commits
+            # never conflict with html-only bot commits) and retry
+            for i in 1 2 3; do
+              git push && break
+              git pull --rebase origin main
+            done
           fi
+
+      - name: Request Pages build
+        # Pushes made with GITHUB_TOKEN do not reliably trigger a Pages build,
+        # so ask for one explicitly; idempotent when nothing changed.
+        run: |
+          curl -sf -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds"

@@ -15,7 +15,7 @@
 
 ## 🟥 MVP
 
-### 🔵 Framework Site — framework.ordoanimi.com (velocity-architecture repo)
+### 🔵 Framework Site — framework.ordoanimi.com (OrdoAnimi/framework repo)
 
 | # | Item | File(s) | Source |
 |---|------|---------|--------|
@@ -151,7 +151,7 @@
 |---|------|-----------|
 | E1 | ~~Resolve Velocity trademark~~ | ✅ Resolved — framework renamed **The OrdoAnimi Framework** |
 | E7 | ~~brand decision~~ | ✅ Resolved — **OrdoAnimi** is the single umbrella brand for the framework, the company, and the product line (Valour, Executive Fast Track). No separate framework brand. |
-| E2 | Transfer velocity-architecture repo under the OrdoAnimi banner | Pending — destination org/repo location not yet finalised |
+| E2 | Transfer velocity-architecture repo under the OrdoAnimi banner | Done 2026-07-21 — renamed to OrdoAnimi/framework |
 | E3 | Transfer ea-artefact-generator → OrdoAnimi/Fabrica | Pending Phil decision (unrelated to naming resolution) |
 | E4 | Transfer velocity-academy → OrdoAnimi/Arcadium | Pending Phil decision (unrelated to naming resolution) |
 | E5 | Archive/remove unused ZenCloudAU repos after audit | Repo audit (see the OrdoAnimi consolidation plan) |

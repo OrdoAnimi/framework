@@ -19,6 +19,16 @@ exclude:
   - "tools/__pycache__"
   - "tools/tests/__pycache__"
 
+# Field-note .md sources carry YAML frontmatter, so Jekyll would render each
+# as a bare unstyled page at the same URL the generator's real page uses -
+# visible briefly for brand-new notes until the Action's html commit lands.
+# Suppress the Jekyll conversion; the checked-in .html files are untouched.
+defaults:
+  - scope:
+      path: "publications/field-notes"
+    values:
+      published: false
+
 title: "The OrdoAnimi Framework"
 description: "Public knowledge base for the OrdoAnimi Framework, research, policies, guides and publications."
 url: "https://framework.ordoanimi.com"

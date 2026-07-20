@@ -26,6 +26,46 @@ def test_md_headings_and_paragraphs():
     assert "<p>Body line.</p>" in html
 
 
+def test_parse_frontmatter_unescapes_inner_quotes():
+    meta, _ = g.parse_frontmatter('---\ntitle: "He said \\"go\\""\n---\nx')
+    assert meta["title"] == 'He said "go"'
+
+
+def test_md_images_render_before_links():
+    html = g.md_to_html("# T\n\n![Diagram](/assets/images/x.png)")
+    assert '<img src="/assets/images/x.png" alt="Diagram" loading="lazy"/>' in html
+    # plain links still work alongside
+    both = g.md_to_html("# T\n\n![a](/i.png) and [t](https://x.io)")
+    assert '<img src="/i.png"' in both and '<a href="https://x.io">t</a>' in both
+
+
+def _write_note(dirpath, slug, number, extra=""):
+    (dirpath / f"{slug}.md").write_text(
+        f'---\ntitle: "{slug}"\nsubtitle: "s"\ndate: "2026-06-01"\nnumber: {number}\n{extra}---\n\nBody.\n',
+        encoding="utf-8",
+    )
+
+
+def test_load_notes_skips_malformed_number(tmp_path, monkeypatch, capsys):
+    _write_note(tmp_path, "good", 1)
+    (tmp_path / "bad.md").write_text('---\ntitle: "bad"\nnumber: ""\n---\nx', encoding="utf-8")
+    monkeypatch.setattr(g, "FN_DIR", tmp_path)
+    notes = g.load_notes()
+    assert [n["slug"] for n in notes] == ["good"]
+    assert "WARNING skipping bad.md" in capsys.readouterr().out
+
+
+def test_load_notes_rejects_duplicate_numbers(tmp_path, monkeypatch):
+    _write_note(tmp_path, "one", 3)
+    _write_note(tmp_path, "two", 3)
+    monkeypatch.setattr(g, "FN_DIR", tmp_path)
+    try:
+        g.load_notes()
+        assert False, "expected SystemExit for duplicate numbers"
+    except SystemExit as e:
+        assert "duplicate number 3" in str(e)
+
+
 def test_md_emphasis_links_lists():
     assert "<strong>bold</strong>" in g.md_to_html("# T\n\n**bold**")
     assert '<a href="https://x.io">t</a>' in g.md_to_html("# T\n\n[t](https://x.io)")
