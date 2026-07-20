@@ -7,11 +7,11 @@ series: "Coffee and Curiosity"
 number: 2
 category: "Field Notes"
 tags:
-- GitHub
-- Executable Architecture
-- AI Assisted Delivery
-- Decision Governance
-- Practitioner Notes
+  - "GitHub"
+  - "Executable Architecture"
+  - "AI Assisted Delivery"
+  - "Decision Governance"
+  - "Practitioner Notes"
 ---
 
 # The Workshop
@@ -67,3 +67,5 @@ So the badge is a small marker, and the meaningful part is the chance to engage 
 The principle that organises everything else still holds, and the GitHub journey has only made it sharper. AI lowers the activation energy; it does not remove the need for competence. The architect brings structure, AI brings acceleration, the tooling provides the path to deployment, the review loop provides correction, the governance model provides control, and the practitioner still brings taste, judgement, and consequence. That combination is powerful, and it is dangerous if handled lazily. The trail in those repositories is my attempt to handle it in the open, mistakes included.
 
 AI drafts. Architect reviews. Clients receive controlled artefacts. That part is still on us.
+
+CMS live-edit test - this line will be removed.
