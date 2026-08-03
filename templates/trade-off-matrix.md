@@ -86,4 +86,4 @@ This decision should be revisited if:
 > **Test:** Could a delivery team begin work the same day this was agreed?  
 > If not, the decision has not been made.
 
-*OrdoAnimi VP2 | © 2026 Phil Myint / OrdoAnimi | github.com/ZenCloudAU/velocity-architecture*
+*OrdoAnimi VP2 | © 2026 Phil Myint / OrdoAnimi | github.com/OrdoAnimi/framework*

@@ -51,4 +51,4 @@
 > **Test:** Did this remove a debate from a portfolio or funding discussion?  
 > If not, the canvas is incomplete — not ignored.
 
-*OrdoAnimi VP1 | © 2026 Phil Myint / OrdoAnimi | github.com/ZenCloudAU/velocity-architecture*
+*OrdoAnimi VP1 | © 2026 Phil Myint / OrdoAnimi | github.com/OrdoAnimi/framework*

@@ -20,7 +20,7 @@ CC BY 4.0
 | Primary domain         | Enterprise and solution architecture |
 | Extended application   | Organisational leadership and decision governance |
 | Conformance standard   | ISO/IEC/IEEE 42010:2022 |
-| Repository             | github.com/ZenCloudAU/velocity-architecture |
+| Repository             | github.com/OrdoAnimi/framework |
 
 ---
 
@@ -129,4 +129,4 @@ The OrdoAnimi Framework, Version 1.0, claims **full conformance** with ISO/IEC/I
 *The OrdoAnimi Framework — Formal Specification v1.0*  
 *© 2026 Phil Myint / The OrdoAnimi Group · CC BY 4.0.*  
 *ISO/IEC/IEEE 42010:2022 Conformant*  
-*github.com/ZenCloudAU/velocity-architecture*
+*github.com/OrdoAnimi/framework*

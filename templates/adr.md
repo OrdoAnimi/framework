@@ -80,4 +80,4 @@ assert [condition]
 > **Rule:** If reversing this decision requires a sprint or more of rework, it is architectural.  
 > When in doubt, write it down.
 
-*OrdoAnimi VP3 | © 2026 Phil Myint / OrdoAnimi | github.com/ZenCloudAU/velocity-architecture*
+*OrdoAnimi VP3 | © 2026 Phil Myint / OrdoAnimi | github.com/OrdoAnimi/framework*

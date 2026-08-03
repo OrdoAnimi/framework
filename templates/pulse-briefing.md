@@ -68,4 +68,4 @@
 > **Test:** Does each Pulse session produce at least one binding decision?  
 > If not, the Pulse is performing ceremony rather than governance.
 
-*OrdoAnimi VP5 | © 2026 Phil Myint / OrdoAnimi | github.com/ZenCloudAU/velocity-architecture*
+*OrdoAnimi VP5 | © 2026 Phil Myint / OrdoAnimi | github.com/OrdoAnimi/framework*
