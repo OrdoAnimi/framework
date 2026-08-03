@@ -13,7 +13,17 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 RAW_BASE = 'https://raw.githubusercontent.com/OrdoAnimi/framework/main'
 GITHUB_BASE = 'https://github.com/OrdoAnimi/framework/blob/main'
-SKIP_FILES = {'SOURCES.md', 'PUBLISHING.md', 'README.md', 'CITATION.cff', 'CONTRIBUTING.md'}
+SKIP_FILES = {
+    'SOURCES.md', 'PUBLISHING.md', 'README.md', 'CITATION.cff', 'CONTRIBUTING.md',
+    # Orphaned uppercase-slug duplicates of already-published lowercase-slug
+    # articles - a hand-built reader page exists for each at the lowercase
+    # URL and fetches from this exact source file. Without this skip, the
+    # generator recreates a broken duplicate reader at the uppercase URL on
+    # every run (it did, twice, before this fix).
+    'EA-Artefacts-True-Purpose-Value-Metrics.md',
+    'EA-Value-Over-Time-Analysis.md',
+    'MVP-MLP-Empirical-Evidence.md',
+}
 
 ECOSYSTEM_STRIP = (
 ''
