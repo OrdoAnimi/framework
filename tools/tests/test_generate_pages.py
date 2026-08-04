@@ -35,7 +35,7 @@ class TestDeriveEyebrow(unittest.TestCase):
         self.assertIn('Addendum', derive_eyebrow('foo-addendum-may-2026', 'May 2026'))
 
     def test_working_paper(self):
-        self.assertIn('Working Paper', derive_eyebrow('zencloud-governance-june-2026', 'June 2026'))
+        self.assertIn('Working Paper', derive_eyebrow('ordoanimi-governance-june-2026', 'June 2026'))
 
     def test_series(self):
         self.assertIn('Research Series', derive_eyebrow('05-new-topic', ''))
