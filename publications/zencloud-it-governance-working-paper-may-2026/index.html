@@ -1,76 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Comparative Analysis of IT Governance Frameworks — OrdoAnimi Publications</title>
-<meta name="description" content="A decision-first working paper comparing IT governance and architecture frameworks against Australian public sector audit outcomes, 2025–2026.">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
-<style>
-:root{--bg:#f2ede0;--surface:#faf7ef;--surface-2:#ebe4d2;--border:#ded7c4;--text:#0b0e11;--text-2:#5a6354;--text-3:#8c9184;--accent:#b8924e;--accent-subtle:#f7f0dc;--ink:#0b0e11;--ink-2:#0b0e11;--r:10px;--shadow-md:0 4px 12px rgba(11,14,17,.08),0 2px 4px rgba(11,14,17,.04)}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:auto}body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.65}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}nav{position:sticky;top:0;z-index:10;background:rgba(250,247,239,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}.brand{font-family:'Playfair Display', Georgia, serif;font-weight:700;color:var(--text)}.brand sup{font-size:.5rem;color:var(--accent);vertical-align:super}.nav-links{display:flex;gap:1.25rem;flex-wrap:wrap}.nav-links a{font-size:.85rem;color:var(--text-2)}.nav-cta{display:inline-block;padding:.45rem 1rem;background:var(--accent);color:#0b0e11;font-family:'DM Mono',monospace;font-size:.65rem;font-weight:500;letter-spacing:.08em;text-decoration:none;border-radius:4px}.nav-cta:hover{background:#96753a}@media(max-width:768px){.nav-links{display:none}.nav-cta{display:none}}main{max-width:980px;margin:0 auto;padding:3rem 2rem}.breadcrumb{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.08em;color:var(--text-3);margin-bottom:1.5rem}.breadcrumb a{color:var(--text-3)}.breadcrumb a:hover{color:var(--accent)}.hero{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:2rem;box-shadow:var(--shadow-md);margin-bottom:1.5rem}.eyebrow{font-family:'DM Mono',monospace;font-size:.65rem;font-weight:500;letter-spacing:.18em;color:var(--accent);display:block;margin-bottom:.75rem}h1{font-family:'Playfair Display', Georgia, serif;font-size:clamp(1.8rem,4vw,3rem);line-height:1.1;margin-bottom:.75rem}.lead{color:var(--text-2);max-width:760px;line-height:1.65}.meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}.pill{font-family:'DM Mono',monospace;font-size:.65rem;color:var(--accent);background:var(--accent-subtle);border:1px solid #e8dcc0;border-radius:999px;padding:.25rem .6rem}.reader-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.5rem 0}.reader-actions a{display:inline-flex;align-items:center;min-height:36px;padding:0 .9rem;border:1px solid var(--border);border-radius:7px;background:var(--surface);font-size:.82rem;color:var(--text-2)}.reader-actions a.primary{background:var(--accent);border-color:var(--accent);color:#faf7ef}.reader-actions a:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}.reader-actions a.primary:hover{background:#96753a;color:#0b0e11}.article{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:2.25rem;box-shadow:var(--shadow-md)}.loading,.error{font-family:'DM Mono',monospace;font-size:.85rem;color:var(--text-3)}.md{font-size:.96rem;color:var(--text-2);line-height:1.78}.md h1{font-family:'Playfair Display', Georgia, serif;font-size:2.15rem;line-height:1.15;color:var(--text);margin-bottom:1rem}.md h2{font-family:'Playfair Display', Georgia, serif;font-size:1.45rem;color:var(--text);margin:2.2rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}.md h3{font-size:1.05rem;font-weight:700;color:var(--text);margin:1.6rem 0 .5rem}.md h4{font-family:'DM Mono',monospace;font-size:.75rem;font-weight:500;letter-spacing:.12em;color:var(--accent);margin:1.25rem 0 .35rem}.md p{margin-bottom:1rem}.md strong{color:var(--text);font-weight:700}.md ul,.md ol{margin:0 0 1rem 1.4rem}.md li{margin-bottom:.35rem}.md blockquote{border-left:3px solid var(--accent);background:var(--accent-subtle);border-radius:0 6px 6px 0;margin:1.5rem 0;padding:.8rem 1.2rem;color:var(--text)}.md blockquote p{margin:0;font-style:italic}.md hr{border:none;border-top:1px solid var(--border);margin:2rem 0}.md table{width:100%;border-collapse:collapse;margin:1.2rem 0;display:block;overflow-x:auto}.md th,.md td{border:1px solid var(--border);padding:.55rem .75rem;text-align:left}.md th{background:var(--surface-2);font-family:'DM Mono',monospace;font-size:.68rem;color:var(--text-2);text-transform:uppercase}.md code{font-family:'DM Mono',monospace;font-size:.82em;background:var(--surface-2);border:1px solid var(--border);padding:.1em .4em;border-radius:3px}.md pre{background:var(--ink-2);border-radius:8px;padding:1.25rem 1.5rem;overflow-x:auto;margin-bottom:1.25rem}.md pre code{background:none;border:none;padding:0;font-size:.82rem;color:#ded7c4;line-height:1.6}.md a{color:var(--accent)}.source{margin-top:1.5rem;font-family:'DM Mono',monospace;font-size:.72rem;color:var(--text-3)}footer{margin-top:3rem;background:var(--ink-2);color:rgba(222,215,196,.65);padding:2rem;border-radius:var(--r)}.footer-links{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem}.footer-links a{color:#c9bfa6;font-size:.8rem}@media(max-width:720px){nav{align-items:flex-start;padding:1rem}main{padding:2rem 1rem}.article,.hero{padding:1.25rem}}
-</style>
+<meta http-equiv="refresh" content="0; url=../it-governance-working-paper-may-2026/">
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/it-governance-working-paper-may-2026/">
+<title>Moved — OrdoAnimi Publications</title>
 </head>
 <body>
-
-
-<nav>
-  <a class="brand" href="../../index.html">OrdoAnimi</a>
-  <div class="nav-links">
-    <a href="../../index.html">Framework</a>
-    <a href="../../publications/">Publications</a>
-    <a href="../../guides/">Guides</a>
-  </div>
-  <a href="https://framework.ordoanimi.com/app/portal.html" class="nav-cta" target="_blank" rel="noopener">Open agent ↗</a>
-</nav>
-<main>
-  <div class="breadcrumb">
-    <a href="../../index.html">OrdoAnimi</a> ›
-    <a href="../../publications/">Publications</a> ›
-    IT Governance Working Paper
-  </div>
-  <section class="hero">
-    <span class="eyebrow">Working Paper · May 2026</span>
-    <h1>A Comparative Analysis of IT Governance Frameworks</h1>
-    <p class="lead">Investigating the relationship between documented intent and reported outcomes in the Australian public sector, 2025–2026.</p>
-    <div class="meta">
-      <span class="pill">COBIT</span><span class="pill">ITIL</span><span class="pill">TOGAF</span><span class="pill">ISO 38500</span><span class="pill">NIST CSF</span><span class="pill">PMBOK</span><span class="pill">SAFe</span><span class="pill">ArchiMate</span>
-    </div>
-  </section>
-  <div class="reader-actions">
-    <a class="primary" href="../">← Publication library</a>
-    <a href="../../index.html">The OrdoAnimi Framework</a>
-    OrdoAnimi
-  </div>
-  <article class="article" id="article"><p class="loading">Loading document…</p></article>
-
-  <footer>
-    <strong>OrdoAnimi advises, builds, and decides.</strong>
-    <div class="footer-links">
-      <a href="../../publications/">Publications</a>
-      <a href="../../index.html">The OrdoAnimi Framework</a>
-      OrdoAnimi
-      
-    </div>
-  </footer>
-</main>
-<script>
-const SRC='https://raw.githubusercontent.com/OrdoAnimi/velocity-architecture/main/research/zencloud-it-governance-working-paper-may-2026.md';
-async function load(){
-  const el=document.getElementById('article');
-  try{
-    const r=await fetch(SRC);
-    if(!r.ok)throw 0;
-    el.innerHTML='<div class="md">'+marked.parse(await r.text())+'</div>';
-  }catch{
-    el.innerHTML='<p class="error">Could not load document. <a href="https://github.com/OrdoAnimi/velocity-architecture/blob/main/research/zencloud-it-governance-working-paper-may-2026.md" target="_blank" rel="noopener">View on GitHub ↗</a></p>';
-  }
-}
-load();
-</script>
+<p>This page has moved to <a href="../it-governance-working-paper-may-2026/">/publications/it-governance-working-paper-may-2026/</a>.</p>
 </body>
 </html>

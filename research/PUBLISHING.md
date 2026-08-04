@@ -18,7 +18,7 @@ Example:
 
 ```text
 Source file:
-research/zencloud-it-governance-working-paper-may-2026.md
+research/it-governance-working-paper-may-2026.md
 
 Reader page:
 https://framework.ordoanimi.com/research/
