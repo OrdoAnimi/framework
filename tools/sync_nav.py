@@ -73,6 +73,7 @@ KB_FOOTER = (
 ' <a href="/examples/">Examples</a>\n'
 ' <a href="/templates/">Templates</a>\n'
 ' <a href="/policies/">Policies</a>\n'
+' <a href="/admin/">Edit</a>\n'
 ' </div>\n'
 ' </div>\n'
 '</footer>'
@@ -103,7 +104,8 @@ LEAN_FOOTER = (
 '<a href="/diagnostics/">Diagnostics</a> · '
 '<a href="/examples/">Examples</a> · '
 '<a href="/templates/">Templates</a> · '
-'<a href="/policies/">Policies</a>'
+'<a href="/policies/">Policies</a> · '
+'<a href="/admin/">Edit</a>'
 '</footer>'
 )
 
@@ -138,6 +140,7 @@ READER_FOOTER = (
 ' <div class="footer-links">\n'
 ' <a href="/research/">Research</a>\n'
 ' <a href="/">The OrdoAnimi Framework</a>\n'
+' <a href="/admin/">Edit</a>\n'
 ' </div>\n'
 ' </footer>'
 )

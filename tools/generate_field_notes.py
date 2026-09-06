@@ -132,6 +132,7 @@ FOOTER = (
     '<a href="/publications/field-notes/">Field Notes</a>\n'
     '<a href="/publications/">Publications</a>\n'
     '<a href="/">Framework</a>\n'
+    '<a href="/admin/">Edit</a>\n'
     '</div>\n'
     '</div>\n'
     '</footer>'
