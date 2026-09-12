@@ -99,9 +99,20 @@ footer.site .footer-links a{color:#c9bfa6;font-size:.8rem}
 <aside class="toc" id="toc">
 <div class="toc-head">Signal</div>
 <div class="toc-subtitle">Phil Myint</div>
-<div class="toc-sub">8 Posts . Fortnightly</div>
+<div class="toc-sub">10 Posts . Fortnightly</div>
 <input type="text" class="toc-search" id="tocSearch" placeholder="Filter&#x2026;" aria-label="Filter">
-<nav id="tocList" aria-label="Table of contents"></nav>
+<nav id="tocList" aria-label="Table of contents">
+<a class="ch" href="post-01-executing-a-guess.html" data-id="01"><span class="num">01</span><span class="t">Executing a Guess</span></a>
+<a class="ch" href="post-02-organisational-amnesia-first-kind.html" data-id="02"><span class="num">02</span><span class="t">Organisational Amnesia: The First Kind</span></a>
+<a class="ch" href="post-03-organisational-amnesia-second-kind.html" data-id="03"><span class="num">03</span><span class="t">Organisational Amnesia: The Second Kind</span></a>
+<a class="ch" href="post-04-the-map-and-the-territory.html" data-id="04"><span class="num">04</span><span class="t">The Map and the Territory</span></a>
+<a class="ch" href="post-05-the-decaying-map.html" data-id="05"><span class="num">05</span><span class="t">The Decaying Map</span></a>
+<a class="ch" href="post-06-the-gap-between-the-map-and-the-ground.html" data-id="06"><span class="num">06</span><span class="t">The Gap Between the Map and the Ground</span></a>
+<a class="ch" href="post-07-the-exemption-door.html" data-id="07"><span class="num">07</span><span class="t">The Exemption Door</span></a>
+<a class="ch" href="post-08-who-called-the-ea.html" data-id="08"><span class="num">08</span><span class="t">Who Called the EA?</span></a>
+<a class="ch" href="post-09-the-convenient-unknown.html" data-id="09"><span class="num">09</span><span class="t">The Convenient Unknown</span></a>
+<a class="ch" href="post-10-the-person-who-knew.html" data-id="10"><span class="num">10</span><span class="t">The Person Who Knew</span></a>
+</nav>
 
 </aside>
 <main class="reader">
@@ -132,14 +143,16 @@ const CH = [
 ['05',"The Decaying Map","post-05-the-decaying-map.md"],
 ['06',"The Gap Between the Map and the Ground","post-06-the-gap-between-the-map-and-the-ground.md"],
 ['07',"The Exemption Door","post-07-the-exemption-door.md"],
-['08',"Who Called the EA?","post-08-who-called-the-ea.md"]
+['08',"Who Called the EA?","post-08-who-called-the-ea.md"],
+['09',"The Convenient Unknown","post-09-the-convenient-unknown.md"],
+['10',"The Person Who Knew","post-10-the-person-who-knew.md"]
 ];
 const idx = {};
 CH.forEach((c,i) => idx[c[0]] = i);
 const _entityDecoder = document.createElement('textarea');
 function decodeEntities(s) { _entityDecoder.innerHTML = s; return _entityDecoder.value; }
 const tocList = document.getElementById('tocList');
-CH.forEach((c) => {
+if (!tocList.querySelector('a.ch')) CH.forEach((c) => {
   const a = document.createElement('a');
   a.className = 'ch';
   a.href = '#' + c[0];

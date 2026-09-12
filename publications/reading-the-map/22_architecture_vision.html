@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Architecture Vision &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/22_architecture_vision.html"/>
+<meta property="og:title" content="The Architecture Vision"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/22_architecture_vision.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 22</span>
+<h1 class="article-title">The Architecture Vision</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>There is a phase of architectural work that almost everyone skips, and skipping it is the single most reliable predictor of an expensive failure later. It is the phase that comes before the diagrams, before the gap analysis, before the roadmap &mdash; the phase where someone writes down, in language a board can read, what this piece of architecture is actually for.</p>
+<p>In TOGAF it is called <strong>Phase A: Architecture Vision</strong>. The name makes it sound grand and optional. It is neither. It is the cheapest phase to do and the most expensive to skip, because it is the phase that decides whether the rest of the work is aimed at the right target.</p>
+<p>This chapter explains what an Architecture Vision contains, why organisations skip it, and what skipping it costs &mdash; using Meridian&rsquo;s VMware exit programme, which nearly became the wrong programme before anyone wrote its vision down.</p>
+<hr class="content-divider"/>
+<h2>What a Vision Is and Is Not</h2>
+<p>An Architecture Vision is not a mission statement. It is not a slogan. It is a short, concrete document &mdash; ideally one page &mdash; that establishes the boundary, the purpose, and the success criteria of a specific piece of architectural work before that work begins.</p>
+<p>A useful vision answers seven questions.</p>
+<p><strong>What problem are we solving?</strong> Stated as a problem, not a solution. &ldquo;VMware licensing costs have tripled and our infrastructure is at end of life&rdquo; is a problem. &ldquo;We are migrating to Azure&rdquo; is a solution masquerading as a problem.</p>
+<p><strong>Who are the stakeholders, and what does each of them need?</strong> The CFO needs cost control. The clinical director needs no disruption to patient care. The infrastructure team needs a survivable migration path. A vision that names only one stakeholder&rsquo;s need is the seed of a later conflict.</p>
+<p><strong>What is in scope, and &mdash; more importantly &mdash; what is out?</strong> Scope boundaries prevent the slow expansion that turns a contained programme into an unbounded one.</p>
+<p><strong>What does success look like?</strong> In measurable terms. Not &ldquo;modernised infrastructure&rdquo; but &ldquo;all production workloads off VMware by Q4 2027, hosting cost reduced by 30%, no Sev-1 clinical incidents attributable to migration.&rdquo;</p>
+<p><strong>What constraints are fixed?</strong> Budget, regulatory obligations, clinical safety requirements, existing contracts. Constraints are not obstacles to be wished away; they are the shape of the solution space.</p>
+<p><strong>What are the major risks?</strong> Named early, while they can still be designed around.</p>
+<p><strong>What is the high-level approach?</strong> One paragraph. Enough to show the work is feasible, not enough to pre-empt the design.</p>
+<p>A vision that answers these seven questions fits on a page and takes a few days to produce. That is the entire point. It is a cheap instrument for catching expensive mistakes.</p>
+<hr class="content-divider"/>
+<h2>Why It Gets Skipped</h2>
+<p>The Architecture Vision gets skipped for a reason that is entirely understandable and entirely wrong: it feels like overhead before the real work.</p>
+<p>When an organisation has a burning platform &mdash; a licensing crisis, an end-of-life system, a regulator&rsquo;s deadline &mdash; the instinct is to act. Writing a one-page vision feels like delay. The team that produces a migration plan in week one looks decisive. The architect who asks to spend three days agreeing what success means looks like a bureaucrat slowing things down.</p>
+<p>This instinct is reinforced by how delivery is rewarded. Project managers are measured on movement. A Gantt chart with bars on it is visible progress. A vision document is not a deliverable anyone is chasing. So the vision is skipped, the migration plan is produced, and the work begins.</p>
+<p>The cost arrives later, and it arrives disguised. The migration runs into a clinical-safety objection nobody anticipated because the clinical director was never asked what she needed. The budget overruns because the scope quietly expanded &mdash; every adjacent system got swept in because there was no boundary to point to. The programme delivers something, and then a stakeholder says &ldquo;but that&rsquo;s not what we needed&rdquo;, and they are right, because nobody ever wrote down what was needed.</p>
+<p>The vision phase is insurance. Like all insurance, it feels like a waste right up until the moment it would have paid out.</p>
+<hr class="content-divider"/>
+<h2>What Skipping It Costs at Meridian</h2>
+<p><em>Meridian&rsquo;s VMware exit begins, as these things do, as a procurement decision. The licensing renewal has tripled. The infrastructure team produces a recommendation: migrate the virtual estate to the public cloud, lift-and-shift, starting with the least critical workloads. A delivery plan is drafted. A cloud partner is shortlisted. The programme has momentum before anyone has written down what it is for.</em></p>
+<p><em>The EA, newly in post, asks for three days to produce an Architecture Vision before the procurement proceeds. The request is mildly resented. She produces a one-page document anyway, and the act of writing it surfaces three problems the migration plan had not.</em></p>
+<p><em>The first: the success criteria nobody had agreed. The infrastructure team&rsquo;s measure of success was &ldquo;off VMware&rdquo;. The CFO&rsquo;s was &ldquo;lower run cost&rdquo;. These are not the same thing, and a lift-and-shift to cloud can achieve the first while making the second worse &mdash; cloud infrastructure billed by consumption can cost more than depreciated on-premises hardware if the workloads are not re-architected. Without a vision, the programme could have succeeded on the infrastructure team&rsquo;s measure and failed on the CFO&rsquo;s, and nobody would have noticed until the first cloud bill arrived.</em></p>
+<p><em>The second: the clinical-safety constraint nobody had named. Two of the &ldquo;least critical&rdquo; workloads scheduled for early migration turned out to feed the community nursing caseload tool &mdash; the spreadsheet from Chapter 20 &mdash; which clinicians relied on daily in the field. Migrating them first, before understanding the dependency, would have created a clinical risk in week one of the programme.</em></p>
+<p><em>The third: the scope boundary nobody had drawn. The migration plan, on inspection, had quietly absorbed the EPR consolidation question, because two of the EPR-adjacent systems ran on the VMware estate. A VMware exit and an EPR consolidation are different programmes with different stakeholders, different risks, and different timescales. Fusing them by accident would have made both harder.</em></p>
+<p><em>None of these problems were exotic. All three were visible the moment someone wrote down what the programme was for. The vision did not require special insight. It required the discipline to spend three days answering seven questions before spending three million pounds answering none of them.</em></p>
+<hr class="content-divider"/>
+<h2>The One-Page Format</h2>
+<p>The discipline of the one-page constraint matters as much as the content. A vision that runs to forty pages is not a vision; it is a design document wearing a vision&rsquo;s name, and it defeats the purpose &mdash; which is to be read, agreed, and held in mind by people who will never read forty pages.</p>
+<p>A workable one-page format has a heading for each of the seven questions and a few sentences under each. The problem statement. The stakeholders and their needs. The scope, in and out. The success criteria, measurable. The fixed constraints. The principal risks. The high-level approach. A signature line for the sponsor who agrees it.</p>
+<p>That signature line is doing quiet work. A vision that nobody has agreed is just an architect&rsquo;s opinion. A vision the sponsor has signed is a contract about what the work is for &mdash; and when the scope starts to expand or the success criteria start to drift, the signed vision is the document you return to. <em>&ldquo;This is what we agreed this programme was for. The thing being proposed now is a different programme. Do we want to change the vision, or change the proposal?&rdquo;</em> That question, asked early, prevents most of the expensive drift that afflicts large programmes.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>TOGAF says:</strong> &ldquo;Phase A: Architecture Vision creates the architecture vision, validates the business context, and creates the Statement of Architecture Work.&rdquo; &gt; <strong>What that means:</strong> Before you do the work, agree what the work is, who it is for, what success looks like, and who is sponsoring it. Write it down. Get it signed. The &ldquo;Statement of Architecture Work&rdquo; is just the formal name for the agreement that this is the work and these are its boundaries.</p></blockquote>
+<blockquote><p><strong>Sponsors say:</strong> &ldquo;Can we just get on with it? We know what the problem is.&rdquo; &gt; <strong>What that means:</strong> Usually they know the symptom, not the agreed problem. The test is simple: if you asked three stakeholders to write down the success criteria separately, would they match? If you are confident they would, you may genuinely be able to move fast. If you are not confident &mdash; and you rarely should be &mdash; the three days spent agreeing the vision will save the three months spent recovering from its absence.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>The Architecture Vision is the cheapest phase and the most expensive to skip. It is a one-page agreement about what a piece of architectural work is for &mdash; the problem, the stakeholders, the scope, the success criteria, the constraints, the risks, and the approach &mdash; produced before the work begins and signed by the sponsor. It feels like overhead because it produces no diagrams and moves no Gantt bars, and it is skipped for exactly that reason. The cost of skipping it arrives later and disguised: the right work aimed at the wrong target. An organisation that writes its visions down spends a few days catching the mistakes that an organisation that skips them spends months recovering from.</p>
+<p><strong>Next:</strong> Chapter 23 turns to the two states every architecture has to hold in tension &mdash; the current state you actually have and the target state you are trying to reach &mdash; and why documenting the first without letting it consume six months is its own discipline.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The Open Group &mdash; TOGAF Standard: Phase A, Architecture Vision</strong> (opengroup.org): The canonical description of the phase and the Statement of Architecture Work. Read the inputs and outputs sections; the rest is process detail you can apply selectively.</li><li><strong>Richard Rumelt &mdash; Good Strategy / Bad Strategy</strong> (Profile Books, 2011): Not an architecture text, but its account of the &ldquo;kernel&rdquo; of good strategy &mdash; diagnosis, guiding policy, coherent action &mdash; is the clearest available explanation of why a vision must state a problem before it states a solution.</li><li><strong>Gojko Adzic &mdash; Impact Mapping</strong> (Provoking Thoughts, 2012): A practical technique for connecting a goal to the stakeholders, behaviours, and deliverables that would achieve it &mdash; effectively a vision-on-a-page method that delivery teams find easier to adopt than the TOGAF template.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="21_how_frameworks_work_together.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">How the Frameworks Work Together</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="23_current_and_target_state.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Current State and Target State</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

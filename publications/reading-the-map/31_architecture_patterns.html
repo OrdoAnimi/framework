@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Architecture Patterns &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/31_architecture_patterns.html"/>
+<meta property="og:title" content="Architecture Patterns"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/31_architecture_patterns.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 31</span>
+<h1 class="article-title">Architecture Patterns</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>When an experienced architect looks at a tangle of systems and says, almost immediately, &ldquo;this is a hub-and-spoke problem&rdquo; or &ldquo;you&rsquo;ve got an accidental point-to-point mesh here,&rdquo; they are not performing intuition. They are recognising a <strong>pattern</strong> &mdash; a recurring shape that has been seen and named before, that comes with a known set of strengths, weaknesses, and failure modes. Pattern recognition is what lets an architect move quickly from &ldquo;this is a mess&rdquo; to &ldquo;this is a specific <em>kind</em> of mess, and here is what usually goes wrong with it.&rdquo;</p>
+<p>This chapter introduces architecture patterns as a recognition vocabulary. The goal is not to teach you to design with patterns &mdash; that is practitioner work &mdash; but to teach you to <em>read</em> them: to recognise the common shapes when they appear, to know what questions each one prompts, and to understand that naming the pattern you are looking at tells you what its known failure modes are.</p>
+<hr class="content-divider"/>
+<h2>What a Pattern Is</h2>
+<p>A pattern is a reusable solution to a recurring problem in a context. The idea came into software from building architecture, via Christopher Alexander, and then into enterprise architecture from software. At every level the core idea is the same: certain problems recur, certain shapes of solution recur, and capturing the recurring shape &mdash; with its trade-offs &mdash; lets each new team benefit from the accumulated experience of every team that met the problem before.</p>
+<p>A pattern is not a template you copy. It is a named shape with documented consequences. The value is less in the shape itself than in the consequences attached to it: when you recognise that you are looking at a particular pattern, you inherit the whole history of what tends to go right and wrong with it. The name is a handle on a body of experience.</p>
+<p>This is why pattern literacy is so useful to a non-architect. You do not need to be able to implement a pattern to benefit from recognising one. Recognising that an integration approach is &ldquo;point-to-point&rdquo; immediately tells you to ask about the number of connections and what happens when one breaks &mdash; because those are the known failure modes of that pattern, and the pattern&rsquo;s name is what surfaces them.</p>
+<hr class="content-divider"/>
+<h2>The Common Enterprise Patterns</h2>
+<p>A handful of patterns recur often enough across enterprise estates that recognising them covers most of the ground a reader will encounter.</p>
+<p><strong>Point-to-point integration.</strong> Each system connects directly to each other system that it needs to exchange data with. Simple for any single connection, disastrous in aggregate: the number of connections grows roughly with the square of the number of systems, and each connection is a dependency that can break. The known failure mode is the unmanageable mesh &mdash; exactly Meridian&rsquo;s 34 integrations. Recognising this pattern prompts the question: <em>how many connections, and how do we change one system without breaking the others?</em></p>
+<p><strong>Hub-and-spoke.</strong> Systems connect not to each other but to a central hub that mediates all exchange. This collapses the connection count and centralises management, monitoring, and error handling. The trade-off is that the hub becomes critical &mdash; if it fails, everything fails &mdash; and it can become a bottleneck. Recognising hub-and-spoke prompts: <em>what happens when the hub is down, and is it sized for the load?</em></p>
+<p><strong>Event-driven.</strong> Systems communicate by emitting and reacting to events rather than calling each other directly. This decouples systems &mdash; a producer does not need to know who consumes its events &mdash; and scales well, but it makes the overall flow harder to trace and reason about. The known failure mode is the system whose behaviour nobody can fully follow because it is distributed across many independent reactions. Recognising it prompts: <em>how do we trace what happens when an event fires, and how do we debug it?</em></p>
+<p><strong>Microservices.</strong> A large application is decomposed into many small, independently deployable services. This buys flexibility and independent scaling at the cost of operational complexity and the network sitting between every formerly-internal call. The known failure mode is distributed complexity &mdash; a hundred small services that are individually simple and collectively incomprehensible. Recognising it prompts: <em>what is the operational cost of running this many services, and where are the failure boundaries?</em></p>
+<p><strong>API-first.</strong> Capabilities are exposed through well-defined, stable interfaces (APIs) before and independently of the applications that consume them. This enables reuse and clean integration, and it is the healthy answer to the point-to-point problem. Recognising it prompts: <em>who owns the API, how is it versioned, and what happens to consumers when it changes?</em></p>
+<p><strong>Data mesh.</strong> Data is owned and served by the domains that produce it, as products, rather than centralised in one warehouse. It addresses the bottleneck of a single central data team but requires real domain ownership and governance to work. Recognising it prompts: <em>do the domains actually have the ownership and discipline this pattern assumes?</em></p>
+<hr class="content-divider"/>
+<h2>Patterns Carry Their Failure Modes</h2>
+<p>The single most useful thing about patterns, for a reader, is that each one comes with its characteristic way of going wrong. Knowing the pattern is knowing the failure mode to watch for.</p>
+<p>Point-to-point fails by proliferation. Hub-and-spoke fails by central-point fragility. Event-driven fails by untraceable flow. Microservices fail by operational sprawl. API-first fails by breaking changes that ripple to unknown consumers. Data mesh fails when the domain ownership it assumes does not actually exist.</p>
+<p>This means that naming a pattern is also diagnosing a risk. When someone proposes solving Meridian&rsquo;s integration problem by building a hub, the experienced response is not &ldquo;good&rdquo; or &ldquo;bad&rdquo; but &ldquo;so the hub becomes critical &mdash; what is our resilience plan for it?&rdquo; The pattern name surfaces the question that matters. An architect who cannot name the failure mode of the pattern they are proposing has not finished thinking about it.</p>
+<hr class="content-divider"/>
+<h2>Meridian&rsquo;s Integration Problem, Named</h2>
+<p><em>Meridian&rsquo;s integration estate is a textbook case of one pattern that needs to become another, and naming the patterns clarifies the whole programme.</em></p>
+<p><em>The current state is an accidental point-to-point mesh. Nobody designed it as a pattern; it emerged, connection by connection, each added because it was the quickest way to move data at the time. But it is unmistakably the point-to-point pattern, and naming it as such immediately imports the known consequences: the connection count is unmanageable, every change is high-risk, and a broken connection fails silently. The EA does not need to discover these problems by investigation &mdash; recognising the pattern predicts them.</em></p>
+<p><em>The target, defined as the integration ABB in Chapter 29, is essentially a move to hub-and-spoke with API-first characteristics: a central integration platform that mediates exchange, with systems exposing stable interfaces rather than wiring directly to each other. Naming the target pattern also imports its failure mode &mdash; the hub becomes critical &mdash; which is precisely why the ABB specified safe degradation and robust monitoring. The resilience requirements that looked like good practice in Chapter 29 are revealed, in pattern terms, as the direct mitigation of hub-and-spoke&rsquo;s known weakness. The pattern vocabulary connects the requirement to the reason.</em></p>
+<p><em>The insight the EA takes to the leadership team is expressible in one sentence once the patterns are named: &ldquo;We are moving from an accidental point-to-point mesh, whose failure mode is silent breakage at scale, to a managed hub, whose failure mode is central-point fragility &mdash; so the investment is not just in the hub, it is in the hub&rsquo;s resilience.&rdquo; That sentence is far more useful than a diagram of 34 lines, and it is available only to someone who can name what they are looking at.</em></p>
+<hr class="content-divider"/>
+<h2>Reading Patterns in the Field</h2>
+<p>For a reader, patterns are a listening skill. In an architecture conversation, the patterns are often named explicitly &mdash; &ldquo;we&rsquo;ll use an event-driven approach&rdquo;, &ldquo;this is really a microservices question&rdquo; &mdash; and recognising the name lets you follow the reasoning and ask the failure-mode question. When the pattern is <em>not</em> named but is clearly present, naming it yourself can be a genuine contribution: &ldquo;isn&rsquo;t this effectively point-to-point? what happens when one of these connections breaks?&rdquo; is a question that demonstrates architectural thinking without requiring architectural authority (a theme Chapter 48 develops).</p>
+<p>The discipline is to treat every pattern as a package of trade-offs rather than a good or bad choice. There is no best pattern. There is the pattern suited to the problem, the constraints, and the organisation&rsquo;s capacity to operate it. Hub-and-spoke is right for Meridian not because it is superior to point-to-point in the abstract but because Meridian&rsquo;s specific problem &mdash; too many fragile connections, a need for central monitoring, a patient-safety requirement for detected failure &mdash; is exactly the problem hub-and-spoke solves and point-to-point creates.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>Architects say:</strong> &ldquo;This is basically a hub-and-spoke pattern &mdash; we should consolidate the integrations through a platform.&rdquo; &gt; <strong>What that means:</strong> They have recognised the shape of the problem and are proposing a known solution with known trade-offs. The useful follow-up is always about the trade-off: hub-and-spoke centralises and simplifies, but it makes the hub critical, so what is the plan for when the hub fails?</p></blockquote>
+<blockquote><p><strong>Vendors say:</strong> &ldquo;Our platform is event-driven and microservices-based &mdash; it&rsquo;s the modern architecture.&rdquo; &gt; <strong>What that means:</strong> These are patterns, not virtues. Event-driven and microservices solve specific problems and create specific costs &mdash; distributed complexity and hard-to-trace flows. &ldquo;Modern&rdquo; is not a reason; the question is whether the problem you have is the problem these patterns solve, and whether you can operate the complexity they bring.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>Architecture patterns are a recognition vocabulary &mdash; named, recurring shapes that carry documented consequences. Their value to a reader is not in designing with them but in reading them: recognising the common shapes (point-to-point, hub-and-spoke, event-driven, microservices, API-first, data mesh) and knowing that each one arrives with its characteristic failure mode. Naming a pattern is therefore also diagnosing a risk, because the name surfaces the question that matters &mdash; what happens when the hub fails, how do we trace the event flow, who owns the API when it changes. There is no best pattern, only the pattern suited to the problem and the organisation&rsquo;s capacity to operate it, and the most useful skill is to treat every pattern as a package of trade-offs rather than a verdict.</p>
+<p><strong>Next:</strong> Chapter 32 leaves the technical concepts behind and turns to the dimension the certification courses omit &mdash; how architecture actually operates inside the political and human life of an organisation.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>Gregor Hohpe &amp; Bobby Woolf &mdash; Enterprise Integration Patterns</strong> (Addison-Wesley, 2003): The definitive catalogue of integration patterns, including hub-and-spoke (the &ldquo;message broker&rdquo;) and point-to-point. Two decades old and still the reference; the patterns have not changed.</li><li><strong>Mark Richards &amp; Neal Ford &mdash; Fundamentals of Software Architecture</strong> (O&rsquo;Reilly, 2020): The clearest modern survey of architectural styles &mdash; layered, event-driven, microservices, and others &mdash; each presented with its trade-offs, which is exactly the failure-mode framing this chapter advocates.</li><li><strong>Christopher Alexander &mdash; A Pattern Language</strong> (Oxford University Press, 1977): The origin of the pattern idea, from building architecture. Worth reading once to understand why a pattern is a shape-with-consequences rather than a template, and why the idea travelled so well into software.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="30_transition_architecture.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">Transition Architecture</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="32_reading_the_room.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Reading the Room</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

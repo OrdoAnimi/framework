@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>From Any Role into EA Thinking &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 6 · Navigating the Territory"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/46_from_any_role_into_ea_thinking.html"/>
+<meta property="og:title" content="From Any Role into EA Thinking"/>
+<meta property="og:description" content="Part 6 · Navigating the Territory"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/46_from_any_role_into_ea_thinking.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 46</span>
+<h1 class="article-title">From Any Role into EA Thinking</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 6 · Navigating the Territory</em></p>
+<hr class="content-divider"/>
+<p>The book turns outward now. The first five parts mapped the territory &mdash; the frameworks, the concepts, the diagrams, the language. This part is about you, the reader, wherever you happen to be sitting. And it opens with a claim that is the quiet thesis of the whole book: you are almost certainly already doing enterprise architecture thinking. You just have not been told that is what it is called.</p>
+<p>This chapter shows five common IT roles &mdash; the helpdesk analyst, the developer, the infrastructure engineer, the project manager, the business analyst &mdash; each already practising EA thinking in the course of ordinary work. The point is not flattery. It is to give you the vocabulary to recognise and name what you already do, because naming it is the first step to doing it deliberately and being seen to do it.</p>
+<hr class="content-divider"/>
+<h2>EA Thinking Is Not a Job Title</h2>
+<p>Enterprise architecture, stripped of its frameworks and certifications, is a particular <em>way of thinking</em>: seeing the whole rather than only the part, noticing the connections between things, weighing the long-term consequence of a near-term decision, and asking what the structure of a situation is rather than only its surface. None of that is the exclusive property of people with &ldquo;architect&rdquo; in their title. It is a cognitive habit, and cognitive habits are distributed across roles regardless of who is paid to have them.</p>
+<p>This matters for two reasons. First, it means the contribution this book is preparing you to make does not require permission or promotion &mdash; you can think this way from where you are. Second, it means the architecture function, when it is good, is not the only place architectural thinking happens; it is the place that <em>coordinates</em> and <em>names</em> the architectural thinking happening everywhere. Recognising the EA thinking in your own work is how you join that conversation.</p>
+<hr class="content-divider"/>
+<h2>The Five Things Everyone in IT Already Knows</h2>
+<p>There are five recognitions that constitute EA thinking, and each is already present in ordinary IT work.</p>
+<p><strong>Seeing the system, not just the component.</strong> EA thinking sees how parts connect and how a change in one ripples to others. This is not exotic; it is what anyone does when they say &ldquo;if we change that, it&rsquo;ll break this other thing.&rdquo;</p>
+<p><strong>Noticing the gap between the local fix and the whole.</strong> EA thinking distinguishes the solution that helps here-and-now from the solution that helps the whole over time. Anyone who has resisted a quick fix because &ldquo;we&rsquo;ll pay for it later&rdquo; has had this thought.</p>
+<p><strong>Tracing a symptom to its structural cause.</strong> EA thinking does not stop at the presenting problem; it asks what underneath produces it. Anyone who has said &ldquo;this keeps happening &mdash; the real problem is upstream&rdquo; is doing root-cause thinking, which is structural thinking.</p>
+<p><strong>Weighing the long horizon against the short.</strong> EA thinking holds the consequence over years against the pressure of the moment. Anyone who has flagged that a deadline-driven shortcut creates a lasting liability has weighed the horizons.</p>
+<p><strong>Asking who owns the decision.</strong> EA thinking notices when a decision has no owner or a process has no accountable party. Anyone who has asked &ldquo;wait, whose call is this?&rdquo; has spotted the governance gap that Part 3 spent chapters on.</p>
+<p>These five are EA thinking. They are also things competent IT people do every day without a framework in sight. The frameworks are the formalisation; the thinking is the substance, and the substance is already yours.</p>
+<hr class="content-divider"/>
+<h2>Five Roles, Already Doing It</h2>
+<p><em>Five people at Meridian, none of them architects, each shown doing EA thinking in the course of their ordinary work.</em></p>
+<p><em>The <strong>helpdesk analyst</strong> notices that the same category of ticket keeps recurring &mdash; clinicians locked out of a system after a password reset on another. She does not just resolve each ticket; she observes the pattern and traces it to its cause: two systems with separate, unsynchronised identity, so a reset in one breaks the other. She has, without naming it, identified the patient-identity architecture problem from the symptom upward. That is structural, system-level EA thinking, performed at the helpdesk.</em></p>
+<p><em>The <strong>developer</strong> is asked to build &ldquo;a quick integration&rdquo; between his application and the clinical portal. He pushes back: &ldquo;if I wire these directly, that&rsquo;s another point-to-point connection, and we&rsquo;ve already got too many &mdash; can we put it through something central instead?&rdquo; He has recognised a pattern (point-to-point), named its failure mode (proliferation), and proposed a better structure (hub-and-spoke). That is Chapter 31&rsquo;s pattern thinking, performed in a stand-up.</em></p>
+<p><em>The <strong>infrastructure engineer</strong> &mdash; the one this chapter&rsquo;s sibling, Chapter 49, returns to &mdash; reviews the VMware exit migration plan and spots that two &ldquo;low-risk&rdquo; workloads scheduled for early migration actually feed a clinical tool. She sees the dependency the plan missed because she sees the system, not just the components. That is whole-system EA thinking, performed in a change review.</em></p>
+<p><em>The <strong>project manager</strong> running a system procurement asks the question nobody else asked: &ldquo;before we buy this, have we checked whether we already have something that does it?&rdquo; She is, without knowing the term, applying portfolio governance (Chapter 27) &mdash; the check that prevents duplication. That is EA thinking, performed in a procurement meeting.</em></p>
+<p><em>The <strong>business analyst</strong> mapping the referral process notices that one decision point has no defined owner &mdash; the unowned eligibility decision from Chapter 37. She flags it: &ldquo;who actually decides this? Because right now it&rsquo;s different depending on who picks it up.&rdquo; That is governance-gap thinking, performed in a process workshop.</em></p>
+<p><em>None of the five has &ldquo;architect&rdquo; in their title. All five are doing EA thinking. The only thing they lack is the vocabulary to name it &mdash; and naming it is what would let them contribute to the architecture conversation as recognised participants rather than as people who happened to have a good point.</em></p>
+<hr class="content-divider"/>
+<h2>Why Naming It Matters</h2>
+<p>It might seem that if you are already thinking this way, the name is irrelevant &mdash; the thinking is what counts. But the name does real work, for two reasons.</p>
+<p>First, the name makes the thinking <strong>transferable</strong>. A recurring observation that stays in your head as &ldquo;this keeps happening&rdquo; stays a personal frustration. The same observation named as &ldquo;this is an architecture-debt pattern &mdash; separate identity stores producing recurring failures&rdquo; becomes something you can raise in the architecture conversation, connect to the roadmap, and see acted on. The vocabulary is what lifts the insight from your desk to the decision.</p>
+<p>Second, the name makes the thinking <strong>visible</strong>, and visibility is how contribution gets recognised. The infrastructure engineer who says &ldquo;I think those workloads have a dependency&rdquo; makes a useful point. The same engineer who says &ldquo;those workloads are a hidden cross-system dependency the migration sequence doesn&rsquo;t account for&rdquo; is recognisably doing architecture, and is far more likely to be invited into the next planning conversation. Chapter 49 develops this fully; for now the point is that the vocabulary you have acquired across this book is not decoration. It is the means by which the EA thinking you already do becomes EA contribution that others can see and build on.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>People say:</strong> &ldquo;I&rsquo;m not an architect, I just do [helpdesk / development / infrastructure / delivery / analysis].&rdquo; &gt; <strong>What that means:</strong> They are doing EA thinking without claiming the label &mdash; seeing the system, tracing symptoms to causes, spotting unowned decisions &mdash; and discounting it because they lack the title. The thinking is real architecture; the missing piece is only the vocabulary to name it and the confidence to raise it.</p></blockquote>
+<blockquote><p><strong>Architects say:</strong> &ldquo;That&rsquo;s exactly the kind of thinking we need &mdash; you&rsquo;ve spotted a cross-system dependency.&rdquo; &gt; <strong>What that means:</strong> They are recognising EA thinking in someone without the title, and naming it. This recognition is how the architecture conversation widens beyond the architecture function &mdash; and it is available to anyone whose insight is expressed in terms the conversation recognises.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>Enterprise architecture, stripped of frameworks and titles, is a way of thinking &mdash; seeing the whole, noticing connections, tracing symptoms to structural causes, weighing the long horizon, and asking who owns the decision &mdash; and it is already distributed across IT roles regardless of who is paid to have it. The helpdesk analyst tracing recurring lockouts to an identity problem, the developer resisting another point-to-point integration, the engineer spotting a hidden dependency, the project manager checking the portfolio before buying, the analyst flagging the unowned decision: all are doing architecture without the label. What they lack is not the thinking but the vocabulary to name it &mdash; and naming it matters because it makes the thinking transferable, lifting a private observation into the architecture conversation, and visible, turning EA thinking into recognised EA contribution. The thinking is already yours; this book has been giving you the words.</p>
+<p><strong>Next:</strong> Chapter 47 puts you inside an architecture conversation and teaches you to follow it &mdash; to see what is actually being discussed and where the real decision sits, even when the vocabulary is unfamiliar.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>Donella Meadows &mdash; Thinking in Systems</strong> (Chelsea Green, 2008): The best introduction to the system-seeing habit that underlies all EA thinking &mdash; accessible, non-technical, and applicable from any role.</li><li><strong>Peter Senge &mdash; The Fifth Discipline</strong> (Doubleday, rev. ed. 2006): On systems thinking as an organisational capability distributed across people, not a specialist function &mdash; directly supports this chapter&rsquo;s claim that EA thinking is everywhere.</li><li><strong>Richard Feynman &mdash; &ldquo;The Pleasure of Finding Things Out&rdquo;</strong> (various): Feynman&rsquo;s insistence on tracing problems to their real causes rather than their names is the purest expression of the symptom-to-structure habit, from one of its great practitioners.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="45_words_that_earn_trust.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">The Words That Earn Trust</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="47_read_architecture_conversation.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">How to Read an Architecture Conversation</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

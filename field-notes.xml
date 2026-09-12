@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>OrdoAnimi - Field Notes</title>
+<link>https://framework.ordoanimi.com/publications/field-notes/</link>
+<description>First-person notes from the worksite - the Coffee and Curiosity series.</description>
+<language>en-AU</language>
+<atom:link href="https://framework.ordoanimi.com/field-notes.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>When Order Turns Inward</title>
+<link>https://framework.ordoanimi.com/publications/field-notes/when-order-turns-inward.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/field-notes/when-order-turns-inward.html</guid>
+<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+<description>A field note on Ordo Animi, personal decision governance, and the architect as the last system under management.</description>
+</item>
+<item>
+<title>When Judgement Becomes the Bottleneck</title>
+<link>https://framework.ordoanimi.com/publications/field-notes/when-judgement-becomes-the-bottleneck.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/field-notes/when-judgement-becomes-the-bottleneck.html</guid>
+<pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+<description>A field note on decision latency, review bandwidth, and what to protect when everything else accelerates.</description>
+</item>
+<item>
+<title>When Governance Becomes Runtime</title>
+<link>https://framework.ordoanimi.com/publications/field-notes/when-governance-becomes-runtime.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/field-notes/when-governance-becomes-runtime.html</guid>
+<pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+<description>A field note on moving governance from checkpoint to constraint, and what a governed worksite actually means.</description>
+</item>
+<item>
+<title>The Workshop</title>
+<link>https://framework.ordoanimi.com/publications/field-notes/the-workshop.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/field-notes/the-workshop.html</guid>
+<pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+<description>A field note on joining the GitHub Developer Program, two thousand commits, and the honest distance between intent and execution.</description>
+</item>
+<item>
+<title>When the Loop Becomes the Operating Model</title>
+<link>https://framework.ordoanimi.com/publications/field-notes/when-the-loop-becomes-the-operating-model.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/field-notes/when-the-loop-becomes-the-operating-model.html</guid>
+<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+<description>A field note on making FinRevDevOps operational: signals, tempo, and who actually owns the loop.</description>
+</item>
+<item>
+<title>When Execution Needs a Financial Pulse</title>
+<link>https://framework.ordoanimi.com/publications/field-notes/when-execution-needs-a-financial-pulse.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/field-notes/when-execution-needs-a-financial-pulse.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>A field note on FinRevDevOps, AI-assisted delivery, and the operating loop between cost, revenue, and delivery.</description>
+</item>
+<item>
+<title>When Architecture Becomes Executable</title>
+<link>https://framework.ordoanimi.com/publications/field-notes/when-architecture-becomes-executable.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/field-notes/when-architecture-becomes-executable.html</guid>
+<pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+<description>A field note on AI, judgement, and turning architectural intent into working systems.</description>
+</item>
+</channel>
+</rss>

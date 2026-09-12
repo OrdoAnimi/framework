@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>How the Frameworks Work Together &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/21_how_frameworks_work_together.html"/>
+<meta property="og:title" content="How the Frameworks Work Together"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/21_how_frameworks_work_together.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 21</span>
+<h1 class="article-title">How the Frameworks Work Together</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>By this point in the book you have met more than a dozen frameworks. Zachman for classification. TOGAF for method. ArchiMate for notation. SABSA for security. BIZBOK for business architecture. Wardley for evolution. ITIL for operations. COBIT for governance. If the experience has left you wondering which one you are supposed to choose, that is the correct reaction &mdash; and the honest answer is the one the certification courses are reluctant to give.</p>
+<p>You do not choose one. You use several, for different purposes, and the skill is knowing which one answers which question.</p>
+<p>This chapter is the join. It explains how the frameworks layer and connect rather than compete, why the question &ldquo;which framework should we adopt?&rdquo; is usually the wrong question, and what a working architect&rsquo;s actual toolkit looks like once the marketing language is stripped away.</p>
+<hr class="content-divider"/>
+<h2>The Category Error</h2>
+<p>The single most common mistake in enterprise architecture is treating frameworks as if they were alternatives &mdash; as if Zachman and TOGAF were competing products and adopting one meant rejecting the other. They are not alternatives. They occupy different categories.</p>
+<p>A <strong>classification framework</strong> tells you what kinds of description exist and how they relate. Zachman is the canonical example. It does not tell you how to produce anything. It tells you what a complete set of descriptions would contain and stops there.</p>
+<p>A <strong>method framework</strong> tells you how to do the work. TOGAF&rsquo;s Architecture Development Method is the canonical example. It gives you a sequence of phases, a set of activities, and a governance cycle. It is largely silent on notation and classification.</p>
+<p>A <strong>notation framework</strong> gives you a visual language. ArchiMate is the canonical example. It tells you how to draw a business process, an application component, and a technology node so that another architect can read your diagram without a key.</p>
+<p>A <strong>domain framework</strong> goes deep on one part of the estate. SABSA for security. BIZBOK for business architecture. Each assumes you have a method and a notation and supplies the specialist content the general frameworks treat lightly.</p>
+<p>A <strong>strategy and evolution framework</strong> helps you reason about movement and competition. Wardley mapping is the canonical example. It answers a question the others barely ask: which parts of our landscape are commoditising, and what should we therefore stop building ourselves?</p>
+<p>An <strong>operating and governance framework</strong> governs what happens after architecture has done its work. ITIL runs the service. COBIT governs the enterprise&rsquo;s use of IT. They sit downstream of architecture and constrain it.</p>
+<p>Asking whether you should use Zachman <em>or</em> TOGAF is like asking whether a builder should use a tape measure <em>or</em> a method statement. The categories do not overlap enough to compete.</p>
+<hr class="content-divider"/>
+<h2>How the Layers Stack</h2>
+<p>The frameworks form a rough stack, and seeing the stack is more useful than memorising any single framework.</p>
+<p>At the top sits <strong>strategy</strong> &mdash; where Wardley mapping and business architecture help you decide what matters and where to invest. Below that sits <strong>method</strong> &mdash; where TOGAF&rsquo;s ADM gives you a disciplined way to move from vision to roadmap. Cutting across the method sits <strong>classification</strong> &mdash; where Zachman reminds you which descriptions you still owe. Expressing the outputs sits <strong>notation</strong> &mdash; where ArchiMate turns the descriptions into diagrams a stakeholder can read. Specialising the content sit the <strong>domain frameworks</strong> &mdash; SABSA folding security into every phase, BIZBOK deepening the business layer. And underneath everything sits <strong>governance and operations</strong> &mdash; COBIT setting the control environment, ITIL running the result.</p>
+<p>No organisation uses all of these formally. Most use two or three explicitly and several others implicitly without naming them. The mark of architectural literacy is recognising which framework is doing the work in a given conversation, even when nobody says its name.</p>
+<hr class="content-divider"/>
+<h2>The Frameworks in Use at Meridian</h2>
+<p><em>Meridian Health Partnership runs on a framework mix that nobody chose deliberately. Its enterprise architect spends a fortnight mapping what is actually in use across the estate, and the result is instructive precisely because it is so untidy.</em></p>
+<p><em>TOGAF is the nominal standard. It is named in the IT strategy document, two members of staff hold Foundation certificates, and the document templates carry TOGAF artefact names. But the ADM has never been run as a cycle. The framework is referenced rather than used &mdash; its vocabulary borrowed for credibility, its discipline never applied.</em></p>
+<p><em>ITIL, by contrast, is genuinely operational. The service desk runs ITIL incident and change management because the outsourced infrastructure contract mandated it. It is the most consistently practised framework in the organisation, and nobody in the architecture conversation thinks of it as architecture at all.</em></p>
+<p><em>COBIT appears in fragments. The annual IT audit uses COBIT control references, so the language exists in the governance committee&rsquo;s papers, but no continuous control environment has been built around it. It is invoked once a year and then filed.</em></p>
+<p><em>SABSA is absent. There is an information governance function, mandated by NHS data protection obligations, but no security architecture discipline connecting security decisions to business risk. Security is treated as a compliance checklist rather than an architecture domain &mdash; which is exactly the gap SABSA exists to close.</em></p>
+<p><em>The EA&rsquo;s conclusion is not that Meridian should adopt a framework. It is that Meridian is already using four, badly, without coordination &mdash; and that the immediate opportunity is not adoption but alignment.</em></p>
+<hr class="content-divider"/>
+<h2>The Honest Answer to &ldquo;Which Framework?&rdquo;</h2>
+<p>When a leadership team asks an architect which framework the organisation should adopt, they are usually asking a different question underneath: <em>how do we get our technology decisions under control?</em> The framework question is a proxy for an anxiety about disorder.</p>
+<p>The honest answer has three parts.</p>
+<p>First, you almost certainly need a <strong>method</strong>, and TOGAF&rsquo;s ADM &mdash; used selectively, as a thinking structure rather than a procedure to be performed in full &mdash; is the most widely understood option. Choosing it buys you a shared vocabulary and a defensible sequence. It does not buy you outcomes.</p>
+<p>Second, you need a <strong>notation</strong> if more than a handful of people are going to read each other&rsquo;s diagrams, and ArchiMate is the lingua franca. For a small team, a consistent set of conventions matters more than the specific standard.</p>
+<p>Third, you need to be honest about which <strong>domain and governance frameworks</strong> are already operating whether you named them or not. ITIL is probably running your service desk. Your auditors are probably using COBIT references. Your regulator is probably imposing security obligations that a discipline like SABSA would organise. Naming these makes them improvable.</p>
+<p>What you do not need is to adopt a framework ceremonially &mdash; to run every ADM phase regardless of whether it is warranted, to model every cell of the Zachman grid, to produce ArchiMate views nobody reads. Ceremonial adoption is the failure mode that gives enterprise architecture its reputation for producing process instead of value.</p>
+<hr class="content-divider"/>
+<h2>Choosing Your Path Through the Frameworks</h2>
+<p>For a reader trying to navigate rather than practise, the practical guidance is simpler than the framework literature suggests.</p>
+<p>If you want to <strong>understand a decision</strong>, ask which category of question is being answered. Is this a strategy question (reach for Wardley and business architecture), a method question (reach for the ADM), a classification question (reach for Zachman), or a governance question (reach for COBIT)? Naming the category tells you which framework&rsquo;s vocabulary will clarify the conversation.</p>
+<p>If you want to <strong>contribute to a decision</strong>, you rarely need framework depth. You need to recognise the shape of the problem and ask the question the relevant framework would prompt. You do not need to have read SABSA to ask &ldquo;what is the business risk this security control is managing, and who owns it?&rdquo; That is a SABSA question asked in plain English, and it is often more useful than a SABSA diagram.</p>
+<p>If you want to <strong>go deeper later</strong>, the frameworks are a reading list, not a curriculum. Start with the one closest to the problem in front of you. The others will make more sense once you have used one in anger.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>The framework vendors say:</strong> &ldquo;Adopt our framework to bring rigour and alignment to your enterprise architecture practice.&rdquo; &gt; <strong>What that means:</strong> Each framework solves a real problem within its category. None solves the whole problem, and adopting one does not, by itself, change anything. Rigour comes from using a framework to make better decisions, not from owning the certificate.</p></blockquote>
+<blockquote><p><strong>Architects say:</strong> &ldquo;We&rsquo;re TOGAF-aligned but we don&rsquo;t run the full ADM &mdash; we use it where it adds value.&rdquo; &gt; <strong>What that means:</strong> This is the healthy position, stated honestly. It means the organisation borrows the method&rsquo;s structure and vocabulary without performing every phase as ritual. The phrase &ldquo;where it adds value&rdquo; is doing the important work, and it should always be followed up: <em>value to whom, and how would you know?</em></p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>The frameworks are not competitors. They are a toolkit, and like any toolkit, the skill is selection rather than ownership. Classification, method, notation, domain depth, strategy, and governance are different categories of tool, and a mature practice uses several at once for different purposes. The question &ldquo;which framework should we adopt?&rdquo; almost always dissolves on inspection into a set of more specific questions, each of which points to a different tool. Recognising which framework is doing the work in any given conversation &mdash; even when nobody names it &mdash; is the single most useful piece of framework literacy this book can give you.</p>
+<p><strong>Next:</strong> Chapter 22 turns to the most important and most frequently skipped piece of architectural work &mdash; the Architecture Vision. Before you can stack frameworks or run a method, someone has to say what the work is actually for.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The Open Group &mdash; TOGAF Standard, 10th Edition</strong> (opengroup.org): The introduction and the section on using TOGAF with other frameworks are the most relevant here. The Open Group is explicit that TOGAF is designed to be combined with Zachman, ArchiMate, and domain frameworks &mdash; a point often lost in practice.</li><li><strong>Roger Sessions &mdash; A Comparison of the Top Four Enterprise-Architecture Methodologies</strong> (objectwatch.com): An older but still-cited essay that treats Zachman, TOGAF, FEAF, and Gartner as complementary lenses rather than rivals. The framing has aged well even as the specifics have moved on.</li><li><strong>Simon Brown &mdash; Software Architecture for Developers</strong> (Leanpub): Not an EA text, but its argument that notation should serve communication rather than compliance applies directly to the framework-selection question.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="20_application_architecture.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">Application Architecture</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="22_architecture_vision.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">The Architecture Vision</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

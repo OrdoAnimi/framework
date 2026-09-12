@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>How to Read a Sequence Diagram &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 4 · Reading the Diagrams"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/36_read_sequence_diagram.html"/>
+<meta property="og:title" content="How to Read a Sequence Diagram"/>
+<meta property="og:description" content="Part 4 · Reading the Diagrams"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/36_read_sequence_diagram.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 36</span>
+<h1 class="article-title">How to Read a Sequence Diagram</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 4 · Reading the Diagrams</em></p>
+<hr class="content-divider"/>
+<p>A component diagram shows what connects to what. A <strong>sequence diagram</strong> shows what happens in what <em>order</em> &mdash; the messages that pass between participants over time, read top to bottom. It is the artefact that turns a static picture of systems into a moving picture of an interaction, and for that reason it is the single most powerful diagram for surfacing a particular kind of risk: the failure that only appears when you trace what happens step by step, in sequence, including the steps where something goes wrong.</p>
+<p>This chapter teaches the reading of a sequence diagram through a clinically charged example &mdash; a community nurse accessing a patient record in the field &mdash; where reading the sequence is not an academic exercise but a patient-safety instrument.</p>
+<hr class="content-divider"/>
+<h2>The Anatomy: Lifelines, Messages, and Time</h2>
+<p>A sequence diagram has a small, consistent vocabulary, and once you have it the diagrams read almost like a script.</p>
+<p><strong>Participants</strong> are listed across the top &mdash; the actors and systems involved in the interaction. A nurse, a mobile app, an authentication service, the EPR. Each participant has a <strong>lifeline</strong>, a vertical dashed line dropping down from it. The lifeline represents that participant&rsquo;s existence through time.</p>
+<p><strong>Time flows downward.</strong> This is the single most important convention. The top of the diagram is the start of the interaction; the bottom is the end. Anything higher happens before anything lower. Reading a sequence diagram is reading down the page as if it were a timeline.</p>
+<p><strong>Messages</strong> are the horizontal arrows between lifelines. A <strong>solid arrow</strong> is typically a call or request &mdash; one participant asking another to do something. A <strong>dashed arrow</strong> is typically a return or response &mdash; the answer coming back. The direction of the arrow shows who is asking whom.</p>
+<p>``` Nurse        Mobile App        Auth Service        EPR │               │                  │               │ │── open record ▶                  │               │ │               │── authenticate ─▶│               │ │               │◄── token ─ ─ ─ ─ │               │ │               │── fetch record ──┼──────────────▶│ │               │◄ ─ ─ patient record ─ ─ ─ ─ ─ ─ ─ ─ │ │◄ display ─ ─ ─│                  │               │ ```</p>
+<p>Read down the page, this says: the nurse opens a record; the app authenticates and gets a token back; the app fetches the record from the EPR; the record returns; the app displays it. The diagram has turned an interaction into a legible order of events.</p>
+<hr class="content-divider"/>
+<h2>Reading for the Happy Path First</h2>
+<p>The first pass through any sequence diagram is the <strong>happy path</strong> &mdash; the interaction as it unfolds when everything works. Read top to bottom, narrate each message in plain language, and confirm the story makes sense. If you cannot narrate the happy path as a coherent sequence of events, either the diagram is wrong or you have misread a message direction.</p>
+<p>The happy path tells you what the interaction is <em>for</em> and what participants it requires. Reading Meridian&rsquo;s nurse-access happy path tells you immediately that accessing a record in the field requires the mobile app, an authentication service, and the EPR &mdash; three systems that all have to be available and reachable for a nurse to see a patient&rsquo;s record. That dependency is a fact about the world the diagram makes visible: a nurse in the field is depending on three systems and a network connection, not one.</p>
+<hr class="content-divider"/>
+<h2>Reading for Failure</h2>
+<p>The happy path is the easy half. The reading skill that matters &mdash; the one that makes sequence diagrams a safety instrument &mdash; is reading for <strong>failure</strong>: asking, at each message, <em>what happens if this step fails or is slow?</em></p>
+<p>A well-drawn sequence diagram includes failure paths explicitly &mdash; alternative flows (often boxed and labelled &ldquo;alt&rdquo; or &ldquo;opt&rdquo;) showing what happens when authentication fails, when the EPR times out, when the network drops. A poorly-drawn one shows only the happy path, and reading it for failure means mentally inserting the failures the diagram omitted.</p>
+<p>The questions to ask at each message are concrete. <em>What if this call never returns?</em> (A hung request can freeze the whole interaction.) <em>What if it returns an error rather than the expected response?</em> (Is there a handler, or does the error propagate as a crash?) <em>What if it is slow rather than failed?</em> (Timeouts are often worse than clean failures, because the participant waits.) <em>What state is the system left in if the sequence stops here?</em> (A sequence interrupted halfway can leave data half-written.)</p>
+<p>Each of these questions, asked at each step, turns the diagram into a risk assessment. And in a clinical context, the answers are not abstract.</p>
+<hr class="content-divider"/>
+<h2>Meridian: The Nurse in the Field</h2>
+<p><em>Meridian&rsquo;s sequence diagram for a community nurse accessing a patient record in the field is read by the EA not as documentation but as a clinical-safety instrument, and reading it for failure surfaces a risk that the happy path entirely concealed.</em></p>
+<p><em>The happy path is unremarkable: nurse opens record, app authenticates, app fetches record from EPR, record displays. Read top to bottom, it works.</em></p>
+<p><em>Reading for failure changes the picture. The EA asks the failure question at the authentication step: what happens if the auth service is unreachable &mdash; which, for a nurse in a rural area with poor mobile coverage, is not an edge case but a daily reality? The diagram, as originally drawn, had no answer; it showed only successful authentication. Tracing the actual system behaviour revealed that a failed authentication left the nurse with no record at all &mdash; a hard failure at the exact moment a clinician needs patient information, often in someone&rsquo;s home, often urgently.</em></p>
+<p><em>The EA asks the failure question at the fetch step: what if the EPR is slow rather than down? The answer was worse than a clean failure. The app waited, with no timeout and no feedback, so the nurse saw a frozen screen with no indication of whether the record was coming or whether to give up and phone the surgery. A slow EPR produced a clinician staring at a spinner at a patient&rsquo;s bedside.</em></p>
+<p><em>And the EA asks the state question: if the sequence is interrupted after authentication but before the record loads, what does the nurse have? The answer &mdash; a logged-in session with no data and no guidance &mdash; is the worst of both worlds.</em></p>
+<p><em>None of these risks were visible on the happy path. All of them were patient-safety issues. All of them surfaced from the discipline of reading the diagram for what happens when each step fails. The redesign that followed &mdash; offline caching of recent records, explicit timeouts with clear feedback, a defined behaviour for partial failure &mdash; was driven entirely by reading the sequence diagram as a question rather than a description. This is why the EA treats sequence diagrams as the most powerful artefact for surfacing integration risk: they are the diagram that forces you to confront the failure modes that static diagrams let you ignore.</em></p>
+<hr class="content-divider"/>
+<h2>Why Sequence Diagrams Surface Risk Best</h2>
+<p>Among all the diagram types, sequence diagrams are uniquely suited to surfacing integration and reliability risk, for a structural reason: they are the only common diagram that represents <em>time</em> and therefore <em>failure-in-time</em>.</p>
+<p>A component diagram can show that the mobile app depends on the auth service, but it cannot show what happens when that dependency is slow rather than absent, or what state things are in halfway through an interaction. A capability map cannot show interaction at all. The sequence diagram, by laying the interaction out along a time axis, makes every step a place where you can ask &ldquo;and what if this fails here?&rdquo; &mdash; and integration failures are almost always failures at a <em>specific step under specific conditions</em>, which is exactly what the sequence diagram is built to represent.</p>
+<p>For a reader, this means: when the conversation is about whether an integration is safe, reliable, or clinically acceptable, the sequence diagram is the artefact to ask for. It is where the failure modes live, and reading it for failure is the most valuable diagram-reading skill in the book.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>Architects say:</strong> &ldquo;Let&rsquo;s walk the sequence diagram and check the failure paths at each step.&rdquo; &gt; <strong>What that means:</strong> They are doing the reading this chapter teaches &mdash; going message by message and asking what happens when each one fails, is slow, or returns an error. The phrase &ldquo;failure paths&rdquo; is the signal that they are reading for risk rather than just confirming the happy path.</p></blockquote>
+<blockquote><p><strong>Delivery teams say:</strong> &ldquo;The sequence works &mdash; here&rsquo;s the diagram.&rdquo; &gt; <strong>What that means:</strong> They have shown the happy path, which proves the interaction works when everything works. The literate response is to read it for failure: what does this diagram show happening when the auth service is unreachable or the EPR is slow? If the answer is &ldquo;the diagram doesn&rsquo;t show that&rdquo;, the hardest and most important part of the design has not yet been done.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>A sequence diagram shows what happens in what order &mdash; participants across the top, lifelines dropping down, time flowing downward, solid arrows for calls and dashed arrows for responses. The first pass reads the happy path to confirm the interaction makes sense and to see which participants it depends on. But the reading that matters is reading for failure: asking at each message what happens if the step fails, is slow, or returns an error, and what state the system is left in if the sequence stops there. Because the sequence diagram is the only common artefact that represents time, it is uniquely able to surface failure-in-time &mdash; which is what integration failures almost always are. When the question is whether an interaction is safe and reliable, the sequence diagram, read for failure rather than success, is the instrument that answers it.</p>
+<p><strong>Next:</strong> Chapter 37 turns to the activity diagram &mdash; the view of a process as flow, with its decision points and parallel paths &mdash; and how it differs from the sequence diagram and when each is the right tool.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>UML 2.5 specification &mdash; Sequence Diagrams</strong> (omg.org): The formal notation, including the combined fragments (`alt`, `opt`, `loop`) that represent failure and alternative paths. Worth knowing so you can read strictly-drawn diagrams and spot when failure paths have simply been omitted.</li><li><strong>Martin Fowler &mdash; UML Distilled</strong> (Addison-Wesley, 3rd ed. 2003): The most readable short guide to sequence diagrams and the rest of UML &mdash; exactly the level of detail a reader rather than a producer needs.</li><li><strong>Nancy Leveson &mdash; Engineering a Safer World</strong> (MIT Press, 2011): On why tracing interactions step by step, including failure states, is the foundation of safety engineering &mdash; the deeper rationale for reading clinical sequence diagrams as safety instruments.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="35_read_component_diagram.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">How to Read a Component Diagram</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="37_read_activity_diagram.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">How to Read an Activity Diagram</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

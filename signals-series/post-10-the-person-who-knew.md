@@ -1,7 +1,5 @@
 # THE PERSON WHO KNEW
 
-The Person Who Knew
-
 The capability workshop runs the way it always runs. Twelve people around a table, a facilitator with a shared screen, a map with forty boxes waiting for a colour.
 
 The data steward is there because someone thought operations should have a seat. Nobody expects him to use it.

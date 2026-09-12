@@ -1,7 +1,5 @@
 # THE CONVENIENT UNKNOWN
 
-The Convenient Unknown
-
 The number has sat in the steering pack for two years: eighty per cent mapped, risk rated low. Nobody built it. Everybody uses it. Then the cutover weekend arrives, six on Saturday morning. The delivery lead is on. The vendor is on. Someone from the original business case is on, camera off, mic on mute.
 
 Nobody asks her anything.

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ArchiMate: The Visual Language &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 2 · The Frameworks Explained"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/08_archimate.html"/>
+<meta property="og:title" content="ArchiMate: The Visual Language"/>
+<meta property="og:description" content="Part 2 · The Frameworks Explained"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/08_archimate.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 08</span>
+<h1 class="article-title">ArchiMate: The Visual Language</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 10 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 2 · The Frameworks Explained</em></p>
+<p>Architecture diagrams are only useful if people can read them. ArchiMate is the standard that makes that possible.</p>
+<p>Most architecture diagrams are drawn in PowerPoint or Visio using whatever shapes the author felt like using that day. The result looks different from every architect who produces it. A diagram produced by one team cannot be read reliably by another. ArchiMate solves this by providing a standardised visual language &mdash; specific shapes, specific meanings, specific rules for how they connect. Two architects using ArchiMate produce diagrams that any third architect can read without being told what the shapes mean.</p>
+<p>Meridian&rsquo;s current architecture diagrams are spread across 47 PowerPoint files. Each one uses different shapes, different colours, and different conventions. The new EA cannot read one diagram and transfer what she learned to the next. Every diagram requires its own orientation. When she starts producing ArchiMate views the change is immediate. Anyone on the architecture team can read any diagram from the first line. The investment in learning the notation pays back on the first shared diagram.</p>
+<h2>The three layers</h2>
+<p>ArchiMate is organised into three layers. Each layer corresponds to one of the BDAT domains covered in Part 3. The layers are always drawn in the same order: Business at the top, Application in the middle, Technology at the bottom. This is not arbitrary. Business depends on Application. Application depends on Technology. The visual hierarchy reflects the dependency.</p>
+<h2>The three aspects</h2>
+<p>Within each layer, ArchiMate elements are classified by aspect. The aspect tells you what role an element plays.</p>
+<h2>The relationships</h2>
+<p>ArchiMate elements connect through relationships. The relationships are as standardised as the elements. Each type of relationship means something specific.</p>
+<h2>ArchiMate versus UML</h2>
+<p>ArchiMate and UML &mdash; the Unified Modelling Language &mdash; are both visual languages for describing systems. They are not competitors. They are designed for different purposes and the right choice depends on what you are trying to show.</p>
+<h2>How to start reading ArchiMate</h2>
+<p>You do not need to memorise all of this before you can read an ArchiMate diagram. You need four things.</p>
+<p>First, identify which layer you are looking at. Business, Application, or Technology. The colour convention in most tools makes this visible immediately. Second, identify the element types. Rounded rectangles are typically active structure elements. Plain rectangles are typically passive structure. Third, read the relationships as directional. An arrow from A to B means A connects to or depends on B in some way. Fourth, look for the label on the relationship. Serving, realisation, triggering, composition. The label tells you the type of dependency.</p>
+<p>The first ArchiMate diagram Meridian&rsquo;s new EA shares with the clinical director is the current state technology layer. Two VMware nodes. Active Directory. The MPLS network. The EA walks the clinical director through it in ten minutes using just four questions: what are these boxes, what do the arrows mean, what is missing from this picture, and what happens if the bottom layer fails. The clinical director leaves understanding for the first time why a VMware licensing problem is her problem. ArchiMate made the connection visible. The conversation did the rest.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>Architects say:</strong> &ldquo;Here&rsquo;s the ArchiMate view.&rdquo; &gt; <strong>What that means:</strong> A layered picture linking business, application, and technology. Read one vertical thread at a time; you do not need to decode every element to follow the dependency that matters.</p></blockquote>
+<blockquote><p><strong>Stakeholders say:</strong> &ldquo;This diagram is too complicated.&rdquo; &gt; <strong>What that means:</strong> Usually the view is showing too much at once. Ask for the single trace from the capability you care about down to its infrastructure &mdash; that thread is readable even when the whole view is not.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>ArchiMate is the profession&rsquo;s standard notation &mdash; a visual language that links the business, application, and technology layers so a diagram can be read the same way by everyone. Its distinctive value is the vertical trace: following a business need down through the application that delivers it to the infrastructure it runs on, in a single picture. A reader does not need to memorise every element type; they need to know the lines carry specific meanings and to follow one thread at a time. Dense views are not a sign of rigour &mdash; they are usually a sign the author tried to show everything at once, and the cure is to narrow to the one trace the decision needs.</p>
+<p><strong>Next:</strong> Chapter 9 turns to the government and defence frameworks &mdash; FEAF, DODAF, MODAF, and NAF &mdash; and why they exist.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The Open Group &mdash; ArchiMate 3.2 Specification</strong> (opengroup.org): The full notation. Skim the layer overview and the relationships summary so the line types stop being mysterious.</li><li><strong>Gerben Wierda &mdash; Mastering ArchiMate</strong> (R&amp;A, 3rd ed. 2017): The best practitioner guide, and honest about which parts of the notation earn their keep.</li><li><strong>Simon Brown &mdash; the C4 model</strong> (c4model.com): On choosing a consistent level of abstraction &mdash; the single most common cause of unreadable diagrams, in ArchiMate or any other notation.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="07_adm_how_to_use_it.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">The ADM: How to Use It</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="09_government_defence_frameworks.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Government and Defence Frameworks</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

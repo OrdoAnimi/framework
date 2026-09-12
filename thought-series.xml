@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>OrdoAnimi - Thought Series</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/</link>
+<description>Long-form essays on decision systems and architecture practice.</description>
+<language>en-AU</language>
+<atom:link href="https://framework.ordoanimi.com/thought-series.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Thought Series VI - Before the Decision - The Signal Before the Decision</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-06/6.1-the-signal-before-the-decision.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-06/6.1-the-signal-before-the-decision.html</guid>
+<pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+<description>The decision had a date. The signal did not.</description>
+</item>
+<item>
+<title>Thought Series III - The Architecture Operating System - Culture Does Not Replace Structure</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.8-culture-does-not-replace-structure.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.8-culture-does-not-replace-structure.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Modern enterprises speak fluently about culture. Collaboration. Inclusion. Psychological safety. Shared ownership.</description>
+</item>
+<item>
+<title>Thought Series III - The Architecture Operating System - Standing Is Not Influence</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.7-standing-is-not-influence.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.7-standing-is-not-influence.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Standing is often confused with influence. They are not the same.</description>
+</item>
+<item>
+<title>Thought Series III - The Architecture Operating System - Transitioning from Artefacts to Leverage</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.6-transitioning-from-artefacts-to-leverage.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.6-transitioning-from-artefacts-to-leverage.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>If leverage is measurable, the harder question is not whether it exists. It is how you move toward it.</description>
+</item>
+<item>
+<title>Thought Series IV - Architecture as a Decision System - Organisational Architecture</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-04/4.6-organisational-architecture.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-04/4.6-organisational-architecture.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Designing enterprises for decision velocity — the structural conditions that make a decision system function and sustain.</description>
+</item>
+<item>
+<title>Thought Series V - The Implementation Arc - The Architecture of the Next Decade</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-05/5.6-the-architecture-of-the-next-decade.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-05/5.6-the-architecture-of-the-next-decade.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>The decision system is complete. The harder question is what feeds it.</description>
+</item>
+<item>
+<title>Thought Series I - Foundations - The Architectural Decision Log: The Spine of Modern Architecture</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-01/1.5-the-architectural-decision-log.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-01/1.5-the-architectural-decision-log.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>For years, organisations have mistaken documentation for architecture.</description>
+</item>
+<item>
+<title>Thought Series II - Decision Velocity - A Diagnostic for When Delivery Slows &amp;#x2014; Even When Things Look Clear</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.5-the-velocity-diagnostic.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.5-the-velocity-diagnostic.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>I’ve spent a lot of time inside organisations where decisions are documented, owners are named, authority formally exists — and delivery still struggles.</description>
+</item>
+<item>
+<title>Thought Series III - The Architecture Operating System - Measuring Architectural Leverage</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.5-measuring-architectural-leverage.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.5-measuring-architectural-leverage.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Structure without mandate collapses into informal override. But mandate alone is not enough.</description>
+</item>
+<item>
+<title>Thought Series IV - Architecture as a Decision System - Deviation Visibility</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-04/4.5-deviation-visibility.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-04/4.5-deviation-visibility.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>How systems learn — turning override patterns into architectural intelligence and governance into adaptation.</description>
+</item>
+<item>
+<title>Thought Series V - The Implementation Arc - Knowing When It Is Working</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-05/5.5-knowing-when-it-is-working.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-05/5.5-knowing-when-it-is-working.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>The Pulse is not a dashboard. It is a diagnostic.</description>
+</item>
+<item>
+<title>Thought Series I - Foundations - The 12 Principles of Working Architecture</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-01/1.4-the-12-principles-of-working-architecture.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-01/1.4-the-12-principles-of-working-architecture.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Most architecture practices are built on templates. Effective ones are built on principles. But principles only work when leadership enables them.</description>
+</item>
+<item>
+<title>Thought Series II - Decision Velocity - When Authority Exists &amp;#x2014; but Leaders Still Push Forward</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.4-when-authority-exists-but-leaders-still-push-forward.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.4-when-authority-exists-but-leaders-still-push-forward.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>At this point, the pattern is clear.</description>
+</item>
+<item>
+<title>Thought Series III - The Architecture Operating System - When Architecture Has Structure but No Mandate</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.4-when-architecture-has-structure-but-no-mandate.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.4-when-architecture-has-structure-but-no-mandate.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Defining guardrails is not enough. Capturing decisions as structured records is not enough. Building telemetry that shows deviation patterns is not enough.</description>
+</item>
+<item>
+<title>Thought Series IV - Architecture as a Decision System - Constraint Infrastructure</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-04/4.4-constraint-infrastructure.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-04/4.4-constraint-infrastructure.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>How architectural intent becomes executable — embedded in platforms, pipelines, and delivery environments rather than documents.</description>
+</item>
+<item>
+<title>Thought Series V - The Implementation Arc - Constraint Infrastructure in Practice</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-05/5.4-constraint-infrastructure-in-practice.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-05/5.4-constraint-infrastructure-in-practice.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>The Compliant Path is built once. Then it has to be maintained.</description>
+</item>
+<item>
+<title>Thought Series I - Foundations - The Control Paradox: When Governance Creates Risk</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-01/1.3-the-control-paradox.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-01/1.3-the-control-paradox.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>The most confidently approved architecture documents often quietly create the most risk. Heavy governance can decouple from reality, freezing a moment in time while the system continues to evolve.</description>
+</item>
+<item>
+<title>Thought Series II - Decision Velocity - When Authority Is Held &amp;#x2014; but Responsibility Is Deflected</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.3-when-authority-is-held-but-responsibility-is-deflected.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.3-when-authority-is-held-but-responsibility-is-deflected.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>By now, the pattern should be familiar. Issues are raised. Risks are identified. Escalations are made. The system knows. And yet, nothing resolves.</description>
+</item>
+<item>
+<title>Thought Series III - The Architecture Operating System - When Constraints Become Memory</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.3-when-constraints-become-memory.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.3-when-constraints-become-memory.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Defining guardrails is not enough.</description>
+</item>
+<item>
+<title>Thought Series IV - Architecture as a Decision System - Authority Design</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-04/4.3-authority-design.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-04/4.3-authority-design.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Who actually decides — and how to build the structures that make authority legible, bounded, and exercisable under pressure.</description>
+</item>
+<item>
+<title>Thought Series V - The Implementation Arc - The Political Architecture</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-05/5.3-the-political-architecture.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-05/5.3-the-political-architecture.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Air cover is not a favour. It is a structural precondition.</description>
+</item>
+<item>
+<title>Thought Series I - Foundations - The 80-Page Lie: How Monolithic Documents Destroy Architectural Value</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-01/1.2-the-80-page-lie.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-01/1.2-the-80-page-lie.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>I recently wrote about architecture’s real value: clarity that leads to better decisions. Simple artefacts. Alignment without friction.</description>
+</item>
+<item>
+<title>Thought Series II - Decision Velocity - When Ownership Exists &amp;#x2014; but Authority Doesn't</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.2-when-ownership-exists-but-authority-doesnt.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.2-when-ownership-exists-but-authority-doesnt.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Decisions are clear. Inputs are identified. Owners are named. And delivery still stalls.</description>
+</item>
+<item>
+<title>Thought Series III - The Architecture Operating System - The Anatomy of a Guardrail</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.2-the-anatomy-of-a-guardrail.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.2-the-anatomy-of-a-guardrail.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Advisory language does not scale at delivery velocity.</description>
+</item>
+<item>
+<title>Thought Series IV - Architecture as a Decision System - The Repository Trap</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-04/4.2-the-repository-trap.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-04/4.2-the-repository-trap.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Why EA repositories and meta-models cannot answer real delivery questions — and what has to change.</description>
+</item>
+<item>
+<title>Thought Series V - The Implementation Arc - The First Domain</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-05/5.2-the-first-domain.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-05/5.2-the-first-domain.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>How to choose where to start — and what to build there first.</description>
+</item>
+<item>
+<title>Thought Series I - Foundations - Where Architecture Truly Creates Value</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-01/1.1-where-architecture-truly-creates-value.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-01/1.1-where-architecture-truly-creates-value.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Sometimes, a single conversation can stop you in your tracks — a quiet nudge to think again about what architecture really is, and why it matters. Not the diagrams or deliverables, but the thinking behind them.</description>
+</item>
+<item>
+<title>Thought Series II - Decision Velocity - When Decisions Are Clear &amp;#x2014; but Delivery Has No Pulse</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.1-when-decisions-are-clear-but-delivery-has-no-pulse.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.1-when-decisions-are-clear-but-delivery-has-no-pulse.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Most organisations don’t slow down because architecture is unclear. They slow down because delivery has no pulse.</description>
+</item>
+<item>
+<title>Thought Series III - The Architecture Operating System - From Archive to Operating System</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.1-from-archive-to-operating-system.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.1-from-archive-to-operating-system.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Enterprises do not have a tooling problem. They have an operating contract problem.</description>
+</item>
+<item>
+<title>Thought Series IV - Architecture as a Decision System - Architecture as a Decision System</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-04/4.1-architecture-as-a-decision-system.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-04/4.1-architecture-as-a-decision-system.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Why coherence at scale requires more than governance — and what to build instead.</description>
+</item>
+<item>
+<title>Thought Series V - The Implementation Arc - Reading the Room</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-05/5.1-reading-the-room.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-05/5.1-reading-the-room.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Before you build anything, you need to know what you inherited.</description>
+</item>
+</channel>
+</rss>

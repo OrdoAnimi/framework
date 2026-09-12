@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>OrdoAnimi - Signal</title>
+<link>https://framework.ordoanimi.com/publications/signal/</link>
+<description>Practitioner observations from the field.</description>
+<language>en-AU</language>
+<atom:link href="https://framework.ordoanimi.com/signal.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>The Person Who Knew</title>
+<link>https://framework.ordoanimi.com/publications/signal/post-10-the-person-who-knew.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/signal/post-10-the-person-who-knew.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>The capability workshop runs the way it always runs. Twelve people around a table, a facilitator with a shared screen, a map with forty boxes waiting for a colour.</description>
+</item>
+<item>
+<title>The Convenient Unknown</title>
+<link>https://framework.ordoanimi.com/publications/signal/post-09-the-convenient-unknown.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/signal/post-09-the-convenient-unknown.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>The number has sat in the steering pack for two years: eighty per cent mapped, risk rated low. Nobody built it. Everybody uses it. Then the cutover weekend arrives, six on Saturday morning. The delivery lead is on. The vendor is on. Someone from the original business case is on, camera off, mic on mute.</description>
+</item>
+<item>
+<title>Who Called the EA?</title>
+<link>https://framework.ordoanimi.com/publications/signal/post-08-who-called-the-ea.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/signal/post-08-who-called-the-ea.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>The incident starts at eleven on a Tuesday night. By midnight there is a bridge call. The platform lead is on. The vendor is on. An engineer who left the programme eight months ago is on, because somebody still had her number and knew the integration layer lived in her head.</description>
+</item>
+<item>
+<title>The Exemption Door</title>
+<link>https://framework.ordoanimi.com/publications/signal/post-07-the-exemption-door.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/signal/post-07-the-exemption-door.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Every organisation has one.</description>
+</item>
+<item>
+<title>The Gap Between the Map and the Ground</title>
+<link>https://framework.ordoanimi.com/publications/signal/post-06-the-gap-between-the-map-and-the-ground.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/signal/post-06-the-gap-between-the-map-and-the-ground.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>The map says the landscape is understood. The ground says otherwise.</description>
+</item>
+<item>
+<title>The Decaying Map</title>
+<link>https://framework.ordoanimi.com/publications/signal/post-05-the-decaying-map.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/signal/post-05-the-decaying-map.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>That Friday conversation was honest. Here’s the part we didn’t say out loud.</description>
+</item>
+<item>
+<title>The Map and the Territory</title>
+<link>https://framework.ordoanimi.com/publications/signal/post-04-the-map-and-the-territory.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/signal/post-04-the-map-and-the-territory.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>It was one of those late Friday afternoons when the week finally lets go. A few of us — architects and engineers with years of real delivery — sitting around a table, coffee going cold, talking honestly.</description>
+</item>
+<item>
+<title>Organisational Amnesia: The Second Kind</title>
+<link>https://framework.ordoanimi.com/publications/signal/post-03-organisational-amnesia-second-kind.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/signal/post-03-organisational-amnesia-second-kind.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Some organisations don’t move too fast. They move too carefully, and arrive at the same failure by a different route.</description>
+</item>
+<item>
+<title>Organisational Amnesia: The First Kind</title>
+<link>https://framework.ordoanimi.com/publications/signal/post-02-organisational-amnesia-first-kind.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/signal/post-02-organisational-amnesia-first-kind.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>There are two kinds of organisations failing at AI governance right now. They look nothing alike. They have the same disease.</description>
+</item>
+<item>
+<title>Executing a Guess</title>
+<link>https://framework.ordoanimi.com/publications/signal/post-01-executing-a-guess.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/signal/post-01-executing-a-guess.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+<description>Cloud isn’t the hard part anymore. Execution is.</description>
+</item>
+</channel>
+</rss>

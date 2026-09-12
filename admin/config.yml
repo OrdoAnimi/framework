@@ -87,8 +87,12 @@ collections:
   # These files carry NO frontmatter - each reader (publications/<name>/
   # index.html, or per-series index.html for Thought Series) fetches the raw
   # .md straight from GitHub at page load and renders it client-side, so a
-  # CMS save publishes immediately with no generator step. format: raw is the
-  # correct choice for a frontmatter-less file (extension is set separately
+  # CMS save shows up in the client-side reader immediately. The static
+  # page for the same piece (tools/generate_readers.py - the version search
+  # engines and the RSS feeds actually see) is rebuilt by the
+  # publish-articles Action, so it trails the reader by about a minute.
+  # format: raw is the correct choice for a frontmatter-less file
+  # (extension is set separately
   # since raw defaults to .txt); the single "body" field is the whole file.
   # create: false - adding a brand-new chapter/post also needs one line added
   # to the reader's CH manifest array, which the CMS can't do, so new entries

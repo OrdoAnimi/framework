@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Landscape of Frameworks &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 1 · What Is Enterprise Architecture"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/03_landscape_of_frameworks.html"/>
+<meta property="og:title" content="The Landscape of Frameworks"/>
+<meta property="og:description" content="Part 1 · What Is Enterprise Architecture"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/03_landscape_of_frameworks.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 03</span>
+<h1 class="article-title">The Landscape of Frameworks</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 10 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 1 · What Is Enterprise Architecture</em></p>
+<p>Enterprise architecture has produced a lot of frameworks. This can feel overwhelming when you first encounter the landscape. TOGAF. Zachman. ArchiMate. FEAF. DODAF. MODAF. SABSA. BIZBOK. SAP EA. Wardley Mapping. ITIL. COBIT. Each with its own vocabulary, its own certification programme, its own community of practitioners.</p>
+<p>There is a reason for this apparent complexity. Different frameworks emerged to address different problems in different contexts. A framework designed for US federal government IT management does not look the same as a framework designed for enterprise security architecture or for mapping business capabilities to value chains. The variety reflects the genuine diversity of the problems the profession has been asked to solve.</p>
+<p>The purpose of this chapter is not to explain each framework in detail. Part 2 does that. The purpose here is to give you a map of the landscape so that when a framework name appears in a conversation, you have a sense of what territory it occupies, why it exists, and how it relates to the others.</p>
+<h2>How to think about the frameworks</h2>
+<p>The simplest way to organise the landscape is by what problem each framework was primarily designed to solve.</p>
+<p>Some frameworks are classification systems. They provide a way of organising descriptions of an enterprise so that every type of description has a home and nothing important is missed. Zachman is the primary example. It does not tell you how to develop architecture. It tells you how to classify what you produce.</p>
+<p>Some frameworks are development methodologies. They provide a process for moving from where an organisation is to where it needs to be. TOGAF and its ADM is the primary example. It tells you how to approach the work, what phases to move through, what to produce at each stage.</p>
+<p>Some frameworks are notation standards. They provide a visual language for drawing architecture in a way that other practitioners can read. ArchiMate is the primary example. It is not a methodology. It does not tell you how to develop architecture. It tells you how to draw what you have developed so that other people can read it.</p>
+<p>Some frameworks are domain-specific. They apply the principles of enterprise architecture to a specific domain &mdash; security, business, government, defence. SABSA for security architecture. BIZBOK for business architecture. FEAF and DODAF for government and defence contexts.</p>
+<p>Some frameworks are adjacent disciplines. They do not describe themselves as enterprise architecture but they address problems that EA also addresses, and the communities overlap significantly. ITIL for IT service management. COBIT for IT governance. Wardley Mapping for technology strategy.</p>
+<p>Knowing which type of framework you are dealing with helps you understand what to expect from it. A classification system will not tell you how to do the work. A development methodology will not tell you how to draw the results. A notation standard will not tell you what to build. Each type of framework does one thing well and is not designed to do the others.</p>
+<h2>The frameworks at a glance</h2>
+<p>The landscape sorts into a handful of categories. The table below places each framework by the kind of problem it was built to solve. It is a quick orientation, not the full picture &mdash; Appendix B carries the fuller version with origins, best uses, and known limits.</p>
+<p>| Framework | Type | What it is for | |---|---|---| | Zachman | Classification | Organising the kinds of description an enterprise needs | | TOGAF (and the ADM) | Development methodology | A repeatable process for developing architecture | | ArchiMate | Notation | A visual language for drawing architecture others can read | | SABSA | Domain &mdash; security | Tracing security controls to business risk | | BIZBOK | Domain &mdash; business | Business architecture: capabilities and value streams | | SAP EA | Domain &mdash; vendor | Architecture aligned to the SAP landscape | | FEAF / DODAF / MODAF / NAF | Domain &mdash; government &amp; defence | Architecture for public-sector and defence estates | | Wardley Mapping | Adjacent &mdash; strategy | Reasoning about evolution and what to build versus buy | | ITIL | Adjacent &mdash; service management | Running the services that architecture builds | | COBIT | Adjacent &mdash; governance | Governing the enterprise&rsquo;s use of IT |</p>
+<p>Read down the &ldquo;type&rdquo; column rather than the list of names: it is the category, not the brand, that tells you what a framework will and will not do for you.</p>
+<h2>A note on the relationship between frameworks</h2>
+<p>The frameworks in this table are not competitors. They address different aspects of the same broader challenge. An organisation can use TOGAF as its development methodology, ArchiMate as its notation standard, SABSA for security architecture, COBIT for IT governance, and ITIL for service management. These are not contradictory choices. They are complementary instruments, each operating at a different layer of the enterprise.</p>
+<p>In practice, most organisations do not formally adopt every framework. They use what serves their context and ignore the rest. A small technology company might use TOGAF&rsquo;s ADM selectively, produce architecture diagrams in Lucidchart with informal notation, and have no formal governance framework at all. A government defence agency might operate under DODAF mandates with SABSA for security, formal COBIT governance, and ITIL for service management. Both approaches can be correct for their context.</p>
+<p>The important thing is not which frameworks you use but whether you understand what each one is for. A framework applied to the wrong problem produces overhead without benefit. A framework applied to the right problem in the right context produces clarity and coherence.</p>
+<h2>What to do with this landscape</h2>
+<p>You do not need to study all of these frameworks to navigate the EA world. You need to know they exist, understand broadly what each one is for, and know where to look when you encounter one in practice.</p>
+<p>Part 2 of this book gives you that working knowledge for each framework. Not a certification guide. Not an exhaustive reference. A plain English explanation of what each framework is, where it came from, what problem it solves, what it does well, and where you will encounter it.</p>
+<p>The appendices at the back of the book contain the framework comparison table in a format you can return to as a quick reference, and the further reading list for when you want to go deeper into any specific framework.</p>
+<p>For now, the landscape is visible. You know what exists. In Part 2, we walk through it.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>People say:</strong> &ldquo;Which framework should we adopt?&rdquo; &gt; <strong>What that means:</strong> Usually the wrong question. Ask first which <em>category</em> of problem you have &mdash; classification, method, notation, domain, strategy, or governance &mdash; because that is what tells you which framework will help and which will just add overhead.</p></blockquote>
+<blockquote><p><strong>Vendors say:</strong> &ldquo;Our framework covers the whole lifecycle.&rdquo; &gt; <strong>What that means:</strong> No single framework does. Each is strong in its category and silent outside it; &ldquo;covers everything&rdquo; usually means &ldquo;thin everywhere.&rdquo; The landscape is a toolkit, not a contest, and the mature practice combines several.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>The framework landscape looks crowded, but it organises cleanly once you sort by the kind of problem each framework was built to solve: classification (Zachman), method (TOGAF and the ADM), notation (ArchiMate), domain depth (SABSA, BIZBOK, SAP, the government and defence frameworks), strategy (Wardley), and governance and operations (COBIT, ITIL). The frameworks are not competitors; they are complementary instruments operating at different layers. The skill is not memorising them all but recognising which category a conversation is in, so you reach for the framework that fits the problem rather than the one you happen to know.</p>
+<p><strong>Next:</strong> Chapter 4 walks the whole landscape at a glance, before Part 2 takes each framework in turn.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>Appendix B &mdash; Framework Comparison Table</strong> (this book): The full version of this chapter&rsquo;s at-a-glance table, with origins, best uses, and known limits for each framework.</li><li><strong>Roger Sessions &mdash; A Comparison of the Top Four Enterprise-Architecture Methodologies</strong> (objectwatch.com): An older but still-useful essay that treats the major frameworks as complementary lenses rather than rivals.</li><li><strong>The Open Group &mdash; TOGAF Standard, on using TOGAF with other frameworks</strong> (opengroup.org): Explicit guidance that TOGAF is designed to be combined with Zachman, ArchiMate, and domain frameworks &mdash; the point this chapter rests on.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="02_what_ea_is_actually_for.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">What Enterprise Architecture Is Actually For</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="04_landscape_at_a_glance.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">The Landscape at a Glance</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

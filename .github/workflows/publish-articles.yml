@@ -6,6 +6,12 @@ on:
     paths:
       - 'research/**/*.md'
       - 'publications/**/*.md'
+      # Signal, the books and the Thought Series keep their sources outside
+      # publications/; their static reader pages go stale unless edits to these
+      # paths also trigger a rebuild.
+      - 'signals-series/**/*.md'
+      - 'book/**/*.md'
+      - 'series/**/*.md'
 
 # Rapid CMS saves queue multiple runs; only the newest matters because the
 # generator rebuilds every page from the newest SHA each run.
@@ -54,6 +60,9 @@ jobs:
           echo "=== MD files in publications/ ==="
           ls publications/*.md 2>/dev/null || echo "(none)"
           python tools/generate_pages.py
+
+      - name: Generate static reader pages, feeds and sitemap
+        run: python tools/generate_readers.py
 
       - name: Commit generated pages
         run: |

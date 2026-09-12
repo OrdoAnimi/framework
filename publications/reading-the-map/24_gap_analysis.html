@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gap Analysis &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/24_gap_analysis.html"/>
+<meta property="og:title" content="Gap Analysis"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/24_gap_analysis.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 24</span>
+<h1 class="article-title">Gap Analysis</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>Once you have an honest baseline and an agreed target, the question becomes mechanical in appearance and political in reality: what stands between them? <strong>Gap analysis</strong> is the discipline of answering that question &mdash; identifying, categorising, and prioritising the differences between the current state and the target state so that the architecture roadmap has something to act on.</p>
+<p>Done well, gap analysis is the bridge between description and action. Done badly, it is a list &mdash; comprehensive, accurate, and useless, because a list of every difference between two states tells you nothing about which differences matter.</p>
+<p>This chapter explains how gap analysis is conducted, how to read one critically, and why the most important gaps are usually not the most obvious ones.</p>
+<hr class="content-divider"/>
+<h2>What a Gap Actually Is</h2>
+<p>A gap is not simply &ldquo;something we do not have yet.&rdquo; A gap is a specific, named difference between the baseline and the target that requires work to close. The discipline is in the naming, because a vague gap cannot be planned, costed, or assigned.</p>
+<p>&ldquo;Our data architecture needs improvement&rdquo; is not a gap. It is a feeling. &ldquo;Patient identity has no authoritative master system; three systems hold conflicting patient records and there is no agreed rule for which wins&rdquo; is a gap. It is specific enough to be assigned, scoped, and sequenced.</p>
+<p>Good gaps are stated as the distance between two concrete things. <em>We have X. The target requires Y. The gap is the work to get from X to Y.</em> This framing forces precision and makes the gap actionable. It also makes the gap arguable &mdash; and that is a feature, because gaps that cannot be argued about cannot be prioritised.</p>
+<hr class="content-divider"/>
+<h2>The Six Domains</h2>
+<p>Gap analysis is conducted domain by domain, because a gap in one domain often has consequences in another, and the domains make those consequences traceable. The conventional domains extend the BDAT model from Chapter 16 with security and governance.</p>
+<p><strong>Business gaps</strong> are differences in capability &mdash; a capability the target requires that the organisation cannot currently perform, or performs poorly. These are read directly off the capability heat map.</p>
+<p><strong>Data gaps</strong> are differences in the data architecture &mdash; missing ownership, absent master data, quality problems, entities the target requires that do not exist or are not trustworthy.</p>
+<p><strong>Application gaps</strong> are differences in the application portfolio &mdash; capabilities with no supporting system, capabilities supported by systems that must be retired, duplications the target eliminates.</p>
+<p><strong>Technology gaps</strong> are differences in infrastructure and platform &mdash; the absence of a cloud platform the target depends on, end-of-life hardware, capacity or resilience shortfalls.</p>
+<p><strong>Security gaps</strong> are differences in the security architecture &mdash; controls the target requires that do not exist, risks the current state carries that the target must not.</p>
+<p><strong>Governance gaps</strong> are differences in the decision-making machinery itself &mdash; the absence of an Architecture Review Board, the lack of a portfolio governance process, the missing mechanism to enforce the principles.</p>
+<p>The governance domain is the one most often omitted, and its omission is telling. An organisation that analyses gaps in five domains but not in its own decision-making is assuming the decision-making works &mdash; which is frequently the largest gap of all.</p>
+<hr class="content-divider"/>
+<h2>Categorising and Prioritising</h2>
+<p>A raw gap list is overwhelming. The work that makes it useful is categorisation and prioritisation.</p>
+<p>Categorisation sorts gaps by type and by the kind of response they require. Some gaps are closed by <strong>building</strong> something new. Some by <strong>buying</strong> a capability. Some by <strong>retiring</strong> something. Some by <strong>changing a process</strong> rather than a system. Some by <strong>establishing governance</strong> rather than technology. Sorting gaps by response type reveals that not every gap is a project &mdash; a fact that surprises organisations conditioned to treat every problem as a procurement.</p>
+<p>Prioritisation ranks gaps by two dimensions that should be assessed separately: <strong>impact</strong> (how much does closing this gap matter to the target?) and <strong>dependency</strong> (what else depends on this gap being closed first?). A gap can be low-impact in itself but high-priority because everything else depends on it. The classic example is the cloud platform: building it is not, by itself, a business outcome, but nothing else in the roadmap can happen until it exists.</p>
+<p>This is why the most important gaps are rarely the most obvious. The obvious gaps are the visible business problems &mdash; the failing system, the manual workaround, the capability everyone complains about. The important gaps are often the unglamorous enablers underneath them, the dependencies that have to close first before any of the visible problems can be addressed.</p>
+<hr class="content-divider"/>
+<h2>Meridian&rsquo;s Gap Analysis</h2>
+<p><em>Meridian&rsquo;s EA conducts the gap analysis across all six domains, and the result reorders the leadership team&rsquo;s intuitions about what matters.</em></p>
+<p><em>The obvious gaps are the ones everyone already knew. The dual EPR is a glaring application gap. The aging infrastructure is a glaring technology gap. The complaints about reporting are a visible data gap. These are real, and they are what the executive team would have listed if asked.</em></p>
+<p><em>The gap analysis surfaces three less obvious gaps that turn out to be more important.</em></p>
+<p><em>The first is a governance gap: there is no body with the authority to enforce an architecture decision across the estate. Every previous attempt at rationalisation had failed not for want of a correct answer but for want of a mechanism to make the answer stick. Until this gap is closed, closing any other gap is provisional &mdash; a decision any project can quietly ignore. The EA categorises it as the highest-priority gap not because it is the most visible but because every other gap depends on it.</em></p>
+<p><em>The second is a data gap underneath the EPR gap: patient identity has no master. The leadership team had framed the dual EPR as the problem to solve. The gap analysis shows that consolidating to a single EPR without first resolving which system holds the authoritative patient record would simply move the identity problem into the new system. The identity gap has to close before the EPR gap can close cleanly &mdash; a sequencing insight the raw problem list did not reveal.</em></p>
+<p><em>The third is a technology gap that is also an enabler: there is no cloud platform. This is not a business outcome anyone cares about directly. But the VMware exit, the EPR consolidation, and the integration modernisation all depend on a landing platform that does not yet exist. It is low-glamour and high-dependency &mdash; the kind of gap that gets deprioritised in favour of visible problems and then blocks everything.</em></p>
+<p><em>The EA&rsquo;s prioritised gap list therefore leads with governance, identity, and platform &mdash; three gaps that no stakeholder had named as priorities, because all three are enablers rather than outcomes. The visible problems everyone cared about sit behind them in the sequence, not because they matter less but because they cannot be solved until the enablers are in place.</em></p>
+<hr class="content-divider"/>
+<h2>How to Read a Gap Analysis</h2>
+<p>When a gap analysis appears in a meeting &mdash; and it will, usually as a table or a heat-mapped grid &mdash; there are a few questions that tell you whether it is actionable or academic.</p>
+<p>Ask whether each gap is stated as a specific difference between two concrete states, or as a vague aspiration. Vague gaps signal an analysis that has not done its work.</p>
+<p>Ask whether the governance domain is present. Its absence usually means the analysis has assumed the decision-making works.</p>
+<p>Ask how gaps were prioritised, and specifically whether dependency was assessed separately from impact. An analysis that ranks gaps purely by business impact will systematically under-prioritise the enablers, and a roadmap built on it will stall when it hits the dependency it skipped.</p>
+<p>Ask which gaps are <em>not</em> projects. An analysis in which every gap requires a procurement is an analysis that has mistaken its only tool for the whole toolbox.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>TOGAF says:</strong> &ldquo;Gap analysis is a technique used to validate an architecture by identifying the differences between the Baseline and Target Architectures, including gaps that should be addressed and gaps that were unintentionally introduced.&rdquo; &gt; <strong>What that means:</strong> List the differences between what you have and what you want, in a disciplined way, so the roadmap has something concrete to act on. The reference to &ldquo;unintentionally introduced&rdquo; gaps is a useful warning: a target architecture can accidentally drop a capability the current state quietly relied on. Gap analysis catches that.</p></blockquote>
+<blockquote><p><strong>Delivery teams say:</strong> &ldquo;We know what the gaps are, we don&rsquo;t need a formal analysis.&rdquo; &gt; <strong>What that means:</strong> They usually know the visible gaps &mdash; the ones that cause daily pain. The formal analysis exists to surface the dependency gaps and the governance gaps that are not visible from inside the daily work, and to order them so the roadmap does not stall on a missing enabler.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>Gap analysis is the bridge between description and action: a disciplined account of the specific, named differences between the baseline and the target, categorised by the kind of response they require and prioritised by impact and dependency assessed separately. Its central insight is that the most important gaps are rarely the most obvious. The visible gaps are the business problems everyone already complains about; the important gaps are often the unglamorous enablers underneath them &mdash; the governance mechanism, the master-data resolution, the platform &mdash; that have to close first. A gap analysis that ranks purely by visible impact will under-prioritise exactly the gaps the roadmap depends on, and the roadmap built on it will stall the moment it reaches one.</p>
+<p><strong>Next:</strong> Chapter 25 turns the prioritised gaps into a sequence &mdash; the architecture roadmap &mdash; and explains how it differs from a project plan and what the order of the work actually tells you.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The Open Group &mdash; TOGAF Standard: Phase E and the Gap Analysis technique</strong> (opengroup.org): The formal description of the technique and its place in the ADM. The gap matrix format described there is the one most likely to appear in practice.</li><li><strong>Donella Meadows &mdash; Thinking in Systems</strong> (Chelsea Green, 2008): Meadows&rsquo;s account of leverage points &mdash; where a small intervention produces large change &mdash; is the conceptual foundation for distinguishing high-dependency enabling gaps from high-visibility outcome gaps.</li><li><strong>Gartner &mdash; IT Score for Enterprise Architecture</strong>: A maturity instrument that, used as a gap-analysis lens, helps surface the governance and capability gaps that domain-by-domain technical analysis tends to miss.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="23_current_and_target_state.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">Current State and Target State</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="25_architecture_roadmap.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Architecture Roadmap</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

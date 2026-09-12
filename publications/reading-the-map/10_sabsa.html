@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SABSA: Security Architecture &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 2 · The Frameworks Explained"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/10_sabsa.html"/>
+<meta property="og:title" content="SABSA: Security Architecture"/>
+<meta property="og:description" content="Part 2 · The Frameworks Explained"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/10_sabsa.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 10</span>
+<h1 class="article-title">SABSA: Security Architecture</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 10 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 2 · The Frameworks Explained</em></p>
+<p>Security is not an add-on to enterprise architecture. It is a dimension of every architecture decision.</p>
+<p>Most organisations treat security as something that happens after the architecture is designed. The systems are built, the data flows are established, the integrations are wired up, and then the security team is asked to review it. This approach produces expensive rework, compliance failures, and systems that are structurally difficult to secure regardless of the controls placed on top of them.</p>
+<p>SABSA takes a different approach. It starts with business risk, derives security requirements from that risk, and connects every security control to a specific business objective. The result is a security architecture that serves the organisation rather than one that protects the technology at the expense of the business.</p>
+<p>Meridian handles patient data for 14,000 people across 180 sites. A community mental health patient&rsquo;s record contains some of the most sensitive information a person can have. The consequences of a data breach are not just regulatory &mdash; they are human. Patients who discover their mental health history has been exposed face consequences in employment, relationships, and insurance that no financial penalty captures. For Meridian, security architecture is not a compliance exercise. It is a duty of care. SABSA gives the EA a framework for designing security around that duty rather than around a checklist.</p>
+<h2>The SABSA matrix</h2>
+<p>SABSA uses a matrix similar in structure to Zachman. Six rows representing different perspectives on security architecture. Six columns representing the fundamental questions: What, Why, How, Who, Where, and When.</p>
+<p>The rows move from the contextual perspective &mdash; the business context and risk &mdash; down through conceptual, logical, and physical design to the component level and finally the operational level. This layered approach ensures that security decisions made at the technical level can always be traced back to a business risk, and that business risks are always addressed by specific technical controls.</p>
+<h2>How SABSA connects to TOGAF</h2>
+<p>SABSA and TOGAF are designed to work together. TOGAF provides the enterprise architecture development method. SABSA provides the security architecture layer within it.</p>
+<p>In a TOGAF-led programme, SABSA contributes at specific phases. In Phase A, SABSA provides the security requirements that become architecture principles. In Phases C and D, SABSA provides the security architecture baseline alongside the application and technology baselines. In Phase E, SABSA provides the security assessment of each option. In Phase F, SABSA ensures that the migration sequence does not create security vulnerabilities in the transition states.</p>
+<p>Meridian&rsquo;s EA is not a security specialist. But she knows enough about SABSA to know when she needs one. When she maps the VMware migration options in Phase E, she applies a SABSA-informed question to each: does this transition state create a period where patient data is more exposed than it is today? Option A &mdash; lift and shift &mdash; creates a six-month period where authentication depends on both on-premises Active Directory and Entra ID simultaneously. That hybrid state is a security risk. The SABSA contextual layer question &mdash; what must be protected and why &mdash; makes that risk visible before it is built into the programme plan.</p>
+<h2>SABSA and the security certifications</h2>
+<p>SABSA has its own certification pathway. Foundation, Practitioner, and Master levels. The certifications are rigorous and respected in the security architecture community. A CISSP &mdash; Certified Information Systems Security Professional &mdash; demonstrates broad security knowledge. A SABSA practitioner demonstrates specifically that they can design security architectures that are traceable to business requirements.</p>
+<p>The certifications address different things. CISSP is the broader credential &mdash; it covers security domains from cryptography to physical security to legal and compliance. SABSA is the architecture-specific credential &mdash; it focuses on how security architecture is designed, not just what it contains. Many enterprise security architects hold both. A later chapter covers the full security certification landscape in detail.</p>
+<h2>What SABSA does well and where its limits are</h2>
+<p>SABSA does one thing exceptionally well. It provides a rigorous method for tracing every security control back to a business risk and forward to a specific implementation. This traceability is invaluable in regulated environments &mdash; healthcare, financial services, government &mdash; where security architecture must be demonstrably connected to compliance requirements.</p>
+<p>Its limits are real. SABSA is comprehensive and the full framework is dense. Most organisations do not apply the complete matrix. They apply the contextual and conceptual layers &mdash; the business risk and principles layers &mdash; and use the lower layers as a reference rather than a procedure.</p>
+<p>SABSA also requires security architecture expertise to apply well. An enterprise architect without a security background can use SABSA principles to ask the right questions. Actually populating the SABSA matrix for a complex programme requires a security architect with specific domain knowledge.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>Security architects say:</strong> &ldquo;We trace this control back to a business risk.&rdquo; &gt; <strong>What that means:</strong> The core SABSA move &mdash; every control justified by a risk it manages and a business requirement, not by a checklist. The traceability is the value, even if you never populate the full matrix.</p></blockquote>
+<blockquote><p><strong>People say:</strong> &ldquo;Isn&rsquo;t that just the security team&rsquo;s job?&rdquo; &gt; <strong>What that means:</strong> SABSA&rsquo;s point is that security is an architecture domain, not a bolt-on. An enterprise architect without deep security expertise can still ask the SABSA question &mdash; what business risk does this control manage? &mdash; and that question alone improves most decisions.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>SABSA is the domain framework for security architecture, and its defining contribution is traceability: every security control connected backward to a business risk and forward to a specific implementation, so security is justified by what it protects rather than by a compliance checklist. Like Zachman it is a layered model that few organisations populate in full; its everyday value is the habit of mind it instils &mdash; start from business risk, not from controls. That single discipline is usable by any architect, security specialist or not, and it is what keeps security architecture connected to the business rather than bolted on after the fact.</p>
+<p><strong>Next:</strong> Chapter 11 moves to the business layer and BIZBOK &mdash; what business architecture actually tells you.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The SABSA Institute</strong> (sabsa.org): The framework, the layered matrix, and the certification pathway from its source.</li><li><strong>John Sherwood, Andrew Clark &amp; David Lynas &mdash; Enterprise Security Architecture: A Business-Driven Approach</strong>: The foundational SABSA text, and the clearest statement of the risk-to-control traceability idea.</li><li><strong>(ISC)² &mdash; CISSP</strong>: The broad security credential to set alongside SABSA&rsquo;s architecture-specific one, for understanding the wider security certification landscape.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="09_government_defence_frameworks.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">Government and Defence Frameworks</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="11_bizbok_business_architecture.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">BIZBOK and Business Architecture</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

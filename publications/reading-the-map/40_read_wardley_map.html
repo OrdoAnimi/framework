@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>How to Read a Wardley Map &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 4 · Reading the Diagrams"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/40_read_wardley_map.html"/>
+<meta property="og:title" content="How to Read a Wardley Map"/>
+<meta property="og:description" content="Part 4 · Reading the Diagrams"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/40_read_wardley_map.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 40</span>
+<h1 class="article-title">How to Read a Wardley Map</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 4 · Reading the Diagrams</em></p>
+<hr class="content-divider"/>
+<p>Most architecture diagrams are static. They show what exists and how it connects, frozen at a moment. A <strong>Wardley map</strong>, introduced conceptually in Chapter 13, adds the dimension the others lack: <strong>movement</strong>. It shows not just what an organisation has but where each piece is heading &mdash; what is becoming a commodity, what is still being invented, and therefore what you should stop building yourself and what you should invest in. It is the one diagram in this book that is explicitly about the future.</p>
+<p>This chapter teaches the reading of a Wardley map through Meridian&rsquo;s IT landscape. Wardley maps look deceptively simple &mdash; boxes and lines on two axes &mdash; and the simplicity hides a discipline that takes practice to read well. The payoff is a kind of strategic X-ray: the ability to look at a landscape and see which parts are worth fighting over and which are not.</p>
+<hr class="content-divider"/>
+<h2>The Two Axes</h2>
+<p>A Wardley map has two axes, and almost everything about reading it comes from understanding them.</p>
+<p>The <strong>vertical axis is the value chain</strong> &mdash; the chain of needs from the visible user need at the top down to the invisible foundations at the bottom. At the top sits the thing a user directly wants; below it, the things that thing depends on; below those, the things <em>those</em> depend on, and so on down to raw infrastructure. Height on the map means <em>closer to the visible user need</em>; depth means <em>further toward the invisible foundations</em>. The vertical axis answers &ldquo;what depends on what, in terms of user value?&rdquo;</p>
+<p>The <strong>horizontal axis is evolution</strong> &mdash; and this is the axis that makes Wardley mapping unique. It runs left to right through four stages: <strong>Genesis</strong> (novel, just invented, uncertain), <strong>Custom-built</strong> (being built bespoke, understood but not standardised), <strong>Product</strong> (productised, available off the shelf, competing on features), and <strong>Commodity</strong> (standardised, utility-like, competing on price and reliability). Position on this axis says how <em>evolved</em> &mdash; how mature, standardised, and commoditised &mdash; each component is. The horizontal axis answers &ldquo;how settled is this, and which way is it moving?&rdquo;</p>
+<p>The combination is the map: each component placed at a height (its position in the value chain) and a horizontal position (its evolutionary stage), connected by dependency lines.</p>
+<p>``` value ▲   [patient-facing service]            (visible need) │        │ │   [clinical applications] │        │ │   [hosting / compute] │        │ │   [electricity / network]              (invisible foundation) └────────────────────────────────▶ evolution Genesis   Custom   Product   Commodity ```</p>
+<hr class="content-divider"/>
+<h2>Reading Position: What Should You Be Doing?</h2>
+<p>The first reading skill is interpreting a component&rsquo;s <strong>horizontal position</strong>, because position implies how you should treat it.</p>
+<p>Components in <strong>Genesis</strong> are novel and uncertain. You treat them with experimentation &mdash; you cannot buy them, and building them is a bet. They are where differentiation might come from, and also where most things fail.</p>
+<p>Components in <strong>Custom-built</strong> are understood but not yet standardised. You build them, but with the expectation that they will eventually commoditise.</p>
+<p>Components in <strong>Product</strong> can be bought off the shelf. Building them yourself is usually a mistake &mdash; you would be reinventing something the market already sells.</p>
+<p>Components in <strong>Commodity</strong> should be consumed as a utility &mdash; bought on price and reliability, like electricity. Building or even buying a bespoke version is waste; the entire point of a commodity is that it is interchangeable and cheap.</p>
+<p>The strategic error a Wardley map exposes most sharply is the <strong>mismatch between a component&rsquo;s evolutionary stage and how the organisation is treating it</strong>. Building bespoke what you should buy as a product. Buying a product when a commodity utility would do. Treating as a stable commodity something that is actually still in genesis and changing under you. The map makes these mismatches visible as a gap between where a component sits and how it is being handled.</p>
+<hr class="content-divider"/>
+<h2>Reading Movement: What Is Commoditising?</h2>
+<p>The second and harder reading skill is interpreting <strong>movement</strong> &mdash; the tendency of components to drift rightward over time, from genesis toward commodity, as they mature and standardise.</p>
+<p>Almost everything evolves rightward eventually. Today&rsquo;s novel genesis capability is tomorrow&rsquo;s product and next decade&rsquo;s commodity. Computing moved from custom-built data centres to commodity cloud utility within a generation. Reading a Wardley map strategically means asking, of each component, <em>which way is this moving and how fast?</em> &mdash; because a component that is commoditising is one you should be planning to <em>stop</em> building and <em>start</em> buying, and a component still in genesis is one you cannot yet rely on as stable.</p>
+<p>The most valuable insight a Wardley map offers is about <strong>where to invest effort</strong>. Effort spent building or differentiating a commoditising component is effort wasted &mdash; you are polishing something that is becoming a cheap utility. Effort spent on the genesis components, where real differentiation lives, is where strategic advantage comes from. The map directs attention away from the settled foundations and toward the moving frontier.</p>
+<hr class="content-divider"/>
+<h2>Reading Meridian&rsquo;s Landscape</h2>
+<p><em>Meridian&rsquo;s EA maps the IT landscape on a Wardley map specifically to settle an argument about where to spend and where to stop spending. Reading it resolves three questions.</em></p>
+<p><em>The first is VMware and hosting. On the map, compute and virtualisation sit deep in the value chain (foundational, far from the visible patient need) and well to the right (commodity). They have evolved into a utility. Yet Meridian is treating them as if they were a product to be managed and licensed and maintained in-house &mdash; the mismatch the map exposes. The reading is unambiguous: compute is a commodity, and the strategic move is to consume it as a utility (cloud), not to keep running and licensing a bespoke virtualisation estate. The VMware crisis, on the Wardley map, is the visible symptom of treating a commodity as a product. This reframes the cloud migration not as modernisation for its own sake but as moving a commodity to its correct evolutionary treatment.</em></p>
+<p><em>The second is the EPR. On the map, the electronic patient record sits high in the value chain (close to the clinical need) and in the Product stage &mdash; there is a competitive market of EPR products. The reading: this is something to </em>buy and consolidate<em>, not build, and the dual-EPR situation is a failure to treat a product as a product (running two where one would do). The map supports the consolidation decision and warns against the temptation, which periodically surfaces, to build a bespoke Meridian record system &mdash; which would be dragging a Product-stage component backward into Custom-built, the wrong direction entirely.</em></p>
+<p><em>The third is the genuinely interesting one: where might Meridian differentiate? Reading the map for genesis components, the EA identifies that the integration of community and acute care &mdash; coordinating a patient&rsquo;s journey across settings &mdash; is, for Meridian&rsquo;s specific population, closer to custom/genesis than product. There is no off-the-shelf answer well-suited to its model. This is where bespoke effort might actually be warranted, because it is where the value chain is high and the evolution is early. The map&rsquo;s strategic message is therefore: stop spending bespoke effort on commodity hosting, buy and consolidate the product-stage EPR, and concentrate whatever bespoke capability the organisation has on the genesis-stage care-coordination problem where it might actually create advantage. That sentence is the whole IT strategy, and the Wardley map is what makes it readable in one picture.</em></p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>Wardley mappers say:</strong> &ldquo;Compute has evolved to commodity &mdash; we shouldn&rsquo;t be running it as a product.&rdquo; &gt; <strong>What that means:</strong> The thing in question has become a standardised utility, like electricity, so building or bespoke-managing it is waste. The strategic move is to consume it as a utility (typically cloud) and redirect the saved effort toward things that are still evolving, where effort can actually create advantage.</p></blockquote>
+<blockquote><p><strong>Executives say:</strong> &ldquo;Why does it matter which &rsquo;stage&rsquo; something is in?&rdquo; &gt; <strong>What that means:</strong> Because the stage tells you how to treat it &mdash; experiment with genesis, build custom, buy products, consume commodities as utilities &mdash; and the most expensive strategic errors come from treating something as the wrong stage. The map&rsquo;s whole purpose is to make those mismatches, and the direction things are moving, visible enough to act on.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>A Wardley map is the one architecture diagram about the future: it adds an evolution axis to a value chain, placing each component by how close it is to the visible user need (height) and how mature and commoditised it is (left-to-right, from Genesis through Custom-built and Product to Commodity). Reading position tells you how a component should be treated &mdash; experiment, build, buy, or consume as a utility &mdash; and the sharpest insight is the mismatch between a component&rsquo;s evolutionary stage and how the organisation actually handles it, such as running a commodity as a bespoke product. Reading movement tells you what is commoditising and should be handed off, and where the genesis frontier is, because that frontier is the only place bespoke effort creates advantage. The map&rsquo;s gift is strategic focus: stop spending effort on the settling foundations, and concentrate it on the moving edge.</p>
+<p><strong>Next:</strong> Chapter 41 closes Part 4 by reading the architecture roadmap critically &mdash; applying the diagram-reading discipline to the artefact that sequences everything, and learning to tell a governed plan from a wish list.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>Simon Wardley &mdash; Wardley Maps</strong> (available free, medium.com/@swardley and the published book): The original and best source, written serially by the framework&rsquo;s creator. Idiosyncratic but unmatched; the early chapters on the two axes and evolution are essential for reading maps confidently.</li><li><strong>Learn Wardley Mapping</strong> (learnwardleymapping.com): A structured, free introduction that is gentler than Wardley&rsquo;s own serialised book &mdash; the fastest route to reading competence.</li><li><strong>Ben Mosior &mdash; practitioner Wardley mapping guides</strong> (hiredthought.com): Clear, practical material on building and reading maps in real organisations, with worked examples that build the movement-reading skill this chapter emphasises.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="39_read_zachman_cell.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">How to Read a Zachman Cell</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="41_read_architecture_roadmap.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">How to Read an Architecture Roadmap</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

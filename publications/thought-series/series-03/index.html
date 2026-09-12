@@ -101,7 +101,16 @@ footer.site .footer-links a{color:#c9bfa6;font-size:.8rem}
 <div class="toc-subtitle">The Architecture Operating System</div>
 <div class="toc-sub">8 Posts</div>
 
-<nav id="tocList" aria-label="Table of contents"></nav>
+<nav id="tocList" aria-label="Table of contents">
+<a class="ch" href="3.1-from-archive-to-operating-system.html" data-id="3.1"><span class="num">3.1</span><span class="t">From Archive to Operating System</span></a>
+<a class="ch" href="3.2-the-anatomy-of-a-guardrail.html" data-id="3.2"><span class="num">3.2</span><span class="t">The Anatomy of a Guardrail</span></a>
+<a class="ch" href="3.3-when-constraints-become-memory.html" data-id="3.3"><span class="num">3.3</span><span class="t">When Constraints Become Memory</span></a>
+<a class="ch" href="3.4-when-architecture-has-structure-but-no-mandate.html" data-id="3.4"><span class="num">3.4</span><span class="t">When Architecture Has Structure but No Mandate</span></a>
+<a class="ch" href="3.5-measuring-architectural-leverage.html" data-id="3.5"><span class="num">3.5</span><span class="t">Measuring Architectural Leverage</span></a>
+<a class="ch" href="3.6-transitioning-from-artefacts-to-leverage.html" data-id="3.6"><span class="num">3.6</span><span class="t">Transitioning from Artefacts to Leverage</span></a>
+<a class="ch" href="3.7-standing-is-not-influence.html" data-id="3.7"><span class="num">3.7</span><span class="t">Standing Is Not Influence</span></a>
+<a class="ch" href="3.8-culture-does-not-replace-structure.html" data-id="3.8"><span class="num">3.8</span><span class="t">Culture Does Not Replace Structure</span></a>
+</nav>
 
 </aside>
 <main class="reader">
@@ -138,7 +147,7 @@ CH.forEach((c,i) => idx[c[0]] = i);
 const _entityDecoder = document.createElement('textarea');
 function decodeEntities(s) { _entityDecoder.innerHTML = s; return _entityDecoder.value; }
 const tocList = document.getElementById('tocList');
-CH.forEach((c) => {
+if (!tocList.querySelector('a.ch')) CH.forEach((c) => {
   const a = document.createElement('a');
   a.className = 'ch';
   a.href = '#' + c[0];

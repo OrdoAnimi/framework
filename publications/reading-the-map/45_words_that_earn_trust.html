@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Words That Earn Trust &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 5 · The Language Map"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/45_words_that_earn_trust.html"/>
+<meta property="og:title" content="The Words That Earn Trust"/>
+<meta property="og:description" content="Part 5 · The Language Map"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/45_words_that_earn_trust.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 45</span>
+<h1 class="article-title">The Words That Earn Trust</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 5 · The Language Map</em></p>
+<hr class="content-divider"/>
+<p>The CFO is one audience. There are others, and each hears a different thing when the same architecture decision is described. A CIO hears one set of concerns; a clinical lead another; an engineer another again. The architect who describes a decision the same way to all of them will earn the trust of, at most, one. This chapter is about the others &mdash; about what each kind of stakeholder actually listens for, and how to express the same substance in the terms each one values.</p>
+<p>The chapter closes Part 5 by addressing the objection it most often provokes: that tailoring language to the audience is manipulation. It is not, and understanding why is the key to using the technique with integrity.</p>
+<hr class="content-divider"/>
+<h2>The Same Decision, Four Rooms</h2>
+<p>Take a single, concrete architecture decision at Meridian: consolidating the two EPRs into one, on the cloud platform, after the patient-identity master is established. One decision. Now hear it through four sets of ears.</p>
+<p><strong>What the CIO hears.</strong> The CIO is accountable for whether IT delivers and whether it is defensible to the board and the regulator. The CIO listens for <em>risk, deliverability, and strategic coherence</em>. The language that earns a CIO&rsquo;s trust is the language of managed risk and credible delivery: &ldquo;we consolidate in a sequenced way, with a safe stopping point at each stage, the identity foundation laid before we touch the clinical record, and a governance mechanism that keeps it on track.&rdquo; The CIO needs to believe the thing is deliverable and the risk is managed, because the CIO is the one who will answer for it.</p>
+<p><strong>What the CFO hears.</strong> Covered in Chapter 44 &mdash; the CFO listens for <em>cost, and the cost of inaction</em>. &ldquo;Consolidating to one EPR removes the duplicated licensing and maintenance of running two, and the cost of not doing it rises each year.&rdquo; The CFO needs the financial consequence, in both directions.</p>
+<p><strong>What the clinical lead hears.</strong> The clinical lead is accountable for patient safety and for the working lives of clinicians. The clinical lead listens, above all, for <em>safety and continuity of care</em>. The language that earns clinical trust is the language of safety-first sequencing and clinician involvement: &ldquo;no clinician loses access to a patient record at any point; the migration happens behind a fallback; clinicians are involved in validating each stage; and the end result is one record instead of two, so you stop toggling between systems to see a patient&rsquo;s full history.&rdquo; The clinical lead needs to believe that patient safety is the first constraint, not an afterthought &mdash; and to hear that their people were consulted, not done to.</p>
+<p><strong>What the engineer hears.</strong> The engineer is accountable for making it actually work. The engineer listens for <em>technical honesty and feasibility</em>. The language that earns an engineer&rsquo;s trust is precise, concrete, and free of hand-waving: the actual sequencing, the real dependencies, the integration approach, the failure handling, and an honest acknowledgement of what is hard. The fastest way to lose an engineer&rsquo;s trust is to gloss over a genuine technical difficulty with executive-friendly optimism; the fastest way to earn it is to name the hard part accurately and show you understand why it is hard.</p>
+<hr class="content-divider"/>
+<h2>What Each Audience Fears</h2>
+<p>Trust is earned as much by addressing fears as by offering benefits, and each audience fears something different. Naming the right fear &mdash; and showing you have thought about it &mdash; is often more powerful than naming the benefit.</p>
+<p>The CIO fears a visible failure on their watch &mdash; a programme that overruns, a system that goes down, a board question they cannot answer. Address it by showing the risk is managed and the governance is real.</p>
+<p>The CFO fears an open-ended commitment &mdash; a programme that consumes money without a defined end or a measurable return. Address it by showing the bounded cost and the cost of the alternative.</p>
+<p>The clinical lead fears harm to a patient and disruption to clinicians who are already stretched. Address it by making safety the first constraint and clinicians partners in the work.</p>
+<p>The engineer fears being set up to fail &mdash; committed to a deadline or a design that ignores a difficulty they can already see. Address it by being honest about the difficulty and showing the design respects it.</p>
+<p>The architect who leads with the benefit and ignores the fear is speaking past the audience&rsquo;s actual concern. The architect who names the fear first &mdash; &ldquo;I know your worry here is patient safety, so let me start there&rdquo; &mdash; has the audience&rsquo;s attention before the case even begins.</p>
+<hr class="content-divider"/>
+<h2>Meridian: Four Briefings, One Decision</h2>
+<p><em>Meridian&rsquo;s EA presents the EPR consolidation decision four times in a single week, to four audiences, and the substance does not change once. What changes is the entry point, the vocabulary, and the fear addressed first.</em></p>
+<p><em>To the CIO, she leads with risk and governance: the sequencing, the transition states, the ARB&rsquo;s role in keeping it on track, and an honest statement of the two or three things most likely to go wrong and how each is mitigated. The CIO&rsquo;s trust is earned when he sees that she has already thought about what he will be asked by the board.</em></p>
+<p><em>To the CFO, she leads with the cost of inaction and the bounded investment, in the language of Chapter 44. The CFO&rsquo;s trust is earned by the credibility of the numbers and the clear end point.</em></p>
+<p><em>To the clinical lead, she does not mention architecture building blocks or transition states at all. She leads with the safety constraint: at no point does any clinician lose access to a record; here is the fallback at each stage; here is how your clinicians will be involved in validating it; and here is what improves for them &mdash; one record, no more toggling. The clinical lead&rsquo;s trust is earned when she hears that safety is the first principle of the design and that her clinicians are partners, not subjects.</em></p>
+<p><em>To the engineering team, she drops the executive register entirely and gets concrete: the real dependency on the identity master, the integration re-pointing that consolidation requires, the data-migration risk, and an open acknowledgement that the reconciliation of the two patient datasets is the genuinely hard part that the executive briefings glossed. The engineers&rsquo; trust is earned precisely because she did not pretend the hard part was easy &mdash; she named it, and showed she understood why it was hard.</em></p>
+<p><em>Four briefings, four registers, four fears addressed, one unchanging decision. By the end of the week the decision has the support of all four audiences &mdash; not because they were told different things, but because the same thing was expressed in the terms each of them needed to evaluate it. The CIO, CFO, clinician, and engineer would, if they compared notes, find no contradiction; they would find one decision described four ways. That is the test of doing it with integrity.</em></p>
+<hr class="content-divider"/>
+<h2>Why This Is Not Manipulation</h2>
+<p>The objection is natural: if you describe the same decision differently to different people, are you not telling them different things &mdash; spinning each audience? The distinction between communication and manipulation is precise, and worth stating exactly.</p>
+<p><strong>The substance must not change.</strong> Manipulation tells different audiences different <em>facts</em>, or lets them believe incompatible things, so that each supports the decision for reasons that would collapse if they compared notes. Communication tells every audience the <em>same</em> facts and the <em>same</em> decision, expressed in the vocabulary and entry point each can act on. The test is the compare-notes test: if your four audiences sat down together and compared what you told them, would they find a contradiction? If yes, you manipulated. If they would find one consistent decision described four ways, you communicated.</p>
+<p><strong>You must not hide what an audience would want to know.</strong> Telling the clinical lead about the safety design is communication. <em>Not</em> telling the clinical lead about a genuine safety risk because it might cost you their support is manipulation by omission. Tailoring the language never licenses hiding the facts a given audience has a right to weigh.</p>
+<p><strong>The tailoring serves the audience, not the architect.</strong> The purpose of speaking to each audience in its own terms is to let <em>them</em> make a better decision, not to extract a &ldquo;yes&rdquo; they would not give if they understood. When the tailoring serves the listener&rsquo;s understanding, it is respect. When it serves only the speaker&rsquo;s agenda, it is manipulation. The same technique sits on either side of the line depending on whose interest it serves.</p>
+<p>Tailoring language to the audience, done within these constraints, is not manipulation &mdash; it is the ordinary courtesy of meeting people where they are, and the professional discipline of making a correct decision legible to everyone who has a stake in it. The clinician should not have to learn TOGAF to evaluate a decision that affects their patients, any more than the engineer should have to sit through a cost-of-inaction pitch to assess a design. Speaking to each in their own language is how you respect both.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>The cynic says:</strong> &ldquo;So you just tell each person what they want to hear.&rdquo; &gt; <strong>What that means:</strong> This is the manipulation the chapter rejects. The discipline is the opposite: tell each person the <em>same</em> decision and the <em>same</em> facts, in the language they can act on, such that if they compared notes they would find no contradiction. Telling people what they want to hear fails the compare-notes test; telling people the truth in their own terms passes it.</p></blockquote>
+<blockquote><p><strong>The skilled communicator says:</strong> &ldquo;Let me start where your concern is.&rdquo; &gt; <strong>What that means:</strong> They are addressing the audience&rsquo;s fear before the benefit, and entering through the door that audience cares about &mdash; risk for the CIO, safety for the clinician, feasibility for the engineer, cost for the CFO. The substance that follows is identical for all of them; only the entry point and vocabulary are matched to the room.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>The same architecture decision is heard differently by every audience: a CIO listens for risk and deliverability, a CFO for cost and the cost of inaction, a clinical lead for safety and continuity, an engineer for technical honesty and feasibility &mdash; and each fears something different, so naming the right fear first earns attention that leading with the benefit never will. The skill is to keep the substance and the facts identical while changing the entry point, the vocabulary, and the fear addressed, so that one unchanging decision becomes legible to four audiences. This is not manipulation, and the line is precise: the facts must not change, nothing an audience would want to know may be hidden, and the tailoring must serve the listener&rsquo;s understanding rather than the speaker&rsquo;s agenda. The test is whether, if all the audiences compared notes, they would find one consistent decision described in their own languages &mdash; or a contradiction. Communication passes that test; manipulation fails it.</p>
+<p><strong>Next:</strong> Part 6 turns the book outward to the reader directly. Chapter 46 begins with the recognition that everyone in IT is already doing EA thinking &mdash; and gives them the words to name it.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>Aristotle &mdash; Rhetoric</strong> (4th c. BC): The original analysis of adapting an argument to its audience &mdash; ethos, pathos, logos &mdash; and the foundational defence of the idea that the same truth must be expressed differently to be understood differently, without ceasing to be the same truth.</li><li><strong>Annette Simmons &mdash; The Story Factor</strong> (Basic Books, 2nd ed. 2006): On how the same message lands differently depending on how it meets the listener&rsquo;s existing concerns and fears &mdash; practical, and clear about the line between persuasion and manipulation.</li><li><strong>Roger Fisher &amp; William Ury &mdash; Getting to Yes</strong> (Penguin, 3rd ed. 2011): On understanding the other party&rsquo;s actual interests rather than their stated position &mdash; the negotiation foundation for &ldquo;start where their concern is,&rdquo; and for doing it honestly.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="44_words_that_unlock_budget.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">The Words That Unlock Budget</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="46_from_any_role_into_ea_thinking.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">From Any Role into EA Thinking</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

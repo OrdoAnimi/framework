@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Architecture Debt &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/26_architecture_debt.html"/>
+<meta property="og:title" content="Architecture Debt"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/26_architecture_debt.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 26</span>
+<h1 class="article-title">Architecture Debt</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>Most people in IT have heard of technical debt. Fewer have a name for the thing that sits above it and constrains far more: architecture debt. The distinction matters, because the two are paid down differently, justified differently, and &mdash; crucially &mdash; explained to a board differently.</p>
+<p><strong>Technical debt</strong> is the accumulated cost of implementation shortcuts &mdash; the code that was written quickly, the tests that were skipped, the workaround that became permanent. It lives inside systems. <strong>Architecture debt</strong> is the accumulated cost of structural decisions that constrain future options &mdash; the point-to-point integration that should have been a platform, the duplicated capability that should have been consolidated, the absent data master that everything now works around. It lives between systems, in the shape of the estate itself.</p>
+<p>This chapter explains what architecture debt is, how it accumulates, why it is more dangerous than technical debt, and &mdash; the part that determines whether anything gets done about it &mdash; how to make it visible to the person holding the budget.</p>
+<hr class="content-divider"/>
+<h2>How Architecture Debt Accumulates</h2>
+<p>Architecture debt is not created by bad decisions. That is the thing that makes it so hard to address. It is created by good decisions made in isolation.</p>
+<p>Every system in an estate was, at the moment it was procured, a rational answer to a real problem. The clinical portal solved a genuine need in 2011. The departmental database solved a genuine need in 2014. The point-to-point integration between them was the quickest way to get data flowing in 2015, and it worked. Each decision was locally rational &mdash; correct given what was known and needed at the time.</p>
+<p>Architecture debt is what locally rational decisions add up to when nobody is coordinating them. No single decision was wrong. The accumulation is the problem. Thirty separate teams each choosing the quickest integration produce an estate with thirty fragile connections that nobody designed and nobody fully understands. The debt is emergent &mdash; it arises from the absence of coordination, not the presence of error.</p>
+<p>This is why architecture debt cannot be blamed on anyone, and why &ldquo;who let this happen?&rdquo; is the wrong question. Nobody let it happen. Everybody, acting reasonably, made it happen together. The fix is not to find the culprit; it is to introduce the coordination that was missing.</p>
+<hr class="content-divider"/>
+<h2>Why It Is More Dangerous Than Technical Debt</h2>
+<p>Technical debt and architecture debt are both real costs, but they differ in three ways that make architecture debt the more serious.</p>
+<p><strong>Scope.</strong> Technical debt is contained within a system. You can pay it down by refactoring that system, and the cost is bounded by the system&rsquo;s size. Architecture debt spans systems. Paying it down means changing the relationships between systems, which touches everything connected to them. The blast radius is the estate, not the component.</p>
+<p><strong>Visibility.</strong> Technical debt is visible to the people who maintain the system &mdash; the developers feel it every time they change the code. Architecture debt is invisible from inside any single system. Each team sees only their own corner. The debt lives in the connections and the gaps between teams, which is precisely where nobody is looking. It becomes visible only when someone assembles the whole picture &mdash; which is what enterprise architecture is for.</p>
+<p><strong>Reversibility.</strong> Technical debt can usually be paid down incrementally. Architecture debt often cannot, because the structural decisions have been built upon. The absent data master is not a line of code to fix; it is an assumption baked into a dozen systems that each built their own version of patient identity. Unwinding it means coordinating change across all of them at once.</p>
+<p>The combination &mdash; wide scope, low visibility, poor reversibility &mdash; is what makes architecture debt the kind of problem that grows quietly for years and then presents as a crisis that seems to have come from nowhere. The VMware licensing shock, the failed integration, the data-quality scandal: these are often architecture debt becoming visible all at once.</p>
+<hr class="content-divider"/>
+<h2>Architecture Debt at Meridian</h2>
+<p><em>Meridian&rsquo;s architecture debt is thirty years of locally rational decisions that nobody coordinated, and by the time the EA arrives it has compounded into the conditions described throughout this book.</em></p>
+<p><em>The 34 point-to-point integrations are architecture debt. Each was the right answer to a specific data-flow need at a specific moment. Collectively they are a web of dependencies that makes any change a high-risk event &mdash; the structural cost of fifteen years of nobody owning the integration question.</em></p>
+<p><em>The dual EPR is architecture debt. It arose from a merger: two organisations, each with its own clinical record system, neither willing to abandon its own, no governance with the authority to force consolidation. The decision to run both was rational for each predecessor organisation. The accumulated cost &mdash; duplicated licensing, fragmented patient records, clinicians toggling between systems &mdash; is borne by the merged organisation that nobody designed.</em></p>
+<p><em>The absent patient-identity master is the deepest debt. Twenty-three of thirty-one data entities have no owner; patient identity, the most important of them, is reconstructed differently by each system that needs it. No single decision created this. Each system, when built, reasonably solved its own identity problem. The structural cost &mdash; the inability to trust that two records refer to the same patient &mdash; is the debt those reasonable decisions left behind.</em></p>
+<p><em>The EA&rsquo;s insight is that the VMware crisis, which the board experiences as a sudden cost shock, is not sudden at all. It is architecture debt presenting as a bill. The infrastructure was never consolidated, never modernised, never governed as an estate &mdash; a series of locally rational deferrals, each of which made sense, which together produced a platform that is now simultaneously expensive, fragile, and end-of-life. The shock is the debt becoming visible, on a timetable set by a vendor rather than by Meridian.</em></p>
+<hr class="content-divider"/>
+<h2>Making It Visible to a CFO</h2>
+<p>Here is the practical problem. Architecture debt is invisible, structural, and blameless. A CFO sees none of that. A CFO sees a request for investment in something that does not produce new capability &mdash; that merely restructures what already exists. To the financial eye, paying down architecture debt looks like spending money to stand still.</p>
+<p>The translation that unlocks the conversation is <strong>cost of inaction</strong>. Architecture debt is not a request to spend money on improvement; it is the quantified consequence of <em>not</em> spending it. The frame is not &ldquo;we would like to modernise the integration estate.&rdquo; The frame is &ldquo;the integration estate carries a quantifiable risk and a quantifiable run cost, both of which grow each year we defer, and here is what each year of deferral costs.&rdquo;</p>
+<p>This makes the debt visible in the only language a CFO is obliged to act on: financial consequence over time. Architecture debt translates into three financial quantities. There is the <strong>carrying cost</strong> &mdash; what the debt costs to live with each year, in run cost, maintenance effort, and licensing. There is the <strong>risk cost</strong> &mdash; the expected cost of the failure the debt makes more likely, weighted by its probability. And there is the <strong>option cost</strong> &mdash; the future investments the debt blocks or makes more expensive, because they cannot proceed until the debt is paid.</p>
+<p>The VMware crisis is the clearest example. Framed as &ldquo;we want to migrate to cloud&rdquo;, it is a discretionary modernisation competing for capital. Framed as &ldquo;the current platform&rsquo;s run cost has tripled, it is unsupported and carries a clinical-continuity risk, and every month of deferral adds £X to the eventual migration cost while the risk compounds&rdquo;, it is a cost-of-inaction case that a CFO can take to a board. Same underlying reality. Entirely different conversation.</p>
+<p>The skill is not financial modelling. It is refusing to ask for money to improve things, and insisting instead on showing what not improving them already costs.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>Architects say:</strong> &ldquo;We&rsquo;ve accumulated significant architecture debt across the integration estate.&rdquo; &gt; <strong>What that means:</strong> The way the systems connect to each other has become a structural liability &mdash; not because any one connection is wrong, but because the accumulation constrains every future change and carries a growing run cost and risk. It is a statement about the shape of the estate, not the quality of any component.</p></blockquote>
+<blockquote><p><strong>What a CFO needs to hear instead:</strong> &ldquo;Living with the current integration estate costs us roughly £X a year to run, carries a quantified risk of clinical-system failure, and adds an estimated £Y to the cost of every major system change. Each year we defer, those numbers grow. Here is what addressing it costs, and here is what not addressing it costs.&rdquo; &gt; <strong>What that means:</strong> The same debt, translated from a structural statement into a financial one with a time dimension. The CFO cannot act on &ldquo;architecture debt&rdquo;. The CFO can act on &ldquo;cost of inaction, growing annually&rdquo;.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>Architecture debt is the accumulated cost of structural decisions that constrain future options &mdash; and unlike technical debt, it lives between systems rather than inside them, which makes it wider in scope, lower in visibility, and harder to reverse. It accumulates not from bad decisions but from good ones made in isolation, with nobody coordinating the whole. That is why it cannot be blamed on anyone and why the missing ingredient is always coordination rather than competence. And because it is structural and invisible, it must be translated into financial consequence before anyone with a budget will act on it. The decisive move is to stop asking for money to improve things and start showing what not improving them already costs &mdash; the cost of inaction, growing every year it is deferred.</p>
+<p><strong>Next:</strong> Chapter 27 returns to the application portfolio from Chapter 20 and introduces the decision framework for acting on it &mdash; the 6R model that turns an assessment into a set of dispositions.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>Ward Cunningham &mdash; the original &ldquo;debt metaphor&rdquo;</strong> (c2.com): Cunningham coined technical debt to describe shipping not-quite-right code as a loan against future productivity. The architecture-debt extension in this chapter applies the same logic one level up, to structural rather than implementation decisions.</li><li><strong>Neal Ford, Rebecca Parsons, Patrick Kua &mdash; Building Evolutionary Architectures</strong> (O&rsquo;Reilly, 2017): The clearest treatment of how architectural decisions constrain future change, and of fitness functions as a way to keep the constraint visible before it becomes debt.</li><li><strong>Andrew Stewart &mdash; &ldquo;The Cost of Inaction&rdquo;</strong> (various FinOps and EA sources): The cost-of-inaction framing is the standard FinOps move for justifying remediation spend; searching the term surfaces several usable templates for the CFO conversation described here.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="25_architecture_roadmap.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">Architecture Roadmap</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="27_application_portfolio.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Application Portfolio and the 6Rs</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

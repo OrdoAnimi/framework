@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>How to Read an Activity Diagram &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 4 · Reading the Diagrams"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/37_read_activity_diagram.html"/>
+<meta property="og:title" content="How to Read an Activity Diagram"/>
+<meta property="og:description" content="Part 4 · Reading the Diagrams"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/37_read_activity_diagram.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 37</span>
+<h1 class="article-title">How to Read an Activity Diagram</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 4 · Reading the Diagrams</em></p>
+<hr class="content-divider"/>
+<p>An activity diagram shows a process as <strong>flow</strong> &mdash; the sequence of activities, the decision points where the flow branches, the parallel paths that happen at the same time, and the start and end states that bound the whole. Where a sequence diagram shows messages between systems over time, an activity diagram shows the steps of a process regardless of who or what performs them. It is the diagram of <em>how work flows</em>, and it is the one most likely to reveal a process problem that no amount of system analysis would find: the decision point that nobody owns.</p>
+<p>This chapter teaches the reading of an activity diagram through Meridian&rsquo;s community-services referral process, and explains the practical distinction between activity diagrams and sequence diagrams &mdash; which trips up many readers &mdash; by showing when each is the right tool.</p>
+<hr class="content-divider"/>
+<h2>The Anatomy: Flow, Decisions, and Parallelism</h2>
+<p>The activity diagram&rsquo;s vocabulary is built around movement through a process.</p>
+<p>The <strong>start node</strong> (usually a filled circle) marks where the process begins; the <strong>end node</strong> (a filled circle with a ring) marks where it finishes. Between them, <strong>activities</strong> (rounded boxes) are the steps &mdash; &ldquo;receive referral&rdquo;, &ldquo;assess eligibility&rdquo;, &ldquo;assign caseworker&rdquo;. <strong>Flow arrows</strong> connect them, showing the order.</p>
+<p>The <strong>decision node</strong> (a diamond) is where the flow branches based on a condition &mdash; &ldquo;eligible?&rdquo; with a yes-path and a no-path leaving it. Decision nodes are the most important elements to read carefully, because each one represents a choice that someone or something must make, and the quality of a process often comes down to whether its decisions are well-defined and well-owned.</p>
+<p><strong>Parallel paths</strong> are shown by a <strong>fork</strong> (a bar that splits one flow into several that proceed simultaneously) and a <strong>join</strong> (a bar that waits for several flows to complete before continuing). Forks and joins represent things that happen at the same time, and the join is a synchronisation point &mdash; the process cannot continue until all the parallel paths have arrived.</p>
+<p>``` (start) │ ▼ [receive referral] │ ▼ &lt; eligible? &gt; ──no──▶ [reject + notify] ──▶ (end) │ yes ▼ [assign caseworker] │ ▼ (end) ```</p>
+<p>Read top to bottom and along the branches, this is a process you can narrate: a referral arrives, eligibility is checked, ineligible referrals are rejected and the referrer notified, eligible ones get a caseworker assigned.</p>
+<hr class="content-divider"/>
+<h2>Reading Decision Points for Ownership</h2>
+<p>The single most valuable reading skill for activity diagrams is examining each <strong>decision node</strong> and asking two questions: <em>what determines which way the flow goes?</em> and <em>who owns that determination?</em></p>
+<p>A healthy decision node has a clear, documented criterion and a clear owner &mdash; a person or rule that makes the call. An unhealthy one has either no defined criterion (so the decision is made inconsistently, differently by different people on different days) or no owner (so the decision falls into a gap where everyone assumes someone else is making it).</p>
+<p>The decision point with no owner is the classic process pathology, and the activity diagram is the artefact that makes it visible. On the diagram, an unowned decision looks exactly like an owned one &mdash; a diamond with branches. The diagram does not, by itself, show the ownership void. But reading the diagram <em>with the ownership question in mind</em> surfaces it immediately: point at each diamond and ask &ldquo;who decides this?&rdquo; The diamonds for which nobody can answer are the process&rsquo;s broken points.</p>
+<hr class="content-divider"/>
+<h2>Meridian&rsquo;s Referral Process</h2>
+<p><em>Meridian&rsquo;s activity diagram for the community-services referral process looks, at first glance, like a reasonable process. Read for decision-point ownership, it reveals three decision points with no defined owner &mdash; and explains a backlog that had defied every operational fix.</em></p>
+<p><em>The first unowned decision is eligibility. The diagram shows an &ldquo;eligible?&rdquo; diamond, but tracing who actually makes the call reveals that no single role owns it. Referrals from GPs are assessed by one team using one informal standard; referrals from hospitals are assessed by another using a different one; self-referrals fall between the two. The diamond looks like one decision; it is really three, made inconsistently, with no owner of the criterion. Patients with identical needs are accepted or rejected depending on who referred them &mdash; a fairness problem the activity diagram exposes by asking who owns the diamond.</em></p>
+<p><em>The second unowned decision is prioritisation. After a referral is accepted, the diagram shows an &ldquo;assign priority&rdquo; step feeding a decision about how quickly the patient is seen. But priority is assigned by whichever caseworker happens to pick up the referral, against no shared rule. The decision point has no owner, so urgent and routine cases queue together and are pulled in an order that depends on individual judgement rather than agreed criteria. The waiting-list problem that operations had tried to solve by adding caseworkers was never a capacity problem; it was an unowned-decision problem, and the diagram showed it.</em></p>
+<p><em>The third unowned decision is the one nobody had even noticed was a decision: what happens to a referral that is neither clearly accepted nor clearly rejected &mdash; the ambiguous case. The diagram, drawn honestly, showed these flowing to a &ldquo;hold for review&rdquo; state with no exit arrow. A hold state with no defined way out is a decision point with no owner and no criterion &mdash; referrals went in and did not reliably come out. This was the source of the genuinely lost referrals that had triggered a complaint. The dangling state was visible on the diagram the moment someone read it asking &ldquo;and how does a referral leave this box?&rdquo;</em></p>
+<p><em>The fix in every case was the same shape: assign an owner and a criterion to the decision. No new system, no new capacity &mdash; just the closing of the ownership gaps that the activity diagram made visible. This is the activity diagram&rsquo;s particular power: it surfaces process problems that look like resourcing problems but are actually decision-ownership problems.</em></p>
+<hr class="content-divider"/>
+<h2>Activity Versus Sequence: When to Use Each</h2>
+<p>Readers frequently confuse activity diagrams and sequence diagrams, because both show &ldquo;what happens.&rdquo; The distinction is worth holding clearly, because it tells you which diagram to ask for.</p>
+<p>A <strong>sequence diagram</strong> shows interaction <em>between participants</em> &mdash; who sends what message to whom, over time. Its centre of gravity is the systems (or people) and the messages passing between them. You reach for it when the question is about an <em>integration</em> or an <em>interaction</em>: how do these systems talk, and what happens when the conversation fails?</p>
+<p>An <strong>activity diagram</strong> shows the <em>flow of a process</em> &mdash; the steps, decisions, and parallel paths &mdash; often abstracting away exactly who performs each step. Its centre of gravity is the work and how it moves. You reach for it when the question is about a <em>process</em>: what are the steps, where does the flow branch, and where does it get stuck?</p>
+<p>A useful rule of thumb: if the interesting question is &ldquo;what happens when system A calls system B and B is slow?&rdquo;, you want a sequence diagram. If the interesting question is &ldquo;why do referrals get stuck, and who decides what?&rdquo;, you want an activity diagram. The referral problem at Meridian is a flow-and-decision problem, which is why the activity diagram, not the sequence diagram, was the instrument that solved it.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>Business analysts say:</strong> &ldquo;Let&rsquo;s map the process as an activity diagram so we can see where it branches.&rdquo; &gt; <strong>What that means:</strong> They want to see the flow &mdash; the steps, the decision points, the parallel paths &mdash; to find where work stalls or splits. The branches (decision nodes) are usually where the interesting problems are, because each branch is a choice that has to be defined and owned.</p></blockquote>
+<blockquote><p><strong>Architects say:</strong> &ldquo;Every decision diamond needs an owner and a criterion &mdash; which of these has neither?&rdquo; &gt; <strong>What that means:</strong> They are reading the diagram for the classic process pathology: the decision point that nobody owns and no rule governs. On the diagram it looks like any other diamond; the question &ldquo;who decides this, and by what rule?&rdquo; is what exposes the unowned ones, which are almost always where the process is broken.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>An activity diagram shows a process as flow &mdash; start and end states, activities, decision nodes where the flow branches, and forks and joins for parallel paths &mdash; abstracting away who performs each step. The most valuable reading skill is interrogating each decision node for ownership: pointing at every diamond and asking who decides this and by what criterion. The decision point with no owner is the classic process pathology, invisible as a shape on the diagram but glaring the moment the ownership question is asked, and it routinely masquerades as a resourcing problem when it is really a decision-ownership problem. Activity diagrams differ from sequence diagrams in centre of gravity &mdash; flow-of-work versus interaction-between-participants &mdash; and knowing which question you are asking tells you which diagram to reach for.</p>
+<p><strong>Next:</strong> Chapter 38 turns to the ArchiMate view &mdash; the notation that shows the business, application, and technology layers of an estate simultaneously, and how to decode it without having to draw it.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>UML 2.5 specification &mdash; Activity Diagrams</strong> (omg.org): The formal notation, including the fork/join and decision/merge nodes. Most business process diagrams borrow this vocabulary loosely, so the formal version helps you read both strict and informal diagrams.</li><li><strong>OMG &mdash; Business Process Model and Notation (BPMN 2.0)</strong> (bpmn.org): The notation most commonly used for business processes in practice, closely related to activity diagrams. If a process diagram in your organisation uses pools and swimlanes, it is probably BPMN, and this is the reference.</li><li><strong>Geary Rummler &amp; Alan Brache &mdash; Improving Performance</strong> (Jossey-Bass, 3rd ed. 2012): The classic on process mapping and, crucially, on the &ldquo;white space&rdquo; between functions where unowned decisions and dropped handoffs live &mdash; the management-level companion to reading decision ownership on a diagram.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="36_read_sequence_diagram.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">How to Read a Sequence Diagram</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="38_read_archimate_view.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">How to Read an ArchiMate View</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

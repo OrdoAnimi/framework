@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Landscape at a Glance &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Before Part 2 takes you through each framework in depth, you need a map of the territory itself."/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/04_landscape_at_a_glance.html"/>
+<meta property="og:title" content="The Landscape at a Glance"/>
+<meta property="og:description" content="Before Part 2 takes you through each framework in depth, you need a map of the territory itself."/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/04_landscape_at_a_glance.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 04</span>
+<h1 class="article-title">The Landscape at a Glance</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 10 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<h2>Opening</h2>
+<p>Before Part 2 takes you through each framework in depth, you need a map of the territory itself.</p>
+<p>Part 2 covers fourteen frameworks. If you encounter them one by one without any sense of how they relate, you will accumulate fourteen separate mental models that do not connect. That is not how the profession works. These frameworks are not alternatives. They are not competitors. Most of them address different aspects of the same problem, and an architect working in a large organisation typically uses several of them simultaneously.</p>
+<p>This chapter gives you the overview before the detail. Every major framework named. The type it belongs to. What problem it was designed to solve. How it relates to the others. By the end of this chapter you will have a working map of the landscape. Part 2 walks you through each location on that map.</p>
+<hr class="content-divider"/>
+<h2>The four types</h2>
+<p>The frameworks in Part 2 divide into four types. Knowing which type you are dealing with tells you what to expect from it &mdash; and prevents the frustration of reaching for something it was never designed to provide.</p>
+<p><strong>Classification systems</strong> organise architecture descriptions. They do not tell you how to develop architecture. They tell you what types of description exist and where each one belongs. Zachman is the primary example. It does not give you a process. It gives you a grid &mdash; a way of ensuring that every type of description of an enterprise has a home and nothing important is confused with something else.</p>
+<p><strong>Development methodologies</strong> provide a process for doing architecture work. They tell you how to move from where you are to where you need to be, what phases to move through, and what to produce at each stage. TOGAF and its ADM is the primary example. It tells you how to approach the work. It does not tell you which technology to choose or which products to buy.</p>
+<p><strong>Notation standards</strong> provide a visual language for drawing architecture so that other practitioners can read it. They are not methodologies and not classification systems. They are shared vocabularies for diagrams. ArchiMate is the primary example. Without a notation standard, every architect draws differently. With one, a diagram produced in one organisation can be read by an architect from another without being told what the shapes mean.</p>
+<p><strong>Domain-specific frameworks</strong> apply architecture thinking to a particular domain &mdash; security, business, government, defence. SABSA for security architecture. BIZBOK for business architecture. FEAF and DODAF for government and defence contexts. SAP EA for SAP technology landscapes. Each addresses a domain that general frameworks cover only partially.</p>
+<p><em>Meridian&rsquo;s new enterprise architect spends her first week cataloguing what frameworks the organisation nominally uses. TOGAF is referenced in the EA strategy document from 2021. Nobody is sure which version. ArchiMate is mentioned in a job description posted eighteen months ago for a role that was never filled. SABSA appears in a security policy document as something the organisation &ldquo;intends to align with.&rdquo; The actual practice bears little resemblance to any of them. That is not unusual. Knowing the frameworks and applying them are different things, and most organisations are somewhere on the journey between the two.</em></p>
+<hr class="content-divider"/>
+<h2>The frameworks at a glance</h2>
+<p>| <strong>Framework</strong> | <strong>Type</strong> | <strong>Primary problem it solves</strong> | <strong>Where you encounter it</strong> | |---|---|---|---| | <strong>Zachman</strong> | Classification system | Organising every type of architecture description so nothing is missed or confused | Government IT, formal EA education, completeness checking | | <strong>TOGAF / ADM</strong> | Development methodology | Structured process for developing enterprise architectures from vision to governance | Almost everywhere EA is practised formally | | <strong>ArchiMate</strong> | Notation standard | Common visual language for drawing architecture so any practitioner can read it | Alongside TOGAF; architecture tools like Archi and Sparx | | <strong>FEAF</strong> | Domain-specific (government) | Common EA approach for US federal agencies | US federal government programmes and their contractors | | <strong>DODAF</strong> | Domain-specific (defence) | Standardised architecture descriptions for US defence systems | US defence programmes; defence contractors | | <strong>MODAF / NAF</strong> | Domain-specific (defence) | UK MoD and NATO equivalents to DODAF | UK defence; NATO multi-nation programmes | | <strong>SABSA</strong> | Domain-specific (security) | Security architecture traceable to business risk rather than technical checklists | Regulated industries; anywhere security architecture is taken seriously | | <strong>BIZBOK</strong> | Domain-specific (business) | Business architecture &mdash; capabilities, value streams, motivation models | Large organisations doing capability mapping; public sector transformation | | <strong>SAP EA</strong> | Domain-specific (SAP) | Governing complex SAP landscapes across their development, QA, and production tiers | Any organisation running SAP S/4HANA or legacy ECC | | <strong>Wardley Mapping</strong> | Adjacent discipline | Positioning technology decisions on an evolution curve to inform strategy | Technology strategy; cloud adoption decisions; build-vs-buy reasoning | | <strong>ITIL</strong> | Adjacent discipline | IT service management &mdash; how to operate the estate the architecture designs | Everywhere IT services are delivered formally | | <strong>COBIT</strong> | Adjacent discipline | IT governance &mdash; how to ensure IT delivers value and manages risk | Regulated environments; audit and compliance contexts |</p>
+<hr class="content-divider"/>
+<h2>Why there are so many</h2>
+<p>The variety is not an accident or a failure of the profession to consolidate. It reflects three real things.</p>
+<p><strong>Different problems require different tools.</strong> A framework designed to govern the procurement and interoperability of US defence systems does not look like a framework designed to help a retail bank map its business capabilities. The contexts are different. The stakeholders are different. The failure modes are different. Specialist frameworks exist because generic frameworks cannot serve every context equally well.</p>
+<p><strong>The profession grew in layers.</strong> Zachman came first, in 1987, with the classification insight. TOGAF came next, in 1995, with the process. ArchiMate came later, in the 2000s, with the notation. SABSA, BIZBOK, and the domain-specific frameworks developed as practitioners in specific fields found that generic frameworks did not fully address their domain&rsquo;s concerns. Each addition was a response to a real gap, not an academic exercise.</p>
+<p><strong>No single framework is complete.</strong> This is the most important point. TOGAF tells you how to develop architecture but does not tell you how to draw it. ArchiMate tells you how to draw architecture but does not tell you how to develop it. SABSA tells you how to design security architecture but relies on TOGAF or another methodology for the broader development process. The frameworks are not competing attempts to solve the same problem. They are complementary instruments that cover different aspects of a problem too large for any single framework to address fully.</p>
+<p><em>An architect joining Meridian from a banking background arrives with TOGAF certification, ArchiMate fluency, and solid COBIT knowledge from years of working in a regulated environment. She has never used SABSA formally but understands the principles. She has never used BIZBOK but has done capability mapping using her own approach. On day one she does not need to be told which frameworks to use. She draws on what she knows, identifies where the gaps are for this specific context, and fills them as the work requires. That is how every experienced practitioner operates. The frameworks are a toolkit. The work determines which tools you reach for.</em></p>
+<hr class="content-divider"/>
+<h2>How they relate</h2>
+<p>The relationships between the frameworks matter as much as the frameworks themselves.</p>
+<p><strong>TOGAF and ArchiMate are designed to work together.</strong> Both are published by The Open Group. TOGAF provides the development process. ArchiMate provides the notation for the outputs that process produces. In practice they are almost always used in combination. An architect running a TOGAF ADM programme produces ArchiMate views at each phase. The frameworks are not alternatives &mdash; they are complementary halves of the same practice.</p>
+<p><strong>TOGAF and COBIT address adjacent concerns.</strong> TOGAF governs how architecture is developed. COBIT governs how IT delivers value and manages risk. In regulated environments &mdash; financial services, healthcare, government &mdash; both are typically in use simultaneously, with COBIT providing the governance structure that TOGAF&rsquo;s Phase G relies on.</p>
+<p><strong>SABSA and TOGAF are explicitly designed to integrate.</strong> SABSA contributes the security architecture layer to each ADM phase. An organisation using TOGAF for its EA programme and SABSA for security architecture is not running two separate processes &mdash; it is running one process with a security architecture dimension embedded at each phase.</p>
+<p><strong>BIZBOK sits above TOGAF in the architecture stack.</strong> Business architecture &mdash; capabilities, value streams, motivation models &mdash; is the starting point from which application and technology architecture are derived. In TOGAF terms, the business architecture domain is the first domain. BIZBOK provides the depth of method for that domain that TOGAF does not fully supply.</p>
+<p><strong>Wardley Mapping, ITIL, and COBIT are adjacent disciplines.</strong> They are not enterprise architecture frameworks by self-description, but they address problems that EA also addresses, and the communities overlap significantly. An architect who cannot read a Wardley Map is missing a strategic tool that is increasingly common in technology leadership conversations. An architect who does not understand ITIL and COBIT is missing the operating model that sustains the estate they design.</p>
+<hr class="content-divider"/>
+<h2>What this means for how you read Part 2</h2>
+<p>Part 2 covers each framework in a separate chapter. Each chapter tells you what the framework is, where it came from, what problem it solves, what it does well, and where its limits are. Each chapter includes a translator panel &mdash; the official definition on one side, the plain English on the other. Each chapter connects the framework to Meridian so you can see it in a real context.</p>
+<p>You do not need to read Part 2 in order. If you encounter a specific framework in your work and need to understand it quickly, go directly to that chapter. The chapters are designed to stand alone as well as to build on each other.</p>
+<p>What you do need to carry from this chapter into every chapter in Part 2 is the type question. Every time you encounter a framework, ask: is this a classification system, a development methodology, a notation standard, or a domain-specific framework? The answer tells you what it can do for you and what it cannot. That is the single most useful filter in the landscape.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>The profession says:</strong> &ldquo;Enterprise architecture frameworks provide structured approaches for developing, governing, and communicating enterprise architectures across business, data, application, and technology domains.&rdquo; &gt; <strong>What that means:</strong> Different teams and organisations have packaged their accumulated knowledge about how to do architecture work into frameworks &mdash; structured sets of concepts, methods, and vocabulary. Some of those packages cover the whole development process. Some cover a specific domain. Some just define how to draw things. Knowing which type of package you are holding tells you whether it will do what you are hoping for.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>The landscape of frameworks is not a menu &mdash; you do not pick one and ignore the rest. It is a toolkit where each instrument addresses a different aspect of the same broad challenge. Classification systems, development methodologies, notation standards, and domain-specific frameworks are complementary, not competing. Most experienced architects use several simultaneously.</p>
+<p><strong>Next:</strong> Chapter 5 begins Part 2 with Zachman &mdash; the classification system that gave the profession its first way of thinking about itself, and the intellectual foundation that makes every framework that followed easier to understand.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The Open Group Architecture Framework &mdash; TOGAF Standard, 10th Edition</strong> (opengroup.org): The most complete single source for understanding how TOGAF positions itself relative to other frameworks. The introduction section explicitly addresses how TOGAF relates to Zachman, ArchiMate, and COBIT.</li><li><strong>Zachman International</strong> (zachman.com): John Zachman&rsquo;s own site includes the framework specification and a substantial library of explanatory material, including his original 1987 IBM Systems Journal paper.</li><li><strong>The Business Architecture Guild</strong> (bizbok.org): The BIZBOK guide is available to members. The guild&rsquo;s public resources include a useful overview of how business architecture relates to enterprise architecture more broadly.</li><li><strong>AXELOS &mdash; ITIL 4 Foundation</strong> (axelos.com): The starting point for understanding ITIL. The Foundation guide is intentionally accessible and covers the service management concepts that any EA working alongside an ITIL-aligned operations team needs to recognise.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="03_landscape_of_frameworks.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">The Landscape of Frameworks</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="05_zachman.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Zachman: The Classification System</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

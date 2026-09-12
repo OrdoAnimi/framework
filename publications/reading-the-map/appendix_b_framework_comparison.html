@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Appendix B &mdash; Framework Comparison Table &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Reading the Map · Reference"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/appendix_b_framework_comparison.html"/>
+<meta property="og:title" content="Appendix B — Framework Comparison Table"/>
+<meta property="og:description" content="Reading the Map · Reference"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/appendix_b_framework_comparison.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter B</span>
+<h1 class="article-title">Appendix B &mdash; Framework Comparison Table</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Reading the Map · Reference</em></p>
+<hr class="content-divider"/>
+<p>The frameworks and adjacent disciplines covered in the book, side by side. Use this to place any framework in context &mdash; what kind of thing it is, what it is for, and where its limits are. The frameworks are not competitors; they occupy different categories (see Chapter 21). The &ldquo;type&rdquo; column names the category.</p>
+<hr class="content-divider"/>
+<h2>The Frameworks at a Glance</h2>
+<p>| Framework | Type | Origin | Primary purpose | Best used for | Known limitation | |---|---|---|---|---|---| | <strong>Zachman</strong> | Classification | John Zachman, IBM, 1987 | Classify the kinds of description an enterprise needs | Checking completeness; resolving &ldquo;we&rsquo;re talking past each other&rdquo; | Describes, does not tell you how to build; ceremonial if all 36 cells are populated | | <strong>TOGAF</strong> | Method | The Open Group, 1995 | A repeatable method (the ADM) for developing architecture | A shared vocabulary and defensible sequence | Heavy if run in full; designed for large enterprises, not small fast ones | | <strong>ADM</strong> | Method (within TOGAF) | The Open Group | The phase cycle: vision → domains → roadmap → governance | Structuring the thinking, selectively | Becomes ritual if every phase is performed regardless of need | | <strong>ArchiMate</strong> | Notation | The Open Group, 2009 | A standard visual language across business, app, technology | Diagrams others can read; the vertical trace | Dense views become unreadable; needs the single-thread reading technique | | <strong>SABSA</strong> | Domain (security) | Sherwood et al., 1990s | Trace security controls to business risk | Security architecture connected to business risk | Often absent; can be heavyweight for small organisations | | <strong>BIZBOK</strong> | Domain (business) | Business Architecture Guild | Business architecture practice, incl. capability mapping | Capability maps, value streams, business-layer depth | Abstract; value depends on connecting it to real decisions | | <strong>SAP EA Framework</strong> | Domain (vendor) | SAP | Architecture aligned to the SAP landscape | Organisations with a large SAP estate | Naturally centred on SAP&rsquo;s own technology | | <strong>Wardley Mapping</strong> | Strategy / evolution | Simon Wardley, 2005 | Reason about evolution and what to build vs. buy | Strategic positioning; build/buy/commodity decisions | Subjective placement; takes practice to read and draw well | | <strong>ITIL</strong> | Operating / service mgmt | UK Government (CCTA), 1989 | Manage IT services in operation | Running what architecture builds; incident/change | Downstream of architecture; can ossify into process for its own sake | | <strong>COBIT</strong> | Governance | ISACA, 1996 | Govern the enterprise&rsquo;s use of IT | Control environment; audit alignment | Control-heavy; often invoked only at audit time | | <strong>Government/Defence (FEAF, DODAF, MODAF, NAF)</strong> | Method/reference (sector) | US/UK governments, 1990s&ndash;2000s | Architecture for government and defence estates | Public-sector and defence contexts | Mandated detail can be disproportionate outside those sectors |</p>
+<hr class="content-divider"/>
+<h2>How to Read This Table</h2>
+<p><strong>Match the category to the question.</strong> The &ldquo;type&rdquo; column is the most useful. A strategy question reaches for Wardley; a method question for the ADM; a classification question for Zachman; a governance question for COBIT. Asking &ldquo;which framework?&rdquo; without first asking &ldquo;which category of question?&rdquo; is the category error of Chapter 21.</p>
+<p><strong>No framework does everything.</strong> Each is strong within its category and silent outside it. TOGAF gives you a method but not a notation; ArchiMate gives you a notation but not a method; Zachman gives you a taxonomy but neither. A working practice combines several.</p>
+<p><strong>The limitation column matters as much as the purpose column.</strong> Every framework has a characteristic failure mode &mdash; usually ceremony, heaviness, or being applied outside the context it was designed for. Knowing the limitation is knowing when <em>not</em> to reach for the framework.</p>
+<p><strong>Certification ≠ capability.</strong> Several of these frameworks have certification programmes (TOGAF and SABSA most prominently). A certificate demonstrates familiarity with the framework, not the ability to use it well in a real organisation &mdash; which is the skill this book argues actually matters.</p>
+<hr class="content-divider"/>
+<h2>Certification Pathways (where they exist)</h2>
+<p>| Framework | Certification | Entry point | |---|---|---| | TOGAF | TOGAF Foundation, then Practitioner (The Open Group) | Self-study or accredited training; widely available | | ArchiMate | ArchiMate 3 Foundation/Practitioner (The Open Group) | Often taken alongside TOGAF | | SABSA | SABSA Foundation (SCF), then advanced (SABSA Institute) | Accredited training | | ITIL | ITIL 4 Foundation, then specialist modules (PeopleCert/Axelos) | Foundation is the common entry point | | COBIT | COBIT Foundation, then Design &amp; Implementation (ISACA) | Often pursued by audit and governance professionals | | BIZBOK | Certified Business Architect &mdash; CBA (Business Architecture Guild) | Guild membership and exam |</p>
+<p><em>Zachman, Wardley Mapping, and the government/defence frameworks are studied through their published material and communities rather than a single dominant certification &mdash; see Appendix E for the professional landscape.</em></p>
+<hr class="content-divider"/>
+<h2>The Honest Summary</h2>
+<p>If you take one thing from this table: the frameworks are a toolkit, not a shelf of competing products. The mature practitioner uses several &mdash; a method, a notation, domain depth where needed, a strategy lens, and a governance frame &mdash; selecting each for the question in front of them and resisting the pull to perform any of them ceremonially. The frameworks are a map (Chapter 54). This table is a guide to which map to unfold for which journey.</p>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="appendix_a_glossary.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">Appendix A &mdash; Full Glossary</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="appendix_c_adm_phase_reference.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Appendix C &mdash; ADM Phase Reference</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

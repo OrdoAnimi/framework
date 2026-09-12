@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Transition Architecture &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/30_transition_architecture.html"/>
+<meta property="og:title" content="Transition Architecture"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/30_transition_architecture.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 30</span>
+<h1 class="article-title">Transition Architecture</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>No organisation moves from its current state to its target state in a single step. The journey passes through intermediate states, and each intermediate state is a real configuration of the estate that real people have to operate, real patients depend on, and real money funds. A <strong>transition architecture</strong> is the deliberate design of one of those intermediate states &mdash; a defined, stable, survivable configuration partway between where the organisation is and where it is going.</p>
+<p>The chapter that the roadmap (Chapter 25) gestured at is this one. The roadmap shows the waves and names the transition states. This chapter is about what those transition states <em>are</em>, why designing them well is different from designing the target, and what it costs when the intermediate states are left undesigned &mdash; which is where the related idea of <strong>decision latency</strong> enters the book.</p>
+<hr class="content-divider"/>
+<h2>The Intermediate State Is Where You Actually Live</h2>
+<p>There is a temptation, in architecture, to lavish attention on the target state and treat the path to it as mere logistics. The target is the elegant destination; the transitions are just how you get there. This gets the risk exactly backwards.</p>
+<p>The target state, by definition, is where you arrive at the end &mdash; and you may never fully arrive, because by the time you get close the target has usually moved. The transition states, by contrast, are where the organisation actually operates for months or years at a time. Meridian will live in its first transition state &mdash; partially off VMware, clinical estate intact &mdash; for the better part of a year. That intermediate configuration has to work, day in and day out, with the same reliability as any other operating state. It is not a way-point glimpsed in passing; it is home for a while.</p>
+<p>This reframes what a transition architecture is for. It is not designed for elegance, because nobody is meant to admire it. It is designed for <strong>survivability</strong> &mdash; it has to be operable, supportable, and safe for as long as the organisation has to live in it. A transition state that is theoretically clever but operationally fragile is a worse design than one that is inelegant but robust, because the people in it have to keep a hospital running from inside it.</p>
+<hr class="content-divider"/>
+<h2>Designed for Safety, Not Beauty</h2>
+<p>The defining discipline of transition architecture is accepting ugliness in exchange for safety.</p>
+<p>A transition state almost always involves running old and new in parallel &mdash; the old EPR alongside the new one, the VMware estate alongside the cloud platform, the point-to-point integrations alongside the emerging integration platform. Parallel running is inelegant. It duplicates cost, it requires reconciliation, it carries the cognitive load of two ways of doing the same thing. An architect optimising for elegance hates it.</p>
+<p>But parallel running is frequently the safe choice, because it preserves a fallback. If the new EPR has a problem, the old one is still there. If a cloud migration misbehaves, the VMware workload has not yet been switched off. The transition state&rsquo;s inelegance <em>is its safety mechanism</em> &mdash; the redundancy that lets the organisation move without betting everything on a single cutover.</p>
+<p>The architect&rsquo;s job in transition design is therefore to ask a question that target-state design never asks: <em>if this intermediate state has to hold for longer than planned &mdash; because funding slips, because a dependency is late, because a wave is paused &mdash; is it safe to stay here?</em> A transition state that is only safe if you leave it on schedule is not a transition state; it is a cliff edge with a deadline. Good transition architecture assumes the schedule will slip and designs each intermediate state to be survivable even if the organisation has to camp in it.</p>
+<hr class="content-divider"/>
+<h2>Meridian&rsquo;s Three Transition States</h2>
+<p><em>Meridian&rsquo;s roadmap defines three transition states, and the EA designs each one to be survivable rather than merely passed through.</em></p>
+<p><em>The first transition state, after Wave 2, has Meridian partially migrated to the cloud platform &mdash; the low-risk workloads moved, the migration pattern proven, the clinical estate untouched on VMware. The EA designs this state to be genuinely stable: if the programme had to pause here for a year, Meridian could operate indefinitely, paying for both platforms but safe on both. The clinical systems, the highest-risk workloads, remain on the platform the organisation knows. This is deliberate &mdash; the first stopping point is the one most likely to be forced by a funding review, so it is designed to be the most comfortable to hold.</em></p>
+<p><em>The second transition state, after Wave 3, adds the resolved patient-identity master while both EPRs still run. This is the subtlest of the three, because the value it delivers is invisible &mdash; there is no new system to show, only a data foundation that did not exist before. An organisation impatient for visible results is tempted to skip straight from &ldquo;two EPRs&rdquo; to &ldquo;one EPR&rdquo; without pausing at &ldquo;two EPRs reconciled against a single identity master.&rdquo; The EA holds the line that this transition state must be reached and stabilised before EPR consolidation begins, because consolidating without it carries the identity problem into the new system. Designing this transition state is an act of resisting the pressure to skip the unglamorous middle.</em></p>
+<p><em>The third transition state, after Wave 4, has a single EPR on the cloud platform with integration still running through the legacy point-to-point connections. Integration modernisation is deliberately left for last (Wave 5), so this transition state runs a modern application estate over legacy plumbing. It is inelegant &mdash; new systems, old connections &mdash; and the EA accepts the inelegance because integrating systems that are still moving would mean doing the integration work twice. The transition state is ugly and safe, which is the correct trade.</em></p>
+<hr class="content-divider"/>
+<h2>Decision Latency</h2>
+<p>Transition architecture introduces a cost that runs underneath the whole discipline and is rarely named directly: <strong>decision latency</strong> &mdash; the gap between when a decision <em>could</em> be made and when it actually <em>is</em> made, and what that gap costs.</p>
+<p>Every transition state holds a set of pending decisions. While Meridian runs two EPRs, the decision about which one to consolidate to is open. While the integration platform is unbuilt, the decision about each integration&rsquo;s future is deferred. Some deferral is rational &mdash; the EPR decision genuinely depends on the identity master being in place first. But deferral has a cost, and the cost compounds the longer a decision stays open.</p>
+<p>Decision latency costs in three currencies. It costs <strong>money</strong>, because an open decision usually means running parallel options &mdash; paying for two EPRs, two platforms, two ways of working &mdash; and the parallel cost accrues every day the decision stays open. It costs <strong>risk</strong>, because an undecided estate is a more complex estate, and complexity is where failure lives; every day in a transition state is a day exposed to that state&rsquo;s particular risks. And it costs <strong>opportunity</strong>, because resources tied up holding an undecided configuration cannot be deployed elsewhere, and decisions that depend on this one cannot proceed.</p>
+<p>The insight that decision latency offers is that <em>deferring a decision is itself a decision with a price tag</em>. The organisation that puts off the EPR consolidation choice for another budget cycle is not avoiding a cost; it is choosing to pay another year of parallel-running cost and another year of carried risk in exchange for not deciding. Sometimes that is the right trade &mdash; the decision genuinely is not ready. But it should be made knowingly, with the latency cost visible, rather than by default. The most expensive decisions in many organisations are not the wrong ones; they are the right ones made too late, with the cost of the delay never counted.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>TOGAF says:</strong> &ldquo;A Transition Architecture describes the enterprise at an architecturally significant state between the Baseline and Target Architectures. It is used to describe transitional states where this is useful &mdash; for example, to provide an implementable increment.&rdquo; &gt; <strong>What that means:</strong> Define the intermediate states the estate will actually pass through, and treat each one as a real architecture in its own right rather than a blur between the start and the end. &ldquo;Architecturally significant&rdquo; means a state stable enough to stop at and operate from.</p></blockquote>
+<blockquote><p><strong>Delivery teams say:</strong> &ldquo;Why are we designing the in-between state? We&rsquo;re only going to be in it for six months.&rdquo; &gt; <strong>What that means:</strong> Six months is long enough to need the lights to work. And &ldquo;six months&rdquo; has a way of becoming eighteen when a dependency slips or funding pauses. Designing the transition state is how you ensure that, however long you end up living in it, it is safe to live in.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>A transition architecture is the deliberate design of an intermediate state between current and target &mdash; and because organisations live in their transition states for months or years, those states deserve as much design attention as the target, oriented around survivability rather than elegance. Good transition design accepts inelegance, especially parallel running, in exchange for the safety of a fallback, and it assumes the schedule will slip, designing each intermediate state to be safe to stay in. Underneath the discipline runs decision latency: the cost, in money, risk, and forgone opportunity, of the gap between when a decision could be made and when it is. Deferring a decision is itself a decision with a price, and the most expensive decisions in many organisations are the right ones made too late, with the cost of the delay never counted.</p>
+<p><strong>Next:</strong> Chapter 31 steps back from sequence to structure and introduces the vocabulary of architecture patterns &mdash; the recurring shapes that let you recognise a problem, and its known failure modes, by name.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The Open Group &mdash; TOGAF Standard: Phase E, Transition Architectures</strong> (opengroup.org): The formal placement of transition architectures within migration planning. Read alongside Chapter 25&rsquo;s roadmap material.</li><li><strong>Niek de Visscher and others on decision latency</strong>: The decision-latency concept has become central to recent EA thinking about why architecture functions add or destroy value; searching the term surfaces the practitioner literature that frames latency as the cost architecture exists to reduce.</li><li><strong>Sam Newman &mdash; Monolith to Microservices</strong> (O&rsquo;Reilly, 2019): Newman&rsquo;s patterns for incremental migration &mdash; strangler fig, parallel run, branch by abstraction &mdash; are transition architectures in the software domain, and the clearest practical illustrations of designing safe intermediate states.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="29_building_blocks_abb_sbb.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">Building Blocks &mdash; ABB and SBB</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="31_architecture_patterns.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Architecture Patterns</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

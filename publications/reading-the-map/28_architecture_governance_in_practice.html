@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Architecture Governance in Practice &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/28_architecture_governance_in_practice.html"/>
+<meta property="og:title" content="Architecture Governance in Practice"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/28_architecture_governance_in_practice.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 28</span>
+<h1 class="article-title">Architecture Governance in Practice</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>Every chapter so far has, at some point, run into the same wall. The portfolio identifies an application to retire, and it does not get retired. The roadmap sequences the work, and a project jumps the queue. The principles say no new bespoke integrations, and a new bespoke integration appears. Good analysis produces a correct answer, and the answer does not stick.</p>
+<p>The mechanism that makes answers stick is <strong>architecture governance</strong>, and its most visible instrument is the <strong>Architecture Review Board</strong> &mdash; the ARB. This chapter is about what governance looks like when it works, which is rarer and less ceremonial than the word &ldquo;board&rdquo; suggests, and about its most common failure mode, which has a name: Architecture Theatre.</p>
+<hr class="content-divider"/>
+<h2>What Governance Is For</h2>
+<p>Architecture governance exists to do one thing: ensure that decisions made at the level of the whole are honoured by the parts. Without it, every project optimises locally &mdash; picks the technology that suits its timeline, builds the integration that solves its immediate need, procures the tool that fills its gap &mdash; and the sum of locally optimal decisions is the uncoordinated estate that produced the architecture debt in the first place.</p>
+<p>Governance is the coordinating function. It is not there to slow projects down, though it is often experienced that way. It is there to ensure that the cost a local decision imposes on the whole is considered before the decision is made &mdash; to internalise the externality, in the economist&rsquo;s phrase. The project that wants a quick bespoke integration is not wrong about its own needs. It is simply not the body that bears the estate-wide cost of another point-to-point connection. Governance is where that cost gets represented.</p>
+<p>This framing matters because it tells you what good governance produces: not documents, not compliance, but <em>better decisions made visible and accountable</em>. A governance process that produces lots of paper and no changed decisions is not governing. It is performing.</p>
+<hr class="content-divider"/>
+<h2>The Architecture Review Board</h2>
+<p>The ARB is the standing body that exercises architecture governance. In its healthy form it is small, senior enough to decide, and clear about its authority. Three features distinguish a real ARB from a ceremonial one.</p>
+<p><strong>Clear terms of reference.</strong> What does the ARB review, and what does it not? An ARB that tries to review everything reviews nothing well and becomes a bottleneck everyone learns to route around. A useful ARB reviews decisions above a defined threshold &mdash; significant spend, new technology choices, deviations from principle, cross-domain changes &mdash; and explicitly delegates everything below the threshold. The boundary is as important as the remit.</p>
+<p><strong>Real authority.</strong> Can the ARB say no, and does no mean no? An ARB whose decisions are advisory &mdash; that can recommend but not require &mdash; is a discussion group with minutes. The authority can be direct (the ARB approves or rejects) or it can be escalatory (the ARB cannot block, but an unresolved objection escalates to an executive who can). Either works. What does not work is authority that exists on paper and evaporates the moment a powerful project leader pushes back.</p>
+<p><strong>Design authority versus advisory function.</strong> These are two different jobs often confused. A <strong>design authority</strong> owns the architecture and makes binding decisions about it. An <strong>advisory function</strong> offers expert opinion that others may take or leave. An organisation must be honest about which one its ARB is, because an advisory body dressed in design-authority language produces the worst outcome: the appearance of governance with none of its effect.</p>
+<hr class="content-divider"/>
+<h2>Architecture Theatre</h2>
+<p>The pathology that shadows architecture governance has a name, coined by practitioners frustrated with its prevalence: <strong>Architecture Theatre</strong>. It is governance that looks rigorous and produces nothing binding &mdash; the performance of control in the absence of control.</p>
+<p>Architecture Theatre has recognisable symptoms. There are meetings, and the meetings have agendas, and the agendas are followed, and minutes are produced. There are review templates, and projects fill them in. There are gate reviews, and projects pass through them. And yet the estate continues to fragment, the principles continue to be violated, and the same problems recur &mdash; because none of the apparatus actually changes any decision. The theatre consumes the time and attention that real governance would require, while delivering only the reassurance that governance is happening.</p>
+<p>The tell is always the same: ask what decision the governance process has <em>reversed</em> or <em>prevented</em>. Real governance can point to projects it stopped, technologies it rejected, procurements it blocked. Theatre cannot, because its function was never to decide &mdash; it was to be seen to deliberate. A review board that has never said no is not a board that always agrees; it is a board that does not actually have the authority to disagree.</p>
+<hr class="content-divider"/>
+<h2>Meridian&rsquo;s ARB: The First Three Months</h2>
+<p><em>Meridian has no architecture governance when the EA arrives &mdash; which is precisely why every previous rationalisation attempt failed. The case for an ARB is part of the gap analysis, and establishing it is the first wave of the roadmap. Its first three months are instructive because they show governance being tested before it is trusted.</em></p>
+<p><em>Month one is terms of reference. The EA resists the temptation to give the ARB sweeping authority over everything, which would guarantee it becomes a bottleneck and loses credibility in its first quarter. Instead the threshold is set deliberately high: the ARB reviews technology choices above £50,000, any new integration, any deviation from the agreed principles, and any change touching patient data. Everything below the threshold is delegated to delivery teams with a light-touch checklist. The board is five people &mdash; the EA, the head of infrastructure, a senior clinician, the information governance lead, and a delivery director &mdash; small enough to decide and senior enough to mean it. The authority is escalatory: the ARB cannot unilaterally block a project, but an unresolved ARB objection goes to the IT executive, who can.</em></p>
+<p><em>Month two is the first real decisions, and they are deliberately undramatic &mdash; approving the cloud platform pattern, endorsing the migration sequencing, ratifying the principle on patient identity. The board is establishing that it decides things and that its decisions are recorded and followed. Credibility is built on small honoured decisions before it is tested on large contested ones.</em></p>
+<p><em>Month three is the first conflict, and it is the moment the ARB either becomes real or becomes theatre. A community-services project, under its own deadline pressure, has shortlisted a departmental system that would require a new point-to-point integration to the clinical portal &mdash; a direct violation of the agreed &ldquo;no new bespoke integrations&rdquo; principle. The project leader argues, reasonably, that the integration platform does not exist yet (it is Wave 5) and that waiting would miss their deadline. The principle and the project&rsquo;s reality are in genuine conflict.</em></p>
+<p><em>The ARB does not simply enforce the principle, which would make it look rigid, nor waive it, which would make it look powerless. It does the thing real governance does: it makes the trade-off explicit and decides with the cost visible. It approves a time-boxed exception &mdash; the integration may be built, but it is logged as architecture debt with a mandated remediation date in Wave 5, and the project accepts the remediation cost in its own budget. The principle holds, the project proceeds, and the cost of the exception is owned rather than hidden. The board has demonstrated that it can say a conditional yes that is not the same as a surrender &mdash; which is the subtlest and most important thing a governance body learns to do.</em></p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>TOGAF says:</strong> &ldquo;Architecture Governance is the practice by which enterprise architectures and other architectures are managed and controlled at an enterprise-wide level, supported by an Architecture Board with the authority and responsibility to ensure compliance.&rdquo; &gt; <strong>What that means:</strong> Someone has to be accountable for whether architecture decisions are honoured, and that someone needs real authority. &ldquo;Compliance&rdquo; sounds bureaucratic, but it means something concrete: the principles and roadmap the organisation agreed are actually followed, not quietly abandoned the first time a project finds them inconvenient.</p></blockquote>
+<blockquote><p><strong>Project teams say:</strong> &ldquo;Do we really have to take this to the ARB? It&rsquo;ll slow us down.&rdquo; &gt; <strong>What that means:</strong> Sometimes the honest answer is no &mdash; if the decision is below the threshold, it should never reach the board. When the answer is yes, the slowdown is the point: the review is where the estate-wide cost of a local decision gets considered. A good ARB minimises this friction by setting a high threshold and deciding fast; a bad one earns the complaint by reviewing everything slowly.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>Architecture governance is the mechanism that makes good analysis stick &mdash; the coordinating function that ensures decisions made for the whole are honoured by the parts. Its instrument, the Architecture Review Board, works only when three things are real: a clear threshold that says what it reviews and what it delegates, genuine authority so that &ldquo;no&rdquo; means no, and honesty about whether it is a design authority or an advisory function. Its characteristic failure is Architecture Theatre &mdash; the performance of control without the substance, recognisable by its inability to name a single decision it has prevented or reversed. The mark of a board that is actually governing is not that it always agrees, nor that it always refuses, but that it can make a trade-off explicit and decide with the cost in plain view &mdash; including the conditional yes that owns an exception rather than hiding it.</p>
+<p><strong>Next:</strong> Chapter 29 turns to a distinction that governance depends on but that is widely muddled &mdash; the difference between what an architecture needs (the building block) and what implements it (the solution) &mdash; and why getting the order wrong drives bad procurement.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The Open Group &mdash; TOGAF Standard: Architecture Governance</strong> (opengroup.org): The formal model of governance, the Architecture Board, and compliance. Read it for the structure, but pair it with this chapter&rsquo;s emphasis on authority and the theatre failure mode, which the standard treats only lightly.</li><li><strong>Gregor Hohpe &mdash; The Software Architect Elevator</strong> (O&rsquo;Reilly, 2020): Hohpe&rsquo;s chapters on architecture as a control system, and on the difference between making decisions and being seen to make them, are the best available antidote to Architecture Theatre.</li><li><strong>Niek de Visscher &mdash; writing on connection over control</strong> (see Chapter 51): The argument that governance positioned as control produces worse outcomes than governance positioned as connection is directly relevant to designing an ARB that teams cooperate with rather than route around.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="27_application_portfolio.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">Application Portfolio and the 6Rs</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="29_building_blocks_abb_sbb.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Building Blocks &mdash; ABB and SBB</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

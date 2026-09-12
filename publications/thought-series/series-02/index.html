@@ -101,7 +101,13 @@ footer.site .footer-links a{color:#c9bfa6;font-size:.8rem}
 <div class="toc-subtitle">Decision Velocity</div>
 <div class="toc-sub">5 Posts</div>
 
-<nav id="tocList" aria-label="Table of contents"></nav>
+<nav id="tocList" aria-label="Table of contents">
+<a class="ch" href="2.1-when-decisions-are-clear-but-delivery-has-no-pulse.html" data-id="2.1"><span class="num">2.1</span><span class="t">When Decisions Are Clear &amp;#x2014; but Delivery Has No Pulse</span></a>
+<a class="ch" href="2.2-when-ownership-exists-but-authority-doesnt.html" data-id="2.2"><span class="num">2.2</span><span class="t">When Ownership Exists &amp;#x2014; but Authority Doesn&rsquo;t</span></a>
+<a class="ch" href="2.3-when-authority-is-held-but-responsibility-is-deflected.html" data-id="2.3"><span class="num">2.3</span><span class="t">When Authority Is Held &amp;#x2014; but Responsibility Is Deflected</span></a>
+<a class="ch" href="2.4-when-authority-exists-but-leaders-still-push-forward.html" data-id="2.4"><span class="num">2.4</span><span class="t">When Authority Exists &amp;#x2014; but Leaders Still Push Forward</span></a>
+<a class="ch" href="2.5-the-velocity-diagnostic.html" data-id="2.5"><span class="num">2.5</span><span class="t">A Diagnostic for When Delivery Slows &amp;#x2014; Even When Things Look Clear</span></a>
+</nav>
 
 </aside>
 <main class="reader">
@@ -135,7 +141,7 @@ CH.forEach((c,i) => idx[c[0]] = i);
 const _entityDecoder = document.createElement('textarea');
 function decodeEntities(s) { _entityDecoder.innerHTML = s; return _entityDecoder.value; }
 const tocList = document.getElementById('tocList');
-CH.forEach((c) => {
+if (!tocList.querySelector('a.ch')) CH.forEach((c) => {
   const a = document.createElement('a');
   a.className = 'ch';
   a.href = '#' + c[0];

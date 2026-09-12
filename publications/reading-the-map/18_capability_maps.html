@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Capability Maps in Practice &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/18_capability_maps.html"/>
+<meta property="og:title" content="Capability Maps in Practice"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/18_capability_maps.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 18</span>
+<h1 class="article-title">Capability Maps in Practice</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 10 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>Chapter 11 introduced the capability map as a concept &mdash; what it is, why it exists, how it differs from an org chart or a process model. This chapter shows what one actually looks like when it is being used: built in workshops, assessed against the current IT estate, heat-mapped to show where the pain is, and connected to the application portfolio decisions that follow.</p>
+<p>The capability map is the most practically useful artefact in the business architecture domain. It is also the artefact most commonly produced once, filed, and never looked at again. The difference between a capability map that drives decisions and one that decorates a strategy document is not in the map itself &mdash; it is in how the map is maintained and what questions it is used to answer.</p>
+<p>This chapter stays on the literacy side of that line. You are not learning to run a capability mapping workshop. You are learning to read the outputs, understand the assessment methods, and follow the conversations that capability maps generate &mdash; so that when you are in a room where one appears, you know what you are looking at and what it means for the decisions on the table.</p>
+<hr class="content-divider"/>
+<h2>What a Capability Map Looks Like</h2>
+<p>A capability map is a hierarchical grid. Level 1 contains the broadest capability categories &mdash; typically eight to fifteen boxes that name the highest-level things the organisation can do. Level 2 breaks each of those into recognisable sub-capabilities. Level 3, where it exists, gets specific enough to be useful for application mapping and investment decisions.</p>
+<p>For Meridian, Level 1 might look like this:</p>
+<p>| Clinical Care | Patient Administration | Workforce Management | |---|---|---| | <strong>Community Services</strong> | <strong>Referral Management</strong> | <strong>Finance and Procurement</strong> | | <strong>Clinical Governance</strong> | <strong>Communications</strong> | <strong>Facilities and Estates</strong> | | <strong>Research and Education</strong> | <strong>Information and Analytics</strong> | <strong>Technology Services</strong> |</p>
+<p>Each box is a capability &mdash; a stable label for something Meridian can do, independent of which team does it or which system supports it. Level 2 breaks Clinical Care into Patient Assessment, Treatment Planning, Medication Management, Clinical Documentation, and so on. Level 3 breaks Clinical Documentation into Record Creation, Record Amendment, Record Access, and Discharge Summary.</p>
+<p>The map is not an org chart. Finance and Procurement appears once, even though the finance function, the procurement team, and the shared services partner all contribute to it. Clinical Documentation appears once, even though it is performed across 180 sites using two different EPR systems. The capability is the stable thing. The organisation and the technology are the variable things that sit underneath it.</p>
+<hr class="content-divider"/>
+<h2>Building the Map</h2>
+<p>A first-pass capability map does not require months of research. It requires two or three workshops with people who actually run operations, a facilitator who can keep the conversation at the right level of abstraction, and enough intellectual honesty to name capabilities as they are rather than as the organisation wishes they were.</p>
+<p>The most common failure mode in capability mapping workshops is slipping from capabilities to processes. A process is a sequence of steps. A capability is an ability. &ldquo;Process a referral&rdquo; is a process. &ldquo;Referral Management&rdquo; is a capability. The distinction matters because capabilities are stable across process changes &mdash; Meridian will always need Referral Management capability, even if the process by which referrals are managed changes completely when the new EPR goes live.</p>
+<p>The second failure mode is mapping the org chart rather than the capabilities. If every Level 1 box corresponds exactly to a department, the map is reflecting organisational structure rather than business capability. Capabilities cut across departmental lines. A map that does not do that has not been pushed far enough.</p>
+<p><em>At Meridian, the first workshop produces a Level 1 map with eleven boxes. The clinical team immediately wants to split Clinical Care into Inpatient Care, Outpatient Care, and Community Care &mdash; arguing that they are fundamentally different capabilities. The EA holds them at Level 1 for now and notes the split as a Level 2 detail. The finance team is surprised to see Finance and Procurement as a single box &mdash; they consider finance and procurement to be completely separate functions. The EA explains the difference between a functional structure and a capability structure. The procurement manager, who has been trying to get a seat at the IT governance table for two years, immediately grasps that capability mapping gives her a language for that conversation. By the end of the workshop, the map has eleven Level 1 boxes, each with two to five Level 2 sub-capabilities sketched in. Nobody agrees on everything. That is expected. The map is a first draft.</em></p>
+<hr class="content-divider"/>
+<h2>Assessing Capability Health</h2>
+<p>Once the map exists, the first thing you do with it is an assessment. For each capability, you ask: how well can we currently do this?</p>
+<p>The standard assessment uses a four-point scale:</p>
+<p><strong>Inadequate</strong> &mdash; the capability exists in name but cannot reliably deliver the outcome it is supposed to. There are significant gaps in people, process, or technology. This capability is a material risk to the organisation.</p>
+<p><strong>Developing</strong> &mdash; the capability works some of the time, for some use cases, with significant manual intervention or workarounds. It is functional but fragile. Improvement is needed but the situation is not critical.</p>
+<p><strong>Adequate</strong> &mdash; the capability delivers its intended outcome reliably under normal conditions. It is not excellent but it is sufficient. No immediate investment required.</p>
+<p><strong>Strong</strong> &mdash; the capability is a genuine organisational strength. It delivers consistently, efficiently, and to a standard that the organisation is confident in.</p>
+<p>The assessment is conducted through structured conversations with the people who run each capability &mdash; not through IT surveys or system audits. The question is not &ldquo;does the system work?&rdquo; It is &ldquo;can the organisation do this reliably?&rdquo; Those are different questions with frequently different answers.</p>
+<hr class="content-divider"/>
+<h2>The Heat Map</h2>
+<p>Once capability assessments are complete, the map is colour-coded &mdash; and becomes a <strong>capability heat map</strong>.</p>
+<p>Inadequate capabilities are red. Developing capabilities are amber. Adequate capabilities are green. Strong capabilities are dark green or blue.</p>
+<p>The heat map is the artefact that makes capability assessment communicable to people who will not read a fifty-page analysis. A board member who would not engage with a detailed systems review will look at a heat map and immediately ask why Clinical Documentation and Patient Scheduling are both red. That question is the beginning of an architectural conversation that could not have started from a project proposal or a budget request.</p>
+<p><em>Meridian&rsquo;s first heat map produces an uncomfortable picture. Seven of the eleven Level 1 capabilities are red or amber. Clinical Documentation is red &mdash; partly because of the dual-EPR problem, partly because document scanning and management are handled by a system that has not been updated in six years. Patient Scheduling is amber &mdash; it works but differently across the 180 sites, with no consistent process and no single view of capacity. Referral Management is red &mdash; the paper referral process for community services has never been digitised. Information and Analytics is red &mdash; Meridian cannot produce a reliable report of its own activity without a week of manual data extraction and reconciliation. Technology Services is amber &mdash; the VMware crisis has been known for eighteen months and the response has been reactive rather than planned. The heat map does not contain a single piece of information that individual teams did not already know. What it does is make all of that information visible in one place, at one moment, to the same audience. That is its value.</em></p>
+<hr class="content-divider"/>
+<h2>Connecting the Map to the Application Portfolio</h2>
+<p>A capability map without an application portfolio mapping is incomplete. The map tells you what the organisation can do and how well. The application mapping tells you what technology is supporting each capability &mdash; and therefore explains why the capability assessment looks the way it does.</p>
+<p>The cross-mapping is produced by asking, for each capability: which applications currently support this capability? The answers reveal three things.</p>
+<p><strong>Over-supported capabilities</strong> &mdash; capabilities served by multiple competing applications. Meridian&rsquo;s Clinical Documentation capability is served by two EPR systems, a legacy clinical portal, a document management platform, and four departmental databases. The capability fragmentation is explained by the application fragmentation. Consolidating the capability requires consolidating the applications &mdash; and that requires understanding which application is doing what, for whom, and whether any of it can be safely removed.</p>
+<p><strong>Under-supported capabilities</strong> &mdash; capabilities with no application support, or with application support so inadequate that the capability is effectively running on manual effort. Meridian&rsquo;s Referral Management capability is in this position for community services. There is no system. There is a spreadsheet, a shared inbox, and a lot of phone calls.</p>
+<p><strong>Correctly supported capabilities</strong> &mdash; capabilities served by a single well-functioning application whose cost and performance are proportionate to the importance of the capability. These are the green cells in the heat map with a clean application mapping. They are also the capabilities that should be left alone while the red and amber capabilities receive investment.</p>
+<blockquote><p><em>A capability map without an application mapping tells you what hurts. A capability map with an application mapping tells you why &mdash; and what it would take to fix it.</em></p></blockquote>
+<hr class="content-divider"/>
+<h2>Capability Investment Prioritisation</h2>
+<p>The heat map, combined with the application portfolio mapping, produces the input to the investment prioritisation conversation.</p>
+<p>Not all red capabilities are equal. The prioritisation question is not simply &ldquo;which capabilities are weakest?&rdquo; It is &ldquo;which weak capabilities carry the most business risk if they are not improved?&rdquo; A weak capability in a non-differentiating area &mdash; Facilities Management, say &mdash; carries different risk than a weak capability at the heart of clinical service delivery.</p>
+<p>The framework for prioritisation has three dimensions.</p>
+<p><strong>Strategic importance</strong> &mdash; how central is this capability to the organisation&rsquo;s mission? For Meridian, Clinical Documentation and Patient Scheduling are core. Facilities Management is important but not differentiating.</p>
+<p><strong>Current performance</strong> &mdash; how inadequate is the capability today? Red capabilities need investment more urgently than amber.</p>
+<p><strong>Risk trajectory</strong> &mdash; is the gap getting wider? A capability that is developing slowly under current investment is different from one that is actively deteriorating because the platform supporting it is failing.</p>
+<p><em>Meridian&rsquo;s prioritisation exercise produces a top-three list: Clinical Documentation (red, core, platform failing), Referral Management for community services (red, strategic gap, no digital capability at all), and Information and Analytics (red, blocking every governance and planning conversation the trust needs to have). The VMware exit programme addresses the platform risk underneath Clinical Documentation. The EA recommends that the community services referral system is the next capital investment case. Information and Analytics requires a data architecture decision before a technology decision &mdash; which data is authoritative, where it lives, and who is responsible for it. That decision leads directly to the next chapter.</em></p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>BIZBOK says:</strong> &ldquo;A capability assessment evaluates the current state of each business capability against the target state required to deliver the organisation&rsquo;s strategic objectives, typically using a maturity or performance scale.&rdquo; &gt; <strong>What that means:</strong> Once you have named your capabilities, you assess how well you can actually do each one today. The assessment is not about whether a system exists &mdash; it is about whether the capability reliably delivers the outcome it is supposed to. The gap between current and required performance is what drives investment decisions.</p></blockquote>
+<blockquote><p><strong>Architects say:</strong> &ldquo;We need to heat-map this against the application portfolio before we take it to the investment board.&rdquo; &gt; <strong>What that means:</strong> The capability assessment tells you which capabilities are underperforming. The application mapping tells you which systems are responsible for that underperformance. Before proposing investment, you need to show the connection &mdash; this capability is red because this application is inadequate, and fixing the application is what will move the capability from red to green. Without that connection, the investment case is speculative.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>A capability map is not a picture of the organisation. It is a decision-making instrument. Built honestly, assessed rigorously, and connected to the application portfolio, it produces the clearest available answer to the question that every IT investment decision is trying to answer: where does the organisation most need to improve its ability to do the things that matter, and what technology change would most improve that ability? The heat map makes that answer visible to anyone in the room &mdash; not just the architects.</p>
+<p><strong>Next:</strong> Chapter 19 moves to data architecture &mdash; the second domain in the BDAT stack, and the one most commonly underdeveloped. What data architecture is, why it is harder than it looks, and what Meridian&rsquo;s data situation actually reveals about the limits of application-level thinking.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>Business Architecture Guild &mdash; BIZBOK Guide</strong> (bizbok.org): The capability assessment methodology is covered in the BIZBOK guide in significantly more detail than this chapter provides. For practitioners who need to run assessments rather than read them, the BIZBOK guidance on capability heat mapping and investment prioritisation is the primary reference.</li><li><strong>Scott Bernard &mdash; An Introduction to Enterprise Architecture</strong> (AuthorHouse, 3rd edition): Chapter 7 covers capability-based planning in a way that is accessible to non-specialists and connects the capability map to investment decision-making clearly.</li><li><strong>NHS England &mdash; Capability Framework for Digital, Data and Technology</strong> (england.nhs.uk): For anyone working in NHS organisations, the national capability framework provides the reference capability model that local organisations like Meridian are expected to align with. Understanding it is the starting point for any NHS capability mapping exercise.</li><li><strong>Jeanne Ross, Cynthia Beath, and Martin Mocker &mdash; Designed for Digital</strong> (MIT Press, 2019): The clearest account of how capability thinking connects to digital transformation investment. Not a BIZBOK book &mdash; but the most readable executive-level argument for why capability maps drive better technology investment decisions than project-by-project business cases.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="17_architecture_principles.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">Architecture Principles</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="19_data_architecture.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Data Architecture</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

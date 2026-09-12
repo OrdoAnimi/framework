@@ -101,7 +101,9 @@ footer.site .footer-links a{color:#c9bfa6;font-size:.8rem}
 <div class="toc-subtitle">Before the Decision</div>
 <div class="toc-sub">1 Posts</div>
 
-<nav id="tocList" aria-label="Table of contents"></nav>
+<nav id="tocList" aria-label="Table of contents">
+<a class="ch" href="6.1-the-signal-before-the-decision.html" data-id="6.1"><span class="num">6.1</span><span class="t">The Signal Before the Decision</span></a>
+</nav>
 
 </aside>
 <main class="reader">
@@ -131,7 +133,7 @@ CH.forEach((c,i) => idx[c[0]] = i);
 const _entityDecoder = document.createElement('textarea');
 function decodeEntities(s) { _entityDecoder.innerHTML = s; return _entityDecoder.value; }
 const tocList = document.getElementById('tocList');
-CH.forEach((c) => {
+if (!tocList.querySelector('a.ch')) CH.forEach((c) => {
   const a = document.createElement('a');
   a.className = 'ch';
   a.href = '#' + c[0];

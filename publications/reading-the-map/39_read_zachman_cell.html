@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>How to Read a Zachman Cell &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 4 · Reading the Diagrams"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/39_read_zachman_cell.html"/>
+<meta property="og:title" content="How to Read a Zachman Cell"/>
+<meta property="og:description" content="Part 4 · Reading the Diagrams"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/39_read_zachman_cell.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 39</span>
+<h1 class="article-title">How to Read a Zachman Cell</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 4 · Reading the Diagrams</em></p>
+<hr class="content-divider"/>
+<p>The Zachman Framework, introduced in Chapter 5, is not a diagram in the way the previous four chapters&rsquo; artefacts are. It is a <strong>classification grid</strong> &mdash; six rows and six columns, thirty-six cells, each cell representing a distinct kind of description of the same enterprise. You do not read a Zachman grid the way you read a sequence diagram. You read it as a map of perspectives, and its great lesson is that the same system genuinely looks different &mdash; and <em>should</em> look different &mdash; depending on which cell you view it through.</p>
+<p>This chapter teaches that reading. It is the most abstract chapter in Part 4, and also, for many readers, the most clarifying, because it explains a confusion that pervades architecture conversations: people looking at the same system, describing it accurately, and disagreeing completely &mdash; because they are standing in different cells.</p>
+<hr class="content-divider"/>
+<h2>The Grid: Rows and Columns</h2>
+<p>Zachman&rsquo;s grid has two axes, and reading it begins with reading the axes.</p>
+<p>The <strong>columns</strong> are the interrogatives &mdash; the six fundamental questions you can ask about anything: <strong>What</strong> (data), <strong>How</strong> (function), <strong>Where</strong> (network/location), <strong>Who</strong> (people), <strong>When</strong> (timing), and <strong>Why</strong> (motivation). These are exhaustive: any aspect of any system answers one of these six questions. The columns are the <em>aspects</em> of the enterprise.</p>
+<p>The <strong>rows</strong> are the perspectives &mdash; the points of view of different stakeholders, from the most abstract to the most concrete. From the top: the <strong>Executive</strong> perspective (scope, the boardroom view), the <strong>Business Management</strong> perspective (the business model), the <strong>Architect</strong> perspective (the system logic), the <strong>Engineer</strong> perspective (the technology model), the <strong>Technician</strong> perspective (the detailed build), and the <strong>Enterprise</strong> itself (the running reality). The rows are the <em>audiences</em>, each needing a description pitched at its own level.</p>
+<p>A <strong>cell</strong> is the intersection &mdash; a specific aspect seen from a specific perspective. The &ldquo;What, from the Architect&rsquo;s perspective&rdquo; cell holds the logical data model. The &ldquo;What, from the Executive&rsquo;s perspective&rdquo; cell holds a list of the important things the business cares about. Same column (What/data), different rows (different audiences), genuinely different artefacts.</p>
+<hr class="content-divider"/>
+<h2>Why the Same System Looks Different</h2>
+<p>The framework&rsquo;s central insight, and the thing reading it teaches, is that descriptions in different cells are not better or worse versions of each other. They are <em>different and equally necessary</em> descriptions of the same thing.</p>
+<p>Consider patient identity at Meridian, read across one column.</p>
+<p>In the <strong>What</strong> column, from the <strong>Executive</strong> row, patient identity is &ldquo;knowing who our patients are&rdquo; &mdash; a one-line strategic concern about the organisation&rsquo;s ability to recognise the people it serves. From the <strong>Business Management</strong> row, the same What becomes a definition: what constitutes a patient, what attributes identify them, what the business rules are for matching. From the <strong>Architect</strong> row, it becomes a logical data model &mdash; entities, attributes, relationships, the master-data design. From the <strong>Engineer</strong> row, it becomes a physical database schema. From the <strong>Technician</strong> row, it becomes the actual table definitions in a specific database. From the <strong>Enterprise</strong> row, it is the live patient data in the running systems.</p>
+<p>Every one of these is &ldquo;patient identity.&rdquo; Every one is correct. None substitutes for another. The executive&rsquo;s one-liner is not a vague version of the database schema; it is the right description <em>for the executive&rsquo;s purpose</em>, and the schema would be useless to the executive just as the one-liner would be useless to the engineer building the table.</p>
+<p>This is why architecture conversations so often involve people talking past each other while all being right. The clinical director describes patient identity from the Executive/Business row; the engineer describes it from the Engineer/Technician row; they use the same words and mean descriptions three rows apart. Reading the situation through Zachman tells you they are not disagreeing &mdash; they are standing in different cells, and the fix is not to argue but to recognise which cell each is in and translate between them.</p>
+<hr class="content-divider"/>
+<h2>Reading a Cell Correctly</h2>
+<p>To read any architectural description well, the Zachman discipline is to locate it in the grid first &mdash; to ask <em>which cell is this?</em> before evaluating it.</p>
+<p>Locating the cell means asking two questions. <em>Which interrogative does this answer?</em> &mdash; is this about data (What), function (How), location (Where), people (Who), timing (When), or motivation (Why)? And <em>which perspective is this pitched at?</em> &mdash; is this the executive&rsquo;s scope, the architect&rsquo;s logic, the engineer&rsquo;s technology, or the technician&rsquo;s detail?</p>
+<p>Once you have located the cell, two common errors become avoidable. The first is judging a description by the standards of the wrong cell &mdash; criticising the executive&rsquo;s one-line scope statement for lacking the detail of an engineer&rsquo;s schema, when detail is precisely not its job. The second is mistaking a description in one cell for the whole picture &mdash; treating the architect&rsquo;s logical model as if it were the running reality (the Enterprise row), and being surprised when the live system behaves differently from the model.</p>
+<hr class="content-divider"/>
+<h2>Meridian&rsquo;s Patient Record Through Six Perspectives</h2>
+<p><em>Meridian&rsquo;s EA uses the Zachman grid not to produce thirty-six artefacts &mdash; which would be the ceremonial misuse of the framework &mdash; but as a diagnostic lens to understand why the patient-record problem had resisted resolution. Reading the patient record through six perspectives explains the impasse.</em></p>
+<p><em>The <strong>clinical director</strong> sees the patient record from the Business row: a complete, trustworthy account of a patient&rsquo;s care, available wherever the patient is seen. Her concern is completeness and availability. From her cell, the problem is &ldquo;I can&rsquo;t trust that I&rsquo;m seeing everything about this patient.&rdquo;</em></p>
+<p><em>The <strong>enterprise architect</strong> sees it from the Architect row: a logical model in which patient identity is the master entity that every other record references. From her cell, the problem is &ldquo;there is no authoritative identity entity, so the logical model is incoherent.&rdquo;</em></p>
+<p><em>The <strong>database engineer</strong> sees it from the Engineer row: two physical schemas, in two EPRs, with overlapping but non-identical patient tables and no reliable key to match them. From his cell, the problem is &ldquo;I can&rsquo;t join these two databases reliably because there&rsquo;s no shared identifier.&rdquo;</em></p>
+<p><em>The <strong>information governance lead</strong> sees it from the Why column: the regulatory motivation &mdash; the legal obligation to maintain accurate records and control access. From her cell, the problem is &ldquo;we may be in breach because we cannot guarantee record accuracy across systems.&rdquo;</em></p>
+<p><em>Each is describing the same problem &mdash; the absent patient-identity master &mdash; from a different cell, and each description is correct and incomplete. The reason the problem had resisted resolution was that it had only ever been discussed within single cells: the clinicians raised it as a trust problem, IT heard it as a database problem, governance heard it as a compliance problem, and no one had assembled the cells into the single architectural finding underneath them. The EA&rsquo;s contribution was not a new analysis; it was reading the existing complaints as different cells describing one root cause, which is exactly what the Zachman grid is for. Once the cells were assembled, the identity-master decision (Wave 3 of the roadmap) became obviously the thing that resolved all four perspectives at once.</em></p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>Zachman says:</strong> &ldquo;The Framework is a schema for classifying the artefacts that constitute the architecture of an enterprise &mdash; a two-dimensional classification of descriptive representations.&rdquo; &gt; <strong>What that means:</strong> It is a filing system for the different kinds of description an enterprise needs, organised by what they describe (the six questions) and who they are for (the six perspectives). It does not tell you how to build anything; it tells you what kinds of description exist and stops you from confusing one for another.</p></blockquote>
+<blockquote><p><strong>People in a meeting say (without realising it):</strong> the same words, from different rows. &gt; <strong>What that means:</strong> When a clinician, an architect, and an engineer describe &ldquo;the patient record&rdquo; and seem to disagree, they are usually in different cells &mdash; same column, different rows &mdash; describing the same thing at different levels. Recognising this turns an argument into a translation exercise: identify each person&rsquo;s cell and connect the descriptions, rather than treating them as competing claims.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>The Zachman Framework is a classification grid, not a diagram &mdash; six interrogatives (What, How, Where, Who, When, Why) crossed with six perspectives (from Executive scope down to the running Enterprise), making thirty-six cells, each a distinct and necessary kind of description. Reading it teaches that the same system looks genuinely different from different cells, and that descriptions in different cells are not better or worse versions of each other but equally valid views for different purposes. The practical payoff is diagnostic: when people use the same words and seem to disagree, they are usually standing in different cells, and recognising this converts an argument into a translation. The grid&rsquo;s value is rarely in producing all thirty-six artefacts &mdash; that is its ceremonial misuse &mdash; but in locating any description in the grid before judging it, and in assembling single-cell complaints into the whole-picture finding underneath them.</p>
+<p><strong>Next:</strong> Chapter 40 turns to the Wardley map &mdash; the strategy diagram that adds an axis the others lack, evolution, and shows not just what exists but what is moving and in which direction.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>John Zachman &mdash; &ldquo;The Zachman Framework for Enterprise Architecture&rdquo;</strong> (zachman.com): The framework from its author, including the full grid and the rationale for the rows and columns. The official source, and clearer than most secondary summaries.</li><li><strong>Roger Sessions &mdash; comparison writing on Zachman as a taxonomy</strong> (objectwatch.com): Helpful for understanding Zachman specifically as a classification scheme rather than a method, which is the distinction that makes it readable.</li><li><strong>Len Silverston &amp; Paul Agnew &mdash; The Data Model Resource Book</strong>: For the What column specifically &mdash; how the same data concept is expressed differently from the conceptual through logical to physical perspectives, which is the single-column trace this chapter uses for patient identity.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="38_read_archimate_view.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">How to Read an ArchiMate View</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="40_read_wardley_map.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">How to Read a Wardley Map</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

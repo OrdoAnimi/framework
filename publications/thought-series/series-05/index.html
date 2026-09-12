@@ -101,7 +101,14 @@ footer.site .footer-links a{color:#c9bfa6;font-size:.8rem}
 <div class="toc-subtitle">The Implementation Arc</div>
 <div class="toc-sub">6 Posts</div>
 
-<nav id="tocList" aria-label="Table of contents"></nav>
+<nav id="tocList" aria-label="Table of contents">
+<a class="ch" href="5.1-reading-the-room.html" data-id="5.1"><span class="num">5.1</span><span class="t">Reading the Room</span></a>
+<a class="ch" href="5.2-the-first-domain.html" data-id="5.2"><span class="num">5.2</span><span class="t">The First Domain</span></a>
+<a class="ch" href="5.3-the-political-architecture.html" data-id="5.3"><span class="num">5.3</span><span class="t">The Political Architecture</span></a>
+<a class="ch" href="5.4-constraint-infrastructure-in-practice.html" data-id="5.4"><span class="num">5.4</span><span class="t">Constraint Infrastructure in Practice</span></a>
+<a class="ch" href="5.5-knowing-when-it-is-working.html" data-id="5.5"><span class="num">5.5</span><span class="t">Knowing When It Is Working</span></a>
+<a class="ch" href="5.6-the-architecture-of-the-next-decade.html" data-id="5.6"><span class="num">5.6</span><span class="t">The Architecture of the Next Decade</span></a>
+</nav>
 
 </aside>
 <main class="reader">
@@ -136,7 +143,7 @@ CH.forEach((c,i) => idx[c[0]] = i);
 const _entityDecoder = document.createElement('textarea');
 function decodeEntities(s) { _entityDecoder.innerHTML = s; return _entityDecoder.value; }
 const tocList = document.getElementById('tocList');
-CH.forEach((c) => {
+if (!tocList.querySelector('a.ch')) CH.forEach((c) => {
   const a = document.createElement('a');
   a.className = 'ch';
   a.href = '#' + c[0];

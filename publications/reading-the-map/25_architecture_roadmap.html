@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Architecture Roadmap &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/25_architecture_roadmap.html"/>
+<meta property="og:title" content="Architecture Roadmap"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/25_architecture_roadmap.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 25</span>
+<h1 class="article-title">Architecture Roadmap</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>A gap analysis tells you what stands between the current state and the target. A roadmap tells you the order in which you are going to close those gaps, and why that order rather than another. It is one of the most frequently produced and most frequently misread artefacts in the whole discipline, because it looks exactly like something it is not: a project plan.</p>
+<p>An <strong>architecture roadmap</strong> is not a project plan. A project plan answers &ldquo;what tasks, in what order, by when, by whom?&rdquo; A roadmap answers a prior and more strategic question: &ldquo;what capabilities and transition states, in what sequence, and what does the sequence depend on?&rdquo; Confusing the two is how roadmaps get treated as commitments they were never meant to be, and how genuine roadmaps get dismissed as too vague to be useful.</p>
+<p>This chapter explains what a roadmap contains, how it differs from a plan, and &mdash; most usefully for a reader &mdash; how to tell a governed roadmap from a wish list when one appears on a screen in a meeting.</p>
+<hr class="content-divider"/>
+<h2>Horizons and Waves</h2>
+<p>A roadmap organises work into <strong>horizons</strong> &mdash; broad time bands that get less precise the further out they go. The near horizon is concrete: these are the things we are doing now, scoped and resourced. The middle horizon is directional: these are the things we intend to do next, shaped but not fully detailed. The far horizon is aspirational: this is where we are heading, named but not committed.</p>
+<p>The decreasing precision is a feature, not a weakness. A roadmap that claims the same certainty about year three as about this quarter is lying, and an experienced reader knows it. Honest roadmaps get vaguer with distance because the future genuinely is vaguer with distance.</p>
+<p>Within the horizons, work is grouped into <strong>waves</strong> &mdash; coherent bundles of related change that move the architecture from one stable state to the next. A wave is not a single project; it is a set of changes that make sense to do together and that leave the estate in a defensible condition when complete. The wave structure is what distinguishes a roadmap from a backlog: a backlog is a list, a roadmap is a sequence of states.</p>
+<hr class="content-divider"/>
+<h2>Transition States</h2>
+<p>The most important and least understood feature of a roadmap is the <strong>transition state</strong> (sometimes called a transition architecture, covered in depth in Chapter 30). A transition state is an intermediate, stable configuration of the architecture between the current state and the target &mdash; a place the organisation can stop and operate safely while the next wave is planned and funded.</p>
+<p>This matters because real organisations cannot move from current to target in one step. The target is reached through a series of intermediate states, and each intermediate state has to be survivable. The roadmap&rsquo;s job is to define those states so that each wave delivers the architecture into a stable configuration, not a half-finished one.</p>
+<p>A roadmap with no transition states &mdash; one that shows only the current state and the target, with a set of projects between them &mdash; is a warning sign. It usually means nobody has thought about what the estate looks like partway through, which is exactly when the risk is highest.</p>
+<hr class="content-divider"/>
+<h2>What the Sequence Tells You</h2>
+<p>The order of the waves on a roadmap is not arbitrary, and reading the order is how you understand the architect&rsquo;s actual thinking.</p>
+<p>Some sequencing is driven by <strong>dependency</strong>: this wave cannot start until that one finishes, because it needs something the earlier wave produces. The platform before the migrations. The identity resolution before the EPR consolidation. Dependency-driven sequencing is the strongest kind, because it reflects genuine constraint rather than preference.</p>
+<p>Some sequencing is driven by <strong>risk</strong>: do the risky thing early, while there is still time and budget to recover, or do the safe thing early, to build confidence and credibility. Both are defensible, and which one an architect chooses tells you something about the organisation&rsquo;s risk appetite and political situation.</p>
+<p>Some sequencing is driven by <strong>value</strong>: front-load the waves that deliver visible benefit, to maintain stakeholder support for the less visible enabling work that has to follow. This is partly political and entirely legitimate &mdash; a roadmap that delivers nothing visible for two years will not survive two years of funding decisions.</p>
+<p>When you read a roadmap, the question to ask is <em>why this order?</em> If the answer is dependency, the sequence is robust. If the answer is value or risk, the sequence is a choice, and choices can be challenged.</p>
+<hr class="content-divider"/>
+<h2>Meridian&rsquo;s Five-Wave Roadmap</h2>
+<p><em>Meridian&rsquo;s roadmap covers the VMware exit and the EPR consolidation across five waves and three transition states. Its structure repays close reading because the sequence encodes every hard decision the leadership team made.</em></p>
+<p><em>Wave 1 establishes the cloud platform and the architecture governance function. Neither delivers a visible business outcome. Both are pure enablers &mdash; the platform that every later migration lands on, and the Architecture Review Board that makes every later decision stick. The EA places them first on dependency grounds: nothing else can proceed safely until they exist. This is the wave most likely to be questioned by stakeholders impatient for visible results, and the wave whose absence would doom the rest.</em></p>
+<p><em>Wave 2 migrates the low-risk, low-dependency workloads off VMware onto the new platform &mdash; deliberately not the clinical systems. This is the risk-driven choice: prove the migration pattern on workloads where a mistake is recoverable before touching anything a clinician relies on. At the end of Wave 2, Meridian is in its first transition state: partially off VMware, with a proven migration capability and a still-intact clinical estate.</em></p>
+<p><em>Wave 3 resolves patient identity &mdash; establishing the authoritative master record &mdash; before any EPR work begins. This is the dependency the gap analysis surfaced: consolidating EPRs without resolving identity would carry the problem into the new system. Wave 3 produces no new application; it produces a resolved data foundation. The second transition state follows: a single source of patient-identity truth, with both EPRs still running but now reconcilable.</em></p>
+<p><em>Wave 4 migrates the clinical systems and begins EPR consolidation against the resolved identity foundation. This is the highest-risk, highest-value wave, deliberately placed after the platform is proven and the identity foundation is laid. The third transition state follows: a single EPR on the new platform.</em></p>
+<p><em>Wave 5 modernises integration &mdash; replacing the 34 point-to-point connections with the managed integration platform, now that the systems they connect have stabilised. It comes last because integrating systems that are still moving would mean integrating twice.</em></p>
+<p><em>The sequence is almost entirely dependency-driven, which is what makes it defensible. The one value-driven concession is a small set of quick wins folded into Wave 2 &mdash; visible improvements to reporting &mdash; included specifically to sustain executive patience through the long enabling work. The EA is candid that this is a political accommodation, not an architectural necessity, and the roadmap notes it as such.</em></p>
+<hr class="content-divider"/>
+<h2>How to Read a Roadmap Critically</h2>
+<p>When a roadmap appears in a meeting, a literate reader can assess its quality in about a minute by asking four questions.</p>
+<p><strong>Where are the transition states?</strong> If there are none, the roadmap has not thought about what the estate looks like partway through. Ask what state the organisation is in at the end of each wave.</p>
+<p><strong>What drives the sequence?</strong> Dependency, risk, or value? A roadmap whose author can explain the sequencing in those terms has thought about it. A roadmap whose sequence is &ldquo;the order we thought of them&rdquo; has not.</p>
+<p><strong>What is the governance mechanism?</strong> A roadmap is a plan of intent. What makes it real is the body that holds the organisation to it &mdash; that prevents a project from jumping the queue or skipping a transition state. A roadmap with no named governance is a wish list, however well sequenced.</p>
+<p><strong>Where does it get vaguer?</strong> It should get vaguer with distance. A roadmap that is equally precise three years out is either dishonest or has confused itself with a project plan.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>TOGAF says:</strong> &ldquo;The Architecture Roadmap lists individual increments of change and lays them out on a timeline to show progression from the Baseline to the Target Architecture, incorporating Transition Architectures where appropriate.&rdquo; &gt; <strong>What that means:</strong> A roadmap is the ordered set of changes that moves you from where you are to where you want to be, with safe stopping points along the way. The phrase &ldquo;increments of change&rdquo; is doing important work &mdash; it is not a list of projects, it is a sequence of architectural states.</p></blockquote>
+<blockquote><p><strong>Executives say:</strong> &ldquo;So when will it be finished and what will it cost?&rdquo; &gt; <strong>What that means:</strong> This is the project-plan question asked of a roadmap, and the honest answer is that the near horizon can be costed with confidence and the far horizon cannot. A roadmap that pretends to answer the cost-and-date question for year three with the same confidence as for this quarter has stopped being a roadmap and become a fiction.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>A roadmap is not a project plan. It answers a strategic question &mdash; what capabilities and transition states, in what sequence, and why &mdash; rather than a delivery question. Its defining features are horizons that get less precise with distance, waves that move the architecture between stable states, and transition states that give the organisation safe places to stop. The sequence encodes the real thinking: dependency-driven order is robust, value- and risk-driven order are defensible choices that can be challenged. And a roadmap without a governance mechanism is a wish list, because what makes a roadmap real is not the quality of its sequencing but the existence of a body with the authority to hold the organisation to it.</p>
+<p><strong>Next:</strong> Chapter 26 turns to the thing the roadmap is really trying to pay down &mdash; architecture debt &mdash; and how to make a structural problem visible to a CFO who only sees the bill.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The Open Group &mdash; TOGAF Standard: Phases E and F</strong> (opengroup.org): Opportunities and Solutions (E) and Migration Planning (F) are where the roadmap and transition architectures are produced. Read these alongside Chapter 30 of this book.</li><li><strong>Geoffrey Moore &mdash; Zone to Win</strong> (Diversion Books, 2015): Moore&rsquo;s horizon model &mdash; managing performance, productivity, incubation, and transformation zones simultaneously &mdash; is the clearest business framing of why a roadmap must hold near-term delivery and long-term transformation in the same picture.</li><li><strong>Martin Fowler &mdash; &ldquo;An Appropriate Use of Metrics&rdquo;</strong> (martinfowler.com): Indirectly relevant &mdash; Fowler&rsquo;s caution about precision implying certainty is exactly the trap a roadmap falls into when its far horizon is drawn as confidently as its near one.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="24_gap_analysis.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">Gap Analysis</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="26_architecture_debt.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Architecture Debt</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

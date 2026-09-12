@@ -105,7 +105,42 @@ footer.site .footer-links a{color:#c9bfa6;font-size:.8rem}
 <div class="toc-subtitle">P A Myint</div>
 <div class="toc-sub">Preface &middot; Prologue &middot; 30 Chapters</div>
 <input type="text" class="toc-search" id="tocSearch" placeholder="Filter chapters&#x2026;" aria-label="Filter chapters">
-<nav id="tocList" aria-label="Table of contents"></nav>
+<nav id="tocList" aria-label="Table of contents">
+<a class="ch" href="preface.html" data-id="pre"><span class="num">pre</span><span class="t">Preface</span></a>
+<a class="ch" href="prologue.html" data-id="pro"><span class="num">pro</span><span class="t">Prologue &mdash; The Line</span></a>
+<a class="ch" href="ch01.html" data-id="01"><span class="num">01</span><span class="t">What Discipline Is For</span></a>
+<a class="ch" href="ch02.html" data-id="02"><span class="num">02</span><span class="t">Intent Over Instruction</span></a>
+<a class="ch" href="ch03.html" data-id="03"><span class="num">03</span><span class="t">Intent That Travels</span></a>
+<a class="ch" href="ch04.html" data-id="04"><span class="num">04</span><span class="t">Trust Extended First</span></a>
+<a class="ch" href="ch05.html" data-id="05"><span class="num">05</span><span class="t">Backing the Call</span></a>
+<a class="ch" href="ch06.html" data-id="06"><span class="num">06</span><span class="t">The Shield</span></a>
+<a class="ch" href="ch07.html" data-id="07"><span class="num">07</span><span class="t">On the Record</span></a>
+<a class="ch" href="ch08.html" data-id="08"><span class="num">08</span><span class="t">The Held Line</span></a>
+<a class="ch" href="ch09.html" data-id="09"><span class="num">09</span><span class="t">Authorship and Ownership</span></a>
+<a class="ch" href="ch10.html" data-id="10"><span class="num">10</span><span class="t">Accountability Without Authority</span></a>
+<a class="ch" href="ch11.html" data-id="11"><span class="num">11</span><span class="t">Decision, Not Cover</span></a>
+<a class="ch" href="ch12.html" data-id="12"><span class="num">12</span><span class="t">The Compression Zone</span></a>
+<a class="ch" href="ch13.html" data-id="13"><span class="num">13</span><span class="t">The Eighty Pages</span></a>
+<a class="ch" href="ch14.html" data-id="14"><span class="num">14</span><span class="t">Standing Is Not Influence</span></a>
+<a class="ch" href="ch15.html" data-id="15"><span class="num">15</span><span class="t">Boundaries</span></a>
+<a class="ch" href="ch16.html" data-id="16"><span class="num">16</span><span class="t">The Pulse</span></a>
+<a class="ch" href="ch17.html" data-id="17"><span class="num">17</span><span class="t">Refusal</span></a>
+<a class="ch" href="ch18.html" data-id="18"><span class="num">18</span><span class="t">Staying Without Illusion</span></a>
+<a class="ch" href="ch19.html" data-id="19"><span class="num">19</span><span class="t">The Clean Exit</span></a>
+<a class="ch" href="ch20.html" data-id="20"><span class="num">20</span><span class="t">The Cost</span></a>
+<a class="ch" href="ch21.html" data-id="21"><span class="num">21</span><span class="t">Know the Room Before You Enter It</span></a>
+<a class="ch" href="ch22.html" data-id="22"><span class="num">22</span><span class="t">The Seven Mindframes</span></a>
+<a class="ch" href="ch23.html" data-id="23"><span class="num">23</span><span class="t">The Eight Lenses</span></a>
+<a class="ch" href="ch24.html" data-id="24"><span class="num">24</span><span class="t">Speaking Without Jargon</span></a>
+<a class="ch" href="ch25.html" data-id="25"><span class="num">25</span><span class="t">The Rehearsal</span></a>
+<a class="ch" href="ch26.html" data-id="26"><span class="num">26</span><span class="t">The Decision Memo</span></a>
+<a class="ch" href="ch27.html" data-id="27"><span class="num">27</span><span class="t">Decision-Governance of the Self</span></a>
+<a class="ch" href="ch28.html" data-id="28"><span class="num">28</span><span class="t">Leading Without the Title</span></a>
+<a class="ch" href="ch29.html" data-id="29"><span class="num">29</span><span class="t">Preparing the Next Person</span></a>
+<a class="ch" href="ch30.html" data-id="30"><span class="num">30</span><span class="t">Leave the Line Stronger</span></a>
+<a class="ch" href="acknowledgements.html" data-id="ack"><span class="num">ack</span><span class="t">Acknowledgements</span></a>
+<a class="ch" href="about-the-author.html" data-id="aut"><span class="num">aut</span><span class="t">About the Author</span></a>
+</nav>
 <div class="toc-other-books">
 <div class="toc-other-label">Also by P A Myint</div>
 <a href="/publications/book/">Where Architecture Truly Creates Value &#x2197;</a>
@@ -182,7 +217,7 @@ const idx = {};
 CH.forEach((c,i) => idx[c[0]] = i);
 const tocList = document.getElementById('tocList');
 let lastPart = null;
-CH.forEach((c) => {
+if (!tocList.querySelector('a.ch')) CH.forEach((c) => {
   if (c[3] !== lastPart) {
     const h = document.createElement('div');
     h.className = 'toc-part';

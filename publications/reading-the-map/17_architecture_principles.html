@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Architecture Principles &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/17_architecture_principles.html"/>
+<meta property="og:title" content="Architecture Principles"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/17_architecture_principles.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 17</span>
+<h1 class="article-title">Architecture Principles</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 10 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>Every architecture decision is made inside a set of constraints. Some of those constraints are explicit &mdash; budget, regulation, existing contracts. Some are implicit &mdash; cultural preferences, political realities, the weight of existing investment. <strong>Architecture principles</strong> are the attempt to make the implicit explicit: to write down the rules that should govern architectural decisions before those decisions arrive, so that when they do, the organisation is not starting from scratch.</p>
+<p>A good set of architecture principles is one of the most valuable things an EA function can produce. A bad set &mdash; vague, contradictory, or disconnected from real decisions &mdash; is one of the most reliable ways to make the EA function look decorative. Most organisations have principles somewhere. Most of those principles are doing less work than they should.</p>
+<p>This chapter explains what architecture principles are, what makes them useful, how to recognise the difference between principles that drive decisions and principles that decorate documents, and how Meridian&rsquo;s principles &mdash; or lack of them &mdash; shape what is and is not possible when the VMware crisis forces the organisation&rsquo;s hand.</p>
+<hr class="content-divider"/>
+<h2>What an Architecture Principle Actually Is</h2>
+<p>An <strong>architecture principle</strong> is a statement that expresses a fundamental belief about how the organisation should make architectural decisions. It is not a standard. It is not a policy. It is not a technology preference. It is a declared position on a question that will recur &mdash; a way of pre-answering the recurring question so that each instance does not have to be debated from first principles.</p>
+<p>The distinction matters. A standard says: we use PostgreSQL as our database platform. A principle says: we prefer open standards over proprietary technology. The standard flows from the principle. If the principle changes, the standard changes. If the principle is missing, the standard has no justification &mdash; it is just a preference with no stated rationale, which means it will be overridden whenever someone with enough authority wants something different.</p>
+<p>A well-formed architecture principle has four components.</p>
+<p><strong>Name</strong> &mdash; a short, memorable label. Not a sentence. Something that can be spoken in a conversation and immediately recalled. &ldquo;Cloud first.&rdquo; &ldquo;Single source of truth.&rdquo; &ldquo;Design for failure.&rdquo; Names that require explanation every time they are used are not working as principles.</p>
+<p><strong>Statement</strong> &mdash; a clear declarative sentence that says what the principle requires. Not what it aspires to. Not what it hopes for. What it requires. &ldquo;All new workloads are deployed to cloud infrastructure unless a specific exemption is approved.&rdquo; Not &ldquo;we should consider cloud infrastructure where appropriate.&rdquo;</p>
+<p><strong>Rationale</strong> &mdash; the reason the principle exists. What problem it is solving. What experience or evidence it is based on. The rationale is what makes a principle defensible when it is challenged &mdash; and principles are always challenged eventually.</p>
+<p><strong>Implications</strong> &mdash; the consequences of applying the principle. What it will require. What it will prevent. What it will cost. Implications are the most commonly omitted component and the most important one. A principle without stated implications is an aspiration. A principle with stated implications is a decision.</p>
+<hr class="content-divider"/>
+<h2>Where Principles Come From</h2>
+<p>Architecture principles are not invented by the architecture team in isolation. They are derived &mdash; from organisational strategy, from regulatory requirements, from hard-won operational experience, and from the governance frameworks that the organisation operates under.</p>
+<p>A principle like &ldquo;patient data never leaves the UK&rdquo; does not come from an architect&rsquo;s preference. It comes from data protection law, NHS policy, and clinical governance requirements. The architect&rsquo;s job is to surface that constraint as a principle &mdash; to make it explicit, documented, and connected to the decisions it affects &mdash; not to invent it.</p>
+<p>A principle like &ldquo;we do not create new point-to-point integrations&rdquo; comes from operational experience. Every organisation that has allowed uncontrolled point-to-point integration has eventually produced an estate that cannot be changed without breaking something unexpected. The principle encodes that lesson so that each new project does not have to rediscover it.</p>
+<p>A principle like &ldquo;we design for cloud portability&rdquo; comes from strategic intent. If the organisation has decided that vendor lock-in is a risk worth managing, that decision should be reflected in architectural decisions about APIs, data formats, and deployment approaches. The principle makes the strategic intent operational.</p>
+<p><em>Meridian does not have a formally documented set of architecture principles. It has a collection of informal positions &mdash; things the infrastructure team has always done, things the clinical systems team insists on, things the finance team expects &mdash; none of which have been written down, reconciled with each other, or connected to the strategic decisions they are supposed to inform. When the VMware crisis forces a platform decision, there is no agreed principle about cloud adoption, vendor lock-in, or open standards to anchor the conversation. Every stakeholder argues from their own unstated position. The EA&rsquo;s first task is not to answer the technical question &mdash; it is to surface the implicit principles, write them down, and get them agreed before the technical options can be meaningfully evaluated.</em></p>
+<hr class="content-divider"/>
+<h2>What Good Principles Look Like</h2>
+<p>Good principles are few, specific, and consequential. They say something that is not obviously true to everyone already, they apply to real decisions that actually recur, and applying them changes what gets built.</p>
+<p>Here are three examples of principles doing real work, with the Meridian context.</p>
+<p><strong>Cloud first.</strong> <em>Statement:</em> New workloads are deployed to approved cloud platforms unless a clinical safety, data governance, or cost case is made for an alternative and approved by the Architecture Review Board. <em>Rationale:</em> On-premises infrastructure at Meridian is aging, expensive to maintain, and not sustainable given the VMware licensing position. Cloud platforms provide commodity compute and storage at commodity prices, freeing capital for clinical system investment. <em>Implications:</em> All new projects must assess cloud deployment first. Infrastructure team skills and practices need to shift from on-premises management to cloud governance. Applications with cloud-incompatible dependencies must be remediated before migration or maintained on legacy infrastructure with explicit sunset plans.</p>
+<p><strong>Single patient identity.</strong> <em>Statement:</em> Every clinical system that references a patient uses the NHS number as the primary patient identifier. No new integration may use a local identifier as the primary key. <em>Rationale:</em> Meridian&rsquo;s dual-EPR estate has produced patient matching errors that have reached the clinical safety team. Different local identifiers in different systems create the risk of clinical decisions being made on the wrong patient record. <em>Implications:</em> The integration team must ensure NHS number matching is implemented in all existing integrations at next major version. New systems that cannot consume NHS numbers as primary identifiers are not approved for procurement.</p>
+<p><strong>No new bespoke integrations.</strong> <em>Statement:</em> New integrations between clinical systems are implemented using the agreed integration platform and approved messaging standards. Point-to-point integrations require ARB approval and a stated decommission plan. <em>Rationale:</em> Meridian currently has 34 point-to-point integrations. Eleven of them are undocumented. Changes to any core system require manual impact assessment across all 34. This is unsustainable at scale and creates clinical risk when integrations fail silently. <em>Implications:</em> The integration platform must be procured or designated before this principle can be enforced. Existing point-to-point integrations are catalogued, risk-assessed, and migrated on a priority order agreed with clinical governance.</p>
+<p>Each of these principles says something specific. Each has a rationale grounded in Meridian&rsquo;s actual situation. Each has implications that require real decisions and real investment. None of them is comfortable. That is the test.</p>
+<hr class="content-divider"/>
+<h2>What Bad Principles Look Like</h2>
+<p>Bad principles are common and recognisable. They share a set of failure modes.</p>
+<p><strong>Vacuous agreement.</strong> &ldquo;We will use best-of-breed technology.&rdquo; Every organisation agrees with this. Nobody disagrees with best-of-breed. The principle decides nothing because no option has ever been presented as worst-of-breed. A principle that everyone agrees with immediately is not doing any work.</p>
+<p><strong>Strategy disguised as principle.</strong> &ldquo;We will deliver excellent patient care through integrated technology solutions.&rdquo; This is a mission statement. It cannot be applied to an architectural decision. When someone proposes a new integration approach and asks whether it complies with this principle, the answer is always yes because the principle is too abstract to falsify.</p>
+<p><strong>Uncosted implication.</strong> &ldquo;We will not create technical debt.&rdquo; This sounds rigorous but the implications have not been faced. Eliminating technical debt requires investment, time, and frequently delaying delivery of features the business wants. A principle that cannot be applied without a conversation about what it will cost is a principle whose rationale has not been completed.</p>
+<p><strong>Contradiction without resolution.</strong> A set of principles that includes both &ldquo;we design for resilience and redundancy&rdquo; and &ldquo;we minimise infrastructure cost&rdquo; is going to produce conflict in every project that encounters a trade-off between the two. Both are legitimate positions. But a principle set that does not establish which takes precedence &mdash; or under what conditions each applies &mdash; transfers the decision to whoever is in the room at the time, which is precisely what principles are supposed to prevent.</p>
+<blockquote><p><em>A principle that everyone agrees with immediately is not a principle &mdash; it is a platitude. A principle earns its place by saying something that someone, somewhere, will want to argue with.</em></p></blockquote>
+<hr class="content-divider"/>
+<h2>Principles in the Architecture Governance Cycle</h2>
+<p>Principles are not a one-time exercise. They are part of the architecture governance cycle &mdash; the ongoing process of maintaining architectural direction as the organisation changes.</p>
+<p>Principles are created when new strategic decisions create new architectural constraints, or when operational experience reveals a recurring decision that needs to be pre-answered. They are reviewed when the strategy changes, when a principle is found to be producing bad outcomes, or when two principles are found to be in conflict in a way that is causing problems.</p>
+<p>They are applied through the <strong>Architecture Review Board</strong> &mdash; the governance body that assesses proposed changes to the estate against the agreed principles. The ARB does not approve or reject based on technical preference. It assesses whether a proposed solution complies with the organisation&rsquo;s declared principles, and where it does not, whether the exception is justified and what the conditions of that exception are.</p>
+<p><em>At Meridian, the ARB does not yet exist. The EA is building the case for it. Her argument is simple: without a body that applies principles consistently, every project team makes its own architectural decisions, those decisions accumulate into an estate nobody designed, and the organisation spends its operational budget managing the consequences. The VMware crisis is the consequence of decisions made without consistent governance over fifteen years. The ARB is the mechanism that prevents the next crisis from developing in the same way.</em></p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>TOGAF says:</strong> &ldquo;Architecture principles are general rules and guidelines, intended to be enduring and seldom amended, that inform and support the way in which an organisation sets about fulfilling its mission.&rdquo; &gt; <strong>What that means:</strong> Architecture principles are the standing rules that shape how architectural decisions get made. They are written before the decisions arrive, applied consistently when they do, and changed only when the organisation&rsquo;s strategic direction genuinely changes &mdash; not when a project finds them inconvenient.</p></blockquote>
+<blockquote><p><strong>Architects say:</strong> &ldquo;This proposal doesn&rsquo;t comply with the cloud-first principle &mdash; we need an ARB exception.&rdquo; &gt; <strong>What that means:</strong> The project wants to do something that contradicts a stated organisational rule. That contradiction needs to be made explicit, justified, and approved by the right governance body &mdash; not quietly set aside because it is inconvenient. The exception process is not bureaucracy. It is the mechanism that keeps principles from becoming fiction.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>Architecture principles are the pre-answered questions that stop every architectural decision becoming a negotiation from scratch. Good principles are few, specific, consequential, and uncomfortable &mdash; they rule something out. Bad principles are vague, universally agreed, and disconnected from real decisions. The difference between an EA function that drives decisions and one that documents them after the fact is often found here: in whether the organisation has principles that actually govern what gets built, or principles that decorate the strategy document while the real decisions happen elsewhere.</p>
+<p><strong>Next:</strong> Chapter 18 goes deeper into the business architecture domain &mdash; capability maps in practice. How they are built, assessed, heat-mapped, and connected to the application portfolio decisions that follow.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The Open Group &mdash; TOGAF Standard: Architecture Principles</strong> (opengroup.org): The TOGAF guidance on architecture principles is concise and practical. The four-component structure &mdash; name, statement, rationale, implications &mdash; comes from here and is the most useful single framework for writing principles that do real work.</li><li><strong>Gregor Hohpe &mdash; The Software Architect Elevator</strong> (O&rsquo;Reilly, 2020): Chapter 4 addresses the role of principles in architectural governance with the kind of honest, practitioner-grounded perspective that formal frameworks often avoid. Recommended alongside the TOGAF guidance.</li><li><strong>Ruth Malan and Dana Bredemeyer &mdash; Less Is More with Architecture Principles</strong> (bredemeyer.com): A short, freely available paper that makes the case for fewer, stronger principles over comprehensive principle catalogues. One of the most useful single pieces of writing on the subject.</li><li><strong>NHS England &mdash; Architecture Principles for Health and Social Care</strong> (england.nhs.uk/digitaltechnology): The NHS publishes its own architecture principles for the health and care system. For anyone working in or with NHS organisations, these principles are the regulatory and strategic context within which local principles like Meridian&rsquo;s must sit.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="16_bdat_four_domains.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">BDAT: The Four Domains</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="18_capability_maps.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Capability Maps in Practice</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

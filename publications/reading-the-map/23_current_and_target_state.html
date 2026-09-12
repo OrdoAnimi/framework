@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Current State and Target State &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="Part 3 · The Core Concepts"/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/23_current_and_target_state.html"/>
+<meta property="og:title" content="Current State and Target State"/>
+<meta property="og:description" content="Part 3 · The Core Concepts"/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/23_current_and_target_state.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 23</span>
+<h1 class="article-title">Current State and Target State</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 9 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<p><em>Part 3 · The Core Concepts</em></p>
+<hr class="content-divider"/>
+<p>Every piece of architecture work lives in the gap between two pictures: the one you have and the one you want. The current state is the architecture as it actually is &mdash; the systems, the data, the integrations, the constraints, in all their accumulated untidiness. The target state is the architecture as you intend it to become. The work of architecture is, in large part, the disciplined management of the distance between them.</p>
+<p>This sounds obvious. It is routinely got wrong, in two opposite directions. Some organisations spend so long documenting the current state that the target is never reached &mdash; the baseline becomes a six-month archaeology project that exhausts the appetite for change. Others leap to a target state without an honest baseline, and discover halfway through that the migration path they designed was based on a current state that does not exist.</p>
+<p>This chapter explains how to hold both pictures honestly, and how to keep either from becoming fiction.</p>
+<hr class="content-divider"/>
+<h2>Why You Need Both</h2>
+<p>A target state without a current state is a wish. You cannot plan a journey if you do not know where you are starting from. The most elegant target architecture is useless if the path to it runs through dependencies you did not know you had.</p>
+<p>A current state without a target state is an inventory. It tells you what you have and nothing about where you are going. Documenting the estate in exhaustive detail with no target to orient the work is how architecture functions earn their reputation for producing shelfware &mdash; beautiful, accurate, comprehensive descriptions that change nothing.</p>
+<p>The two pictures are only useful together, and they are only useful at the right level of detail. This is the discipline most people get wrong: they document the current state at the level of detail appropriate to the target, or the target at the level of detail appropriate to the current state. Both errors waste effort.</p>
+<hr class="content-divider"/>
+<h2>The Baseline Trap</h2>
+<p>The <strong>baseline</strong> &mdash; the documented current state &mdash; has a gravitational pull towards completeness that must be actively resisted.</p>
+<p>The instinct, once you start documenting, is to keep going. Every system has another integration. Every integration has another edge case. Every data flow has another exception. There is always more to document, and the more you document, the more you discover you do not yet understand. An undisciplined baseline exercise can run for six months and still feel incomplete, because completeness is not actually the goal.</p>
+<p>The goal of the baseline is <strong>decision support</strong>. You document the current state to the level of detail required to make the decisions in front of you &mdash; no more. If you are planning a VMware exit, you need to know which workloads run on VMware, what they depend on, and what depends on them. You do not need to document the internal data model of every application, because that level of detail does not change the migration decision.</p>
+<p>The test for whether the baseline is detailed enough is not &ldquo;have we documented everything?&rdquo; It is &ldquo;can we make the decisions the vision requires?&rdquo; When the answer is yes, the baseline is done, regardless of how much remains undocumented. The rest can be documented later, when a decision requires it.</p>
+<p>This is uncomfortable for the completionist temperament that architecture often attracts. But a baseline scoped to the decision is the difference between an architecture function that moves and one that documents.</p>
+<hr class="content-divider"/>
+<h2>The Contested Target</h2>
+<p>If the current state has a pull towards excessive detail, the target state has a pull towards fantasy &mdash; and a pull towards disagreement, because different stakeholders want different futures.</p>
+<p>The target state is where the organisation&rsquo;s tensions become visible. The CFO&rsquo;s target state is the cheapest one that works. The clinical director&rsquo;s target state is the one that disrupts care the least. The infrastructure team&rsquo;s target state is the one they can actually deliver with the people they have. The digital team&rsquo;s target state is the most modern one. These are not the same picture, and pretending they are is how target states become fiction.</p>
+<p>An honest target state does not resolve these tensions by ignoring them. It makes them explicit and forces a decision. The architect&rsquo;s job is not to invent the target alone; it is to surface the competing targets, show their trade-offs, and help the organisation choose one it can actually commit to.</p>
+<p>A target state that everyone agreed to instantly is usually a target state that means different things to different people. Real agreement is reached through visible trade-off, and it tends to feel like loss &mdash; because choosing one future means declining others.</p>
+<hr class="content-divider"/>
+<h2>Holding the Tension at Meridian</h2>
+<p><em>Meridian&rsquo;s current state is, unusually, well understood by the time the EA begins the target-state work. The capability heat map, the application portfolio, the data assessment, and the integration map from the preceding work give an honest baseline: 94 applications, 34 point-to-point integrations, fragmented data with 23 of 31 entities unowned, aging infrastructure, no cloud, dual EPR. The baseline is not complete &mdash; eleven applications still have no documented owner &mdash; but it is sufficient for the decisions in front of the organisation. The EA resists the pull to make it more complete than the decisions require.</em></p>
+<p><em>The target state is where the difficulty lives. Three are in contention.</em></p>
+<p><em>The infrastructure-led target is a clean cloud platform with the existing applications rehosted onto it &mdash; fastest off VMware, lowest disruption, but it carries the fragmented application estate forward unchanged. The data problem and the dual-EPR problem survive into the new world intact.</em></p>
+<p><em>The digital-led target is a consolidated, cloud-native estate with a single EPR, a resolved patient-identity master, and the point-to-point integrations replaced by a managed integration platform. It is the right destination and an implausible near-term plan &mdash; it fuses three major programmes into one and assumes a delivery capacity Meridian does not have.</em></p>
+<p><em>The clinically-led target is whatever disrupts patient care the least, which in practice means changing as little as possible &mdash; a target state that is really a defence of the current state.</em></p>
+<p><em>The EA&rsquo;s contribution is not to pick a winner. It is to make the three targets visible side by side, with their costs and their consequences, so the leadership team can see that they are choosing between real alternatives rather than discovering a single obvious answer. The chosen target &mdash; a cloud platform now, with EPR consolidation and integration modernisation sequenced as later waves &mdash; is none of the three in pure form. It is a negotiated target that holds the infrastructure team&rsquo;s urgency, the digital team&rsquo;s destination, and the clinical team&rsquo;s caution in a sequence they can all live with. It became achievable only once the tension was made explicit rather than wished away.</em></p>
+<hr class="content-divider"/>
+<h2>Levels of Detail</h2>
+<p>A practical discipline that prevents both the baseline trap and the target fantasy is to keep the current state and the target state at matching, decision-appropriate levels of detail &mdash; and to recognise that the target state is usually documented at a <em>higher</em> level of abstraction than the baseline.</p>
+<p>The current state can be precise because it exists; you can observe it. The target state is necessarily less precise because it does not exist yet; over-specifying it pretends to a certainty you do not have. A target state documented to the same fine grain as the baseline is making promises about a future it cannot actually predict, and it will be wrong in detail in ways that discredit the whole picture.</p>
+<p>The useful pattern is: baseline precise enough to support the decision; target clear enough to set direction; and the detail of the target filled in progressively, wave by wave, as each transition is actually designed. This is why transition architectures (Chapter 30) matter &mdash; they are how the abstract target becomes concrete in stages, rather than all at once and prematurely.</p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>TOGAF says:</strong> &ldquo;The Baseline Architecture describes the existing architecture; the Target Architecture describes the desired future state. Phases B, C, and D develop both across the business, data, application, and technology domains.&rdquo; &gt; <strong>What that means:</strong> For each domain, you describe what you have and what you want. The method is deliberately symmetrical, but the practice should not be &mdash; document the baseline to the depth the decision needs, and the target to the clarity the direction needs, and stop.</p></blockquote>
+<blockquote><p><strong>Stakeholders say:</strong> &ldquo;Can&rsquo;t we just fix what we have rather than do all this documentation?&rdquo; &gt; <strong>What that means:</strong> Sometimes, yes &mdash; if the change is small and contained, a full baseline-and-target exercise is overkill. The honest answer depends on scope. For a single-system change, fix it. For anything that touches multiple systems, the few weeks spent establishing where you are and where you are going will save you from designing a path through dependencies you did not know existed.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>Architecture lives in the gap between the current state and the target state, and the discipline is to keep both honest. The baseline has a gravitational pull towards exhaustive completeness that must be resisted: document the current state to the level of detail the decision requires and no further. The target state has a pull towards fantasy and a tendency to mean different things to different stakeholders: surface the competing targets, make their trade-offs explicit, and help the organisation commit to one it can actually reach. Hold the two at matching, decision-appropriate levels of detail, and fill in the target progressively rather than all at once. The gap between the two pictures is not a problem to be eliminated &mdash; it is the architecture&rsquo;s actual work.</p>
+<p><strong>Next:</strong> Chapter 24 turns to the instrument that makes the gap visible and actionable &mdash; gap analysis &mdash; and explains why the most important gaps are rarely the most obvious ones.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>The Open Group &mdash; TOGAF Standard: Phases B&ndash;D</strong> (opengroup.org): The architecture-development phases where baseline and target are produced for each domain. The guidance on level of detail is light, which is why this chapter&rsquo;s emphasis on decision-appropriate scoping matters in practice.</li><li><strong>Gregor Hohpe &mdash; The Software Architect Elevator</strong> (O&rsquo;Reilly, 2020): Hohpe&rsquo;s discussion of operating at different altitudes &mdash; from the engine room to the boardroom &mdash; is the clearest available treatment of why baseline and target are documented at different levels of abstraction.</li><li><strong>Eli Goldratt &mdash; The Goal</strong> (North River Press, 1984): A novel about constraints and improvement. Its core lesson &mdash; that you improve a system by understanding where it actually is before deciding where it should go &mdash; is the current-state discipline in narrative form.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="22_architecture_vision.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">The Architecture Vision</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="24_gap_analysis.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Gap Analysis</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

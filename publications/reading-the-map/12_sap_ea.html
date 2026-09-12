@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SAP EA: Architecture Inside the Machine &mdash; Reading the Map &mdash; OrdoAnimi</title>
+<meta name="description" content="If your organisation runs SAP, architecture is not optional. It is built into the product. Every configuration decision, every integration, every customisation is an architectural..."/>
+<link rel="canonical" href="https://framework.ordoanimi.com/publications/reading-the-map/12_sap_ea.html"/>
+<meta property="og:title" content="SAP EA: Architecture Inside the Machine"/>
+<meta property="og:description" content="If your organisation runs SAP, architecture is not optional. It is built into the product. Every configuration decision, every integration, every customisation is an architectural..."/>
+<meta property="og:url" content="https://framework.ordoanimi.com/publications/reading-the-map/12_sap_ea.html"/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../pub.css"/>
+</head>
+<body>
+
+<nav class="pub-nav">
+<a href="/" class="pub-nav-brand">OrdoAnimi</a>
+<ul class="pub-nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li><a href="/publications/thought-series/">Thought Series</a></li>
+<li><a href="/publications/signal/">Signal</a></li>
+<li><a href="/publications/field-notes/">Field Notes</a></li>
+</ul>
+</nav>
+
+<header class="article-header">
+<div class="article-header-inner">
+<span class="article-series-label">Reading the Map &middot; Chapter 12</span>
+<h1 class="article-title">SAP EA: Architecture Inside the Machine</h1>
+<p class="article-byline">Phil Myint &middot; OrdoAnimi &middot; 10 June 2026</p>
+</div>
+</header>
+
+<main>
+<div class="article-body">
+<div class="article-body-inner">
+
+<h2>Opening</h2>
+<p>If your organisation runs SAP, architecture is not optional. It is built into the product. Every configuration decision, every integration, every customisation is an architectural choice &mdash; whether anyone calls it that or not.</p>
+<p>SAP is the world&rsquo;s most widely deployed enterprise software platform. Globally, it runs the back office of most large organisations: finance, procurement, supply chain, HR, manufacturing. In the public sector and healthcare, it frequently runs payroll, finance, and logistics. If Meridian were a local government body rather than an NHS trust, there is a good chance SAP would be at the centre of its technology estate.</p>
+<p>Understanding what <strong>SAP Enterprise Architecture</strong> is &mdash; and what the <strong>SAP EA Framework</strong> provides &mdash; matters for two reasons. First, because SAP environments are architecturally complex in ways that general frameworks do not fully address. Second, because SAP has its own vocabulary, its own patterns, and its own governance expectations, and if you walk into a room where SAP is live you need to be able to follow the conversation.</p>
+<p>This chapter gives you that foundation. Not how to configure SAP. Not how to become an SAP architect. Just what SAP EA is, what it covers, and how it connects to the broader frameworks you have already met.</p>
+<hr class="content-divider"/>
+<h2>What SAP EA Actually Is</h2>
+<p><strong>SAP EA</strong> refers to the architectural discipline of designing, governing, and evolving an organisation&rsquo;s SAP landscape. It is not a single product &mdash; it is a practice, supported by SAP&rsquo;s own reference materials, tools, and certification pathway.</p>
+<p>At its core, SAP EA addresses a specific challenge: SAP systems are not islands. A typical SAP implementation connects finance to procurement to HR to logistics, and increasingly to cloud services, third-party applications, and real-time data feeds. The decisions made in one part of the landscape affect every other part. SAP EA is the discipline that makes those connections visible and governable.</p>
+<p><em>Meridian&rsquo;s finance and procurement function is run by a neighbouring NHS trust under a shared services agreement. That trust runs SAP S/4HANA. When Meridian needs to submit a capital expenditure request, it crosses into SAP territory &mdash; a system it does not own, governed by an architecture team it has no direct relationship with. An architect working at Meridian does not need to know SAP deeply, but they do need to understand what they are looking at when the integration diagram goes up on screen.</em></p>
+<p>The <strong>SAP Reference Architecture</strong> is SAP&rsquo;s own library of recommended designs &mdash; how to configure modules, how to integrate systems, which patterns to use for which business scenarios. Think of it as SAP&rsquo;s version of a pattern library: documented, tested approaches that avoid the most common mistakes. Experienced SAP architects use these references to avoid reinventing solutions that SAP has already worked out.</p>
+<hr class="content-divider"/>
+<h2>The SAP Landscape</h2>
+<p>SAP environments are described in terms of their <strong>landscape</strong> &mdash; the arrangement of systems, instances, and integrations that make up the full SAP estate. Understanding landscape is the first thing you need to be able to do to follow an SAP architecture conversation.</p>
+<p>A typical SAP landscape has three tiers:</p>
+<p><strong>Development</strong> is where changes are built and initially tested. Configuration changes, custom code, new integrations &mdash; all of this starts in the development system.</p>
+<p><strong>Quality Assurance</strong> (QA or test) is where changes are tested against realistic data before going live. This is where integration testing happens &mdash; checking that a change in the finance module does not break something in procurement.</p>
+<p><strong>Production</strong> is the live system. Changes only move to production after they have passed through development and QA. The movement of changes between these tiers is called the <strong>transport system</strong>, and managing transports is one of the fundamental governance activities in any SAP environment.</p>
+<p><em>At Meridian&rsquo;s shared services partner, a change to the procurement approval workflow has to travel through all three landscape tiers before it affects the live system. If the change is tested inadequately in QA, it goes live with defects. If it goes live with defects in procurement approval, invoices do not get paid on time. This is not an IT problem &mdash; it is a finance and supplier relationship problem. The landscape makes those connections visible.</em></p>
+<p>The distinction between landscape tiers seems straightforward but has real consequences. Many incidents in SAP environments happen because a change was tested in isolation in QA but broke something in production that depended on a configuration that was only present in the live system. SAP EA includes the discipline of managing this risk.</p>
+<hr class="content-divider"/>
+<h2>S/4HANA and the Move to the Cloud</h2>
+<p>The most significant shift in SAP architecture over the last decade is the move to <strong>SAP S/4HANA</strong> &mdash; the current generation of SAP&rsquo;s core ERP platform. If you encounter SAP in a new organisation today, you are likely to encounter either S/4HANA already running, or a programme underway to migrate to it.</p>
+<p>S/4HANA differs from its predecessor (SAP ECC) in three important ways for architecture purposes.</p>
+<p>First, it runs on SAP&rsquo;s own in-memory database (<strong>SAP HANA</strong>), which changes the performance characteristics of the system significantly. Processes that took hours in batch mode can run in near real-time. This opens up new design possibilities but also requires architectural decisions about what to process in real-time and what to batch.</p>
+<p>Second, S/4HANA has a simplified data model. The predecessor system had accumulated decades of complexity &mdash; redundant tables, legacy structures, overlapping data objects. S/4HANA rationalises this, which is architecturally cleaner but means organisations migrating from ECC have to resolve how their existing data maps to the new structure.</p>
+<p>Third, S/4HANA is available as a <strong>cloud deployment</strong> &mdash; either as a public cloud (SAP&rsquo;s infrastructure, SAP&rsquo;s update cycle) or private cloud (dedicated infrastructure, more control). This is where SAP EA intersects with the broader cloud architecture questions most organisations are navigating.</p>
+<p><em>Meridian&rsquo;s situation is a useful contrast. Meridian has no cloud. Its technology strategy has not yet addressed cloud adoption in any substantive way, partly because the VMware crisis has absorbed leadership attention, and partly because the dual-EPR situation makes cloud migration feel like a second-order problem. If Meridian were to inherit an SAP estate through a shared services arrangement, it would suddenly have a cloud-hosted system in its landscape &mdash; whether it was ready for that or not.</em></p>
+<hr class="content-divider"/>
+<h2>How SAP EA Connects to Other Frameworks</h2>
+<p>SAP has its own architecture methodology, but it does not exist in isolation. If you are working in an organisation that uses TOGAF as its EA framework and also runs SAP, you need to understand how they relate.</p>
+<p>The honest answer is that they address different levels of the same problem. TOGAF provides the overarching methodology &mdash; the ADM phases, the architecture domains, the governance approach. SAP EA provides the deep domain knowledge for the SAP-specific parts of the landscape. An architect working in an SAP environment typically uses both: TOGAF to structure the architecture process and SAP&rsquo;s reference materials to make the right decisions within that process.</p>
+<p><strong>ArchiMate</strong>, the modelling language you met in Chapter 8, has specific conventions for representing SAP landscapes. SAP systems appear in the technology and application layers. Integrations between SAP and other systems are represented as application interfaces. The three-tier landscape maps naturally onto ArchiMate&rsquo;s layering. If you can read an ArchiMate diagram, you can read an SAP landscape diagram &mdash; the vocabulary is the same even if the specific elements are different.</p>
+<p><strong>BIZBOK</strong> and business architecture connect to SAP EA through capability mapping. The business capabilities that SAP supports &mdash; procurement, finance, supply chain &mdash; can be mapped to the specific SAP modules that deliver them. This is exactly the kind of cross-mapping that Chapter 11 described: which capabilities are served by which systems, and what happens when those systems are under strain.</p>
+<hr class="content-divider"/>
+<h2>The SAP EA Certification</h2>
+<p>SAP offers its own EA certification &mdash; the <strong>SAP Certified Associate: SAP Enterprise Architect</strong> (and more advanced levels). This is separate from TOGAF and from the general EA certifications you may encounter. It is specifically for architects who work in SAP environments and need to demonstrate competence in SAP&rsquo;s architectural approach, tools, and reference materials.</p>
+<p>For most people reading this book, the SAP EA certification is not an immediate goal. But knowing it exists tells you something useful: SAP environments are architecturally complex enough to warrant their own certification pathway. When you encounter SAP in a new role, that complexity is real. The organisation almost certainly has people whose job is specifically to govern the SAP landscape. Understanding their role and their vocabulary helps you work alongside them effectively.</p>
+<hr class="content-divider"/>
+<h2>What You Will Hear in the Room</h2>
+<p>If you are in a meeting where SAP is being discussed, you are likely to hear some combination of the following:</p>
+<p><strong>Landscape</strong> &mdash; the arrangement of SAP systems and their tiers. &ldquo;What does the landscape look like?&rdquo; means: how many systems, how are they connected, and what tier are we talking about?</p>
+<p><strong>Transport</strong> &mdash; the mechanism for moving changes between tiers. &ldquo;The transport failed in QA&rdquo; means a change did not successfully move from development to test. This is usually a technical problem but can have business consequences.</p>
+<p><strong>Module</strong> &mdash; the functional areas within SAP. Finance (FI), Controlling (CO), Materials Management (MM), Sales and Distribution (SD), Human Resources (HR) &mdash; each is a module. &ldquo;Which modules are in scope?&rdquo; means which functional areas are affected by the change or programme being discussed.</p>
+<p><strong>RISE with SAP</strong> &mdash; SAP&rsquo;s commercial offering for cloud migration. If someone mentions RISE, the organisation is in conversation with SAP about moving their landscape to the cloud. This is a significant architectural and commercial decision.</p>
+<p><strong>Fit-to-standard</strong> &mdash; the principle that an organisation should adapt its processes to fit SAP&rsquo;s standard configuration, rather than customising SAP to fit existing processes. This sounds simple but is culturally and politically difficult in most organisations. It is one of the central tensions in any SAP implementation.</p>
+<p><em>At Meridian&rsquo;s shared services partner, fit-to-standard was the stated principle for the S/4HANA implementation. In practice, the finance team had seventeen years of custom reports built on the old system and was unwilling to lose them. The tension between the architectural principle and the operational reality consumed six months of governance conversations. This is not unusual. It is the normal condition of large SAP programmes.</em></p>
+<hr class="content-divider"/>
+<h2>Translator Panel</h2>
+<blockquote><p><strong>SAP says:</strong> &ldquo;The SAP Reference Architecture provides a structured collection of best practices, reference solutions, and architectural patterns to support the design of SAP landscapes.&rdquo; &gt; <strong>What that means:</strong> SAP has documented the most common ways to configure and connect its systems, based on what has worked across thousands of implementations. These are the recommended starting points &mdash; not rules, but tested patterns that save experienced architects from reinventing solutions that already exist.</p></blockquote>
+<blockquote><p><strong>SAP says:</strong> &ldquo;Fit-to-standard means adopting SAP&rsquo;s standard business processes rather than customising the software to match existing ways of working.&rdquo; &gt; <strong>What that means:</strong> Instead of bending SAP to fit how you currently do things, you adopt how SAP thinks you should do things. In theory this reduces cost and complexity. In practice it requires organisations to change established processes, which is harder than it sounds and is frequently where SAP programmes run into difficulty.</p></blockquote>
+<hr class="content-divider"/>
+<h2>The Key Idea</h2>
+<p>SAP is not just software &mdash; it is an architectural landscape in its own right. Organisations that run SAP have made thousands of interconnected configuration decisions that function as their architecture. Understanding the landscape tiers, the module structure, and the fit-to-standard principle gives you enough to follow the conversation and understand why SAP programmes are complex, expensive, and consequential.</p>
+<p><strong>Next:</strong> Chapter 13 moves to Wardley Mapping &mdash; a fundamentally different way of thinking about the technology landscape, focused on evolution and competitive positioning rather than structure and compliance.</p>
+<hr class="content-divider"/>
+<h2>Further Reading</h2>
+<ul><li><strong>SAP Architecture Centre</strong> (architecture.sap.com): SAP&rsquo;s own library of reference architectures, patterns, and best practice guidance. The most authoritative source for SAP-specific architectural decisions.</li><li><strong>SAP Certified Associate: SAP Enterprise Architect</strong>: The official certification pathway for SAP architects. The exam guide gives a clear picture of what SAP considers core to the discipline.</li><li><strong>Thomas Saueressig and Sven Denecken &mdash; SAP S/4HANA: The Reference Guide</strong> (SAP Press): The most comprehensive introduction to S/4HANA for people who need to understand the platform without becoming developers.</li><li><strong>Michael Missbach et al. &mdash; SAP on AWS: Architecture and Best Practices</strong> (SAP Press): For organisations moving SAP to cloud infrastructure &mdash; what the architectural decisions look like in practice.</li></ul>
+
+<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; Reading the Map</p>
+</div>
+</div>
+
+<hr class="section-divider"/>
+
+<nav class="article-nav">
+<a href="11_bizbok_business_architecture.html" class="article-nav-prev">
+<span class="nav-direction">&larr; Previous</span>
+<span class="nav-title">BIZBOK and Business Architecture</span>
+</a>
+<a href="/publications/reading-the-map/" class="article-nav-index">
+<span class="nav-direction">&uarr;</span>
+<span class="nav-title">Reading the Map Index</span>
+</a>
+<a href="13_wardley_mapping.html" class="article-nav-next">
+<span class="nav-direction">Next &rarr;</span>
+<span class="nav-title">Wardley Mapping: Seeing What Moves</span>
+</a>
+</nav>
+</main>
+
+<footer class="pub-footer">
+<div class="pub-footer-inner">
+<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi &middot; CC BY 4.0</span>
+<div class="pub-footer-links">
+<a href="/publications/reading-the-map/">Reading the Map</a>
+<a href="/publications/">Publications</a>
+<a href="/">Framework</a>
+<a href="/admin/">Edit</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
