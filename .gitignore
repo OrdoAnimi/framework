@@ -45,3 +45,9 @@ Desktop.ini
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Draft inbox - raw, unclassified writing dropped here for import.
+# Never published as-is; see _drafts/README.md.
+_drafts/*
+!_drafts/README.md
+!_drafts/.gitkeep
