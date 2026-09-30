@@ -36,14 +36,14 @@
 | # | Item | File(s) | Source |
 |---|------|---------|--------|
 | M12 | Fix GitHub Pages — site returns 404. Enable Pages in repo settings pointing to `master` branch (or rename `master` → `main`) | GitHub repo settings | Site audit |
-| M13 | Fix OG meta URLs — all pages reference `zencloudau.github.io/OrdoAnimi-sa/` (trademark symbol in URL); should be `architecture.ordoanimi.com/` | All HTML files (`og:url` meta tags) | Site audit |
+| M13 | Fix OG meta URLs — all pages reference the legacy GitHub Pages host (trademark symbol in URL); should be `architecture.ordoanimi.com/` | All HTML files (`og:url` meta tags) | Site audit |
 | M14 | Verify `workshop-playbook.html` exists and is complete (nav links to it but not confirmed) | `workshop-playbook.html` | Site audit |
 | M15 | Verify `escalation-protocol.html` exists and is complete (nav links to it but not confirmed) | `escalation-protocol.html` | Site audit |
 | M16 | Verify `cloud-reference/` exists and is complete (nav links to it but not confirmed) | `cloud-reference/index.html` | Site audit |
 | M17 | Verify all 6 module pages exist and are complete | `modules/module-01` through `module-06` | Site audit |
 | M18 | Verify all 4 engagement archetype pages exist | `engagement-archetypes/obfuscation.html`, `negligent-void.html`, `institutional-paralysis.html`, `silo.html` | Site audit |
 | M19 | Verify all toolkit files exist (10 diagrams, 8 templates referenced in toolkit.html) | `diagrams/`, `templates/`, `toolkit/` | Site audit |
-| M13 | Fix OG meta URLs — all pages reference `zencloudau.github.io/OrdoAnimi-sa/` (trademark symbol in URL) | All HTML files | Site audit |
+| M13 | Fix OG meta URLs — all pages reference the legacy GitHub Pages host (trademark symbol in URL) | All HTML files | Site audit |
 
 ### In Progress
 
@@ -154,7 +154,7 @@
 | E2 | Transfer velocity-architecture repo under the OrdoAnimi banner | Done 2026-07-21 — renamed to OrdoAnimi/framework |
 | E3 | Transfer ea-artefact-generator → OrdoAnimi/Fabrica | Pending Phil decision (unrelated to naming resolution) |
 | E4 | Transfer velocity-academy → OrdoAnimi/Arcadium | Pending Phil decision (unrelated to naming resolution) |
-| E5 | Archive/remove unused ZenCloudAU repos after audit | Repo audit (see the OrdoAnimi consolidation plan) |
+| E5 | Archive/remove unused legacy-account repos after audit | Repo audit (see the OrdoAnimi consolidation plan) |
 | E6 | DNS fix: velocityarchitecture.com.au → Academy | Blocked on E4 |
 | E8 | vaf-sa → transfer under the OrdoAnimi banner once E2 lands | Blocked on E2 |
 

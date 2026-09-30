@@ -21,9 +21,9 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 
 ## Strategic Context (Background — Not Blocking Current Work)
 
-**OrdoAnimi** (`github.com/OrdoAnimi`) is the single umbrella brand for everything Phil Myint publishes and builds — this framework, the Valour product console, and Executive Fast Track all sit under it. There is no longer a separate framework brand distinct from the company: this repository's public identity, the company's identity, and the product house's identity are all "OrdoAnimi." ZenCloudAU repos will migrate under this banner as each is ready; this is future work.
+**OrdoAnimi** (`github.com/OrdoAnimi`) is the single umbrella brand for everything Phil Myint publishes and builds — this framework, the Valour product console, and Executive Fast Track all sit under it. There is no longer a separate framework brand distinct from the company: this repository's public identity, the company's identity, and the product house's identity are all "OrdoAnimi." Remaining legacy-account repos will migrate under this banner as each is ready; this is future work.
 
-**Trademark note — resolved:** The "Velocity" trademark issue is settled. The framework is renamed **The OrdoAnimi Framework**. ZenCloud and StudioSix are retired entirely, not carried forward as sub-brands. The book's use of "velocity" as a philosophical concept (the rate at which ambiguity expires) is untouched — that's the framework's own vocabulary, not the retired brand name.
+**Trademark note — resolved:** The "Velocity" trademark issue is settled. The framework is renamed **The OrdoAnimi Framework**. Earlier company and studio brands are retired entirely, not carried forward as sub-brands. The book's use of "velocity" as a philosophical concept (the rate at which ambiguity expires) is untouched — that's the framework's own vocabulary, not the retired brand name.
 
 ---
 
@@ -41,7 +41,7 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 - **framework.ordoanimi.com/publications** — ALL 50 book chapters published + Thought Series + Signal. **This is the primary publishing platform, not Medium.**
 - **Medium @ZencloudAU** — Book chapters serialised; at Chapter 30 of 50 (secondary discovery channel — 20 chapters behind)
 - **LinkedIn in/pmyint** — Professional presence; active
-- **www.ordoanimi.com** — OrdoAnimi client entry point (was zencloud.com.au)
+- **www.ordoanimi.com** — OrdoAnimi client entry point
 
 ### Related Artefacts (Off-Repo)
 - **OrdoAnimi Book** — 50 chapters complete, published on framework.ordoanimi.com (Book 1 — Architecture domain)

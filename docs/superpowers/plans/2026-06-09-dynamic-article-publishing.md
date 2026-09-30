@@ -127,7 +127,7 @@ class TestDeriveEyebrow(unittest.TestCase):
         self.assertIn('Addendum', derive_eyebrow('foo-addendum-may-2026', 'May 2026'))
 
     def test_working_paper(self):
-        self.assertIn('Working Paper', derive_eyebrow('zencloud-governance-june-2026', 'June 2026'))
+        self.assertIn('Working Paper', derive_eyebrow('ordoanimi-governance-june-2026', 'June 2026'))
 
     def test_series(self):
         self.assertIn('Research Series', derive_eyebrow('05-new-topic', ''))
@@ -260,8 +260,8 @@ import re
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent
-RAW_BASE = 'https://raw.githubusercontent.com/ZenCloudAU/velocity-architecture/main'
-GITHUB_BASE = 'https://github.com/ZenCloudAU/velocity-architecture/blob/main'
+RAW_BASE = 'https://raw.githubusercontent.com/OrdoAnimi/framework/main'
+GITHUB_BASE = 'https://github.com/OrdoAnimi/framework/blob/main'
 SKIP_FILES = {'SOURCES.md', 'PUBLISHING.md', 'README.md', 'CITATION.cff', 'CONTRIBUTING.md'}
 
 ECOSYSTEM_STRIP = (
@@ -684,7 +684,7 @@ git commit -m "ci: add auto-publish workflow for new research and publication ar
 ```bash
 git push
 ```
-Go to `https://github.com/ZenCloudAU/velocity-architecture/actions` and confirm the "Publish New Articles" workflow does NOT trigger (no `.md` files changed in this push — only `.yml` and `.py`).
+Go to `https://github.com/OrdoAnimi/framework/actions` and confirm the "Publish New Articles" workflow does NOT trigger (no `.md` files changed in this push — only `.yml` and `.py`).
 
 - [ ] **Step 2: Add a real test article and push**
 
@@ -704,7 +704,7 @@ git push
 
 - [ ] **Step 3: Confirm workflow runs**
 
-Watch `https://github.com/ZenCloudAU/velocity-architecture/actions` — "Publish New Articles" workflow should trigger, run, and create a new commit.
+Watch `https://github.com/OrdoAnimi/framework/actions` — "Publish New Articles" workflow should trigger, run, and create a new commit.
 
 - [ ] **Step 4: Confirm the generated page is live**
 
