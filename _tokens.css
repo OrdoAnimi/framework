@@ -1,13 +1,14 @@
+@import url('/oa-tokens.css');
 /* The OrdoAnimi Framework - Design Tokens */
 :root {
-  --color-primary: #0b0e11;
-  --color-accent: #b8924e;
-  --color-surface: #f2ede0;
-  --color-panel: #0b0e11;
-  --color-text-primary: #0b0e11;
-  --color-text-light: #f2ede0;
+  --color-primary: var(--oa-ink);
+  --color-accent: var(--oa-gold);
+  --color-surface: var(--oa-page);
+  --color-panel: var(--oa-ink);
+  --color-text-primary: var(--oa-text);
+  --color-text-light: var(--oa-page);
   --color-text-muted: #6e7460;
-  --color-border: #ded7c4;
+  --color-border: var(--oa-border);
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'DM Sans', sans-serif;
   --font-mono: 'DM Mono', monospace;
@@ -21,7 +22,7 @@
   --radius-lg: 12px;
   --accent: var(--color-accent);
   --accent-hover: #96753a;
-  --accent-subtle: #f7f0dc;
+  --accent-subtle: var(--oa-gold-tint);
   --accent-border: #e8dcc0;
 }
 
