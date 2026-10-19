@@ -153,7 +153,7 @@
 | E3 | Transfer ea-artefact-generator → OrdoAnimi/Fabrica | Pending Phil decision (unrelated to naming resolution) |
 | E4 | Transfer academy → OrdoAnimi/Arcadium | Pending Phil decision (unrelated to naming resolution) |
 | E5 | Archive/remove unused legacy-account repos after audit | Repo audit (see the OrdoAnimi consolidation plan) |
-| E6 | DNS fix: velocityarchitecture.com.au → Academy | Blocked on E4 |
+| E6 | Legacy domain retired; DNS cutover to the Academy pending | Blocked on E4 |
 | E8 | oa-sa → transfer under the OrdoAnimi banner once E2 lands | Blocked on E2 |
 
 ---
