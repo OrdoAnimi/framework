@@ -12,7 +12,7 @@
 
 <title>Diagnostics — OrdoAnimi</title>
 
-<meta name="description" content="VAF diagnostic tools — decision velocity diagnostic, organisation health check, and plain language introduction.">
+<meta name="description" content="OrdoAnimi diagnostic tools — decision throughput diagnostic, organisation health check, and plain language introduction.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -181,7 +181,7 @@ footer{background:var(--ink-2);color:rgba(222,215,196,0.7);padding:2.5rem 2rem;}
 
     <h1 class="page-title">Diagnostics</h1>
 
-    <p class="page-desc">Start here if you have never heard of enterprise architecture — or need to diagnose decision velocity problems in a live engagement. Includes the one-page diagnostic and the full organisation health check.</p>
+    <p class="page-desc">Start here if you have never heard of enterprise architecture — or need to diagnose decision throughput problems in a live engagement. Includes the one-page diagnostic and the full organisation health check.</p>
 
   </div>
 
@@ -195,9 +195,9 @@ footer{background:var(--ink-2);color:rgba(222,215,196,0.7);padding:2.5rem 2rem;}
 
         <button class="file-btn" data-p="diagnostics/plain-language-guide.md" onclick="loadDoc(this.dataset.p)">Plain Language Guide</button>
 
-        <button class="file-btn" data-p="diagnostics/velocity_diagnostic_one_page.md" onclick="loadDoc(this.dataset.p)">Velocity Diagnostic (One Page)</button>
+        <button class="file-btn" data-p="diagnostics/flow_diagnostic_one_page.md" onclick="loadDoc(this.dataset.p)">Flow Diagnostic (One Page)</button>
 
-        <button class="file-btn" data-p="diagnostics/decision-velocity-diagnostic.md" onclick="loadDoc(this.dataset.p)">Decision Velocity Diagnostic</button>
+        <button class="file-btn" data-p="diagnostics/decision-throughput-diagnostic.md" onclick="loadDoc(this.dataset.p)">Decision Throughput Diagnostic</button>
 
         <button class="file-btn" data-p="diagnostics/organisation-health-check.md" onclick="loadDoc(this.dataset.p)">Organisation Health Check</button>
 
@@ -240,7 +240,7 @@ footer{background:var(--ink-2);color:rgba(222,215,196,0.7);padding:2.5rem 2rem;}
 
 <script>
 
-const RAW='https://raw.githubusercontent.com/OrdoAnimi/velocity-architecture/main/';
+const RAW='https://raw.githubusercontent.com/OrdoAnimi/framework/main/';
 
 let current=null;
 
@@ -256,7 +256,7 @@ async function loadDoc(path){
 
   try{const r=await fetch(RAW+path);if(!r.ok)throw 0;el.innerHTML='<div class="md">'+marked.parse(await r.text())+'</div>';}
 
-  catch{el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/velocity-architecture/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';}
+  catch{el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/framework/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';}
 
   el.scrollTop=0;
 

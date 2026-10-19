@@ -26,7 +26,7 @@
 | M5 | Resolve 14-Day Rule vs Tier 3 Pulse tension — clarifying note | `correspondence-rules/RULES.md` + `viewpoints/vp5-rhythm/pulse-system.md` | REVIEW P1.5 |
 | M6 | Define S7 stakeholder (or renumber to remove the gap) | `spec/FRAMEWORK-SPEC.md` §2 | REVIEW P2.4 |
 | M7 | Reconcile 7-column model and 6-viewpoint model in README — add bridging explanation | `README.md` | REVIEW P1.2 |
-| M8 | Define Velocity Vault | New: `vault/README.md` | REVIEW P2.1 |
+| M8 | Define Decision Vault | New: `vault/README.md` | REVIEW P2.1 |
 | M9 | Create Column 6 — `patterns/` directory with README + first pattern | New: `patterns/README.md` + `patterns/stalled-decision-pattern.md` | REVIEW P1.3 |
 | M10 | Fix homepage book card — "thirty-three chapters" is stale; book is complete at 50 | framework.ordoanimi.com homepage HTML | Site audit |
 | M11 | Resolve version discrepancy — repo/spec says v1.0; OrdoAnimi Agent says "OrdoAnimi v2". Decide canonical version and align everywhere. | `spec/FRAMEWORK-SPEC.md`, `app/portal.html` | Agent audit |
@@ -60,18 +60,18 @@
 | M5 | Resolve 14-Day / Tier 3 Pulse tension — clarifying note added to CR-E1 | 2026-06-28 |
 | M6 | Define S7 stakeholder — Risk Officer / Risk Manager, VP1 + VP3 | 2026-06-28 |
 | M7 | Reconcile 7-column and 6-viewpoint models — bridging section added to README | 2026-06-28 |
-| M8 | Define Velocity Vault — `vault/README.md` created | 2026-06-28 |
+| M8 | Define Decision Vault — `vault/README.md` created | 2026-06-28 |
 | M9 | Create Column 6 — `patterns/README.md` + PAT-01 stalled-decision-pattern.md | 2026-06-28 |
 | M10 | Fix homepage book card — "thirty-three chapters" → "all fifty chapters" | 2026-06-28 |
-| M11 | Resolve version discrepancy — framework v1.0 canonical; Agent "VAF v2" was tool version, Agent now deprecated in repo | 2026-06-28 |
-| M12 | Fix GitHub Pages — vaf-sa now serving from `master` branch | 2026-06-28 |
+| M11 | Resolve version discrepancy — framework v1.0 canonical; Agent "OrdoAnimi v2" was tool version, Agent now deprecated in repo | 2026-06-28 |
+| M12 | Fix GitHub Pages — oa-sa now serving from `master` branch | 2026-06-28 |
 | M14 | Verify workshop-playbook.html — confirmed live and complete | 2026-06-28 |
 | M15 | Verify escalation-protocol.html — confirmed live and complete | 2026-06-28 |
 | M16 | Verify cloud-reference/ — confirmed live (AWS, Azure, GCP, OCI, Landing Zone) | 2026-06-28 |
 | M17 | Verify all 6 module pages — confirmed live and complete | 2026-06-28 |
 | M18 | Verify all 4 engagement archetype pages — confirmed live and complete | 2026-06-28 |
 | M19 | Verify all toolkit files — 7 Mermaid + 3 PlantUML + 8 templates confirmed | 2026-06-28 |
-| M13 | Fix OG meta URLs + GitHub footer link — `OrdoAnimi-sa` → `vaf-sa` across all HTML files | 2026-06-28 |
+| M13 | Fix OG meta URLs + GitHub footer link — `OrdoAnimi-sa` → `oa-sa` across all HTML files | 2026-06-28 |
 
 ---
 
@@ -88,11 +88,11 @@
 | L5 | Worked example — populated ADL (GC-20260101-001, TOM-20260115-001, ADR-001 indexed) | New: `examples/adl-example.md` | REVIEW P2.3 |
 | L6 | Clarify `templates/` vs `viewpoints/` relationship — one canonical location | `README.md` + `templates/` | REVIEW P3.1 |
 | L7 | Consolidate Pulse Briefing — 3 files → 1 canonical + links | `viewpoints/vp5-rhythm/pulse-system.md`, `viewpoints/vp5-rhythm/README.md`, `templates/pulse-briefing.md` | REVIEW P3.2 |
-| L8 | Add Component 7 (Fitness Function Status) to VP4 README table | `viewpoints/vp4-velocity/README.md` | REVIEW P3.3 |
+| L8 | Add Component 7 (Fitness Function Status) to VP4 README table | `viewpoints/vp4-flow/README.md` | REVIEW P3.3 |
 | L9 | Fix EPISTEMOLOGY.md — add "Eight Coined Concepts" as explicit section heading | `foundation/EPISTEMOLOGY.md` | REVIEW P3.4 |
-| L10 | Clarify ADR-in-codebase vs ADL relationship | `viewpoints/vp3-truth/README.md` or `viewpoints/vp4-velocity/README.md` | REVIEW P3.5 |
+| L10 | Clarify ADR-in-codebase vs ADL relationship | `viewpoints/vp3-truth/README.md` or `viewpoints/vp4-flow/README.md` | REVIEW P3.5 |
 | L11 | Fix LICENSE to be machine-readable (GitHub reports "Unknown") | `LICENSE` | REVIEW P3 |
-| L12 | Add cross-link from README → vaf-sa site | `README.md` | Ecosystem |
+| L12 | Add cross-link from README → oa-sa site | `README.md` | Ecosystem |
 | L13 | State publishing hierarchy explicitly in README | `README.md` | Ecosystem |
 | L14 | Medium backlog — cross-post Chapters 31–50 | Medium @ZencloudAU | Ecosystem |
 
@@ -100,10 +100,10 @@
 
 | # | Item | File(s) | Source |
 |---|------|---------|--------|
-| L15 | Add cross-link from vaf-sa homepage → framework.ordoanimi.com framework library | `index.html` | Ecosystem |
-| L16 | Add cross-link from framework site → vaf-sa | framework.ordoanimi.com | Ecosystem |
+| L15 | Add cross-link from oa-sa homepage → framework.ordoanimi.com framework library | `index.html` | Ecosystem |
+| L16 | Add cross-link from framework site → oa-sa | framework.ordoanimi.com | Ecosystem |
 | L17 | Align lexicon terms with EPISTEMOLOGY.md coined concepts — Decision Altitude, Governance Drag, Pattern Locking map to OrdoAnimi coined concepts; ensure no contradictions | `lexicon.html` vs `foundation/EPISTEMOLOGY.md` | Content integrity |
-| L18 | Add vaf-sa to site map at framework.ordoanimi.com | framework.ordoanimi.com/site-map.html | Ecosystem |
+| L18 | Add oa-sa to site map at framework.ordoanimi.com | framework.ordoanimi.com/site-map.html | Ecosystem |
 
 ### 🤖 OrdoAnimi Agent
 
@@ -132,16 +132,16 @@
 | L9 | EPISTEMOLOGY.md — "Eight Coined Concepts" added as explicit numbered section heading | 2026-06-28 |
 | L10 | ADR-in-codebase vs ADL relationship — full explanation added to VP3 README and VP4 README | 2026-06-28 |
 | L11 | LICENSE — SPDX headers added: machine-readable for GitHub | 2026-06-28 |
-| L12 | Cross-link from README → vaf-sa — Ecosystem section added to README.md | 2026-06-28 |
+| L12 | Cross-link from README → oa-sa — Ecosystem section added to README.md | 2026-06-28 |
 | L13 | Publishing hierarchy stated in README — Publishing Platform table added | 2026-06-28 |
 | L14 | Medium backlog (Chapters 31–50) — external platform action; deferred to Phil | — |
-| L15 | vaf-sa homepage → framework library link updated to `/frameworks/` (was root); Agent link removed | 2026-06-28 |
-| L16 | Framework site → vaf-sa cross-link — "Practitioner tools" section added to index.html | 2026-06-28 |
+| L15 | oa-sa homepage → framework library link updated to `/frameworks/` (was root); Agent link removed | 2026-06-28 |
+| L16 | Framework site → oa-sa cross-link — "Practitioner tools" section added to index.html | 2026-06-28 |
 | L17 | Lexicon alignment — Framework Connection notes added to Decision Altitude, Governance Drag, Pattern Locking | 2026-06-28 |
-| L18 | vaf-sa added to site-map.html — "Practitioner Tools" card with link | 2026-06-28 |
-| L19 | Agent deprecated — CLAUDE.md updated; Agent nav links removed from all vaf-sa HTML files | 2026-06-28 |
+| L18 | oa-sa added to site-map.html — "Practitioner Tools" card with link | 2026-06-28 |
+| L19 | Agent deprecated — CLAUDE.md updated; Agent nav links removed from all oa-sa HTML files | 2026-06-28 |
 | L20 | Agent branding — moot; Agent deprecated | — |
-| L21 | Agent link in nav — moot; Agent deprecated; vaf-sa links updated to framework library | — |
+| L21 | Agent link in nav — moot; Agent deprecated; oa-sa links updated to framework library | — |
 
 ---
 
@@ -149,21 +149,21 @@
 
 | # | Item | Status |
 |---|------|-----------|
-| E1 | ~~Resolve Velocity trademark~~ | ✅ Resolved — framework renamed **The OrdoAnimi Framework** |
+| E1 | ~~Resolve Flow trademark~~ | ✅ Resolved — framework renamed **The OrdoAnimi Framework** |
 | E7 | ~~brand decision~~ | ✅ Resolved — **OrdoAnimi** is the single umbrella brand for the framework, the company, and the product line (Valour, Executive Fast Track). No separate framework brand. |
-| E2 | Transfer velocity-architecture repo under the OrdoAnimi banner | Done 2026-07-21 — renamed to OrdoAnimi/framework |
+| E2 | Transfer flow-architecture repo under the OrdoAnimi banner | Done 2026-07-21 — renamed to OrdoAnimi/framework |
 | E3 | Transfer ea-artefact-generator → OrdoAnimi/Fabrica | Pending Phil decision (unrelated to naming resolution) |
-| E4 | Transfer velocity-academy → OrdoAnimi/Arcadium | Pending Phil decision (unrelated to naming resolution) |
+| E4 | Transfer academy → OrdoAnimi/Arcadium | Pending Phil decision (unrelated to naming resolution) |
 | E5 | Archive/remove unused legacy-account repos after audit | Repo audit (see the OrdoAnimi consolidation plan) |
 | E6 | DNS fix: velocityarchitecture.com.au → Academy | Blocked on E4 |
-| E8 | vaf-sa → transfer under the OrdoAnimi banner once E2 lands | Blocked on E2 |
+| E8 | oa-sa → transfer under the OrdoAnimi banner once E2 lands | Blocked on E2 |
 
 ---
 
 ## Work Order
 
 **Immediate — unblock the sites:**
-M12 (vaf-sa Pages fix) → M13 (OG URLs) → M14–M19 (verify vaf-sa content exists) → M10 (homepage book card)
+M12 (oa-sa Pages fix) → M13 (OG URLs) → M14–M19 (verify oa-sa content exists) → M10 (homepage book card)
 
 **Framework spec sitting (one session):**
 M1 → M2 → M3 → M6 (all in FRAMEWORK-SPEC.md)

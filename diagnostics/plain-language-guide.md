@@ -81,7 +81,7 @@ These declare intent at the enterprise level. They answer: *what are we trying t
 These record a specific architectural decision, the options considered, and the reasoning for the choice made. They answer: *what did we decide, why did we decide it, and what did we trade away?* The primary instruments are the Trade-off Matrix and the Architecture Decision Record (ADR). One per significant decision.
 
 **Type 3 — Control artefacts**
-These track the current state of architectural commitments over time. They answer: *are our decisions still holding, and where is drift occurring?* The primary instruments are the Velocity Dashboard and the Architectural Decision Log. Living documents, updated on a defined cadence.
+These track the current state of architectural commitments over time. They answer: *are our decisions still holding, and where is drift occurring?* The primary instruments are the Flow Dashboard and the Architectural Decision Log. Living documents, updated on a defined cadence.
 
 **Type 4 — Operating artefacts**
 These support the rhythm of architectural governance. They answer: *what needs attention this cycle, and who is responsible for what?* The primary instrument is the Pulse Briefing. Produced on a fortnightly or monthly cadence.
@@ -150,7 +150,7 @@ Go to [`/templates/`](/templates/) and use the ADR template. Fill in the five fi
 Go to [`/viewpoints/vp1-direction/guardrail-canvas.md`](/viewpoints/vp1-direction/guardrail-canvas.md) and follow the template.
 
 **If you are running an architecture function:**
-Go to [`/guides/VAF-Practitioner-Operating-Manual.md`](/guides/VAF-Practitioner-Operating-Manual.md) for the full operating model.
+Go to [`/guides/OA-Practitioner-Operating-Manual.md`](/guides/OA-Practitioner-Operating-Manual.md) for the full operating model.
 
 **If you want to understand the evidence base:**
 Go to [`/research/`](/research/) for the four supporting papers.

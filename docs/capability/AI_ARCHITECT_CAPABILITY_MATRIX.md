@@ -45,7 +45,7 @@ The target role combines two profiles that are often separate: senior enterprise
 
 **Current evidence**
 
-- Velocity coordinates enterprise, business, solution, data, security, and PMO concerns around explicit decisions.
+- Flow coordinates enterprise, business, solution, data, security, and PMO concerns around explicit decisions.
 - The estate contains architecture decision records, guardrails, correspondence rules, artefact models, engagement packs, practitioner guidance, and delivery governance.
 - The founder has substantial prior design-authority, cloud-transformation, security, delivery, and stakeholder leadership experience.
 
@@ -57,7 +57,7 @@ The target role combines two profiles that are often separate: senior enterprise
 
 **Current evidence**
 
-- A TypeScript/Node application uses specialised governance, strategy, design, validation, velocity, rhythm, and practitioner agents.
+- A TypeScript/Node application uses specialised governance, strategy, design, validation, flow, rhythm, and practitioner agents.
 - The implementation loads a framework knowledge base, routes generation, validates outputs, logs activity, and can commit generated artefacts through the GitHub API.
 - Hermes doctrine defines routing, permissions, human approval, action logging, and client-data boundaries.
 
@@ -76,7 +76,7 @@ The target role combines two profiles that are often separate: senior enterprise
 
 **Current evidence**
 
-- Velocity includes validation concepts, risk controls, pilot success criteria, readiness gates, and a validation agent.
+- Flow includes validation concepts, risk controls, pilot success criteria, readiness gates, and a validation agent.
 - The current project declares Jest and describes scoring and validation, but a repeatable model evaluation harness, golden dataset, benchmark history, and regression gate are not yet established as estate-wide evidence.
 
 **Conclusion:** Aware to Assisted. This is the largest gap relative to the role benchmark.
@@ -89,7 +89,7 @@ The target role combines two profiles that are often separate: senior enterprise
 - baseline and regression thresholds
 - CI evaluation workflow
 - human calibration and disagreement analysis
-- published evaluation report for the Velocity agent
+- published evaluation report for the OrdoAnimi agent
 
 ### Prompt management and AI security
 
@@ -115,7 +115,7 @@ The target role combines two profiles that are often separate: senior enterprise
 
 **Current evidence**
 
-- Velocity contains data-readiness, classification, lineage, source-of-truth, privacy, and governance doctrine.
+- Flow contains data-readiness, classification, lineage, source-of-truth, privacy, and governance doctrine.
 - Current repositories do not yet provide strong evidence of a production RAG implementation using managed search or vector infrastructure.
 
 **Conclusion:** Lead conceptual architecture; Assisted implementation.
@@ -186,7 +186,7 @@ The target role combines two profiles that are often separate: senior enterprise
 **Current evidence**
 
 - Structured logging and conceptual observability institutions exist.
-- Velocity identifies monitoring, model/tool review, cost, and operational ownership as required controls.
+- Flow identifies monitoring, model/tool review, cost, and operational ownership as required controls.
 - End-to-end AI tracing, evaluation telemetry, prompt/model versions, retrieval metrics, and drift alerts are not yet demonstrated.
 
 **Conclusion:** Aware to Assisted.

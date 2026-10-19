@@ -1,8 +1,8 @@
-# Velocity EA Value Metrics
+# OrdoAnimi EA Value Metrics
 
 ## Purpose
 
-This document distinguishes architecture capability maturity, enterprise architecture value metrics, and Velocity decision metrics.
+This document distinguishes architecture capability maturity, enterprise architecture value metrics, and Flow decision metrics.
 
 ## Three Measurement Layers
 
@@ -10,7 +10,7 @@ This document distinguishes architecture capability maturity, enterprise archite
 |---|---|---|
 | ACMM | How mature is the EA capability? | Are processes, roles, standards, and governance defined? |
 | EA Metrics | What impact does EA create? | Does EA reduce risk, improve reuse, align spend, and support strategy? |
-| Velocity Decision Metrics | How do decisions improve speed, quality, traceability, and execution? | Are decisions faster, clearer, traceable, and connected to delivery? |
+| Decision Throughput Metrics | How do decisions improve speed, quality, traceability, and execution? | Are decisions faster, clearer, traceable, and connected to delivery? |
 
 ## ACMM
 
@@ -40,9 +40,9 @@ EA Metrics measure business impact:
 
 EA Metrics help executives see the value created by architecture work.
 
-## Velocity Decision Metrics
+## Decision Throughput Metrics
 
-Velocity Decision Metrics measure whether architecture improves:
+Decision Throughput Metrics measure whether architecture improves:
 
 - decision speed
 - decision quality
@@ -65,7 +65,7 @@ An organisation can have:
 
 and still produce low value if decisions remain slow, unclear, untraceable, or disconnected from delivery.
 
-Velocity exists to detect and correct that trap.
+Flow exists to detect and correct that trap.
 
 ## Executive Dashboard
 
@@ -102,11 +102,11 @@ Recommended dashboard:
 7. How is AI-assisted work reviewed?
 8. What would improve sponsor confidence?
 
-## Velocity Interpretation
+## Flow Interpretation
 
 ACMM tells whether the architecture function is mature.
 
 EA Metrics tell whether architecture creates value.
 
-Velocity Decision Metrics tell whether architecture improves the speed, quality, traceability, and execution of enterprise decisions.
+Decision Throughput Metrics tell whether architecture improves the speed, quality, traceability, and execution of enterprise decisions.
 

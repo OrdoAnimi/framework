@@ -180,13 +180,13 @@ Apply these periodically throughout the engagement:
 
 ---
 
-## Velocity Signal
+## Flow Signal
 
-> *Velocity is a moral signal, not a mechanical one.*  
+> *Flow is a moral signal, not a mechanical one.*  
 > When decisions move cleanly through the system, authority and responsibility are aligned.  
 > When work stalls, fragments, or relies on heroics, someone is avoiding ownership.
 
-Current velocity reading for this engagement:  
+Current flow reading for this engagement:  
 ☐ High — decisions moving cleanly; authorship present; boundaries clear  
 ☐ Moderate — decisions moving but with friction; some absorption occurring  
 ☐ Low — decisions stalling; practitioner absorbing; boundaries unclear  

@@ -56,15 +56,15 @@ None of these behaviours is wrong in isolation. Each one reflects a genuine virt
 
 And this is precisely why it is so difficult to change from inside. The people who would need to lead the change are the people who built the infrastructure and who are rewarded for maintaining it. The measures that would reveal the need for change are the measures that the organisation has not developed and does not apply. The behaviours that would disrupt the equilibrium are the behaviours that the organisation’s culture consistently describes as immature, impulsive, or insufficiently collaborative.
 
-**What the Infrastructure Does to Velocity**
+**What the Infrastructure Does to Flow**
 
-> **Velocity defines velocity precisely: it is the rate at which ambiguity expires.**
+> **Flow defines flow precisely: it is the rate at which ambiguity expires.**
 
-> An organisation with high velocity converts ambiguity into binding decisions quickly — the interval between when a question becomes visible and when authority closes it is short, bounded, and predictable. An organisation with low velocity allows ambiguity to accumulate — the interval is long, elastic, and unmeasured.
+> An organisation with high flow converts ambiguity into binding decisions quickly — the interval between when a question becomes visible and when authority closes it is short, bounded, and predictable. An organisation with low flow allows ambiguity to accumulate — the interval is long, elastic, and unmeasured.
 
-The infrastructure of indecision is an ambiguity-preservation system. Every structure it builds — the multiplying forums, the prerequisite artefacts, the lengthening escalation pathways, the broadening consultation lists — serves the function of extending the interval between the appearance of a question and the binding resolution of it. Not through any deliberate anti-velocity design. Simply because every structure that makes the equilibrium more comfortable to inhabit also makes the interval longer.
+The infrastructure of indecision is an ambiguity-preservation system. Every structure it builds — the multiplying forums, the prerequisite artefacts, the lengthening escalation pathways, the broadening consultation lists — serves the function of extending the interval between the appearance of a question and the binding resolution of it. Not through any deliberate anti-flow design. Simply because every structure that makes the equilibrium more comfortable to inhabit also makes the interval longer.
 
-Under these conditions, velocity degrades quietly. Not because the organisation lacks intelligence. Not because people are disengaged. Not because the practitioners are incapable. But because **the system has been engineered to prioritise survivability over consequence, and survivability is achieved by preventing consequence from converging.**
+Under these conditions, flow degrades quietly. Not because the organisation lacks intelligence. Not because people are disengaged. Not because the practitioners are incapable. But because **the system has been engineered to prioritise survivability over consequence, and survivability is achieved by preventing consequence from converging.**
 
 Clarity destabilises this equilibrium precisely because it collapses optionality. A clear decision eliminates the interpretive space that each stakeholder has been using to maintain their preferred version of the direction. It narrows exposure. It forces specific people to be specifically accountable for specific outcomes. It makes the equilibrium uncomfortable in exactly the way that the infrastructure was built to prevent discomfort.
 

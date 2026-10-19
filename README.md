@@ -19,7 +19,7 @@ The framework is ISO/IEC/IEEE 42010:2022 conformant. Its operational structure i
 | VP1 | Direction    | Guardrail Canvas           | Enterprise |
 | VP2 | Decision     | Trade-off Matrix           | Solution   |
 | VP3 | Truth        | ADRs + Fitness Functions   | Technical  |
-| VP4 | Velocity     | Dashboard + ADL + Vault    | Control    |
+| VP4 | Flow     | Dashboard + ADL + Vault    | Control    |
 | VP5 | Rhythm       | Pulse System               | Operating  |
 | VP6 | Practitioner | Integrity Arc              | Human      |
 
@@ -34,7 +34,7 @@ The framework is also expressed through seven columns used in the book, presenta
 | 1      | Trademark             | Meta-level (no VP)             |
 | 2      | Operating Model       | Foundation Layer               |
 | 3      | Operating Rhythm      | VP5                            |
-| 4      | Delivery System       | VP4 (ADL + Velocity Vault)     |
+| 4      | Delivery System       | VP4 (ADL + Decision Vault)     |
 | 5      | Architectural Control | VP4 (Dashboard)                |
 | 6      | Pattern & Playbook    | VP2, VP3 (applied patterns)    |
 | 7      | Practitioner          | VP6                            |
@@ -53,7 +53,7 @@ VP1, VP2, and VP3 operate across Columns 2-5 in execution — they are not assig
 | `spec/` | Formal specification and conformance material |
 | `viewpoints/` | OrdoAnimi viewpoint definitions |
 | `correspondence-rules/` | Cross-viewpoint consistency rules |
-| `vault/` | Velocity Vault — the permanent decision archive |
+| `vault/` | Decision Vault — the permanent decision archive |
 | `patterns/` | Architecture patterns and practitioner playbooks |
 | `frameworks/` | Framework explanations and reference material |
 | `research/` | Research papers, evidence and bibliography |

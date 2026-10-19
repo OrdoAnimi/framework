@@ -155,8 +155,8 @@ collections:
         widget: markdown
 
   - name: thought-series-02
-    label: "Thought Series - 02 Decision Velocity"
-    folder: series/series-02-decision-velocity
+    label: "Thought Series - 02 Decision Throughput"
+    folder: series/series-02-decision-throughput
     create: false
     extension: md
     format: raw

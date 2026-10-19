@@ -11,7 +11,7 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 
 **Core thesis:**
 > *Architecture exists to create clarity that leads to better decisions.*
-> *Velocity is not speed. It is the rate at which ambiguity expires.*
+> *Flow is not speed. It is the rate at which ambiguity expires.*
 
 **Owner:** Phil Myint, Principal Architect, The OrdoAnimi Group
 **License:** CC BY 4.0 — free to use, attribution appreciated
@@ -23,7 +23,7 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 
 **OrdoAnimi** (`github.com/OrdoAnimi`) is the single umbrella brand for everything Phil Myint publishes and builds — this framework, the Valour product console, and Executive Fast Track all sit under it. There is no longer a separate framework brand distinct from the company: this repository's public identity, the company's identity, and the product house's identity are all "OrdoAnimi." Remaining legacy-account repos will migrate under this banner as each is ready; this is future work.
 
-**Trademark note — resolved:** The "Velocity" trademark issue is settled. The framework is renamed **The OrdoAnimi Framework**. Earlier company and studio brands are retired entirely, not carried forward as sub-brands. The book's use of "velocity" as a philosophical concept (the rate at which ambiguity expires) is untouched — that's the framework's own vocabulary, not the retired brand name.
+**Trademark note — resolved:** The framework's former name has been retired entirely because of an IP conflict. The framework is **The OrdoAnimi Framework**. The former name, its acronym and every term built on it must not appear anywhere in this repository, including as a concept word. The framework's concept vocabulary now uses "flow" (the rate at which ambiguity expires) and "decision throughput". Earlier company and studio brands are retired entirely, not carried forward as sub-brands.
 
 ---
 
@@ -31,7 +31,7 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 
 ### Primary Repository
 - **GitHub:** https://github.com/OrdoAnimi/framework
-- **Local mirror:** `D:\VelocityArchitecture\`
+- **Local mirror:** `D:\OrdoAnimi\`
 - **Public site:** https://framework.ordoanimi.com/
 - **Status:** Public, v1.0
 
@@ -49,17 +49,17 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 - **The Living Bible for Enterprise & Solution Architects** — domain knowledge reference base (location TBC — confirm with Phil)
 - **Presentation materials / slide decks** — exist for client and conference use (location TBC)
 
-### The Legacy Agent (Deprecated, internally "VAF v2")
-- A separate product, internally called "VAF v2" in the old UI, hosted at `framework.ordoanimi.com/app/portal.html`
+### The Legacy Agent (Deprecated, internally "OrdoAnimi v2")
+- A separate product, internally called "OrdoAnimi v2" in the old UI, hosted at `framework.ordoanimi.com/app/portal.html`
 - It has been **deprecated** — the portal.html page now redirects to the framework site
-- Nav links to it have been removed from vaf-sa (all HTML files cleaned in Session 2)
+- Nav links to it have been removed from oa-sa (all HTML files cleaned in Session 2)
 - It is NOT part of the current framework or publishing stack, and not part of the OrdoAnimi brand
 - Do not add links to `app/portal.html` anywhere in either repo
 
 ### Working Folders
-- Local repo files: `D:\VelocityArchitecture\`
-- Review file: `D:\VelocityArchitecture\REVIEW.md`
-- Ecosystem audit: `D:\VelocityArchitecture\ECOSYSTEM-AUDIT.md`
+- Local repo files: `D:\OrdoAnimi\`
+- Review file: `D:\OrdoAnimi\REVIEW.md`
+- Ecosystem audit: `D:\OrdoAnimi\ECOSYSTEM-AUDIT.md`
 
 ---
 
@@ -72,7 +72,7 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 | VP1 | Direction | Guardrail Canvas | Enterprise | `viewpoints/vp1-direction/` |
 | VP2 | Decision | Trade-off Matrix | Solution | `viewpoints/vp2-decision/` |
 | VP3 | Truth | ADRs + Fitness Functions | Technical | `viewpoints/vp3-truth/` |
-| VP4 | Velocity | Dashboard + ADL | Control | `viewpoints/vp4-velocity/` |
+| VP4 | Flow | Dashboard + ADL | Control | `viewpoints/vp4-flow/` |
 | VP5 | Rhythm | Pulse System | Operating | `viewpoints/vp5-rhythm/` |
 | VP6 | Practitioner | Integrity Arc | Human | `viewpoints/vp6-practitioner/` |
 
@@ -94,7 +94,7 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 `foundation/EPISTEMOLOGY.md` — sits beneath all viewpoints. Not a viewpoint itself. Contains the philosophical warrant for the entire framework.
 
 **Eight coined concepts** (the framework's core vocabulary — precise terms, use carefully):
-1. Velocity of Truth
+1. Flow of Truth
 2. Integrity Gap
 3. Decision Latency
 4. Expiry
@@ -117,7 +117,7 @@ Guardrail Canvas (VP1 — GC-YYYYMMDD-XXX)
 
 All of the above indexed in:
     └── ADL (VP4 — adl-template.md)
-            └── Velocity Dashboard (VP4 — velocity-dashboard.md)
+            └── Flow Dashboard (VP4 — flow-dashboard.md)
                     └── Pulse Sessions (VP5 — pulse-system.md)
                             └── Practitioner assessment (VP6 — integrity-arc.md)
 ```
@@ -182,7 +182,7 @@ All of the above indexed in:
 | ID | Concern |
 |----|---------|
 | C1 | Decision clarity |
-| C2 | Decision velocity |
+| C2 | Decision throughput |
 | C3 | Decision traceability |
 | C4 | Direction coherence |
 | C5 | Layer separation |
@@ -210,7 +210,7 @@ Full detail in `REVIEW.md`. Summary for session awareness:
 - [ ] 14-Day Rule (CR-E1) vs. monthly Tier 3 Pulse (CR-E4) tension unresolved
 
 ### Priority 2 — Content gaps
-- [ ] Velocity Vault — named in Column 4 but never defined
+- [ ] Decision Vault — named in Column 4 but never defined
 - [ ] No Pulse Briefing or Pulse Report worked example
 - [ ] No ADL worked example
 - [ ] Engagement onboarding guide missing
@@ -219,7 +219,7 @@ Full detail in `REVIEW.md`. Summary for session awareness:
 ### Priority 3 — Polish
 - [ ] `templates/` directory relationship to `viewpoints/` templates unclear
 - [ ] Pulse Briefing content duplicated across `pulse-system.md`, VP5 README, and `templates/`
-- [ ] Velocity Dashboard has 7 components; VP4 README table lists only 6
+- [ ] Flow Dashboard has 7 components; VP4 README table lists only 6
 - [ ] EPISTEMOLOGY.md header says "Five Core Premises" — doesn't signal the 8 coined concepts that follow
 - [ ] ADR-in-codebase vs. ADL relationship not explained
 - [ ] FRAMEWORK-SPEC.md conformance table says "Satisfied" for placeholder sections (false)
@@ -230,7 +230,7 @@ Full detail in `REVIEW.md`. Summary for session awareness:
 ## File Map — Full Repository
 
 ```
-D:\VelocityArchitecture\ (github.com/OrdoAnimi/framework)
+D:\OrdoAnimi\ (github.com/OrdoAnimi/framework)
 │
 ├── CLAUDE.md                          ← This file
 ├── SKILL.md                           ← OrdoAnimi working skill for Claude
@@ -259,10 +259,10 @@ D:\VelocityArchitecture\ (github.com/OrdoAnimi/framework)
 │   │   ├── README.md
 │   │   ├── adr-template.md
 │   │   └── fitness-function-examples.md
-│   ├── vp4-velocity/
+│   ├── vp4-flow/
 │   │   ├── README.md
 │   │   ├── adl-template.md
-│   │   └── velocity-dashboard.md
+│   │   └── flow-dashboard.md
 │   ├── vp5-rhythm/
 │   │   ├── README.md
 │   │   └── pulse-system.md
@@ -278,7 +278,7 @@ D:\VelocityArchitecture\ (github.com/OrdoAnimi/framework)
 │                                        Feeds auto-generated HTML via tools/generate_pages.py
 ├── guides/                            ← Practitioner guidance
 ├── diagnostics/
-│   ├── decision-velocity-diagnostic.md
+│   ├── decision-throughput-diagnostic.md
 │   └── organisation-health-check.md
 │
 ├── templates/                         ← Standalone templates (relationship to viewpoints/ TBC — P3)
@@ -313,7 +313,7 @@ D:\VelocityArchitecture\ (github.com/OrdoAnimi/framework)
 │
 └── [TO CREATE]
     ├── patterns/                      ← Column 6 — Pattern & Playbook (P1 gap)
-    ├── vault/                         ← Velocity Vault specification (P2 gap)
+    ├── vault/                         ← Decision Vault specification (P2 gap)
     └── onboarding/                    ← Engagement onboarding guide (P2 gap)
 ```
 
@@ -339,7 +339,7 @@ D:\VelocityArchitecture\ (github.com/OrdoAnimi/framework)
 ### When Editing Existing Files
 - Do not modify a decided/accepted artefact — create a new one that supersedes it (CR-T3)
 - Update the ADL index when any decision changes status
-- Update the Velocity Dashboard ownership map within 5 business days of any ownership change (CR-O2)
+- Update the Flow Dashboard ownership map within 5 business days of any ownership change (CR-O2)
 
 ### Language and Tone
 - The coined terms are precise — use them exactly as defined in EPISTEMOLOGY.md

@@ -106,7 +106,7 @@ The governance architecture that does not terminate resets. Questions not resolv
 
 The decisive organisation faces the same structural pressures described earlier in this book — present in every organisation operating at scale in domains where attribution is dangerous and indecision is survivable. What it has built is the governance architecture that absorbs those pressures and produces binding outcomes rather than circulating discussions.
 
-That is the operating mode that velocity requires.
+That is the operating mode that flow requires.
 
 ---
 

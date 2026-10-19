@@ -12,7 +12,7 @@
 
 <title>Worked Examples — OrdoAnimi</title>
 
-<meta name="description" content="Completed VAF artefact examples — Guardrail Canvas, Trade-off Matrix, and Architecture Decision Record.">
+<meta name="description" content="Completed OrdoAnimi artefact examples — Guardrail Canvas, Trade-off Matrix, and Architecture Decision Record.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -238,7 +238,7 @@ footer{background:var(--ink-2);color:rgba(222,215,196,0.7);padding:2.5rem 2rem;}
 
 <script>
 
-const RAW='https://raw.githubusercontent.com/OrdoAnimi/velocity-architecture/main/';
+const RAW='https://raw.githubusercontent.com/OrdoAnimi/framework/main/';
 
 let current=null;
 
@@ -254,7 +254,7 @@ async function loadDoc(path){
 
   try{const r=await fetch(RAW+path);if(!r.ok)throw 0;el.innerHTML='<div class="md">'+marked.parse(await r.text())+'</div>';}
 
-  catch{el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/velocity-architecture/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';}
+  catch{el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/framework/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';}
 
   el.scrollTop=0;
 

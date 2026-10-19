@@ -62,7 +62,7 @@ ADRs are stored in the codebase at `decisions/`. This index records status and c
 
 ### ADR–ADL relationship note
 
-ADRs are the technical-layer decision record, authored and versioned in the codebase (VP3). This ADL index records the ADR's status and cross-references to its governing TOM and Canvas — it does not duplicate the ADR content. When an ADR is superseded, the original is retained; a new ADR is created with a `Supersedes: ADR-NNN` reference (CR-T3). The supersession is recorded in the Velocity Vault (VP4/Vault).
+ADRs are the technical-layer decision record, authored and versioned in the codebase (VP3). This ADL index records the ADR's status and cross-references to its governing TOM and Canvas — it does not duplicate the ADR content. When an ADR is superseded, the original is retained; a new ADR is created with a `Supersedes: ADR-NNN` reference (CR-T3). The supersession is recorded in the Decision Vault (VP4/Vault).
 
 ---
 
@@ -104,7 +104,7 @@ Full definitions in `decisions/fitness-functions/`. This table shows current sta
 
 ---
 
-## Velocity Dashboard Snapshot — Week 7
+## Flow Dashboard Snapshot — Week 7
 
 | Metric | Value | Threshold | Status |
 |--------|-------|-----------|--------|
@@ -130,4 +130,4 @@ Full definitions in `decisions/fitness-functions/`. This table shows current sta
 
 *ADL/INDEX.md — CloudFirst Banking Core Platform Modernisation*
 *The OrdoAnimi Framework | © 2026 Phil Myint / OrdoAnimi*
-*For ADL template, see: `viewpoints/vp4-velocity/adl-template.md`*
+*For ADL template, see: `viewpoints/vp4-flow/adl-template.md`*

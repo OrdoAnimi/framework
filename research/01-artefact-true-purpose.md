@@ -54,7 +54,7 @@ The test has two parts:
 If yes: it is a decision artefact (ADR, Trade-off Matrix).
 
 *Part 2 — Does this artefact enable a commitment to be made?*
-If yes: it is a direction or control artefact (Guardrail Canvas, Velocity Dashboard).
+If yes: it is a direction or control artefact (Guardrail Canvas, Flow Dashboard).
 
 If neither: it is a documentation artefact. It may be useful for reference, compliance, or onboarding, but it is not an architectural instrument.
 
@@ -77,14 +77,14 @@ Examples: ADR, Trade-off Matrix, Dependency Map.
 **Type 3 — Control artefacts**
 Purpose: detect when decisions are not holding.
 Test: does this tell us whether our commitments are still true?
-Examples: Velocity Dashboard, ADL, Fitness Function Register.
+Examples: Flow Dashboard, ADL, Fitness Function Register.
 
 **Type 4 — Operating artefacts**
 Purpose: sustain the rhythm of architectural governance.
 Test: does this enable the architecture function to operate on a defined cadence?
 Examples: Pulse Briefing, Escalation Register, Handover Record.
 
-The classification is not about document format. A Pulse Briefing and a Velocity Dashboard can look similar on the page. Their purpose is different, and their production cadence, audience, and decision context differ accordingly.
+The classification is not about document format. A Pulse Briefing and a Flow Dashboard can look similar on the page. Their purpose is different, and their production cadence, audience, and decision context differ accordingly.
 
 ---
 

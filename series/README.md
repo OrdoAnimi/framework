@@ -5,8 +5,8 @@ This repository contains the evolving OrdoAnimi thought series and framework man
 ## Series Structure
 
 - Series 1 — Foundations
-- Series 2 — Decision Velocity
-- Series 3 — Velocity Diagnostic
+- Series 2 — Decision Throughput
+- Series 3 — Flow Diagnostic
 - Series 4 — Architecture as a Decision System
 - Series 5 — The Implementation Arc
 

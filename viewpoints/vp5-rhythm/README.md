@@ -18,7 +18,7 @@ The Pulse is the OrdoAnimi operating heartbeat. It is a structured cadence of re
 
 | Concern | Description |
 |---------|-------------|
-| C2 — Decision velocity | The rate at which ambiguity expires |
+| C2 — Decision throughput | The rate at which ambiguity expires |
 | C8 — Governance effectiveness | Whether governance produces decisions |
 | C10 — Responsibility diffusion | Whether accountability is explicit |
 | C11 — Decision latency | The interval between recognition and binding resolution |

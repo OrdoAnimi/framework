@@ -24,4 +24,4 @@ The map kept being used. The decision kept moving forward.
 
 *— Signal / unfiltered observations from the field. Fortnightly.*
 
-#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #SolutionArchitecture #TechnicalArchitecture #BusinessArchitecture
+#OrdoAnimi #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #SolutionArchitecture #TechnicalArchitecture #BusinessArchitecture

@@ -76,7 +76,7 @@ One decision confirmed. One escalation risk active. One fitness function failure
 
 ---
 
-## Decision Velocity Metric — Week 7
+## Decision Throughput Metric — Week 7
 
 | Metric | This week | Cumulative |
 |--------|-----------|------------|
@@ -86,7 +86,7 @@ One decision confirmed. One escalation risk active. One fitness function failure
 | Escalations activated | 0 | 0 |
 | Fitness functions failing | 1 (FF-005) | — |
 
-**Velocity observation:** Two consecutive weeks without a decision aging beyond 14 days. The Pulse rhythm is functioning. The ADR-005 sign-off is the only active risk to this metric.
+**Flow observation:** Two consecutive weeks without a decision aging beyond 14 days. The Pulse rhythm is functioning. The ADR-005 sign-off is the only active risk to this metric.
 
 ---
 

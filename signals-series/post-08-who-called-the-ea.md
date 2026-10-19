@@ -22,4 +22,4 @@ The EA was on the first one.
 
 *— Signal / unfiltered observations from the field. Fortnightly.*
 
-#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO
+#OrdoAnimi #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO

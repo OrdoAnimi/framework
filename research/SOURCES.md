@@ -102,8 +102,8 @@ No published study tracks EA artefact decay rates at the individual artefact lev
 **Gap 2 — Compression time savings validation**
 The 70–90% time saving claims in the compression map are based on comparison of standard practice estimates (derived from industry surveys and practitioner reports) with OrdoAnimi workshop observations. A controlled study comparing time-to-completion and decision quality between standard and compressed artefact production has not been conducted.
 
-**Gap 3 — Decision velocity metric validation**
-The Decision Velocity Score proposed in Paper 2 is a new metric. Its predictive validity — the degree to which it correlates with organisational decision outcome quality — has not been empirically validated. It is theoretically grounded and practically meaningful. It is not yet empirically validated.
+**Gap 3 — Decision throughput metric validation**
+The Decision Throughput Score proposed in Paper 2 is a new metric. Its predictive validity — the degree to which it correlates with organisational decision outcome quality — has not been empirically validated. It is theoretically grounded and practically meaningful. It is not yet empirically validated.
 
 **Gap 4 — Cross-organisational compression study**
 The Kotusev study provides the strongest available evidence on artefact consumption rates but was not designed to test the compression hypothesis. A study specifically designed to compare decision outcomes between organisations using comprehensive and minimum viable artefact approaches does not exist.

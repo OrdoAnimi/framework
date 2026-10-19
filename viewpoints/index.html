@@ -12,7 +12,7 @@
 
 <title>Six Viewpoints — OrdoAnimi</title>
 
-<meta name="description" content="VAF six viewpoints — formal viewpoint specifications for VP1 Direction through VP6 Practitioner, with artefact templates and instruments.">
+<meta name="description" content="OrdoAnimi six viewpoints — formal viewpoint specifications for VP1 Direction through VP6 Practitioner, with artefact templates and instruments.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -261,15 +261,15 @@ footer{background:var(--ink-2);color:rgba(222,215,196,0.7);padding:2.5rem 2rem;}
 
           <div class="vp-dot" style="background:var(--vp4)"></div>
 
-          <span class="vp-group-label" style="color:var(--vp4)">VP4 · Velocity</span>
+          <span class="vp-group-label" style="color:var(--vp4)">VP4 · Flow</span>
 
         </div>
 
-        <button class="file-btn" data-p="viewpoints/vp4-velocity/README.md" onclick="loadDoc(this.dataset.p)">Viewpoint Overview</button>
+        <button class="file-btn" data-p="viewpoints/vp4-flow/README.md" onclick="loadDoc(this.dataset.p)">Viewpoint Overview</button>
 
-        <button class="file-btn" data-p="viewpoints/vp4-velocity/adl-template.md" onclick="loadDoc(this.dataset.p)">ADL Template</button>
+        <button class="file-btn" data-p="viewpoints/vp4-flow/adl-template.md" onclick="loadDoc(this.dataset.p)">ADL Template</button>
 
-        <button class="file-btn" data-p="viewpoints/vp4-velocity/velocity-dashboard.md" onclick="loadDoc(this.dataset.p)">Velocity Dashboard</button>
+        <button class="file-btn" data-p="viewpoints/vp4-flow/flow-dashboard.md" onclick="loadDoc(this.dataset.p)">Flow Dashboard</button>
 
       </div>
 
@@ -348,7 +348,7 @@ footer{background:var(--ink-2);color:rgba(222,215,196,0.7);padding:2.5rem 2rem;}
 
 <script>
 
-const RAW='https://raw.githubusercontent.com/OrdoAnimi/velocity-architecture/main/';
+const RAW='https://raw.githubusercontent.com/OrdoAnimi/framework/main/';
 
 let current=null;
 
@@ -368,7 +368,7 @@ async function loadDoc(path){
 
   try{const r=await fetch(RAW+path);if(!r.ok)throw 0;el.innerHTML='<div class="md">'+marked.parse(await r.text())+'</div>';}
 
-  catch{el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/velocity-architecture/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';}
+  catch{el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/framework/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';}
 
   el.scrollTop=0;
 

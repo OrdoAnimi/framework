@@ -6,4 +6,4 @@ Premise: Capability mapping, roadmapping, investment prioritisation, portfolio g
 
 *— Signal / unfiltered observations from the field. Fortnightly.*
 
-#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO
+#OrdoAnimi #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO

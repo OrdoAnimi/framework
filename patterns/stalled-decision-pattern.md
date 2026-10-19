@@ -63,7 +63,7 @@ Before escalating, identify which of the five stall conditions applies (see Cont
 | Political sensitivity | Reduce scope; isolate the specific question that must bind |
 | Scope too broad | Decompose into sub-decisions; bind each separately |
 | Owner lacks authority | Escalate — invoke CR-E2 (scope compression) and CR-E3 (terminal condition) |
-| Waiting for certainty | Apply Velocity of Truth principle: decide with what is known; document the uncertainty as a fitness function |
+| Waiting for certainty | Apply Flow of Truth principle: decide with what is known; document the uncertainty as a fitness function |
 
 ### Step 3 — Reframe in the next Pulse session
 The stalled decision is placed first on the Pulse agenda — not as an update but as the binding item. The session has one required output: a decision. If the session ends without one, CR-E4 fires — the next Pulse must be at the tier above.
@@ -75,7 +75,7 @@ The Pulse facilitator names the stall condition explicitly at the start of the i
 ### Step 4 — Bind with the available evidence
 If the stall is caused by waiting for information that is unlikely to arrive in the required timeframe, the decision is made with the evidence that exists. The uncertainty is documented in the ADR as a fitness function that will either confirm or invalidate the assumption.
 
-This is the application of the Velocity of Truth: the rate at which ambiguity expires is not determined by the arrival of certainty. It is determined by the cost of continued ambiguity.
+This is the application of the Flow of Truth: the rate at which ambiguity expires is not determined by the arrival of certainty. It is determined by the cost of continued ambiguity.
 
 ---
 

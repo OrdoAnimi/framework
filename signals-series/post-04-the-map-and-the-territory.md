@@ -34,4 +34,4 @@ The discipline still matters. But its greatest value lies less in titles and bea
 
 *— Signal / unfiltered observations from the field. Fortnightly.*
 
-#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #DigitalTransformation #CloudStrategy #TechnologyLeadership #FutureOfWork
+#OrdoAnimi #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #DigitalTransformation #CloudStrategy #TechnologyLeadership #FutureOfWork

@@ -20,4 +20,4 @@ The organisations that will govern AI well are not the ones with the best framew
 
 *— Signal / unfiltered observations from the field. Fortnightly.*
 
-#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #AIGovernance #AIStrategy #DigitalTransformation
+#OrdoAnimi #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #AIGovernance #AIStrategy #DigitalTransformation

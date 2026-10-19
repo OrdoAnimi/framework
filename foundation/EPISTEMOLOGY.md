@@ -18,7 +18,7 @@ Most architecture frameworks skip epistemology and jump straight to method. Ordo
 No actor has complete visibility of the entity of interest. Architecture is the discipline for acting well under that condition — not eliminating uncertainty, but designing within it.
 
 **2. Knowledge decays.**  
-An architecture description that was accurate at creation diverges from reality as the system evolves. The Velocity of Truth — the rate at which understanding updates to match reality — is the primary epistemological variable. Governance that does not maintain this velocity produces the Integrity Gap.
+An architecture description that was accurate at creation diverges from reality as the system evolves. The Flow of Truth — the rate at which understanding updates to match reality — is the primary epistemological variable. Governance that does not maintain this flow produces the Integrity Gap.
 
 **3. Knowing enough to decide is not the same as knowing everything.**  
 The discipline requires a theory of sufficient knowledge: what constitutes an adequate basis for commitment under uncertainty. The absence of this theory produces decision latency — organisations wait to know everything before deciding, which means they never decide.
@@ -37,10 +37,10 @@ The following eight concepts are the core vocabulary of The OrdoAnimi Framework.
 
 ---
 
-### 1. Velocity of Truth
+### 1. Flow of Truth
 The rate at which understanding of the system updates to match its actual state.
 
-This is the primary metric of epistemological health. A high Velocity of Truth means the architecture description closely tracks reality. A low Velocity of Truth means the Integrity Gap is widening. Governance that prioritises approval confidence over truth velocity makes organisations feel controlled while becoming progressively less so.
+This is the primary metric of epistemological health. A high Flow of Truth means the architecture description closely tracks reality. A low Flow of Truth means the Integrity Gap is widening. Governance that prioritises approval confidence over truth flow makes organisations feel controlled while becoming progressively less so.
 
 ---
 
@@ -68,7 +68,7 @@ Ambiguity without expiry accumulates as structural debt. Every unresolved questi
 ### 5. Control Paradox
 The observation that more rigid documentation governance produces more drift from reality, not less.
 
-Rigidity freezes the documented architecture at a point in time while the system continues to evolve. The heavier the approval process, the less frequently the architecture description is updated, and the wider the Integrity Gap grows. True control emerges not from approval confidence but from truth velocity — the speed at which the organisation updates its understanding to match what is actually running.
+Rigidity freezes the documented architecture at a point in time while the system continues to evolve. The heavier the approval process, the less frequently the architecture description is updated, and the wider the Integrity Gap grows. True control emerges not from approval confidence but from truth flow — the speed at which the organisation updates its understanding to match what is actually running.
 
 ---
 
@@ -89,7 +89,7 @@ Artefacts are produced. Reviews are held. Documents are signed. No decisions are
 ---
 
 ### 8. Responsibility Diffusion
-The structural pathology in which decision authority is dispersed across so many stakeholders that no single actor carries consequence, producing organisational inertia at zero velocity.
+The structural pathology in which decision authority is dispersed across so many stakeholders that no single actor carries consequence, producing organisational inertia at zero flow.
 
 Responsibility diffusion is not caused by malice or incompetence. It is a rational response to asymmetric attribution: when success is shared and failure is personal, individuals rationally seek to distribute exposure. The mechanism of diffusion is alignment — the process by which consultation expands until no single actor owns the outcome. Designing against responsibility diffusion requires explicit decision rights, time boundaries, and visible ownership.
 

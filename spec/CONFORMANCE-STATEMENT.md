@@ -44,10 +44,10 @@ ZAF architecture descriptions address the following entities of interest:
 | Executive / SLT | Strategic direction, investment allocation, risk position | VP1 Direction, VP2 Decision |
 | Enterprise Architect | Architectural integrity, decision quality, framework compliance | VP1–VP6 all viewpoints |
 | Solution Architect | Solution design, trade-off analysis, technical decisions | VP2 Decision, VP3 Truth |
-| IT Executive / Manager | Governance, portfolio management, roadmap alignment | VP4 Velocity, VP1 Direction |
+| IT Executive / Manager | Governance, portfolio management, roadmap alignment | VP4 Flow, VP1 Direction |
 | Business Owner / SME | Capability gaps, process effectiveness, accountability | VP1 Direction, VP2 Decision |
 | Delivery team | Technical constraints, decision records, fitness functions | VP3 Truth, VP5 Rhythm |
-| Auditor / Compliance | Decision traceability, evidence of architectural governance | VP3 Truth, VP4 Velocity |
+| Auditor / Compliance | Decision traceability, evidence of architectural governance | VP3 Truth, VP4 Flow |
 
 ---
 
@@ -60,7 +60,7 @@ Six viewpoints are defined in ZAF. Each viewpoint is formally specified in `/vie
 | VP1 | Direction | Strategic intent, capability gaps, architectural vision | Guardrail Canvas |
 | VP2 | Decision | Trade-off analysis, option evaluation, solution decisions | Trade-off Matrix |
 | VP3 | Truth | Decision records, technical fitness, ground truth maintenance | ADRs + Fitness Functions |
-| VP4 | Velocity | Architectural control, debt management, decision latency | Velocity Dashboard + ADL |
+| VP4 | Flow | Architectural control, debt management, decision latency | Flow Dashboard + ADL |
 | VP5 | Rhythm | Operating cadence, escalation, pulse governance | Pulse System |
 | VP6 | Practitioner | Practitioner integrity, operating model, Auctor Custos role | Integrity Arc |
 
@@ -80,7 +80,7 @@ ZAF defines 18 core artefacts across six layers (Strategy, Business, Application
 
 - Mapped to one of four functional types: decision instrument, control mechanism, signal generator, or ground truth
 - Assigned to one or more viewpoints
-- Provided with a compressed template and extraction guide in `/guides/VAF-Practitioner-Operating-Manual.md`
+- Provided with a compressed template and extraction guide in `/guides/OA-Practitioner-Operating-Manual.md`
 
 The full artefact classification is in `/frameworks/EA-Artefact-Type-Classification.md`.
 

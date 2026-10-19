@@ -1,10 +1,10 @@
-# Velocity as the AI Architecture Coordination Layer
+# Flow as the AI Architecture Coordination Layer
 
 ## Thesis
 
 Architecture domains are not enough. Artefact catalogues are not enough. Agentic enterprises need coordination.
 
-Velocity is the architecture coordination layer for decision-first, AI-assisted enterprise execution.
+Flow is the architecture coordination layer for decision-first, AI-assisted enterprise execution.
 
 ## Why Domains Are Not Enough
 
@@ -31,11 +31,11 @@ Artefact catalogues can improve consistency, but they do not guarantee:
 - AI accountability
 - PMO integration
 
-Velocity treats artefacts as decision-support instruments, not as the goal.
+Flow treats artefacts as decision-support instruments, not as the goal.
 
-## Velocity Coordination Role
+## OrdoAnimi Coordination Role
 
-Velocity coordinates:
+Flow coordinates:
 
 - Enterprise Architecture
 - Business Architecture
@@ -52,7 +52,7 @@ Through cross-cutting lenses:
 
 ## Four-Box Operating Model
 
-Velocity asks:
+Flow asks:
 
 1. What decision needs to be made?
 2. Which architecture domains must contribute?
@@ -68,23 +68,23 @@ Hermes supports the coordination layer by:
 - recommending artefacts
 - selecting branding mode
 - flagging data/AI risks
-- routing to PMO Portal, VAF-SA, Academy, or partner workflow
+- routing to PMO Portal, OA-SA, Academy, or partner workflow
 
 Hermes does not make final decisions.
 
 ## White-Label Partner Delivery Support
 
-Velocity can operate invisibly behind a partner:
+Flow can operate invisibly behind a partner:
 
 - partner owns account and commercial relationship
 - Phil / OrdoAnimi provides specialist architecture execution
 - supports production
-- Velocity structures the decisions
+- Flow structures the decisions
 - deliverables can use partner templates and naming
 
 ## FastStart Support
 
-In Executive Architecture FastStart, Velocity provides:
+In Executive Architecture FastStart, Flow provides:
 
 - rapid decision-flow diagnosis
 - architecture coordination maturity view
@@ -94,7 +94,7 @@ In Executive Architecture FastStart, Velocity provides:
 
 ## Decision Sprint Support
 
-In Architecture Decision Sprint, Velocity provides:
+In Architecture Decision Sprint, Flow provides:
 
 - decision backlog
 - stakeholder map
@@ -105,7 +105,7 @@ In Architecture Decision Sprint, Velocity provides:
 
 ## Metrics
 
-Velocity Decision Metrics measure:
+Decision Throughput Metrics measure:
 
 - decision cycle time
 - decision quality
@@ -130,7 +130,7 @@ Velocity Decision Metrics measure:
 
 Slide title:
 
-**Velocity as the Architecture Coordination Layer**
+**Flow as the Architecture Coordination Layer**
 
 Visual:
 
@@ -142,10 +142,10 @@ AI Readiness
 Governance and Traceability
 
 Enterprise Architecture <-> Business Architecture <-> Solution Architecture <-> PMO Delivery
-                         Velocity Decision Flow
+                         Decision Flow
 ```
 
 Key message:
 
-Traditional architecture maps domains. Velocity coordinates those domains around decisions.
+Traditional architecture maps domains. Flow coordinates those domains around decisions.
 

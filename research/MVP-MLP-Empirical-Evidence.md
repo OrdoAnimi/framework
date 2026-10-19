@@ -111,7 +111,7 @@ MLP is a practitioner construct with compelling logic and a strong case study ba
 |---|---|---|
 | Evidence base | Peer-reviewed (Management Science 2022) + practitioner aggregation | Practitioner case studies only |
 | Primary purpose | Market demand validation before investment | Retention and emotional attachment from launch |
-| Primary metric | Learning velocity, PMF signal, pivot decision quality | NPS, 30-day engagement, activation rate |
+| Primary metric | Learning flow, PMF signal, pivot decision quality | NPS, 30-day engagement, activation rate |
 | Risk profile | Lower initial investment; faster failure on negative signals | Higher initial investment; wrong assumptions more expensive to correct |
 | Best context | Unknown demand, high uncertainty, hypothesis-heavy environment | Known demand, competitive differentiation required, quality investment feasible |
 | Empirical status | Supported for experimentation discipline and validation culture | No comparative effectiveness data |

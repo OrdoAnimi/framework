@@ -68,13 +68,13 @@ The declination is the difficult part. Because declining to produce documentatio
 
 The Auctor Custos accepts this. Not because they welcome conflict, but because they understand that the alternative — continuing to produce work that performs architecture without practising it — is not actually a form of professional service. It is a form of professional disappearance.
 
-**Velocity as a Moral Signal**
+**Flow as a Moral Signal**
 
 There is a reframe available to every architect who reaches the point described in this chapter, and it is worth naming precisely because it changes what the resistance feels like.
 
-Velocity — the rate at which an organisation moves from ambiguity to decision — is not a delivery metric. It is a moral signal.
+Flow — the rate at which an organisation moves from ambiguity to decision — is not a delivery metric. It is a moral signal.
 
-When an organisation moves with genuine velocity, it means that authority and responsibility are aligned — that the people who hold the power to make decisions are also accepting the accountability for making them, and that the space between knowing what is needed and acting on what is needed is being compressed by the exercise of genuine authority rather than expanded by the performance of consultation.
+When an organisation moves with genuine flow, it means that authority and responsibility are aligned — that the people who hold the power to make decisions are also accepting the accountability for making them, and that the space between knowing what is needed and acting on what is needed is being compressed by the exercise of genuine authority rather than expanded by the performance of consultation.
 
 When an organisation is slow — when the same decisions recur at the same forums, when the same questions require the same conversations, when delivery teams are permanently operating on assumptions that should have been resolved by the layer above them — it does not primarily mean that the processes are inefficient. It means that someone, somewhere in the authority structure, is not willing to decide first.
 

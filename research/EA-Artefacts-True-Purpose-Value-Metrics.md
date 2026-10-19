@@ -305,7 +305,7 @@ Mechanism: experimentation improves organisational learning, which helps startup
 |---|---|---|
 | Evidence base | Peer-reviewed (Management Science 2022), practitioner aggregation | Practitioner case studies only |
 | Primary purpose | Market demand validation | Retention and emotional attachment |
-| Primary metric | Learning velocity, PMF signal | NPS, 30-day engagement, activation |
+| Primary metric | Learning flow, PMF signal | NPS, 30-day engagement, activation |
 | Risk profile | Lower initial investment, faster failure | Higher initial investment, assumption-sensitive |
 | Best context | Unknown demand, high uncertainty | Known demand, competitive differentiation |
 | Empirical status | Supported for experimentation discipline | No comparative effectiveness data |

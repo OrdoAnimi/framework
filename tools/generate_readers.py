@@ -57,7 +57,7 @@ COLLECTIONS = [
 # the Thought Series is six sibling shells sharing one shape
 _SERIES = [
     ("series-01", "series-01-foundations", "Thought Series I - Foundations"),
-    ("series-02", "series-02-decision-velocity", "Thought Series II - Decision Velocity"),
+    ("series-02", "series-02-decision-throughput", "Thought Series II - Decision Throughput"),
     ("series-03", "series-03-the-architecture-operating-system",
      "Thought Series III - The Architecture Operating System"),
     ("series-04", "series-04-architecture-as-a-decision-system",

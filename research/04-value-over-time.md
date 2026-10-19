@@ -52,12 +52,12 @@ The cost is not theoretical. Most practitioners have experienced a project that 
 Not all artefacts decay at the same rate. The OrdoAnimi aging model is built on empirical observation of decay rates across artefact types. ◆
 
 **High decay rate (review cycle: monthly or shorter)**
-- Velocity Dashboard
+- Flow Dashboard
 - Pulse Briefing
 - Risk Register
 - Escalation Register
 
-These artefacts describe current operational state and decay rapidly. A Velocity Dashboard that is 90 days old is not architecture — it is history.
+These artefacts describe current operational state and decay rapidly. A Flow Dashboard that is 90 days old is not architecture — it is history.
 
 **Medium decay rate (review cycle: quarterly)**
 - Technology Radar
@@ -102,13 +102,13 @@ The percentage of active artefacts that are current vs aged vs expired is a dire
 
 ---
 
-## 5. The Velocity of Truth
+## 5. The Flow of Truth
 
-The OrdoAnimi's governing principle — *velocity is the rate at which ambiguity expires* — has a corollary: **an artefact that does not expire is not architecture. It is decoration.**
+The OrdoAnimi's governing principle — *flow is the rate at which ambiguity expires* — has a corollary: **an artefact that does not expire is not architecture. It is decoration.**
 
 An architecture artefact that is treated as permanent, never reviewed, never updated, and never expired has abandoned its function. It is no longer a record of the current state of architectural commitments. It is a historical document being used as a current document — the most dangerous possible condition for organisational decision-making.
 
-The Velocity of Truth concept holds that architectural truth is not a fixed state but a rate. The truth of a system description is valid for a period, after which it must be revalidated. The period varies by artefact type. The obligation to revalidate does not.
+The Flow of Truth concept holds that architectural truth is not a fixed state but a rate. The truth of a system description is valid for a period, after which it must be revalidated. The period varies by artefact type. The obligation to revalidate does not.
 
 ---
 

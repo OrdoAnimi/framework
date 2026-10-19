@@ -12,7 +12,7 @@
 
 <title>Practitioner Guides — OrdoAnimi</title>
 
-<meta name="description" content="VAF practitioner guides — operating manual and plain language introduction.">
+<meta name="description" content="OrdoAnimi practitioner guides — operating manual and plain language introduction.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -191,7 +191,7 @@ footer{background:var(--ink-2);color:rgba(222,215,196,0.7);padding:2.5rem 2rem;}
 
     <h1 class="page-title">Practitioner Guides</h1>
 
-    <p class="page-desc">18 artefacts × 3 layers each: extraction guide, VAF template, and executive framing. How to run the conversation, what to write, how to present the finding. Includes a plain language introduction.</p>
+    <p class="page-desc">18 artefacts × 3 layers each: extraction guide, OrdoAnimi template, and executive framing. How to run the conversation, what to write, how to present the finding. Includes a plain language introduction.</p>
 
   </div>
 
@@ -203,7 +203,7 @@ footer{background:var(--ink-2);color:rgba(222,215,196,0.7);padding:2.5rem 2rem;}
 
         <span class="sidebar-label">Guides</span>
 
-        <button class="file-btn" data-p="guides/VAF-Practitioner-Operating-Manual.md" onclick="loadDoc(this.dataset.p)">OrdoAnimi Practitioner Operating Manual</button>
+        <button class="file-btn" data-p="guides/OA-Practitioner-Operating-Manual.md" onclick="loadDoc(this.dataset.p)">OrdoAnimi Practitioner Operating Manual</button>
 
         <button class="file-btn" data-p="guides/plain-language-guide.md" onclick="loadDoc(this.dataset.p)">Plain Language Guide</button>
 
@@ -246,7 +246,7 @@ footer{background:var(--ink-2);color:rgba(222,215,196,0.7);padding:2.5rem 2rem;}
 
 <script>
 
-const RAW='https://raw.githubusercontent.com/OrdoAnimi/velocity-architecture/main/';
+const RAW='https://raw.githubusercontent.com/OrdoAnimi/framework/main/';
 
 let current=null;
 
@@ -262,7 +262,7 @@ async function loadDoc(path){
 
   try{const r=await fetch(RAW+path);if(!r.ok)throw 0;el.innerHTML='<div class="md">'+marked.parse(await r.text())+'</div>';}
 
-  catch{el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/velocity-architecture/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';}
+  catch{el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/framework/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';}
 
   el.scrollTop=0;
 

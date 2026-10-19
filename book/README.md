@@ -35,16 +35,16 @@
 - [Chapter 25: Deviation as Information](chapter-25-deviation-as-information.md)
 - [Chapter 26: Escalation Scarcity](chapter-26-escalation-scarcity.md)
 - [Chapter 27: Governance That Terminates](chapter-27-governance-that-terminates.md)
-- [Chapter 28: The Truth Velocity Index](chapter-28-the-truth-velocity-index.md)
+- [Chapter 28: The Truth Flow Index](chapter-28-the-truth-flow-index.md)
 - [Chapter 29: The Living Blueprint](chapter-29-the-living-blueprint.md)
 - [Chapter 30: The Operational Truth Model](chapter-30-the-operational-truth-model.md)
 - [Chapter 31: The Repository as Decision Infrastructure](chapter-31-the-repository-as-decision-infrastructure.md)
 - [Chapter 32: Authority Design](chapter-32-authority-design.md)
-- [Chapter 33: The Velocity Operating Model](chapter-33-the-velocity-operating-model.md)
+- [Chapter 33: The Flow Operating Model](chapter-33-the-flow-operating-model.md)
 - [Chapter 34: The Pulse System](chapter-34-the-pulse-system.md)
 - [Chapter 35: The Clarity Stack in Operation](chapter-35-the-clarity-stack-in-operation.md)
 - [Chapter 36: The Decision Architecture Method](chapter-36-the-decision-architecture-method.md)
-- [Chapter 37: Ownership Velocity](chapter-37-ownership-velocity.md)
+- [Chapter 37: Ownership Flow](chapter-37-ownership-flow.md)
 - [Chapter 38: The Control Paradox](chapter-38-the-control-paradox.md)
 - [Chapter 39: The Workshop Trap](chapter-39-the-workshop-trap.md)
 - [Chapter 40: Architecture Theatre](chapter-40-architecture-theatre.md)
@@ -61,4 +61,4 @@
 
 ---
 
-> Velocity is not speed. It is the rate at which ambiguity expires.
+> Flow is not speed. It is the rate at which ambiguity expires.
