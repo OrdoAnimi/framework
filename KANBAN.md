@@ -94,7 +94,6 @@
 | L11 | Fix LICENSE to be machine-readable (GitHub reports "Unknown") | `LICENSE` | REVIEW P3 |
 | L12 | Add cross-link from README → oa-sa site | `README.md` | Ecosystem |
 | L13 | State publishing hierarchy explicitly in README | `README.md` | Ecosystem |
-| L14 | Medium backlog — cross-post Chapters 31–50 | Medium @ZencloudAU | Ecosystem |
 
 ### 🟠 OrdoAnimi Architecture Site
 
@@ -134,7 +133,6 @@
 | L11 | LICENSE — SPDX headers added: machine-readable for GitHub | 2026-06-28 |
 | L12 | Cross-link from README → oa-sa — Ecosystem section added to README.md | 2026-06-28 |
 | L13 | Publishing hierarchy stated in README — Publishing Platform table added | 2026-06-28 |
-| L14 | Medium backlog (Chapters 31–50) — external platform action; deferred to Phil | — |
 | L15 | oa-sa homepage → framework library link updated to `/frameworks/` (was root); Agent link removed | 2026-06-28 |
 | L16 | Framework site → oa-sa cross-link — "Practitioner tools" section added to index.html | 2026-06-28 |
 | L17 | Lexicon alignment — Framework Connection notes added to Decision Altitude, Governance Drag, Pattern Locking | 2026-06-28 |

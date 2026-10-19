@@ -97,7 +97,6 @@ The primary publishing platform for all OrdoAnimi content is **framework.ordoani
 | Channel | Status | Notes |
 |---------|--------|-------|
 | [framework.ordoanimi.com/publications](https://framework.ordoanimi.com/publications/) | **Primary** | All 50 book chapters + Thought Series + Signal |
-| [Medium @ZencloudAU](https://medium.com/@ZencloudAU) | Secondary | Book chapters serialised — Chapter 30 of 50 |
 | [LinkedIn in/pmyint](https://www.linkedin.com/in/pmyint) | Professional | Active presence |
 
 ---

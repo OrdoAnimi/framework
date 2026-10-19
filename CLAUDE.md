@@ -39,7 +39,6 @@ This is not a side project. It is the primary framework, IP, and publishing plat
 
 ### Publishing Channels
 - **framework.ordoanimi.com/publications** — ALL 50 book chapters published + Thought Series + Signal. **This is the primary publishing platform, not Medium.**
-- **Medium @ZencloudAU** — Book chapters serialised; at Chapter 30 of 50 (secondary discovery channel — 20 chapters behind)
 - **LinkedIn in/pmyint** — Professional presence; active
 - **www.ordoanimi.com** — OrdoAnimi client entry point
 
