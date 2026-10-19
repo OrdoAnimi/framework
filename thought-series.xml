@@ -7,6 +7,41 @@
 <language>en-AU</language>
 <atom:link href="https://framework.ordoanimi.com/thought-series.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>Thought Series II - Decision Throughput - A Diagnostic for When Delivery Slows &amp;#x2014; Even When Things Look Clear</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.5-the-flow-diagnostic.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.5-the-flow-diagnostic.html</guid>
+<pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+<description>I’ve spent a lot of time inside organisations where decisions are documented, owners are named, authority formally exists — and delivery still struggles.</description>
+</item>
+<item>
+<title>Thought Series II - Decision Throughput - When Authority Exists &amp;#x2014; but Leaders Still Push Forward</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.4-when-authority-exists-but-leaders-still-push-forward.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.4-when-authority-exists-but-leaders-still-push-forward.html</guid>
+<pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+<description>At this point, the pattern is clear.</description>
+</item>
+<item>
+<title>Thought Series II - Decision Throughput - When Authority Is Held &amp;#x2014; but Responsibility Is Deflected</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.3-when-authority-is-held-but-responsibility-is-deflected.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.3-when-authority-is-held-but-responsibility-is-deflected.html</guid>
+<pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+<description>By now, the pattern should be familiar. Issues are raised. Risks are identified. Escalations are made. The system knows. And yet, nothing resolves.</description>
+</item>
+<item>
+<title>Thought Series II - Decision Throughput - When Ownership Exists &amp;#x2014; but Authority Doesn't</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.2-when-ownership-exists-but-authority-doesnt.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.2-when-ownership-exists-but-authority-doesnt.html</guid>
+<pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+<description>Decisions are clear. Inputs are identified. Owners are named. And delivery still stalls.</description>
+</item>
+<item>
+<title>Thought Series II - Decision Throughput - When Decisions Are Clear &amp;#x2014; but Delivery Has No Pulse</title>
+<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.1-when-decisions-are-clear-but-delivery-has-no-pulse.html</link>
+<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.1-when-decisions-are-clear-but-delivery-has-no-pulse.html</guid>
+<pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+<description>Most organisations don’t slow down because architecture is unclear. They slow down because delivery has no pulse.</description>
+</item>
+<item>
 <title>Thought Series VI - Before the Decision - The Signal Before the Decision</title>
 <link>https://framework.ordoanimi.com/publications/thought-series/series-06/6.1-the-signal-before-the-decision.html</link>
 <guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-06/6.1-the-signal-before-the-decision.html</guid>
@@ -56,13 +91,6 @@
 <description>For years, organisations have mistaken documentation for architecture.</description>
 </item>
 <item>
-<title>Thought Series II - Decision Throughput - A Diagnostic for When Delivery Slows &amp;#x2014; Even When Things Look Clear</title>
-<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.5-the-flow-diagnostic.html</link>
-<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.5-the-flow-diagnostic.html</guid>
-<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-<description>I’ve spent a lot of time inside organisations where decisions are documented, owners are named, authority formally exists — and delivery still struggles.</description>
-</item>
-<item>
 <title>Thought Series III - The Architecture Operating System - Measuring Architectural Leverage</title>
 <link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.5-measuring-architectural-leverage.html</link>
 <guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.5-measuring-architectural-leverage.html</guid>
@@ -89,13 +117,6 @@
 <guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-01/1.4-the-12-principles-of-working-architecture.html</guid>
 <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
 <description>Most architecture practices are built on templates. Effective ones are built on principles. But principles only work when leadership enables them.</description>
-</item>
-<item>
-<title>Thought Series II - Decision Throughput - When Authority Exists &amp;#x2014; but Leaders Still Push Forward</title>
-<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.4-when-authority-exists-but-leaders-still-push-forward.html</link>
-<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.4-when-authority-exists-but-leaders-still-push-forward.html</guid>
-<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-<description>At this point, the pattern is clear.</description>
 </item>
 <item>
 <title>Thought Series III - The Architecture Operating System - When Architecture Has Structure but No Mandate</title>
@@ -126,13 +147,6 @@
 <description>The most confidently approved architecture documents often quietly create the most risk. Heavy governance can decouple from reality, freezing a moment in time while the system continues to evolve.</description>
 </item>
 <item>
-<title>Thought Series II - Decision Throughput - When Authority Is Held &amp;#x2014; but Responsibility Is Deflected</title>
-<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.3-when-authority-is-held-but-responsibility-is-deflected.html</link>
-<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.3-when-authority-is-held-but-responsibility-is-deflected.html</guid>
-<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-<description>By now, the pattern should be familiar. Issues are raised. Risks are identified. Escalations are made. The system knows. And yet, nothing resolves.</description>
-</item>
-<item>
 <title>Thought Series III - The Architecture Operating System - When Constraints Become Memory</title>
 <link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.3-when-constraints-become-memory.html</link>
 <guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.3-when-constraints-become-memory.html</guid>
@@ -161,13 +175,6 @@
 <description>I recently wrote about architecture’s real value: clarity that leads to better decisions. Simple artefacts. Alignment without friction.</description>
 </item>
 <item>
-<title>Thought Series II - Decision Throughput - When Ownership Exists &amp;#x2014; but Authority Doesn't</title>
-<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.2-when-ownership-exists-but-authority-doesnt.html</link>
-<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.2-when-ownership-exists-but-authority-doesnt.html</guid>
-<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-<description>Decisions are clear. Inputs are identified. Owners are named. And delivery still stalls.</description>
-</item>
-<item>
 <title>Thought Series III - The Architecture Operating System - The Anatomy of a Guardrail</title>
 <link>https://framework.ordoanimi.com/publications/thought-series/series-03/3.2-the-anatomy-of-a-guardrail.html</link>
 <guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-03/3.2-the-anatomy-of-a-guardrail.html</guid>
@@ -194,13 +201,6 @@
 <guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-01/1.1-where-architecture-truly-creates-value.html</guid>
 <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
 <description>Sometimes, a single conversation can stop you in your tracks — a quiet nudge to think again about what architecture really is, and why it matters. Not the diagrams or deliverables, but the thinking behind them.</description>
-</item>
-<item>
-<title>Thought Series II - Decision Throughput - When Decisions Are Clear &amp;#x2014; but Delivery Has No Pulse</title>
-<link>https://framework.ordoanimi.com/publications/thought-series/series-02/2.1-when-decisions-are-clear-but-delivery-has-no-pulse.html</link>
-<guid isPermaLink="true">https://framework.ordoanimi.com/publications/thought-series/series-02/2.1-when-decisions-are-clear-but-delivery-has-no-pulse.html</guid>
-<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-<description>Most organisations don’t slow down because architecture is unclear. They slow down because delivery has no pulse.</description>
 </item>
 <item>
 <title>Thought Series III - The Architecture Operating System - From Archive to Operating System</title>
