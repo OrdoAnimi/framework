@@ -74,9 +74,9 @@ Define how the use case moves from idea to pilot to production, including suppor
 - deployment readiness checklist
 - operational review record
 
-## Velocity Fit
+## Flow Fit
 
-Velocity should treat AI governance as decision traceability, not documentation volume.
+Flow should treat AI governance as decision traceability, not documentation volume.
 
 The core questions are:
 

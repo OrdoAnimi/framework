@@ -27,7 +27,7 @@ CC BY 4.0
 ## Central Thesis
 
 > *Architecture exists to create clarity that leads to better decisions.*  
-> *Velocity is not speed. It is the rate at which ambiguity expires.*
+> *Flow is not speed. It is the rate at which ambiguity expires.*
 
 ---
 

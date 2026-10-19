@@ -32,7 +32,7 @@ It is not a critique of the people inside these systems. It is a structural diag
 
 The central argument is simple enough to state in a single sentence, and complex enough to require fifty chapters to fully defend.
 
-**Velocity is not speed. It is the rate at which ambiguity expires.**
+**Flow is not speed. It is the rate at which ambiguity expires.**
 
 Everything that follows is either a diagnosis of why ambiguity accumulates, or a design for systems in which it cannot.
 

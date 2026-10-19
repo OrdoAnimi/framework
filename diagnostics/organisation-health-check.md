@@ -3,7 +3,7 @@
 **OrdoAnimi — Structural Pathology Diagnostic**
 
 > Use this diagnostic to identify which OrdoAnimi pathologies are present in your organisation.  
-> It is distinct from the Decision Velocity Diagnostic (which measures capability).  
+> It is distinct from the Decision Throughput Diagnostic (which measures capability).  
 > This one measures structural dysfunction.
 
 ---

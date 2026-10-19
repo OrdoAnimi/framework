@@ -18,7 +18,7 @@ Somewhere in the evolution of the discipline, architecture stopped being about d
 
 The cost of this transformation is paid by the people closest to the work. Delivery teams compensate for ambiguity that architecture was supposed to resolve. Architects become interpreters of unclear intent rather than authors of clear direction. Leaders rely on escalation because structure has failed to produce answers. Burnout is reframed as commitment. Heroics are celebrated as culture. **Sacrifice becomes normalised — not as an occasional cost of complex work but as the permanent operating condition of organisations that have learned to absorb human effort rather than convert decisions into movement.**
 
-This book is written from inside a body of work called the **The OrdoAnimi Framework**. Its central claim is precise: **organisational velocity is not a function of effort, talent, tools, or culture. It is a function of how quickly ambiguity expires.** Every mechanism in the framework — every structural property, every instrument, every operating principle — serves a single purpose: reducing the interval between when ambiguity becomes visible and when authority closes it.
+This book is written from inside a body of work called the **The OrdoAnimi Framework**. Its central claim is precise: **organisational flow is not a function of effort, talent, tools, or culture. It is a function of how quickly ambiguity expires.** Every mechanism in the framework — every structural property, every instrument, every operating principle — serves a single purpose: reducing the interval between when ambiguity becomes visible and when authority closes it.
 
 That interval has a name. It is **decision latency**. And in most organisations, it is unmeasured, unmanaged, and growing.
 
@@ -54,7 +54,7 @@ The framework this book describes exists to interrupt that collapse.
 
 It does not propose better tools. It does not prescribe new processes. It does not offer a maturity model or a transformation roadmap. **It makes a structural argument: the reason organisations are slow is not that they lack architecture. It is that they have been redesigned, gradually and rationally, to make ambiguity survivable.** And when ambiguity is survivable, it accumulates. It accumulates in unmade decisions, in deferred trade-offs, in governance processes that define participation but never closure, in escalation pathways that widen rather than narrow, in ownership structures that look right on paper and dissolve under pressure.
 
-**Velocity — the rate at which an organisation moves from ambiguity to decision — is the product of that accumulated ambiguity.** Not the product of effort. Not the product of capability. The product of design.
+**Flow — the rate at which an organisation moves from ambiguity to decision — is the product of that accumulated ambiguity.** Not the product of effort. Not the product of capability. The product of design.
 
 Organisations that move fast have not hired better people or adopted better methodologies. They have designed systems in which ambiguity cannot survive indefinitely. In which every open question has a defined owner and a defined horizon. In which deviation surfaces immediately rather than accumulating silently. In which escalation compresses rather than redistributes. In which governance terminates rather than circulates.
 

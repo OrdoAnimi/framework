@@ -139,7 +139,7 @@ SIGNAL = dict(
 )
 THOUGHT_SERIES = {
     "thought-series-01": ("series-01-foundations", "1"),
-    "thought-series-02": ("series-02-decision-velocity", "2"),
+    "thought-series-02": ("series-02-decision-throughput", "2"),
     "thought-series-03": ("series-03-the-architecture-operating-system", "3"),
     "thought-series-04": ("series-04-architecture-as-a-decision-system", "4"),
     "thought-series-05": ("series-05-the-implementation-arc", "5"),

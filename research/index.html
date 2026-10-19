@@ -47,7 +47,7 @@
       <p class="feature-title">Trans-Pacific Architecture Addendum</p>
       <p class="feature-desc">OrdoAnimi addendum addressing trans-Pacific architecture practice and decision-making context for Australian and Asia-Pacific engagements.</p>
     </a>
-    <a class="feature-card" href="Velocity-where-the-frameworks-stop-may-2026/">
+    <a class="feature-card" href="OrdoAnimi-where-the-frameworks-stop-may-2026/">
       <p class="feature-tag">Working Paper · May 2026</p>
       <p class="feature-title">OrdoAnimi — Where the Frameworks Stop</p>
       <p class="feature-desc">A decision-first analysis of where major architecture and governance frameworks stop — and where OrdoAnimi continues.</p>
@@ -55,7 +55,7 @@
   </div>
   <div class="doc-layout">
     <aside class="doc-sidebar">
-      <div class="sidebar-section"><span class="sidebar-label">Working Papers</span><button class="file-btn" data-p="research/Velocity-where-the-frameworks-stop-may-2026.md" data-href="Velocity-where-the-frameworks-stop-may-2026/" onclick="loadDoc(this.dataset.p)">OrdoAnimi — Where the Frameworks Stop</button><button class="file-btn" data-p="research/it-governance-working-paper-may-2026.md" data-href="it-governance-frameworks-australian-public-sector-2025-2026/" onclick="loadDoc(this.dataset.p)">OrdoAnimi IT Governance Working Paper</button><button class="file-btn" data-p="research/trans-pacific-addendum-may-2026.md" data-href="trans-pacific-addendum-may-2026/" onclick="loadDoc(this.dataset.p)">Trans-Pacific Architecture Addendum</button><!-- AUTO-PAPERS --></div>
+      <div class="sidebar-section"><span class="sidebar-label">Working Papers</span><button class="file-btn" data-p="research/OrdoAnimi-where-the-frameworks-stop-may-2026.md" data-href="OrdoAnimi-where-the-frameworks-stop-may-2026/" onclick="loadDoc(this.dataset.p)">OrdoAnimi — Where the Frameworks Stop</button><button class="file-btn" data-p="research/it-governance-working-paper-may-2026.md" data-href="it-governance-frameworks-australian-public-sector-2025-2026/" onclick="loadDoc(this.dataset.p)">OrdoAnimi IT Governance Working Paper</button><button class="file-btn" data-p="research/trans-pacific-addendum-may-2026.md" data-href="trans-pacific-addendum-may-2026/" onclick="loadDoc(this.dataset.p)">Trans-Pacific Architecture Addendum</button><!-- AUTO-PAPERS --></div>
       <div class="sidebar-section"><span class="sidebar-label">Research Series</span><button class="file-btn" data-p="research/01-artefact-true-purpose.md" data-href="01-artefact-true-purpose/" onclick="loadDoc(this.dataset.p)">01 — Artefact True Purpose</button><button class="file-btn" data-p="research/02-ea-value-metrics.md" data-href="02-ea-value-metrics/" onclick="loadDoc(this.dataset.p)">02 — EA Value Metrics</button><button class="file-btn" data-p="research/03-mvp-mlp-empirical.md" data-href="03-mvp-mlp-empirical/" onclick="loadDoc(this.dataset.p)">03 — MVP/MLP Empirical Evidence</button><button class="file-btn" data-p="research/04-value-over-time.md" data-href="04-value-over-time/" onclick="loadDoc(this.dataset.p)">04 — Value Over Time</button><!-- AUTO-SERIES --></div>
       <div class="sidebar-section"><span class="sidebar-label">Extended Papers</span><button class="file-btn" data-p="research/EA-Artefacts-True-Purpose-Value-Metrics.md" data-href="ea-artefacts-true-purpose-value-metrics/" onclick="loadDoc(this.dataset.p)">EA Artefacts: True Purpose &amp; Value Metrics</button><button class="file-btn" data-p="research/MVP-MLP-Empirical-Evidence.md" data-href="mvp-mlp-empirical-evidence/" onclick="loadDoc(this.dataset.p)">MVP/MLP Empirical Evidence (Extended)</button><button class="file-btn" data-p="research/EA-Value-Over-Time-Analysis.md" data-href="ea-value-over-time-analysis/" onclick="loadDoc(this.dataset.p)">EA Value Over Time Analysis</button><!-- AUTO-EXTENDED --></div>
       <div class="sidebar-section"><span class="sidebar-label">Bibliography</span><button class="file-btn" data-p="research/SOURCES.md" data-href="sources/" onclick="loadDoc(this.dataset.p)">Sources &amp; Bibliography</button></div>
@@ -88,13 +88,13 @@
 <!-- SHARED-FOOTER-END -->
 
 <script>
-const RAW='https://raw.githubusercontent.com/OrdoAnimi/velocity-architecture/main/';
+const RAW='https://raw.githubusercontent.com/OrdoAnimi/framework/main/';
 let current=null;
 
 // Hash → static URL map for backward compat redirects
 const STATIC={
-  'vaf-where-the-frameworks-stop-may-2026.md':'Velocity-where-the-frameworks-stop-may-2026/',
-  'Velocity-where-the-frameworks-stop-may-2026.md':'Velocity-where-the-frameworks-stop-may-2026/',
+  'oa-where-the-frameworks-stop-may-2026.md':'OrdoAnimi-where-the-frameworks-stop-may-2026/',
+  'OrdoAnimi-where-the-frameworks-stop-may-2026.md':'OrdoAnimi-where-the-frameworks-stop-may-2026/',
   'it-governance-working-paper-may-2026.md':'it-governance-frameworks-australian-public-sector-2025-2026/',
   'trans-pacific-addendum-may-2026.md':'trans-pacific-addendum-may-2026/',
   '01-artefact-true-purpose.md':'01-artefact-true-purpose/',
@@ -123,7 +123,7 @@ async function loadDoc(path){
     if(staticHref)html+='<p style="margin-top:1.5rem;font-family:\'DM Mono\',monospace;font-size:.75rem;color:var(--text-3)">Shareable link: <a href="'+staticHref+'">'+location.origin+location.pathname.replace(/\/$/,'')+'/'+staticHref+'</a></p>';
     el.innerHTML=html;
   }catch{
-    el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/velocity-architecture/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';
+    el.innerHTML='<p class="err-msg">Could not load document. <a href="https://github.com/OrdoAnimi/framework/blob/main/'+path+'" target="_blank">View on GitHub ↗</a></p>';
   }
   el.scrollTop=0;
 }

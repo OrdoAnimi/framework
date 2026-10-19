@@ -98,7 +98,7 @@ The governance architecture without a designed decision surface is a governance 
 
 The governance architecture with a designed decision surface is a governance architecture with visible, specific, enforceable constraint. The altitudes are specified. The criteria for each altitude are clear. The boundary below governance involvement is explicit and generous. Delivery teams know what they can decide. Holders know what they are accountable for. Escalation pathways are reserved for questions that genuinely require them.
 
-This is the design that makes velocity possible at scale. Not the absence of governance — the design of governance that is precise enough to serve the questions that require it without consuming the capacity of the teams and the authority structures that should be making everything else.
+This is the design that makes flow possible at scale. Not the absence of governance — the design of governance that is precise enough to serve the questions that require it without consuming the capacity of the teams and the authority structures that should be making everything else.
 
 **The decision surface is not a constraint on the organisation’s capability. It is the structural condition under which the organisation’s capability can actually function.**
 

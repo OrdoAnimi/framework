@@ -60,13 +60,13 @@ The implication for measurement: the most direct measure of EA value is not what
 
 The OrdoAnimi proposes measurement at three levels.
 
-### Level 1 — Decision velocity (primary metric)
+### Level 1 — Decision throughput (primary metric)
 
 *How fast are decisions being made relative to their required timing?*
 
 Measured as: number of decisions made before decision latency threshold / total decisions required.
 
-A velocity score of 8/10 means 8 of 10 required decisions were made before the point at which deferral started causing measurable cost. A velocity score of 5/10 means half of the required decisions in a cycle were deferred past their optimal point.
+A flow score of 8/10 means 8 of 10 required decisions were made before the point at which deferral started causing measurable cost. A flow score of 5/10 means half of the required decisions in a cycle were deferred past their optimal point.
 
 This metric is measurable, attributable to architecture function activity, and directly linked to organisational outcome.
 
@@ -105,11 +105,11 @@ Several commonly used EA metrics have low validity as value indicators.
 The appropriate reporting cadence for EA value metrics is the same as the Pulse Briefing cadence: fortnightly or monthly.
 
 Three numbers per cycle:
-1. Decision velocity score (x/10)
+1. Decision throughput score (x/10)
 2. Decision integrity rate (x%)
 3. Rework incidence rate (x% of scope changes attributable to architectural gaps)
 
-Trend lines matter more than point-in-time scores. An organisation moving from 5/10 to 7/10 velocity over three cycles is demonstrating more value than an organisation static at 8/10.
+Trend lines matter more than point-in-time scores. An organisation moving from 5/10 to 7/10 flow over three cycles is demonstrating more value than an organisation static at 8/10.
 
 ---
 

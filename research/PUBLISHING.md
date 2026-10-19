@@ -1,4 +1,4 @@
-# Velocity Research Publishing Workflow
+# OrdoAnimi Research Publishing Workflow
 
 This folder uses a source-backed publishing model.
 

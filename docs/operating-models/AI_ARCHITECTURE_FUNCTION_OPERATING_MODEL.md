@@ -6,7 +6,7 @@
 **Professional method:** OrdoAnimi  
 **Delivery and productisation:** ## 1. Purpose
 
-This operating model applies the duties of a senior enterprise AI Architect across the OrdoAnimi, Velocity, and Ordo Animi estate.
+This operating model applies the duties of a senior enterprise AI Architect across the OrdoAnimi, Flow, and Ordo Animi estate.
 
 It is not a personal job-description exercise. It defines the organisational function required to turn the estate from a founder-led collection of AI-assisted products, frameworks, tools, and experiments into a coherent AI company with clear technical authority, specialist responsibilities, production standards, and evidence.
 
@@ -66,7 +66,7 @@ This function determines why a capability should exist. It does not choose techn
 
 ### 4.3 AI application and agent engineering
 
-**Authorities:** Ordo Animi, Velocity agentic platform, product repositories
+**Authorities:** Ordo Animi, Flow agentic platform, product repositories
 
 Owns application services, agent workflows, tool integrations, state handling, prompt implementation, API contracts, deterministic control logic, testing, and code quality.
 
@@ -130,20 +130,20 @@ Owns design tokens, shared interaction patterns, accessibility, public/private p
 
 | Senior AI Architect duty | Estate application | Accountable authority | Required output |
 |---|---|---|---|
-| Own end-to-end AI solution architecture | Define architecture from customer outcome through experience, services, data, models, tools, security, cloud, and operations | Chief AI Architect / Velocity | Approved solution architecture and ADR set |
-| Evaluate and standardise AI technologies | Maintain approved model, platform, framework, search, observability, and integration catalogue | Velocity with Praesidium and Probatio | Technology radar and selection records |
-| Create reference architectures and design patterns | Publish reusable patterns for agentic workflows, RAG, artefact generation, human review, client isolation, and AI operations | Velocity | Versioned reference architecture library |
-| Lead architecture reviews | Establish recurring design-authority gates before pilot, deployment, and material change | Magister / Velocity | Review decision, conditions, and exception record |
-| Translate business needs into scalable designs | Require qualified product brief before engineering work starts | / Velocity | Product brief, use-case classification, architecture brief |
+| Own end-to-end AI solution architecture | Define architecture from customer outcome through experience, services, data, models, tools, security, cloud, and operations | Chief AI Architect / Flow | Approved solution architecture and ADR set |
+| Evaluate and standardise AI technologies | Maintain approved model, platform, framework, search, observability, and integration catalogue | Flow with Praesidium and Probatio | Technology radar and selection records |
+| Create reference architectures and design patterns | Publish reusable patterns for agentic workflows, RAG, artefact generation, human review, client isolation, and AI operations | Flow | Versioned reference architecture library |
+| Lead architecture reviews | Establish recurring design-authority gates before pilot, deployment, and material change | Magister / Flow | Review decision, conditions, and exception record |
+| Translate business needs into scalable designs | Require qualified product brief before engineering work starts | / Flow | Product brief, use-case classification, architecture brief |
 | Design AI data architecture | Standardise source, ingestion, classification, retrieval, retention, tenancy, and deletion patterns | Memoria / Fabrica / Nexus | Data architecture and data contract |
 | Establish AI quality and evaluation standards | Build repeatable evaluation systems for every material AI capability | Probatio | Evaluation specification, baseline, regression report |
 | Establish AI security standards | Convert policy into runtime identities, permissions, isolation, validation, and incident controls | Lex / Praesidium | Threat model, control mapping, security evidence |
 | Establish AI observability | Trace model, prompt, retrieval, tools, actions, quality, cost, and incidents | Specula | Telemetry contract and operational dashboard |
-| Govern build-versus-buy and vendors | Compare providers and frameworks against value, control, portability, cost, and support | Velocity / Imperium / Mercatus | Option assessment and supplier decision |
+| Govern build-versus-buy and vendors | Compare providers and frameworks against value, control, portability, cost, and support | Flow / Imperium / Mercatus | Option assessment and supplier decision |
 | Guide engineering teams | Convert architecture decisions into bounded work orders and acceptance criteria | Chief AI Architect / | Engineering work order and review outcome |
-| Mentor and uplift teams | Maintain role-based capability pathways and evidence requirements | Velocity Academy | Skills matrix, learning plan, practical assessment |
-| Maintain actionable market intelligence | Review model, platform, regulatory, and architecture developments quarterly | Velocity / Lex / Academy | AI technology radar and change advisory |
-| Present technical strategy | Maintain board, customer, partner, and engineering views of the same architecture | Velocity / OrdoAnimi / | Audience-specific architecture pack |
+| Mentor and uplift teams | Maintain role-based capability pathways and evidence requirements | OrdoAnimi Academy | Skills matrix, learning plan, practical assessment |
+| Maintain actionable market intelligence | Review model, platform, regulatory, and architecture developments quarterly | Flow / Lex / Academy | AI technology radar and change advisory |
+| Present technical strategy | Maintain board, customer, partner, and engineering views of the same architecture | Flow / OrdoAnimi / | Audience-specific architecture pack |
 
 ## 6. Architecture review gates
 
@@ -159,7 +159,7 @@ defines the user, problem, value hypothesis, non-goals, success measures, and op
 
 ### Gate 2 — AI and risk classification
 
-Velocity and Lex classify AI necessity, autonomy, consequence, customer exposure, data sensitivity, jurisdiction, and required human authority.
+Flow and Lex classify AI necessity, autonomy, consequence, customer exposure, data sensitivity, jurisdiction, and required human authority.
 
 ### Gate 3 — Architecture approval
 
@@ -227,7 +227,7 @@ Required actions:
 - approve this operating model through Magister;
 - publish the enterprise AI reference architecture;
 - classify all repositories as governance, method, shared platform, product, delivery tool, academy, lab, archive candidate, or retired;
-- nominate one product proving ground: Velocity Agentic Architect;
+- nominate one product proving ground: OrdoAnimi Agentic Architect;
 - freeze creation of new AI repositories unless Gate 0 is passed;
 - resolve active identity and boundary contradictions;
 - establish an AI architecture decision register and exception process.
@@ -240,7 +240,7 @@ Required actions:
 
 - create Probatio's evaluation standard and initial golden dataset;
 - establish prompt, model, retrieval, tool, and configuration registries;
-- create the AI system card and threat model for the Velocity agent;
+- create the AI system card and threat model for the OrdoAnimi agent;
 - implement deterministic tests, model evaluations, injection tests, tool-permission tests, and data-leakage tests;
 - store evaluation and assurance results with releases;
 - prohibit production-ready claims without passing evidence.
@@ -281,7 +281,7 @@ Required actions:
 - route all work through architecture-approved engineering work orders;
 - require independent Probatio and Praesidium review for material releases;
 - publish a reference case demonstrating strategy-to-production delivery;
-- promote shared patterns into Velocity Academy for team onboarding and customer capability transfer.
+- promote shared patterns into OrdoAnimi Academy for team onboarding and customer capability transfer.
 
 ## 9. Founder skill boundary and development priorities
 
@@ -337,7 +337,7 @@ AI tools may perform multiple functions, but the artefacts, prompts, and review 
 
 1. Adopt **Chief AI Architect and Design Authority** as the Founder's internal operating role.
 2. Treat the senior AI Architect market specification as the target organisational capability, not a personal job checklist.
-3. Make Velocity Agentic Architect the reference implementation for closing engineering and assurance gaps.
+3. Make OrdoAnimi Agentic Architect the reference implementation for closing engineering and assurance gaps.
 4. Establish Probatio, Praesidium, and Specula as operating review functions rather than constitutional placeholders.
 5. Freeze unnecessary repository creation and move learning into bounded work packages.
 6. Require architecture, evaluation, security, operational, and cost evidence before any AI product is described as production-ready.

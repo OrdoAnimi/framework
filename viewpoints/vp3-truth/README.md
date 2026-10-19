@@ -82,7 +82,7 @@ assert no_unauthorised_vendor_dependencies()
 
 Every fitness function must be traceable to at least one ADR or Trade-off Matrix that states the intent it enforces (CR-T4).
 
-Fitness function pass/fail status is reported in the Velocity Dashboard (VP4 — Component 7: Fitness Function Status). A failing fitness function in VP3 is a VP4 signal — it may invalidate upstream assumptions and must be escalated within one Pulse window (CR-L3).
+Fitness function pass/fail status is reported in the Flow Dashboard (VP4 — Component 7: Fitness Function Status). A failing fitness function in VP3 is a VP4 signal — it may invalidate upstream assumptions and must be escalated within one Pulse window (CR-L3).
 
 ---
 

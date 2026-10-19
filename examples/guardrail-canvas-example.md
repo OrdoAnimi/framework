@@ -22,7 +22,7 @@
 
 ## Core Optimisation
 
-We prioritise **platform resilience and delivery velocity** over **feature breadth and cost minimisation** when trade-offs are required.
+We prioritise **platform resilience and delivery flow** over **feature breadth and cost minimisation** when trade-offs are required.
 
 *Rationale: Our delivery teams are currently absorbing the cost of an unstable platform. Until the platform is stable, every new feature compounds the problem. Cost optimisation is a second-order concern.*
 

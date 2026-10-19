@@ -26,4 +26,4 @@ Because execution isn't about how fast you run. It's about whether your map is s
 
 *— Signal / unfiltered observations from the field. Fortnightly.*
 
-#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #DigitalTransformation #CloudStrategy #TechnologyStrategy #AIStrategy
+#OrdoAnimi #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #DigitalTransformation #CloudStrategy #TechnologyStrategy #AIStrategy

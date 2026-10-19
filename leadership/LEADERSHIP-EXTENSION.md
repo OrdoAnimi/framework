@@ -25,7 +25,7 @@ The architecture domain is the entry point — the specific, credible context wh
 | Trade-off Matrix | Investment or programme decision record |
 | ADR | Leadership decision record |
 | Architectural Decision Log | Leadership decision register |
-| Velocity Dashboard | Decision health dashboard |
+| Flow Dashboard | Decision health dashboard |
 | Pulse System | Leadership operating rhythm |
 | Fitness Functions | Performance metrics enforcing strategic intent |
 | Auctor Custos | Leader as custodian of organisational intent |

@@ -97,7 +97,7 @@ This is not a contract addendum. It is the practitioner's statement of their Int
 | 4.3 | Conduct the first Pulse session — present: one open decision, one confirmed decision, risk register, next actions | Session record |
 | 4.4 | Any decisions open >14 days at this point — activate CR-E1 in the session | Escalation actions |
 | 4.5 | Produce the Pulse Report — brief summary of the session for the owning authority | Pulse Report |
-| 4.6 | Update the Velocity Dashboard — first baseline | Dashboard update |
+| 4.6 | Update the Flow Dashboard — first baseline | Dashboard update |
 
 ---
 

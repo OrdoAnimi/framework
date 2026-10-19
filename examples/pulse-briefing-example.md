@@ -21,7 +21,7 @@
 
 | Dimension | Status | Note |
 |-----------|--------|------|
-| Decision velocity | ⚠ At risk | Two open items approaching 14-day trigger |
+| Decision throughput | ⚠ At risk | Two open items approaching 14-day trigger |
 | Open decisions | 4 | 2 within expiry window |
 | Confirmed this week | 1 | ADR-004 bound — event-driven integration confirmed |
 | Escalations active | 0 | — |

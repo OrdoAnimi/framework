@@ -66,7 +66,7 @@ The absence of a decision is not neutral. It is a structural choice with compoun
 
 Organisations frequently defend high latency as rigour. Complex problems require extended consultation. Significant decisions require appropriate deliberation. Rushing carries risk. These defences are sometimes true — there are genuinely complex questions that benefit from extended analysis before commitment. But in most organisations shaped by the conditions of the previous chapters, what expands is not insight. It is surface area. The question grows heavier as it moves — accumulating stakeholders whose exclusion carries political cost, concerns whose acknowledgement demonstrates appropriate care, conditions whose satisfaction demonstrates appropriate diligence. The decision does not become sharper. It becomes more elaborate. The consultation does not produce better-informed authority. It produces more extensively documented indecision.
 
-Rigour is the alibi for drift. And drift, sustained across the governance architecture of a complex organisation, is the mechanism by which velocity disappears — not in any single failure, but in the accumulated effect of thousands of intervals that were each slightly longer than they needed to be, each slightly more expensive than they should have been, each adding its small increment to the structural debt that the organisation is carrying without knowing it.
+Rigour is the alibi for drift. And drift, sustained across the governance architecture of a complex organisation, is the mechanism by which flow disappears — not in any single failure, but in the accumulated effect of thousands of intervals that were each slightly longer than they needed to be, each slightly more expensive than they should have been, each adding its small increment to the structural debt that the organisation is carrying without knowing it.
 
 **The Diagnostic**
 
@@ -90,11 +90,11 @@ This work has been building toward a precise definition of the thing it is desig
 
 The measurement is this.
 
-**Velocity, at its structural core, is the rate at which ambiguity expires.**
+**Flow, at its structural core, is the rate at which ambiguity expires.**
 
 Not the speed at which meetings occur. Not the throughput of the governance process. Not the number of decisions produced in a given period. The rate at which the interval between when a question becomes visible and when authority closes it compresses — the rate at which the decision latency that Part Two has been tracing is reduced by design rather than forced by crisis.
 
-This is why velocity is not a delivery metric. Delivery metrics measure what is produced at the edges of execution — the code that is written, the systems that are deployed, the features that are released. Velocity, in the sense this work uses the term, measures something that happens before execution reaches those edges. It measures how quickly the organisation converts the ambiguity that every complex programme generates into the binding direction that every delivery team requires. It measures the design property of the governance architecture — whether it was built to expire ambiguity or to sustain it.
+This is why flow is not a delivery metric. Delivery metrics measure what is produced at the edges of execution — the code that is written, the systems that are deployed, the features that are released. Flow, in the sense this work uses the term, measures something that happens before execution reaches those edges. It measures how quickly the organisation converts the ambiguity that every complex programme generates into the binding direction that every delivery team requires. It measures the design property of the governance architecture — whether it was built to expire ambiguity or to sustain it.
 
 Where ambiguity has no defined lifespan, latency rules. The governance architecture that does not specify decision windows, enforce time boundaries, attach visible consequence, design escalation to concentrate rather than distribute, or embed convergence decisions into executable guardrails has been designed — not deliberately but effectively — to allow ambiguity to accumulate indefinitely. Every question that enters it may, in principle, be resolved. In practice, the resolution is determined not by the governance architecture but by the external pressures that force it — the deadlines, the crises, the regulatory requirements, the competitive moments that make continued deferral more costly than commitment. The governance architecture provides the appearance of a mechanism. The external pressure provides the actual mechanism. And between appearances and reality, the structural debt of deferred ambiguity accumulates.
 
@@ -114,7 +114,7 @@ This is where Part Two ends and Part Three begins.
 
 Part Two has named what is wrong, traced how it was produced, and provided the measurement that makes it visible. Part Three describes what it would take to design it differently — not as a cultural aspiration or a leadership programme or a professional development initiative, but as a structural redesign of the governance architecture itself.
 
-The property that the redesign must produce is velocity. The rate at which ambiguity expires. The measurement this framework was built to compress.
+The property that the redesign must produce is flow. The rate at which ambiguity expires. The measurement this framework was built to compress.
 
 Every chapter of Part Three is a structural response to a specific condition named in Part Two. The responses are not better versions of the same practices. They are different practices — built on different design principles, producing different structural properties, and measured against the one metric that actually captures whether the governance architecture is doing what it claims to do.
 

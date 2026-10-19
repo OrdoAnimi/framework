@@ -130,9 +130,9 @@ OrdoAnimi retains:
 |-------|-------|
 | Client data provided to OrdoAnimi | Client |
 | Engagement deliverables (upon delivery) | Client |
-| The OrdoAnimi Framework methods and templates | OrdoAnimi / Velocity |
+| The OrdoAnimi Framework methods and templates | OrdoAnimi / Flow |
 | OrdoAnimi Agentic AI configuration and prompts | OrdoAnimi |
-| Anonymised patterns derived from engagement | OrdoAnimi (Velocity IP) |
+| Anonymised patterns derived from engagement | OrdoAnimi (OrdoAnimi IP) |
 | Partner-contributed methods and templates | Consultancy partner |
 
 AI-generated content produced during an engagement does not create any IP claim for the AI provider. The AI system is a tool. The practitioner and client own the output.
@@ -165,7 +165,7 @@ The practitioner must confirm:
 
 ## Section 9: Limitations and Disclaimers
 
-AI tools used in Velocity engagements:
+AI tools used in Flow engagements:
 - Do not have access to real-time data unless explicitly configured
 - May produce plausible-sounding but incorrect information — practitioner verification is mandatory
 - Are not certified for use in safety-critical decisions
@@ -180,7 +180,7 @@ OrdoAnimi engagement outputs:
 
 ## Section 10: Enterprise Deployment Considerations
 
-For clients seeking to deploy the Velocity tool layer within their own environment:
+For clients seeking to deploy the Flow tool layer within their own environment:
 
 - OrdoAnimi Agentic AI can be configured to operate within the client's Azure tenancy
 - Data processing remains within the client's environment

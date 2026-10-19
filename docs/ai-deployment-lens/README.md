@@ -1,10 +1,10 @@
-# Velocity AI Deployment Lens
+# OrdoAnimi AI Deployment Lens
 
 Internal draft. Not a public launch claim.
 
 ## Purpose
 
-Test whether Velocity can provide an architecture and governance backbone for organisations moving from AI pilots to governed deployment.
+Test whether Flow can provide an architecture and governance backbone for organisations moving from AI pilots to governed deployment.
 
 ## Scope
 
@@ -20,7 +20,7 @@ Test whether Velocity can provide an architecture and governance backbone for or
 
 ## Boundary
 
-Velocity does not claim to train foundation models or replace ML engineering.
+Flow does not claim to train foundation models or replace ML engineering.
 
 ## Thesis
 
@@ -28,8 +28,8 @@ AI is not a tool rollout. It is an architecture decision.
 
 ## Existing references
 
-- `VELOCITY_AI_ARCHITECTURE_COORDINATION_LAYER.md`
+- `FLOW_AI_ARCHITECTURE_COORDINATION_LAYER.md`
 - `AI_AND_CLIENT_DATA_USAGE_POLICY.md`
-- Velocity Decision Metrics
+- Decision Throughput Metrics
 - Hermes routing
 - Decision-first architecture

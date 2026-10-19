@@ -14,7 +14,7 @@ The Chief AI Architect owns the technical vision, architecture coherence, cross-
 
 | Function | Primary accountability | Estate authority | Current coverage | Principal gap |
 |---|---|---|---|---|
-| Chief AI Architecture | End-to-end technical vision, reference architectures, ADRs, design authority, cross-domain trade-offs | Velocity / Founder | Strong | Formal review cadence and evidence-based release authority |
+| Chief AI Architecture | End-to-end technical vision, reference architectures, ADRs, design authority, cross-domain trade-offs | Flow / Founder | Strong | Formal review cadence and evidence-based release authority |
 | Product and Value | User problem, product outcome, roadmap, value, customer fit, lifecycle | / Imperium / Mercatus | Moderate to strong | Customer validation, pricing, case studies, support boundaries |
 | AI Application and Agent Engineering | Services, agents, tools, prompts, state, APIs, code, deterministic controls | Ordo Animi / product repos | Working prototype coverage | Production testing, state management, failure engineering, independent code ownership |
 | AI Data and Retrieval Engineering | Ingestion, transformation, RAG, embeddings, indexes, lineage, tenancy, retention | Memoria / Fabrica / Nexus | Strong doctrine, limited implementation | Working shared RAG platform and retrieval evaluation |
@@ -26,7 +26,7 @@ The Chief AI Architect owns the technical vision, architecture coherence, cross-
 | Evidence and Records | Release evidence, decisions, accepted artefacts, retention, deletion, handover | Archivum | Strong manual pattern | Automated evidence capture and controlled client archive operations |
 | Integration Engineering | APIs, events, adapters, external writes, idempotency, transfer audit | Nexus | Constitutional | Canonical contracts and working adapters |
 | Experience and Interaction Design | Design system, interaction patterns, accessibility, human-AI control surfaces | Forma | Emerging | Versioned components, agent interaction standards, accessibility evidence |
-| Capability and Enablement | Learning pathways, practical labs, role assessments, mentoring | Velocity Academy | Broad learning estate | Evidence-based role pathways tied to production work |
+| Capability and Enablement | Learning pathways, practical labs, role assessments, mentoring | OrdoAnimi Academy | Broad learning estate | Evidence-based role pathways tied to production work |
 
 ## Role scorecards
 
@@ -213,7 +213,7 @@ The estate should directly build capability in:
 - prompt and agent security;
 - product and client governance.
 
-These capabilities are central to the and Velocity proposition.
+These capabilities are central to the and Flow proposition.
 
 ### Use fractional specialists or partners first
 

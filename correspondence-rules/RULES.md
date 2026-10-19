@@ -49,7 +49,7 @@ Every fitness function must carry a comment reference to at least one ADR, Trade
 ### CR-E1: 14-Day Decision Aging Rule
 Any significant architectural decision open for more than 14 calendar days without binding resolution triggers a mandatory escalation event.
 
-- **Enforced by:** Velocity Dashboard aging monitor + fitness function `test_decision_aging()`
+- **Enforced by:** Flow Dashboard aging monitor + fitness function `test_decision_aging()`
 - **Applies to:** All open VP2 and VP3 decisions
 - **Status:** Hard rule
 
@@ -90,9 +90,9 @@ Every Trade-off Matrix, ADR, and open question must carry a single named individ
 ---
 
 ### CR-O2: Ownership Map currency
-The Ownership Map (RACI) in the Velocity Dashboard must be updated within 5 business days of any ownership transfer.
+The Ownership Map (RACI) in the Flow Dashboard must be updated within 5 business days of any ownership transfer.
 
-- **Applies to:** VP4 Velocity Dashboard
+- **Applies to:** VP4 Flow Dashboard
 - **Status:** Mandatory
 
 ---
@@ -171,7 +171,7 @@ Absence of these conditions does not prevent a decision from being reconsidered,
 ### CR-X3: Guardrail Canvas review date enforcement
 Every Guardrail Canvas carries a mandatory Review Date field. On that date, the canvas must be either reaffirmed (with a new Review Date) or superseded. A canvas with an expired Review Date is considered inactive and does not provide valid constraints for downstream decisions.
 
-- **Enforced by:** VP4 Velocity Dashboard aging monitor
+- **Enforced by:** VP4 Flow Dashboard aging monitor
 - **Applies to:** All VP1 artefacts
 - **Status:** Mandatory
 

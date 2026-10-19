@@ -18,7 +18,7 @@ This is not primarily a problem of process, or culture, or capability. It is a p
 
 And yet time — the most fundamental variable in the system — is the one that most governance architectures treat as passive. As the dimension through which decisions travel rather than as an active design element that can be specified, constrained, and enforced. As the medium of governance rather than the mechanism of it.
 
-**The central claim of this work — velocity is the rate at which ambiguity expires — is fundamentally a claim about time**. Rate is a time-based measure. Ambiguity that expires quickly produces high velocity. Ambiguity that persists indefinitely produces latency. The design question is not whether to make decisions — every organisation intends to make decisions — but whether the governance architecture has been designed to give ambiguity a lifespan.
+**The central claim of this work — flow is the rate at which ambiguity expires — is fundamentally a claim about time**. Rate is a time-based measure. Ambiguity that expires quickly produces high flow. Ambiguity that persists indefinitely produces latency. The design question is not whether to make decisions — every organisation intends to make decisions — but whether the governance architecture has been designed to give ambiguity a lifespan.
 
 This chapter addresses that design question directly.
 
@@ -118,7 +118,7 @@ Time does not guarantee wisdom.
 
 And in the organisation shaped by the five structural conditions of the previous chapters — where movement has been suppressed not by the absence of capability but by the absence of any designed force that would compel ambiguity to end — the guarantee of movement is not a small thing.
 
-It is the beginning of the return to velocity.
+It is the beginning of the return to flow.
 
 ---
 

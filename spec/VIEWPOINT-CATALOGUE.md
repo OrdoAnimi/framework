@@ -107,11 +107,11 @@ The Truth viewpoint exists because organisations lose the context of past decisi
 
 ---
 
-## VP4 — Velocity Viewpoint
+## VP4 — Flow Viewpoint
 
-**Instruments:** Velocity Dashboard + Architectural Decision Log (ADL)  
+**Instruments:** Flow Dashboard + Architectural Decision Log (ADL)  
 **Layer:** Control  
-**Location:** `/viewpoints/vp4-velocity/`
+**Location:** `/viewpoints/vp4-flow/`
 
 ### Stakeholders
 Enterprise architects, architecture governance bodies, CTO/CIO, portfolio managers.
@@ -124,7 +124,7 @@ Enterprise architects, architecture governance bodies, CTO/CIO, portfolio manage
 - Is the architecture portfolio moving toward or away from the target state?
 
 ### Model kinds
-**Velocity Dashboard** — a control instrument showing: decision latency by domain, architectural debt indicators, overdue decisions, and portfolio trajectory. Updated at the cadence defined by the Pulse System (VP5).
+**Flow Dashboard** — a control instrument showing: decision latency by domain, architectural debt indicators, overdue decisions, and portfolio trajectory. Updated at the cadence defined by the Pulse System (VP5).
 
 **Architectural Decision Log (ADL)** — a time-ordered register of all significant architecture decisions across the portfolio. Links to individual ADRs (VP3). Enables pattern analysis and debt identification at the portfolio level.
 
@@ -134,7 +134,7 @@ Enterprise architects, architecture governance bodies, CTO/CIO, portfolio manage
 - The ADL is the source of truth for governance reporting — not meeting minutes or email threads.
 
 ### Rationale for inclusion
-The Velocity viewpoint exists because architecture governance without measurement is opinion. The dashboard and log instruments provide the control data that allows the architecture practice to demonstrate value and identify where it is adding friction rather than reducing it.
+The Flow viewpoint exists because architecture governance without measurement is opinion. The dashboard and log instruments provide the control data that allows the architecture practice to demonstrate value and identify where it is adding friction rather than reducing it.
 
 ---
 
@@ -191,7 +191,7 @@ The Auctor Custos (author-guardian) is the named practitioner accountable for th
 ### Conventions
 - The Auctor Custos obligation is to the architecture's integrity — not to the delivery timeline or the stakeholder's preference.
 - Escalation is an obligation, not an option, when architectural integrity is being materially compromised.
-- Practitioner performance is assessed against the integrity arc criteria — not against delivery velocity alone.
+- Practitioner performance is assessed against the integrity arc criteria — not against delivery flow alone.
 
 ### Rationale for inclusion
 The Practitioner viewpoint exists because architecture quality ultimately depends on practitioner behaviour under pressure. Frameworks that specify artefacts and viewpoints without specifying the practitioner obligation model produce correct-looking documents produced by practitioners who have been pressured into ratifying bad decisions. VP6 closes that gap.

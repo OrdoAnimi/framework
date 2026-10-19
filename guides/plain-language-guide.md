@@ -109,9 +109,9 @@ Have the conversation. Write what happened. That is architecture.
 | If you want to... | Go to... |
 |---|---|
 | Understand the full evidence base for this approach | [Research papers](/research/) |
-| See all 18 artefacts compressed against standard practice | [OrdoAnimi Compression Map](/frameworks/VAF-Compression-Map.md) |
+| See all 18 artefacts compressed against standard practice | [OrdoAnimi Compression Map](/frameworks/OA-Compression-Map.md) |
 | Get a template you can fill in today | [OrdoAnimi Templates](/tools/templates/) |
-| Understand how to run the conversation and frame the finding | [Practitioner Operating Manual](/guides/VAF-Practitioner-Operating-Manual.md) |
+| Understand how to run the conversation and frame the finding | [Practitioner Operating Manual](/guides/OA-Practitioner-Operating-Manual.md) |
 | Understand the classification of artefact types | [EA Artefact Type Classification](/frameworks/EA-Artefact-Type-Classification.md) |
 
 ---

@@ -655,8 +655,8 @@ jobs:
 
       - name: Commit generated pages
         run: |
-          git config user.name "velocity-publisher[bot]"
-          git config user.email "velocity-publisher[bot]@users.noreply.github.com"
+          git config user.name "ordoanimi-publisher[bot]"
+          git config user.email "ordoanimi-publisher[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
             echo "No new pages generated."

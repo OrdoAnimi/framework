@@ -27,7 +27,7 @@ AI is not coming for the architect's job. It is coming for the weak version of i
 
 Full field note below. First in a series.
 
-#EnterpriseArchitecture #AIAssistedDelivery #VelocityArchitecture
+#EnterpriseArchitecture #AIAssistedDelivery #OrdoAnimi
 
 ---
 
@@ -100,7 +100,7 @@ The catch: a runtime control encoding a bad rule enforces the bad rule perfectly
 
 Field note 4 below.
 
-#ArchitectureGovernance #AIAssistedDelivery #VelocityArchitecture
+#ArchitectureGovernance #AIAssistedDelivery #OrdoAnimi
 
 ---
 
@@ -144,4 +144,4 @@ AI drafts. Architect reviews. That was never a workflow statement. It is a state
 
 Field note 6 closes the arc. Link below.
 
-#OrdoAnimi #DecisionGovernance #VelocityArchitecture
+#OrdoAnimi #DecisionGovernance

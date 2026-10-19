@@ -96,7 +96,7 @@ Collaboration is the practice of bringing perspectives together in the service o
 
 It becomes inert.
 
-The organisations that sustain genuine velocity — that convert ambiguity into decisions at a rate that allows delivery to proceed with clarity and coherence — are not the ones that have eliminated collaboration or reduced consultation. They are the ones that have maintained the design clarity that the vocabulary of virtuous avoidance erodes: the clarity about when the consultation ends, where the decision is made, who is accountable for it, and what the threshold of commitment looks like when it is reached and not retreated from.
+The organisations that sustain genuine flow — that convert ambiguity into decisions at a rate that allows delivery to proceed with clarity and coherence — are not the ones that have eliminated collaboration or reduced consultation. They are the ones that have maintained the design clarity that the vocabulary of virtuous avoidance erodes: the clarity about when the consultation ends, where the decision is made, who is accountable for it, and what the threshold of commitment looks like when it is reached and not retreated from.
 
 That design clarity is what the chapters that follow describe. Not as a cultural aspiration. As a structural property that can be built, maintained, and measured. The vocabulary of virtuous avoidance is powerful. But it operates in the absence of structure. Where structure exists — where decision rights are explicit, where the threshold of commitment is designed rather than discovered, where accountability is named before the consultation begins — the vocabulary loses its power to substitute performance for practice.
 

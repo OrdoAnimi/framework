@@ -76,7 +76,7 @@ The higher authority receives the compressed question, the recommendation, and t
 
 The decision binds. Ambiguity terminates.
 
-This is not a description of a hypothetical ideal. It is a description of what escalation looks like when the three properties are present — when scope is compressed, ownership is intensified, and a terminal condition is designed into the pathway. The organisations that sustain genuine velocity do not have better people in their escalation pathways. They have better-designed pathways — pathways that are built to terminate rather than circulate, to concentrate rather than expand, to produce binding outcomes rather than documented discussions.
+This is not a description of a hypothetical ideal. It is a description of what escalation looks like when the three properties are present — when scope is compressed, ownership is intensified, and a terminal condition is designed into the pathway. The organisations that sustain genuine flow do not have better people in their escalation pathways. They have better-designed pathways — pathways that are built to terminate rather than circulate, to concentrate rather than expand, to produce binding outcomes rather than documented discussions.
 
 **The Close of Part Two’s Diagnostic**
 

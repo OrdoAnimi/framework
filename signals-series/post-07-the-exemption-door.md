@@ -26,4 +26,4 @@ The door was always open. The mandate just didn't know that yet.
 
 *— Signal / unfiltered observations from the field. Fortnightly.*
 
-#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #ITGovernance #DigitalTransformation
+#OrdoAnimi #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #ITGovernance #DigitalTransformation

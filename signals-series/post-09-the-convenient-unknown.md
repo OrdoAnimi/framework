@@ -22,4 +22,4 @@ The funding was approved against the first one.
 
 — Signal / unfiltered observations from the field. Fortnightly.
 
-#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITGovernance #ITStrategy #Execution #CIO #DigitalTransformation
+#OrdoAnimi #EnterpriseArchitecture #ArchitectureLeadership #ITGovernance #ITStrategy #Execution #CIO #DigitalTransformation

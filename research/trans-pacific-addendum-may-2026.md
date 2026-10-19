@@ -7,7 +7,7 @@
 **Classification:** Independent Industry Working Paper — Addendum
 **Date:** May 2026
 **Primary Paper:** A Comparative Analysis of IT Governance Frameworks — Australian Public Sector (2025-2026)
-**Repository:** github.com/[your-handle]/velocity-architecture-framework
+**Repository:** github.com/[your-handle]/flow-architecture-framework
 
 ---
 
@@ -196,4 +196,4 @@ That is the argument the main working paper makes. Canada and New Zealand confir
 
 *This addendum is published by Phil Myint under the OrdoAnimi brand as an independent contribution to public sector IT governance research. No commercial engagement is implied or intended. It extends the comparative analysis published in the main working paper: A Comparative Analysis of IT Governance Frameworks — Investigating the Relationship Between Documented Intent and Reported Outcomes in the Australian Public Sector (2025–2026), Document 1 in this series.*
 
-*This addendum is maintained in the OrdoAnimi research repository at github.com/[your-handle]/velocity-architecture-framework*
+*This addendum is maintained in the OrdoAnimi research repository at github.com/[your-handle]/flow-architecture-framework*

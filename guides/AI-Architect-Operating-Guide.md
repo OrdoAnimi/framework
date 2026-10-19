@@ -10,7 +10,7 @@ An AI Architect is the technical design authority that converts business intent 
 
 The role is not satisfied by prompt fluency, policy authorship, cloud familiarity, or generated code alone. It requires integration of enterprise architecture, solution architecture, data architecture, software engineering, cloud platforms, AI application patterns, assurance, and production operations.
 
-Velocity positions the AI Architect as the coordination authority across these concerns:
+Flow positions the AI Architect as the coordination authority across these concerns:
 
 ```text
 Business outcome
@@ -201,7 +201,7 @@ Minimum signals include:
 
 The design must include incident handling, operational ownership, change review, capacity and cost thresholds, and retirement conditions.
 
-## Velocity AI architecture lifecycle
+## OrdoAnimi AI architecture lifecycle
 
 ### Gate 1 — Intent
 
@@ -259,9 +259,9 @@ Capability claims use four evidence states:
 
 No capability is recorded as Lead solely because an artefact, generated repository, or training course exists. Lead status requires working implementation evidence, review evidence, failure diagnosis, and an ability to defend the design without relying on generated prose.
 
-## Current Velocity boundary
+## Current Flow boundary
 
-Velocity is already strong in decision architecture, governance, human accountability, architecture artefacts, agent boundaries, data classification, FinOps framing, and traceability.
+Flow is already strong in decision architecture, governance, human accountability, architecture artefacts, agent boundaries, data classification, FinOps framing, and traceability.
 
 The operating method must now deepen its production engineering layer through executable evaluations, AI security testing, managed-service reference implementations, retrieval architecture, infrastructure as code, end-to-end observability, and operational runbooks.
 

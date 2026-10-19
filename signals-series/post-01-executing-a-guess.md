@@ -22,7 +22,7 @@ If your baseline architecture isn't accurate, your strategy doesn't matter. Fram
 
 Because you are not transforming a system you understand. You are executing a guess.
 
-You can iterate and discover while moving. But if your first step is built on a fundamentally wrong map of reality, every subsequent step compounds the error. Speed without accuracy is not velocity. It is drift with momentum.
+You can iterate and discover while moving. But if your first step is built on a fundamentally wrong map of reality, every subsequent step compounds the error. Speed without accuracy is not flow. It is drift with momentum.
 
 The organisations that move fastest over the next few years won't be the ones with the best strategies or the most ambitious AI roadmaps. They will be the ones that continuously validate their actual environment, treat architecture as a living system rather than a documentation obligation, and establish real ownership of the baseline before asking where they are going.
 
@@ -32,4 +32,4 @@ Until then, execution will keep failing. Quietly. Repeatedly. And expensively.
 
 *— Signal / unfiltered observations from the field. Fortnightly.*
 
-#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #DigitalTransformation #CloudStrategy #TechnologyStrategy #ArtificialIntelligence #AIStrategy #DigitalStrategy
+#OrdoAnimi #EnterpriseArchitecture #ArchitectureLeadership #ITStrategy #Execution #CIO #DigitalTransformation #CloudStrategy #TechnologyStrategy #ArtificialIntelligence #AIStrategy #DigitalStrategy

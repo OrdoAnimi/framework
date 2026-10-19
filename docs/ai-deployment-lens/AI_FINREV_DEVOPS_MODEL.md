@@ -96,6 +96,6 @@ The tool names may change. The routing principle should remain stable.
 - realised business value
 - retirement rate for low-value experiments
 
-## Velocity Fit
+## Flow Fit
 
-Velocity contributes the decision and traceability model. AI FinRev DevOps extends that model across economics, revenue, engineering flow, and governance.
+Flow contributes the decision and traceability model. AI FinRev DevOps extends that model across economics, revenue, engineering flow, and governance.

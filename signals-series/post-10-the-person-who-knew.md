@@ -28,4 +28,4 @@ Nobody put the second one on the wall.
 
 — Signal / unfiltered observations from the field. Fortnightly.
 
-#VelocityArchitecture #EnterpriseArchitecture #ArchitectureLeadership #ITGovernance #ITStrategy #Execution #CIO #DigitalTransformation #ordoanimi
+#OrdoAnimi #EnterpriseArchitecture #ArchitectureLeadership #ITGovernance #ITStrategy #Execution #CIO #DigitalTransformation #ordoanimi

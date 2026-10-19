@@ -81,7 +81,7 @@ For years, enterprise architecture often sat too far from operational economics.
 
 Now those streams are beginning to converge.
 
-The architect cannot remain isolated from that convergence because architecture increasingly shapes the runtime behaviour of cost, automation, delivery velocity, customer experience, and operational risk simultaneously.
+The architect cannot remain isolated from that convergence because architecture increasingly shapes the runtime behaviour of cost, automation, delivery flow, customer experience, and operational risk simultaneously.
 
 That does not mean architects suddenly become finance analysts or sales operators. It means the architectural lens must become economically aware.
 
