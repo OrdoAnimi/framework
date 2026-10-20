@@ -1,6 +1,6 @@
 # Chapter 33: The Flow Operating Model
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -46,4 +46,4 @@ The chapters that follow describe the instruments through which the Flow Operati
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

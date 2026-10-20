@@ -1,6 +1,6 @@
 # Chapter 48: The Human Cost of Indecision Revisited
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -32,4 +32,4 @@ This is the weight beneath the framework, and it is why the framework matters be
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

@@ -1,6 +1,6 @@
 # Chapter 26: Escalation Scarcity
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -94,4 +94,4 @@ When escalation is expensive — when the decision surface has been drawn ge
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

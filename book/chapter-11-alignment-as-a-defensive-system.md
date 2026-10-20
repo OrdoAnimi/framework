@@ -1,6 +1,6 @@
 # Chapter 11: Alignment as a Defensive System
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -118,4 +118,4 @@ Structure.
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

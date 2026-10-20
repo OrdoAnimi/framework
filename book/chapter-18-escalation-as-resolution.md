@@ -1,6 +1,6 @@
 # Chapter 18: Escalation as Resolution
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -104,4 +104,4 @@ Part Three describes what termination looks like — designed, structural, m
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

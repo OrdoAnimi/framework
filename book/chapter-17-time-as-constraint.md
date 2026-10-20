@@ -1,6 +1,6 @@
 # Chapter 17: Time as Constraint
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -122,4 +122,4 @@ It is the beginning of the return to flow.
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

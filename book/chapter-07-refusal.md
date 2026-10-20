@@ -1,6 +1,6 @@
 # Chapter 7: Refusal
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -108,4 +108,4 @@ The threshold of refusal makes that practice possible. Not by changing the syste
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

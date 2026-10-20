@@ -1,6 +1,6 @@
 # Chapter 3: The Decision Record
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -120,4 +120,4 @@ Architecture does not exist to describe systems. **It exists to make decisions s
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

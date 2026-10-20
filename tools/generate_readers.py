@@ -30,6 +30,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # md_dir    - where the manifest's filenames resolve, relative to repo root
 # label     - series name shown in the page eyebrow
 # kicker    - what a piece is called ("Post", "Chapter", "Essay")
+# author    - byline name; the books carry the pen byline, the rest default below
 COLLECTIONS = [
     dict(key="signal", shell="publications/signal/index.html",
          md_dir="signals-series", label="Signal", kicker="Post",
@@ -38,18 +39,18 @@ COLLECTIONS = [
                "reality and decision-making."),
     dict(key="book", shell="publications/book/index.html",
          md_dir="book", label="Where Architecture Truly Creates Value",
-         kicker="Chapter",
+         kicker="Chapter", author="P A Myint",
          blurb="The complete case for decision-first architecture - why the unit "
                "of architecture is the decision, and what that changes."),
     dict(key="holding-the-line", shell="publications/holding-the-line/index.html",
          md_dir="publications/holding-the-line", label="Holding the Line",
-         kicker="Chapter",
+         kicker="Chapter", author="P A Myint",
          blurb="On leadership - the conviction to create clarity, extend trust, "
                "own the decision, protect people, and prepare others to lead "
                "without you."),
     dict(key="reading-the-map", shell="publications/reading-the-map/index.html",
          md_dir="publications/reading-the-map", label="Reading the Map",
-         kicker="Chapter",
+         kicker="Chapter", author="P A Myint",
          blurb="A navigation guide to enterprise architecture - the frameworks, "
                "concepts and language of the territory architects work in."),
 ]
@@ -140,11 +141,13 @@ def nav(active_href):
         + '</ul>\n</nav>'
     )
 
-def footer(index_href, label):
+DEFAULT_AUTHOR = "Phil Myint"
+
+def footer(index_href, label, author=DEFAULT_AUTHOR):
     return (
         '<footer class="pub-footer">\n'
         '<div class="pub-footer-inner">\n'
-        '<span class="pub-footer-copy">&copy; Phil Myint &middot; OrdoAnimi '
+        f'<span class="pub-footer-copy">&copy; {author} &middot; OrdoAnimi '
         '&middot; CC BY 4.0</span>\n'
         '<div class="pub-footer-links">\n'
         f'<a href="{index_href}">{_inline(label)}</a>\n'
@@ -193,7 +196,8 @@ def render_page(coll, item, prev, nxt, depth):
                         _inline(coll["label"]) + " Index")
 
     desc = _attr(summarise(item["body_html"]) or coll["blurb"])
-    byline = "Phil Myint &middot; OrdoAnimi"
+    author = coll.get("author", DEFAULT_AUTHOR)
+    byline = f"{author} &middot; OrdoAnimi"
     if item["date"]:
         byline += f" &middot; {fmt_date(item['date'])}"
 
@@ -223,14 +227,14 @@ def render_page(coll, item, prev, nxt, depth):
         '</div>\n</header>\n\n'
         '<main>\n<div class="article-body">\n<div class="article-body-inner">\n\n'
         f'{item["body_html"]}\n\n'
-        f'<p class="article-byline-end">Phil Myint &middot; OrdoAnimi &middot; '
+        f'<p class="article-byline-end">{author} &middot; OrdoAnimi &middot; '
         f'{_inline(coll["label"])}</p>\n'
         '</div>\n</div>\n\n'
         '<hr class="section-divider"/>\n\n'
         '<nav class="article-nav">\n'
         f'{prev_a}\n{index_a}\n{next_a}\n'
         '</nav>\n</main>\n\n'
-        f'{footer(index_href, coll["label"])}\n\n'
+        f'{footer(index_href, coll["label"], author)}\n\n'
         '</body>\n</html>\n'
     )
 

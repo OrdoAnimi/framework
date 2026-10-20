@@ -1,6 +1,6 @@
 # Chapter 22: Ownership as Load-Bearing Structure
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -152,4 +152,4 @@ One owner. One window. One binding outcome.
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

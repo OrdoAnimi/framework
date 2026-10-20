@@ -1,6 +1,6 @@
 # Chapter 34: The Pulse System
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -48,4 +48,4 @@ The next discussion examines the instrument through which the governance archite
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

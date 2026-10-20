@@ -1,6 +1,6 @@
 # Chapter 27: Governance That Terminates
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -110,4 +110,4 @@ That is the operating mode that flow requires.
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

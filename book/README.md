@@ -1,6 +1,6 @@
 # Where Architecture Truly Creates Value
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*
 
 ---
 

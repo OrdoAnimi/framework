@@ -1,6 +1,6 @@
 # Chapter 50: The Closing Argument
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -30,4 +30,4 @@ That decision is the line. It has been ahead of the reader since the preface nam
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

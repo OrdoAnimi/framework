@@ -1,6 +1,6 @@
 # Chapter 23: Designing the Decision Surface
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -104,4 +104,4 @@ This is the design that makes flow possible at scale. Not the absence of governa
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

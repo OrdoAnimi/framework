@@ -1,6 +1,6 @@
 # Chapter 1: Where Architecture Truly Creates Value
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -78,4 +78,4 @@ The kind that makes the next decision possible.
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

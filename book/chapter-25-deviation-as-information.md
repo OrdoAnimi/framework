@@ -1,6 +1,6 @@
 # Chapter 25: Deviation as Information
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -80,4 +80,4 @@ Deviation is not the problem. It is the answer to the problem — if the gov
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

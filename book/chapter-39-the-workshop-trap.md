@@ -1,6 +1,6 @@
 # Chapter 39: The Workshop Trap
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -32,4 +32,4 @@ The Workshop Trap and the Control Paradox are the same failure viewed from two d
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

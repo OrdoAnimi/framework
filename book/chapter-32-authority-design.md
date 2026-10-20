@@ -1,6 +1,6 @@
 # Chapter 32: Authority Design
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -42,4 +42,4 @@ The governance structures of Part Three made decisions traceable and time-bounde
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

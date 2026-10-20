@@ -1,6 +1,6 @@
 # Chapter 12: The Infrastructure of Indecision
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -88,4 +88,4 @@ Redesigning it requires understanding not just what it does but why it was built
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

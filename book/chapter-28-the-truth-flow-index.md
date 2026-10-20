@@ -1,6 +1,6 @@
 # Chapter 28: The Truth Flow Index
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -80,4 +80,4 @@ The decisive organisation measures both. The index is not an occasional audit. I
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

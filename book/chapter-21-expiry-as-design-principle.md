@@ -1,6 +1,6 @@
 # Chapter 21: Expiry as Design Principle
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -118,4 +118,4 @@ That is where the design of the decisive organisation begins.
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

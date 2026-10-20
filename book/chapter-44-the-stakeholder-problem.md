@@ -1,6 +1,6 @@
 # Chapter 44: The Stakeholder Problem
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -32,4 +32,4 @@ The transition that survives its stakeholders is a transition that has held its 
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

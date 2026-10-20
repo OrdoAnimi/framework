@@ -1,6 +1,6 @@
 # Chapter 30: The Operational Truth Model
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -66,4 +66,4 @@ Part Four describes how this architecture runs.
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

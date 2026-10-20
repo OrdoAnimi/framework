@@ -1,6 +1,6 @@
 # Chapter 35: The Clarity Stack in Operation
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -52,4 +52,4 @@ The discussion that follows examines the method through which the governance arc
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

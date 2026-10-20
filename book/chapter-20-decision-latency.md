@@ -1,6 +1,6 @@
 # Chapter 20: Decision Latency
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -126,4 +126,4 @@ And in an organisation that has been redesigned, through the conditions of Part 
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

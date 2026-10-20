@@ -65,4 +65,4 @@ The canonical chapter content is these Markdown files. The reader renders them; 
 not contain a second copy of the prose. To edit a chapter, edit its `.md` file — the
 reader picks up the change on next load.
 
-*Phil Myint · Principal Architect · OrdoAnimi · Brisbane*
+*P A Myint · Principal Architect · OrdoAnimi · Brisbane*

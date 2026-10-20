@@ -1,6 +1,6 @@
 # Chapter 6: Boundaries
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -114,4 +114,4 @@ The line is here. Drawing it is the minimum act of professional integrity availa
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*

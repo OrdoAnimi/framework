@@ -1,6 +1,6 @@
 # Chapter 29: The Living Blueprint
 
-*Where Architecture Truly Creates Value · Phil Myint · OrdoAnimi*
+*Where Architecture Truly Creates Value · P A Myint · OrdoAnimi*
 
 ---
 
@@ -80,4 +80,4 @@ That is the operational condition the Living Blueprint creates: governance that 
 
 ---
 
-*Phil Myint · OrdoAnimi*
+*P A Myint · OrdoAnimi*
