@@ -17,6 +17,7 @@ Idempotent: re-running with unchanged .md and manifests produces identical
 output.
 """
 import io
+import json
 from pathlib import Path
 import re
 import subprocess
@@ -118,6 +119,17 @@ def first_commit_date(rel_path):
     # page simply omits the byline date rather than inventing one
     _date_cache[rel_path] = out
     return out
+
+# The git date is wrong for a piece revised after its first commit or published
+# elsewhere first. publish_dates.json holds the real date by source path; null
+# means the date is unknown, so the page shows none rather than a false one.
+_PUBLISH_DATES = json.loads(
+    (Path(__file__).resolve().parent / "publish_dates.json").read_text(encoding="utf-8"))
+
+def publish_date(rel_path):
+    if rel_path in _PUBLISH_DATES:
+        return _PUBLISH_DATES[rel_path] or ""
+    return first_commit_date(rel_path)
 
 # ------------------------------------------------------------------- rendering
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"/>\n'
@@ -259,10 +271,13 @@ def build(coll):
         if not md.exists():
             print(f"  {coll['key']}: WARNING missing source {rel_md}")
             continue
+        date = publish_date(rel_md)
         items.append(dict(
             id=r["id"], title=r["title"], slug=Path(r["file"]).stem,
             seq=len(items),  # manifest order = intended publication sequence
-            date=first_commit_date(rel_md),
+            date=date,
+            # an undated piece keeps its manifest place in the feed
+            sort_date=date or (items[-1]["sort_date"] if items else ""),
             body_html=md_to_html(md.read_text(encoding="utf-8")),
             url=f"/{coll['shell'][:-len('index.html')]}{Path(r['file']).stem}.html",
         ))
@@ -375,11 +390,12 @@ def build_feeds(built):
                 out.append(dict(title=f"{coll['label']} - {it['title']}"
                                 if k.startswith("thought-series") else it["title"],
                                 url=it["url"], date=it["date"], seq=it["seq"],
+                                sort_date=it["sort_date"],
                                 summary=summarise(it["body_html"], 320)))
         # Newest first. Whole collections were often committed in one batch, so
         # git dates tie; manifest sequence is the real publication order and
         # breaks the tie deterministically.
-        out.sort(key=lambda i: (i["date"] or "", i["seq"]), reverse=True)
+        out.sort(key=lambda i: (i["sort_date"], i["seq"]), reverse=True)
         return out
 
     # Field Notes live in the other generator (real frontmatter dates), but the
