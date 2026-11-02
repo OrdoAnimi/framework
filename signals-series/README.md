@@ -24,12 +24,17 @@ Organisations are failing to connect reality to decision-making at every layer. 
 | [post-06-the-gap-between-the-map-and-the-ground.md](post-06-the-gap-between-the-map-and-the-ground.md) | The Gap Between the Map and the Ground | Published |
 | [post-07-the-exemption-door.md](post-07-the-exemption-door.md) | The Exemption Door | Published |
 | [post-08-who-called-the-ea.md](post-08-who-called-the-ea.md) | Who Called the EA? | Published |
-| post-09-the-convenient-unknown.md | The Convenient Unknown | Written — held |
-| post-10-the-person-who-knew.md | The Person Who Knew | Written — held |
-| post-11-the-navigator-who-never-left-the-tent.md | The Navigator Who Never Left the Tent | In development |
-| post-12-we-keep-breaking-teams-at-the-leadership-layer.md | We Keep Breaking Teams at the Leadership Layer | In development |
-| post-13-the-four-things-that-arent-enough.md | The Four Things That Aren't Enough | In development |
-| post-14-the-club-you-werent-invited-to.md | The Club You Weren't Invited To | In development |
+| [post-09-the-convenient-unknown.md](post-09-the-convenient-unknown.md) | The Convenient Unknown | Published |
+| [post-10-the-person-who-knew.md](post-10-the-person-who-knew.md) | The Person Who Knew | Published |
+| [post-11-the-person-who-was-right-eventually.md](post-11-the-person-who-was-right-eventually.md) | The Person Who Was Right, Eventually | Published |
+| [post-12-the-cost-of-being-early-the-cost-of-being-late.md](post-12-the-cost-of-being-early-the-cost-of-being-late.md) | The Cost of Being Early / The Cost of Being Late | Published |
+| [post-13-what-this-series-has-actually-been-about.md](post-13-what-this-series-has-actually-been-about.md) | What This Series Has Actually Been About | Published |
+| [post-14-why-i-write-it-down.md](post-14-why-i-write-it-down.md) | Why I Write It Down | Published |
+| [post-15-the-demo-proved-it-could.md](post-15-the-demo-proved-it-could.md) | The Demo Proved It Could. Nobody Asked If It Should. | Published |
+| [post-16-the-decision-system-never-got-asked.md](post-16-the-decision-system-never-got-asked.md) | The Demo Proved It Could. The Decision System Never Got Asked. | Published |
+| [post-17-the-team-inherited-an-ai-capability.md](post-17-the-team-inherited-an-ai-capability.md) | The Team Inherited an AI Capability. The Org Chart Stayed the Same. | Published |
+| [post-18-the-team-stopped-raising-risks.md](post-18-the-team-stopped-raising-risks.md) | The Team Stopped Raising Risks. The Survey Said Culture. | Published |
+| [post-19-the-last-signal.md](post-19-the-last-signal.md) | The Last Signal: Back at the Friday Table | Published |
 
 ---
 
@@ -40,7 +45,6 @@ Organisations are failing to connect reality to decision-making at every layer. 
 **Posts 5–6:** The structure. The map decays. The team never forms.
 **Posts 7–8:** The leadership failure. The governance bypassed. The trust never earned.
 **Posts 9–10:** The human cost. The incentive rewards not knowing. The person who knew stays quiet.
-**Posts 11–14:** The reckoning. Artefacts mistaken for practice. The caste system that calls itself maturity.
 
 ---
 
