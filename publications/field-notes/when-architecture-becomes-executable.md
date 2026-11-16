@@ -16,8 +16,6 @@ tags:
 
 # When Architecture Becomes Executable
 
-OrdoAnimi helps leaders make cloud, security, AI, governance, and transformation decisions clear, governed, and ready to execute.
-
 I am an architect who has found a way to build. That does not mean I am trying to become a software developer, and it does not mean I am pretending that AI-generated code is the same thing as engineering mastery. It means something more precise, and for the kind of work I do, probably more important: the distance between architectural intent and working execution has started to collapse.
 
 For most of my career, architectural thinking became documents. It became diagrams, governance packs, strategy papers, architecture decision records, review boards, executive briefings, target states, roadmaps, and the occasional uncomfortable meeting where the real issue was obvious but still somehow unsaid. Over the past few months, the same thinking has started becoming working systems: tools, experiments, delivery surfaces, and small pieces of executable architecture that make an idea visible enough to test.
@@ -40,7 +38,7 @@ For most of my career, the work has lived in the seam between enterprise archite
 
 I have always been interested in that seam because it is where a lot of architecture succeeds or fails. Too high, and architecture becomes abstract language floating above delivery. Too low, and solution design becomes local optimisation without enough regard for the wider system. The useful work is in the translation: taking executive intent and making it implementable, taking delivery pressure and making sure it does not quietly destroy the architecture, and taking governance seriously enough to make it usable before the real decision has already been made.
 
-To bridge that seam between strategy and execution, I have been building a series of interconnected systems. OrdoAnimi is the advisory and judgement layer. OrdoAnimi is the method. is the governed worksite. Ordo Animi is the personal leadership and decision-governance layer. I do not think of those names as a product catalogue; they are becoming different expressions of the same argument.
+To bridge that seam between strategy and execution, I have been building a series of interconnected systems. OrdoAnimi is the advisory and judgement layer, the method, and the governed worksite. Ordo Animi is the personal leadership and decision-governance layer. I do not think of those names as a product catalogue; they are becoming different expressions of the same argument.
 
 That argument is simple enough, but it has taken me years to make it practical. Architecture should not remain trapped in static documents. Governance should not arrive after the decision has already been made. Delivery should not be reduced to status reporting, and leadership should not outsource judgement to automation simply because the tools are impressive.
 
