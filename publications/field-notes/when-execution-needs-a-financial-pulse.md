@@ -115,7 +115,7 @@ The problem is whether cost, revenue, architecture, governance, and delivery can
 
 That is the deeper reason FinRevDevOps matters to me.
 
-OrdoAnimi sits closest to the judgement layer of that problem. OrdoAnimi is the method. is the governed worksite. Ordo Animi asks the same question at the individual level: how human beings maintain decision integrity while operating inside increasingly accelerated systems.
+OrdoAnimi sits closest to the judgement layer of that problem. It is also the method and the governed worksite. Ordo Animi asks the same question at the individual level: how human beings maintain decision integrity while operating inside increasingly accelerated systems.
 
 I do not see those systems as separate anymore.
 
